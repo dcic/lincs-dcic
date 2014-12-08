@@ -1,0 +1,7 @@
+LINCS Information Framework (LIFE)	http://life.ccs.miami.edu/life/	life.png
+iLINCS	http://eh3.uc.edu/GenomicsPortals/viewiLincs.jsp	ilincs.png
+LINCS Canvas Browser	http://www.maayanlab.net/LINCS/LCB/	lincs-canvas-browser.png
+Drug/Cell-line Browser	http://www.maayanlab.net/LINCS/DCB/	drug-cell-browser.png
+Enrichr - Search engine for gene lists and signatures	http://amp.pharm.mssm.edu/Enrichr/	enrichr.png
+lincscloud web apps	http://apps.lincscloud.org/	lincscloud.png
+HMS software & tools	http://lincs.hms.harvard.edu/resources/software-tools/	hms-lincs.png

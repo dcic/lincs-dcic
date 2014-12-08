@@ -1,0 +1,4 @@
+Summer Research Training Program in Biomedical Big Data Science	/#/education/summerresearch
+LINCS MOOC on Coursera: Big Data Science with the BD2K-LINCS Data Coordination and Integration Center	
+Network Analysis in Systems Biology on Coursera	https://www.coursera.org/course/netsysbio
+New PhD program in Biostatistics with an emphasis on Big Data Science	/#/education/phd
