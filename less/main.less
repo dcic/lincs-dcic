@@ -1,4 +1,7 @@
 /* colors */
+@color-white: #ffffff;
+@color-black: #000000;
+
 @color-lightgray: #f1f1f1;
 @color-darkgray: #888888;
 @color-charcoal: #222222;
@@ -8,12 +11,10 @@
 @color-googleblue: #4285f4;
 @color-navyblue: #07435b;
 @color-lightblue: #71A7BD;
-@color-white: #ffffff;
-@color-black: #000000;
 @color-red: #ff0000;
 
 /* fonts */
-@font-size-base: 12px;
+@font-size-base: 13px;
 @font-fam-base: 'Monda', sans-serif;
 
 @footer-height: 160px;
@@ -22,13 +23,61 @@ html,
 body {
     height: 100%;
 }
-#wrapper {
+a {
+	color: @color-googleblue;
+}
+#content-wrapper {
 	min-height: 100%;
 	height: auto;
 	/* Negative indent footer by its height */
 	margin: 0 auto -@footer-height;
 	/* Pad bottom by footer height */
 	padding: 0 0 @footer-height;
+}
+#header-wrapper {
+	background: @color-lightgray;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	#brand-wrapper {
+		#brand {
+			color: @color-navyblue;
+			display: block;
+			padding: 5px;
+			#lincs-logo,
+			#lincs-title {
+				float: left;
+			}
+			#lincs-logo {
+				display: inline;
+			}
+			#lincs-title {
+				position: relative;
+				top: 5px;
+				font-family: @font-fam-base;
+				&:hover {
+					color: @color-googleblue;
+				}
+				#lincs-subtitle {
+					color: @color-googleblue;
+				}
+			}
+		}
+		.brand-link {
+			font-size: 16px;
+			float: right;
+			a {
+				color: @color-navyblue;
+				&:hover {
+					color: @color-orange;
+				}
+			}
+		}
+	}
+	.navbar-collapse {
+		float: right;
+	}
 }
 #footer {
 	background: @color-charcoal;
@@ -58,45 +107,13 @@ body {
 }
 .col-md-4 {
 	h5 {
-		border-bottom: 1px solid @color-charcoal;
-		color: @color-charcoal;
+		background: @color-darkgray;
+		color: @color-white;
 		font-family: @font-fam-base;
 		font-size: 14px;
 		margin-bottom: 15px;
-	}
-}
-.navbar {
-	background: @color-lightgray;
-	border-bottom: 1px solid #ccc;
-	.navbar-brand {
-		color: @color-navyblue;
-		padding: 5px;
-		#lincs-logo,
-		#lincs-title {
-			float: left;
-		}
-		#lincs-logo {
-			display: inline;
-		}
-		#lincs-title {
-			font-family: @font-fam-base;
-			&:hover {
-				color: @color-orange;
-			}
-			#lincs-subtitle {
-				color: @color-orange;
-			}
-		}
-	}
-	.navbar-link {
-		font-size: 16px;
-		float: right;
-		a {
-			color: @color-navyblue;
-			&:hover {
-				color: @color-orange;
-			}
-		}
+		padding: 7px 0;
+		text-align: center;
 	}
 }
 .table {
@@ -129,9 +146,10 @@ body {
 	}
 	h4 {
 		border-bottom: 1px solid #ebebeb;
+		color: @color-navyblue; /* In case the header doesn't have a link */
 		font-family: @font-fam-base;
 		font-weight: bold;
-		padding-top: 0;
+		padding: 0 0 6px 0;
 		margin-top: 0;
 		a {
 			color: @color-navyblue;
@@ -248,59 +266,49 @@ body {
 }
 
 @media (max-width: 9999px) {
-	.navbar {
-		/*background: black;*/
-		.navbar-brand {
-			height: 90px;
-			#lincs-logo {
-				width: 78px;
-			}
-			#lincs-title {
-				font-size: 24px;
-				padding-left: 10px;
-				position: relative;
-				top: 16px;
-			}
+	#brand {
+		height: 90px;
+		#lincs-logo {
+			width: 78px;
+		}
+		#lincs-title {
+			font-size: 24px;
+			padding-left: 10px;
+			position: relative;
+			top: 16px;
 		}
 	}
 }
 @media (max-width: 980px) {
-	.navbar {
-		/*background: gray;*/
-		.navbar-brand {
-			width: 560px;
-		}
+	#brand {
+		width: 560px;
 	}
 }
 @media (max-width: 760px) {
-	.navbar {
-		/*background: blue;*/
-		.navbar-brand {
-			width: 450px;
-			#lincs-title {
-				font-size: 18px;
-				padding-left: 10px;
-				position: relative;
-				top: 16px;
-			}
+	#brand {
+		padding-bottom: 2px;
+		width: 450px;
+		#lincs-title {
+			font-size: 18px;
+			padding-left: 10px;
+			position: relative;
+			top: 16px;
 		}
 	}
 }
 @media (max-width: 480px) {
-	.navbar {
-		/*background: lightblue;*/
-		.navbar-brand {
-			width: 335px;
-			#lincs-logo {
-				position: relative;
-				top: 12px;
-				width: 52px;
-			}
-			#lincs-title {
-				font-size: 13px;
-				position: relative;
-				top: 20px;
-			}
+	#brand {
+		padding-bottom: 2px;
+		width: 335px;
+		#lincs-logo {
+			position: relative;
+			top: 12px;
+			width: 52px;
+		}
+		#lincs-title {
+			font-size: 13px;
+			position: relative;
+			top: 20px;
 		}
 	}
 }
