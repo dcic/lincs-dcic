@@ -1,0 +1,5 @@
+LINCS Catalog	http://lifekb.org/catalog/
+Lincscloud	http://www.lincscloud.org/
+HMS LINCS Database	http://lincs.hms.harvard.edu/db/
+HMS KINOMEscan Data	http://lincs.hms.harvard.edu/data/kinomescan/
+Submit your gene signatures for analysis	/#/analysis
