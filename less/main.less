@@ -1,0 +1,309 @@
+/* colors */
+@color-lightgray: #f1f1f1;
+@color-darkgray: #888888;
+@color-charcoal: #222222;
+@color-lightcharcoal: #808080;
+
+@color-orange: #c4651f;
+@color-googleblue: #4285f4;
+@color-navyblue: #07435b;
+@color-lightblue: #71A7BD;
+@color-white: #ffffff;
+@color-black: #000000;
+@color-red: #ff0000;
+
+/* fonts */
+@font-size-base: 12px;
+@font-fam-base: 'Monda', sans-serif;
+
+@footer-height: 160px;
+
+html,
+body {
+    height: 100%;
+}
+#wrapper {
+	min-height: 100%;
+	height: auto;
+	/* Negative indent footer by its height */
+	margin: 0 auto -@footer-height;
+	/* Pad bottom by footer height */
+	padding: 0 0 @footer-height;
+}
+#footer {
+	background: @color-charcoal;
+	border-top: 1px solid @color-charcoal;
+	height: @footer-height;
+	margin-top: 20px;
+	padding: 20px 0 30px 0;
+	a, p {
+		color: @color-lightcharcoal;
+	}
+	a {
+		&:hover {
+			color: @color-googleblue;
+			text-decoration: none;
+		}
+	}
+	p {
+		padding-top: 20px;
+	}
+	#org-logos {
+		padding-top: 20px;
+		img {
+			height: 30px;
+			margin: 0 5px;
+		}
+	}
+}
+.col-md-4 {
+	h5 {
+		border-bottom: 1px solid @color-charcoal;
+		color: @color-charcoal;
+		font-family: @font-fam-base;
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+}
+.navbar {
+	background: @color-lightgray;
+	border-bottom: 1px solid #ccc;
+	.navbar-brand {
+		color: @color-navyblue;
+		padding: 5px;
+		#lincs-logo,
+		#lincs-title {
+			float: left;
+		}
+		#lincs-logo {
+			display: inline;
+		}
+		#lincs-title {
+			font-family: @font-fam-base;
+			&:hover {
+				color: @color-orange;
+			}
+			#lincs-subtitle {
+				color: @color-orange;
+			}
+		}
+	}
+	.navbar-link {
+		font-size: 16px;
+		float: right;
+		a {
+			color: @color-navyblue;
+			&:hover {
+				color: @color-orange;
+			}
+		}
+	}
+}
+.table {
+	margin-bottom: 0;
+	td {
+		vertical-align: middle;
+	}
+}
+.category {
+	background: @color-white;
+	box-shadow: 3px 3px 3px #c5c5c5;
+	border: 1px solid #ccc;
+	min-height: 100px;
+	margin-bottom: 10px;
+	padding: 10px;
+	position: relative;
+	.content {
+		font-size: @font-size-base;
+	}
+	a {
+		color: @color-black;
+		&:hover {
+			color: @color-googleblue;
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+	ul {
+		padding: 0 0 0 15px;
+	}
+	h4 {
+		border-bottom: 1px solid #ebebeb;
+		font-family: @font-fam-base;
+		font-weight: bold;
+		padding-top: 0;
+		margin-top: 0;
+		a {
+			color: @color-navyblue;
+		}
+	}
+	&#news {
+		.table {
+			> td {
+				text-align: center;
+			}
+		}
+	}
+	&#news {
+		img {
+			max-width: 50px;	
+		}
+	}
+}
+
+/* Don't place under `categories` because these also stylize standalone pages */
+#news {
+	img {
+		max-width: 100px;
+	}
+}
+#toolsapps {
+	img {
+		width: 25px;
+	}
+}
+#community {
+	a {
+		&hover {
+			cursor: pointer;
+		}
+	}
+	#social {
+		bottom: 10px;
+		left: 12px;
+		a {
+			color: @color-white;
+		}
+		img {
+			width: 32px;
+		}
+		.research-gate {
+			padding: 0;
+		}
+		#social-icons {
+			&hover {
+				cursor: pointer;
+				opcacity: .8;
+			}
+		}
+	}
+}
+#analysis {
+	.col-md-4,
+	.col-sm-4 {
+		textarea {
+			height: 200px;
+			width: 100%;
+		}
+	}
+	.col-md-8,
+	.col-sm-8 {
+		input,
+		textarea {
+			margin-bottom: 10px;
+			width: 100%;
+		}
+	}
+	.submitted {
+		position: absolute;
+		padding: 1.6em;
+		background-color: rgba(255, 255, 255, 0.8);
+		left: 3em;
+	}
+}
+#summerresearch {
+	img {
+		width: 100%;
+	}
+}
+
+/* Contact page */
+#contact {
+	.contact-institution-logo-row {
+		margin-bottom: 1em;
+	}
+	.contact-institution-logo {
+		height:80px;
+		display: block;
+		margin-bottom: 1.5em;
+	}
+	.contact-pi-logo {
+		height:80px;
+	}
+	.contact-pi-desc {
+		margin-left: 1em;
+		font-size: 0.9em;
+		vertical-align: middle;
+		display: inline-block;
+		max-width: 50%;
+	}
+	.contact-header {
+		border-bottom: 1px solid #888888;
+		/*text-transform: uppercase;*/
+		margin-top: 1.5em;
+	}
+	.contact-researchers{
+		margin-bottom: 1em;
+	}
+}
+
+@media (max-width: 9999px) {
+	.navbar {
+		/*background: black;*/
+		.navbar-brand {
+			height: 90px;
+			#lincs-logo {
+				width: 78px;
+			}
+			#lincs-title {
+				font-size: 24px;
+				padding-left: 10px;
+				position: relative;
+				top: 16px;
+			}
+		}
+	}
+}
+@media (max-width: 980px) {
+	.navbar {
+		/*background: gray;*/
+		.navbar-brand {
+			width: 560px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.navbar {
+		/*background: blue;*/
+		.navbar-brand {
+			width: 450px;
+			#lincs-title {
+				font-size: 18px;
+				padding-left: 10px;
+				position: relative;
+				top: 16px;
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.navbar {
+		/*background: lightblue;*/
+		.navbar-brand {
+			width: 335px;
+			#lincs-logo {
+				position: relative;
+				top: 12px;
+				width: 52px;
+			}
+			#lincs-title {
+				font-size: 13px;
+				position: relative;
+				top: 20px;
+			}
+		}
+	}
+}
+.urgent {
+	color: @color-red;
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" ng-app="LINCSDCIC">
+<head>
+	<meta charset="utf-8">
+	<title>LINCS-DCIC</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/bower_components/bootstrap-social/bootstrap-social.css">
+	<link rel="stylesheet" href="lib/bower_components/fullcalendar/dist/fullcalendar.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/side.css">
+
+	<!-- Libraries -->
+	<script src="lib/bower_components/angular/angular.js"></script>
+	<script src="lib/bower_components/angular-route/angular-route.js"></script>
+	<script src="lib/bower_components/jquery/jquery.min.js"></script>
+	<script src="lib/bower_components/jQuery.dotdotdot/src/js/jquery.dotdotdot.min.js"></script>
+	<script src='lib/bower_components/moment/min/moment.min.js'></script>
+	<script src='lib/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+	<script src='lib/bower_components/fullcalendar/dist/gcal.js'></script>
+	<script src="lib/bower_components/bootstrap/js/dropdown.js"></script>
+	<script src="lib/bower_components/bootstrap/js/collapse.js"></script>
+	<script src="lib/bower_components/underscore/underscore-min.js"></script>
+	
+	<!-- Main application -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers/controllers.js"></script>
+	<script type="text/javascript" src="js/extra.js"></script>
+	<script type="text/javascript" src="js/enrichr.js"></script>
+	
+	<!-- Embedded Twitter feed-->
+	<script>
+		!function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0],
+				p = /^http:/.test(d.location) ? 'http' : 'https';
+			if (!d.getElementById(id)) {
+				js = d.createElement(s);
+				js.id = id;
+				js.src = p + "://platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+		}(document, "script", "twitter-wjs");
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#/">
+						<img id="lincs-logo" alt="BD2K LINCS DCIC" src="images/org-logos/lincs-dcic-logo.png">
+						<div id="lincs-title">
+							<span id="lincs-subtitle">BD2K LINCS</span><br>
+							<span>Data Coordination & Integration Center</span>
+						</div>
+					</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-link">
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#/introduction">DCIC</a></li>
+								<li><a href="http://www.lincsproject.org/" target="_blank">LINCS</a></li>
+								<li><a href="http://bd2k.nih.gov/" target="_blank">BD2K</a></li>
+							</ul>
+						</li>
+						<li >
+							<a href="#/contact">Contact <span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- container injected from main.html -->
+		<div class="container" ng-view></div>
+	</div><!-- end of wrapper -->
+	<div id="footer" class="text-center">
+		<ul class="list-inline">
+			<li><a href="#/callfordsrp">Open Call for Data Science Research Projects</a></li>
+			<li><a href="#/jobs">Job Opportunities</a></li>
+		</ul>
+		<div id="org-logos">
+			<a href="http://bd2k.nih.gov/" target="_blank">
+				<img src="images/org-logos/nih-bd2k.png" />
+			</a>
+			<a href="http://commonfund.nih.gov/" target="_blank">
+				<img src="images/org-logos/nih-common-fund.jpg" />
+			</a>
+			<a href="http://commonfund.nih.gov/LINCS/index" target="_blank">
+				<img src="images/org-logos/nih-lincs.jpg" />
+			</a>
+		</div>
+		<p>This work is supported by NIH grant <a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8825168&icde=22649457&ddparam=&ddvalue=&ddsub=&cr=9&csb=default&cs=ASC" target="_blank">U54CA189201</a>.</p>
+	</div>
+</body>
+</html>

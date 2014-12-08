@@ -3,4 +3,5 @@
 
 # NPM
 webpage/node_modules/
+webpage/bower_components/
 webpage/public/bower_components/
