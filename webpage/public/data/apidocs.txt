@@ -1,4 +1,0 @@
-Data standards	http://www.lincsproject.org/data/data-standards/
-Enrichr API	http://amp.pharm.mssm.edu/Enrichr/#help
-lincscloud API	http://api.lincscloud.org/
-HMS LINCS API	https://docs.google.com/document/d/1R_d_1UWO0C9y1TceXpKIUkhjk08DfvP1D19txi4Tbas/edit
