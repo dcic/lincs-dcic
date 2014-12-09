@@ -14,37 +14,6 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/side.css">
 
-	<!-- Libraries -->
-	<script src="lib/bower_components/angular/angular.js"></script>
-	<script src="lib/bower_components/angular-route/angular-route.js"></script>
-	<script src="lib/bower_components/jquery/jquery.min.js"></script>
-	<script src="lib/bower_components/jQuery.dotdotdot/src/js/jquery.dotdotdot.min.js"></script>
-	<script src='lib/bower_components/moment/min/moment.min.js'></script>
-	<script src='lib/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
-	<script src='lib/bower_components/fullcalendar/dist/gcal.js'></script>
-	<script src="lib/bower_components/bootstrap/js/dropdown.js"></script>
-	<script src="lib/bower_components/bootstrap/js/collapse.js"></script>
-	<script src="lib/bower_components/underscore/underscore-min.js"></script>
-	
-	<!-- Main application -->
-	<!-- Services -->
-	<script type="text/javascript" src="js/service/apisdocs.js"></script>
-	<script type="text/javascript" src="js/service/community.js"></script>
-	<script type="text/javascript" src="js/service/contacts.js"></script>
-	<script type="text/javascript" src="js/service/education.js"></script>
-	<script type="text/javascript" src="js/service/datasetsassays.js"></script>
-	<script type="text/javascript" src="js/service/news.js"></script>
-	<script type="text/javascript" src="js/service/publications.js"></script>
-	<script type="text/javascript" src="js/service/toolsapps.js"></script>
-
-	<!-- Controllers -->
-	<script type="text/javascript" src="js/controller/controllers.js"></script>
-
-	<!-- Main -->
-	<script type="text/javascript" src="js/extra.js"></script>
-	<script type="text/javascript" src="js/enrichr.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	
 	<!-- Embedded Twitter feed-->
 	<script>
 		!function(d, s, id) {
@@ -84,15 +53,18 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-link collapse navbar-collapse">
 							<li class="dropdown">
-								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
 									<li><a href="#/introduction">DCIC</a></li>
 									<li><a href="http://www.lincsproject.org/" target="_blank">LINCS</a></li>
 									<li><a href="http://bd2k.nih.gov/" target="_blank">BD2K</a></li>
 								</ul>
 							</li>
-							<li >
-								<a href="#/contact">Contact <span class="sr-only">(current)</span></a>
+							<li>
+								<a href="#/team">Team</a>
+							</li>
+							<li>
+								<li><a href="#/contact">Contact</a></li>
 							</li>
 						</ul>
 					</div>
@@ -122,5 +94,39 @@
 		</div>
 		<p>This work is supported by NIH grant <a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8825168&icde=22649457&ddparam=&ddvalue=&ddsub=&cr=9&csb=default&cs=ASC" target="_blank">U54CA189201</a>.</p>
 	</div>
+
+	<!-- Libraries -->
+	<script src="lib/bower_components/angular/angular.js"></script>
+	<script src="lib/bower_components/angular-route/angular-route.js"></script>
+	<script src="lib/bower_components/jquery/jquery.min.js"></script>
+	<script src="lib/bower_components/jQuery.dotdotdot/src/js/jquery.dotdotdot.min.js"></script>
+	<script src='lib/bower_components/moment/min/moment.min.js'></script>
+	<script src='lib/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+	<script src='lib/bower_components/fullcalendar/dist/gcal.js'></script>
+	<script src="lib/bower_components/bootstrap/js/dropdown.js"></script>
+	<script src="lib/bower_components/bootstrap/js/collapse.js"></script>
+	<script src="lib/bower_components/underscore/underscore-min.js"></script>
+	
+	<!-- ************************ Application ************************ -->
+	<!-- Data -->
+	<script type="text/javascript" src="js/data-controller.js"></script>
+	<script type="text/javascript" src="js/data/apisdocs.js"></script>
+	<script type="text/javascript" src="js/data/community.js"></script>
+	<script type="text/javascript" src="js/data/contact.js"></script>
+	<script type="text/javascript" src="js/data/education.js"></script>
+	<script type="text/javascript" src="js/data/datasetsassays.js"></script>
+	<script type="text/javascript" src="js/data/news.js"></script>
+	<script type="text/javascript" src="js/data/publications.js"></script>
+	<script type="text/javascript" src="js/data/team.js"></script>
+	<script type="text/javascript" src="js/data/toolsapps.js"></script>
+
+	<!-- Extra functionality -->
+	<script type="text/javascript" src="js/analyze.js"></script>
+	<script type="text/javascript" src="js/email.js"></script>
+	<script type="text/javascript" src="js/extra.js"></script>
+
+	<!-- Routes -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<!-- ************************ End application ************************ -->
 </body>
 </html>

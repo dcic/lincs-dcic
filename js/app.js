@@ -11,8 +11,7 @@ mod.config(["$routeProvider", function($routeProvider) {
 		
 		/* Main categories */
 		when("/news", {
-			templateUrl: "partials/news.html",
-			controller: "newsCtrl"
+			templateUrl: "partials/news.html"
 		}).
 		when("/introduction", {
 			templateUrl: "partials/introduction.html"
@@ -20,8 +19,7 @@ mod.config(["$routeProvider", function($routeProvider) {
 
 		/* Education */
 		when("/education", {
-			templateUrl: "partials/education.html",
-			controller: "educationCtrl"
+			templateUrl: "partials/education.html"
 		}).
 		when("/education/summerresearch", {
 			templateUrl: "partials/summerresearch.html"
@@ -34,20 +32,16 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 
 		when("/publications", {
-			templateUrl: "partials/publications.html",
-			controller: "publicationsCtrl"
+			templateUrl: "partials/publications.html"
 		}).
 		when("/dataassays", {
-			templateUrl: "partials/dataassays.html",
-			controller: "datasetsassaysCtrl"
+			templateUrl: "partials/dataassays.html"
 		}).
 		when("/toolsapps", {
-			templateUrl: "partials/toolsapps.html",
-			controller: "toolsappsCtrl"
+			templateUrl: "partials/toolsapps.html"
 		}).
 		when("/apidocs", {
-			templateUrl: "partials/apidocs.html",
-			controller: "apidocsCtrl"
+			templateUrl: "partials/apidocs.html"
 		}).
 
 		/* Extras */
@@ -55,15 +49,16 @@ mod.config(["$routeProvider", function($routeProvider) {
 			templateUrl: "partials/about.html",
 		}).
 		when("/contact", {
-			templateUrl: "partials/contact.html",
-			controller: "contactCtrl"
+			templateUrl: "partials/contact.html"
+		}).
+		when("/team", {
+			templateUrl: "partials/team.html"
 		}).
 		when("/jobs", {
 			templateUrl: "partials/jobs.html"
 		}).
-		when("/analysis", {
-			templateUrl: "partials/analysis.html",
-			controller: "AnalysisCtrl"
+		when("/analyze", {
+			templateUrl: "partials/analyze.html"
 		}).
 		when("/callfordsrp", {
 			templateUrl: "partials/callfordsrp.html"

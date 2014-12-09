@@ -1,0 +1,38 @@
+<div id="team" ng-controller="teamCtrl">
+	<div class="row contact-institution-logo-row">
+		<!-- logo columns -->
+		<div  class="col-md-4 col-sm-4" ng-repeat="entry in pis">
+			<img src="images/org-logos/{{entry.logo}}" class="contact-institution-logo">
+			<div>
+				<img src="images/portraits/{{entry.portrait}}" class="contact-pi-logo">
+				<div class="contact-pi-desc">
+					<div>{{entry.name}}</div>
+					<div>{{entry.position}}</div>
+					<div>{{entry.email}}</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<h3 class="contact-header">Data Integration</h3>
+	<div class="row">
+		<div ng-repeat="entry in dataIntegration" class="col-md-4 col-sm-4 contact-researchers">
+			<div>
+				{{entry.name}}, {{entry.affiliation}}
+			</div>
+			<div>
+				<a href="mailto:{{entry.email}}">{{entry.email}}</a>
+			</div>
+		</div>
+	</div>
+	<h3 class="contact-header">Web Development</h3>
+	<div class="row">
+		<div ng-repeat="entry in webDevelopment" class="col-md-4 col-sm-4 contact-researchers">
+			<div>
+				{{entry.name}}, {{entry.affiliation}}
+			</div>
+			<div>
+				<a href="mailto:{{entry.email}}">{{entry.email}}</a>
+			</div>
+		</div>
+	</div>
+</div>

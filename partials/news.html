@@ -1,7 +1,9 @@
-<h3> News </h3>
-<table id="news" class="content table">
-	<tr ng-repeat="link in entries">
-		<td><img ng-src="images/news/{{link.image}}" /></td>
-		<td><strong>{{link.date}}: </strong><a href="{{link.url}}" target="_blank">{{link.title}}</a></td>
-	</tr>
-</table>
+<div id="news" ng-controller="newsCtrl">
+	<h3> News </h3>
+	<table id="news" class="content table">
+		<tr ng-repeat="link in entries">
+			<td><img ng-src="images/news/{{link.image}}" /></td>
+			<td><strong>{{link.date}}: </strong><a href="{{link.url}}" target="_blank">{{link.title}}</a></td>
+		</tr>
+	</table>
+</div>
