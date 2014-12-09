@@ -4,6 +4,11 @@ mod.factory("datasetsassays", function() {
 	return {
 		links: [
 			{
+				title: "Submit your gene signatures for analysis",
+				url: "/#/analysis",
+				target: "_self"
+			},
+			{
 				title: "LINCS Catalog",
 				url: "http://lifekb.org/catalog/",
 				target: "_blank"
@@ -22,11 +27,6 @@ mod.factory("datasetsassays", function() {
 				title: "HMS KINOMEscan Data",
 				url: "http://lincs.hms.harvard.edu/data/kinomescan/",
 				target: "_blank"
-			},
-			{
-				title: "Submit your gene signatures for analysis",
-				url: "/#/analysis",
-				target: "_self"
 			}
 		]
 	};

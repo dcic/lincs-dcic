@@ -1,6 +1,0 @@
-Christopher Mader	UM	cmader at miami dot edu
-Yan Kou	ISMMS	yan dot kou at mssm dot edu
-Nicolas Fernandez	ISMMS	nicolas dot fernandez at mssm dot edu
-Zichen Wang	ISMMS	zichen dot wang at mssm dot edu
-Andrew Rouillard	ISMMS	andrew dot rouillard at mssm dot edu
-Deepthi Puram	UM	d dot puram at miami dot edu

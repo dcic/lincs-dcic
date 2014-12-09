@@ -7,6 +7,10 @@ body {
 a {
   color: #4285f4;
 }
+a:hover {
+  color: #07435b;
+  text-decoration: none;
+}
 #content-wrapper {
   min-height: 100%;
   height: auto;
@@ -43,7 +47,9 @@ a {
   color: #4285f4;
 }
 #header-wrapper #brand-wrapper #brand #lincs-title #lincs-subtitle {
-  color: #4285f4;
+  color: #888888;
+  position: relative;
+  top: 10px;
 }
 #header-wrapper #brand-wrapper .brand-link {
   font-size: 16px;
@@ -57,6 +63,13 @@ a {
 }
 #header-wrapper .navbar-collapse {
   float: right;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+}
+#header-wrapper .navbar-collapse a {
+  color: #07435b;
 }
 #footer {
   background: #222222;
@@ -84,10 +97,10 @@ a {
   margin: 0 5px;
 }
 .col-md-4 h5 {
-  background: #888888;
+  background: #07435b;
   color: #ffffff;
   font-family: 'Monda', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 15px;
   padding: 7px 0;
   text-align: center;
@@ -184,6 +197,10 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
   left: 3em;
 }
+#analysis #example {
+  color: #808080;
+  font-size: 12px;
+}
 #summerresearch img {
   width: 100%;
 }
@@ -261,6 +278,20 @@ a {
     top: 20px;
   }
 }
-.urgent {
+a.important,
+.important {
   color: #ff0000;
+}
+a.important a,
+.important a {
+  color: #ff0000;
+}
+a.important a:hover,
+.important a:hover {
+  color: #4285f4;
+}
+/* Override Bootstrap default */
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
 }

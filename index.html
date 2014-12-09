@@ -27,19 +27,22 @@
 	<script src="lib/bower_components/underscore/underscore-min.js"></script>
 	
 	<!-- Main application -->
+	<!-- Services -->
 	<script type="text/javascript" src="js/service/apisdocs.js"></script>
 	<script type="text/javascript" src="js/service/community.js"></script>
+	<script type="text/javascript" src="js/service/contacts.js"></script>
 	<script type="text/javascript" src="js/service/education.js"></script>
 	<script type="text/javascript" src="js/service/datasetsassays.js"></script>
 	<script type="text/javascript" src="js/service/news.js"></script>
 	<script type="text/javascript" src="js/service/publications.js"></script>
 	<script type="text/javascript" src="js/service/toolsapps.js"></script>
 
+	<!-- Controllers -->
 	<script type="text/javascript" src="js/controller/controllers.js"></script>
 
+	<!-- Main -->
 	<script type="text/javascript" src="js/extra.js"></script>
 	<script type="text/javascript" src="js/enrichr.js"></script>
-
 	<script type="text/javascript" src="js/app.js"></script>
 	
 	<!-- Embedded Twitter feed-->
@@ -61,19 +64,25 @@
 	<div id="content-wrapper">
 		<div id="header-wrapper">
 			<div class="container">
-				<div class="row">
-					<div id="brand-wrapper" class="col-md-8 col-sm-8">
+				<div class="row navbar navbar-default">
+					<div id="brand-wrapper" class="navbar-header col-md-8 col-sm-8">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<a id="brand" href="#/">
-							<img id="lincs-logo" alt="BD2K LINCS DCIC" src="images/org-logos/lincs-dcic-logo.png">
+							<img id="lincs-logo" alt="BD2K-LINCS DCIC" src="images/org-logos/lincs-dcic-logo.png">
 							<div id="lincs-title">
-								<span id="lincs-subtitle">BD2K LINCS</span><br>
+								<span id="lincs-subtitle">BD2K-LINCS</span><br>
 								<span>Data Coordination & Integration Center</span>
 							</div>
 						</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 					</div>
-					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-link">
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-link collapse navbar-collapse">
 							<li class="dropdown">
 								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -102,40 +111,16 @@
 		</ul>
 		<div id="org-logos">
 			<a href="http://bd2k.nih.gov/" target="_blank">
-				<img src="images/org-logos/nih-bd2k.png" />
+				<img src="images/org-logos/nih-bd2k-bw.png" />
 			</a>
 			<a href="http://commonfund.nih.gov/" target="_blank">
-				<img src="images/org-logos/nih-common-fund.jpg" />
+				<img src="images/org-logos/nih-common-fund-bw.jpg" />
 			</a>
 			<a href="http://commonfund.nih.gov/LINCS/index" target="_blank">
-				<img src="images/org-logos/nih-lincs.jpg" />
+				<img src="images/org-logos/nih-lincs-bw.jpg" />
 			</a>
 		</div>
 		<p>This work is supported by NIH grant <a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8825168&icde=22649457&ddparam=&ddvalue=&ddsub=&cr=9&csb=default&cs=ASC" target="_blank">U54CA189201</a>.</p>
 	</div>
 </body>
 </html>
-
-<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>-->
-
-<!-- Collect the nav links, forms, and other content for toggling -->
-			<!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-link">
-					<li class="dropdown">
-						<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="#/introduction">DCIC</a></li>
-							<li><a href="http://www.lincsproject.org/" target="_blank">LINCS</a></li>
-							<li><a href="http://bd2k.nih.gov/" target="_blank">BD2K</a></li>
-						</ul>
-					</li>
-					<li >
-						<a href="#/contact">Contact <span class="sr-only">(current)</span></a>
-					</li>
-				</ul>
-			</div>-->

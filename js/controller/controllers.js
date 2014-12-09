@@ -1,88 +1,13 @@
 var controllersMod = angular.module("controllersMod", [
 	"apidocsMod",
 	"communityMod",
+	"contactsMod",
 	"datasetsassaysMod",
 	"educationMod",
 	"newsMod",
 	"publicationsMod",
 	"toolsappsMod"
 ]);
-
-var txtCtrl = function(processor, filename) {
-	return function($scope, $http) {
-		$http.get("data/" + filename + ".txt").success(function(data) {
-			$scope.entries = processor(data);
-		});
-	}
-}
-
-var processLinks = function(data) {
-	var result = [],
-		lines = data.split("\n");
-	lines.forEach(function(line, i) {
-		var line = line.split("\t"),
-			title = line[0],
-			url = line[1]
-		result.push({
-			title: title,
-			url: url
-		});
-	});
-	return result;
-}
-
-var processLinksImg = function(data) {
-	var result = [],
-		lines = data.split("\n");
-	lines.forEach(function(line, i) {
-		var line = line.split("\t"),
-			title = line[0],
-			url = line[1],
-			image  = line[2];
-		result.push({
-			title: title,
-			url: url,
-			image: image
-		});
-	});
-	return result;
-}
-
-var processPubs = function(data) {
-	var pubs = [],
-		lines = data.split("\n");
-	lines.forEach(function(line, i) {
-		var line = line.split("\t"),
-			title = line[0],
-			extra = line[1],
-			year = line[2]
-			url  = line[3];
-		pubs.push({
-			title: title,
-			extra: extra,
-			year: year,
-			url: url
-		});
-	});
-	return pubs;
-}
-
-var processContacts = function(data) {
-	var entries = [];
-	data.split("\n").forEach(function(e,i) {
-		if (e) {
-			var entry = {}
-			var splits = e.split("\t");
-			entry.name = splits[0];
-			entry.affiliation = splits[1];
-			entry.email = splits[2];
-			entries.push(entry);
-		}
-	});
-	return _.sortBy(entries,function(entry) {
-		return entry.name;
-	});
-}
 
 controllersMod.controller("apidocsCtrl", ["$scope", "apidocs", function($scope, apidocs) {
 	$scope.entries = apidocs.links;
@@ -112,17 +37,11 @@ controllersMod.controller("publicationsCtrl", ["$scope", "publications", functio
 	$scope.entries = publications.links;
 }]);
 
-
-controllersMod.controller("contactCtrl", ["$scope", "$http",
-	function($scope, $http) {
-		$http.get("data/contact/data-integration.txt").success(function(data) {
-			$scope.dataIntegration = processContacts(data);
-		});
-		$http.get("data/contact/web-development.txt").success(function(data) {
-			$scope.webDevelopment = processContacts(data);
-		});
-	}
-]);
+controllersMod.controller("contactCtrl", ["$scope", "contacts", function($scope, contacts) {
+	$scope.pis = contacts.pis;
+	$scope.webDevelopment = contacts.webDevelopment;
+	$scope.dataIntegration = contacts.dataIntegration;
+}]);
 
 controllersMod.controller("emailCtrl", ["$scope", "$http","$timeout",
 	function($scope, $http, $timeout) {

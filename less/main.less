@@ -25,6 +25,10 @@ body {
 }
 a {
 	color: @color-googleblue;
+	&:hover {
+		color: @color-navyblue;
+		text-decoration: none;
+	}
 }
 #content-wrapper {
 	min-height: 100%;
@@ -60,7 +64,9 @@ a {
 					color: @color-googleblue;
 				}
 				#lincs-subtitle {
-					color: @color-googleblue;
+					color: @color-darkgray;
+					position: relative;
+					top: 10px;
 				}
 			}
 		}
@@ -77,6 +83,13 @@ a {
 	}
 	.navbar-collapse {
 		float: right;
+		font-size: 16px;
+		font-weight: bold;
+		position: relative;
+		top: 20px;
+		a {
+			color: @color-navyblue;
+		}
 	}
 }
 #footer {
@@ -107,10 +120,10 @@ a {
 }
 .col-md-4 {
 	h5 {
-		background: @color-darkgray;
+		background: @color-navyblue;
 		color: @color-white;
 		font-family: @font-fam-base;
-		font-size: 14px;
+		font-size: 16px;
 		margin-bottom: 15px;
 		padding: 7px 0;
 		text-align: center;
@@ -228,6 +241,10 @@ a {
 		background-color: rgba(255, 255, 255, 0.8);
 		left: 3em;
 	}
+	#example {
+		color: @color-lightcharcoal;
+		font-size: 12px;
+	}
 }
 #summerresearch {
 	img {
@@ -312,6 +329,18 @@ a {
 		}
 	}
 }
-.urgent {
+a.important,
+.important {
 	color: @color-red;
+	a {
+		color: @color-red;
+		&:hover {
+			color: @color-googleblue;
+		}	
+	}
+}
+/* Override Bootstrap default */
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
 }
