@@ -21,14 +21,14 @@
 			<h4><a href="#/publications">Publications &raquo;</a></h4>
 			<ul class="content">
 				<li ng-repeat="link in entries | limitTo:3">
-					<em><a href="{{link.url}}" target="_blank">{{link.title}}</a></em><span>. {{link.extra}}. {{link.year}}.</span>
+					<em><a href="{{link.url}}" target="_blank">{{link.title}}</a></em><span>. {{link.citation}}. {{link.year}}.</span>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div name="explore" class="col-md-4 col-sm-4">
 		<h5>EXPLORE</h5>
-		<div class="category" id="dataassays" ng-controller="dataassaysCtrl">
+		<div class="category" id="dataassays" ng-controller="datasetsassaysCtrl">
 			<h4><a href="#/dataassays">Datasets & Assays &raquo;</a></h4>
 			<ul class="content">
 				<li ng-repeat="link in entries">
