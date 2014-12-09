@@ -1,4 +1,4 @@
-var express = require('express');
+var express = require('./lib/node_modules/express');
 
 var app = express();
 app.use('/static', express.static(__dirname + '/static'));
