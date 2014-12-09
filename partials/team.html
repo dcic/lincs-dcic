@@ -6,33 +6,51 @@
 			<div>
 				<img src="images/portraits/{{entry.portrait}}" class="contact-pi-logo">
 				<div class="contact-pi-desc">
-					<div>{{entry.name}}</div>
+					<div><a href="{{entry.website}}" target="_blank">{{entry.name}}</a></div>
 					<div>{{entry.position}}</div>
-					<div>{{entry.email}}</div>
+					<div><u>{{entry.email}}</u></div>
 				</div>
-			</div>
-		</div>		
-	</div>
-	<h3 class="contact-header">Data Integration</h3>
-	<div class="row">
-		<div ng-repeat="entry in dataIntegration" class="col-md-4 col-sm-4 contact-researchers">
-			<div>
-				{{entry.name}}, {{entry.affiliation}}
-			</div>
-			<div>
-				<a href="mailto:{{entry.email}}">{{entry.email}}</a>
 			</div>
 		</div>
 	</div>
-	<h3 class="contact-header">Web Development</h3>
 	<div class="row">
+		<h3 class="contact-header">Data integration (DSR)</h3>
+		<div ng-repeat="entry in dataIntegration" class="col-md-4 col-sm-4 contact-researchers">
+			<div><strong>{{entry.name}}</strong></div>
+			<div>{{entry.affiliation}}</div>
+			<div><u>{{entry.email}}</u></div>
+		</div>
+	</div>
+	<div class="row">
+		<h3 class="contact-header">Web development (IKE)</h3>
 		<div ng-repeat="entry in webDevelopment" class="col-md-4 col-sm-4 contact-researchers">
-			<div>
-				{{entry.name}}, {{entry.affiliation}}
-			</div>
-			<div>
-				<a href="mailto:{{entry.email}}">{{entry.email}}</a>
-			</div>
+			<div><strong>{{entry.name}}</strong></div>
+			<div>{{entry.affiliation}}</div>
+			<div><u>{{entry.email}}</u></div>
+		</div>
+	</div>
+	<div class="row">
+		<h3 class="contact-header">External DSR projects</h3>
+		<div ng-repeat="entry in dataScience" class="col-md-4 col-sm-4 contact-researchers">
+			<div><strong>{{entry.name}}</strong></div>
+			<div>{{entry.affiliation}}</div>
+			<div><u>{{entry.email}}</u></div>
+		</div>
+	</div>
+	<div class="row">
+		<h3 class="contact-header">Education and Outreach (CTO)</h3>
+		<div ng-repeat="entry in outreach" class="col-md-4 col-sm-4 contact-researchers">
+			<div><strong>{{entry.name}}</strong></div>
+			<div>{{entry.affiliation}}</div>
+			<div><u>{{entry.email}}</u></div>
+		</div>
+	</div>
+	<div class="row">	
+		<h3 class="contact-header">NIH Program Officers</h3>
+		<div ng-repeat="entry in nih" class="col-md-4 col-sm-4 contact-researchers">
+			<div><strong>{{entry.name}}</strong></div>
+			<div>{{entry.affiliation}}</div>
+			<div><u>{{entry.email}}</u></div>
 		</div>
 	</div>
 </div>

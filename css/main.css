@@ -206,30 +206,28 @@ a:hover {
 }
 /* Team page */
 #team .contact-institution-logo-row {
-  margin-bottom: 1em;
+  margin-bottom: 10px;
 }
 #team .contact-institution-logo {
   height: 80px;
   display: block;
-  margin-bottom: 1.5em;
+  margin-bottom: 15px;
 }
 #team .contact-pi-logo {
   height: 80px;
 }
 #team .contact-pi-desc {
-  margin-left: 1em;
-  font-size: 0.9em;
+  margin-left: 10px;
   vertical-align: middle;
   display: inline-block;
-  max-width: 50%;
 }
 #team .contact-header {
   border-bottom: 1px solid #888888;
   /*text-transform: uppercase;*/
-  margin-top: 1.5em;
+  margin-top: 15px;
 }
 #team .contact-researchers {
-  margin-bottom: 1em;
+  margin-bottom: 10px;
 }
 @media (max-width: 9999px) {
   #brand {

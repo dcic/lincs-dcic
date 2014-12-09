@@ -40,14 +40,11 @@ mod.controller("publicationsCtrl", ["$scope", "publications", function($scope, p
 	$scope.entries = publications.links;
 }]);
 
-mod.controller("teamCtrl", ["$scope", "team", function($scope, contacts) {
-	$scope.pis = contacts.pis;
-	$scope.webDevelopment = contacts.webDevelopment;
-	$scope.dataIntegration = contacts.dataIntegration;
-}]);
-
-mod.controller("contactCtrl", ["$scope", "contacts", function($scope, contacts) {
-	$scope.pis = contacts.pis;
-	$scope.webDevelopment = contacts.webDevelopment;
-	$scope.dataIntegration = contacts.dataIntegration;
+mod.controller("teamCtrl", ["$scope", "team", function($scope, team) {
+	$scope.pis = team.pis;
+	$scope.webDevelopment = team.webDevelopment;
+	$scope.dataIntegration = team.dataIntegration;
+	$scope.dataScience = team.dataScience;
+	$scope.outreach = team.outreach;
+	$scope.nih = team.nih;
 }]);
