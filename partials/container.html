@@ -10,10 +10,10 @@
 			<h4><a href="#/education">Education &raquo;</a></h4>
 			<ul class="content">
 				<li ng-repeat-start="link in entries" ng-if="$first">
-					<a href="{{link.url}}" target="_blank"><em class="important">Now accepting applications: </em>{{link.title}}</a>
+					<a href="{{link.url}}" target="{{link.target}}"><em class="important">Now accepting applications: </em>{{link.title}}</a>
 				</li>
 				<li ng-repeat-end="link in entries" ng-if="!$first">
-					<a href="{{link.url}}" target="_blank">{{link.title}}</a>
+					<a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
 				</li>
 			</ul>
 		</div>
@@ -21,7 +21,7 @@
 			<h4><a href="#/publications">Publications &raquo;</a></h4>
 			<ul class="content">
 				<li ng-repeat="link in entries | limitTo:3">
-					<em><a href="{{link.url}}" target="_blank">{{link.title}}</a></em><span>. {{link.citation}}. {{link.year}}.</span>
+					<em><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></em><span>. {{link.citation}}. {{link.year}}.</span>
 				</li>
 			</ul>
 		</div>
@@ -32,10 +32,10 @@
 			<h4><a href="#/dataassays">Datasets & Assays &raquo;</a></h4>
 			<ul class="content">
 				<li ng-repeat-start="link in entries" ng-if="$first">
-					<em class="important"><a href="{{link.url}}" target="_blank">{{link.title}}</a></em>
+					<em class="important"><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></em>
 				</li>
 				<li ng-repeat-end="link in entries" ng-if="!$first">
-					<a href="{{link.url}}" target="_blank">{{link.title}}</a>
+					<a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
 				</li>
 			</ul>
 		</div>
@@ -43,8 +43,8 @@
 			<h4><a href="#/toolsapps">Tools & Apps &raquo;</a></h4>
 			<table class="content table">
 				<tr ng-repeat="link in entries | limitTo:4">
-					<td><a href="{{link.url}}" target="_blank"><img ng-src="images/app-logos/{{link.image}}" /></a></td>
-					<td><a href="{{link.url}}" target="_blank">{{link.title}}</a></td>
+					<td><a href="{{link.url}}" target="{{link.target}}"><img ng-src="images/app-logos/{{link.image}}" /></a></td>
+					<td><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></td>
 				</tr>
 			</table>
 		</div>
@@ -52,7 +52,7 @@
 			<h4><a href="#/apidocs" class="more">APIs & Documentation &raquo;</a></h4>
 			<ul class="content">
 				<li ng-repeat="link in entries">
-					<a href="{{link.url}}" target="_blank">{{link.title}}</a>
+					<a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
 				</li>
 			</ul>
 		</div>
@@ -63,8 +63,8 @@
 			<h4><a href="#/news">News &raquo;</a></h4>
 			<table class="content table">
 				<tr ng-repeat="link in entries | limitTo:2">
-					<td><a href="{{link.url}}" target="_blank"><img ng-src="images/news/{{link.image}}" /></a></td>
-					<td><strong>{{link.date}}: </strong><a href="{{link.url}}" target="_blank">{{link.title}}</a></td>
+					<td><a href="{{link.url}}" target="{{link.target}}"><img ng-src="images/news/{{link.image}}" /></a></td>
+					<td><strong>{{link.date}}: </strong><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></td>
 				</tr>
 			</table>
 		</div>
