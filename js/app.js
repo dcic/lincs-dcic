@@ -6,62 +6,62 @@ var mod = angular.module("lincsDcic", [
 mod.config(["$routeProvider", function($routeProvider) {
 	$routeProvider.
 		when("/", {
-			templateUrl: "partials/container.html"
+			templateUrl: "view/container.html"
 		}).
 		
 		/* Main categories */
 		when("/news", {
-			templateUrl: "partials/news.html"
+			templateUrl: "view/page/news.html"
 		}).
 		when("/introduction", {
-			templateUrl: "partials/introduction.html"
+			templateUrl: "view/page/introduction.html"
 		}).
 
 		/* Education */
 		when("/education", {
-			templateUrl: "partials/education.html"
+			templateUrl: "view/page/education.html"
 		}).
 		when("/education/summerresearch", {
-			templateUrl: "partials/summerresearch.html"
+			templateUrl: "view/page/summerresearch.html"
 		}).
 		when("/education/phd", {
-			templateUrl: "partials/phd.html"
+			templateUrl: "view/page/phd.html"
 		}).
 		when("/education/sotoutreach", {
-			templateUrl: "partials/sotoutreach.html"
+			templateUrl: "view/page/sotoutreach.html"
 		}).
 
 		when("/publications", {
-			templateUrl: "partials/publications.html"
+			templateUrl: "view/page/publications.html"
 		}).
 		when("/dataassays", {
-			templateUrl: "partials/dataassays.html"
+			templateUrl: "view/page/dataassays.html"
 		}).
 		when("/toolsapps", {
-			templateUrl: "partials/toolsapps.html"
+			templateUrl: "view/page/toolsapps.html"
 		}).
-		when("/apidocs", {
-			templateUrl: "partials/apidocs.html"
+		when("/apisdocs", {
+			templateUrl: "view/page/apisdocs.html"
 		}).
 
 		/* Extras */
 		when("/about", {
-			templateUrl: "partials/about.html",
+			templateUrl: "view/page/about.html",
 		}).
 		when("/contact", {
-			templateUrl: "partials/contact.html"
+			templateUrl: "view/page/contact.html"
 		}).
 		when("/team", {
-			templateUrl: "partials/team.html"
+			templateUrl: "view/page/team.html"
 		}).
 		when("/jobs", {
-			templateUrl: "partials/jobs.html"
+			templateUrl: "view/page/jobs.html"
 		}).
 		when("/analyze", {
-			templateUrl: "partials/analyze.html"
+			templateUrl: "view/page/analyze.html"
 		}).
 		when("/callfordsrp", {
-			templateUrl: "partials/callfordsrp.html"
+			templateUrl: "view/page/callfordsrp.html"
 		}).
 
 		/* Default */

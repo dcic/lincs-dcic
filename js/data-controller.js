@@ -1,6 +1,6 @@
 var mod = angular.module("controllersMod", [
 	"analyzeMod",
-	"apidocsMod",
+	"apisdocsMod",
 	"communityMod",
 	"contactMod",
 	"datasetsassaysMod",
@@ -12,8 +12,8 @@ var mod = angular.module("controllersMod", [
 	"toolsappsMod"
 ]);
 
-mod.controller("apidocsCtrl", ["$scope", "apidocs", function($scope, apidocs) {
-	$scope.entries = apidocs.links;
+mod.controller("apisdocsCtrl", ["$scope", "apisdocs", function($scope, apisdocs) {
+	$scope.entries = apisdocs.links;
 }]);
 
 mod.controller("communityCtrl", ["$scope", "community", function($scope, community) {

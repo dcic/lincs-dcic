@@ -1,0 +1,9 @@
+<div class="category" id="news" ng-controller="newsCtrl">
+	<h4><a href="#/news">News &raquo;</a></h4>
+	<table class="content table">
+		<tr ng-repeat="link in entries | limitTo:2">
+			<td><a href="{{link.url}}" target="{{link.target}}"><img ng-src="images/news/{{link.image}}" /></a></td>
+			<td><strong>{{link.date}}: </strong><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></td>
+		</tr>
+	</table>
+</div>

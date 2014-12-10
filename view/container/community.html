@@ -1,0 +1,38 @@
+<div class="category" id="community">
+	<h4>Community</h4>
+	<div class='content'>
+		<div ng-controller="communityCtrl" >
+			<ul>
+				<li ng-repeat="link in entries">
+					<a href="{{link.url}}">{{link.title}}</a>
+				</li>
+			</ul>
+		</div>
+			<a class="twitter-timeline" href="https://twitter.com/BD2KLINCSDCIC" data-widget-id="540278089990029312">Tweets by @BD2KLINCSDCIC</a>
+		<div ng-controller="emailCtrl">
+			<div class="submitted" ng-show="submitted">Submitted!</div>
+			<div>Join our mailing list:</div>
+			<input placeholder="your email address" type="email" ng-model="email"><button ng-click="submit()">Submit</button>
+		</div>
+		<div id="social">
+			<span>Follow us on: </span>
+			<span id="social-icons">
+				<a href="https://twitter.com/BD2KLINCSDCIC" target="_blank" class="btn btn-social-icon btn-sm btn-facebook">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a href="https://twitter.com/BD2KLINCSDCIC" target="_blank" class="btn btn-social-icon btn-sm btn-twitter">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<a href="https://www.linkedin.com/groups/BD2K-LINCS-DCIC-8215448?home=&gid=8215448" target="_blank" class="btn btn-social-icon btn-sm btn-linkedin">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a href="http://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg" target="_blank" class="btn btn-social-icon btn-sm btn-youtube">
+					<i class="fa fa-youtube-play"></i>
+				</a>
+				<a href="https://twitter.com/BD2KLINCSDCIC" target="_blank" class="btn research-gate">
+					<img src="images/button-researchgate.png">
+				</a>
+			</span>
+		</div>
+	</div>
+</div>

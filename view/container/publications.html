@@ -1,0 +1,8 @@
+<div class="category" ng-controller="publicationsCtrl">
+	<h4><a href="#/publications">Publications &raquo;</a></h4>
+	<ul class="content">
+		<li ng-repeat="link in entries | limitTo:3">
+			<em><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></em><span>. {{link.citation}}. {{link.year}}.</span>
+		</li>
+	</ul>
+</div>

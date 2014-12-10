@@ -1,6 +1,6 @@
-var mod = angular.module("apidocsMod", []);
+var mod = angular.module("apisdocsMod", []);
 
-mod.factory("apidocs", function() {
+mod.factory("apisdocs", function() {
 	return {
 		links: [
 			{
