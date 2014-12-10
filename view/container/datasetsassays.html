@@ -2,10 +2,10 @@
 	<h4><a href="#/dataassays">Datasets & Assays &raquo;</a></h4>
 	<ul class="content">
 		<li ng-repeat-start="link in entries" ng-if="$first">
-			<em class="important"><a href="{{link.url}}" target="_blank">{{link.title}}</a></em>
+			<em class="important"><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></em>
 		</li>
 		<li ng-repeat-end="link in entries" ng-if="!$first">
-			<a href="{{link.url}}" target="_blank">{{link.title}}</a>
+			<a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
 		</li>
 	</ul>
 </div>
