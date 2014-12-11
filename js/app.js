@@ -9,28 +9,13 @@ mod.config(["$routeProvider", function($routeProvider) {
 			templateUrl: "view/container.html"
 		}).
 		
-		/* Main categories */
-		when("/news", {
-			templateUrl: "view/page/news.html"
-		}).
+		/* Main categorie pages */
 		when("/introduction", {
 			templateUrl: "view/page/introduction.html"
 		}).
-
-		/* Education */
 		when("/education", {
 			templateUrl: "view/page/education.html"
 		}).
-		when("/education/summerresearch", {
-			templateUrl: "view/page/summerresearch.html"
-		}).
-		when("/education/phd", {
-			templateUrl: "view/page/phd.html"
-		}).
-		when("/education/sotoutreach", {
-			templateUrl: "view/page/sotoutreach.html"
-		}).
-
 		when("/publications", {
 			templateUrl: "view/page/publications.html"
 		}).
@@ -43,8 +28,20 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/apisdocs", {
 			templateUrl: "view/page/apisdocs.html"
 		}).
+		when("/news", {
+			templateUrl: "view/page/news.html"
+		}).
 
-		/* Extras */
+		/* Extra pages */
+		when("/education/summerresearch", {
+			templateUrl: "view/page/summerresearch.html"
+		}).
+		when("/education/phd", {
+			templateUrl: "view/page/phd.html"
+		}).
+		when("/education/sotoutreach", {
+			templateUrl: "view/page/sotoutreach.html"
+		}).
 		when("/about", {
 			templateUrl: "view/page/about.html",
 		}).
@@ -62,6 +59,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		when("/callfordsrp", {
 			templateUrl: "view/page/callfordsrp.html"
+		}).
+		when("/datacenters", {
+			templateUrl: "view/page/datacenters.html"
 		}).
 
 		/* Default */

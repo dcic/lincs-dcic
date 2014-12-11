@@ -5,7 +5,12 @@ mod.factory("datasetsassays", function() {
 		links: [
 			{
 				title: "Submit your gene signatures for analysis",
-				url: "/#/analyze",
+				url: "#/analyze",
+				target: "_self"
+			},
+			{
+				title: "Data and Signature Generating Centers",
+				url: "#/datacenters",
 				target: "_self"
 			},
 			{

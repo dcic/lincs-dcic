@@ -1,0 +1,21 @@
+<div id="datacenters" class="row" ng-controller="datacentersCtrl">
+	<div class="col-md-8">
+		<h3>Data and Signature Generating Centers</h3>
+		<p>
+			The <a href="http://www.lincsproject.org/centers/data-and-signature-generating-centers/">LINCS Data and Signature Generating Centers</a> are part of a large-scale effort to collect, analyze, and systematize high-throughput data in order to identify mechanism-based associations between the effects of various biological perturbations. Perturbations include siRNAs, small bioactive molecules, and environmental manipulations.
+		</p>
+		<p>
+			These production efforts, in addition to enhancing existing LINCS resources, increase the range of cell types and assays previously studied, improve multidimensional data integration, and create new tools needed by biomedical scientists.
+		</p>
+		<p>
+			The resuting knowledge-base of signatures is a long-lasting resource that is used by the scientific community to inform the study of functional relationships among the responding cellular components.
+		</p>
+	</div>
+	<div class="col-md-4 col-normalize top-buffer">
+		<ul class="content table">
+			<li ng-repeat="link in entries">
+				<a href="{{link.url}}" target="_blank">{{link.title}}</a>
+			</li>
+		</ul>
+	</div>
+</div>

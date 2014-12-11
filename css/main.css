@@ -283,6 +283,9 @@ a:hover {
 .spn-link:hover {
   color: #07435b;
 }
+.top-buffer {
+  margin-top: 20px;
+}
 a.important,
 .important {
   color: #ff0000;

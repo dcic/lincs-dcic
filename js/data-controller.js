@@ -3,6 +3,7 @@ var mod = angular.module("controllersMod", [
 	"apisdocsMod",
 	"communityMod",
 	"contactMod",
+	"datacentersMod",
 	"datasetsassaysMod",
 	"educationMod",
 	"emailMod",
@@ -47,4 +48,8 @@ mod.controller("teamCtrl", ["$scope", "team", function($scope, team) {
 	$scope.dataScience = team.dataScience;
 	$scope.outreach = team.outreach;
 	$scope.nih = team.nih;
+}]);
+
+mod.controller("datacentersCtrl", ["$scope", "datacenters", function($scope, datacenters) {
+	$scope.entries = datacenters.links;
 }]);
