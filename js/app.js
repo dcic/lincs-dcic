@@ -63,6 +63,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/datacenters", {
 			templateUrl: "view/page/datacenters.html"
 		}).
+		when("/mooc", {
+			templateUrl: "view/page/mooc.html"
+		}).
 
 		/* Default */
 		otherwise({

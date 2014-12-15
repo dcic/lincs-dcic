@@ -10,8 +10,8 @@ mod.factory("education", function() {
 			},
 			{
 				title: "LINCS MOOC on Coursera: Big Data Science with the BD2K-LINCS Data Coordination and Integration Center",
-				url: "",
-				target: "_blank"
+				url: "/#/mooc",
+				target: "_self"
 			},
 			{
 				title: "Network Analysis in Systems Biology on Coursera",

@@ -9,7 +9,7 @@ mod.factory("community", function() {
 				target: "_blank"
 			},
 			{
-				title: "Turning Big Data to Knowledge (BD2K): A discussion of the NIH BD2K initiative and how it might advance the practice of Toxicology and Risk Assessment",
+				title: "Satellite BD2K-LINCS meeting at the Society of Toxicology (SOT) annual meeting",
 				url: "/#/education/sotoutreach",
 				target: "_blank"
 			}
