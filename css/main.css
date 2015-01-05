@@ -11,9 +11,6 @@ a:hover {
   color: #07435b;
   text-decoration: none;
 }
-h4 {
-    padding-top: 15px;
-}
 #content-wrapper {
   min-height: 100%;
   height: auto;
@@ -22,6 +19,9 @@ h4 {
   /* Pad bottom by footer height */
   padding: 0 0 160px;
 }
+
+/* Header
+ * ------ */
 #header-wrapper {
   background: #f1f1f1;
   border-bottom: 1px solid #ccc;
@@ -74,6 +74,35 @@ h4 {
 #header-wrapper .navbar-collapse a {
   color: #07435b;
 }
+
+/* Carousel
+ * -------- */
+#carousel {
+    width: 100%;
+    height: 150px;
+    padding-bottom: 6px;
+}
+/* Images should be cut exactly; this should not have to be done. But just in case. */
+#carousel #carousel-img-link,
+#carousel img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.carousel-btn {
+    background: #fff;
+    border: 1px solid gray;
+    bottom: 10px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+.carousel-highlight {
+    background: #F08989;
+}
+
+/* Footer
+ * ------ */
 #footer {
   background: #222222;
   border-top: 1px solid #222222;
@@ -305,4 +334,7 @@ a.important a:hover,
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
+}
+.underline {
+    text-decoration: underline;
 }
