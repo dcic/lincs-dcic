@@ -19,7 +19,7 @@ mod.factory("datacenters", function() {
 				target: "_blank"
 			},
 			{
-				title: "Oregon Health & Science University",
+				title: "Oregon Health & Science University; Center for Extrinsic Perturbations of Cell Physiology",
 				url: "http://www.lincsproject.org/centers/data-and-signature-generating-centers/oregon-u/",
 				target: "_blank"
 			},
