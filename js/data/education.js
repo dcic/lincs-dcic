@@ -12,7 +12,7 @@ mod.factory("education", function() {
 			{
 				title: "LINCS MOOC on Coursera: Big Data Science with the BD2K-LINCS Data Coordination and Integration Center",
 				url: "https://www.coursera.org/course/bd2klincs",
-	            highlight: "Accepting applications: ",
+	            highlight: "Open for sign-up: ",
 				target: "_blank"
 			},
 			{

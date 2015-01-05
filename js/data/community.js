@@ -6,7 +6,7 @@ mod.factory("community", function() {
 			{
 				title: "Open Call for Data Science Research Projects",
 				url: "#/eDSR",
-	            highlight: 'Accepting applications: ',
+	            highlight: 'Now posted: ',
 				target: "_self"
 			},
 			{
@@ -18,7 +18,7 @@ mod.factory("community", function() {
 			{
 				title: "Crowdsourcing Portal",
 				url: "http://www.maayanlab.net/crowdsourcing/",
-	            highlight: '',
+	            highlight: "Open for submissions: ",
 				target: "_blank"
 			}
 		]
