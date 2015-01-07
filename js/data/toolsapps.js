@@ -35,7 +35,7 @@ mod.factory("toolsapps", function() {
 			},
             {
 				title: "GEO2Enrichr",
-				url: "http://amp.pharm.mssm.edu/g2e/",
+				url: "http://maayanlab.net/g2e",
 				target: "_blank",
 				image: "geo2enrichr.png"
             },
