@@ -33,6 +33,12 @@ mod.factory("toolsapps", function() {
 				target: "_blank",
 				image: "enrichr.png"
 			},
+            {
+				title: "GEO2Enrichr",
+				url: "http://amp.pharm.mssm.edu/g2e/",
+				target: "_blank",
+				image: "geo2enrichr.png"
+            },
 			{
 				title: "lincscloud web apps",
 				url: "http://apps.lincscloud.org/",
