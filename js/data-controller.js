@@ -11,7 +11,8 @@ var mod = angular.module("controllersMod", [
 	"newsMod",
 	"publicationsMod",
 	"teamMod",
-	"toolsappsMod"
+	"toolsappsMod",
+	"subnavMod"
 ]);
 
 mod.controller("apisdocsCtrl", ["$scope", "apisdocs", function($scope, apisdocs) {

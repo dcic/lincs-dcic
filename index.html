@@ -39,13 +39,14 @@
 </head>
 
 <body>
-	<div id="content-wrapper">
+    <!-- This div is important for formatting the footer correctly. -->
+	<div id="for-footer-wrapper">
 		<div id="header-wrapper">
-			<div class="container">
+			<div id="header" class="container">
 				<div class="row navbar navbar-default">
 					<div id="brand-wrapper" class="navbar-header col-md-8 col-sm-8">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a id="brand" href="#/">
+						<a id="logo" href="#/">
 							<img id="lincs-logo" alt="BD2K-LINCS DCIC" src="images/org-logos/lincs-dcic-logo.png">
 							<div id="lincs-title">
 								<span id="lincs-subtitle">BD2K-LINCS</span><br>
@@ -59,30 +60,42 @@
 							<span class="icon-bar"></span>
 						</button>
 					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-link collapse navbar-collapse">
-							<li class="dropdown">
-								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="#/introduction">DCIC</a></li>
-									<li><a href="http://www.lincsproject.org/" target="_blank">LINCS</a></li>
-									<li><a href="http://bd2k.nih.gov/" target="_blank">BD2K</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#/team">Team</a>
-							</li>
-							<li>
-								<li><a href="#/contact">Contact</a></li>
-							</li>
-						</ul>
-					</div>
+                    <div id="navbar-collapse-wrapper">
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-link collapse navbar-collapse">
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#/introduction">DCIC</a></li>
+                                        <li><a href="http://www.lincsproject.org/" target="_blank">LINCS</a></li>
+                                        <li><a href="http://bd2k.nih.gov/" target="_blank">BD2K</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#/team">Team</a>
+                                </li>
+                                <li>
+                                    <li><a href="#/contact">Contact</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="subnav" ng-controller="subnavCtrl">
+                        <ul class="list-inline center-block text-center">
+                            <li ng-repeat="cat in categories" ng-class="{last: $last}">
+                                <a href="{{cat.url}}">{{cat.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
 				</div>
 			</div>
+        <!-- End of content-wrapper -->
 		</div>
-		<!-- container injected from main.html -->
-		<div class="container" ng-view></div>
-	<!-- end of wrapper - important for footer! -->
+	
+        <!-- container injected from main.html -->
+		<div id="content" class="container" ng-view></div>
+	
+    <!-- end of wrapper - important for footer! -->
 	</div>
 
 	<div id="footer" class="text-center">
@@ -138,6 +151,7 @@
 	<script type="text/javascript" src="js/carousel.js"></script>
 	<script type="text/javascript" src="js/email.js"></script>
 	<script type="text/javascript" src="js/extra.js"></script>
+	<script type="text/javascript" src="js/subnav.js"></script>
 
 	<!-- Routes -->
 	<script type="text/javascript" src="js/app.js"></script>

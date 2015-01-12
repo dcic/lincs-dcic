@@ -4,6 +4,9 @@ html,
 body {
   height: 100%;
 }
+body {
+  /*background: @color-lightgray;*/
+}
 a {
   color: #4285f4;
 }
@@ -11,45 +14,48 @@ a:hover {
   color: #07435b;
   text-decoration: none;
 }
-#content-wrapper {
+#for-footer-wrapper {
   min-height: 100%;
   height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -160px;
+  /* Negative indent footer by its height; -20 for the footer's padding. */
+  margin: 0 auto -180px;
   /* Pad bottom by footer height */
   padding: 0 0 160px;
 }
-
-/* Header
- * ------ */
 #header-wrapper {
-  background: #f1f1f1;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /*.navbar-collapse {
+		float: right;
+		position: relative;
+		top: -26px;
+		a {
+			color: @color-navyblue;
+		}
+	}*/
 }
-#header-wrapper #brand-wrapper #brand {
+#header-wrapper #brand-wrapper {
+  width: 100%;
+}
+#header-wrapper #brand-wrapper #logo {
   color: #07435b;
   display: block;
   padding: 5px;
 }
-#header-wrapper #brand-wrapper #brand #lincs-logo,
-#header-wrapper #brand-wrapper #brand #lincs-title {
+#header-wrapper #brand-wrapper #logo #lincs-logo,
+#header-wrapper #brand-wrapper #logo #lincs-title {
   float: left;
 }
-#header-wrapper #brand-wrapper #brand #lincs-logo {
+#header-wrapper #brand-wrapper #logo #lincs-logo {
   display: inline;
 }
-#header-wrapper #brand-wrapper #brand #lincs-title {
+#header-wrapper #brand-wrapper #logo #lincs-title {
   position: relative;
   top: 5px;
   font-family: 'Monda', sans-serif;
 }
-#header-wrapper #brand-wrapper #brand #lincs-title:hover {
+#header-wrapper #brand-wrapper #logo #lincs-title:hover {
   color: #4285f4;
 }
-#header-wrapper #brand-wrapper #brand #lincs-title #lincs-subtitle {
+#header-wrapper #brand-wrapper #logo #lincs-title #lincs-subtitle {
   color: #888888;
   position: relative;
   top: 10px;
@@ -64,45 +70,48 @@ a:hover {
 #header-wrapper #brand-wrapper .brand-link a:hover {
   color: #c4651f;
 }
-#header-wrapper .navbar-collapse {
-  float: right;
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-  top: 20px;
+#header-wrapper #navbar-collapse-wrapper {
+  position: absolute;
+  right: 0;
+  top: 40px;
 }
-#header-wrapper .navbar-collapse a {
+#header-wrapper #navbar-collapse-wrapper .navbar-collapse a {
   color: #07435b;
 }
-
-/* Carousel
- * -------- */
-#carousel {
-    width: 100%;
-    height: 150px;
-    padding-bottom: 6px;
+#header-wrapper #header {
+  background: #ffffff;
+  padding-top: 10px;
 }
-/* Images should be cut exactly; this should not have to be done. But just in case. */
-#carousel #carousel-img-link,
-#carousel img {
-    display: block;
-    height: 100%;
-    width: 100%;
+#header-wrapper #subnav {
+  margin: 0 15px;
+  border-top: 3px solid #dddddd;
+  display: inline-block;
+  padding-bottom: 0;
+  width: 100%;
 }
-.carousel-btn {
-    background: #fff;
-    border: 1px solid gray;
-    bottom: 10px;
-    position: absolute;
-    height: 20px;
-    width: 20px;
+#header-wrapper #subnav a {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
 }
-.carousel-highlight {
-    background: #F08989;
+#header-wrapper #subnav a:hover {
+  text-decoration: none;
 }
-
-/* Footer
- * ------ */
+#header-wrapper #subnav li {
+  border-right: 1px solid #dddddd;
+  display: table-cell;
+  width: 1%;
+}
+#header-wrapper #subnav li:hover {
+  background: #dddddd;
+}
+#header-wrapper #subnav li.last {
+  border-right: none;
+}
+#content {
+  background: #ffffff;
+  height: 100%;
+}
 #footer {
   background: #222222;
   border-top: 1px solid #222222;
@@ -184,6 +193,30 @@ a:hover {
 .category#news img {
   max-width: 50px;
 }
+/* Carousel */
+#carousel {
+  width: 100%;
+  height: 150px;
+  padding-bottom: 6px;
+  /* Images should be cut exactly; this should not have to be done. But just in case. */
+}
+#carousel #carousel-img-link,
+#carousel img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+#carousel .carousel-btn {
+  background: #fff;
+  border: 1px solid gray;
+  bottom: 10px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+#carousel .carousel-highlight {
+  background: #F08989;
+}
 /* Don't place under `categories` because these also stylize standalone pages */
 #news img {
   max-width: 100px;
@@ -262,13 +295,13 @@ a:hover {
   margin-bottom: 10px;
 }
 @media (max-width: 9999px) {
-  #brand {
+  #logo {
     height: 90px;
   }
-  #brand #lincs-logo {
+  #logo #lincs-logo {
     width: 78px;
   }
-  #brand #lincs-title {
+  #logo #lincs-title {
     font-size: 24px;
     padding-left: 10px;
     position: relative;
@@ -276,16 +309,16 @@ a:hover {
   }
 }
 @media (max-width: 980px) {
-  #brand {
+  #logo {
     width: 560px;
   }
 }
 @media (max-width: 760px) {
-  #brand {
+  #logo {
     padding-bottom: 2px;
     width: 450px;
   }
-  #brand #lincs-title {
+  #logo #lincs-title {
     font-size: 18px;
     padding-left: 10px;
     position: relative;
@@ -293,16 +326,16 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  #brand {
+  #logo {
     padding-bottom: 2px;
     width: 335px;
   }
-  #brand #lincs-logo {
+  #logo #lincs-logo {
     position: relative;
     top: 12px;
     width: 52px;
   }
-  #brand #lincs-title {
+  #logo #lincs-title {
     font-size: 13px;
     position: relative;
     top: 20px;
@@ -335,6 +368,6 @@ a.important a:hover,
   background-color: transparent;
   border-color: transparent;
 }
-.underline {
-    text-decoration: underline;
+.navbar {
+  margin-bottom: 5px;
 }
