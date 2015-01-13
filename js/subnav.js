@@ -29,10 +29,6 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
         {
             title: "Events",
             url: "/#/events"
-        },
-        {
-            title: "Community",
-            url: "/#/community"
         }
     ];
 

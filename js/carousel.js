@@ -1,7 +1,6 @@
 var mod = angular.module("carouselMod", []);
 
 mod.controller("carouselCtrl", ["$scope", "$http", "$element", function($scope, $http, $element) {
-
     /* Convert to real jQuery object, not AngularJS's pseudo-jQuery object. */
     $scope.$el = $($element);
     $scope.$img = $scope.$el.find('img').first();

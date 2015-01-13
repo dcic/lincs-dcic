@@ -1,17 +1,15 @@
 /* colors */
+/* Logo and contrast colors */
 /* fonts */
 html,
 body {
   height: 100%;
 }
-body {
-  background: #f1f1f1;
-}
 a {
-  color: #4285f4;
+  color: #599fb7;
 }
 a:hover {
-  color: #07435b;
+  color: #306f84;
   text-decoration: none;
 }
 #wrapper {
@@ -22,11 +20,8 @@ a:hover {
   /* Pad bottom by footer height */
   padding: 0 0 160px;
 }
-.center-container {
-  height: 100%;
-}
 #brand #logo {
-  color: #07435b;
+  color: #306f84;
   display: block;
   padding: 5px;
 }
@@ -38,30 +33,33 @@ a:hover {
   display: inline;
 }
 #brand #logo #lincs-title {
-  position: relative;
-  top: 5px;
-  font-family: 'Monda', sans-serif;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 #brand #logo #lincs-title:hover {
-  color: #4285f4;
+  color: #599fb7;
 }
-#brand #logo #lincs-title #lincs-subtitle {
-  color: #888888;
-  position: relative;
-  top: 10px;
+#brand #logo #lincs-subtitle-left {
+  padding-right: 10px;
+}
+#brand #logo #lincs-subtitle-right {
+  border-left: 1px solid #222222;
+  padding-left: 10px;
 }
 #header {
+  background: #ffffff;
   padding-top: 10px;
 }
 #subnav {
-  border-top: 3px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
+  background: #dddddd;
   padding-bottom: 0;
 }
 #subnav a {
   color: #000000;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   width: 100%;
 }
@@ -73,96 +71,8 @@ a:hover {
 #subnav ul {
   margin-bottom: 0;
 }
-#subnav li {
-  border-right: 1px solid #dddddd;
-}
 #subnav li:hover {
   background: #dddddd;
-}
-#subnav li.last {
-  border-right: none;
-}
-#content {
-  padding-top: 10px;
-}
-#footer {
-  background: #222222;
-  border-top: 1px solid #222222;
-  height: 160px;
-  padding: 20px 0 30px 0;
-}
-#footer a,
-#footer p {
-  color: #808080;
-}
-#footer a:hover {
-  color: #4285f4;
-  text-decoration: none;
-}
-#footer p {
-  padding-top: 20px;
-}
-#footer #org-logos {
-  padding-top: 20px;
-}
-#footer #org-logos img {
-  height: 30px;
-  margin: 0 5px;
-}
-.fill {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  background-color: #990000;
-  padding: 10px;
-  color: #efefef;
-}
-.table {
-  margin-bottom: 0;
-}
-.table td {
-  vertical-align: middle;
-}
-.category {
-  background: #ffffff;
-  box-shadow: 3px 3px 3px #c5c5c5;
-  border: 1px solid #ccc;
-  min-height: 100px;
-  margin-bottom: 10px;
-  padding: 10px;
-  position: relative;
-}
-.category .content {
-  font-size: 13px;
-}
-.category a {
-  color: #000000;
-}
-.category a:hover {
-  color: #4285f4;
-  cursor: pointer;
-  text-decoration: none;
-}
-.category ul {
-  padding: 0 0 0 15px;
-}
-.category h4 {
-  border-bottom: 1px solid #ebebeb;
-  color: #07435b;
-  /* In case the header doesn't have a link */
-  font-family: 'Monda', sans-serif;
-  font-weight: bold;
-  padding: 0 0 6px 0;
-  margin-top: 0;
-}
-.category h4 a {
-  color: #07435b;
-}
-.category#news .table > td {
-  text-align: center;
-}
-.category#news img {
-  max-width: 50px;
 }
 /* Carousel */
 #carousel {
@@ -188,81 +98,182 @@ a:hover {
 #carousel .carousel-highlight {
   background: #F08989;
 }
+#content-wrapper {
+  padding-top: 10px;
+}
+#footer {
+  background: #222222;
+  border-top: 1px solid #222222;
+  height: 160px;
+  padding: 20px 0 30px 0;
+}
+#footer a,
+#footer p {
+  color: #808080;
+}
+#footer a:hover {
+  color: #599fb7;
+  text-decoration: none;
+}
+#footer p {
+  padding-top: 20px;
+}
+#footer #org-logos {
+  padding-top: 20px;
+}
+#footer #org-logos img {
+  height: 30px;
+  margin: 0 5px;
+}
+.table {
+  margin-bottom: 0;
+}
+.table td {
+  vertical-align: middle;
+}
+.category-index {
+  background: #ffffff;
+  box-shadow: 3px 3px 3px #c5c5c5;
+  border: 1px solid #ccc;
+  min-height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
+}
+.category-index a {
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+.category-index a:hover {
+  color: #599fb7;
+  cursor: pointer;
+  text-decoration: none;
+}
+.category-index ul {
+  padding: 0 0 0 15px;
+}
+.category-index li {
+  list-style-type: none;
+}
+.category-index li:before {
+  content: '\F105';
+  /* FontAwesome char code inside the '' */
+  color: #222222;
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 1.2em;
+  /* same as padding-left set on li */
+  margin-left: -1.2em;
+  /* same as padding-left set on li */
+}
+.category-index h4 {
+  border-bottom: 1px solid #ebebeb;
+  color: #000000;
+  /* In case the header doesn't have a link */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: 0 0 6px 0;
+  margin-top: 0;
+}
+.category-index h4 a {
+  color: #000000;
+}
+.category-index .content {
+  font-size: 13px;
+}
+.category-index#toolsapps img {
+  max-width: 50px;
+}
+.category-index#news .table > td {
+  text-align: center;
+}
+.category-index#news img {
+  max-width: 50px;
+}
 /* Don't place under `categories` because these also stylize standalone pages */
-#news img {
+.category-page {
+  /* Team page */
+}
+.category-page a {
+  color: #000000;
+  font-weight: bold;
+}
+.category-page a:hover {
+  text-decoration: underline;
+}
+.category-page#news img {
   max-width: 100px;
 }
-#toolsapps img {
-  width: 25px;
+.category-page#toolsapps img {
+  width: 50px;
 }
-#community ahover {
+.category-page#community ahover {
   cursor: pointer;
 }
-#community #social {
+.category-page#community #social {
   bottom: 10px;
   left: 12px;
 }
-#community #social a {
+.category-page#community #social a {
   color: #ffffff;
 }
-#community #social img {
+.category-page#community #social img {
   width: 32px;
 }
-#community #social .research-gate {
+.category-page#community #social .research-gate {
   padding: 0;
 }
-#community #social #social-iconshover {
+.category-page#community #social #social-iconshover {
   cursor: pointer;
   opcacity: .8;
 }
-#analysis .col-md-4 textarea,
-#analysis .col-sm-4 textarea {
+.category-page#analysis .col-md-4 textarea,
+.category-page#analysis .col-sm-4 textarea {
   height: 200px;
   width: 100%;
 }
-#analysis .col-md-8 input,
-#analysis .col-sm-8 input,
-#analysis .col-md-8 textarea,
-#analysis .col-sm-8 textarea {
+.category-page#analysis .col-md-8 input,
+.category-page#analysis .col-sm-8 input,
+.category-page#analysis .col-md-8 textarea,
+.category-page#analysis .col-sm-8 textarea {
   margin-bottom: 10px;
   width: 100%;
 }
-#analysis .submitted {
+.category-page#analysis .submitted {
   position: absolute;
   padding: 1.6em;
   background-color: rgba(255, 255, 255, 0.8);
   left: 3em;
 }
-#analysis #example {
+.category-page#analysis #example {
   color: #808080;
   font-size: 13px;
 }
-#summerresearch img {
+.category-page#summerresearch img {
   width: 100%;
 }
-/* Team page */
-#team .contact-institution-logo-row {
+.category-page#team .contact-institution-logo-row {
   margin-bottom: 10px;
 }
-#team .contact-institution-logo {
+.category-page#team .contact-institution-logo {
   height: 80px;
   display: block;
   margin-bottom: 15px;
 }
-#team .contact-pi-logo {
+.category-page#team .contact-pi-logo {
   height: 80px;
 }
-#team .contact-pi-desc {
+.category-page#team .contact-pi-desc {
   margin-left: 10px;
   vertical-align: middle;
   display: inline-block;
 }
-#team .contact-header {
+.category-page#team .contact-header {
   border-bottom: 1px solid #888888;
   /*text-transform: uppercase;*/
   margin-top: 15px;
 }
-#team .contact-researchers {
+.category-page#team .contact-researchers {
   margin-bottom: 10px;
 }
 @media (max-width: 9999px) {
@@ -313,26 +324,28 @@ a:hover {
   }
 }
 .spn-link {
-  color: #4285f4;
+  color: #599fb7;
   cursor: pointer;
 }
 .spn-link:hover {
-  color: #07435b;
+  color: #306f84;
 }
 .top-buffer {
   margin-top: 20px;
 }
 a.important,
 .important {
-  color: #ff0000;
+  font-style: normal;
+  font-weight: bold;
+  color: #ff00f0;
 }
 a.important a,
 .important a {
-  color: #ff0000;
+  color: #ff00f0;
 }
 a.important a:hover,
 .important a:hover {
-  color: #4285f4;
+  color: #599fb7;
 }
 /* Override Bootstrap default */
 .navbar-default {
@@ -343,9 +356,9 @@ a.important a:hover,
   margin-bottom: 5px;
 }
 .col-md-4 h5 {
-  background: #07435b;
+  background: #306f84;
   color: #ffffff;
-  font-family: 'Monda', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin-bottom: 15px;
   padding: 7px 0;

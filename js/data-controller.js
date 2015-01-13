@@ -32,7 +32,8 @@ mod.controller("newsCtrl", ["$scope", "news", function($scope, news) {
 }]);
 
 mod.controller("toolsappsCtrl", ["$scope", "toolsapps", function($scope, toolsapps) {
-	$scope.entries = toolsapps.links;
+	$scope.dcicLinks = toolsapps.dcicLinks;
+	$scope.dsgcLinks = toolsapps.dsgcLinks;
 }]);
 
 mod.controller("datasetsassaysCtrl", ["$scope", "datasetsassays", function($scope, datasetsassays) {
