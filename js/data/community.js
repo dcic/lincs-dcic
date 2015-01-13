@@ -6,7 +6,7 @@ mod.factory("community", function() {
 			{
 				title: "Open Call for Data Science Research Projects",
 				url: "#/eDSR",
-	            highlight: 'Now posted: ',
+	            highlight: '',
 				target: "_self"
 			},
 			{
