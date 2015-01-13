@@ -40,84 +40,87 @@
 
 <body>
     <!-- This div is important for formatting the footer correctly. -->
-	<div id="for-footer-wrapper">
-		<div id="header-wrapper">
-			<div id="header" class="container">
-				<div class="row navbar navbar-default">
-					<div id="brand-wrapper" class="navbar-header col-md-8 col-sm-8">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a id="logo" href="#/">
-							<img id="lincs-logo" alt="BD2K-LINCS DCIC" src="images/org-logos/lincs-dcic-logo.png">
-							<div id="lincs-title">
-								<span id="lincs-subtitle">BD2K-LINCS</span><br>
-								<span>Data Coordination & Integration Center</span>
-							</div>
-						</a>
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-                    <div id="navbar-collapse-wrapper">
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-link collapse navbar-collapse">
-                                <li class="dropdown">
-                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#/introduction">DCIC</a></li>
-                                        <li><a href="http://www.lincsproject.org/" target="_blank">LINCS</a></li>
-                                        <li><a href="http://bd2k.nih.gov/" target="_blank">BD2K</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#/team">Team</a>
-                                </li>
-                                <li>
-                                    <li><a href="#/contact">Contact</a></li>
-                                </li>
-                            </ul>
+    <div id="wrapper" class="container">
+        <div id="header" class="container">
+            <div class="row navbar navbar-default">
+                <div id="brand" class="navbar-header col-md-8">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a id="logo" href="#/">
+                        <img id="lincs-logo" alt="BD2K-LINCS DCIC" src="images/org-logos/lincs-dcic-logo.png">
+                        <div id="lincs-title">
+                            <span id="lincs-subtitle">BD2K-LINCS</span><br>
+                            <span>Data Coordination & Integration Center</span>
                         </div>
-                    </div>
-                    <div id="subnav" ng-controller="subnavCtrl">
-                        <ul class="list-inline center-block text-center">
-                            <li ng-repeat="cat in categories" ng-class="{last: $last}">
-                                <a href="{{cat.url}}">{{cat.title}}</a>
-                            </li>
-                        </ul>
-                    </div>
-				</div>
-			</div>
-        <!-- End of content-wrapper -->
-		</div>
-	
-        <!-- container injected from main.html -->
-		<div id="content" class="container" ng-view></div>
-	
-    <!-- end of wrapper - important for footer! -->
-	</div>
+                    </a>
+                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>-->
+                </div>
+                <div class="col-md-4">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#/introduction">DCIC</a></li>
+                                <li><a href="http://www.lincsproject.org/" target="_blank">LINCS</a></li>
+                                <li><a href="http://bd2k.nih.gov/" target="_blank">BD2K</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#/team">Team</a>
+                        </li>
+                        <li>
+                            <li><a href="#/contact">Contact</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="subnav" class="container">
+            <div class="row">
+                <div ng-controller="subnavCtrl" class="col-md-12">
+                    <ul class="nav navbar-nav">
+                        <li ng-repeat="cat in categories" ng-class="{last: $last}">
+                            <a href="{{cat.url}}">{{cat.title}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-	<div id="footer" class="text-center">
-		<ul class="list-inline">
-			<li><a href="#/eDSR">Open Call for Data Science Research Projects</a></li>
-			<li><a href="#/jobs">Job Opportunities</a></li>
-		</ul>
-		<div id="org-logos">
-			<a href="http://bd2k.nih.gov/" target="_blank">
-				<img src="images/org-logos/nih-bd2k-bw.png" />
-			</a>
-			<a href="http://commonfund.nih.gov/" target="_blank">
-				<img src="images/org-logos/nih-common-fund-bw.jpg" />
-			</a>
-			<a href="http://commonfund.nih.gov/LINCS/index" target="_blank">
-				<img src="images/org-logos/nih-lincs-bw.png" />
-			</a>
-			<a href="http://www.lincsproject.org/" target="_blank">
-				<img src="images/org-logos/nih-lincs-project-bw.jpg" />
-			</a>
-		</div>
-		<p>This work is supported by NIH grant <a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8825168&icde=22649457&ddparam=&ddvalue=&ddsub=&cr=9&csb=default&cs=ASC" target="_blank">U54CA189201</a>.</p>
+        <!-- container injected from main.html -->
+        <div id="content" class="container" ng-view></div>
+    </div>
+
+	<div id="footer" class="container text-center">
+        <div class="row">
+            <ul class="col-md-12 list-inline">
+                <li><a href="#/eDSR">Open Call for Data Science Research Projects</a></li>
+                <li><a href="#/jobs">Job Opportunities</a></li>
+            </ul>
+        </div>
+        <div id="org-logos" class="row">
+            <a href="http://bd2k.nih.gov/" target="_blank">
+                <img src="images/org-logos/nih-bd2k-bw.png" />
+            </a>
+            <a href="http://commonfund.nih.gov/" target="_blank">
+                <img src="images/org-logos/nih-common-fund-bw.jpg" />
+            </a>
+            <a href="http://commonfund.nih.gov/LINCS/index" target="_blank">
+                <img src="images/org-logos/nih-lincs-bw.png" />
+            </a>
+            <a href="http://www.lincsproject.org/" target="_blank">
+                <img src="images/org-logos/nih-lincs-project-bw.jpg" />
+            </a>
+        </div>
+        <p class="row">
+            This work is supported by NIH grant
+            <a href="http://projectreporter.nih.gov/project_info_description.cfm?aid=8825168&icde=22649457&ddparam=&ddvalue=&ddsub=&cr=9&csb=default&cs=ASC" target="_blank">U54CA189201</a>
+            .
+        </p>
 	</div>
 
 	<!-- Libraries -->

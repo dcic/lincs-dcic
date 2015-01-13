@@ -25,7 +25,7 @@ body {
     height: 100%;
 }
 body {
-    /*background: @color-lightgray;*/
+    background: @color-lightgray;
 }
 a {
 	color: @color-googleblue;
@@ -34,111 +34,83 @@ a {
 		text-decoration: none;
 	}
 }
-#for-footer-wrapper {
+#wrapper {
+    background: @color-white;
 	min-height: 100%;
-	height: auto;
-	/* Negative indent footer by its height; -20 for the footer's padding. */
-	margin: 0 auto -@footer-height - 20;
+	/* Negative indent footer by its height. */
+	margin: 0 auto -@footer-height;
 	/* Pad bottom by footer height */
 	padding: 0 0 @footer-height;
 }
-#header-wrapper {
-	#brand-wrapper {
-        width: 100%; 
-		#logo {
-			color: @color-navyblue;
-			display: block;
-			padding: 5px;
-			#lincs-logo,
-			#lincs-title {
-				float: left;
-			}
-			#lincs-logo {
-				display: inline;
-			}
-			#lincs-title {
-				position: relative;
-				top: 5px;
-				font-family: @font-fam-base;
-				&:hover {
-					color: @color-googleblue;
-				}
-				#lincs-subtitle {
-					color: @color-darkgray;
-					position: relative;
-					top: 10px;
-				}
-			}
-		}
-		.brand-link {
-			font-size: 16px;
-			float: right;
-			a {
-				color: @color-navyblue;
-				&:hover {
-					color: @color-orange;
-				}
-			}
-		}
-	}
-	/*.navbar-collapse {
-		float: right;
-		position: relative;
-		top: -26px;
-		a {
-			color: @color-navyblue;
-		}
-	}*/
-    #navbar-collapse-wrapper {
-        position: absolute;
-        right: 0;
-        top: 40px;
-        .navbar-collapse {
-            a {
-                color: @color-navyblue;
-            }
+.center-container {
+    height: 100%;
+}
+#brand {
+    #logo {
+        color: @color-navyblue;
+        display: block;
+        padding: 5px;
+        #lincs-logo,
+        #lincs-title {
+            float: left;
         }
-    }
-    #header {
-        background: @color-white;
-        padding-top: 10px;
-    }
-    #subnav {
-        margin: 0 15px;
-        border-top: 3px solid @color-gray;
-        display: inline-block;
-        padding-bottom: 0;
-        width: 100%;
-        a {
-            color: @color-black;
-            font-size: 12px;
-            font-weight: bold;
+        #lincs-logo {
+            display: inline;
+        }
+        #lincs-title {
+            position: relative;
+            top: 5px;
+            font-family: @font-fam-base;
             &:hover {
-                text-decoration: none;
+                color: @color-googleblue;
             }
-        }
-        li {
-            border-right: 1px solid @color-gray;
-            display: table-cell;
-            width: 1%;
-            &:hover {
-                background: @color-gray;
+            #lincs-subtitle {
+                color: @color-darkgray;
+                position: relative;
+                top: 10px;
             }
-        }
-        li.last {
-            border-right: none;
         }
     }
 }
+#header {
+    padding-top: 10px;
+}
+#subnav {
+    border-top: 3px solid @color-gray;
+    border-bottom: 1px solid @color-gray;
+    padding-bottom: 0;
+    a {
+        color: @color-black;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        width: 100%;
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        border-right: 1px solid @color-gray;
+        &:hover {
+            background: @color-gray;
+        }
+    }
+    li.last {
+        border-right: none;
+    }
+}
 #content {
-    background: @color-white;
-    height: 100%;
+    padding-top: 10px;
 }
 #footer {
 	background: @color-charcoal;
 	border-top: 1px solid @color-charcoal;
 	height: @footer-height;
-	margin-top: 20px;
 	padding: 20px 0 30px 0;
 	a, p {
 		color: @color-lightcharcoal;
@@ -160,16 +132,13 @@ a {
 		}
 	}
 }
-.col-md-4 {
-	h5 {
-		background: @color-navyblue;
-		color: @color-white;
-		font-family: @font-fam-base;
-		font-size: 16px;
-		margin-bottom: 15px;
-		padding: 7px 0;
-		text-align: center;
-	}
+.fill {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color: #990000;
+    padding: 10px;
+    color: #efefef;
 }
 .table {
 	margin-bottom: 0;
@@ -223,7 +192,6 @@ a {
 		}
 	}
 }
-
 
 /* Carousel */
 #carousel {
@@ -396,6 +364,7 @@ a {
 		}
 	}
 }
+
 .spn-link {
 	color: @color-googleblue;
 	cursor: pointer;
@@ -424,3 +393,15 @@ a.important,
 .navbar {
     margin-bottom: 5px;
 }
+.col-md-4 {
+	h5 {
+		background: @color-navyblue;
+		color: @color-white;
+		font-family: @font-fam-base;
+		font-size: 16px;
+		margin-bottom: 15px;
+		padding: 7px 0;
+		text-align: center;
+	}
+}
+
