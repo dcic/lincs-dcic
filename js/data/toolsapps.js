@@ -50,12 +50,14 @@ mod.factory("toolsapps", function() {
         dsgcLinks: [
 			{
 				title: "lincscloud web apps",
+				description: "Brings together datasets and tools from the LINCS consortium.",
 				url: "http://apps.lincscloud.org/",
 				target: "_blank",
 				image: "lincscloud.png"
 			},
 			{
 				title: "HMS software & tools",
+				description: "Creating and re-purposing various types of software to collect, manage and analyze data.",
 				url: "http://lincs.hms.harvard.edu/resources/software-tools/",
 				target: "_blank",
 				image: "hms-lincs.png"

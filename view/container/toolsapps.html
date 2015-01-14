@@ -1,14 +1,14 @@
 <div class="category-index" id="toolsapps" ng-controller="toolsappsCtrl">
 	<h4><a href="#/toolsapps">Tools & Apps &raquo;</a></h4>
 	<table class="content table">
-		<tr ng-repeat="link in dcicLinks | limitTo:2">
-            <td>
+        <tr ng-repeat="link in dcicLinks | limitTo:2">
+            <td ng-class="{first : $first}">
                 <a href="{{link.url}}" target="_blank">
                     <img ng-src="images/app-logos/{{link.image}}" />
                 </a>
             </td>
-            <td>
-                <strong><a href="{{link.url}}" target="_blank">{{link.title}}</a></strong><br>
+            <td ng-class="{first : $first}">
+                <a href="{{link.url}}" target="_blank">{{link.title}}</a>
                 <p>{{link.description}}</p>
             </td>
         </tr>

@@ -20,9 +20,10 @@
 
 /* fonts */
 @font-size-base: 13px;
-@font-fam-base: 'Open Sans', sans-serif;
+@font-family-base: 'Arial', sans-serif;
+@font-family-accent: 'Open Sans', sans-serif;
 
-@footer-height: 160px;
+@footer-height: 200px;
 
 html,
 body {
@@ -35,9 +36,16 @@ a {
 		text-decoration: none;
 	}
 }
+div,
+p,
+a,
+span {
+    font-family: @font-family-base;
+}
 #wrapper {
     background: @color-white;
 	min-height: 100%;
+    height: auto;
 	/* Negative indent footer by its height. */
 	margin: 0 auto -@footer-height;
 	/* Pad bottom by footer height */
@@ -57,7 +65,7 @@ a {
         }
         #lincs-title {
             color: @color-black;
-            font-family: @font-fam-base;
+            font-family: @font-family-accent;
             font-size: 30px;
             font-weight: bold;
             &:hover {
@@ -128,31 +136,56 @@ a {
 }
 #content-wrapper {
     padding-top: 10px;
+    h5.column-h {
+		background: @color-primary;
+		color: @color-white;
+		font-family: @font-family-accent;
+		font-size: 16px;
+		margin-bottom: 15px;
+		padding: 7px 0;
+		text-align: center;        
+    }
 }
 #footer {
-	background: @color-charcoal;
-	border-top: 1px solid @color-charcoal;
-	height: @footer-height;
-	padding: 20px 0 30px 0;
-	a, p {
-		color: @color-lightcharcoal;
+    height: @footer-height;
+    padding-top: 20px;
+	a,
+	p {
+		color: @color-white;
 	}
-	a {
+	a {    
+		font-family: 'Open Sans';
 		&:hover {
 			color: @color-primary-light;
 			text-decoration: none;
 		}
 	}
-	p {
-		padding-top: 20px;
-	}
 	#org-logos {
-		padding-top: 20px;
+	    border-top: 1px solid @color-gray;
+        padding: 25px 0;
 		img {
-			height: 30px;
+			height: 40px;
 			margin: 0 5px;
 		}
 	}
+    #extra {
+        background: @color-black;
+        font-family: @font-family-accent;
+        font-size: 12px;
+        padding: 20px 0;
+        li:first-child {
+            border-right: 1px solid @color-white;
+            padding-right: 20px;
+        }
+        li:last-child {
+            padding-left: 20px;
+        }
+        a {
+            &:hover {
+                color: @color-primary;
+            }
+        }
+    }
 }
 .table {
 	margin-bottom: 0;
@@ -170,12 +203,17 @@ a {
 	position: relative;
 	a {
 		color: @color-black;
-		font-family: @font-fam-base;
 		&:hover {
 			color: @color-primary-light;
 			cursor: pointer;
 			text-decoration: none;
 		}
+	}
+	td {
+        vertical-align: middle;
+	}
+	td.first {
+        border-top: none;
 	}
 	ul {
 		padding: 0 0 0 15px;
@@ -194,7 +232,7 @@ a {
 	h4 {
 		border-bottom: 1px solid #ebebeb;
 		color: @color-black; /* In case the header doesn't have a link */
-		font-family: @font-fam-base;
+		font-family: @font-family-accent;
 		font-weight: bold;
 		padding: 0 0 6px 0;
 		margin-top: 0;
@@ -205,44 +243,26 @@ a {
 	.content {
 		font-size: @font-size-base;
 	}
-	&#toolsapps {
-        img {
-            max-width: 50px;
-        }
-	}
-	&#news {
-		.table {
-			> td {
-				text-align: center;
-			}
-		}
-	}
-	&#news {
-		img {
-			max-width: 50px;	
-		}
-	}
-}
-
-/* Don't place under `categories` because these also stylize standalone pages */
-.category-page {
-    a {
-        color: @color-black;
-        font-weight: bold;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-    &#news {
-        img {
-            max-width: 100px;
-        }
-    }
-    &#toolsapps {
+	table.content {
         img {
             width: 50px;
         }
-    }
+	}
+	&#toolsapps {
+        table.content {
+            a {
+                font-weight: bold;
+            }
+        }
+	}
+	&#news {
+        table.content {
+            p {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+        }
+	}
     &#community {
         a {
             &hover {
@@ -252,11 +272,14 @@ a {
         #social {
             bottom: 10px;
             left: 12px;
+            padding-top: 20px;
             a {
+                border: none;
+                border-radius: 0;
                 color: @color-white;
             }
             img {
-                width: 32px;
+                width: 30px;
             }
             .research-gate {
                 padding: 0;
@@ -267,6 +290,32 @@ a {
                     opcacity: .8;
                 }
             }
+        }
+    }
+}
+
+/* Don't place under `categories` because these also stylize standalone pages */
+.category-page {
+    a {
+        color: @color-black;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    table.content {
+        img {
+            width: 75px;
+        }
+        td:first-child {
+            width: 100px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    &#toolsapps {
+        a {
+            font-weight: bold;
         }
     }
     &#analysis {
@@ -409,15 +458,3 @@ a.important,
 .navbar {
     margin-bottom: 5px;
 }
-.col-md-4 {
-	h5 {
-		background: @color-primary;
-		color: @color-white;
-		font-family: @font-fam-base;
-		font-size: 16px;
-		margin-bottom: 15px;
-		padding: 7px 0;
-		text-align: center;
-	}
-}
-

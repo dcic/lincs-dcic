@@ -12,13 +12,20 @@ a:hover {
   color: #306f84;
   text-decoration: none;
 }
+div,
+p,
+a,
+span {
+  font-family: 'Arial', sans-serif;
+}
 #wrapper {
   background: #ffffff;
   min-height: 100%;
+  height: auto;
   /* Negative indent footer by its height. */
-  margin: 0 auto -160px;
+  margin: 0 auto -200px;
   /* Pad bottom by footer height */
-  padding: 0 0 160px;
+  padding: 0 0 200px;
 }
 #brand #logo {
   color: #306f84;
@@ -101,29 +108,53 @@ a:hover {
 #content-wrapper {
   padding-top: 10px;
 }
+#content-wrapper h5.column-h {
+  background: #306f84;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 7px 0;
+  text-align: center;
+}
 #footer {
-  background: #222222;
-  border-top: 1px solid #222222;
-  height: 160px;
-  padding: 20px 0 30px 0;
+  height: 200px;
+  padding-top: 20px;
 }
 #footer a,
 #footer p {
-  color: #808080;
+  color: #ffffff;
+}
+#footer a {
+  font-family: 'Open Sans';
 }
 #footer a:hover {
   color: #599fb7;
   text-decoration: none;
 }
-#footer p {
-  padding-top: 20px;
-}
 #footer #org-logos {
-  padding-top: 20px;
+  border-top: 1px solid #dddddd;
+  padding: 25px 0;
 }
 #footer #org-logos img {
-  height: 30px;
+  height: 40px;
   margin: 0 5px;
+}
+#footer #extra {
+  background: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  padding: 20px 0;
+}
+#footer #extra li:first-child {
+  border-right: 1px solid #ffffff;
+  padding-right: 20px;
+}
+#footer #extra li:last-child {
+  padding-left: 20px;
+}
+#footer #extra a:hover {
+  color: #306f84;
 }
 .table {
   margin-bottom: 0;
@@ -142,12 +173,17 @@ a:hover {
 }
 .category-index a {
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
 }
 .category-index a:hover {
   color: #599fb7;
   cursor: pointer;
   text-decoration: none;
+}
+.category-index td {
+  vertical-align: middle;
+}
+.category-index td.first {
+  border-top: none;
 }
 .category-index ul {
   padding: 0 0 0 15px;
@@ -181,14 +217,38 @@ a:hover {
 .category-index .content {
   font-size: 13px;
 }
-.category-index#toolsapps img {
-  max-width: 50px;
+.category-index table.content img {
+  width: 50px;
 }
-.category-index#news .table > td {
-  text-align: center;
+.category-index#toolsapps table.content a {
+  font-weight: bold;
 }
-.category-index#news img {
-  max-width: 50px;
+.category-index#news table.content p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.category-index#community ahover {
+  cursor: pointer;
+}
+.category-index#community #social {
+  bottom: 10px;
+  left: 12px;
+  padding-top: 20px;
+}
+.category-index#community #social a {
+  border: none;
+  border-radius: 0;
+  color: #ffffff;
+}
+.category-index#community #social img {
+  width: 30px;
+}
+.category-index#community #social .research-gate {
+  padding: 0;
+}
+.category-index#community #social #social-iconshover {
+  cursor: pointer;
+  opcacity: .8;
 }
 /* Don't place under `categories` because these also stylize standalone pages */
 .category-page {
@@ -196,36 +256,21 @@ a:hover {
 }
 .category-page a {
   color: #000000;
-  font-weight: bold;
 }
 .category-page a:hover {
   text-decoration: underline;
 }
-.category-page#news img {
-  max-width: 100px;
+.category-page table.content img {
+  width: 75px;
 }
-.category-page#toolsapps img {
-  width: 50px;
+.category-page table.content td:first-child {
+  width: 100px;
 }
-.category-page#community ahover {
-  cursor: pointer;
+.category-page table.content p {
+  margin-bottom: 0;
 }
-.category-page#community #social {
-  bottom: 10px;
-  left: 12px;
-}
-.category-page#community #social a {
-  color: #ffffff;
-}
-.category-page#community #social img {
-  width: 32px;
-}
-.category-page#community #social .research-gate {
-  padding: 0;
-}
-.category-page#community #social #social-iconshover {
-  cursor: pointer;
-  opcacity: .8;
+.category-page#toolsapps a {
+  font-weight: bold;
 }
 .category-page#analysis .col-md-4 textarea,
 .category-page#analysis .col-sm-4 textarea {
@@ -354,13 +399,4 @@ a.important a:hover,
 }
 .navbar {
   margin-bottom: 5px;
-}
-.col-md-4 h5 {
-  background: #306f84;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  margin-bottom: 15px;
-  padding: 7px 0;
-  text-align: center;
 }
