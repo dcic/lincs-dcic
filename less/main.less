@@ -13,10 +13,10 @@
 @color-lightblue: #71A7BD;
 @color-red: #ff0000;
 
-/* Logo and contrast colors */
+/* Logo and accent colors */
 @color-primary: #306f84;
 @color-primary-light: #599fb7;
-@color-contrast: #ff00f0;
+@color-accent: #ff00f0;
 
 /* fonts */
 @font-size-base: 13px;
@@ -110,11 +110,9 @@ span {
     }
 }
 /* Carousel */
-#carousel {
+#feature-banner {
     width: 100%;
-    height: 150px;
-    padding-bottom: 6px;
-
+    /*height: 340px;*/
     /* Images should be cut exactly; this should not have to be done. But just in case. */
     #carousel-img-link,
     img {
@@ -122,16 +120,20 @@ span {
         height: 100%;
         width: 100%;
     }
+    button {
+        background: transparent;
+        border: none;
+    }
     .carousel-btn {
         background: #fff;
-        border: 1px solid gray;
+        border: none;
         bottom: 10px;
         position: absolute;
         height: 20px;
         width: 20px;
     }
     .carousel-highlight {
-        background: #F08989;
+        background: @color-accent;
     }
 }
 #content-wrapper {
@@ -302,6 +304,10 @@ span {
             text-decoration: underline;
         }
     }
+    h3 {
+        font-family: @font-family-accent;
+        font-weight: bold;
+    }
     table.content {
         img {
             width: 75px;
@@ -310,6 +316,7 @@ span {
             width: 100px;
         }
         p {
+     
             margin-bottom: 0;
         }
     }
@@ -442,9 +449,9 @@ a.important,
 .important {
     font-style: normal;
     font-weight: bold;
-	color: @color-contrast;
+	color: @color-accent;
 	a {
-		color: @color-contrast;
+		color: @color-accent;
 		&:hover {
 			color: @color-primary-light;
 		}	
