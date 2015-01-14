@@ -111,6 +111,7 @@ span {
 }
 /* Carousel */
 #feature-banner {
+    padding: 10px 0 40px 0;
     width: 100%;
     /*height: 340px;*/
     /* Images should be cut exactly; this should not have to be done. But just in case. */
@@ -134,6 +135,26 @@ span {
     }
     .carousel-highlight {
         background: @color-accent;
+    }
+    .carousel-indicators {
+        bottom: 0;
+    }
+    .carousel-indicators li {
+        border: 1px solid @color-primary !important;
+    }
+    .carousel-caption {
+        background: @color-white;
+        color: @color-black;
+        left: 10px;
+        opacity: .85;
+        padding: 10px;
+        text-align: left;
+        text-shadow: none;
+        width: 400px;
+        h4 {
+            color: @color-accent;
+            font-family: @font-family-accent;
+        }
     }
 }
 #content-wrapper {
@@ -432,6 +453,9 @@ span {
 			position: relative;
 			top: 20px;
 		}
+	}
+    #feature-banner {
+        display: none;
 	}
 }
 

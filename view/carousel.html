@@ -1,25 +1,27 @@
-<div id="feature-banner" class="carousel slide" data-ride="carousel">
+<div id="feature-banner" class="carousel slide" data-ride="carousel" ng-controller="carouselCtrl">
     <!-- indicators - buttons that allow you to select different slides -->
     <ol class="carousel-indicators">
-        <li data-target="#feature-banner" class="active" data-slide-to="0"></li>
-        <li data-target="#feature-banner" data-slide-to="1"></li>
+        <li data-target="#feature-banner" ng-repeat="slide in slides" class="{active : $first}" data-slide-to="{{slide.index}}"></li>
     </ol>
 
     <!-- Main carousel -->
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="/images/carousel/summer-research.png">
-        </div>
-        <div class="item">
-            <img src="/images/carousel/big-data.png">
+        <div ng-class="{item: true, active : $first}" ng-repeat="slide in slides">
+            <a href="{{slide.link}}" target="{{slide.target}}">
+                <img src="{{slide.image}}">
+                <div class="carousel-caption">
+                    <h4>{{slide.title}}</h4>
+                    <p>{{slide.caption}}</p>
+                </div>
+            </a>
         </div>
     </div>
 
     <!-- Cotnrols -->
-    <button class="left carousel-control" data-target="#feature-banner" data-slide="next" accesskey="n">
+    <!--<button class="left carousel-control" data-target="#feature-banner" data-slide="next" accesskey="n">
         <i class="fa fa-angle-left"></i>
     </button>
     <button class="right carousel-control" data-target="#feature-banner" data-slide="next" accesskey="n">
         <i class="fa fa-angle-right"></i>
-    </button>
+    </button>-->
 </div>
