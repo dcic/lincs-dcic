@@ -10,8 +10,11 @@
             <a href="{{slide.link}}" target="{{slide.target}}">
                 <img src="{{slide.image}}">
                 <div class="carousel-caption">
-                    <h4>{{slide.title}}</h4>
-                    <p>{{slide.caption}}</p>
+                    <div class="caption-title-block">
+                        <p>{{slide.subtitle}}</p>
+                        <h4>{{slide.title}}</h4>
+                    </div>
+                    <p class="caption-text">{{slide.caption}}</p>
                 </div>
             </a>
         </div>

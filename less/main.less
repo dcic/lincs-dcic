@@ -140,20 +140,41 @@ span {
         bottom: 0;
     }
     .carousel-indicators li {
-        border: 1px solid @color-primary !important;
+        border: 1px solid @color-accent !important;
     }
     .carousel-caption {
         background: @color-white;
+        bottom: 0;
         color: @color-black;
-        left: 10px;
-        opacity: .85;
+        left: 0;
+        opacity: .9;
         padding: 10px;
         text-align: left;
         text-shadow: none;
-        width: 400px;
-        h4 {
-            color: @color-accent;
-            font-family: @font-family-accent;
+        width: 100%;
+        .caption-title-block,
+        .caption-text {
+            float: left;
+        }
+        .caption-title-block {
+            border-right: 1px solid @color-darkgray;
+            padding-right: 10px;
+            width: 35%;
+            h4 {
+                color: @color-accent;
+                font-family: @font-family-accent;
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        .caption-text {
+            font-size: 16px;
+            padding-left: 10px;
+            width: 65%;
         }
     }
 }
@@ -225,7 +246,7 @@ span {
 	padding: 10px;
 	position: relative;
 	a {
-		color: @color-black;
+		color: @color-primary;
 		&:hover {
 			color: @color-primary-light;
 			cursor: pointer;
@@ -243,6 +264,14 @@ span {
 	}
 	li {
         list-style-type: none;
+        a {
+            color: @color-black;
+            &:hover {
+                color: @color-primary-light;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
 	}
 	li:before {
         content: '\F105'; /* FontAwesome char code inside the '' */
@@ -270,7 +299,18 @@ span {
         img {
             width: 50px;
         }
-	}
+        a {
+            color: @color-black;
+            &:hover {
+            color: @color-primary;
+                }
+            }
+        }
+	&#introduction {
+        p {
+            font-size: @font-size-base;
+        }
+    }
 	&#toolsapps {
         table.content {
             a {
@@ -473,11 +513,11 @@ a.important,
 .important {
     font-style: normal;
     font-weight: bold;
-	color: @color-accent;
+	color: @color-accent !important;
 	a {
-		color: @color-accent;
+		color: @color-accent !important;
 		&:hover {
-			color: @color-primary-light;
+			color: @color-primary-light !important;
 		}	
 	}
 }

@@ -5,8 +5,9 @@ mod.controller("carouselCtrl", ["$scope", "$timeout", function($scope, $timeout)
         {
             'index': '0',
             'image': '/images/carousel/summer-research.png',
-            'title': 'Summer Research Training Program in Biomedical Big Data Science',
-            'caption': 'Apply for an research intensive ten-week training program offered at six sites affiliated with our NIH-funded BD2K Center.',
+            'subtitle': 'Data Coordination and Integration Center\'s 2015',
+            'title': 'Summer Research Program',
+            'caption': 'Currently accepting applications for our ten-week summer research training program in biomedical big data science!',
             'link': '/#/education/summerresearch',
             'target': '_self',
             'id': 'carousel-btn-0'
@@ -14,10 +15,11 @@ mod.controller("carouselCtrl", ["$scope", "$timeout", function($scope, $timeout)
         {
             'index': '1',
             'image': '/images/carousel/big-data.png',
-            'title': '',
-            'caption': 'whajsjdfsfjd',
-            'link': '/#/summerresearch',
-            'target': '_self',
+            'subtitle': 'DCIC\'s MOOC on Coursera',
+            'title': 'Big Data Science',
+            'caption': 'Learn various methods of analysis of LINCS data and other relevant Big Data.',
+            'link': 'https://www.coursera.org/course/bd2klincs',
+            'target': '_blank',
             'id': 'carousel-btn-0'
         }
     ];

@@ -7,10 +7,6 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
 
     $scope.categories = [
         {
-            title: "Intro",
-            url: "/#/introduction"
-        },
-        {
             title: "Education",
             url: "/#/education"
         },

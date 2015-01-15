@@ -113,21 +113,42 @@ span {
   bottom: 0;
 }
 #feature-banner .carousel-indicators li {
-  border: 1px solid #306f84 !important;
+  border: 1px solid #ff00f0 !important;
 }
 #feature-banner .carousel-caption {
   background: #ffffff;
+  bottom: 0;
   color: #000000;
-  left: 10px;
-  opacity: .85;
+  left: 0;
+  opacity: .9;
   padding: 10px;
   text-align: left;
   text-shadow: none;
-  width: 400px;
+  width: 100%;
 }
-#feature-banner .carousel-caption h4 {
+#feature-banner .carousel-caption .caption-title-block,
+#feature-banner .carousel-caption .caption-text {
+  float: left;
+}
+#feature-banner .carousel-caption .caption-title-block {
+  border-right: 1px solid #888888;
+  padding-right: 10px;
+  width: 35%;
+}
+#feature-banner .carousel-caption .caption-title-block h4 {
   color: #ff00f0;
   font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+}
+#feature-banner .carousel-caption .caption-title-block p {
+  margin: 0;
+}
+#feature-banner .carousel-caption .caption-text {
+  font-size: 16px;
+  padding-left: 10px;
+  width: 65%;
 }
 #content-wrapper {
   padding-top: 10px;
@@ -196,7 +217,7 @@ span {
   position: relative;
 }
 .category-index a {
-  color: #000000;
+  color: #306f84;
 }
 .category-index a:hover {
   color: #599fb7;
@@ -214,6 +235,14 @@ span {
 }
 .category-index li {
   list-style-type: none;
+}
+.category-index li a {
+  color: #000000;
+}
+.category-index li a:hover {
+  color: #599fb7;
+  cursor: pointer;
+  text-decoration: none;
 }
 .category-index li:before {
   content: '\F105';
@@ -243,6 +272,15 @@ span {
 }
 .category-index table.content img {
   width: 50px;
+}
+.category-index table.content a {
+  color: #000000;
+}
+.category-index table.content a:hover {
+  color: #306f84;
+}
+.category-index#introduction p {
+  font-size: 13px;
 }
 .category-index#toolsapps table.content a {
   font-weight: bold;
@@ -413,15 +451,15 @@ a.important,
 .important {
   font-style: normal;
   font-weight: bold;
-  color: #ff00f0;
+  color: #ff00f0 !important;
 }
 a.important a,
 .important a {
-  color: #ff00f0;
+  color: #ff00f0 !important;
 }
 a.important a:hover,
 .important a:hover {
-  color: #599fb7;
+  color: #599fb7 !important;
 }
 /* Override Bootstrap default */
 .navbar-default {
