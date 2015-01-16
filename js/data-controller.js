@@ -1,6 +1,7 @@
 var mod = angular.module("controllersMod", [
 	"analyzeMod",
 	"apisdocsMod",
+	"calendarMod",
 	"carouselMod",
 	"communityMod",
 	"contactMod",

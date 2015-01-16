@@ -9,14 +9,16 @@
         <div ng-class="{item: true, active : $first}" ng-repeat="slide in slides">
             <a href="{{slide.link}}" target="{{slide.target}}">
                 <img src="{{slide.image}}">
-                <div class="carousel-caption">
-                    <div class="caption-title-block">
-                        <p>{{slide.subtitle}}</p>
-                        <h4>{{slide.title}}</h4>
-                    </div>
-                    <p class="caption-text">{{slide.caption}}</p>
-                </div>
             </a>
+            <div class="carousel-caption">
+                <div class="caption-title-block">
+                    <p>{{slide.subtitle}}</p>
+                    <h4>
+                        <a href="{{slide.link}}" target="{{slide.target}}">{{slide.title}} &raquo;</a>
+                    </h4>
+                </div>
+                <p class="caption-text">{{slide.caption}}</p>
+            </div>
         </div>
     </div>
 

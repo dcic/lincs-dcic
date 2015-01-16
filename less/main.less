@@ -21,7 +21,7 @@
 /* fonts */
 @font-size-base: 13px;
 @font-family-base: 'Arial', sans-serif;
-@font-family-accent: 'Open Sans', sans-serif;
+@font-family-accent: 'Archivo Narrow', sans-serif;
 
 @footer-height: 200px;
 
@@ -36,10 +36,8 @@ a {
 		text-decoration: none;
 	}
 }
-div,
 p,
-a,
-span {
+a {
     font-family: @font-family-base;
 }
 #wrapper {
@@ -53,31 +51,37 @@ span {
 }
 #brand {
     #logo {
-        color: @color-primary;
+        color: @color-black;
         display: block;
-        padding: 5px;
-        #lincs-logo,
-        #lincs-title {
-            float: left;
+        font-family: @font-family-accent;
+        height: 100%;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        line-height: 2em;
+        &:hover {
+            color: @color-primary-light;
         }
-        #lincs-logo {
-            display: inline;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 160px;
+            padding-bottom: 10px;
         }
-        #lincs-title {
-            color: @color-black;
-            font-family: @font-family-accent;
-            font-size: 30px;
-            font-weight: bold;
+        a {
             &:hover {
-                color: @color-primary-light;
+                text-decoration: none;
             }
         }
-        #lincs-subtitle-left {
-            padding-right: 10px;
+        span#lincs-title-top {
+            color: @color-lightcharcoal;
+            display: block;
+            font-size: 20px;
+            font-weight: normal;
         }
-        #lincs-subtitle-right {
-            border-left: 1px solid @color-charcoal;
-            padding-left: 10px;
+        span#lincs-title-bottom {
+            color: @color-black;
+            font-size: 24px;
+            font-weight: bold;
         }
     }
 }
@@ -91,8 +95,9 @@ span {
     a {
         color: @color-black;
         display: inline-block;
-        font-size: 14px;
-        font-weight: bold;
+        font-family: @font-family-accent;
+        font-size: 20px;
+        /*font-weight: bold;*/
         width: 100%;
         &:hover,
         &:active,
@@ -104,8 +109,21 @@ span {
         margin-bottom: 0;
     }
     li {
+        /* This is to ensure the nav doesn't bump down on hover. */
+        border-bottom: 2px solid @color-gray;
         &:hover {
-            background: @color-gray;
+            /*background: @color-gray;*/
+            border-bottom: 2px solid @color-accent;
+        }
+    }
+    .navbar-right {
+        a {
+            font-size: 14px;
+        }
+    }
+    .dropdown-menu {
+        li {
+            border-bottom: none;
         }
     }
 }
@@ -124,6 +142,9 @@ span {
     button {
         background: transparent;
         border: none;
+    }
+    .carousel-inner {
+        border-bottom: 1px solid #ccc;
     }
     .carousel-btn {
         background: #fff;
@@ -160,11 +181,16 @@ span {
             border-right: 1px solid @color-darkgray;
             padding-right: 10px;
             width: 35%;
-            h4 {
+            a {
                 color: @color-accent;
                 font-family: @font-family-accent;
                 font-size: 20px;
                 font-weight: bold;
+                &:hover {
+                    color: @color-black;
+                }
+            }
+            h4 {
                 margin-top: 0;
             }
             p {
@@ -290,6 +316,7 @@ span {
 		margin-top: 0;
 		a {
 			color: @color-black;
+		    font-family: @font-family-accent;
 		}
 	}
 	.content {
@@ -353,6 +380,29 @@ span {
                     opcacity: .8;
                 }
             }
+        }
+    }
+    &#calendar {
+        .event {
+            height: 100%;
+        }
+        .date,
+        .details {
+            float: left;
+        }
+        .date {
+            font-family: @font-family-accent;
+            font-size: 20px;
+        }
+        .details {
+            font-size: @font-size-base;
+            padding-left: 20px;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .day {
+            color: @color-accent;
         }
     }
 }
@@ -447,7 +497,7 @@ span {
         }
     }
 }
-
+/*
 @media (max-width: 9999px) {
 	#logo {
 		height: 90px;
@@ -497,7 +547,7 @@ span {
     #feature-banner {
         display: none;
 	}
-}
+}*/
 
 .spn-link {
 	color: @color-primary-light;
@@ -521,6 +571,10 @@ a.important,
 		}	
 	}
 }
+.clear {
+    clear: both;
+}
+
 /* Override Bootstrap default */
 .navbar-default {
 	background-color: transparent;
