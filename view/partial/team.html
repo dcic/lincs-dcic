@@ -1,0 +1,46 @@
+<div ng-controller="teamCtrl" id="team">
+    <div class="row">
+        <h2 class="col-md-12">About BD2K-LINCS DCIC</h2>
+        <h3 class="col-md-12">Principal Investigators</h3>
+        <div ng-repeat="person in principalInvestigators" class="col-md-4">
+            <div>
+                <img src="images/portraits/{{person.portrait}}" class="contact-pi-logo">
+                <div class="contact-pi-desc">
+                    <div><a href="{{person.website}}" target="_blank">{{person.name}}</a></div>
+                    <div>{{person.position}}</div>
+                    <div>{{person.affiliation}}</div>
+                    <div><u>{{person.email}}</u></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="col-md-12">Investigators</h3>
+        <div ng-repeat="person in investigators" class="col-md-4">
+            <div><strong>{{person.name}}</strong></div>
+            <div>{{person.affiliation}}</div>
+            <div><u>{{person.email}}</u></div>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="col-md-12">Research Staff</h3>
+        <div class="col-md-4">
+            <div ng-repeat="person in icahn | orderBy:'lastName'" class="person">
+                <div class="name">{{person.firstName}} {{person.lastName}}</div>
+                <div class="email">{{person.email}}</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div ng-repeat="person in cincinnati | orderBy:'lastName'" class="person">
+                <div class="name">{{person.firstName}} {{person.lastName}}</div>
+                <div class="email">{{person.email}}</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div ng-repeat="person in miami | orderBy:'lastName'" class="person">
+                <div class="name">{{person.firstName}} {{person.lastName}}</div>
+                <div class="email">{{person.email}}</div>
+            </div>
+        </div>
+    </div>
+</div>

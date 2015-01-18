@@ -16,6 +16,13 @@ p,
 a {
   font-family: 'Arial', sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Archivo Narrow', sans-serif;
+}
 #wrapper {
   background: #ffffff;
   min-height: 100%;
@@ -358,17 +365,14 @@ a {
 }
 /* Don't place under `categories` because these also stylize standalone pages */
 .category-page {
+  /*h3 {
+        font-family: @font-family-accent;
+        font-weight: bold;
+    }*/
   /* Team page */
-}
-.category-page a {
-  color: #000000;
 }
 .category-page a:hover {
   text-decoration: underline;
-}
-.category-page h3 {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-weight: bold;
 }
 .category-page table.content img {
   width: 75px;
@@ -407,29 +411,58 @@ a {
 .category-page#summerresearch img {
   width: 100%;
 }
-.category-page#team .contact-institution-logo-row {
+.category-page #intro #sections {
+  padding-top: 20px;
+}
+.category-page #intro .section {
+  padding-bottom: 20px;
+}
+.category-page #intro .section h3 {
+  margin-top: 0;
+}
+.category-page #intro .section img,
+.category-page #intro .section .text {
+  float: left;
+}
+.category-page #intro .section img {
+  width: 20%;
+}
+.category-page #intro .section .text {
+  padding-left: 20px;
+  width: 80%;
+}
+.category-page #team .contact-institution-logo-row {
   margin-bottom: 10px;
 }
-.category-page#team .contact-institution-logo {
+.category-page #team .contact-institution-logo {
   height: 80px;
   display: block;
   margin-bottom: 15px;
 }
-.category-page#team .contact-pi-logo {
+.category-page #team .contact-pi-logo {
   height: 80px;
 }
-.category-page#team .contact-pi-desc {
+.category-page #team .contact-pi-desc {
   margin-left: 10px;
   vertical-align: middle;
   display: inline-block;
 }
-.category-page#team .contact-header {
+.category-page #team .contact-header {
   border-bottom: 1px solid #888888;
   /*text-transform: uppercase;*/
   margin-top: 15px;
 }
-.category-page#team .contact-researchers {
+.category-page #team .contact-researchers {
   margin-bottom: 10px;
+}
+.category-page #team .person {
+  padding-top: 10px;
+}
+.category-page #team .name {
+  font-weight: bold;
+}
+.category-page #team .email {
+  text-decoration: underline;
 }
 /*
 @media (max-width: 9999px) {

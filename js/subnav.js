@@ -7,6 +7,30 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
 
     $scope.categories = [
         {
+            title: 'About DCIC',
+            url: '/#/about'
+        },
+        {
+            title: 'Training and Outreach',
+            url: '/#/outreach'
+        },
+        {
+            title: 'Resources',
+            url: '/#/resources'
+        },
+        {
+            title: 'Publications',
+            url: '/#/publications'
+        },
+        {
+            title: 'Events',
+            url: '/#/events'
+        },
+        {
+            title: 'News',
+            url: '/#/news'
+        }
+        /*{
             title: "Education",
             url: "/#/education"
         },
@@ -33,6 +57,13 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
         {
             title: "Events",
             url: "/#/events"
+        }*/
+    ];
+
+    $scope.categoriesRight = [
+        {
+            title: 'LINCSPROJECT',
+            url: 'http://www.lincsproject.org/'
         }
     ];
 

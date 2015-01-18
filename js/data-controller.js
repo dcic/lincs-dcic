@@ -11,7 +11,6 @@ var mod = angular.module("controllersMod", [
 	"emailMod",
 	"newsMod",
 	"publicationsMod",
-	"teamMod",
 	"toolsappsMod",
 	"subnavMod"
 ]);
@@ -43,15 +42,6 @@ mod.controller("datasetsassaysCtrl", ["$scope", "datasetsassays", function($scop
 
 mod.controller("publicationsCtrl", ["$scope", "publications", function($scope, publications) {
 	$scope.entries = publications.links;
-}]);
-
-mod.controller("teamCtrl", ["$scope", "team", function($scope, team) {
-	$scope.pis = team.pis;
-	$scope.webDevelopment = team.webDevelopment;
-	$scope.dataIntegration = team.dataIntegration;
-	$scope.dataScience = team.dataScience;
-	$scope.outreach = team.outreach;
-	$scope.nih = team.nih;
 }]);
 
 mod.controller("datacentersCtrl", ["$scope", "datacenters", function($scope, datacenters) {

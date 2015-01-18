@@ -40,6 +40,13 @@ p,
 a {
     font-family: @font-family-base;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: @font-family-accent;
+}
 #wrapper {
     background: @color-white;
 	min-height: 100%;
@@ -410,15 +417,14 @@ a {
 /* Don't place under `categories` because these also stylize standalone pages */
 .category-page {
     a {
-        color: @color-black;
         &:hover {
             text-decoration: underline;
         }
     }
-    h3 {
+    /*h3 {
         font-family: @font-family-accent;
         font-weight: bold;
-    }
+    }*/
     table.content {
         img {
             width: 75px;
@@ -469,18 +475,41 @@ a {
         }
     }
 
+    #intro {
+        #sections {
+            padding-top: 20px;
+        }
+        .section {
+            h3 {
+                margin-top: 0;
+            }
+            padding-bottom: 20px;
+            img,
+            .text {
+                float: left;
+            }
+            img {
+                width: 20%;
+            }
+            .text {
+                padding-left: 20px;
+                width: 80%;
+            }
+        }
+    }
+
     /* Team page */
-    &#team {
+    #team {
         .contact-institution-logo-row {
             margin-bottom: 10px;
         }
         .contact-institution-logo {
-            height:80px;
+            height: 80px;
             display: block;
             margin-bottom: 15px;
         }
         .contact-pi-logo {
-            height:80px;
+            height: 80px;
         }
         .contact-pi-desc {
             margin-left: 10px;
@@ -494,6 +523,15 @@ a {
         }
         .contact-researchers{
             margin-bottom: 10px;
+        }
+        .person {
+            padding-top: 10px;
+        }
+        .name {
+            font-weight: bold;
+        }
+        .email {
+            text-decoration: underline;
         }
     }
 }
