@@ -1,6 +1,7 @@
 var mod = angular.module("lincsDcic", [
 	"ngRoute",
 	"apisMod",
+	"calendarMod",
  	"controllersMod",
  	"datasetsMod",
  	"introMod",

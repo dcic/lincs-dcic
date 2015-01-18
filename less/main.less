@@ -394,24 +394,21 @@ h5 {
     &#calendar {
         .event {
             height: 100%;
-        }
-        .date,
-        .details {
-            float: left;
+            margin-bottom: 10px;
         }
         .date {
+            color: @color-accent;
+        }
+        .date,
+        .startTime {
             font-family: @font-family-accent;
             font-size: 20px;
         }
+        .startTime {
+            padding-left: 10px;
+        }
         .details {
             font-size: @font-size-base;
-            padding-left: 20px;
-        }
-        .title {
-            font-weight: bold;
-        }
-        .day {
-            color: @color-accent;
         }
     }
 }

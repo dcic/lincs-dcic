@@ -348,24 +348,21 @@ h5 {
 }
 .category-index#calendar .event {
   height: 100%;
-}
-.category-index#calendar .date,
-.category-index#calendar .details {
-  float: left;
+  margin-bottom: 10px;
 }
 .category-index#calendar .date {
+  color: #ff00f0;
+}
+.category-index#calendar .date,
+.category-index#calendar .startTime {
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 20px;
 }
+.category-index#calendar .startTime {
+  padding-left: 10px;
+}
 .category-index#calendar .details {
   font-size: 13px;
-  padding-left: 20px;
-}
-.category-index#calendar .title {
-  font-weight: bold;
-}
-.category-index#calendar .day {
-  color: #ff00f0;
 }
 /* Don't place under `categories` because these also stylize standalone pages */
 .category-page {
