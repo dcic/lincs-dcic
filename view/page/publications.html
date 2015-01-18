@@ -1,15 +1,20 @@
 <div ng-controller="publicationsCtrl" id="publications" class="category-page">
-	<h3>Publications</h3>
-	<strong>2014</strong>
-	<ul class="content">
-		<li ng-repeat="pub in entries" ng-if="pub.year == '2014'">
-			<em><a href="{{pub.url}}" target="_blank">{{pub.title}}</a></em><span>. {{pub.citation}}. {{pub.year}}.</span>
-		</li>
-	</ul>
-	<strong>2013</strong>
-	<ul class="content">
-		<li ng-repeat="pub in entries" ng-if="pub.year == '2013'">
-			<em><a href="{{pub.url}}" target="_blank">{{pub.title}}</a></em><span>. {{pub.citation}}. {{pub.year}}.</span>
-		</li>
-	</ul>
+	<h2>Publications</h2>
+	<h3>2014</h3>
+    <div ng-repeat="pub in publications" ng-if="pub.year == 2014" class="publication">
+        <a href="{{pub.url}}" target="_blank" class="title">{{pub.title}}</a>
+        <br>
+        <p>{{pub.authors}}</p>
+        <p>{{pub.citation}}</p>
+        <p>{{pub.ids}}</p>
+    </div>
+    <hr>
+    <h3>2013</h3>
+    <div ng-repeat="pub in publications" ng-if="pub.year == 2013" class="publication">
+        <a href="{{pub.url}}" target="_blank" class="title">{{pub.title}}</a>
+        <br>
+        <p>{{pub.authors}}</p>
+        <p>{{pub.citation}}</p>
+        <p>{{pub.ids}}</p>
+    </div>
 </div>

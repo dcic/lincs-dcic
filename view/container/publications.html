@@ -1,8 +1,9 @@
 <div class="category-index" ng-controller="publicationsCtrl">
 	<h4><a href="#/publications">Publications &raquo;</a></h4>
 	<ul class="content">
-		<li ng-repeat="link in entries | limitTo:3">
-			<em><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></em><span>. {{link.citation}}. {{link.year}}.</span>
+		<li ng-repeat="pub in publications | limitTo:3">
+			<em><a href="{{pub.url}}" target="{{pub.target}}">{{pub.title}}.</a></em>
+            <span>{{pub.authors}} {{pub.citation}}</span>
 		</li>
 	</ul>
 </div>

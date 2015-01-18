@@ -439,6 +439,16 @@ h5 {
   padding-left: 20px;
   width: 80%;
 }
+.category-page .publication {
+  padding-bottom: 20px;
+}
+.category-page .publication p {
+  margin: 0;
+}
+.category-page .publication a.title {
+  font-size: 16px;
+  font-style: italics;
+}
 .category-page #team .contact-institution-logo-row {
   margin-bottom: 10px;
 }
