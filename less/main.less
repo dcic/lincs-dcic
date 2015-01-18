@@ -270,6 +270,30 @@ h5 {
 		vertical-align: middle;
 	}
 }
+.category-index,
+.category-page {
+    ul {
+		padding: 0 0 0 15px;
+	}
+	li {
+        list-style-type: none;
+        a {
+            /* Color on the main page is black; on individual pages it is accent. */
+            &:hover {
+                cursor: pointer;
+            }
+        }
+	}
+	li:before {
+        content: '\F105'; /* FontAwesome char code inside the '' */
+        color: @color-charcoal;
+        font-family: 'FontAwesome';
+        display: inline-block;
+        width: 1.2em; /* same as padding-left set on li */
+        margin-left: -1.5em; /* same as padding-left set on li */
+        padding-left: 6px;
+    }
+}
 .category-index {
 	background: @color-white;
 	box-shadow: 3px 3px 3px #c5c5c5;
@@ -279,7 +303,7 @@ h5 {
 	padding: 10px;
 	position: relative;
 	a {
-		color: @color-primary;
+		color: @color-black;
 		&:hover {
 			color: @color-primary-light;
 			cursor: pointer;
@@ -292,28 +316,6 @@ h5 {
 	td.first {
         border-top: none;
 	}
-	ul {
-		padding: 0 0 0 15px;
-	}
-	li {
-        list-style-type: none;
-        a {
-            color: @color-black;
-            &:hover {
-                color: @color-primary-light;
-                cursor: pointer;
-                text-decoration: none;
-            }
-        }
-	}
-	li:before {
-        content: '\F105'; /* FontAwesome char code inside the '' */
-        color: @color-charcoal;
-        font-family: 'FontAwesome';
-        display: inline-block;
-        width: 1.2em; /* same as padding-left set on li */
-        margin-left: -1.2em; /* same as padding-left set on li */
-    }
 	h4 {
 		border-bottom: 1px solid #ebebeb;
 		color: @color-black; /* In case the header doesn't have a link */
@@ -336,10 +338,10 @@ h5 {
         a {
             color: @color-black;
             &:hover {
-            color: @color-primary;
-                }
+                color: @color-primary;
             }
         }
+    }
 	&#introduction {
         p {
             font-size: @font-size-base;
@@ -417,7 +419,9 @@ h5 {
 /* Don't place under `categories` because these also stylize standalone pages */
 .category-page {
     a {
+        color: @color-primary-light;
         &:hover {
+            color: @color-primary;
             text-decoration: underline;
         }
     }
@@ -475,10 +479,8 @@ h5 {
         }
     }
 
-    #intro {
-        #sections {
-            padding-top: 20px;
-        }
+    #sections {
+        padding-top: 20px;
         .section {
             h3 {
                 margin-top: 0;

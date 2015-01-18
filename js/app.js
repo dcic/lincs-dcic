@@ -1,8 +1,10 @@
 var mod = angular.module("lincsDcic", [
 	"ngRoute",
  	"controllersMod",
+ 	"trainingMod",
  	"introMod",
- 	"teamMod"
+ 	"teamMod",
+ 	"subnavMod"
 ]);
 
 mod.config(["$routeProvider", function($routeProvider) {
@@ -15,8 +17,8 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/about", {
 			templateUrl: "view/page/about.html"
 		}).
-		when("/education", {
-			templateUrl: "view/page/education.html"
+		when("/training", {
+			templateUrl: "view/page/training.html"
 		}).
 		when("/publications", {
 			templateUrl: "view/page/publications.html"
@@ -35,13 +37,13 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 
 		/* Extra pages */
-		when("/education/summerresearch", {
+		when("/training/summerresearch", {
 			templateUrl: "view/page/summerresearch.html"
 		}).
-		when("/education/phd", {
+		when("/training/phd", {
 			templateUrl: "view/page/phd.html"
 		}).
-		when("/education/sotoutreach", {
+		when("/training/sotoutreach", {
 			templateUrl: "view/page/sotoutreach.html"
 		}).
 		when("/contact", {

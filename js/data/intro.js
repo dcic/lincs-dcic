@@ -9,19 +9,23 @@ mod.controller("introCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.sections = [
         {
             title: "Integrated Knowledge Environment",
-            text: $sce.trustAsHtml("The DCIC is constructing a high-capacity, scalable IKE enabling federated access, intuitive querying, and integrative analysis and visualization across all LINCS resources together with external data from other relevant resources.")
+            text: $sce.trustAsHtml("The DCIC is constructing a high-capacity, scalable IKE enabling federated access, intuitive querying, and integrative analysis and visualization across all LINCS resources together with external data from other relevant resources."),
+            image: "http://placehold.it/150x150"
         },
         {
             title: "Data Science Research",
-            text:  $sce.trustAsHtml("The DCIC conducts several internal research projects and supports several external data science research projects, addressing various data integration and intracellular molecular regulatory network challenges.")
+            text:  $sce.trustAsHtml("The DCIC conducts several internal research projects and supports several external data science research projects, addressing various data integration and intracellular molecular regulatory network challenges."),
+            image: "http://placehold.it/150x150"
         },
         {
             title: "Community Training and Outreach",
-            text: $sce.trustAsHtml("The CTO established several educational programs, including a <a href='https://www.coursera.org/course/bd2klincs' target='_blank'>Big Data Science MOOC on Coursera</a> and a <a href='/#/summerresearch'>Summer Research Training Program in Biomedical Big Data Science</a>. In addition, the CTO is initiating and supporting diverse and collaborative projects that leverage LINCS resources and disseminate LINCS data and tools.")
+            text: $sce.trustAsHtml("The CTO established several educational programs, including a <a href='https://www.coursera.org/course/bd2klincs' target='_blank'>Big Data Science MOOC on Coursera</a> and a <a href='/#/summerresearch'>Summer Research Training Program in Biomedical Big Data Science</a>. In addition, the CTO is initiating and supporting diverse and collaborative projects that leverage LINCS resources and disseminate LINCS data and tools."),
+            image: "http://placehold.it/150x150"
         },
         {
             title: "Consortium Coordination and Administration",
-            text: $sce.trustAsHtml("The CCA supports and manages the DCIC goals and deliverables and coordinates activities across the LINCS and BD2K programs.")
+            text: $sce.trustAsHtml("The CCA supports and manages the DCIC goals and deliverables and coordinates activities across the LINCS and BD2K programs."),
+            image: "http://placehold.it/150x150"
         }
     ];
 }]);

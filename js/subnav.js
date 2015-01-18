@@ -12,7 +12,7 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
         },
         {
             title: 'Training and Outreach',
-            url: '/#/outreach'
+            url: '/#/training'
         },
         {
             title: 'Resources',

@@ -236,6 +236,35 @@ h5 {
 .table td {
   vertical-align: middle;
 }
+.category-index ul,
+.category-page ul {
+  padding: 0 0 0 15px;
+}
+.category-index li,
+.category-page li {
+  list-style-type: none;
+}
+.category-index li a,
+.category-page li a {
+  /* Color on the main page is black; on individual pages it is accent. */
+}
+.category-index li a:hover,
+.category-page li a:hover {
+  cursor: pointer;
+}
+.category-index li:before,
+.category-page li:before {
+  content: '\F105';
+  /* FontAwesome char code inside the '' */
+  color: #222222;
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 1.2em;
+  /* same as padding-left set on li */
+  margin-left: -1.5em;
+  /* same as padding-left set on li */
+  padding-left: 6px;
+}
 .category-index {
   background: #ffffff;
   box-shadow: 3px 3px 3px #c5c5c5;
@@ -246,7 +275,7 @@ h5 {
   position: relative;
 }
 .category-index a {
-  color: #306f84;
+  color: #000000;
 }
 .category-index a:hover {
   color: #599fb7;
@@ -258,31 +287,6 @@ h5 {
 }
 .category-index td.first {
   border-top: none;
-}
-.category-index ul {
-  padding: 0 0 0 15px;
-}
-.category-index li {
-  list-style-type: none;
-}
-.category-index li a {
-  color: #000000;
-}
-.category-index li a:hover {
-  color: #599fb7;
-  cursor: pointer;
-  text-decoration: none;
-}
-.category-index li:before {
-  content: '\F105';
-  /* FontAwesome char code inside the '' */
-  color: #222222;
-  font-family: 'FontAwesome';
-  display: inline-block;
-  width: 1.2em;
-  /* same as padding-left set on li */
-  margin-left: -1.2em;
-  /* same as padding-left set on li */
 }
 .category-index h4 {
   border-bottom: 1px solid #ebebeb;
@@ -371,7 +375,11 @@ h5 {
     }*/
   /* Team page */
 }
+.category-page a {
+  color: #599fb7;
+}
 .category-page a:hover {
+  color: #306f84;
   text-decoration: underline;
 }
 .category-page table.content img {
@@ -411,23 +419,23 @@ h5 {
 .category-page#summerresearch img {
   width: 100%;
 }
-.category-page #intro #sections {
+.category-page #sections {
   padding-top: 20px;
 }
-.category-page #intro .section {
+.category-page #sections .section {
   padding-bottom: 20px;
 }
-.category-page #intro .section h3 {
+.category-page #sections .section h3 {
   margin-top: 0;
 }
-.category-page #intro .section img,
-.category-page #intro .section .text {
+.category-page #sections .section img,
+.category-page #sections .section .text {
   float: left;
 }
-.category-page #intro .section img {
+.category-page #sections .section img {
   width: 20%;
 }
-.category-page #intro .section .text {
+.category-page #sections .section .text {
   padding-left: 20px;
   width: 80%;
 }

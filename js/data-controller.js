@@ -7,12 +7,10 @@ var mod = angular.module("controllersMod", [
 	"contactMod",
 	"datacentersMod",
 	"datasetsassaysMod",
-	"educationMod",
 	"emailMod",
 	"newsMod",
 	"publicationsMod",
-	"toolsappsMod",
-	"subnavMod"
+	"toolsappsMod"
 ]);
 
 mod.controller("apisdocsCtrl", ["$scope", "apisdocs", function($scope, apisdocs) {
@@ -21,10 +19,6 @@ mod.controller("apisdocsCtrl", ["$scope", "apisdocs", function($scope, apisdocs)
 
 mod.controller("communityCtrl", ["$scope", "community", function($scope, community) {
 	$scope.entries = community.links;
-}]);
-
-mod.controller("educationCtrl", ["$scope", "education", function($scope, education) {
-	$scope.entries = education.links;
 }]);
 
 mod.controller("newsCtrl", ["$scope", "news", function($scope, news) {

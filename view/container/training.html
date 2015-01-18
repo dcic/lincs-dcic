@@ -1,7 +1,7 @@
-<div class="category-index" ng-controller="educationCtrl">
-	<h4><a href="#/education">Education &raquo;</a></h4>
+<div class="category-index" ng-controller="trainingCtrl">
+	<h4><a href="#/training">Training and Outreach &raquo;</a></h4>
 	<ul class="content">
-    	<li ng-repeat="link in entries">
+    	<li ng-repeat="link in links">
             <a href="{{link.url}}" target="{{link.target}}"><em class="important">{{link.highlight}}</em>{{link.title}}</a>
 		</li>
     </ul>
