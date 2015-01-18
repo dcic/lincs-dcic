@@ -53,7 +53,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         }
     ];
     
-    $scope.links = [
+    $scope.indexLinks = [
 		{
             title: "Summer Research Training Program in Biomedical Big Data Science",
             highlight: "Accepting applications: ",

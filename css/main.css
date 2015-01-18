@@ -316,7 +316,7 @@ h5 {
 .category-index#introduction p {
   font-size: 13px;
 }
-.category-index#toolsapps table.content a {
+.category-index#tools table.content a {
   font-weight: bold;
 }
 .category-index#news table.content p {
@@ -391,7 +391,7 @@ h5 {
 .category-page table.content p {
   margin-bottom: 0;
 }
-.category-page#toolsapps a {
+.category-page#tools a {
   font-weight: bold;
 }
 .category-page#analysis .col-md-4 textarea,

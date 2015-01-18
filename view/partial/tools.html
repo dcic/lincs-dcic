@@ -1,11 +1,9 @@
-<div ng-controller="toolsappsCtrl" id="toolsapps" class="category-page">
-	<div class="col-md-12">
-        <h3>Tools & Apps</h3>
-    </div>
+<div ng-controller="toolsCtrl" id="tools">
+    <h3 class="col-md-12">Tools & Apps</h3>
     <div class="col-md-8">
         <h4>Data Coordination and Integration Centers</h4>
         <table class="content table">
-            <tr ng-repeat="link in dcicLinks">
+            <tr ng-repeat="link in tools | filter:{ organization:'dcic' }">
                 <td>
                     <img ng-src="images/app-logos/{{link.image}}" />
                 </td>
@@ -19,7 +17,7 @@
         <br>
         <h4>Data Signature Generation Centers</h4>
         <table class="content table">
-            <tr ng-repeat="link in dsgcLinks">
+            <tr ng-repeat="link in tools | filter:{ organization:'dsgc' }">
                 <td>
                     <img ng-src="images/app-logos/{{link.image}}" />
                 </td>
@@ -29,7 +27,5 @@
                 </td>
             </tr>
         </table>
-    </div>
-    <div class="col-md-4">
     </div>
 </div>

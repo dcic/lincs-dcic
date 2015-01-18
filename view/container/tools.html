@@ -1,0 +1,16 @@
+<div class="category-index" id="tools" ng-controller="toolsCtrl">
+	<h4><a href="#/tools">Tools & Apps &raquo;</a></h4>
+	<table class="content table">
+        <tr ng-repeat="tool in tools | limitTo:2">
+            <td ng-class="{first : $first}">
+                <a href="{{tool.url}}" target="_blank">
+                    <img ng-src="images/app-logos/{{tool.image}}" />
+                </a>
+            </td>
+            <td ng-class="{first : $first}">
+                <a href="{{tool.url}}" target="_blank">{{tool.title}}</a>
+                <p>{{tool.description}}</p>
+            </td>
+        </tr>
+	</table>
+</div>

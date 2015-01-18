@@ -1,9 +1,12 @@
 var mod = angular.module("lincsDcic", [
 	"ngRoute",
+	"apisMod",
  	"controllersMod",
- 	"trainingMod",
+ 	"datasetsMod",
  	"introMod",
  	"teamMod",
+ 	"toolsMod",
+ 	"trainingMod",
  	"subnavMod"
 ]);
 
@@ -20,17 +23,11 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/training", {
 			templateUrl: "view/page/training.html"
 		}).
+		when("/resources", {
+			templateUrl: "view/page/resources.html"
+		}).
 		when("/publications", {
 			templateUrl: "view/page/publications.html"
-		}).
-		when("/dataassays", {
-			templateUrl: "view/page/dataassays.html"
-		}).
-		when("/toolsapps", {
-			templateUrl: "view/page/toolsapps.html"
-		}).
-		when("/apisdocs", {
-			templateUrl: "view/page/apisdocs.html"
 		}).
 		when("/news", {
 			templateUrl: "view/page/news.html"

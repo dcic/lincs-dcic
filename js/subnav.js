@@ -30,40 +30,13 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
             title: 'News',
             url: '/#/news'
         }
-        /*{
-            title: "Education",
-            url: "/#/education"
-        },
-        {
-            title: "Publications",
-            url: "/#/publications"
-        },
-        {
-            title: "Datasets & Assays",
-            url: "/#/dataassays"
-        },
-        {
-            title: "Tools & Apps",
-            url: "/#/toolsapps"
-        },
-        {
-            title: "APIs & Docs",
-            url: "/#/apisdocs"
-        },
-        {
-            title: "News",
-            url: "/#/news"
-        },
-        {
-            title: "Events",
-            url: "/#/events"
-        }*/
     ];
 
     $scope.categoriesRight = [
         {
             title: 'LINCSPROJECT',
-            url: 'http://www.lincsproject.org/'
+            url: 'http://www.lincsproject.org/',
+            target: '_blank'
         }
     ];
 
