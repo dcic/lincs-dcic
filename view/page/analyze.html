@@ -1,14 +1,14 @@
 <div ng-controller="analyzeCtrl" id="analysis" class="category-page">
 	<form ng-submit="submit()">
 		<div class="row">
-			<div class="col-md-4 col-sm-4">
+			<div class="col-md-4">
 				<strong>Gene list</strong><br>
 				<textarea id="geneSubmission" ng-model="formData.geneList" placeholder="{{geneListPlaceholder}}"></textarea>
 				<p id="example">
 					Paste in a list of gene symbols optionally followed by a comma and levels of membership between 0 and 1 with each gene separated by a new line. Try a <span ng-click="normalExample()" class="spn-link">regular example</span> or an <span ng-click="fuzzyExample()" class="spn-link">example of a quantitative set</span>.
 				</p>
 			</div>
-			<div class="col-md-8 col-sm-8">
+			<div class="col-md-8">
 				<strong>Metadata</strong><br>
 				<input ng-model="formData.desc" placeholder="Title of gene list"></input>
 				<input ng-model="formData.pmid" placeholder="Identifier if available, e.g. PubMed ID, GEO accession number"></input>

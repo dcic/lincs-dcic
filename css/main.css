@@ -1,48 +1,50 @@
+/*
+ * Style for the LINCS-DCIC website.
+ */
+/* LESS variables
+ * ------------------------------------------------------------------------- */
 /* colors */
 /* Logo and accent colors */
 /* fonts */
+/* Tag selectors, i.e. global settings.
+ * ------------------------------------------------------------------------- */
 html,
 body {
   height: 100%;
-}
-a {
-  color: #599fb7;
-}
-a:hover {
-  color: #306f84;
-  text-decoration: none;
-}
-p,
-a {
   font-family: 'Arial', sans-serif;
+}
+a {
+  /* Set default to override Bootstrap's default. */
+  color: #000000;
+}
+a:hover,
+a:active,
+a:link,
+a:visited {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
 }
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: 'Archivo Narrow', sans-serif;
 }
+/* Structal elements: wrapper, header, footer, and related content.
+ * ------------------------------------------------------------------------- */
 #wrapper {
   background: #ffffff;
   min-height: 100%;
   height: auto;
-  /* Negative indent footer by its height. */
-  /*margin: 0 auto -@footer-height;*/
-  /* Pad bottom by footer height */
-  /*padding: 0 0 @footer-height;*/
 }
 #brand #logo {
-  color: #000000;
-  display: block;
   font-family: 'Archivo Narrow', sans-serif;
-  height: 100%;
   letter-spacing: 4px;
   text-transform: uppercase;
   line-height: 2em;
-}
-#brand #logo:hover {
-  color: #599fb7;
 }
 #brand #logo img {
   display: block;
@@ -50,7 +52,11 @@ h5 {
   max-width: 160px;
   padding-bottom: 10px;
 }
-#brand #logo a:hover {
+#brand #logo a {
+  text-decoration: none;
+}
+#brand #logo a:hover,
+#brand #logo a:visited {
   text-decoration: none;
 }
 #brand #logo span#lincs-title-top {
@@ -65,7 +71,6 @@ h5 {
   font-weight: bold;
 }
 #header {
-  background: #ffffff;
   padding-top: 10px;
 }
 #subnav {
@@ -73,17 +78,13 @@ h5 {
   padding-bottom: 0;
 }
 #subnav a {
-  color: #000000;
   display: inline-block;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 20px;
-  /*font-weight: bold;*/
   width: 100%;
 }
-#subnav a:hover,
-#subnav a:active,
-#subnav a:focus {
-  text-decoration: none;
+#subnav a:hover {
+  color: #000000;
 }
 #subnav ul {
   margin-bottom: 0;
@@ -93,21 +94,64 @@ h5 {
   border-bottom: 2px solid #dddddd;
 }
 #subnav li:hover {
-  /*background: @color-gray;*/
-  border-bottom: 2px solid #ff00f0;
+  border-bottom: 2px solid #d16291;
 }
 #subnav .navbar-right a {
   font-size: 14px;
 }
-#subnav .dropdown-menu li {
-  border-bottom: none;
+#content-wrapper {
+  padding-top: 10px;
 }
-/* Carousel */
+#content-wrapper h5.column-h {
+  background: #306f84;
+  color: #ffffff;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 7px 0;
+  text-align: center;
+}
+#footer {
+  background: #222222;
+  height: auto;
+  margin-top: 20px;
+  padding: 30px 0;
+}
+#footer a,
+#footer p {
+  color: #ffffff;
+  font-size: 12px;
+}
+#footer a {
+  font-family: 'Open Sans';
+}
+#footer a:hover {
+  color: #599fb7;
+}
+#footer h3 {
+  color: #ffffff;
+}
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+#footer #social a {
+  border: none;
+  border-radius: 0;
+}
+#footer #social img {
+  width: 30px;
+}
+#footer #social .research-gate {
+  padding: 0;
+}
+/* Carousel or rotator. Most of the element names are defined by Bootstrap
+ * and should not be renamed.
+ * ------------------------------------------------------------------------- */
 #feature-banner {
   padding: 10px 0 40px 0;
+  /* Images should be cut exactly. */
   width: 100%;
-  /*height: 340px;*/
-  /* Images should be cut exactly; this should not have to be done. But just in case. */
 }
 #feature-banner #carousel-img-link,
 #feature-banner img {
@@ -131,13 +175,13 @@ h5 {
   width: 20px;
 }
 #feature-banner .carousel-highlight {
-  background: #ff00f0;
+  background: #d16291;
 }
 #feature-banner .carousel-indicators {
   bottom: 0;
 }
 #feature-banner .carousel-indicators li {
-  border: 1px solid #ff00f0 !important;
+  border: 1px solid #d16291 !important;
 }
 #feature-banner .carousel-caption {
   background: #ffffff;
@@ -160,7 +204,7 @@ h5 {
   width: 35%;
 }
 #feature-banner .carousel-caption .caption-title-block a {
-  color: #ff00f0;
+  color: #d16291;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -179,58 +223,10 @@ h5 {
   padding-left: 10px;
   width: 65%;
 }
-#content-wrapper {
-  padding-top: 10px;
-}
-#content-wrapper h5.column-h {
-  background: #306f84;
-  color: #ffffff;
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 16px;
-  margin-bottom: 15px;
-  padding: 7px 0;
-  text-align: center;
-}
-#footer {
-  background: #000000;
-  height: auto;
-  margin-top: 20px;
-  padding: 30px 0;
-}
-#footer a,
-#footer p {
-  color: #ffffff;
-}
-#footer a {
-  font-family: 'Open Sans';
-}
-#footer a:hover {
-  color: #599fb7;
-  text-decoration: none;
-}
-#footer h3 {
-  color: #ffffff;
-}
-#footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-#footer #social a {
-  border: none;
-  border-radius: 0;
-}
-#footer #social img {
-  width: 30px;
-}
-#footer #social .research-gate {
-  padding: 0;
-}
-.table {
-  margin-bottom: 0;
-}
-.table td {
-  vertical-align: middle;
-}
+/* Category content is related but varies in style. "category-index" refers
+ * to content on the main page. "catgory-page" refers to content on
+ * individual pages.
+ * ------------------------------------------------------------------------- */
 .category-index ul,
 .category-page ul {
   padding: 0 0 0 15px;
@@ -249,33 +245,26 @@ h5 {
 }
 .category-index li:before,
 .category-page li:before {
-  content: '\F105';
   /* FontAwesome char code inside the '' */
+  content: '\F105';
   color: #222222;
   font-family: 'FontAwesome';
   display: inline-block;
   width: 1.2em;
-  /* same as padding-left set on li */
   margin-left: -1.5em;
-  /* same as padding-left set on li */
   padding-left: 6px;
 }
 .category-index {
   background: #ffffff;
-  box-shadow: 3px 3px 3px #c5c5c5;
+  box-shadow: 1px 1px 1px #c5c5c5;
   border: 1px solid #ccc;
   min-height: 100px;
   margin-bottom: 10px;
   padding: 10px;
   position: relative;
 }
-.category-index a {
-  color: #000000;
-}
 .category-index a:hover {
   color: #599fb7;
-  cursor: pointer;
-  text-decoration: none;
 }
 .category-index td {
   vertical-align: middle;
@@ -296,37 +285,28 @@ h5 {
   color: #000000;
   font-family: 'Archivo Narrow', sans-serif;
 }
-.category-index .content {
-  font-size: 13px;
-}
-.category-index table.content img {
+.category-index table img {
   width: 50px;
 }
-.category-index table.content a {
+.category-index table a {
   color: #000000;
 }
-.category-index table.content a:hover {
+.category-index table a:hover {
   color: #306f84;
 }
-.category-index#introduction p {
-  font-size: 13px;
-}
-.category-index#tools table.content a {
+.category-index#tools table a {
   font-weight: bold;
 }
-.category-index#news table.content p {
+.category-index#news table p {
   font-weight: bold;
   margin-bottom: 0;
-}
-.category-index#community ahover {
-  cursor: pointer;
 }
 .category-index#calendar .event {
   height: 100%;
   margin-bottom: 10px;
 }
 .category-index#calendar .date {
-  color: #ff00f0;
+  color: #d16291;
 }
 .category-index#calendar .date,
 .category-index#calendar .startTime {
@@ -341,10 +321,6 @@ h5 {
 }
 /* Don't place under `categories` because these also stylize standalone pages */
 .category-page {
-  /*h3 {
-        font-family: @font-family-accent;
-        font-weight: bold;
-    }*/
   /* Team page */
 }
 .category-page a {
@@ -354,27 +330,27 @@ h5 {
   color: #306f84;
   text-decoration: underline;
 }
-.category-page table.content img {
+.category-page table {
+  margin-bottom: 0;
+}
+.category-page table img {
   width: 75px;
 }
-.category-page table.content td:first-child {
+.category-page table td:first-child {
   width: 100px;
 }
-.category-page table.content p {
+.category-page table p {
   margin-bottom: 0;
 }
 .category-page#tools a {
   font-weight: bold;
 }
-.category-page#analysis .col-md-4 textarea,
-.category-page#analysis .col-sm-4 textarea {
+.category-page#analysis .col-md-4 textarea {
   height: 200px;
   width: 100%;
 }
 .category-page#analysis .col-md-8 input,
-.category-page#analysis .col-sm-8 input,
-.category-page#analysis .col-md-8 textarea,
-.category-page#analysis .col-sm-8 textarea {
+.category-page#analysis .col-md-8 textarea {
   margin-bottom: 10px;
   width: 100%;
 }
@@ -454,76 +430,17 @@ h5 {
 .category-page #team .email {
   text-decoration: underline;
 }
-/*
-@media (max-width: 9999px) {
-	#logo {
-		height: 90px;
-		#lincs-logo {
-			width: 78px;
-		}
-		#lincs-title {
-			font-size: 24px;
-			padding-left: 10px;
-			position: relative;
-			top: 16px;
-		}
-	}
-}
-@media (max-width: 980px) {
-	#logo {
-		width: 560px;
-	}
-}
-@media (max-width: 760px) {
-	#logo {
-		padding-bottom: 2px;
-		width: 450px;
-		#lincs-title {
-			font-size: 18px;
-			padding-left: 10px;
-			position: relative;
-			top: 16px;
-		}
-	}
-}
-@media (max-width: 480px) {
-	#logo {
-		padding-bottom: 2px;
-		width: 335px;
-		#lincs-logo {
-			position: relative;
-			top: 12px;
-			width: 52px;
-		}
-		#lincs-title {
-			font-size: 13px;
-			position: relative;
-			top: 20px;
-		}
-	}
-    #feature-banner {
-        display: none;
-	}
-}*/
-.spn-link {
-  color: #599fb7;
-  cursor: pointer;
-}
-.spn-link:hover {
-  color: #306f84;
-}
-.top-buffer {
-  margin-top: 20px;
-}
+/* Miscellaneous global selectors.
+ * ------------------------------------------------------------------------- */
 a.important,
 .important {
   font-style: normal;
   font-weight: bold;
-  color: #ff00f0 !important;
+  color: #d16291 !important;
 }
 a.important a,
 .important a {
-  color: #ff00f0 !important;
+  color: #d16291 !important;
 }
 a.important a:hover,
 .important a:hover {
