@@ -52,9 +52,9 @@ h5 {
 	min-height: 100%;
     height: auto;
 	/* Negative indent footer by its height. */
-	margin: 0 auto -@footer-height;
+	/*margin: 0 auto -@footer-height;*/
 	/* Pad bottom by footer height */
-	padding: 0 0 @footer-height;
+	/*padding: 0 0 @footer-height;*/
 }
 #brand {
     #logo {
@@ -224,8 +224,10 @@ h5 {
     }
 }
 #footer {
-    height: @footer-height;
-    padding-top: 20px;
+    background: @color-black;
+    height: auto;
+    margin-top: 20px;
+    padding: 30px 0;
 	a,
 	p {
 		color: @color-white;
@@ -237,30 +239,23 @@ h5 {
 			text-decoration: none;
 		}
 	}
-	#org-logos {
-	    border-top: 1px solid @color-gray;
-        padding: 25px 0;
-		img {
-			height: 40px;
-			margin: 0 5px;
-		}
+	h3 {
+        color: @color-white;
 	}
-    #extra {
-        background: @color-black;
-        font-family: @font-family-accent;
-        font-size: 12px;
-        padding: 20px 0;
-        li:first-child {
-            border-right: 1px solid @color-white;
-            padding-right: 20px;
-        }
-        li:last-child {
-            padding-left: 20px;
-        }
+	ul {
+        list-style-type: none;
+        padding: 0;
+	}
+    #social {
         a {
-            &:hover {
-                color: @color-primary;
-            }
+            border: none;
+            border-radius: 0;
+        }
+        img {
+            width: 30px;
+        }
+        .research-gate {
+            padding: 0;
         }
     }
 }
@@ -368,28 +363,7 @@ h5 {
                 cursor: pointer;
             }
         }
-        #social {
-            bottom: 10px;
-            left: 12px;
-            padding-top: 20px;
-            a {
-                border: none;
-                border-radius: 0;
-                color: @color-white;
-            }
-            img {
-                width: 30px;
-            }
-            .research-gate {
-                padding: 0;
-            }
-            #social-icons {
-                &hover {
-                    cursor: pointer;
-                    opcacity: .8;
-                }
-            }
-        }
+
     }
     &#calendar {
         .event {

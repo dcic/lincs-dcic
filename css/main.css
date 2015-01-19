@@ -28,9 +28,9 @@ h5 {
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height. */
-  margin: 0 auto -200px;
+  /*margin: 0 auto -@footer-height;*/
   /* Pad bottom by footer height */
-  padding: 0 0 200px;
+  /*padding: 0 0 @footer-height;*/
 }
 #brand #logo {
   color: #000000;
@@ -192,8 +192,10 @@ h5 {
   text-align: center;
 }
 #footer {
-  height: 200px;
-  padding-top: 20px;
+  background: #000000;
+  height: auto;
+  margin-top: 20px;
+  padding: 30px 0;
 }
 #footer a,
 #footer p {
@@ -206,29 +208,22 @@ h5 {
   color: #599fb7;
   text-decoration: none;
 }
-#footer #org-logos {
-  border-top: 1px solid #dddddd;
-  padding: 25px 0;
+#footer h3 {
+  color: #ffffff;
 }
-#footer #org-logos img {
-  height: 40px;
-  margin: 0 5px;
+#footer ul {
+  list-style-type: none;
+  padding: 0;
 }
-#footer #extra {
-  background: #000000;
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 12px;
-  padding: 20px 0;
+#footer #social a {
+  border: none;
+  border-radius: 0;
 }
-#footer #extra li:first-child {
-  border-right: 1px solid #ffffff;
-  padding-right: 20px;
+#footer #social img {
+  width: 30px;
 }
-#footer #extra li:last-child {
-  padding-left: 20px;
-}
-#footer #extra a:hover {
-  color: #306f84;
+#footer #social .research-gate {
+  padding: 0;
 }
 .table {
   margin-bottom: 0;
@@ -325,26 +320,6 @@ h5 {
 }
 .category-index#community ahover {
   cursor: pointer;
-}
-.category-index#community #social {
-  bottom: 10px;
-  left: 12px;
-  padding-top: 20px;
-}
-.category-index#community #social a {
-  border: none;
-  border-radius: 0;
-  color: #ffffff;
-}
-.category-index#community #social img {
-  width: 30px;
-}
-.category-index#community #social .research-gate {
-  padding: 0;
-}
-.category-index#community #social #social-iconshover {
-  cursor: pointer;
-  opcacity: .8;
 }
 .category-index#calendar .event {
   height: 100%;
