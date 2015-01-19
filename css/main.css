@@ -330,7 +330,7 @@ h6 {
   margin-bottom: 0;
 }
 .category-page table img {
-  width: 75px;
+  width: 100px;
 }
 .category-page table td:first-child {
   width: 100px;
@@ -359,6 +359,13 @@ h6 {
 .category-page#analysis #example {
   color: #808080;
   font-size: 13px;
+}
+.category-page#news .title {
+  color: #000000;
+  font-weight: bold;
+}
+.category-page#news .date {
+  color: #808080;
 }
 .category-page#summerresearch img {
   width: 100%;

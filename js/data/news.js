@@ -1,7 +1,19 @@
 var mod = angular.module("newsMod", []);
 
-mod.factory("news", function() {
-	var links = [
+mod.controller("newsCtrl", ["$scope", function($scope) {
+	
+	var formatStories = function(stories) {
+        $(stories).each(function(i, story) {
+            if (!story.image) {
+                story.image = "dcic-logo.png";
+            }
+        });
+        return _.sortBy(stories, function(story) {
+            return -Date.parse(story.date);
+        });
+    };
+
+	$scope.stories = formatStories([
 		{
 			title: "UC Part of Team Selected for NIH's Multimillion-Dollar 'Big Data' Push",
 			url: "http://healthnews.uc.edu/news/?/25274/",
@@ -72,21 +84,8 @@ mod.factory("news", function() {
 			date: "9/12/2014",
 			image: "genomeweb.png"
 		}
-	];
-
-	return {
-		getLinks: function() {
-			$(links).each(function(i, val) {
-				if (!val.image) {
-					val.image = "dcic-logo.png";
-				}
-			});
-			return _.sortBy(links, function(link) {
-				return -Date.parse(link.date);
-			});
-		}
-	};
-});
+	]);
+}]);
 
 
 			
