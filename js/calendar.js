@@ -15,8 +15,10 @@ mod.controller("calendarCtrl", ["$scope", function($scope) {
     };
 
     var getStartTimeString = function(startObj) {
-        var hours = startObj.getHours() % 12,
+        var hours = startObj.getHours(),
             minutes = startObj.getMinutes();
+        if (hours > 12)
+            hours = hours - 12;
         if (hours === 0 && minutes === 0) {
             return "";
         } else if (minutes === 0) {
