@@ -1,6 +1,6 @@
 <div id="intro" class="row" class="category-page" ng-controller="introCtrl">
+    <h2 class="col-md-12">About BD2K-LINCS DCIC</h2>
     <div class="col-md-8">
-        <h2>About BD2K-LINCS DCIC</h2>
         <p ng-bind-html="introText"></p>
         <div id="sections">
             <div ng-repeat="section in sections" class="section">
@@ -14,6 +14,5 @@
             </div>
         </div>
     </div>
-    <!-- TODO: fill out the right-hand column -->
-    <div class="col-md-4"></div>
+    <div ng-include="'view/partial/rightnav.html'"></div>
 </div>

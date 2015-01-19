@@ -365,7 +365,6 @@ h6 {
     }
 }
 
-/* Don't place under `categories` because these also stylize standalone pages */
 .category-page {
     a {
         color: @color-primary-light;
@@ -421,7 +420,6 @@ h6 {
             width: 100%;
         }
     }
-
     #sections {
         padding-top: 20px;
         .section {
@@ -442,7 +440,6 @@ h6 {
             }
         }
     }
-
     .publication {
         padding-bottom: 20px;
         p {
@@ -453,9 +450,11 @@ h6 {
             font-style: italics;
         }
     }
-
-    /* Team page */
     #team {
+        .pi {
+            /* This is for when the page is collapsed. */
+            padding-top: 10px;
+        }
         .contact-institution-logo-row {
             margin-bottom: 10px;
         }
@@ -491,6 +490,12 @@ h6 {
         }
     }
 }
+.rightnav {
+    img {
+        width: 100%;
+    }
+}
+
 
 /* Miscellaneous global selectors.
  * ------------------------------------------------------------------------- */
@@ -510,10 +515,13 @@ a.important,
     clear: both;
 }
 /* Override Bootstrap default */
+.navbar {
+    margin-bottom: 5px;
+}
 .navbar-default {
 	background-color: transparent;
 	border-color: transparent;
 }
-.navbar {
-    margin-bottom: 5px;
+.navbar-right {
+    margin-right: 0;
 }

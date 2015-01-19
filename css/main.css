@@ -319,10 +319,6 @@ h6 {
 .category-index#calendar .details {
   font-size: 13px;
 }
-/* Don't place under `categories` because these also stylize standalone pages */
-.category-page {
-  /* Team page */
-}
 .category-page a {
   color: #599fb7;
 }
@@ -397,6 +393,10 @@ h6 {
   font-size: 16px;
   font-style: italics;
 }
+.category-page #team .pi {
+  /* This is for when the page is collapsed. */
+  padding-top: 10px;
+}
 .category-page #team .contact-institution-logo-row {
   margin-bottom: 10px;
 }
@@ -430,6 +430,9 @@ h6 {
 .category-page #team .email {
   text-decoration: underline;
 }
+.rightnav img {
+  width: 100%;
+}
 /* Miscellaneous global selectors.
  * ------------------------------------------------------------------------- */
 a.important,
@@ -450,10 +453,13 @@ a.important a:hover,
   clear: both;
 }
 /* Override Bootstrap default */
+.navbar {
+  margin-bottom: 5px;
+}
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
 }
-.navbar {
-  margin-bottom: 5px;
+.navbar-right {
+  margin-right: 0;
 }

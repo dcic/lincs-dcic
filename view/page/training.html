@@ -1,10 +1,9 @@
 <div id="training" class="row category-page" ng-controller="trainingCtrl">
+    <h2 class="col-md-12">Training and Outreach</h2>
     <div class="col-md-8">
-        <h2>Training and Outreach</h2>
         <p ng-bind-html="introText"></p>
         <div id="sections">
             <div ng-repeat="section in sections" class="section">
-                <!-- TODO: fill out this image -->
                 <img src="{{section.image}}" class="img-responsive">
                 <div class="text">
                     <h3>{{section.title}}</h3>
@@ -14,6 +13,5 @@
             </div>
         </div>
     </div>
-    <!-- TODO: fill out the right-hand column -->
-    <div class="col-md-4"></div>
+    <div ng-include="'view/partial/rightnav.html'"></div>
 </div>

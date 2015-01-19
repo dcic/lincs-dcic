@@ -45,9 +45,6 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/training/sotoutreach", {
 			templateUrl: "view/page/sotoutreach.html"
 		}).
-		when("/contact", {
-			templateUrl: "view/page/contact.html"
-		}).
 		when("/jobs", {
 			templateUrl: "view/page/jobs.html"
 		}).
@@ -59,9 +56,6 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		when("/datacenters", {
 			templateUrl: "view/page/datacenters.html"
-		}).
-		when("/mooc", {
-			templateUrl: "view/page/mooc.html"
 		}).
 		when("/events", {
 			templateUrl: "view/page/events.html"
