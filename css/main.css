@@ -5,6 +5,7 @@
  * ------------------------------------------------------------------------- */
 /* colors */
 /* Logo and accent colors */
+/* Unused! */
 /* fonts */
 /* Tag selectors, i.e. global settings.
  * ------------------------------------------------------------------------- */
@@ -40,16 +41,28 @@ h6 {
   min-height: 100%;
   height: auto;
 }
+#header {
+  border-bottom: 3px solid #dddddd;
+  padding-top: 10px;
+}
+#brand {
+  padding-top: 60px;
+}
 #brand #logo {
   font-family: 'Archivo Narrow', sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   line-height: 2em;
 }
+#brand #logo #dcic-title {
+  float: left;
+  padding: 0 0 0 15px;
+}
 #brand #logo img {
-  display: block;
-  margin: 0 auto;
-  max-width: 160px;
+  float: left;
+  /*display: block;
+            margin: 0 auto;*/
+  max-width: 80px;
   padding-bottom: 10px;
 }
 #brand #logo a {
@@ -70,31 +83,38 @@ h6 {
   font-size: 24px;
   font-weight: bold;
 }
-#header {
-  padding-top: 10px;
-}
 #subnav {
-  background: #dddddd;
-  padding-bottom: 0;
+  background: #3593b1;
+  padding: 0;
+  letter-spacing: 0.1em;
+  /* Override Bootstrap */
+  border: none;
+  min-height: 0;
 }
 #subnav a {
+  color: #ffffff;
   display: inline-block;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 20px;
   width: 100%;
 }
 #subnav a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 #subnav ul {
   margin-bottom: 0;
 }
 #subnav li {
   /* This is to ensure the nav doesn't bump down on hover. */
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 4px solid #3593b1;
+  padding: 8px;
+}
+#subnav li a {
+  font-size: 16px;
+  padding: 0;
 }
 #subnav li:hover {
-  border-bottom: 2px solid #d16291;
+  border-bottom: 4px solid #09505b;
 }
 #subnav .navbar-right a {
   font-size: 14px;
@@ -102,14 +122,16 @@ h6 {
 #content-wrapper {
   padding-top: 10px;
 }
-#content-wrapper h5.column-h {
-  background: #306f84;
-  color: #ffffff;
+#content-wrapper .column-h {
   font-family: 'Archivo Narrow', sans-serif;
-  font-size: 16px;
-  margin-bottom: 15px;
-  padding: 7px 0;
-  text-align: center;
+  padding: 20px 0 0 0;
+}
+#content-wrapper img.icon {
+  padding: 10px;
+}
+#content-wrapper .question {
+  font-size: 50px;
+  font-weight: bold;
 }
 #footer {
   background: #222222;
@@ -128,7 +150,7 @@ h6 {
 #footer a:hover {
   color: #599fb7;
 }
-#footer h3 {
+#footer h4 {
   color: #ffffff;
 }
 #footer ul {
@@ -141,6 +163,10 @@ h6 {
 }
 #footer #social img {
   width: 30px;
+}
+#footer #social li {
+  padding-right: 0;
+  padding-left: 3px;
 }
 #footer #social .research-gate {
   padding: 0;
@@ -156,15 +182,12 @@ h6 {
 #feature-banner #carousel-img-link,
 #feature-banner img {
   display: block;
-  height: 100%;
+  height: 340p;
   width: 100%;
 }
 #feature-banner button {
   background: transparent;
   border: none;
-}
-#feature-banner .carousel-inner {
-  border-bottom: 1px solid #ccc;
 }
 #feature-banner .carousel-btn {
   background: #fff;
@@ -175,36 +198,33 @@ h6 {
   width: 20px;
 }
 #feature-banner .carousel-highlight {
-  background: #d16291;
+  background: #3593b1;
 }
 #feature-banner .carousel-indicators {
   bottom: 0;
 }
 #feature-banner .carousel-indicators li {
-  border: 1px solid #d16291 !important;
+  border: 1px solid #09505b;
 }
 #feature-banner .carousel-caption {
-  background: #ffffff;
-  bottom: 0;
+  background: #dddddd;
   color: #000000;
-  left: 0;
-  opacity: .9;
+  height: 65px;
   padding: 10px;
+  position: static;
   text-align: left;
   text-shadow: none;
-  width: 100%;
 }
 #feature-banner .carousel-caption .caption-title-block,
 #feature-banner .carousel-caption .caption-text {
   float: left;
 }
 #feature-banner .carousel-caption .caption-title-block {
-  border-right: 1px solid #888888;
   padding-right: 10px;
   width: 35%;
 }
 #feature-banner .carousel-caption .caption-title-block a {
-  color: #d16291;
+  color: #3593b1;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -285,6 +305,9 @@ h6 {
   color: #000000;
   font-family: 'Archivo Narrow', sans-serif;
 }
+.category-index table {
+  margin-bottom: 0;
+}
 .category-index table img {
   width: 50px;
 }
@@ -292,7 +315,7 @@ h6 {
   color: #000000;
 }
 .category-index table a:hover {
-  color: #306f84;
+  color: #3593b1;
 }
 .category-index#tools table a {
   font-weight: bold;
@@ -320,10 +343,10 @@ h6 {
   font-size: 13px;
 }
 .category-page a {
-  color: #599fb7;
+  color: #3593b1;
 }
 .category-page a:hover {
-  color: #306f84;
+  color: #09505b;
   text-decoration: underline;
 }
 .category-page table {

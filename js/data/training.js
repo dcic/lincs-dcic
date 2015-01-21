@@ -74,7 +74,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: "New PhD program in Biostatistics with an emphasis on Big Data Science",
-            url: "/#/education/phd",
+            url: "#/education/phd",
             highlight: "",
             target: "_self"
         },

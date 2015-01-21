@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="row">
-        <h3 class="col-md-12">Investigators</h3>
+        <h3 class="col-md-12">Investigators of Data Science Research Projects</h3>
         <div ng-repeat="person in investigators" class="col-md-4">
             <div><strong>{{person.name}}</strong></div>
             <div>{{person.affiliation}}</div>
@@ -45,4 +45,5 @@
             </div>
         </div>
     </div>
+    <div ng-include="'view/partial/rightnav.html'"></div>
 </div>

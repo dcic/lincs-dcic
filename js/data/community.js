@@ -11,7 +11,7 @@ mod.factory("community", function() {
 			},
 			{
 				title: "Satellite BD2K-LINCS meeting at the Society of Toxicology (SOT) annual meeting",
-				url: "/#/education/sotoutreach",
+				url: "#/education/sotoutreach",
 	            highlight: '',
 				target: "_self"
 			},

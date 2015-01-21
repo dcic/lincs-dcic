@@ -20,6 +20,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		
 		/* Main categorie pages */
+        when("/data", {
+			templateUrl: "view/page/datasets.html"
+		}).
 		when("/about", {
 			templateUrl: "view/page/about.html"
 		}).

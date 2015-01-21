@@ -1,7 +1,7 @@
 <div class="category-index" id="news" ng-controller="newsCtrl">
 	<h4><a href="#/news">News &raquo;</a></h4>
 	<table class="content table">
-		<tr ng-repeat="link in entries | limitTo:2">
+		<tr ng-repeat="link in stories | limitTo:2">
 			<td ng-class="{first : $first}">
                 <a href="{{link.url}}" target="{{link.target}}">
                     <img ng-src="images/news/{{link.image}}" />

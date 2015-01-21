@@ -7,12 +7,14 @@
     <!-- Main carousel -->
     <div class="carousel-inner" role="listbox">
         <div ng-class="{item: true, active : $first}" ng-repeat="slide in slides">
-            <a href="{{slide.link}}" target="{{slide.target}}">
-                <img src="{{slide.image}}">
-            </a>
+            <div>
+                <a href="{{slide.link}}" target="{{slide.target}}">
+                    <img src="{{slide.image}}">
+                </a>
+            </div>
             <div class="carousel-caption">
                 <div class="caption-title-block">
-                    <p>{{slide.subtitle}}</p>
+                    <!--<p>{{slide.subtitle}}</p>-->
                     <h4>
                         <a href="{{slide.link}}" target="{{slide.target}}">{{slide.title}} &raquo;</a>
                     </h4>
@@ -21,8 +23,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Cotnrols -->
+    <!-- Controls -->
     <!--<button class="left carousel-control" data-target="#feature-banner" data-slide="next" accesskey="n">
         <i class="fa fa-angle-left"></i>
     </button>
