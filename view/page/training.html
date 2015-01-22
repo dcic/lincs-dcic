@@ -4,7 +4,7 @@
         <p ng-bind-html="introText"></p>
         <div id="sections">
             <div ng-repeat="section in sections" class="section">
-                <img src="{{section.image}}" class="img-responsive">
+                <img ng-src="{{section.image}}" class="img-responsive">
                 <div class="text">
                     <h3>{{section.title}}</h3>
                     <p ng-bind-html="section.text"></p>

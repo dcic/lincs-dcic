@@ -3,12 +3,13 @@ var mod = angular.module("toolsMod", []);
 
 mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
-    var DIR = 'images/app-logos/';
+    var DIR = 'images/app-logos/',
+        DCIC = "Data Coordination and Integration Center",
+        DSGC = "Data and Signature Generating Centers";
 
     $scope.introText = $sce.trustAsHtml(
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     );
-    
 
     /* We include `organization` to filter on it. */
     $scope.tools = [
@@ -19,7 +20,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: "http://placehold.it/150x150",
             //image: DIR + "geo2enrichr.png",
-            organization: "dcic"
+            organization: DCIC
         },
         {
             title: "LINCS Information Framework (LIFE)",
@@ -28,7 +29,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: "http://placehold.it/150x150",
             //image: DIR + "life.png",
-            organization: "dcic"
+            organization: DCIC
         },
         {
             title: "iLINCS",
@@ -37,7 +38,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: "http://placehold.it/150x150",
             //image: DIR + "ilincs.png",
-            organization: "dcic"
+            organization: DCIC
         },
         {
             title: "LINCS Canvas Browser",
@@ -46,7 +47,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: "http://placehold.it/150x150",
             //image: DIR + "lincs-canvas-browser.png",
-            organization: "dcic"
+            organization: DCIC
         },
         {
             title: "Drug/Cell-line Browser",
@@ -55,7 +56,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: "http://placehold.it/150x150",
             //image: DIR + "drug-cell-browser.png",
-            organization: "dcic"
+            organization: DCIC
         },
         {
             title: "Enrichr - Search engine for gene lists and signatures",
@@ -64,7 +65,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: "http://placehold.it/150x150",
             //image: DIR + "enrichr.png",
-            organization: "dcic"
+            organization: DCIC
         },
         {
             title: "lincscloud web apps",
@@ -73,16 +74,16 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: "http://placehold.it/150x150",
 			//image: DIR + "lincscloud.png",
-            organization: "dsgc"
+            organization: DSGC
         },
         {
-            title: "HMS software & tools",
+            title: "HMS software and tools",
             description: "Creating and re-purposing various types of software to collect, manage and analyze data.",
             url: "http://lincs.hms.harvard.edu/resources/software-tools/",
             target: "_blank",
             image: "http://placehold.it/150x150",
             //image: DIR + "hms-lincs.png",
-            organization: "dsgc"
+            organization: DSGC
         }
     ];
 }]);

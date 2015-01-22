@@ -1,23 +1,6 @@
 <div id="resources" class="row category-page">
-	<h2 class="col-md-12">Resources</h3>
-    <div ng-controller="toolsCtrl" id="tools">
-        <div class="col-md-8">
-            <h3>Tools & Apps</h3>
-            <p ng-bind-html="introText"></p>
-            <h4>Data Coordination and Integration Centers</h4>
-            <div id="sections">
-                <div ng-repeat="section in tools | filter:{ organization:'dcic' }" class="section">
-                    <!-- TODO: fill out this image -->
-                    <img src="{{section.image}}" class="img-responsive">
-                    <div class="text">
-                        <h3>{{section.title}}</h3>
-                        <p>{{section.description}}</p>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-        </div>
-        <div ng-include="'view/partial/datasets.html'"></div>
-        <div ng-include="'view/partial/apis.html'"></div>
-    </div>
+    <h2 class="col-md-12">Resources</h2>
+    <div ng-include="'view/partial/tools.html'"></div>
+    <div ng-include="'view/partial/datasets.html'"></div>
+    <div ng-include="'view/partial/apis.html'"></div>
 </div>
