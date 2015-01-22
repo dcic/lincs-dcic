@@ -182,7 +182,6 @@ h6 {
 #feature-banner #carousel-img-link,
 #feature-banner img {
   display: block;
-  height: 340p;
   width: 100%;
 }
 #feature-banner button {
@@ -209,7 +208,6 @@ h6 {
 #feature-banner .carousel-caption {
   background: #dddddd;
   color: #000000;
-  height: 65px;
   padding: 10px;
   position: static;
   text-align: left;
@@ -469,4 +467,7 @@ a.important a:hover,
 }
 .navbar-right {
   margin-right: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
 }

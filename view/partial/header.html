@@ -1,7 +1,18 @@
 <div id="header">
     <div id="subnav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div ng-controller="subnavCtrl" class="navbar-collapse collapse">
+
+            <!-- This is the dropdown button for the mobile version of the site -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div ng-controller="subnavCtrl" id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li ng-repeat="cat in categories">
                         <a href="{{cat.url}}">{{cat.title}}</a>
