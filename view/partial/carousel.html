@@ -9,12 +9,11 @@
         <div ng-class="{item: true, active : $first}" ng-repeat="slide in slides">
             <div>
                 <a href="{{slide.link}}" target="{{slide.target}}">
-                    <img src="{{slide.image}}">
+                    <img ng-src="{{slide.image}}">
                 </a>
             </div>
             <div class="carousel-caption">
                 <div class="caption-title-block">
-                    <!--<p>{{slide.subtitle}}</p>-->
                     <h4>
                         <a href="{{slide.link}}" target="{{slide.target}}">{{slide.title}} &raquo;</a>
                     </h4>
