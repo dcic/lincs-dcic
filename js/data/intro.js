@@ -19,7 +19,7 @@ mod.controller("introCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: "Community Training and Outreach",
-            text: $sce.trustAsHtml("The CTO established several educational programs, including a <a href='https://www.coursera.org/course/bd2klincs' target='_blank'>Big Data Science MOOC on Coursera</a> and a <a href='/#/summerresearch'>Summer Research Training Program in Biomedical Big Data Science</a>. In addition, the CTO is initiating and supporting diverse and collaborative projects that leverage LINCS resources and disseminate LINCS data and tools."),
+            text: $sce.trustAsHtml("The CTO established several educational programs, including a <a href='https://www.coursera.org/course/bd2klincs' target='_blank'>Big Data Science MOOC on Coursera</a> and a <a href='#/srp'>Summer Research Training Program in Biomedical Big Data Science</a>. In addition, the CTO is initiating and supporting diverse and collaborative projects that leverage LINCS resources and disseminate LINCS data and tools."),
             image: "http://placehold.it/150x150"
         },
         {

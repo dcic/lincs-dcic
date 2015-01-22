@@ -5,7 +5,6 @@ var mod = angular.module("lincsDcic", [
 	"calendarMod",
 	"carouselMod",
 	"communityMod",
-	"contactMod",
  	"datacentersMod",
  	"datasetsMod",
 	"emailMod",
@@ -45,14 +44,14 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 
 		/* Extra pages */
-		when("/training/summerresearch", {
-			templateUrl: "view/page/summerresearch.html"
+		when("/srp", {
+			templateUrl: "view/page/srp.html"
 		}).
-		when("/training/phd", {
+		when("/phd", {
 			templateUrl: "view/page/phd.html"
 		}).
-		when("/training/sotoutreach", {
-			templateUrl: "view/page/sotoutreach.html"
+		when("/toxicology", {
+			templateUrl: "view/page/toxicology.html"
 		}).
 		when("/jobs", {
 			templateUrl: "view/page/jobs.html"
@@ -60,8 +59,8 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/analyze", {
 			templateUrl: "view/page/analyze.html"
 		}).
-		when("/eDSR", {
-			templateUrl: "view/page/callfordsrp.html"
+		when("/dsrp", {
+			templateUrl: "view/page/dsrp.html"
 		}).
 		when("/datacenters", {
 			templateUrl: "view/page/datacenters.html"
