@@ -317,31 +317,6 @@ h6 {
 .category-index table a:hover {
   color: #3593b1;
 }
-.category-index#tools table a {
-  font-weight: bold;
-}
-.category-index#news table p {
-  font-weight: bold;
-  margin-bottom: 0;
-}
-.category-index#calendar .event {
-  height: 100%;
-  margin-bottom: 10px;
-}
-.category-index#calendar .date {
-  color: #d16291;
-}
-.category-index#calendar .date,
-.category-index#calendar .startTime {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 20px;
-}
-.category-index#calendar .startTime {
-  padding-left: 10px;
-}
-.category-index#calendar .details {
-  font-size: 13px;
-}
 .category-page a {
   color: #3593b1;
 }
@@ -360,9 +335,6 @@ h6 {
 }
 .category-page table p {
   margin-bottom: 0;
-}
-.category-page#tools a {
-  font-weight: bold;
 }
 .category-page#analysis .col-md-4 textarea {
   height: 200px;
@@ -383,12 +355,18 @@ h6 {
   color: #808080;
   font-size: 13px;
 }
-.category-page#news .title {
-  color: #000000;
-  font-weight: bold;
+.category-page #news .first {
+  /*img,
+            .details {
+                float: left;
+            }*/
 }
-.category-page#news .date {
-  color: #808080;
+.category-page #news .first img {
+  padding-right: 10px;
+}
+.category-page #news .first a {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 20px;
 }
 .category-page#summerresearch img {
   width: 100%;
@@ -413,15 +391,20 @@ h6 {
   padding-left: 20px;
   width: 80%;
 }
-.category-page .publication {
+.category-page .publication,
+.category-page .newsStory,
+.category-page .event {
   padding-bottom: 20px;
 }
-.category-page .publication p {
+.category-page .publication p,
+.category-page .newsStory p,
+.category-page .event p {
   margin: 0;
 }
-.category-page .publication a.title {
+.category-page .publication .title,
+.category-page .newsStory .title,
+.category-page .event .title {
   font-size: 16px;
-  font-style: italics;
 }
 .category-page #team .pi {
   /* This is for when the page is collapsed. */
@@ -460,7 +443,7 @@ h6 {
 .category-page #team .email {
   text-decoration: underline;
 }
-.rightnav img {
+.right-nav img {
   width: 100%;
 }
 /* Miscellaneous global selectors.

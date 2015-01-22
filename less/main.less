@@ -351,41 +351,6 @@ h6 {
             }
         }
     }
-	&#tools {
-        table {
-            a {
-                font-weight: bold;
-            }
-        }
-	}
-	&#news {
-        table {
-            p {
-                font-weight: bold;
-                margin-bottom: 0;
-            }
-        }
-	}
-    &#calendar {
-        .event {
-            height: 100%;
-            margin-bottom: 10px;
-        }
-        .date {
-            color: @color-accent;
-        }
-        .date,
-        .startTime {
-            font-family: @font-family-accent;
-            font-size: 20px;
-        }
-        .startTime {
-            padding-left: 10px;
-        }
-        .details {
-            font-size: @font-size-base;
-        }
-    }
 }
 
 .category-page {
@@ -406,11 +371,6 @@ h6 {
         }
         p {
             margin-bottom: 0;
-        }
-    }
-    &#tools {
-        a {
-            font-weight: bold;
         }
     }
     &#analysis {
@@ -438,13 +398,19 @@ h6 {
             font-size: 13px;
         }
     }
-    &#news {
-        .title {
-            color: @color-black; 
-            font-weight: bold;
-        }
-        .date {
-            color: @color-lightcharcoal;
+    #news {
+        .first {
+            /*img,
+            .details {
+                float: left;
+            }*/
+            img {
+                padding-right: 10px;
+            }
+            a {
+                font-family: @font-family-accent;
+                font-size: 20px;
+            }
         }
     }
     &#summerresearch {
@@ -472,14 +438,15 @@ h6 {
             }
         }
     }
-    .publication {
+    .publication,
+    .newsStory,
+    .event {
         padding-bottom: 20px;
         p {
             margin: 0;
         }
-        a.title {
+        .title {
             font-size: 16px;
-            font-style: italics;
         }
     }
     #team {
@@ -522,7 +489,7 @@ h6 {
         }
     }
 }
-.rightnav {
+.right-nav {
     img {
         width: 100%;
     }

@@ -1,4 +1,17 @@
-<div id="calendar" class="category-page">
-    <h3>Events</h3>
-    <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=dl9fj86o2ohe7o823s7jar920s%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<div ng-controller="calendarCtrl" id="calendar" class="category-page">
+    <h2>Events</h2>
+    <!--<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=dl9fj86o2ohe7o823s7jar920s%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+
+    <div ng-repeat="event in events" class="event">
+        <div>
+            <span class="date">{{event.month}} {{event.day}}</span>
+            <span class="startTime">{{event.startTime}}</span>
+        </div>
+        <div class="details">
+            <div class="title">
+                <a href="{{event.link}}" target="_blank">{{event.title}}</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
 </div>

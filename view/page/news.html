@@ -1,14 +1,4 @@
-<div ng-controller="newsCtrl" id="news" class="category-page">
-	<h2 class="col-md-12">News</h2>
-    <div class="col-md-8">
-        <table class="table">
-            <tr ng-repeat="link in stories">
-                <td><img ng-src="images/news/{{link.image}}" /></td>
-                <td>
-                    <p class="title">{{link.date}}</p>
-                    <a href="{{link.url}}" target="_blank">{{link.title}}</a>
-                </td>
-            </tr>
-        </table>
-    </div>
+<div class="row category-page">
+    <div ng-include="'view/partial/news.html'"></div>
+    <div ng-include="'view/partial/events.html'"></div>
 </div>
