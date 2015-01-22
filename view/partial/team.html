@@ -28,20 +28,20 @@
         <h3 class="col-md-12">Research Staff</h3>
         <div class="col-md-4">
             <div ng-repeat="person in icahn | orderBy:'lastName'" class="person">
-                <div class="name">{{person.firstName}} {{person.lastName}}</div>
-                <div class="email">{{person.email}}</div>
+                <div><strong>{{person.firstName}} {{person.lastName}}</strong></div>
+                <div><u>{{person.email}}</u></div>
             </div>
         </div>
         <div class="col-md-4">
             <div ng-repeat="person in cincinnati | orderBy:'lastName'" class="person">
-                <div class="name">{{person.firstName}} {{person.lastName}}</div>
-                <div class="email">{{person.email}}</div>
+                <div><strong>{{person.firstName}} {{person.lastName}}</strong></div>
+                <div><u>{{person.email}}</u></div>
             </div>
         </div>
         <div class="col-md-4">
             <div ng-repeat="person in miami | orderBy:'lastName'" class="person">
-                <div class="name">{{person.firstName}} {{person.lastName}}</div>
-                <div class="email">{{person.email}}</div>
+                <div><strong>{{person.firstName}} {{person.lastName}}</strong></div>
+                <div><u>{{person.email}}</u></div>
             </div>
         </div>
     </div>

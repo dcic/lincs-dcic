@@ -4,9 +4,10 @@
         <img ng-if="$first" src="http://placehold.it/150x150">
         <div class="details">
             <a href="{{link.url}}" target="_blank" ng-class="{first:$first}" class="title">{{link.title}}</a>
-            <p>{{link.source}}</p>
-            <p>{{link.date}}</p>
+            <p><strong>{{link.source}}</strong></p>
+            <p><em>{{link.date}}</em></p>
             <p ng-if="$first">{{link.mainText}}</p>
         </div>
+        <div ng-if="$first" class="clear"></div>
     </div>
 </div>

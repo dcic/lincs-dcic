@@ -20,7 +20,7 @@ mod.controller("newsCtrl", ["$scope", function($scope) {
 			url: "http://biomedicalcomputationreview.org/content/nih-launches-united-ecosystem-big-data",
 			target: "_blank",
 			date: "1/8/2015",
-		    mainText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."
+		    mainText: "Francis Collins, MD, PhD, Director of the National Institutes of Health (NIH), says he used to feel \"data envy\" toward the field of physics. In those days, \"no one would have predicted that biology would emerge as the biggest challenge in terms of data. But that is now the case.\""
         },
 		{
 			title: "UC Part of Team Selected for NIH's Multimillion-Dollar 'Big Data' Push",
