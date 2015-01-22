@@ -3,7 +3,7 @@ var mod = angular.module("carouselMod", []);
 mod.controller("carouselCtrl", ["$scope", function($scope) {
     $scope.slides = [
         {
-            index: '0',
+            index: 0,
             image: 'http://placehold.it/1140x340',
             //image: '/images/carousel/request-for-applications.png',
             title: 'Request for Applications',
@@ -12,16 +12,16 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         },
         {
-            index: '1',
+            index: 1,
             image: 'http://placehold.it/1140x340',
             //image: '/images/carousel/summer-research.png',
             title: 'Summer Research Program',
             caption: 'Currently accepting applications for our ten-week summer research training program in biomedical big data science!',
-            link: '#/education/summerresearch',
+            link: '#/srp',
             target: '_self'
         },
         {
-            index: '2',
+            index: 2,
             image: 'http://placehold.it/1140x340',
             //image: '/images/carousel/big-data.png',
             title: 'Big Data Science',
