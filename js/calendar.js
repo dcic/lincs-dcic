@@ -14,25 +14,44 @@ mod.controller("calendarCtrl", ["$scope", function($scope) {
         }
     };
 
-    var getStartTimeString = function(startObj) {
+    var allDay = function(start) {
+        if (start.dateTime) {
+            return false;
+        }
+        return true;
+    }
+
+    var getStartTimeString = function(startObj, allDay) {
         var hours = startObj.getHours(),
-            minutes = startObj.getMinutes();
-        if (hours > 12)
-            hours = hours - 12;
-        if (hours === 0 && minutes === 0) {
+            minutes = startObj.getMinutes(),
+            period;
+
+        if (allDay || (hours === 0 && minutes === 0)) {
             return "";
-        } else if (minutes === 0) {
-            return hours + ":00";
+        }
+
+        if (hours > 12) {
+            hours = hours - 12;
+            period = ' p.m.';
+        } else if (hours === 12) {
+            period = ' p.m.';
         } else {
-            return hours + ":" + minutes;
+            period = ' a.m.';
+        }
+
+        if (minutes === 0) {
+            return hours + ":00" + period;
+        } else {
+            return hours + ":" + minutes + period;
         }
     };
 
     var cleanFeed = function(feed) {
         var results = [];
         $.each(feed, function(i, evt) {
-            var title = evt.summary,
-                startObj = getStartTime(evt.start);
+            var title = evt.summary;
+
+            var startObj = getStartTime(evt.start);
 
             if (!startObj)
                 return;
@@ -42,12 +61,10 @@ mod.controller("calendarCtrl", ["$scope", function($scope) {
             results.push({
                 title: evt.summary,
                 link: evt.htmlLink,
-                absTime: startObj.getTime(),
-                startTime: getStartTimeString(startObj),
+                startTime: getStartTimeString(startObj, allDay(evt.start)),
                 day: startObj.getDate(),
                 month: monthNames[startObj.getMonth()],
-                year: startObj.getYear(),
-                where: evt.location
+                year: startObj.getYear()
             });
         });
         return results;
