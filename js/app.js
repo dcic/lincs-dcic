@@ -59,8 +59,8 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/analyze", {
 			templateUrl: "view/page/analyze.html"
 		}).
-		when("/dsrp", {
-			templateUrl: "view/page/dsrp.html"
+		when("/edsr", {
+			templateUrl: "view/page/edsr.html"
 		}).
 		when("/datacenters", {
 			templateUrl: "view/page/datacenters.html"
