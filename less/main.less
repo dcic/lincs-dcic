@@ -150,16 +150,23 @@ h6 {
 }
 #content-wrapper {
     padding-top: 10px;
-    .column-h {
-		font-family: @font-family-accent;
-		padding: 20px 0 0 0;
-    }
-    img.icon {
-        padding: 10px;
-    }
-    .question {
-        font-size: 50px;
-        font-weight: bold;
+    #index {
+        img.icon {
+            padding: 10px;
+            width: 100px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .section {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
     }
 }
 #footer {
@@ -239,8 +246,9 @@ h6 {
         border: 1px solid @color-primary-dark;
     }
     .carousel-caption {
-        background: @color-gray;
-        color: @color-black;
+        background: @color-black;
+        color: @color-white;
+        min-height: 80px;
         padding: 10px;
         position: static;
         text-align: left;
@@ -253,12 +261,12 @@ h6 {
             padding-right: 10px;
             width: 25%;
             a {
-                color: @color-primary;
+                color: @color-white;
                 font-family: @font-family-accent;
                 font-size: 20px;
                 font-weight: bold;
                 &:hover {
-                    color: @color-black;
+                    color: @color-primary-light;
                 }
             }
             h4 {
@@ -272,6 +280,17 @@ h6 {
             font-size: 16px;
             padding-left: 10px;
             width: 75%;
+        }
+        /* Some images look better with a light caption box. Override the dark default. */
+        &.light {
+            background: @color-primary;
+            color: @color-white;
+            a {
+                color: @color-white;
+                &:hover {
+                    color: @color-primary-dark;
+                }
+            }
         }
     }
 }

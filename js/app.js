@@ -7,6 +7,7 @@ var mod = angular.module("lincsDcic", [
  	"datacentersMod",
  	"datasetsMod",
 	"emailMod",
+	"indexMod",
  	"introMod",
  	"newsMod",
  	"publicationsMod",

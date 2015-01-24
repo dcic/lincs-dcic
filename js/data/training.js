@@ -5,7 +5,9 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
     var LINCS_MOOC_LINK = "https://www.coursera.org/course/bd2klincs",
         SYSBIO_MOOC_LINK = "https://www.coursera.org/course/netsysbio",
         SUMMER_RESEARCH_LINK = "#/srp",
-        NETWORK_GAME_LINK = "http://www.maayanlab.net/NASB15/NMG/";
+        NETWORK_GAME_LINK = "http://www.maayanlab.net/NASB15/NMG/",
+    
+        DIR = "/images/general/";
 
     $scope.introText = $sce.trustAsHtml("The BD2K-LINCS DCIC engages the research community by delivering high quality educational materials through the web as well as through mentoring, seminars and symposia. Also, Center investigators actively engage in the education of a new generation of Big Data Scientists by developing a graduate-level Big Data Science MOOC that will be delivered to graduate students in Big Data Biostatistics and other Biomedical Informatics graduate programs.");
  
@@ -18,7 +20,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                         "<a href='" + SUMMER_RESEARCH_LINK + "'>2015 Summer Research</a>" +
                     "</li>" +
                 "</ul>"),
-            image: "http://placehold.it/150x150"
+            image: DIR + "mounica.png"
         },
         {
             title: "MOOCs on Coursera",
@@ -31,12 +33,12 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                         "<a href='" + SYSBIO_MOOC_LINK + "' target='blank'>Network Analysis in Systems Biology</a>" +
                     "</li>" +
                 "</ul>"),
-            image: "http://placehold.it/150x150"
+            image: DIR + "mooc.png"
         },
         {
             title: "Big Data Biostatistics PhD Program",
             text: $sce.trustAsHtml("The <a href='http://eh.uc.edu/' target='_blank'>Big Data Biostatistics PhD Program at the University of Cincinnati College of Medicine</a> provides rigorous foundations in probability theory, statistics and computational sciences, combined with a broad knowledge of applications to biomedical research."),
-            image: "http://placehold.it/150x150"
+            image: DIR + "cincinnati.png"
         },
         {
             title: "Crowdsourcing Projects",
@@ -49,7 +51,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                         "<a href='" + NETWORK_GAME_LINK + "' target='blank'>Network Matching Game</a>" +
                     "</li>" +
                 "</ul>"),
-            image: "http://placehold.it/150x150"
+            image: DIR + "crowd.png"
         }
     ];
     

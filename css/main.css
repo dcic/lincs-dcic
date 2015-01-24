@@ -121,16 +121,21 @@ h6 {
 #content-wrapper {
   padding-top: 10px;
 }
-#content-wrapper .column-h {
-  font-family: 'Archivo Narrow', sans-serif;
-  padding: 20px 0 0 0;
-}
-#content-wrapper img.icon {
+#content-wrapper #index img.icon {
   padding: 10px;
+  width: 100px;
 }
-#content-wrapper .question {
-  font-size: 50px;
+#content-wrapper #index h1 {
+  font-size: 40px;
   font-weight: bold;
+  margin-bottom: 30px;
+}
+#content-wrapper #index h2 {
+  margin-top: 0;
+}
+#content-wrapper #index .section {
+  font-size: 16px;
+  padding-bottom: 20px;
 }
 #footer {
   background: #222222;
@@ -206,12 +211,14 @@ h6 {
   border: 1px solid #09505b;
 }
 #feature-banner .carousel-caption {
-  background: #dddddd;
-  color: #000000;
+  background: #000000;
+  color: #ffffff;
+  min-height: 80px;
   padding: 10px;
   position: static;
   text-align: left;
   text-shadow: none;
+  /* Some images look better with a light caption box. Override the dark default. */
 }
 #feature-banner .carousel-caption .caption-title-block,
 #feature-banner .carousel-caption .caption-text {
@@ -222,13 +229,13 @@ h6 {
   width: 25%;
 }
 #feature-banner .carousel-caption .caption-title-block a {
-  color: #3593b1;
+  color: #ffffff;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 #feature-banner .carousel-caption .caption-title-block a:hover {
-  color: #000000;
+  color: #599fb7;
 }
 #feature-banner .carousel-caption .caption-title-block h4 {
   margin-top: 0;
@@ -240,6 +247,16 @@ h6 {
   font-size: 16px;
   padding-left: 10px;
   width: 75%;
+}
+#feature-banner .carousel-caption.light {
+  background: #3593b1;
+  color: #ffffff;
+}
+#feature-banner .carousel-caption.light a {
+  color: #ffffff;
+}
+#feature-banner .carousel-caption.light a:hover {
+  color: #09505b;
 }
 /* Category content is related but varies in style. "category-index" refers
  * to content on the main page. "catgory-page" refers to content on
