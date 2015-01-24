@@ -125,13 +125,17 @@ h6 {
   padding: 10px;
   width: 100px;
 }
-#content-wrapper #index h1 {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
 #content-wrapper #index h2 {
   margin-top: 0;
+}
+#content-wrapper #index .title h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+#content-wrapper #index .title h3 {
+  color: #808080;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 #content-wrapper #index .section {
   font-size: 16px;
@@ -447,7 +451,12 @@ h6 {
   margin-bottom: 10px;
 }
 .category-page #team .person {
+  float: left;
   padding-top: 10px;
+}
+.category-page #team h4 {
+  font-weight: bold;
+  margin-top: 40px;
 }
 .right-nav img {
   width: 100%;

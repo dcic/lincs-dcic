@@ -1,6 +1,9 @@
 <div ng-include="'view/partial/carousel.html'"></div>
 <div ng-controller="indexCtrl" id="index">
-    <h1 class="text-center">BD2K-LINCS Data Coordination and Integration Center</h1>
+    <div class="title row">
+        <h1 class="text-center">BD2K-LINCS Data Coordination and Integration Center</h1>
+        <h3 class="text-center col-md-8 col-md-offset-2">The BD2K-LINCS DCIC is part of the Big Data to Knowledge (BD2K) NIH initiative, and it is the data coordination center for the NIH Common Fund's Library of Integrated Networkbased Cellular Signatures (LINCS) program.</h3>
+    </div>
     <div ng-repeat="section in sections" class="row section">
         <img ng-src="{{section.image}}" class="icon img-responsive center-block"/>
         <h2 class="text-center">{{section.title}}</h2>
