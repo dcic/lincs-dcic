@@ -89,6 +89,15 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             citation: "CPT Pharmacometrics and Systems Pharmacology. 2013 Mar 27;2:e35.",
             year: 2013,
             ids: "PMID: 23836026 | PMCID: PMC3615534"
+        },
+        {
+            title: "Network2Canvas: network visualization on a canvas with enrichment analysis",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/23749960",
+            authors: "Tan CM, Chen EY, Dannenfelser R, Clark NR, Ma'ayan A.",
+            citation: "Bioinformatics 2013 Aug 1;29(15):1872-8.",
+            year: 2013,
+            ids: "PMID: 23749960 | PMCID: PMC3712222"
+
         }
     ];
 }]);

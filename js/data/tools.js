@@ -56,6 +56,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: DIR + "enrichr.png",
             shortDesc: "Search Engine for Gene Lists and Signatures"
+        },
+        {
+            title: "Network2Canvas",
+            description: "A web application that provides an alternative way to view networks and visualizes them by placing nodes on a square toroidal canvas.",
+            url: "http://www.maayanlab.net/N2C/",
+            target: "_blank",
+            image: DIR + "network2canvas.png",
+            shortDesc: "Network Visualization on a Canvas with Enrichment Analysis"    
         }
     ];
 }]);

@@ -106,7 +106,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "jmeller {at} cchmc.org"
                 },
                 {
-                    name: "Michal",
+                    firstName: "Michal",
                     lastName: "Kouril",
                     affiliation: "University of Cincinnati",
                     email: "michal.kouril {at} cchmc.org"
@@ -145,6 +145,48 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     lastName: "Vidovic",
                     affiliation: UM,
                     email: "dvidovic {at} med.miami.edu"
+                },
+                {
+                    firstName: "Vasileios",
+                    lastName: "Stathias",
+                    affiliation: UM,
+                    email: "v.stathias {at} med.miami.edu"
+                },
+                {
+                    firstName: "Bryce",
+                    lastName: "Allen",
+                    affiliation: UM,
+                    email: "b.allen10 {at} med.miami.edu"
+                },
+                {
+                    firstName: "Hande",
+                    lastName: "Kucuk",
+                    affiliation: UM,
+                    email: "h.bakir {at} umiami.edu"
+                },
+                {
+                    firstName: "Saurabh",
+                    lastName: "Mehta",
+                    affiliation: UM,
+                    email: "saurabh.dtu {at} gmail.com"
+                },
+                {
+                    firstName: "Qiong",
+                    lastName: "Cheng",
+                    affiliation: UM,
+                    email: "qxc30 {at} med.miami.edu"
+                },
+                {
+                    firstName: "Vance",
+                    lastName: "Lemmon",
+                    affiliation: UM,
+                    email: "vlemmon {at} miami.edu"
+                },
+                {
+                    firstName: "Ubbo",
+                    lastName: "Visser",
+                    affiliation: UM,
+                    email: "visser {at} cs.miami.edu"
                 }
             ]
         },

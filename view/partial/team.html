@@ -16,7 +16,8 @@
             </div>
         </div>
     </div>
-    <hr>
+    <br>
+    <br>
     <div class="row">
         <h3 class="col-md-12">DCIC Research Team</h3>
     </div>
@@ -26,5 +27,7 @@
             <div><strong>{{person.firstName}} {{person.lastName}}</strong></div>
             <div><u>{{person.email}}</u></div>
         </div>
+        <div class="clear"></div>
+        <hr ng-if="!$last">
     </div>
 </div>
