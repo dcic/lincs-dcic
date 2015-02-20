@@ -21,6 +21,13 @@ mod.controller("webinarsCtrl", ["$scope", function($scope) {
     ];
     $scope.pastWebinars = [
         {
+            date: '17 February 2015',
+            topic: 'Discussion of causes for some artifacts observed in L1000 data',
+            presenters: 'Chad Young, University of Washington',
+            synopsis: 'Chad Young examines the relationships between Level 3 expression level measurements for pairs of genes probed by the "same color" beads. He shows that in some situations the deconvolution algorithm produces misleading expression levels, In some situations, plate-level normalization helps in some it does not. Possibility that observed patterns represent underlying biology was suggested by audience and discussed, as well as alternative strategies for systematically identifying artifacts and benchmarking of such alternative strategies.',
+            link: 'https://www.youtube.com/watch?v=d-E_siojRg4'
+        },
+        {
             date: '16 December 2014',
             topic: 'Large-scane integration of small molecule-induced reponses in diverse LINCS datasets',
             presenters: 'Dusica Vidovic, University of Miami',

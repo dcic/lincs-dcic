@@ -27,8 +27,8 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
             url: '#/news'
         },
         {
-            title: 'Webinars',
-            url: '#/webinars'
+            title: 'Funding Opportunities',
+            url: '#/funding'
         }
     ];
 

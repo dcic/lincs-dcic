@@ -7,6 +7,7 @@ var mod = angular.module("lincsDcic", [
  	"datacentersMod",
  	"datasetsMod",
 	"emailMod",
+	"fundingMod",
 	"indexMod",
  	"introMod",
  	"newsMod",
@@ -43,11 +44,14 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/news", {
 			templateUrl: "view/page/news.html"
 		}).
-		when("/webinars", {
-			templateUrl: "view/page/webinars.html"
+		when("/funding", {
+            templateUrl: "view/page/funding.html"
 		}).
 
 		/* Extra pages */
+		when("/webinars", {
+			templateUrl: "view/page/webinars.html"
+		}).
 		when("/srp", {
 			templateUrl: "view/page/srp.html"
 		}).
