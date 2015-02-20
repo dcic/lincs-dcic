@@ -22,13 +22,13 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
             title: 'Publications',
             url: '#/publications'
         },
-        /*{
-            title: 'Events',
-            url: '#/events'
-        },*/
         {
             title: 'News and Events',
             url: '#/news'
+        },
+        {
+            title: 'Webinars',
+            url: '#/webinars'
         }
     ];
 

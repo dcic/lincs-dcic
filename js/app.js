@@ -14,7 +14,8 @@ var mod = angular.module("lincsDcic", [
  	"teamMod",
  	"toolsMod",
  	"trainingMod",
- 	"subnavMod"
+ 	"subnavMod",
+ 	"webinarsMod"
 ]);
 
 mod.config(["$routeProvider", function($routeProvider) {
@@ -41,6 +42,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		when("/news", {
 			templateUrl: "view/page/news.html"
+		}).
+		when("/webinars", {
+			templateUrl: "view/page/webinars.html"
 		}).
 
 		/* Extra pages */

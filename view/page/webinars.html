@@ -1,0 +1,41 @@
+<div class="row category-page">
+    <h2 class="col-md-12">Data Science Research webinars</h2>
+    <div ng-controller="webinarsCtrl" class="col-md-8">
+        <h3>Upcoming</h3>
+        <div ng-repeat="webinar in upcomingWebinars" class="webinar">
+            <h4>{{webinar.topic}}</h4>
+            <p><strong>Date & Time:</strong> {{webinar.date}}</p>
+            <p><strong>Presenter(s):</strong> {{webinar.presenters}}</p>
+        </div>
+        <h3>Past</h3>
+        <div ng-repeat="webinar in pastWebinars" class="webinar">
+            <h4>
+                <a href="{{webinar.link}}" target="_blank">{{webinar.topic}}</a>
+            </h4>
+            <p><strong>Date:</strong> {{webinar.date}}</p>
+            <p><strong>Presenter(s):</strong> {{webinar.presenters}}</p>
+            <p><strong>Synopsis:</strong> {{webinar.synopsis}}</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h3>How to connect with GoToMeeting</h3>
+        <ol>
+            <li>
+                <p>Please join my meeting from your computer, tablet or smartphone: <a href="https://global.gotomeeting.com/join/168894253">https://global.gotomeeting.com/join/168894253</a></p>
+            </li>
+            <li>
+                <p>Use your microphone and speakers (VOIP) for audio. You'll sound best with a headset. You can also call in using your telephone.</p>
+                <p>
+                    <em>United States (Long distance):</em> +1 (312) 757-3121
+                </p>
+                <p>
+                    <em>Audio PIN:</em> Shown after joining the session
+                </p>
+            </li>
+        </ol>
+        <h3>For more information</h3>
+        <p>
+            <a href="https://sites.google.com/site/bd2klincsdatascience/webinars" target="_blank">BD2K-LINCS Data Science wiki</a>
+        </p>
+    </div>
+</div>
