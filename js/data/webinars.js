@@ -3,11 +3,6 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", function($scope) {
     $scope.upcomingWebinars = [
         {
-            date: '24 February 2015 at 3:00PM EST',
-            topic: '',
-            presenters: 'Laura Heiser, OHSU'
-        },
-        {
             date: '3 March 2015 at 3:00PM EST',
             topic: '',
             presenters: 'Larsson Omberg, Sage Bionetworks'
@@ -20,6 +15,13 @@ mod.controller("webinarsCtrl", ["$scope", function($scope) {
         }
     ];
     $scope.pastWebinars = [
+        {
+            date: '24 February 2015',
+            topic: 'Leveraging experimental models to advance our understanding of cancer',
+            presenters: 'Laura Heiser, Oregon Health and Science University',
+            synopsis: 'We and others have suggested the use of in vitro cell line panels to study the biological underpinnings of cancer and to test hypotheses that arise from studies of primary data. Specifically, we have used a collection of ~70 well characterized breast cancer cell lines to assess gene function and to identify mechanisms of response and resistance to therapeutic compounds. This set of molecular profiling data constitutes one of the most complete "omics" resources available in the public domain and includes assessments of gene expression, copy number, mutations, protein abundance, and response to therapy. Comparison of the genomic and epigenomic features of the cell lines with those measured for primary tumors by The Cancer Genome Atlas (TCGA) and others showed that the cell lines mirror many aspects of "omic" diversity in primary tumors. Cell line and tumor similarities include: (a) recurrent copy number changes and mutations (b) basal, claudin-low and luminal breast cancer subtypes, and (c) pathway activity. Analysis of correlations between drug sensitivity to 77 therapeutic compounds revealed that approximately 30% are associated with subtype or genome copy number aberration. Finally, we have used various statistical and machine learning approaches to identify integrated predictive signatures of sensitivity for ~50% of compounds in our cell line panel. These data and observations were the basis for a community-wide effort to identify biomarkers of drug sensitivity in the NCI-DREAM Drug Sensitivity Challenge that culminated in the robust identification of a novel machine learning algorithm for predicting drug response from molecular profiling data. This body of work has demonstrated the utility of in vitro model systems, identified biomarkers of drug sensitivity for clinically relevant compounds, and identified concrete approaches and considerations for advancing work in this domain.',
+            link: 'https://www.youtube.com/watch?v=9KM7inVCLoc'
+        },
         {
             date: '17 February 2015',
             topic: 'Discussion of causes for some artifacts observed in L1000 data',
