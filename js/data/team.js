@@ -93,6 +93,12 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     lastName: "Jenkins",
                     affiliation: ISMMS,
                     email: "sherry.jenkins {at} mssm.edu"
+                },
+                {
+                    firstName: "Michael",
+                    lastName: "McDermott",
+                    affiliation: ISMMS,
+                    email: "michael.mcdermott {at} mssm.edu"
                 }
             ]
         },

@@ -1,21 +1,25 @@
 var mod = angular.module("newsMod", []);
 
-mod.controller("newsCtrl", ["$scope", function($scope) {
+mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     var DIR = '/images/news/';
 
 	var formatStories = function(stories) {
-        $(stories).each(function(i, story) {
-            if (!story.image) {
-                story.image = "dcic-logo.png";
-            }
-        });
         return _.sortBy(stories, function(story) {
             return -Date.parse(story.date);
         });
     };
 
 	$scope.stories = formatStories([
+        {
+            title: "\"The characteristic direction: a geometrical approach to identify differentially expressed genes\" has been recommended in F1000Prime as being of special significance in its field by F1000 Faculty Member Charles Auffray",
+            source: "F1000 Prime",
+            url: "http://f1000.com/prime/718324928?subscriptioncode=73f1be84-cf1b-47e0-87d4-8ce34f95c9fc",
+            target: "_blank",
+            date: "3/10/2015",
+            mainText: "",
+            image: DIR + "chdir.png"
+        },
         {
             title: "NIH Launches a United Ecosystem for Big Data",
 		    source: "Biomedical Computation Review",

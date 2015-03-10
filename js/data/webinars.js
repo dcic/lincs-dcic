@@ -3,18 +3,18 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", function($scope) {
     $scope.upcomingWebinars = [
         {
-            date: '3 March 2015 at 3:00PM EST',
-            topic: '',
-            presenters: 'Larsson Omberg, Sage Bionetworks'
-
-        },
-        {
             date: '10 March 2015 at 3:00PM EST',
-            topic: '',
+            topic: 'Transcriptional landscape of drug response guides the design of specific and potent drug combinations',
             presenters: 'Marc Hafner, HMS LINCS DSGC'
-        }
+        },
     ];
     $scope.pastWebinars = [
+        /*{
+            date: '10 March 2015',
+            topic: 'Transcriptional landscape of drug response guides the design of specific and potent drug combinations',
+            presenters: 'Marc Hafner, HMS LINCS DSGC',
+            link: ''
+        },*/
         {
             date: '24 February 2015',
             topic: 'Leveraging experimental models to advance our understanding of cancer',

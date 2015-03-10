@@ -1,7 +1,7 @@
 <div ng-controller="newsCtrl" id="news" class="col-md-6">
     <h2>News</h2>
     <div ng-repeat="story in stories" class="newsStory" ng-class="{first:$first}">
-        <img ng-if="$first" src="{{story.image}}">
+        <img ng-if="$first" ng-src="{{story.image}}">
         <div class="details">
             <a href="{{story.url}}" target="_blank" ng-class="{first:$first}" class="title">{{story.title}}</a>
             <p><strong>{{story.source}}</strong></p>

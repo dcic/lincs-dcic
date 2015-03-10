@@ -36,6 +36,16 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "mooc.png"
         },
         {
+            title: "Webinars",
+            text: $sce.trustAsHtml("These webinars provide a forum for data scientists within and without of the LINCS project to present their work on problems related to LINCS data analysis and integration:" +
+                "<ul>" +
+                    "<li>" +
+                        "<a href='#/webinars'>Data Science Research webinars</a>" +
+                    "</li>" +
+                "</ul>"),
+            image: DIR + "webinars.png"
+        },
+        {
             title: "Big Data Biostatistics PhD Program",
             text: $sce.trustAsHtml("The <a href='http://eh.uc.edu/' target='_blank'>Big Data Biostatistics PhD Program at the University of Cincinnati College of Medicine</a> provides rigorous foundations in probability theory, statistics and computational sciences, combined with a broad knowledge of applications to biomedical research."),
             image: DIR + "cincinnati.png"
@@ -52,16 +62,6 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                     "</li>" +
                 "</ul>"),
             image: DIR + "crowd.png"
-        },
-        {
-            title: "Webinars",
-            text: $sce.trustAsHtml("These webinars provide a forum for data scientists within and without of the LINCS project to present their work on problems related to LINCS data analysis and integration:" +
-                "<ul>" +
-                    "<li>" +
-                        "<a href='#/webinars'>Data Science Research webinars</a>" +
-                    "</li>" +
-                "</ul>"),
-            image: DIR + "webinars.png"
         }
     ];
     
