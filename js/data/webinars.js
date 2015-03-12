@@ -3,18 +3,29 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", function($scope) {
     $scope.upcomingWebinars = [
         {
-            date: '10 March 2015 at 3:00PM EST',
-            topic: 'Transcriptional landscape of drug response guides the design of specific and potent drug combinations',
-            presenters: 'Marc Hafner, HMS LINCS DSGC'
+            date: '14 April 2015 at 3:00PM EST',
+            topic: 'Prediction of Adverse Events for LINCS Drugs using L1000 Gene Expression Data, Cell Morphology Profiles and Chemical Structure Features',
+            presenters: 'Zichen Wang, Mount Sinai'
         },
+        {
+            date: '21 April 2015 at 3:00PM EST',
+            topic: 'Target predictions using LINCS perturbation data',
+            presenters: 'Yan Xia, CMU MLD'
+        },
+        {
+            date: '5 May 2015',
+            topic: 'Assessing the Global Dimensionality of LINCS Signatures',
+            presenters: 'Neil Clark, Mount Sinai'
+        }
     ];
     $scope.pastWebinars = [
-        /*{
+        {
             date: '10 March 2015',
             topic: 'Transcriptional landscape of drug response guides the design of specific and potent drug combinations',
             presenters: 'Marc Hafner, HMS LINCS DSGC',
-            link: ''
-        },*/
+            synopsis: 'Characterizing the molecular effects of targeted therapies is an important step towards understanding and predicting drug efficacy in cancer. In this work, we used the L1000 assay to measure the transcriptional response of six breast cancer cell lines to more than 100 different targeted drugs. We focused on inhibitors targeting the most important signaling kinases such as PI3K, AKT or MAPK, as well as receptor tyrosine kinases (RTKs) and cyclin-dependent kinases (CDKs). With two time points and six doses, the dataset contains more than 8000 unique perturbations.',
+            link: 'https://www.youtube.com/watch?v=kdKk3jHUR9c'
+        },
         {
             date: '24 February 2015',
             topic: 'Leveraging experimental models to advance our understanding of cancer',
