@@ -118,6 +118,11 @@ h6 {
 #subnav .navbar-right a {
   font-size: 14px;
 }
+@media (max-width: 990px) {
+  #subnav .nav li a {
+    font-size: 11px;
+  }
+}
 #content-wrapper {
   padding-top: 10px;
 }
@@ -270,24 +275,20 @@ h6 {
 .category-page ul {
   padding: 0 0 0 15px;
 }
-.category-index ol,
-.category-page ol {
-    margin-left: -20px;
-}
-.category-index li a:hover,
-.category-page li a:hover {
-  cursor: pointer;
-}
-.category-index ul li,
-.category-page ul li {
+.category-index li,
+.category-page li {
   list-style-type: none;
 }
 .category-index li a,
 .category-page li a {
   /* Color on the main page is black; on individual pages it is accent. */
 }
-.category-index ul li:before,
-.category-page ul li:before {
+.category-index li a:hover,
+.category-page li a:hover {
+  cursor: pointer;
+}
+.category-index li:before,
+.category-page li:before {
   /* FontAwesome char code inside the '' */
   content: '\F105';
   color: #222222;
@@ -418,17 +419,13 @@ h6 {
 }
 .category-page .publication p,
 .category-page .newsStory p,
-.category-page .event p,
-.category-page .webinar p {
+.category-page .event p {
   margin: 0;
 }
 .category-page .publication .title,
 .category-page .newsStory .title,
 .category-page .event .title {
   font-size: 16px;
-}
-.category-page .webinar {
-    margin-top: 25px;
 }
 .category-page #team .pi {
   /* This is for when the page is collapsed. */
