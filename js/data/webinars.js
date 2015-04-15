@@ -3,14 +3,14 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", function($scope) {
     $scope.upcomingWebinars = [
         {
-            date: '14 April 2015 at 3:00PM EST',
-            topic: 'Prediction of Adverse Events for LINCS Drugs using L1000 Gene Expression Data, Cell Morphology Profiles and Chemical Structure Features',
-            presenters: 'Zichen Wang, Mount Sinai'
-        },
-        {
             date: '21 April 2015 at 3:00PM EST',
             topic: 'Target predictions using LINCS perturbation data',
             presenters: 'Yan Xia, CMU MLD'
+        },
+        {
+            date: '28 April 2015 at 3:00PM EST',
+            topic: 'TBD',
+            presenters: 'Eric Sobie, LINCS Data and Signature Generation Center, Mount Sinai'
         },
         {
             date: '5 May 2015',
@@ -19,6 +19,13 @@ mod.controller("webinarsCtrl", ["$scope", function($scope) {
         }
     ];
     $scope.pastWebinars = [
+        {
+            date: '14 April 2015',
+            topic: 'Prediction of Adverse Events for LINCS Drugs using L1000 Gene Expression Data, Cell Morphology Profiles and Chemical Structure Features',
+            presenters: 'Zichen Wang, Mount Sinai',
+            synopsis: '',
+            link: ''
+        },
         {
             date: '10 March 2015',
             topic: 'Transcriptional landscape of drug response guides the design of specific and potent drug combinations',
