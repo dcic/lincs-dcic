@@ -7,6 +7,7 @@ var mod = angular.module("lincsDcic", [
  	"datacentersMod",
  	"datasetsMod",
 	"emailMod",
+	"edsrappMod",
 	"fundingMod",
 	"indexMod",
  	"introMod",
@@ -69,6 +70,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		when("/edsr", {
 			templateUrl: "view/page/edsr.html"
+		}).
+		when("/edsrapp", {
+		    templateUrl: "view/page/edsrapp.html"
 		}).
 		when("/datacenters", {
 			templateUrl: "view/page/datacenters.html"

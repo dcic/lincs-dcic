@@ -60,6 +60,15 @@ h5,
 h6 {
     font-family: @font-family-accent;
 }
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
 
 
 /* Structal elements: wrapper, header, footer, and related content.
@@ -371,7 +380,7 @@ h6 {
 		    font-family: @font-family-accent;
 		}
 	}
-	table {
+	/*table {
         margin-bottom: 0;
         img {
             width: 50px;
@@ -382,7 +391,7 @@ h6 {
                 color: @color-primary;
             }
         }
-    }
+    }*/
 }
 
 .category-page {
@@ -393,7 +402,7 @@ h6 {
             text-decoration: underline;
         }
     }
-    table {
+    /*table {
     	margin-bottom: 0;
         img {
             width: 100px;
@@ -404,7 +413,7 @@ h6 {
         p {
             margin-bottom: 0;
         }
-    }
+    }*/
     &#analysis {
         .col-md-4 {
             textarea {
@@ -444,6 +453,21 @@ h6 {
             .details {
                 float: right;
                 width: 70%;
+            }
+        }
+    }
+    &#edsrapp {
+        tr {
+            height: 30px;
+            td:first-child {
+                font-weight: bold;
+                width: 30%;
+            }
+            td:last-child {
+                width: 70%;
+                input {
+                    width: 100%;
+                }
             }
         }
     }

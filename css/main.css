@@ -34,6 +34,15 @@ h5,
 h6 {
   font-family: 'Archivo Narrow', sans-serif;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
 /* Structal elements: wrapper, header, footer, and related content.
  * ------------------------------------------------------------------------- */
 #wrapper {
@@ -306,6 +315,18 @@ h6 {
   margin-bottom: 10px;
   padding: 10px;
   position: relative;
+  /*table {
+        margin-bottom: 0;
+        img {
+            width: 50px;
+        }
+        a {
+            color: @color-black;
+            &:hover {
+                color: @color-primary;
+            }
+        }
+    }*/
 }
 .category-index a:hover {
   color: #599fb7;
@@ -329,17 +350,19 @@ h6 {
   color: #000000;
   font-family: 'Archivo Narrow', sans-serif;
 }
-.category-index table {
-  margin-bottom: 0;
-}
-.category-index table img {
-  width: 50px;
-}
-.category-index table a {
-  color: #000000;
-}
-.category-index table a:hover {
-  color: #3593b1;
+.category-page {
+  /*table {
+    	margin-bottom: 0;
+        img {
+            width: 100px;
+        }
+        td:first-child {
+            width: 100px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }*/
 }
 .category-page a {
   color: #3593b1;
@@ -347,18 +370,6 @@ h6 {
 .category-page a:hover {
   color: #09505b;
   text-decoration: underline;
-}
-.category-page table {
-  margin-bottom: 0;
-}
-.category-page table img {
-  width: 100px;
-}
-.category-page table td:first-child {
-  width: 100px;
-}
-.category-page table p {
-  margin-bottom: 0;
 }
 .category-page#analysis .col-md-4 textarea {
   height: 200px;
@@ -391,6 +402,19 @@ h6 {
 .category-page #news .first .details {
   float: right;
   width: 70%;
+}
+.category-page#edsrapp tr {
+  height: 30px;
+}
+.category-page#edsrapp tr td:first-child {
+  font-weight: bold;
+  width: 30%;
+}
+.category-page#edsrapp tr td:last-child {
+  width: 70%;
+}
+.category-page#edsrapp tr td:last-child input {
+  width: 100%;
 }
 .category-page #sections {
   padding-top: 20px;

@@ -5,5 +5,8 @@
 lib/node_modules/
 lib/bower_components/
 
+images/source/photographs/
+images/source/intro diagram/
+
 # VIM
 *.swp
