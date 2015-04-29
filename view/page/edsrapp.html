@@ -9,47 +9,50 @@
         <p>Font must be Arial 11 or higher, margins must be set to “Narrow”, and spacing between text lines must be set to “Single” in Microsoft Word. References can be listed as additional pages.</p>
         <p>Detailed budget for the first and second year and biographical sketches of the key investigators must be provided using NIH face pages 4 and 5 and the Biographical Sketch Format Page template as provided here.</p>
         <p>Please submit your application on this page. Mechanisms to upload application will be available on this page at the opening date until the due date. The assembled application should be submitted as a single PDF file. Applications that do not adhere to these guidelines will be rejected.</p>
-        <table>
-            <tr>
-                <td>First Name</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Institution</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Department</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Telephone</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Project Title</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Proposed Dates (MM/DD/YY)</td>
-                <td>
-                    <span>Start: <input type="text" class="datepicker"></span>
-                    <span class="right">End: <input type="text" class="datepicker"></span>
-                </td>
-            </tr>
-            <tr>
-                <td>Upload the complete, assembled application and PDF</td>
-                <td><input type="file"></td>
-            </tr>
-        </table>
+        <form ng-submit="submit()">
+            <table>
+                <tr>
+                    <td id="firstName">First Name</td>
+                    <td><input type="text" ng-model="formData.firstName"></td>
+                </tr>
+                <tr>
+                    <td id="lastName">Last Name</td>
+                    <td><input type="text" ng-model="formData.lastName"></td>
+                </tr>
+                <tr>
+                    <td id="institution">Institution</td>
+                    <td><input type="text" ng-model="formData.institution"></td>
+                </tr>
+                <tr>
+                    <td id="department">Department</td>
+                    <td><input type="text" ng-model="formData.department"></td>
+                </tr>
+                <tr>
+                    <td id="email">Email</td>
+                    <td><input type="text" ng-model="formData.email"></td>
+                </tr>
+                <tr>
+                    <td id="telephone">Telephone</td>
+                    <td><input type="text" ng-model="formData.telephone"></td>
+                </tr>
+                <tr>
+                    <td id="projectTitle">Project Title</td>
+                    <td><input type="text" ng-model="formData.projectTitle"></td>
+                </tr>
+                <tr id="datepicker-wrapper">
+                    <td>Proposed Dates (MM/DD/YY)</td>
+                    <td>
+                        <span id="startDate">Start:</span> <input type="text">
+                        <span id="endDate">End:</span> <input type="text" class="datepicker">
+                    </td>
+                </tr>
+                <tr id="fileUpload">
+                    <td>Upload the complete, assembled application and PDF</td>
+                    <td><input type="file" name="pdf"></td>
+                </tr>
+            </table>
+            <input type="submit" id="submit">
+        </form>
     </div>
     <div class="col-md-4">
         <h3>Description</h3>

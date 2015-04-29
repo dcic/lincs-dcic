@@ -403,6 +403,9 @@ h6 {
   float: right;
   width: 70%;
 }
+.category-page#edsrapp table {
+  border-bottom: 1px solid #dddddd;
+}
 .category-page#edsrapp tr {
   height: 30px;
 }
@@ -411,10 +414,30 @@ h6 {
   width: 30%;
 }
 .category-page#edsrapp tr td:last-child {
-  width: 70%;
+  width: 100%;
 }
 .category-page#edsrapp tr td:last-child input {
   width: 100%;
+}
+.category-page#edsrapp #datepicker-wrapper span {
+  font-weight: bold;
+  /*width: 50%;*/
+}
+.category-page#edsrapp #datepicker-wrapper td {
+  width: auto;
+}
+.category-page#edsrapp #datepicker-wrapper td input {
+  width: auto;
+}
+.category-page#edsrapp #submit {
+  background: #3593b1;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.category-page#edsrapp #submit:hover {
+  background: #09505b;
 }
 .category-page #sections {
   padding-top: 20px;
@@ -488,6 +511,9 @@ h6 {
 }
 .right-nav img {
   width: 100%;
+}
+.highlight {
+  color: #ff0000;
 }
 /* Miscellaneous global selectors.
  * ------------------------------------------------------------------------- */

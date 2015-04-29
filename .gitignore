@@ -1,9 +1,10 @@
 # OSX
 *.DS_Store
 
-# NPM
+# Dependencies
 lib/node_modules/
 lib/bower_components/
+lib/jquery-ui-1.11.4.custom/
 
 images/source/photographs/
 images/source/intro diagram/

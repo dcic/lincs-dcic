@@ -9,6 +9,7 @@
 /* colors */
 @color-white: #ffffff;
 @color-black: #000000;
+@color-red: #ff0000;
 
 @color-lightgray: #f1f1f1;
 @color-gray: #dddddd;
@@ -457,6 +458,9 @@ h6 {
         }
     }
     &#edsrapp {
+        table {
+            border-bottom: 1px solid @color-gray;
+        }
         tr {
             height: 30px;
             td:first-child {
@@ -464,10 +468,32 @@ h6 {
                 width: 30%;
             }
             td:last-child {
-                width: 70%;
+                width: 100%;
                 input {
                     width: 100%;
                 }
+            }
+        }
+        #datepicker-wrapper {
+            span {
+                font-weight: bold;
+                /*width: 50%;*/
+            }
+            td {
+                width: auto;
+                input {
+                    width: auto;
+                }
+            }
+        }
+        #submit {
+            background: @color-primary;
+            border: none;
+            color: @color-white;
+            font-weight: bold;
+            margin-top: 20px;
+            &:hover {
+                background: @color-primary-dark;
             }
         }
     }
@@ -544,6 +570,9 @@ h6 {
     img {
         width: 100%;
     }
+}
+.highlight {
+    color: @color-red;
 }
 
 
