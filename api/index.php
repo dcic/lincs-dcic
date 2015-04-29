@@ -35,7 +35,7 @@ function doPost() {
     $appData["projectTitle"] = $_POST["projectTitle"];
     $appData["startDate"]    = $_POST["startDate"];
     $appData["endDate"]      = $_POST["endDate"];
-    $appData["timestamp"]    = date('Y-m-d H:i:s', $_SERVER['REQUEST_TIME']);
+    $appData["timestamp"]    = date('m/d/Y H:i:s', time());
     
     $baseDirectory = "../static/edsr/";
     $userDirectory = $baseDirectory . $appData["lastName"] . "_" . $appData["firstName"] . "_" . uniqid("");
