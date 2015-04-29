@@ -2,6 +2,8 @@ var mod = angular.module('edsrappMod', []);
 
 mod.controller('edsrappCtrl', ['$scope', '$http', function($scope, $http) {
 
+    var $form = $('#edsrapp-form');
+
     $scope.formData = {
         firstName: '',
         lastName: '',
@@ -84,8 +86,7 @@ mod.controller('edsrappCtrl', ['$scope', '$http', function($scope, $http) {
 
     $scope.submit = function() {
         if (isValidInput()) {
-            var $forms = $('form'),
-                formData = new FormData($forms[0]);
+            var formData = new FormData($form[0]);
             _.each($scope.formData, function(val, key) {
                 formData.append(key, val);
             });
@@ -99,6 +100,7 @@ mod.controller('edsrappCtrl', ['$scope', '$http', function($scope, $http) {
                 contentType: false,
                 processData: false,
                 success: function(data, textStatus, jqXHR) {
+                    $form[0].reset();
                     getAlert('Success', 'Your application was accepted. Thank you!');
                 },
                 error: function(data) {
