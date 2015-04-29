@@ -9,6 +9,7 @@ mod.controller('edsrappCtrl', ['$scope', '$http', function($scope, $http) {
         department: '',
         email: '',
         telephone: '',
+        zipCode: '',
         projectTitle: '',
         startDate: '',
         endDate: ''
