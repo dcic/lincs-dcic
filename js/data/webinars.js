@@ -1,35 +1,38 @@
 var mod = angular.module("webinarsMod", []);
 
-mod.controller("webinarsCtrl", ["$scope", function($scope) {
+mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
         {
-            date: '21 April 2015 at 3:00PM EST',
-            topic: 'Target predictions using LINCS perturbation data',
-            presenters: 'Yan Xia, CMU MLD'
-        },
-        {
-            date: '28 April 2015 at 3:00PM EST',
-            topic: 'TBD',
-            presenters: 'Eric Sobie, LINCS Data and Signature Generation Center, Mount Sinai'
-        },
-        {
-            date: '5 May 2015',
-            topic: 'Assessing the Global Dimensionality of LINCS Signatures',
-            presenters: 'Neil Clark, Mount Sinai'
+            date: '26 May 2015 at 3:00 PM EDT',
+            topic: 'Integrative Analysis of Proteomics Data of Multi-Layered Post Translational Modifications Collected from Human Lung Cancer Cell Lines',
+            presenters: 'Peter Hornbeck, Cell Signaling Technology'
         }
     ];
     $scope.pastWebinars = [
         {
+            date: '5 May 2015',
+            topic: 'Assessing the Global Dimensionality of LINCS Signatures',
+            presenters: 'Neil Clark, Icahn School of Medicine at Mount Sinai',
+            synopsis: 'With the advent of Big Data, the scalability of statistical methods has come to the forefront. By reducing large high-dimensional data sets to their intrinsic dimension many practical problems of data storage and handling, and computational expense of large-scale analysis are greatly alleviated. An example of one approach to this is to find a regularized, low-rank approximation to the data matrix; we show, as an example, that such a representation leads to faster computation time and higher accuracy when building a logistic regression classifier to predict the perturbing drug in L1000 LINCS data. This suggests that the low-rank approximation leads to cleaner perturbation signatures.  We provide further examples using LINCS Post Translational modification data from Cell Signaling. Furthermore, we describe a sample-size scaling approach to estimating the intrinsic dimensionality of high-dimensional data, and demonstrate the principal with an example from TCGA breast cancer gene expression profiles. This approach would not only allow optimal dimensionality reduction, but could also be used to extrapolate the sample size required to explore the space of perturbations.',
+            link: 'https://www.youtube.com/watch?v=8s3HYdVlEoM'
+        },
+        {
+            date: '21 April 2015',
+            topic: 'Target predictions using LINCS perturbation data',
+            presenters: 'Yan Xia, Carnegie Mellon University'
+        },
+        {
             date: '14 April 2015',
             topic: 'Prediction of Adverse Events for LINCS Drugs using L1000 Gene Expression Data, Cell Morphology Profiles and Chemical Structure Features',
-            presenters: 'Zichen Wang, Mount Sinai',
-            synopsis: 'Adverse-events are unintended and undesirable therapeutic response to drugs. Adverse-events are a major public health concern as well as a significant barrier in the drug development process. Failure to detect adverse-events for drugs before they are marketed can lead to substantial patient morbidity. Many efforts have been made to predict adverse-events using chemical and biological features of drugs, whereas the integration of features from chemical and biological origin has proven to improve adverse-events predictability. However, until recently, biological features about the properties of drugs are often limited to the known therapeutic targets of the drugs, or data from specific low-content assays. In contrast, for this study, we used gene expression responses and cell-morphology profiles measured in cell lines upon drug treatment. To predict adverse event we utilized the LINCS L1000 dataset and the Molecular Libraries Probe Production Centers Network (MLPCN) dataset as features to predict side adverse events. Additionally, we extracted features from the chemical structure of the drugs and combined these features with the expression and imaging features to better predict adverse events. First, we converted the LINCS L1000 gene expression profiles of drug treatments to Characteristic Directions in gene expression space to train a k-Nearest Neighbor classifier to predict adverse events. This method alone is already highly predictive (AUROC=0.892). We then combined the matrix derived from processing the gene expression L1000 data, with cell-morphology profiling data, and features extracted from the chemical structure of the drugs to train a multi-label classifier to predict drug adverse events. We found that combining multiple features using ensemble methods is able to achieve even better predictability. The predictive model was applied to all (~20,000) LINCS small molecule compounds profiled in by both L1000 LINCS and MLPCN projects and the results are delivered in an interactive freely available web-site at: http://www.maayanlab.net/SEP-L1000.',
-            link: 'https://www.youtube.com/watch?v=EHUAU05O0kQ'
+            presenters: 'Zichen Wang, Icahn School of Medicine at Mount Sinai',
+            synopsis: $sce.trustAsHtml('<strong>Synopsis:</strong> Adverse-events are unintended and undesirable therapeutic response to drugs. Adverse-events are a major public health concern as well as a significant barrier in the drug development process. Failure to detect adverse-events for drugs before they are marketed can lead to substantial patient morbidity. Many efforts have been made to predict adverse-events using chemical and biological features of drugs, whereas the integration of features from chemical and biological origin has proven to improve adverse-events predictability. However, until recently, biological features about the properties of drugs are often limited to the known therapeutic targets of the drugs, or data from specific low-content assays. In contrast, for this study, we used gene expression responses and cell-morphology profiles measured in cell lines upon drug treatment. To predict adverse event we utilized the LINCS L1000 dataset and the Molecular Libraries Probe Production Centers Network (MLPCN) dataset as features to predict side adverse events. Additionally, we extracted features from the chemical structure of the drugs and combined these features with the expression and imaging features to better predict adverse events. First, we converted the LINCS L1000 gene expression profiles of drug treatments to Characteristic Directions in gene expression space to train a k-Nearest Neighbor classifier to predict adverse events. This method alone is already highly predictive (AUROC=0.892). We then combined the matrix derived from processing the gene expression L1000 data, with cell-morphology profiling data, and features extracted from the chemical structure of the drugs to train a multi-label classifier to predict drug adverse events. We found that combining multiple features using ensemble methods is able to achieve even better predictability. The predictive model was applied to all (~20,000) LINCS small molecule compounds profiled in by both L1000 LINCS and MLPCN projects and the results are delivered in an interactive freely available web-site at: <a href="http://www.maayanlab.net/SEP-L1000" target="_blank">http://www.maayanlab.net/SEP-L1000</a>.'),
+            link: 'https://www.youtube.com/watch?v=EHUAU05O0kQ',
+            isHtml: true
         },
         {
             date: '10 March 2015',
             topic: 'Transcriptional landscape of drug response guides the design of specific and potent drug combinations',
-            presenters: 'Marc Hafner, HMS LINCS DSGC',
+            presenters: 'Marc Hafner, Harvard Medical School',
             synopsis: 'Characterizing the molecular effects of targeted therapies is an important step towards understanding and predicting drug efficacy in cancer. In this work, we used the L1000 assay to measure the transcriptional response of six breast cancer cell lines to more than 100 different targeted drugs. We focused on inhibitors targeting the most important signaling kinases such as PI3K, AKT or MAPK, as well as receptor tyrosine kinases (RTKs) and cyclin-dependent kinases (CDKs). With two time points and six doses, the dataset contains more than 8000 unique perturbations.',
             link: 'https://www.youtube.com/watch?v=kdKk3jHUR9c'
         },

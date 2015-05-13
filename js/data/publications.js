@@ -2,12 +2,44 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function($scope) {
 	$scope.publications = [
+	    {
+            title: "PhosphoSitePlus, 2014: mutations, PTMs and recalibrations",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25514926",
+            authors: "Hornbeck PV, Zhang B, Murray B, Kornhauser JM, Latham V, Skrzypek E.",
+            citation: "Nucleic Acids Research 2015 Jan;43:D512-20.",
+            ids: "PMID: 25514926 | PMCID: PMC4383998",
+            year: 2015
+	    },
+	    {
+            title: "Sex- and tissue-specific methylome changes in brains of mice perinatally exposed to lead",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25530354",
+            authors: "Sánchez-Martín FJ, Lindquist DM, Landero-Figueroa J, Zhang X, Chen J, Cecil KM, Medvedovic M, Puga A.",
+            citation: "Neurotoxicology 2015 Jan;46:92-100.",
+            ids: "PMID: 25530354 | PMCID: PMC4339411",
+            year: 2015
+	    },
+	    {
+            title: "Multitask learning of signaling and regulatory networks with application to studying human response to flu",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25522349",
+            authors: "Jain S, Gitter A, Bar-Joseph Z.",
+            citation: "PLoS Computational Biology 2014 Dec 18;10(12):e1003943.",
+            ids: "PMID: 25522349 | PMCID: PMC4270428",
+            year: 2014
+	    },
         {
             title: "Drug/Cell-line Browser: interactive canvas visualization of cancer drug/cell-line viability assay datasets",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/?term=25100688",
             authors: "Duan Q, Wang Z, Fernandez NF, Rouillard AD, Tan CM, Benes CH, Ma’ayan A.",
             citation: "Bioinformatics 2014 Nov 15;30(22):3289-90.",
             ids: "PMID: 25100688 | PMCID: PMC4221125",
+            year: 2014
+        },
+        {
+            title: "Histone H3.3 and its proteolytically processed form drive a cellular senescence programme",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25394905",
+            authors: "Duarte LF, Young AR, Wang Z, Wu HA, Panda T, Kou Y, Kapoor A, Hasson D, Mills NR, Ma'ayan A, Narita M, Bernstein E.",
+            citation: "Nature Communications 2014 Nov 14;5:5210.",
+            ids: "PMID: 25522349 | PMCID: PMC4270428",
             year: 2014
         },
         {

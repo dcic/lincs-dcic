@@ -10,8 +10,32 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.tools = [
         {
+            title: "LINCS Milestones Overview",
+            description: "The LINCS Milestones Overview is an interactive plot of available and upcoming data from the BD2K-LINCS DCIC.",
+            url: "http://amp.pharm.mssm.edu/milestonesViz/",
+            target: "_blank",
+            image: DIR + "milestones-overview.png",
+            shortDesc: "LINCS Milestones Overview"
+        },
+        {
+            title: "PAEA",
+            description: "PAEA is an R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
+            url: "http://amp.pharm.mssm.edu/PAEA/",
+            target: "_blank",
+            image: DIR + "paea.png",
+            shortDesc: "Principle Angle Enrichment Analysis"
+        },
+        {
+            title: "L1000CDS2",
+            description: "LINCS L1000 Characteristic Direction Search Engine.",
+            url: "http://amp.pharm.mssm.edu/L1000CDS2/",
+            target: "_blank",
+            image: DIR + "l1000cds2.png",
+            shortDesc: "LINCS Search Engine"
+        },
+        {
             title: "GEO2Enrichr",
-            description: "A Google Chrome Extension to extract gene sets from GEO and analyze these lists for common biological functions.",
+            description: "A browser extension and web application to extract gene sets from GEO and analyze these lists for common biological functions.",
             url: "http://maayanlab.net/g2e",
             target: "_blank",
             image: DIR + "g2e.png",

@@ -37,10 +37,10 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: "Webinars",
-            text: $sce.trustAsHtml("These webinars provide a forum for data scientists within and without of the LINCS project to present their work on problems related to LINCS data analysis and integration:" +
+            text: $sce.trustAsHtml("These webinars provide a forum for data scientists within and outside of the LINCS project to present their work on problems related to LINCS data analysis and integration:" +
                 "<ul>" +
                     "<li>" +
-                        "<a href='#/webinars'>Data Science Research webinars</a>" +
+                        "<a href='#/webinars'>Data Science Research Webinars</a>" +
                     "</li>" +
                 "</ul>"),
             image: DIR + "webinars.png"

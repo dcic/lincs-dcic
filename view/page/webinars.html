@@ -1,5 +1,5 @@
 <div class="row category-page">
-    <h2 class="col-md-12">Data Science Research webinars</h2>
+    <h2 class="col-md-12">Data Science Research Webinars</h2>
     <div ng-controller="webinarsCtrl" class="col-md-8">
         <h3>Upcoming</h3>
         <div ng-repeat="webinar in upcomingWebinars" class="webinar">
@@ -10,11 +10,17 @@
         <h3>Past</h3>
         <div ng-repeat="webinar in pastWebinars" class="webinar">
             <h4>
-                <a href="{{webinar.link}}" target="_blank">{{webinar.topic}}</a>
+                <a ng-if="webinar.link" href="{{webinar.link}}" target="_blank">{{webinar.topic}}</a>
+                <span ng-if="!webinar.link">{{webinar.topic}}</span>
             </h4>
             <p><strong>Date:</strong> {{webinar.date}}</p>
             <p><strong>Presenter(s):</strong> {{webinar.presenters}}</p>
-            <p><strong>Synopsis:</strong> {{webinar.synopsis}}</p>
+            <p ng-if="webinar.synopsis">
+                <p ng-if="webinar.isHtml" ng-bind-html="webinar.synopsis"></p>
+                <p ng-if="!webinar.isHtml">
+                    <strong>Synopsis:</strong> {{webinar.synopsis}}
+                </p>
+            </p>
         </div>
     </div>
     <div class="col-md-4">
