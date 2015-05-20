@@ -17,7 +17,8 @@ var mod = angular.module("lincsDcic", [
  	"toolsMod",
  	"trainingMod",
  	"subnavMod",
- 	"webinarsMod"
+ 	"webinarsMod",
+ 	"htmlFilters"
 ]);
 
 mod.config(["$routeProvider", function($routeProvider) {

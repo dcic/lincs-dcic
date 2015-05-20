@@ -5,33 +5,33 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     var DIR = 'images/apps/';
 
-    $scope.introText = $sce.trustAsHtml(
-        "The DCIC develops web-based tools for integrative data access and visualization across the distributed LINCS and BD2K sites and other relevant data sources. Our next generation integrated web-based platform for the LINCS project serves as the foundation for all LINCS activities and federates all LINCS data, signatures, analysis algorithms, pipelines, APIs and web tools."    );
+    $scope.introText = $sce.trustAsHtml("The DCIC develops web-based tools for integrative data access and visualization across the distributed LINCS and BD2K sites and other relevant data sources. Our next generation integrated web-based platform for the LINCS project serves as the foundation for all LINCS activities and federates all LINCS data, signatures, analysis algorithms, pipelines, APIs and web tools.");
 
     $scope.tools = [
         {
-            title: "LINCS Milestones Overview",
-            description: "The LINCS Milestones Overview is an interactive plot of available and upcoming data from the BD2K-LINCS DCIC.",
+            title: "Docent II",
+            description: "Docent II provides an interactive plot of available and upcoming data from the LINCS DSGCs.",
             url: "http://amp.pharm.mssm.edu/milestonesViz/",
             target: "_blank",
-            image: DIR + "milestones-overview.png",
-            shortDesc: "LINCS Milestones Overview"
+            image: DIR + "docent-ii.png",
+            shortDesc: "Overview of the LINCS Data Signature Generation Centers (DSGCs) Data Release Milestones"
         },
         {
             title: "PAEA",
-            description: "PAEA is an R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
+            description: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
             url: "http://amp.pharm.mssm.edu/PAEA/",
             target: "_blank",
             image: DIR + "paea.png",
             shortDesc: "Principle Angle Enrichment Analysis"
         },
         {
-            title: "L1000CDS2",
-            description: "LINCS L1000 Characteristic Direction Search Engine.",
+            title: "L1000CDS<span class='super'>2</span>",
+            description: "L1000CDS<span class='super'>2</span> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
             url: "http://amp.pharm.mssm.edu/L1000CDS2/",
             target: "_blank",
             image: DIR + "l1000cds2.png",
-            shortDesc: "LINCS Search Engine"
+            shortDesc: "L1000 Characteristic Direction Signature Search Engine",
+            isHtml: true
         },
         {
             title: "GEO2Enrichr",

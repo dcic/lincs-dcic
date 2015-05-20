@@ -517,6 +517,10 @@ h6 {
 }
 /* Miscellaneous global selectors.
  * ------------------------------------------------------------------------- */
+.super {
+  font-size: .75em;
+  vertical-align: super;
+}
 a.important,
 .important {
   font-style: normal;
