@@ -183,6 +183,7 @@ h6 {
 #footer #social a {
   border: none;
   border-radius: 0;
+  padding: 0;
 }
 #footer #social img {
   width: 30px;

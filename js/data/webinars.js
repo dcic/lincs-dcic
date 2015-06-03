@@ -3,6 +3,11 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
         {
+            date: '9 June 2015 at 3:00 PM EDT',
+            topic: 'Drug Toxicity Signature Generation Center',
+            presenters: 'Eric Sobie, Icahn School of Medicine at Mount Sinai'
+        },
+        {
             date: '26 May 2015 at 3:00 PM EDT',
             topic: 'Integrative Analysis of Proteomics Data of Multi-Layered Post Translational Modifications Collected from Human Lung Cancer Cell Lines',
             presenters: 'Peter Hornbeck, Cell Signaling Technology'

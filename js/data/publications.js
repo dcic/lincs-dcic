@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function($scope) {
 	$scope.publications = [
 	    {
+            title: "GEO2Enrichr: browser extension and server app to extract gene sets from GEO and analyze them for biological functions",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25971742",
+            authors: "Gundersen GW, Jones MR, Rouillard AD, Kou Y, Monteiro CD, Fledmann AS, Hu KS, Ma'ayan A",
+            citation: "Bioinformatics. 2015 May 13. pii: btv297.",
+            ids: "PMID: 25971742",
+            year: 2015
+	    },
+	    {
             title: "PhosphoSitePlus, 2014: mutations, PTMs and recalibrations",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25514926",
             authors: "Hornbeck PV, Zhang B, Murray B, Kornhauser JM, Latham V, Skrzypek E.",
@@ -29,7 +37,7 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
         {
             title: "Drug/Cell-line Browser: interactive canvas visualization of cancer drug/cell-line viability assay datasets",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/?term=25100688",
-            authors: "Duan Q, Wang Z, Fernandez NF, Rouillard AD, Tan CM, Benes CH, Ma’ayan A.",
+            authors: "Duan Q, Wang Z, Fernandez NF, Rouillard AD, Tan CM, Benes CH, Ma'ayan A.",
             citation: "Bioinformatics 2014 Nov 15;30(22):3289-90.",
             ids: "PMID: 25100688 | PMCID: PMC4221125",
             year: 2014
