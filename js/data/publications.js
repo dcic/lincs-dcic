@@ -3,9 +3,17 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function($scope) {
 	$scope.publications = [
 	    {
+            title: "Dynamics of the discovery process of protein-protein interactions from low content studies",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26048415",
+            authors: "Wang Z, Clark NR, Ma'ayan A",
+            citation: "BMC Systems Biology. 2015 Jun;9(1):26.",
+            ids: "PMID: 26048415 | PMCID: PMC4456804",
+            year: 2015
+	    }, 
+	    {
             title: "GEO2Enrichr: browser extension and server app to extract gene sets from GEO and analyze them for biological functions",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25971742",
-            authors: "Gundersen GW, Jones MR, Rouillard AD, Kou Y, Monteiro CD, Fledmann AS, Hu KS, Ma'ayan A",
+            authors: "Gundersen GW, Jones MR, Rouillard AD, Kou Y, Monteiro CD, Feldmann AS, Hu KS, Ma'ayan A",
             citation: "Bioinformatics. 2015 May 13. pii: btv297.",
             ids: "PMID: 25971742",
             year: 2015
