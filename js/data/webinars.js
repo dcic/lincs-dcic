@@ -3,27 +3,34 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
-        {
-            date: '9 June 2015 at 3:00 PM EDT',
-            topic: 'Drug Toxicity Signature Generation Center',
-            presenters: 'Eric Sobie, Icahn School of Medicine at Mount Sinai'
-        },
-	{
+	    {
             date: '16 June 2015 at 3:00 PM EDT',
-            topic: 'External Data Science Research Project, BD2K-LINCS Data Coordination and Integration Center',
+            topic: 'L1K++: A Fast Pipeline that Increases the Accuracy of L1000 Gene Expression Data',
             presenters: 'Ling-Hong Hung, University of Washington'
+        },
+	    {
+            date: '23 June 2015 at 3:00 PM EDT',
+            topic: 'Overview of Cluster Computing Resources: Spark and Mesos',
+            presenters: 'Matthew Jones, Icahn School of Medicine at Mount Sinai'
         }
 
     ];
     $scope.pastWebinars = [
-         {
+        {
+            date: '9 June 2015',
+            topic: 'Drug Toxicity Signature Generation Center',
+            presenters: 'Eric Sobie, Icahn School of Medicine at Mount Sinai',
+            synopsis: '',
+	        link: ''
+        },
+	    {
             date: '26 May 2015',
             topic: 'Integrative Analysis of Proteomics Data of Multi-Layered Post Translational Modifications Collected from Human Lung Cancer Cell Lines',
             presenters: 'Peter Hornbeck, Klarisa Rikova, Mark Grimes (Cell Signaling Technology Inc.) and Neil Clark, Nicolas Fernandez (Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC)',
             synopsis: '',
-	    link: 'https://www.youtube.com/watch?v=HQxincOIqNM'
+	        link: 'https://www.youtube.com/watch?v=HQxincOIqNM'
         },
-	{
+	    {
             date: '5 May 2015',
             topic: 'Assessing the Global Dimensionality of LINCS Signatures',
             presenters: 'Neil Clark, Icahn School of Medicine at Mount Sinai',
@@ -34,8 +41,8 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             date: '21 April 2015',
             topic: 'Target Predictions using LINCS Perturbation Data',
             presenters: 'Yan Xia, Carnegie Mellon University',
-	    synopsis: '',
-	    link: 'https://www.youtube.com/watch?v=afz36W6G7iE'		
+	        synopsis: '',
+	        link: 'https://www.youtube.com/watch?v=afz36W6G7iE'		
         },
         {
             date: '14 April 2015',
@@ -87,7 +94,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             synopsis: '',
             link: 'https://www.youtube.com/watch?v=eEIXm5rpo-E'
         },
-	{
+	    {
             date: '18 Nov 2014',
             topic: 'Creating Signatures from the ENCODE Data',
             presenters: 'Yan Kou, Icahn School of Medicine at Mount Sinai',
