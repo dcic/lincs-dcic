@@ -2,19 +2,34 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
-        {
-            date: '9 June 2015 at 3:00 PM EDT',
-            topic: 'Drug Toxicity Signature Generation Center',
-            presenters: 'Eric Sobie, Icahn School of Medicine at Mount Sinai'
+	{
+            date: '16 June 2015 at 3:00 PM EDT',
+            topic: 'L1K++: A Fast Pipeline that Increases the Accuracy of L1000 Gene Expression Data',
+            presenters: 'Ling-Hong Hung, University of Washington'
         },
-        {
-            date: '26 May 2015 at 3:00 PM EDT',
-            topic: 'Integrative Analysis of Proteomics Data of Multi-Layered Post Translational Modifications Collected from Human Lung Cancer Cell Lines',
-            presenters: 'Peter Hornbeck, Cell Signaling Technology'
+	{
+            date: '23 June 2015 at 3:00 PM EDT',
+            topic: 'Overview of Cluster Computing Resources: Spark and Mesos',
+            presenters: 'Matthew Jones, Icahn School of Medicine at Mount Sinai'
         }
+
     ];
     $scope.pastWebinars = [
         {
+            date: '9 June 2015',
+            topic: 'Drug Toxicity Signature Generation Center',
+            presenters: 'Eric Sobie, Icahn School of Medicine at Mount Sinai',
+            synopsis: '',
+	    link: ''
+        },
+	{
+            date: '26 May 2015',
+            topic: 'Integrative Analysis of Proteomics Data of Multi-Layered Post Translational Modifications Collected from Human Lung Cancer Cell Lines',
+            presenters: 'Peter Hornbeck, Klarisa Rikova, Mark Grimes (Cell Signaling Technology Inc.) and Neil Clark, Nicolas Fernandez (Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC)',
+            synopsis: '',
+	    link: 'https://www.youtube.com/watch?v=HQxincOIqNM'
+        },
+	{
             date: '5 May 2015',
             topic: 'Assessing the Global Dimensionality of LINCS Signatures',
             presenters: 'Neil Clark, Icahn School of Medicine at Mount Sinai',
@@ -23,8 +38,10 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             date: '21 April 2015',
-            topic: 'Target predictions using LINCS perturbation data',
-            presenters: 'Yan Xia, Carnegie Mellon University'
+            topic: 'Target Predictions using LINCS Perturbation Data',
+            presenters: 'Yan Xia, Carnegie Mellon University',
+	    synopsis: '',
+	    link: 'https://www.youtube.com/watch?v=afz36W6G7iE'		
         },
         {
             date: '14 April 2015',
@@ -36,59 +53,66 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             date: '10 March 2015',
-            topic: 'Transcriptional landscape of drug response guides the design of specific and potent drug combinations',
+            topic: 'Transcriptional Landscape of Drug Response Guides the Design of Specific and Potent Drug Combinations',
             presenters: 'Marc Hafner, Harvard Medical School',
             synopsis: 'Characterizing the molecular effects of targeted therapies is an important step towards understanding and predicting drug efficacy in cancer. In this work, we used the L1000 assay to measure the transcriptional response of six breast cancer cell lines to more than 100 different targeted drugs. We focused on inhibitors targeting the most important signaling kinases such as PI3K, AKT or MAPK, as well as receptor tyrosine kinases (RTKs) and cyclin-dependent kinases (CDKs). With two time points and six doses, the dataset contains more than 8000 unique perturbations.',
             link: 'https://www.youtube.com/watch?v=kdKk3jHUR9c'
         },
         {
             date: '24 February 2015',
-            topic: 'Leveraging experimental models to advance our understanding of cancer',
+            topic: 'Leveraging Experimental Models to Advance our Understanding of Cancer',
             presenters: 'Laura Heiser, Oregon Health and Science University',
             synopsis: 'We and others have suggested the use of in vitro cell line panels to study the biological underpinnings of cancer and to test hypotheses that arise from studies of primary data. Specifically, we have used a collection of ~70 well characterized breast cancer cell lines to assess gene function and to identify mechanisms of response and resistance to therapeutic compounds. This set of molecular profiling data constitutes one of the most complete "omics" resources available in the public domain and includes assessments of gene expression, copy number, mutations, protein abundance, and response to therapy. Comparison of the genomic and epigenomic features of the cell lines with those measured for primary tumors by The Cancer Genome Atlas (TCGA) and others showed that the cell lines mirror many aspects of "omic" diversity in primary tumors. Cell line and tumor similarities include: (a) recurrent copy number changes and mutations (b) basal, claudin-low and luminal breast cancer subtypes, and (c) pathway activity. Analysis of correlations between drug sensitivity to 77 therapeutic compounds revealed that approximately 30% are associated with subtype or genome copy number aberration. Finally, we have used various statistical and machine learning approaches to identify integrated predictive signatures of sensitivity for ~50% of compounds in our cell line panel. These data and observations were the basis for a community-wide effort to identify biomarkers of drug sensitivity in the NCI-DREAM Drug Sensitivity Challenge that culminated in the robust identification of a novel machine learning algorithm for predicting drug response from molecular profiling data. This body of work has demonstrated the utility of in vitro model systems, identified biomarkers of drug sensitivity for clinically relevant compounds, and identified concrete approaches and considerations for advancing work in this domain.',
             link: 'https://www.youtube.com/watch?v=9KM7inVCLoc'
         },
         {
             date: '17 February 2015',
-            topic: 'Discussion of causes for some artifacts observed in L1000 data',
+            topic: 'Discussion of Causes for Some Artifacts Observed in L1000 Data',
             presenters: 'Chad Young, University of Washington',
             synopsis: 'Chad Young examines the relationships between Level 3 expression level measurements for pairs of genes probed by the "same color" beads. He shows that in some situations the deconvolution algorithm produces misleading expression levels, In some situations, plate-level normalization helps in some it does not. Possibility that observed patterns represent underlying biology was suggested by audience and discussed, as well as alternative strategies for systematically identifying artifacts and benchmarking of such alternative strategies.',
             link: 'https://www.youtube.com/watch?v=d-E_siojRg4'
         },
         {
             date: '16 December 2014',
-            topic: 'Large-scane integration of small molecule-induced reponses in diverse LINCS datasets',
+            topic: 'Large-scale Integration of Small Molecule-induced Reponses in Diverse LINCS Datasets',
             presenters: 'Dusica Vidovic, University of Miami',
             synopsis: '',
             link: 'https://www.youtube.com/watch?v=TKPSqRrtd6I'
         },
         {
             date: '9 December 2014',
-            topic: 'Analysis of Lung Cancers Across Multiple Signaling; Spaces to Identify New Disease Drivers and Network; Connectivity',
+            topic: 'Analysis of Lung Cancers Across Multiple Signaling Spaces to Identify New Disease Drivers and Network Connectivity',
             presenters: 'Peter Hornbeck, Cell Signaling Technology Inc.',
             synopsis: '',
             link: 'https://www.youtube.com/watch?v=mgud2LcCdVY'
         },
         {
             date: '2 December 2014',
-            topic: 'L1000 Assay and Signature Benchmarking',
+            topic: 'Explaining Artifacts in Level 3 L1000 Data | Benchmarking Perturbation Signatures',
             presenters: 'Mario Medvedovic, University of Cincinnati',
             synopsis: '',
             link: 'https://www.youtube.com/watch?v=eEIXm5rpo-E'
         },
+	{
+            date: '18 Nov 2014',
+            topic: 'Creating Signatures from the ENCODE Data',
+            presenters: 'Yan Kou, Icahn School of Medicine at Mount Sinai',
+            synopsis: '',
+            link: 'https://www.youtube.com/watch?v=HjDakxNoFCE'
+        },
         {
             date: '18 Nov 2014',
-            topic: 'Issues in Level 3 L1000 data; Accessing and processing ENCODE data',
-            presenters: 'Chad Young, University of Washington; Yan Kou, Icahn School of Medicine at Mount Sinai',
+            topic: 'Issues in Level 3 L1000 Data',
+            presenters: 'Chad Young, University of Washington',
             synopsis: '',
             link: 'https://www.youtube.com/watch?v=-tActS2zkEU'
         },
         {
             date: '28 October 2014',
-            topic: 'The Characteristic Direction Method to analyze the L1000 Data',
+            topic: 'LINCS L1000 Analysis with the Characteristic Direction Method',
             presenters: 'Qiaonan Duan, Icahn School of Medicine at Mount Sinai',
             synopsis: '',
-            link: 'https://www.youtube.com/watch?v=-tActS2zkEU'
+            link: 'https://www.youtube.com/watch?v=6rkqn6sqmBI'
         },
         {
             date: '21 October 2014',
