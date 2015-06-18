@@ -8,7 +8,7 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
             target: "_self"
         },
         {
-            title: "Data and Signature Generating Centers",
+            title: "Data and Signature Generation Centers",
             url: "#/datacenters",
             target: "_self"
         },
