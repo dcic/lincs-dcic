@@ -3,11 +3,6 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	{
-            date: '16 June 2015 at 3:00 PM EDT',
-            topic: 'L1K++: A Fast Pipeline that Increases the Accuracy of L1000 Gene Expression Data',
-            presenters: 'Ling-Hong Hung, University of Washington'
-        },
-	{
             date: '23 June 2015 at 3:00 PM EDT',
             topic: 'Overview of Cluster Computing Resources: Spark and Mesos',
             presenters: 'Matthew Jones, Icahn School of Medicine at Mount Sinai'
@@ -15,12 +10,19 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     ];
     $scope.pastWebinars = [
+	{
+            date: '16 June 2015,
+            topic: 'L1K++: A Fast Pipeline that Increases the Accuracy of L1000 Gene Expression Data',
+            presenters: 'Ling-Hong Hung, University of Washington',
+	    synopsis: 'We have developed an alternative data processing pipeline called L1K++ for LINCS L1000 gene expression.  Our key idea in L1K++ is to combine the data from replicates before deconvoluting the two gene expression signals. This increases the accuracy of this step, and of all downstream inferences. Quantile normalization before deconvolution makes this possible. The gene expression signals are then robustly separated by fitting a gaussian mixture model. The pipeline is implemented entirely in C++ and uses linear and constant time algorithms. As a result, it is more than 1000x faster than current pipelines and can generate a complete set of Level 3 data from raw Level 1 data in a matter of hours. We expect that the L1K++ pipeline will result in the generation of more accurate drug signatures and gene networks.',
+	    link: 'https://www.youtube.com/watch?v=jcpEagg1iaQ'
+        },
         {
             date: '9 June 2015',
             topic: 'Drug Toxicity Signature Generation Center',
             presenters: 'Eric Sobie, Icahn School of Medicine at Mount Sinai',
             synopsis: '',
-	    link: ''
+	    link: 'https://www.youtube.com/watch?v=85xfd9YS3vQ'
         },
 	{
             date: '26 May 2015',
