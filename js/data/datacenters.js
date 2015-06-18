@@ -28,7 +28,7 @@ mod.controller("datacentersCtrl", ["$scope", function($scope) {
             target: "_blank"
         },
         {
-            title: "NeuroLINCS",
+            title: "NeuroLINCS Center",
             url: "http://www.lincsproject.org/centers/data-and-signature-generating-centers/neurolincs/",
             target: "_blank"
         }
