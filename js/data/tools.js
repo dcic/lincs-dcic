@@ -74,7 +74,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Data Visualization Tool"
         },
         {
-            title: "Enrichr - Search engine for gene lists and signatures",
+            title: "Enrichr",
             description: "An easy to use intuitive enrichment analysis web-based tool providing various types of visualization summaries of collective functions of gene lists.",
             url: "http://amp.pharm.mssm.edu/Enrichr/",
             target: "_blank",
