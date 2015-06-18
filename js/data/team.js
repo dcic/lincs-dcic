@@ -59,12 +59,6 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "matthew.jones {at} mssm.edu"
                 },
                 {
-                    firstName: "Yan",
-                    lastName: "Kou",
-                    affiliation: ISMMS,
-                    email: "yan.kou {at} mssm.edu"
-                },
-                {
                     firstName: "Nicolas",
                     lastName: "Fernandez",
                     affiliation: ISMMS,
@@ -100,6 +94,36 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     affiliation: ISMMS,
                     email: "michael.mcdermott {at} mssm.edu"
                 }
+		{
+                    firstName: "Simon",
+                    lastName: "Koplev",
+                    affiliation: ISMMS,
+                    email: "simon.koplev {at} mssm.edu"
+                },
+		{   
+		    firstName: "Maxim",
+                    lastName: "Kuleshov",
+                    affiliation: ISMMS,
+                    email: "maxim.kuleshov {at} mssm.edu"
+                },
+		{   
+		    firstName: "Benjamin",
+                    lastName: "Kaplan",
+                    affiliation: ISMMS,
+                    email: "benjamin.kaplan {at} mssm.edu"
+                },
+		{   
+		    firstName: "Azu",
+                    lastName: "Lee",
+                    affiliation: ISMMS,
+                    email: "azu.lee {at} mssm.edu"
+                },
+		{   
+		    firstName: "Emily",
+                    lastName: "Kuang",
+                    affiliation: ISMMS,
+                    email: "emily.kuang {at} mssm.edu"
+                },
             ]
         },
         {
