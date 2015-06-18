@@ -123,7 +123,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     lastName: "Kuang",
                     affiliation: ISMMS,
                     email: "emily.kuang {at} mssm.edu"
-                },
+                }
             ]
         },
         {
