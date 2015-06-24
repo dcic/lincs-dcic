@@ -3,13 +3,19 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	{
-            date: '23 June 2015 at 3:00 PM EDT',
-            topic: 'Overview of Cluster Computing Resources: Spark and Mesos',
-            presenters: 'Matthew Jones, Icahn School of Medicine at Mount Sinai'
+            date: 'To Be Announced',
+            topic: '',
+            presenters: ''
         }
 
     ];
     $scope.pastWebinars = [
+	{
+            date: '23 June 2015',
+            topic: 'Overview of Cluster Computing Resources: Spark and Mesos',
+            presenters: 'Matthew Jones, Icahn School of Medicine at Mount Sinai',
+	    synopsis: 'Deploying applications and services across multiple computers can quickly become a complex operation. In addition, running distributed computing frameworks such as MPI, Hadoop or Spark on those same computers makes it even more challenging. To solve this problem we have combined a number of technologies to produce an operational cluster stack. Our stack is based on the Mesosphere Datacenter Operating System and provides a unified interface for interacting with many machines. In this webinar I will present a stack built on Apache Mesos that uses Marathon for deploying web apps and other long running services; Docker for packaging dependencies and environments; Hadoop HDFS for storage; Spark for distributed data processing; Cassandra as a big data database; and Chronos for scheduled repetitive jobs. I will cover an overview of these technologies, why they are needed, and briefly demonstrate how to use them.',	
+        },
 	{
             date: '16 June 2015,
             topic: 'L1K++: A Fast Pipeline that Increases the Accuracy of L1000 Gene Expression Data',
