@@ -25,7 +25,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Principle Angle Enrichment Analysis"
         },
         {
-            title: "L1000CDS<span class='super'>2</span>",
+            title: "L1000CDS2",
             description: "L1000CDS<span class='super'>2</span> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
             url: "http://amp.pharm.mssm.edu/L1000CDS2/",
             target: "_blank",
@@ -74,7 +74,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Data Visualization Tool"
         },
         {
-            title: "Enrichr - Search engine for gene lists and signatures",
+            title: "Enrichr",
             description: "An easy to use intuitive enrichment analysis web-based tool providing various types of visualization summaries of collective functions of gene lists.",
             url: "http://amp.pharm.mssm.edu/Enrichr/",
             target: "_blank",
