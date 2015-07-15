@@ -1,0 +1,554 @@
+/*
+ * Style for the LINCS-DCIC website.
+ */
+
+
+/* LESS variables
+ * ------------------------------------------------------------------------- */
+
+/* colors */
+@color-white: #ffffff;
+@color-black: #000000;
+
+@color-lightgray: #f1f1f1;
+@color-gray: #dddddd;
+@color-darkgray: #888888;
+@color-charcoal: #222222;
+@color-lightcharcoal: #808080;
+
+/* Logo and accent colors */
+@color-primary: #3593b1;
+@color-primary-light: #599fb7;
+@color-primary-dark: #09505b;
+
+@color-accent: #D16291;
+/* Unused! */
+@color-accent-dark: #9A2254;
+
+/* fonts */
+@font-size-base: 13px;
+@font-family-base: 'Arial', sans-serif;
+@font-family-accent: 'Archivo Narrow', sans-serif;
+@font-kerning-small: .1em;
+@font-kerning-big: .2em;
+
+
+/* Tag selectors, i.e. global settings.
+ * ------------------------------------------------------------------------- */
+html,
+body {
+    height: 100%;
+    font-family: @font-family-base;
+}
+a {
+    /* Set default to override Bootstrap's default. */
+    color: @color-black;
+	&:hover,
+	&:active,
+	&:link,
+	&:visited {
+        color: @color-black;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: @font-family-accent;
+}
+
+
+/* Structal elements: wrapper, header, footer, and related content.
+ * ------------------------------------------------------------------------- */
+#wrapper {
+    background: @color-white;
+	min-height: 100%;
+    height: auto;
+}
+#header {
+    border-bottom: 1px solid @color-gray;
+}
+#brand {
+    padding-top: 60px;
+    #logo {
+        font-family: @font-family-accent;
+        letter-spacing: @font-kerning-big;
+        text-transform: uppercase;
+        line-height: 2em;
+        #dcic-title {
+            float: left;
+            padding: 0 0 0 15px;
+        }
+        img {
+            float: left;
+            /*display: block;
+            margin: 0 auto;*/
+            max-width: 160px;
+            padding-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            &:hover,
+            &:visited {
+                text-decoration: none;
+            }
+        }
+        span#lincs-title-top {
+            color: @color-lightcharcoal;
+            display: block;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        span#lincs-title-bottom {
+            color: @color-black;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+#subnav {
+    background: @color-primary;
+    padding: 0;
+    letter-spacing: @font-kerning-small;
+    /* Override Bootstrap */
+    border: none;
+    min-height: 0;
+    a {
+        color: @color-white;
+        display: inline-block;
+        font-family: @font-family-accent;
+        font-size: 20px;
+        width: 100%;
+        &:hover {
+            color: @color-white;
+        }
+    }
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        /* This is to ensure the nav doesn't bump down on hover. */
+        border-bottom: 4px solid @color-primary;
+        padding: 8px;
+        a {
+            font-size: 16px;
+            padding: 0;
+        }
+        &:hover {
+            border-bottom: 4px solid @color-primary-dark;
+        }
+    }
+    .navbar-right {
+        a {
+            font-size: 14px;
+        }
+    }
+}
+#content-wrapper {
+    padding-top: 10px;
+    #index {
+        img.icon {
+            padding: 10px;
+            width: 100px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .title {
+            h1 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+            h3 {
+                color: @color-lightcharcoal;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+        .section {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+    }
+}
+#footer {
+    background: @color-charcoal;
+    border-top: 5px solid @color-darkgray;
+    height: auto;
+    margin-top: 40px;
+    padding: 30px 0;
+	a,
+	p {
+		color: @color-white;
+		font-size: 12px;
+	}
+	a {    
+		font-family: 'Open Sans';
+		&:hover {
+			color: @color-primary-light;
+		}
+	}
+	h4 {
+        color: @color-white;
+	}
+	ul {
+        list-style-type: none;
+        padding: 0;
+	}
+    #social {
+        a {
+            border: none;
+            border-radius: 0;
+        }
+        img {
+            width: 30px;
+        }
+        li {
+            padding-right: 0;
+            padding-left: 3px;
+        }
+        .research-gate {
+            padding: 0;
+        }
+    }
+}
+
+
+/* Carousel or rotator. Most of the element names are defined by Bootstrap
+ * and should not be renamed.
+ * ------------------------------------------------------------------------- */
+#feature-banner {
+    padding: 10px 0 40px 0;
+    /* Images should be cut exactly. */
+    width: 100%;
+    #carousel-img-link,
+    img {
+        display: block;
+        width: 100%;
+    }
+    button {
+        background: transparent;
+        border: none;
+    }
+    .carousel-btn {
+        background: #fff;
+        border: none;
+        bottom: 10px;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+    }
+    .carousel-highlight {
+        background: @color-primary;
+    }
+    .carousel-indicators {
+        bottom: 0;
+    }
+    .carousel-indicators li {
+        border: 1px solid @color-primary-dark;
+    }
+    .carousel-caption {
+        background: @color-black;
+        color: @color-white;
+        min-height: 80px;
+        padding: 10px;
+        position: static;
+        text-align: left;
+        text-shadow: none;
+        .caption-title-block,
+        .caption-text {
+            float: left;
+        }
+        .caption-title-block {
+            padding-right: 10px;
+            width: 25%;
+            a {
+                color: @color-white;
+                font-family: @font-family-accent;
+                font-size: 20px;
+                font-weight: bold;
+                &:hover {
+                    color: @color-primary-light;
+                }
+            }
+            h4 {
+                margin-top: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        .caption-text {
+            font-size: 16px;
+            padding-left: 10px;
+            width: 75%;
+        }
+        /* Some images look better with a light caption box. Override the dark default. */
+        &.light {
+            background: @color-primary;
+            color: @color-white;
+            a {
+                color: @color-white;
+                &:hover {
+                    color: @color-primary-dark;
+                }
+            }
+        }
+    }
+}
+
+
+/* Category content is related but varies in style. "category-index" refers
+ * to content on the main page. "catgory-page" refers to content on
+ * individual pages.
+ * ------------------------------------------------------------------------- */
+.category-index,
+.category-page {
+    ul {
+		padding: 0 0 0 15px;
+	}
+	li {
+        list-style-type: none;
+        a {
+            /* Color on the main page is black; on individual pages it is accent. */
+            &:hover {
+                cursor: pointer;
+            }
+        }
+	}
+	li:before {
+        /* FontAwesome char code inside the '' */
+        content: '\F105';
+        color: @color-charcoal;
+        font-family: 'FontAwesome';
+        display: inline-block;
+        width: 1.2em;
+        margin-left: -1.5em;
+        padding-left: 6px;
+    }
+}
+.category-index {
+	background: @color-white;
+	box-shadow: 1px 1px 1px #c5c5c5;
+	border: 1px solid #ccc;
+	min-height: 100px;
+	margin-bottom: 10px;
+	padding: 10px;
+	position: relative;
+	a {
+		&:hover {
+			color: @color-primary-light;
+		}
+	}
+	td {
+        vertical-align: middle;
+	}
+	td.first {
+        border-top: none;
+	}
+	h4 {
+		border-bottom: 1px solid #ebebeb;
+		color: @color-black; /* In case the header doesn't have a link */
+		font-family: @font-family-accent;
+		font-weight: bold;
+		padding: 0 0 6px 0;
+		margin-top: 0;
+		a {
+			color: @color-black;
+		    font-family: @font-family-accent;
+		}
+	}
+	table {
+        margin-bottom: 0;
+        img {
+            width: 50px;
+        }
+        a {
+            color: @color-black;
+            &:hover {
+                color: @color-primary;
+            }
+        }
+    }
+}
+
+.category-page {
+    a {
+        color: @color-primary;
+        &:hover {
+            color: @color-primary-dark;
+            text-decoration: underline;
+        }
+    }
+    table {
+    	margin-bottom: 0;
+        img {
+            width: 100px;
+        }
+        td:first-child {
+            width: 100px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    &#analysis {
+        .col-md-4 {
+            textarea {
+                height: 200px;
+                width: 100%;
+            }
+        }
+        .col-md-8 {
+            input,
+            textarea {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+        .submitted {
+            position: absolute;
+            padding: 1.6em;
+            background-color: rgba(255, 255, 255, 0.8);
+            left: 3em;
+        }
+        #example {
+            color: @color-lightcharcoal;
+            font-size: 13px;
+        }
+    }
+    #news {
+        .first {
+            img {
+                float: left;
+                padding-right: 10px;
+                width: 30%;
+            }
+            a {
+                font-family: @font-family-accent;
+                font-size: 20px;
+            }
+            .details {
+                float: right;
+                width: 70%;
+            }
+        }
+    }
+    #sections {
+        padding-top: 20px;
+        .section {
+            h3 {
+                margin-top: 0;
+            }
+            padding-bottom: 20px;
+            img,
+            .text {
+                float: left;
+            }
+            img {
+                width: 20%;
+            }
+            .text {
+                padding-left: 20px;
+                width: 80%;
+            }
+        }
+    }
+    .publication,
+    .newsStory,
+    .event {
+        padding-bottom: 20px;
+        p {
+            margin: 0;
+        }
+        .title {
+            font-size: 16px;
+        }
+    }
+    #team {
+        .pi {
+            /* This is for when the page is collapsed. */
+            padding-top: 10px;
+        }
+        .contact-institution-logo-row {
+            margin-bottom: 10px;
+        }
+        .contact-institution-logo {
+            height: 80px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .contact-pi-logo {
+            height: 80px;
+        }
+        .contact-pi-desc {
+            margin-left: 10px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .contact-header {
+            border-bottom: 1px solid #888888;
+            /*text-transform: uppercase;*/
+            margin-top: 15px;
+        }
+        .contact-researchers{
+            margin-bottom: 10px;
+        }
+        .person {
+            float: left;
+            padding-top: 10px;
+        }
+        h4 {
+            font-weight: bold;
+        }
+    }
+}
+.right-nav {
+    img {
+        width: 100%;
+    }
+}
+
+
+/* Miscellaneous global selectors.
+ * ------------------------------------------------------------------------- */
+a.important,
+.important {
+    font-style: normal;
+    font-weight: bold;
+	color: @color-accent !important;
+	a {
+		color: @color-accent !important;
+		&:hover {
+			color: @color-primary-light !important;
+		}	
+	}
+}
+.clear {
+    clear: both;
+}
+/* Override Bootstrap default */
+.navbar {
+    margin-bottom: 5px;
+}
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-right {
+    margin-right: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: @color-white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle {
+    &:hover,
+    &:active,
+    &:focus {
+        background: @color-primary-dark;
+    }
+}

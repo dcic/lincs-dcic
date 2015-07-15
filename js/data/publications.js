@@ -1,8 +1,8 @@
-﻿var mod = angular.module("publicationsMod", []);
+var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function($scope) {
 	$scope.publications = [
-	   {
+	    {
             title: "Abstraction for data integration: Fusing mammalian molecular, cellular and phenotype big datasets for better knowledge extraction",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26101093",
             authors: "Rouillard AD, Wang Z, Ma'ayan A.",
