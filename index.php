@@ -83,6 +83,7 @@
 	<script type="text/javascript" src="js/data/news.js"></script>
 	<script type="text/javascript" src="js/data/publications.js"></script>
 	<script type="text/javascript" src="js/data/subnav.js"></script>
+	<script type="text/javascript" src="js/data/summer-fellows.js"></script>
 	<script type="text/javascript" src="js/data/training.js"></script>
 	<script type="text/javascript" src="js/data/team.js"></script>
 	<script type="text/javascript" src="js/data/tools.js"></script>

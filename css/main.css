@@ -183,7 +183,6 @@ h6 {
 #footer #social a {
   border: none;
   border-radius: 0;
-  padding: 0;
 }
 #footer #social img {
   width: 30px;
@@ -509,6 +508,12 @@ h6 {
 }
 .category-page #team h4 {
   font-weight: bold;
+}
+.category-page#summer-fellows h4 {
+  margin-bottom: 0;
+}
+.category-page#summer-fellows .project {
+  margin-bottom: 0;
 }
 .right-nav img {
   width: 100%;
