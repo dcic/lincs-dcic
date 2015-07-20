@@ -4,10 +4,16 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	
 	{
-            date: 'To Be Announced',
-            topic: '',
-            presenters: ''
-        }
+            date: '11 August 2015 | 3:00 PM Eastern Time',
+            topic: 'TBA',
+            presenters: 'Qian Zhu, University of Maryland, Baltimore County'
+        },
+	{
+            date: '8 September 2015 | 3:00 PM Eastern Time',
+            topic: 'TBA',
+            presenters: 'Stephen Piccolo, Brigham Young University'
+        },
+
 
     ];
     $scope.pastWebinars = [
