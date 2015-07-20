@@ -5,6 +5,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
     var LINCS_MOOC_LINK = "https://www.coursera.org/course/bd2klincs",
         SYSBIO_MOOC_LINK = "https://www.coursera.org/course/netsysbio",
         SUMMER_RESEARCH_LINK = "#/srp",
+        SUMMER_FELLOWS_LINK = "#/summer-fellows",
         NETWORK_GAME_LINK = "http://www.maayanlab.net/NASB15/NMG/",
     
         DIR = "/images/general/";
@@ -17,7 +18,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             text: $sce.trustAsHtml("The 2015 Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program offered at six sites affiliated with our NIH-funded BD2K Center:" +
                 "<ul>" +
                     "<li>" +
-                        "<a href='" + SUMMER_RESEARCH_LINK + "'>2015 Summer Research</a>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK + "'>Summer Fellows 2015</a>" +
                     "</li>" +
                 "</ul>"),
             image: DIR + "mounica.png"
