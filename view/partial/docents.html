@@ -1,0 +1,10 @@
+<div ng-controller="toolsCtrl" id="datasets" class="col-md-4">
+    <h3>Global visualization of LINCS data</h3>
+    <div>
+        <ul>
+            <li ng-repeat="link in lincsVizTools">
+                <a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

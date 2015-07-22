@@ -18,7 +18,7 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
             target: "_blank"
         },
         {
-            title: "L1000 on lincscloud.org",
+            title: "L1000 data on lincscloud.org",
             url: "http://www.lincscloud.org/l1000/",
             target: "_blank"
         },
@@ -28,32 +28,27 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
             target: "_blank"
         },
         {
-            title: "P100 on lincscloud.org",
+            title: "P100 data on lincscloud.org",
             url: "http://www.lincscloud.org/p100/",
             target: "_blank"
         },
         {
-            title: "P100 on Panorama",
+            title: "P100 data on Panorama",
             url: "https://panoramaweb.org/labkey/project/LINCS/P100/begin.view",
             target: "_blank"
         },
         {
-            title: "HMS LINCS Database",
-            url: "http://lincs.hms.harvard.edu/db/",
-            target: "_blank"
-        },
-        {
-            title: "HMS KINOMEscan Data",
+            title: "KINOMEscan data on HMS",
             url: "http://lincs.hms.harvard.edu/data/kinomescan/",
             target: "_blank"
         },
         {
-            title: "NeuroLINCS",
+            title: "ALS data on NeuroLINCS",
             url: "http://neurolincs.org/index.php",
             target: "_blank"
         },
         {
-            title: "Drug Toxicity Signature Generation Center",
+            title: "Drug combination data on DToxS",
             url: "http://research.mssm.edu/pst/DToxS/",
             target: "_blank"
         }
