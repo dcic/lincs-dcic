@@ -9,20 +9,20 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.tools = [
         {
-            title: "Docent II",
-            description: "Docent II provides an interactive plot of available and upcoming data from the LINCS DSGCs.",
-            url: "http://amp.pharm.mssm.edu/milestonesViz/",
+            title: "Enrichr",
+            description: "An easy to use intuitive enrichment analysis web-based tool providing various types of visualization summaries of collective functions of gene lists.",
+            url: "http://amp.pharm.mssm.edu/Enrichr/",
             target: "_blank",
-            image: DIR + "docent-ii.png",
-            shortDesc: "Overview of the LINCS Data Signature Generation Centers (DSGCs) Data Release Milestones"
+            image: DIR + "enrichr.png",
+            shortDesc: "Search Engine for Gene Lists and Signatures"
         },
         {
-            title: "PAEA",
-            description: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
-            url: "http://amp.pharm.mssm.edu/PAEA/",
+            title: "GEO2Enrichr",
+            description: "A browser extension and web application to extract gene sets from GEO and analyze these lists for common biological functions.",
+            url: "http://maayanlab.net/g2e",
             target: "_blank",
-            image: DIR + "paea.png",
-            shortDesc: "Principle Angle Enrichment Analysis"
+            image: DIR + "g2e.png",
+            shortDesc: "Differential Expression Analysis Tool"
         },
         {
             title: "L1000CDS2",
@@ -34,12 +34,12 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             isHtml: true
         },
         {
-            title: "GEO2Enrichr",
-            description: "A browser extension and web application to extract gene sets from GEO and analyze these lists for common biological functions.",
-            url: "http://maayanlab.net/g2e",
+            title: "PAEA",
+            description: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
+            url: "http://amp.pharm.mssm.edu/PAEA/",
             target: "_blank",
-            image: DIR + "g2e.png",
-            shortDesc: "Differential Expression Analysis Tool"
+            image: DIR + "paea.png",
+            shortDesc: "Principle Angle Enrichment Analysis"
         },
         {
             title: "LINCS Information Framework (LIFE)",
@@ -74,14 +74,6 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Data Visualization Tool"
         },
         {
-            title: "Enrichr",
-            description: "An easy to use intuitive enrichment analysis web-based tool providing various types of visualization summaries of collective functions of gene lists.",
-            url: "http://amp.pharm.mssm.edu/Enrichr/",
-            target: "_blank",
-            image: DIR + "enrichr.png",
-            shortDesc: "Search Engine for Gene Lists and Signatures"
-        },
-        {
             title: "Network2Canvas",
             description: "A web application that provides an alternative way to view networks and visualizes them by placing nodes on a square toroidal canvas.",
             url: "http://www.maayanlab.net/N2C/",
@@ -89,5 +81,25 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "network2canvas.png",
             shortDesc: "Network Visualization on a Canvas with Enrichment Analysis"    
         }
+    ];
+    
+    $scope.lincsVizTools = [
+        {
+            title: "Docent I",
+            description: "Docent provides a quantified, interactive view of the biological entities such as cell lines, small molecules, and assays within LINCS data.",
+            url: "http://amp.pharm.mssm.edu/public/docent/",
+            target: "_blank",
+            image: DIR + "docent-i.png",
+            shortDesc: "An overview guide into LINCS data"
+        },
+        {
+            title: "Docent II",
+            description: "Docent II provides an interactive plot of available and upcoming data from the LINCS DSGCs.",
+            url: "http://amp.pharm.mssm.edu/milestonesViz/",
+            target: "_blank",
+            image: DIR + "docent-ii.png",
+            shortDesc: "Overview of the LINCS Data Signature Generation Centers (DSGCs) Data Release Milestones"
+        },
+
     ];
 }]);
