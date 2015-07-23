@@ -13,23 +13,13 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
             target: "_self"
         },
         {
-            title: "LINCS Catalog",
-            url: "http://lifekb.org/catalog/",
-            target: "_blank"
-        },
-        {
-            title: "L1000 data on lincscloud.org",
-            url: "http://www.lincscloud.org/l1000/",
-            target: "_blank"
-        },
-        {
             title: "L1000 data on GEO",
             url: "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138",
             target: "_blank"
         },
         {
-            title: "P100 data on lincscloud.org",
-            url: "http://www.lincscloud.org/p100/",
+            title: "L1000 and P100 data on lincscloud.org",
+            url: "http://download.lincscloud.org/",
             target: "_blank"
         },
         {
@@ -44,12 +34,12 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
         },
         {
             title: "ALS data on NeuroLINCS",
-            url: "http://neurolincs.org/index.php",
+            url: "http://neurolincs.org/index.php?pageID=5",
             target: "_blank"
         },
         {
             title: "Drug combination data on DToxS",
-            url: "http://research.mssm.edu/pst/DToxS/",
+            url: "http://research.mssm.edu/pst/DToxS/data.html",
             target: "_blank"
         }
     ];
