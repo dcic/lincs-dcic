@@ -1,0 +1,622 @@
+/*
+ * Style for the LINCS-DCIC website.
+ */
+/* LESS variables
+ * ------------------------------------------------------------------------- */
+/* colors */
+/* Logo and accent colors */
+/* Unused! */
+/* fonts */
+/* Tag selectors, i.e. global settings.
+ * ------------------------------------------------------------------------- */
+html,
+body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+a {
+  /* Set default to override Bootstrap's default. */
+  color: #000000;
+}
+a:hover,
+a:active,
+a:link,
+a:visited {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+/* Structal elements: wrapper, header, footer, and related content.
+ * ------------------------------------------------------------------------- */
+#wrapper {
+  background: #ffffff;
+  min-height: 100%;
+  height: auto;
+}
+#header {
+  border-bottom: 1px solid #dddddd;
+}
+#brand {
+  padding-top: 60px;
+}
+#brand #logo {
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+#brand #logo #dcic-title {
+  float: left;
+  padding: 0 0 0 15px;
+}
+#brand #logo img {
+  float: left;
+  /*display: block;
+            margin: 0 auto;*/
+  max-width: 160px;
+  padding-bottom: 10px;
+}
+#brand #logo a {
+  text-decoration: none;
+}
+#brand #logo a:hover,
+#brand #logo a:visited {
+  text-decoration: none;
+}
+#brand #logo span#lincs-title-top {
+  color: #808080;
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+}
+#brand #logo span#lincs-title-bottom {
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+#subnav {
+  background: #3593b1;
+  padding: 0;
+  letter-spacing: 0.1em;
+  /* Override Bootstrap */
+  border: none;
+  min-height: 0;
+}
+#subnav a {
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+#subnav a:hover {
+  color: #ffffff;
+}
+#subnav ul {
+  margin-bottom: 0;
+}
+#subnav li {
+  /* This is to ensure the nav doesn't bump down on hover. */
+  border-bottom: 4px solid #3593b1;
+  padding: 8px;
+}
+#subnav li a {
+  font-size: 16px;
+  padding: 0;
+}
+#subnav li:hover {
+  border-bottom: 4px solid #09505b;
+}
+#subnav .navbar-right a {
+  font-size: 14px;
+}
+@media (max-width: 990px) {
+  #subnav .nav li a {
+    font-size: 11px;
+  }
+}
+#content-wrapper #index img.icon {
+  padding: 10px;
+  width: 100px;
+}
+#content-wrapper #index h2 {
+  margin-top: 0;
+}
+#content-wrapper #index .section {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+#footer {
+  background: #222222;
+  border-top: 5px solid #888888;
+  height: auto;
+  margin-top: 40px;
+  padding: 30px 0;
+}
+#footer a,
+#footer p {
+  color: #ffffff;
+  font-size: 12px;
+}
+#footer a {
+  font-family: 'Open Sans';
+}
+#footer a:hover {
+  color: #599fb7;
+}
+#footer h4 {
+  color: #ffffff;
+}
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+#footer #social a {
+  border: none;
+  border-radius: 0;
+}
+#footer #social img {
+  width: 30px;
+}
+#footer #social li {
+  padding-right: 0;
+  padding-left: 3px;
+}
+#footer #social .research-gate {
+  padding: 0;
+}
+/* Carousel or rotator. Most of the element names are defined by Bootstrap
+ * and should not be renamed.
+ * ------------------------------------------------------------------------- */
+#carousel {
+  padding: 0 0 40px 0;
+  /* Images should be cut exactly. */
+  width: 100%;
+}
+#carousel #carousel-img-link,
+#carousel img {
+  display: block;
+  width: 100%;
+}
+#carousel button {
+  background: transparent;
+  border: none;
+}
+#carousel .item {
+  width: 100%;
+}
+#carousel .carousel-btn {
+  background: #fff;
+  border: none;
+  bottom: 10px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+#carousel .carousel-highlight {
+  background: #3593b1;
+}
+#carousel .carousel-indicators {
+  bottom: 0;
+}
+#carousel .carousel-indicators li {
+  border: 1px solid #09505b;
+}
+#carousel .carousel-caption-custom {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000000;
+  margin: auto 50px;
+  padding: 20px;
+  position: absolute;
+  text-align: left;
+  text-shadow: none;
+  top: 30px;
+  width: 40%;
+  /* Some images look better with a light caption box. Override the dark default. */
+}
+#carousel .carousel-caption-custom .caption-title-block {
+  padding-right: 10px;
+}
+#carousel .carousel-caption-custom .caption-title-block a {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+#carousel .carousel-caption-custom .caption-title-block a:hover {
+  color: #599fb7;
+}
+#carousel .carousel-caption-custom .caption-text {
+  font-size: 20px;
+}
+#carousel .carousel-caption-custom.light {
+  background: #3593b1;
+  color: #ffffff;
+}
+#carousel .carousel-caption-custom.light a {
+  color: #ffffff;
+}
+#carousel .carousel-caption-custom.light a:hover {
+  color: #09505b;
+}
+/* Category content is related but varies in style. "category-index" refers
+ * to content on the main page. "catgory-page" refers to content on
+ * individual pages.
+ * ------------------------------------------------------------------------- */
+.category-index ul,
+.category-page ul {
+  padding: 0 0 0 15px;
+}
+.category-index li,
+.category-page li {
+  list-style-type: none;
+}
+.category-index li a,
+.category-page li a {
+  /* Color on the main page is black; on individual pages it is accent. */
+}
+.category-index li a:hover,
+.category-page li a:hover {
+  cursor: pointer;
+}
+.category-index li:before,
+.category-page li:before {
+  /* FontAwesome char code inside the '' */
+  content: '\F105';
+  color: #222222;
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1.5em;
+  padding-left: 6px;
+}
+.category-index .rollover {
+  position: relative;
+}
+.category-index .rollover .img-fixed-aspect {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.category-index .rollover .overlay {
+  background-color: white;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.category-index .overview {
+  margin-bottom: 50px;
+}
+.category-index .overview li a {
+  font-size: 20px;
+}
+.category-index .overview li a:hover {
+  color: #3593b1;
+}
+.category-index .portal {
+  padding: 0;
+}
+.category-index .portal a {
+  font-size: 20px;
+}
+.category-index .portal a:hover {
+  color: #3593b1;
+}
+.category-index .portal.research-links {
+  background: #c7e8f2;
+  height: 400px;
+  padding: 40px 40px 40px 50px;
+}
+.category-index .portal.research-links a {
+  font-size: 15px;
+  color: #09505b;
+}
+.category-index .portal.research-links a:hover {
+  color: #3593b1;
+}
+.category-index .portal.research-links h2 {
+  color: #09505b;
+}
+.category-index .portal.research-links li {
+  padding-top: 5px;
+}
+.category-index .portal.research-photo .img-fixed-aspect {
+  height: 400px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/1920px-Red_Apple.jpg);
+}
+.category-index .portal.research-photo .overlay {
+  padding: 40px 40px 40px 40px;
+}
+.category-index .portal.research-highlights .img-fixed-aspect {
+  height: 200px;
+}
+.category-index .portal.research-highlights .overlay {
+  padding: 40px 50px 40px 40px;
+}
+.category-index .portal.research-highlights .top {
+  background-image: url(http://thecrabbycook.com/wp-content/uploads/EggplantOrAliens.jpg);
+}
+.category-index .portal.research-highlights .bottom {
+  background-image: url(http://www.biomedcentral.com/content/figures/s12918-015-0173-z-4-l.jpg);
+  background-position-y: -645px;
+}
+.category-index .portal#twitter-fetcher {
+  background: #f1f1f1;
+  height: 200px;
+  padding: 30px;
+}
+.category-index .portal#twitter-fetcher li:before {
+  content: "";
+}
+.category-index .portal#twitter-fetcher .tweet a {
+  word-wrap: break-word;
+}
+.category-index .portal#twitter-fetcher ul {
+  padding: 0;
+}
+.category-index .quote {
+  font-size: 20px;
+  font-style: italic;
+  height: 200px;
+  padding-top: 30px;
+  position: relative;
+}
+.category-index .quote > p {
+  position: absolute;
+  top: 32%;
+  width: 90%;
+}
+.category-index .caption,
+.category-index .arrow-box {
+  height: 80px;
+}
+.category-index .caption {
+  bottom: 0;
+  color: black;
+  padding: 20px;
+  position: absolute;
+  width: 75%;
+}
+.category-index .arrow-box {
+  background: black;
+  width: 25%;
+  z-index: 8;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.category-index .arrow-box div:before {
+  color: white;
+  font-family: FontAwesome;
+  font-style: normal;
+  content: "\f105";
+  font-size: 1.7em;
+  font-weight: 300;
+}
+.category-index .arrow-box div {
+  position: relative;
+  top: 30%;
+  text-align: center;
+}
+.category-page a {
+  color: #3593b1;
+}
+.category-page a:hover {
+  color: #09505b;
+  text-decoration: underline;
+}
+.category-page#analysis .col-md-4 textarea {
+  height: 200px;
+  width: 100%;
+}
+.category-page#analysis .col-md-8 input,
+.category-page#analysis .col-md-8 textarea {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.category-page#analysis .submitted {
+  position: absolute;
+  padding: 1.6em;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 3em;
+}
+.category-page#analysis #example {
+  color: #808080;
+  font-size: 13px;
+}
+.category-page #news .first img {
+  float: left;
+  padding-right: 10px;
+  width: 30%;
+}
+.category-page #news .first a {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 20px;
+}
+.category-page #news .first .details {
+  float: right;
+  width: 70%;
+}
+.category-page#edsrapp table {
+  border-bottom: 1px solid #dddddd;
+}
+.category-page#edsrapp tr {
+  height: 30px;
+}
+.category-page#edsrapp tr td:first-child {
+  font-weight: bold;
+  width: 30%;
+}
+.category-page#edsrapp tr td:last-child {
+  width: 100%;
+}
+.category-page#edsrapp tr td:last-child input {
+  width: 100%;
+}
+.category-page#edsrapp #datepicker-wrapper span {
+  font-weight: bold;
+  /*width: 50%;*/
+}
+.category-page#edsrapp #datepicker-wrapper td {
+  width: auto;
+}
+.category-page#edsrapp #datepicker-wrapper td input {
+  width: auto;
+}
+.category-page#edsrapp #submit {
+  background: #3593b1;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.category-page#edsrapp #submit:hover {
+  background: #09505b;
+}
+.category-page #sections {
+  padding-top: 20px;
+}
+.category-page #sections .section {
+  padding-bottom: 20px;
+}
+.category-page #sections .section h3 {
+  margin-top: 0;
+}
+.category-page #sections .section img,
+.category-page #sections .section .text {
+  float: left;
+}
+.category-page #sections .section img {
+  width: 20%;
+}
+.category-page #sections .section .text {
+  padding-left: 20px;
+  width: 80%;
+}
+.category-page .publication,
+.category-page .newsStory,
+.category-page .event {
+  padding-bottom: 20px;
+}
+.category-page .publication p,
+.category-page .newsStory p,
+.category-page .event p {
+  margin: 0;
+}
+.category-page .publication .title,
+.category-page .newsStory .title,
+.category-page .event .title {
+  font-size: 16px;
+}
+.category-page #team .pi {
+  /* This is for when the page is collapsed. */
+  padding-top: 10px;
+}
+.category-page #team .contact-institution-logo-row {
+  margin-bottom: 10px;
+}
+.category-page #team .contact-institution-logo {
+  height: 80px;
+  display: block;
+  margin-bottom: 15px;
+}
+.category-page #team .contact-pi-logo {
+  height: 80px;
+}
+.category-page #team .contact-pi-desc {
+  margin-left: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.category-page #team .contact-header {
+  border-bottom: 1px solid #888888;
+  /*text-transform: uppercase;*/
+  margin-top: 15px;
+}
+.category-page #team .contact-researchers {
+  margin-bottom: 10px;
+}
+.category-page #team .person {
+  float: left;
+  padding-top: 10px;
+}
+.category-page #team h4 {
+  font-weight: bold;
+}
+.category-page#summer-fellows h4 {
+  margin-bottom: 0;
+}
+.category-page#summer-fellows .project {
+  margin-bottom: 0;
+}
+.right-nav img {
+  width: 100%;
+}
+.highlight {
+  color: #ff0000;
+}
+/* Miscellaneous global selectors.
+ * ------------------------------------------------------------------------- */
+.super {
+  font-size: .75em;
+  vertical-align: super;
+}
+a.important,
+.important {
+  font-style: normal;
+  font-weight: bold;
+  color: #d16291 !important;
+}
+a.important a,
+.important a {
+  color: #d16291 !important;
+}
+a.important a:hover,
+.important a:hover {
+  color: #599fb7 !important;
+}
+.clear {
+  clear: both;
+}
+/* Override Bootstrap default */
+.navbar {
+  margin-bottom: 5px;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-right {
+  margin-right: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover:hover,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:hover:active,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:hover:focus,
+.navbar-default .navbar-toggle:focus {
+  background: #09505b;
+}

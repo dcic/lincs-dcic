@@ -15,8 +15,8 @@
     <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/side.css">
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/side.css">
 
 	<!-- Embedded Twitter feed-->
 	<script>
@@ -51,7 +51,7 @@
         <div ng-include="'view/partial/header.html'"></div>
 
         <!-- ng-view is used rather than ng-include to handle routing. -->
-        <div id="content-wrapper" class="container" ng-view></div>
+        <div id="content-wrapper" ng-view></div>
 
     </div>
 
@@ -70,6 +70,7 @@
 	<script src="/lib/bower_components/bootstrap/js/carousel.js"></script>
 	<script src="/lib/bower_components/bootstrap/js/transition.js"></script>
 	<script src="/lib/bower_components/underscore/underscore-min.js"></script>
+	<script src="/lib/twitter-fetcher.min.js"></script>
 	
 	<!-- ************************ Application ************************ -->
 	<!-- Data -->

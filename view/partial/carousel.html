@@ -1,7 +1,7 @@
-<div id="feature-banner" class="carousel slide" data-ride="carousel" ng-controller="carouselCtrl">
+<div id="carousel" class="carousel slide" data-ride="carousel" ng-controller="carouselCtrl">
     <!-- indicators - buttons that allow you to select different slides -->
     <ol class="carousel-indicators">
-        <li data-target="#feature-banner" ng-repeat="slide in slides" class="{active : $first}" data-slide-to="{{slide.index}}"></li>
+        <li data-target="#carousel" ng-repeat="slide in slides" class="{active : $first}" data-slide-to="{{slide.index}}"></li>
     </ol>
 
     <!-- Main carousel -->
@@ -12,14 +12,13 @@
                     <img ng-src="{{slide.image}}">
                 </a>
             </div>
-            <div class="carousel-caption {{slide.styleClass}}">
+            <div class="carousel-caption-custom {{slide.styleClass}}">
                 <div class="caption-title-block">
                     <h4>
                         <a href="{{slide.link}}" target="{{slide.target}}">{{slide.title}} &raquo;</a>
                     </h4>
                 </div>
                 <p class="caption-text">{{slide.caption}}</p>
-                <div class="clear"></div>
             </div>
         </div>
     </div>

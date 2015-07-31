@@ -1873,7 +1873,7 @@ App.Model.Table = Backbone.Model.extend({
     "data_class": "literature curation", 
     "data_url": "ftp://ftp.ncbi.nih.gov/gene/GeneRIF/generifs_basic.gz", 
     "notes": null, 
-    "long_description": "Gene Reference Into Function is a gene annotation project of the National Library of Medicine, available through the Entrez Gene website of the National Center for Biotechnology Information.  A GeneRIF is a short (425 characters or less) statement describing a function of a gene.  Each GeneRIF is tagged with the Entrez Gene ID of the described gene and the PubMed ID of the reference supporting the asserted function.", 
+    "long_description": "Gene Reference Into Function is a gene annotation project of the National Library of Medicine, available through the Entrez Gene website of the National Center for Biotechnology Information.  A GeneRIF is a short (425 characters or style) statement describing a function of a gene.  Each GeneRIF is tagged with the Entrez Gene ID of the described gene and the PubMed ID of the reference supporting the asserted function.",
     "readme_url": "ftp://ftp.ncbi.nih.gov/gene/README", 
     "publication": [
       {

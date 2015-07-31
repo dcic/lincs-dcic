@@ -1,78 +1,80 @@
-<div id="edsrapp" class="row category-page" ng-controller="edsrappCtrl">
-    <div class="col-md-12">
-        <h2>BD2K-LINCS DCIC External Data Science Research Projects</h2>
-    </div>
-    <div class="col-md-8">
-        <h3>Application Submission Page</h3>
-        <p><strong>Deadline: September 1, 2015; 11:59PM EST</strong></p>
-        <p>The application must be written in a 5 page document including figures and tables. The first page must contain the Specific Aims. The remaining pages are reserved for the description of the research strategy.</p>
-        <p>Font must be Arial 11 or higher, margins must be set to "Narrow", and spacing between text lines must be set to "Single" in Microsoft Word. References can be listed as additional pages.</p>
-        <p>Detailed budget for the first and second year and biographical sketches of the key investigators must be provided using <a href="http://grants.nih.gov/grants/funding/phs398/phs398.html" target="_blank">PHS 398 form</a> pages 4 and 5 and the Biographical Sketch Format Page as provided <a href="http://grants.nih.gov/grants/funding/424/SF424R-R_biosketch_VerC.docx">here</a>.</p>
-        <p>The assembled application should be submitted as a single PDF file. Applications that do not adhere to these guidelines will be rejected.</p>
-        <form id="edsrapp-form" ng-submit="submit()">
-            <table>
-                <tr>
-                    <td id="firstName">First Name</td>
-                    <td><input type="text" ng-model="formData.firstName"></td>
-                </tr>
-                <tr>
-                    <td id="lastName">Last Name</td>
-                    <td><input type="text" ng-model="formData.lastName"></td>
-                </tr>
-                <tr>
-                    <td id="institution">Institution</td>
-                    <td><input type="text" ng-model="formData.institution"></td>
-                </tr>
-                <tr>
-                    <td id="department">Department</td>
-                    <td><input type="text" ng-model="formData.department"></td>
-                </tr>
-                <tr>
-                    <td id="email">Email</td>
-                    <td><input type="text" ng-model="formData.email"></td>
-                </tr>
-                <tr>
-                    <td id="telephone">Telephone</td>
-                    <td><input type="text" ng-model="formData.telephone"></td>
-                </tr>
-                <tr>
-                    <td id="zipCode">Zip Code</td>
-                    <td><input type="text" ng-model="formData.zipCode"></td>
-                </tr>
-                <tr>
-                    <td id="projectTitle">Project Title</td>
-                    <td><input type="text" ng-model="formData.projectTitle"></td>
-                </tr>
-                <tr id="datepicker-wrapper">
-                    <td>Proposed Dates (MM/DD/YY)</td>
-                    <td>
-                        <span id="startDate">Start:</span> <input type="text">
-                        <span id="endDate">End:</span> <input type="text" class="datepicker">
-                    </td>
-                </tr>
-                <tr id="fileUpload">
-                    <td>Upload the assembled PDF</td>
-                    <td><input type="file" name="pdf"></td>
-                </tr>
-            </table>
-            <input type="submit" id="submit">
-        </form>
-    </div>
-    <div class="col-md-4">
-        <h3>Description</h3>
-        <p>See <a href="#edsr">here</a> for more details on the External Data Science Research Projects</p>
-        <!--<h3>Funding</h3>
-        <ul>
-            <li><a href="http://bd2k.nih.gov/" target="_blank">NIH Big Data to Knowledge (BD2K)</a></li>
-            <li><a href="http://commonfund.nih.gov/" target="_blank">NIH Common Fund</a></li>
-            <li><a href="http://commonfund.nih.gov/LINCS/index" target="_blank">NIH LINCS Program</a></li>
-        </ul>
-        <h3>Apply</h3>
-        <ul>
-            <li><a href="#/srp">Summer Research Program</a></li>
-            <li><a href="#/edsr">External Data Science Research</a></li>
-            <li><a href="#/jobs">Job Opportunities</a></li>
-        </ul>
-        <h3>Follow</h3>-->
+<div class="container">
+    <div id="edsrapp" class="row category-page" ng-controller="edsrappCtrl">
+        <div class="col-md-12">
+            <h2>BD2K-LINCS DCIC External Data Science Research Projects</h2>
+        </div>
+        <div class="col-md-8">
+            <h3>Application Submission Page</h3>
+            <p><strong>Deadline: September 1, 2015; 11:59PM EST</strong></p>
+            <p>The application must be written in a 5 page document including figures and tables. The first page must contain the Specific Aims. The remaining pages are reserved for the description of the research strategy.</p>
+            <p>Font must be Arial 11 or higher, margins must be set to "Narrow", and spacing between text lines must be set to "Single" in Microsoft Word. References can be listed as additional pages.</p>
+            <p>Detailed budget for the first and second year and biographical sketches of the key investigators must be provided using <a href="http://grants.nih.gov/grants/funding/phs398/phs398.html" target="_blank">PHS 398 form</a> pages 4 and 5 and the Biographical Sketch Format Page as provided <a href="http://grants.nih.gov/grants/funding/424/SF424R-R_biosketch_VerC.docx">here</a>.</p>
+            <p>The assembled application should be submitted as a single PDF file. Applications that do not adhere to these guidelines will be rejected.</p>
+            <form id="edsrapp-form" ng-submit="submit()">
+                <table>
+                    <tr>
+                        <td id="firstName">First Name</td>
+                        <td><input type="text" ng-model="formData.firstName"></td>
+                    </tr>
+                    <tr>
+                        <td id="lastName">Last Name</td>
+                        <td><input type="text" ng-model="formData.lastName"></td>
+                    </tr>
+                    <tr>
+                        <td id="institution">Institution</td>
+                        <td><input type="text" ng-model="formData.institution"></td>
+                    </tr>
+                    <tr>
+                        <td id="department">Department</td>
+                        <td><input type="text" ng-model="formData.department"></td>
+                    </tr>
+                    <tr>
+                        <td id="email">Email</td>
+                        <td><input type="text" ng-model="formData.email"></td>
+                    </tr>
+                    <tr>
+                        <td id="telephone">Telephone</td>
+                        <td><input type="text" ng-model="formData.telephone"></td>
+                    </tr>
+                    <tr>
+                        <td id="zipCode">Zip Code</td>
+                        <td><input type="text" ng-model="formData.zipCode"></td>
+                    </tr>
+                    <tr>
+                        <td id="projectTitle">Project Title</td>
+                        <td><input type="text" ng-model="formData.projectTitle"></td>
+                    </tr>
+                    <tr id="datepicker-wrapper">
+                        <td>Proposed Dates (MM/DD/YY)</td>
+                        <td>
+                            <span id="startDate">Start:</span> <input type="text">
+                            <span id="endDate">End:</span> <input type="text" class="datepicker">
+                        </td>
+                    </tr>
+                    <tr id="fileUpload">
+                        <td>Upload the assembled PDF</td>
+                        <td><input type="file" name="pdf"></td>
+                    </tr>
+                </table>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+        <div class="col-md-4">
+            <h3>Description</h3>
+            <p>See <a href="#edsr">here</a> for more details on the External Data Science Research Projects</p>
+            <!--<h3>Funding</h3>
+            <ul>
+                <li><a href="http://bd2k.nih.gov/" target="_blank">NIH Big Data to Knowledge (BD2K)</a></li>
+                <li><a href="http://commonfund.nih.gov/" target="_blank">NIH Common Fund</a></li>
+                <li><a href="http://commonfund.nih.gov/LINCS/index" target="_blank">NIH LINCS Program</a></li>
+            </ul>
+            <h3>Apply</h3>
+            <ul>
+                <li><a href="#/srp">Summer Research Program</a></li>
+                <li><a href="#/edsr">External Data Science Research</a></li>
+                <li><a href="#/jobs">Job Opportunities</a></li>
+            </ul>
+            <h3>Follow</h3>-->
+        </div>
     </div>
 </div>
