@@ -54,7 +54,7 @@ h6 {
   border-bottom: 1px solid #dddddd;
 }
 #brand {
-  padding-top: 60px;
+  padding-top: 15px;
 }
 #brand #logo {
   font-family: 'Archivo Narrow', sans-serif;
@@ -182,100 +182,27 @@ h6 {
 #footer #social .research-gate {
   padding: 0;
 }
-/* Carousel or rotator. Most of the element names are defined by Bootstrap
- * and should not be renamed.
- * ------------------------------------------------------------------------- */
-#carousel {
-  padding: 0 0 40px 0;
-  /* Images should be cut exactly. */
-  width: 100%;
-}
-#carousel #carousel-img-link,
-#carousel img {
-  display: block;
-  width: 100%;
-}
-#carousel button {
-  background: transparent;
-  border: none;
-}
-#carousel .item {
-  width: 100%;
-}
-#carousel .carousel-btn {
-  background: #fff;
-  border: none;
-  bottom: 10px;
-  position: absolute;
-  height: 20px;
-  width: 20px;
-}
-#carousel .carousel-highlight {
-  background: #3593b1;
-}
-#carousel .carousel-indicators {
-  bottom: 0;
-}
-#carousel .carousel-indicators li {
-  border: 1px solid #09505b;
-}
-#carousel .carousel-caption-custom {
-  background-color: rgba(255, 255, 255, 0.85);
-  color: #000000;
-  margin: auto 50px;
-  padding: 20px;
-  position: absolute;
-  text-align: left;
-  text-shadow: none;
-  top: 30px;
-  width: 40%;
-  /* Some images look better with a light caption box. Override the dark default. */
-}
-#carousel .carousel-caption-custom .caption-title-block {
-  padding-right: 10px;
-}
-#carousel .carousel-caption-custom .caption-title-block a {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-}
-#carousel .carousel-caption-custom .caption-title-block a:hover {
-  color: #599fb7;
-}
-#carousel .carousel-caption-custom .caption-text {
-  font-size: 20px;
-}
-#carousel .carousel-caption-custom.light {
-  background: #3593b1;
-  color: #ffffff;
-}
-#carousel .carousel-caption-custom.light a {
-  color: #ffffff;
-}
-#carousel .carousel-caption-custom.light a:hover {
-  color: #09505b;
-}
-/* Category content is related but varies in style. "category-index" refers
+/* Category content is related but varies in style. "index-page" refers
  * to content on the main page. "catgory-page" refers to content on
  * individual pages.
  * ------------------------------------------------------------------------- */
-.category-index ul,
+#index-page ul,
 .category-page ul {
   padding: 0 0 0 15px;
 }
-.category-index li,
+#index-page li,
 .category-page li {
   list-style-type: none;
 }
-.category-index li a,
+#index-page li a,
 .category-page li a {
   /* Color on the main page is black; on individual pages it is accent. */
 }
-.category-index li a:hover,
+#index-page li a:hover,
 .category-page li a:hover {
   cursor: pointer;
 }
-.category-index li:before,
+#index-page li:before,
 .category-page li:before {
   /* FontAwesome char code inside the '' */
   content: '\F105';
@@ -285,138 +212,6 @@ h6 {
   width: 1.2em;
   margin-left: -1.5em;
   padding-left: 6px;
-}
-.category-index .rollover {
-  position: relative;
-}
-.category-index .rollover .img-fixed-aspect {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.category-index .rollover .overlay {
-  background-color: white;
-  height: 100%;
-  padding: 20px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 9;
-}
-.category-index .overview {
-  margin-bottom: 50px;
-}
-.category-index .overview li a {
-  font-size: 20px;
-}
-.category-index .overview li a:hover {
-  color: #3593b1;
-}
-.category-index .portal {
-  padding: 0;
-}
-.category-index .portal a {
-  font-size: 20px;
-}
-.category-index .portal a:hover {
-  color: #3593b1;
-}
-.category-index .portal.research-links {
-  background: #c7e8f2;
-  height: 400px;
-  padding: 40px 40px 40px 50px;
-}
-.category-index .portal.research-links a {
-  font-size: 15px;
-  color: #09505b;
-}
-.category-index .portal.research-links a:hover {
-  color: #3593b1;
-}
-.category-index .portal.research-links h2 {
-  color: #09505b;
-}
-.category-index .portal.research-links li {
-  padding-top: 5px;
-}
-.category-index .portal.research-photo .img-fixed-aspect {
-  height: 400px;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/1920px-Red_Apple.jpg);
-}
-.category-index .portal.research-photo .overlay {
-  padding: 40px 40px 40px 40px;
-}
-.category-index .portal.research-highlights .img-fixed-aspect {
-  height: 200px;
-}
-.category-index .portal.research-highlights .overlay {
-  padding: 40px 50px 40px 40px;
-}
-.category-index .portal.research-highlights .top {
-  background-image: url(http://thecrabbycook.com/wp-content/uploads/EggplantOrAliens.jpg);
-}
-.category-index .portal.research-highlights .bottom {
-  background-image: url(http://www.biomedcentral.com/content/figures/s12918-015-0173-z-4-l.jpg);
-  background-position-y: -645px;
-}
-.category-index .portal#twitter-fetcher {
-  background: #f1f1f1;
-  height: 200px;
-  padding: 30px;
-}
-.category-index .portal#twitter-fetcher li:before {
-  content: "";
-}
-.category-index .portal#twitter-fetcher .tweet a {
-  word-wrap: break-word;
-}
-.category-index .portal#twitter-fetcher ul {
-  padding: 0;
-}
-.category-index .quote {
-  font-size: 20px;
-  font-style: italic;
-  height: 200px;
-  padding-top: 30px;
-  position: relative;
-}
-.category-index .quote > p {
-  position: absolute;
-  top: 32%;
-  width: 90%;
-}
-.category-index .caption,
-.category-index .arrow-box {
-  height: 80px;
-}
-.category-index .caption {
-  bottom: 0;
-  color: black;
-  padding: 20px;
-  position: absolute;
-  width: 75%;
-}
-.category-index .arrow-box {
-  background: black;
-  width: 25%;
-  z-index: 8;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.category-index .arrow-box div:before {
-  color: white;
-  font-family: FontAwesome;
-  font-style: normal;
-  content: "\f105";
-  font-size: 1.7em;
-  font-weight: 300;
-}
-.category-index .arrow-box div {
-  position: relative;
-  top: 30%;
-  text-align: center;
 }
 .category-page a {
   color: #3593b1;

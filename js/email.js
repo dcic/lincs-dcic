@@ -1,6 +1,6 @@
 var mod = angular.module("emailMod", []);
 
-mod.controller("emailCtrl", ["$scope", "$http","$timeout", function($scope, $http, $timeout) {
+mod.controller("emailCtrl", ["$scope", "$http", "$timeout", function($scope, $http, $timeout) {
 	$scope.submitted = false;
 	$scope.submit = function() {
 		if ($scope.email) {

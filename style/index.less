@@ -1,0 +1,237 @@
+@import "variable.less";
+
+/* Carousel or rotator. Most of the element names are defined by Bootstrap
+ * and should not be renamed.
+ * ------------------------------------------------------------------------- */
+#carousel {
+    padding: 0 0 40px 0;
+    /* Images should be cut exactly. */
+    width: 100%;
+    #carousel-img-link,
+    img {
+        display: block;
+        //opacity: .5;
+        width: 100%;
+    }
+    button {
+        background: transparent;
+        border: none;
+    }
+    .item {
+        width: 100%;
+    }
+    .carousel-btn {
+        background: #fff;
+        border: none;
+        bottom: 10px;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+    }
+    .carousel-highlight {
+        background: @color-primary;
+    }
+    .carousel-indicators {
+        bottom: 0;
+    }
+    .carousel-indicators li {
+        border: 1px solid @color-primary-dark;
+    }
+    .carousel-caption-custom {
+        background-color: rgba(255, 255, 255, .85);
+        border-bottom: @portal-border;
+        color: @color-black;
+        margin: auto 50px;
+        padding: 20px;
+        position: absolute;
+        text-align: left;
+        text-shadow: none;
+        top: 30px;
+        width: 40%;
+        .caption-title-block {
+            padding-right: 10px;
+            a {
+                font-family: @font-family-accent;
+                font-size: 40px;
+                font-weight: bold;
+                &:hover {
+                    color: @color-primary-light;
+                }
+            }
+        }
+        .caption-text {
+            font-size: 20px;
+        }
+        /* Some images look better with a light caption box. Override the dark default. */
+        &.light {
+            background: @color-primary;
+            color: @color-white;
+            a {
+                color: @color-white;
+                &:hover {
+                    color: @color-primary-dark;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .carousel-caption-custom {
+            display: none;
+        }
+    }
+    @media (max-width:  1024px) {
+        .caption-text {
+            display: none;
+        }
+    }
+}
+
+#index-page {
+    .overview {
+        margin-bottom: 50px;
+        li {
+            a {
+                font-size: 20px;
+                &:hover {
+                    color: @color-primary;
+                }
+            }
+        }
+    }
+    .portal {
+        padding: 0;
+        a {
+            font-size: 20px;
+            &:hover {
+                color: @color-primary;
+            }
+        }
+        .research-links {
+            /*background-color: @color-gray-light;*/
+            height: @dim-portal-height;
+            margin: 0 @dim-portal-gutter;
+            /*padding: @dim-portal-padding @dim-portal-padding @dim-portal-padding 0;*/
+            .img-fixed-aspect {
+                height: @dim-portal-height;
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4c/Bananas.jpg);
+            }
+            h2,
+            a {
+                color: black;
+            }
+            a {
+                font-size: 20px;
+                &:hover {
+                    color: @color-primary;
+                }
+            }
+            li {
+                padding-top: 5px;
+            }
+        }
+        .research-photo {
+            margin: 0 @dim-portal-gutter;
+            .img-fixed-aspect {
+                height: @dim-portal-height;
+                background-image: url(http://www.myrtlebeachproduce.com/wp-content/uploads/2013/02/apples.jpg);
+            }
+        }
+        .research-highlight {
+            margin: 0 @dim-portal-gutter;
+            .img-fixed-aspect {
+                height: @dim-portal-height;
+            }
+            .top {
+                background-image: url(http://thecrabbycook.com/wp-content/uploads/EggplantOrAliens.jpg);
+            }
+            .bottom {
+                background-image: url(http://www.biomedcentral.com/content/figures/s12918-015-0173-z-4-l.jpg);
+                background-position-y: -645px;
+            }
+
+        }
+        &#twitter-fetcher-wrapper {
+            background: @color-gray-light;
+            border-bottom: @portal-border;
+            height: @dim-portal-height-half;
+            padding: @dim-portal-padding;
+            #twitter-fetcher {
+                li:before {
+                    content: "";
+                }
+                li {
+                    list-style-type: none;
+                }
+                .tweet {
+                    a {
+                        word-wrap: break-word;
+                        text-overflow: ellipsis;
+                    }
+                }
+                ul {
+                    padding: 0;
+                }
+            }
+            .more {
+                font-size: 30px;
+            }
+        }
+    }
+    .more-arrow {
+        font-size: 14px;
+    }
+    .caption,
+    .more {
+        color: black;
+    }
+    .caption {
+        background-color: rgba(255, 255, 255, .85);
+        border-bottom: @portal-border;
+        color: black;
+        margin: @dim-portal-padding;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        width: 60%;
+    }
+    .more {
+        background: black;
+        height: 100px;
+        z-index: 8;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        div:before {
+            color: white;
+            font-family: FontAwesome;
+            font-style: normal;
+            content: "\f105";
+            font-size: 1.7em;
+            font-weight: 300;
+        }
+        div {
+            position: relative;
+            top: 30%;
+            text-align: center;
+        }
+    }
+    .container.last {
+        margin-top: @dim-portal-gutter + @dim-portal-gutter;
+        .quote {
+            font-size: 20px;
+            height: @dim-portal-height-half;
+            padding-top: 30px;
+            position: relative;
+            & > p {
+                position: absolute;
+                top: 32%;
+                width: 90%;
+            }
+        }
+    }
+    @media (max-width: 990px) {
+        .portal > div {
+            margin-bottom: @dim-portal-gutter + @dim-portal-gutter !important;
+        }
+    }
+}

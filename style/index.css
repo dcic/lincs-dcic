@@ -1,0 +1,230 @@
+/* LESS variables
+ * ------------------------------------------------------------------------- */
+/* colors */
+/* Logo and accent colors */
+/* Unused! */
+/* fonts */
+/* Carousel or rotator. Most of the element names are defined by Bootstrap
+ * and should not be renamed.
+ * ------------------------------------------------------------------------- */
+#carousel {
+  padding: 0 0 40px 0;
+  /* Images should be cut exactly. */
+  width: 100%;
+}
+#carousel #carousel-img-link,
+#carousel img {
+  display: block;
+  width: 100%;
+}
+#carousel button {
+  background: transparent;
+  border: none;
+}
+#carousel .item {
+  width: 100%;
+}
+#carousel .carousel-btn {
+  background: #fff;
+  border: none;
+  bottom: 10px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+#carousel .carousel-highlight {
+  background: #3593b1;
+}
+#carousel .carousel-indicators {
+  bottom: 0;
+}
+#carousel .carousel-indicators li {
+  border: 1px solid #09505b;
+}
+#carousel .carousel-caption-custom {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 15px solid #222222;
+  color: #000000;
+  margin: auto 50px;
+  padding: 20px;
+  position: absolute;
+  text-align: left;
+  text-shadow: none;
+  top: 30px;
+  width: 40%;
+  /* Some images look better with a light caption box. Override the dark default. */
+}
+#carousel .carousel-caption-custom .caption-title-block {
+  padding-right: 10px;
+}
+#carousel .carousel-caption-custom .caption-title-block a {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+#carousel .carousel-caption-custom .caption-title-block a:hover {
+  color: #599fb7;
+}
+#carousel .carousel-caption-custom .caption-text {
+  font-size: 20px;
+}
+#carousel .carousel-caption-custom.light {
+  background: #3593b1;
+  color: #ffffff;
+}
+#carousel .carousel-caption-custom.light a {
+  color: #ffffff;
+}
+#carousel .carousel-caption-custom.light a:hover {
+  color: #09505b;
+}
+@media (max-width: 768px) {
+  #carousel .carousel-caption-custom {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #carousel .caption-text {
+    display: none;
+  }
+}
+#index-page .overview {
+  margin-bottom: 50px;
+}
+#index-page .overview li a {
+  font-size: 20px;
+}
+#index-page .overview li a:hover {
+  color: #3593b1;
+}
+#index-page .portal {
+  padding: 0;
+}
+#index-page .portal a {
+  font-size: 20px;
+}
+#index-page .portal a:hover {
+  color: #3593b1;
+}
+#index-page .portal .research-links {
+  /*background-color: @color-gray-light;*/
+  height: 400px;
+  margin: 0 10px;
+  /*padding: @dim-portal-padding @dim-portal-padding @dim-portal-padding 0;*/
+}
+#index-page .portal .research-links .img-fixed-aspect {
+  height: 400px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4c/Bananas.jpg);
+}
+#index-page .portal .research-links h2,
+#index-page .portal .research-links a {
+  color: black;
+}
+#index-page .portal .research-links a {
+  font-size: 20px;
+}
+#index-page .portal .research-links a:hover {
+  color: #3593b1;
+}
+#index-page .portal .research-links li {
+  padding-top: 5px;
+}
+#index-page .portal .research-photo {
+  margin: 0 10px;
+}
+#index-page .portal .research-photo .img-fixed-aspect {
+  height: 400px;
+  background-image: url(http://www.myrtlebeachproduce.com/wp-content/uploads/2013/02/apples.jpg);
+}
+#index-page .portal .research-highlight {
+  margin: 0 10px;
+}
+#index-page .portal .research-highlight .img-fixed-aspect {
+  height: 400px;
+}
+#index-page .portal .research-highlight .top {
+  background-image: url(http://thecrabbycook.com/wp-content/uploads/EggplantOrAliens.jpg);
+}
+#index-page .portal .research-highlight .bottom {
+  background-image: url(http://www.biomedcentral.com/content/figures/s12918-015-0173-z-4-l.jpg);
+  background-position-y: -645px;
+}
+#index-page .portal#twitter-fetcher-wrapper {
+  background: #f1f1f1;
+  border-bottom: 15px solid #222222;
+  height: 200px;
+  padding: 20px;
+}
+#index-page .portal#twitter-fetcher-wrapper #twitter-fetcher li:before {
+  content: "";
+}
+#index-page .portal#twitter-fetcher-wrapper #twitter-fetcher li {
+  list-style-type: none;
+}
+#index-page .portal#twitter-fetcher-wrapper #twitter-fetcher .tweet a {
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+#index-page .portal#twitter-fetcher-wrapper #twitter-fetcher ul {
+  padding: 0;
+}
+#index-page .portal#twitter-fetcher-wrapper .more {
+  font-size: 30px;
+}
+#index-page .more-arrow {
+  font-size: 14px;
+}
+#index-page .caption,
+#index-page .more {
+  color: black;
+}
+#index-page .caption {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 15px solid #222222;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 60%;
+}
+#index-page .more {
+  background: black;
+  height: 100px;
+  z-index: 8;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#index-page .more div:before {
+  color: white;
+  font-family: FontAwesome;
+  font-style: normal;
+  content: "\f105";
+  font-size: 1.7em;
+  font-weight: 300;
+}
+#index-page .more div {
+  position: relative;
+  top: 30%;
+  text-align: center;
+}
+#index-page .container.last {
+  margin-top: 20px;
+}
+#index-page .container.last .quote {
+  font-size: 20px;
+  height: 200px;
+  padding-top: 30px;
+  position: relative;
+}
+#index-page .container.last .quote > p {
+  position: absolute;
+  top: 32%;
+  width: 90%;
+}
+@media (max-width: 990px) {
+  #index-page .portal > div {
+    margin-bottom: 20px !important;
+  }
+}

@@ -2,43 +2,7 @@
  * Style for the LINCS-DCIC website.
  */
 
-
-/* LESS variables
- * ------------------------------------------------------------------------- */
-
-/* colors */
-@color-white: #ffffff;
-@color-black: #000000;
-@color-red: #ff0000;
-
-@color-lightgray: #f1f1f1;
-@color-gray: #dddddd;
-@color-darkgray: #888888;
-@color-charcoal: #222222;
-@color-lightcharcoal: #808080;
-
-/* Logo and accent colors */
-@color-primary: #3593b1;
-@color-primary-dusky-light: #C7E8F2;
-@color-primary-light: #599fb7;
-@color-primary-dark: #09505b;
-
-@color-accent: #D16291;
-/* Unused! */
-@color-accent-dark: #9A2254;
-
-/* fonts */
-@font-size-base: 13px;
-@font-family-base: 'Arial', sans-serif;
-@font-family-accent: 'Archivo Narrow', sans-serif;
-@font-kerning-small: .1em;
-@font-kerning-big: .2em;
-
-@dimension-portal-height: 400px;
-@dimension-portal-height-half: 200px;
-@dimension-portal-padding-top: 40px;
-@dimension-portal-padding-edge: 50px;
-@dimension-portal-padding: 40px;
+@import "variable.less";
 
 /* Tag selectors, i.e. global settings.
  * ------------------------------------------------------------------------- */
@@ -89,7 +53,7 @@ h6 {
     border-bottom: 1px solid @color-gray;
 }
 #brand {
-    padding-top: 60px;
+    padding-top: 15px;
     #logo {
         font-family: @font-family-accent;
         letter-spacing: @font-kerning-big;
@@ -231,88 +195,11 @@ h6 {
     }
 }
 
-
-/* Carousel or rotator. Most of the element names are defined by Bootstrap
- * and should not be renamed.
- * ------------------------------------------------------------------------- */
-#carousel {
-    padding: 0 0 40px 0;
-    /* Images should be cut exactly. */
-    width: 100%;
-    #carousel-img-link,
-    img {
-        display: block;
-        //opacity: .5;
-        width: 100%;
-    }
-    button {
-      background: transparent;
-      border: none;
-    }
-    .item {
-        width: 100%;
-    }
-    .carousel-btn {
-        background: #fff;
-        border: none;
-        bottom: 10px;
-        position: absolute;
-        height: 20px;
-        width: 20px;
-    }
-    .carousel-highlight {
-        background: @color-primary;
-    }
-    .carousel-indicators {
-        bottom: 0;
-    }
-    .carousel-indicators li {
-        border: 1px solid @color-primary-dark;
-    }
-    .carousel-caption-custom {
-        background-color: rgba(255, 255, 255, .85);
-        color: @color-black;
-        margin: auto 50px;
-        padding: 20px;
-        position: absolute;
-        text-align: left;
-        text-shadow: none;
-        top: 30px;
-        width: 40%;
-        .caption-title-block {
-            padding-right: 10px;
-            a {
-                font-family: @font-family-accent;
-                font-size: 40px;
-                font-weight: bold;
-                &:hover {
-                    color: @color-primary-light;
-                }
-            }
-        }
-        .caption-text {
-            font-size: 20px;
-        }
-        /* Some images look better with a light caption box. Override the dark default. */
-        &.light {
-            background: @color-primary;
-            color: @color-white;
-            a {
-                color: @color-white;
-                &:hover {
-                    color: @color-primary-dark;
-                }
-            }
-        }
-    }
-}
-
-
-/* Category content is related but varies in style. "category-index" refers
+/* Category content is related but varies in style. "index-page" refers
  * to content on the main page. "catgory-page" refers to content on
  * individual pages.
  * ------------------------------------------------------------------------- */
-.category-index,
+#index-page,
 .category-page {
     ul {
 		padding: 0 0 0 15px;
@@ -335,149 +222,6 @@ h6 {
         width: 1.2em;
         margin-left: -1.5em;
         padding-left: 6px;
-    }
-}
-.category-index {
-    .rollover {
-        position: relative;
-        .img-fixed-aspect {
-            width:  100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .overlay {
-            background-color: white;
-            height: 100%;
-            padding: 20px;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 9;
-        }
-    }
-    .overview {
-        margin-bottom: 50px;
-        li {
-            a {
-                font-size: 20px;
-                &:hover {
-                    color: @color-primary;
-                }
-            }
-        }
-    }
-    .portal {
-        padding: 0;
-        a {
-          font-size: 20px;
-          &:hover {
-            color: @color-primary;
-          }
-        }
-        &.research-links {
-            a {
-                font-size: 15px;
-                color: @color-primary-dark;
-                &:hover {
-                  color: @color-primary;
-                }
-            }
-            background: @color-primary-dusky-light;
-            height: @dimension-portal-height;
-            padding: @dimension-portal-padding-top @dimension-portal-padding @dimension-portal-padding @dimension-portal-padding-edge;
-            h2 {
-                color: @color-primary-dark;
-            }
-            li {
-                padding-top: 5px;
-            }
-        }
-        &.research-photo {
-            .img-fixed-aspect {
-                height: @dimension-portal-height;
-                background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/1920px-Red_Apple.jpg);
-            }
-            .overlay {
-                padding: @dimension-portal-padding-top @dimension-portal-padding @dimension-portal-padding @dimension-portal-padding;
-            }
-        }
-        &.research-highlights {
-            .img-fixed-aspect {
-                height: @dimension-portal-height-half;
-            }
-            .overlay {
-                padding: @dimension-portal-padding-top @dimension-portal-padding-edge @dimension-portal-padding @dimension-portal-padding;
-            }
-            .top {
-                background-image: url(http://thecrabbycook.com/wp-content/uploads/EggplantOrAliens.jpg);
-            }
-            .bottom {
-                background-image: url(http://www.biomedcentral.com/content/figures/s12918-015-0173-z-4-l.jpg);
-                background-position-y: -645px;
-            }
-
-        }
-        &#twitter-fetcher {
-            background: @color-lightgray;
-            height: @dimension-portal-height-half;
-            padding: 30px;
-            li:before {
-                content: "";
-            }
-            .tweet {
-                a {
-                    word-wrap: break-word;
-                }
-            }
-            ul {
-                padding: 0;
-            }
-        }
-    }
-    .quote {
-        font-size: 20px;
-        font-style: italic;
-        height: @dimension-portal-height-half;
-        padding-top: 30px;
-        position: relative;
-        & > p {
-            position: absolute;
-            top: 32%;
-            width: 90%;
-        }
-    }
-    .caption,
-    .arrow-box {
-        height: 80px;
-    }
-    .caption {
-        bottom: 0;
-        color: black;
-        padding: 20px;
-        position: absolute;
-        width: 75%;
-    }
-    .arrow-box {
-        background: black;
-        width: 25%;
-        z-index: 8;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        div:before {
-            color: white;
-            font-family: FontAwesome;
-            font-style: normal;
-            content: "\f105";
-            font-size: 1.7em;
-            font-weight: 300;
-        }
-        div {
-            position: relative;
-            top: 30%;
-            text-align: center;
-        }
     }
 }
 .category-page {

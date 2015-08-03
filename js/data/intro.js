@@ -10,23 +10,27 @@ mod.controller("introCtrl", ["$scope", "$sce", function($scope, $sce) {
     
     $scope.sections = [
         {
-            title: "Integrated Knowledge Environment",
-            text: $sce.trustAsHtml("The DCIC is constructing a high-capacity, scalable IKE enabling federated access, intuitive querying, and integrative analysis and visualization across all LINCS resources together with external data from other relevant resources."),
-            image: DIR + "ml.png"
-        },
-        {
+            id: "data-science-research",
             title: "Data Science Research",
-            text:  $sce.trustAsHtml("The DCIC conducts several internal research projects and supports several external data science research projects, addressing various data integration and intracellular molecular regulatory network challenges."),
+            text:  $sce.trustAsHtml("<p>The objective of the Data Science Research (DSR) component of the BD2K-LINCS DCIC is to develop methods that would further extract knowledge from LINCS data by integrating LINCS data with other relevant resources. The integration of LINCS perturbation data with other datasets will help us unravel the mode of action (MOA) of perturbations which is expected not to become readily possible to obtain by processing the LINCS data alone. Understanding and extracting new knowledge from MOA network models created from LINCS data integrated with other resources will facilitate drug repositioning strategies, identification of new drugs and targets, as well as help in predicting deleterious effects of relevant perturbations. Our data science projects will address methodological and computational challenges related to such integrative analyses.</p><p>The BD2K-LINCS DCIC has several internal research projects and supports several external data science research projects, addressing various data integration and intracellular molecular regulatory network challenges. The Center aims to develop: 1) methods to connect cellular and organismal phenotypes with molecular cellular signatures, and 2) novel data visualization methods for dynamically interacting with large-genomics and proteomics datasets.</p>"),
             image: DIR + "big-data-research.png"
         },
         {
+            id: "integrated-knowledge-environment",
+            title: "Integrated Knowledge Environment",
+            text: $sce.trustAsHtml("The Integrated Knowledge Environment (IKE) component of the BD2K-LINCS DCIC is developing a schema to combine LINCS and other data into a coherent and computable knowledge framework. The Center develops meta-data standards that enable data integration and representation across the <a href='#/datacenters'>LINCS Data and Signature Generation Centers (DGSCs)</a>. Members of the DCIC are actively developing a next generation integrated web-based platform for the LINCS project that will serve as the foundation for LINCS activities and federate LINCS data, signatures, analysis algorithms, pipelines, APIs and web tools. For implementing this web-based platform we will realize the Big Data to Knowledge vision with a specific focus on data and knowledge generated in the LINCS project."),
+            image: DIR + "ml.png"
+        },
+        {
+            id: "community-training-and-outreach",
             title: "Community Training and Outreach",
-            text: $sce.trustAsHtml("The CTO established several educational programs, including a <a href='https://www.coursera.org/course/bd2klincs' target='_blank'>Big Data Science MOOC on Coursera</a> and a <a href='#/srp'>Summer Research Training Program in Biomedical Big Data Science</a>. In addition, the CTO is initiating and supporting diverse and collaborative projects that leverage LINCS resources and disseminate LINCS data and tools."),
+            text: $sce.trustAsHtml("The Community Training and Outreach (CTO) component established several educational programs, including a <a href='https://www.coursera.org/course/bd2klincs' target='_blank'>Big Data Science MOOC on Coursera</a> and a <a href='#/summer-fellows'>Summer Research Training Program in Biomedical Big Data Science</a>. One of the objectives of the DCIC’s outreach efforts is to train biomedical researchers with LINCS-related experimental methods, datasets, and computational tools. In addition, the CTO is initiating and supporting diverse and collaborative projects that leverage LINCS resources and disseminate LINCS data and tools."),
             image: DIR + "mooc.png"
         },
         {
+            id: "consortium-coordination-and-administration",
             title: "Consortium Coordination and Administration",
-            text: $sce.trustAsHtml("The CCA supports and manages the DCIC goals and deliverables and coordinates activities across the LINCS and BD2K programs."),
+            text: $sce.trustAsHtml("The Consortium Coordination and Administration (CCA) component coordinates the implementation of the BD2K-LINCS DCIC’s aims within the LINCS consortium and the BD2K Centers."),
             image: DIR + "admin.png"
         }
     ];

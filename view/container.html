@@ -1,6 +1,6 @@
 <div ng-include="'view/partial/carousel.html'"></div>
 <div ng-controller="indexCtrl" id="index">
-    <div class="category-index">
+    <div id="index-page">
         <div class="container overview">
             <div class="row">
                 <div class="col-md-12">
@@ -18,46 +18,41 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 portal research-links">
-                    <h2>Research</h2>
-                    <ul>
-                        <li ng-repeat="item in researchList">
-                            <a href="{{item.link}}">{{item.title}}</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 portal research-photo rollover">
-                    <div class="img-fixed-aspect"></div>
-                    <div class="caption">
-                        <h2>Research</h2>
-                    </div>
-                    <div class="arrow-box">
-                        <div class="icon"></div>
-                    </div>
-                    <div class="overlay hidden">
-                        <h2>Research</h2>
-                        <p>
-                            <a href="/#about">Focus on construction of high fidelity networks from LINCS data combined with other resources</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 portal research-highlights">
-                    <div class="top rollover">
+                <div class="col-md-4 portal">
+                    <div class="research-links">
                         <div class="img-fixed-aspect"></div>
-                        <div class="overlay hidden">
-                            <h2>Summer Research Program</h2>
+                        <div class="caption">
+                            <h2>Research</h2>
+                            <p>Focus on construction of high fidelity networks from LINCS data combined with other resources.</p>
                             <p>
-                                <a href="/#summer-fellows">Research intensive ten-week training program in biomedical big data science</a>
+                                <a href="">More &raquo;</a>
                             </p>
                         </div>
                     </div>
-                    <div class="bottom rollover">
+                </div>
+                <div class="col-md-4 portal">
+                    <div class="research-photo">
                         <div class="img-fixed-aspect"></div>
-                        <div class="overlay hidden">
-                            <h2>Publication Highlights</h2>
+                        <div class="caption">
+                            <h2>Research</h2>
+                            <p>Focus on construction of high fidelity networks from LINCS data combined with other resources.</p>
                             <p>
-                                <a href="/#about">Dynamics of the discovery process of protein-protein interactions from low content studies</a>
+                                <a href="">More &raquo;</a>
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portal">
+                    <div class="research-highlight">
+                        <div class="top">
+                            <div class="img-fixed-aspect"></div>
+                            <div class="caption">
+                                <h2>Summer Research Program</h2>
+                                <p>Research intensive ten-week training program in biomedical big data science</p>
+                                <p>
+                                    <a href="">More &raquo;</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,8 +63,13 @@
                 <div class="col-md-8 quote">
                     <p>The BD2K-LINCS DCIC is part of the Big Data to Knowledge (BD2K) NIH initiative, and it is the data coordination center for the NIH Common Fund's Library of Integrated Network-based Cellular Signatures (LINCS) program.</p>
                 </div>
-                <div id="twitter-fetcher" class="col-md-4 portal">
-
+                <div id="twitter-fetcher-wrapper" class="col-md-4 portal">
+                    <div id="twitter-fetcher"></div>
+                    <p>
+                        <a href="https://twitter.com/bd2klincsdcic" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>

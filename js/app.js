@@ -92,3 +92,14 @@ mod.config(["$routeProvider", function($routeProvider) {
 		});
 	}
 ]);
+
+mod.run(function($rootScope, $location, $anchorScroll) {
+    console.log('location changing');
+    $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+        if ($location.hash()) {
+            setTimeout(function() {
+                $anchorScroll();
+            }, 100);
+        }
+    });
+});

@@ -18,38 +18,33 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.overviewList = [
         {
             title: "Integrated Knowledge Environment",
-            link: ""
+            link: "/#about#integrated-knowledge-environment"
         },
         {
             title: "Data Science Research",
-            link: ""},
+            link: "/#about#data-science-research"},
         {
             title: "Training and Outreach",
-            link: ""
+            link: "/#about#community-training-and-outreach"
         }
     ];
 
     $scope.researchList = [
         {
             title: "Analyze Data",
-            link: "#/resources"
+            link: "/#resources"
         },
         {
             title: "Engage In Data Science Research Webinars",
-            link: "#/webinars"
+            link: "/#webinars"
         },
         {
             title: "Collaborate with the BD2K-LINCS DCIC",
-            link: "#/edsr"
+            link: "/#edsr"
         },
         {
             title: "Meet Our Team",
-            link: "#/about"
+            link: "#about#team"
         }
     ];
-
-    $(".rollover").hover(function(evt) {
-        var $el = $(evt.originalEvent.target);
-        $el.closest(".rollover").find(".overlay").toggleClass("hidden");
-    });
 }]);
