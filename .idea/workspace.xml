@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a7a82-7251-4729-a982-2746106caef1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/data/subnav.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/calendar.js" afterPath="$PROJECT_DIR$/js/calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/partial/carousel.html" afterPath="$PROJECT_DIR$/view/partial/carousel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/carousel.js" afterPath="$PROJECT_DIR$/js/data/carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/container.html" afterPath="$PROJECT_DIR$/view/container.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/page/events.html" afterPath="$PROJECT_DIR$/view/page/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/partial/events.html" afterPath="$PROJECT_DIR$/view/partial/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/partial/header.html" afterPath="$PROJECT_DIR$/view/partial/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/index.css" afterPath="$PROJECT_DIR$/style/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/index.less" afterPath="$PROJECT_DIR$/style/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/main.css" afterPath="$PROJECT_DIR$/style/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/main.less" afterPath="$PROJECT_DIR$/style/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/summer-fellows.js" afterPath="$PROJECT_DIR$/js/data/summer-fellows.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/variable.css" afterPath="$PROJECT_DIR$/style/variable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/variable.less" afterPath="$PROJECT_DIR$/style/variable.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/webinars.js" afterPath="$PROJECT_DIR$/js/data/webinars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/nav.css" afterPath="$PROJECT_DIR$/style/nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/nav.js" afterPath="$PROJECT_DIR$/js/data/nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/nav.less" afterPath="$PROJECT_DIR$/style/nav.less" />
     </list>
     <ignored path="lincs-dcic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +25,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="container.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="container.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/container.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68266886">
-              <caret line="93" column="153" selection-start-line="93" selection-start-column="153" selection-end-line="93" selection-end-column="153" />
+            <state vertical-scroll-proportion="-8.083333">
+              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/data/nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/partial/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -84,8 +88,18 @@
       <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.041666">
-              <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
+            <state vertical-scroll-proportion="-29.333334">
+              <caret line="315" column="10" selection-start-line="315" selection-start-column="7" selection-end-line="315" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style/nav.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5736371">
+              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -138,11 +152,8 @@
         <option value="$PROJECT_DIR$/js/data/index.js" />
         <option value="$PROJECT_DIR$/view/partial/carousel.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/view/partial/header.html" />
         <option value="$PROJECT_DIR$/js/data/carousel.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/data/nav.js" />
-        <option value="$PROJECT_DIR$/style/nav.less" />
         <option value="$PROJECT_DIR$/js/data/webinars.js" />
         <option value="$PROJECT_DIR$/view/page/events.html" />
         <option value="$PROJECT_DIR$/js/calendar.js" />
@@ -151,6 +162,9 @@
         <option value="$PROJECT_DIR$/style/variable.less" />
         <option value="$PROJECT_DIR$/style/main.less" />
         <option value="$PROJECT_DIR$/view/container.html" />
+        <option value="$PROJECT_DIR$/view/partial/header.html" />
+        <option value="$PROJECT_DIR$/js/data/nav.js" />
+        <option value="$PROJECT_DIR$/style/nav.less" />
       </list>
     </option>
   </component>
@@ -591,22 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/partial/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23189585">
-          <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/data/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2753392">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -619,14 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/nav.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4393816">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -703,18 +693,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/main.less">
+    <entry file="file://$PROJECT_DIR$/view/container.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.041666">
-          <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
+        <state vertical-scroll-proportion="-8.083333">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/container.html">
+    <entry file="file://$PROJECT_DIR$/js/data/nav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68266886">
-          <caret line="93" column="153" selection-start-line="93" selection-start-column="153" selection-end-line="93" selection-end-column="153" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/partial/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.333334">
+          <caret line="315" column="10" selection-start-line="315" selection-start-column="7" selection-end-line="315" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/nav.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5736371">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
           <folding />
         </state>
       </provider>

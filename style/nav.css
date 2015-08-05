@@ -35,6 +35,27 @@
 #nav li:hover {
   border-bottom: 2px solid #dddddd;
 }
+#nav li .subnav {
+  background-color: #dddddd;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#nav li .subnav li {
+  border-bottom: none;
+  padding: 5px 10px;
+}
+#nav li .subnav li a {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+#nav li .subnav li a:hover {
+  background-color: #f9f9f9 !important;
+}
+#nav li .subnav li:hover {
+  background-color: #f9f9f9;
+  border-bottom: none;
+}
 #nav .navbar-right a {
   /* This is scaled to fit with links on the left side.
              * Don't change this height without confirming that the bottom
@@ -99,4 +120,9 @@
 .navbar-default .navbar-toggle:hover:focus,
 .navbar-default .navbar-toggle:focus {
   background: #09505b;
+}
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
 }

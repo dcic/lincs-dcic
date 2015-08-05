@@ -7,12 +7,36 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
 
     $scope.categories = [
         {
-            title: 'About DCIC',
-            url: '#/about'
+            title: 'About',
+            url: '#/about',
+            subnav: [
+                {
+                    title: 'DCIC',
+                    url: '#/about#intro'
+                },
+                {
+                    title: 'Team',
+                    url: '#/about#team'
+                },
+                {
+                    title: 'Data and Signature Generating Centers',
+                    url: '#datacenters'
+                }
+            ]
         },
         {
             title: 'Training and Outreach',
-            url: '#/training'
+            url: '#/training',
+            subnav: [
+                {
+                    title: 'Summer Fellows',
+                    url: '#/summer-fellows'
+                },
+                {
+                    title: 'Webinars',
+                    url: '#/webinars'
+                }
+            ]
         },
         {
             title: 'Resources',

@@ -29,6 +29,27 @@
         &:hover {
             border-bottom: 2px solid @color-nav-hover;
         }
+        .subnav {
+            background-color: @color-nav-hover;
+            border: none;
+            margin: 0;
+            padding: 0;
+            li {
+                border-bottom: none;
+                padding: 5px 10px;
+                a {
+                    font-family: @font-family-base;
+                    font-size: 14px;
+                    &:hover {
+                        background-color: @color-nav !important;
+                    }
+                }
+                &:hover {
+                    background-color: @color-nav;
+                    border-bottom: none;
+                }
+            }
+        }
     }
     .navbar-right {
         a {
@@ -95,5 +116,10 @@
     &:active,
     &:focus {
         background: @color-primary-dark;
+    }
+}
+@media (min-width: 979px) {
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
     }
 }
