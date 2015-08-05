@@ -9,7 +9,7 @@ mod.controller("summerFellowsCtrl", ["$scope", "$sce", function($scope, $sce) {
         CMU = "Carnegie Mellon University",
         WASHINGTON = "University of Washington",
         MIAMI = "University of Miami",
-        SCHURER_LAB = "Lab: Stephan Schürer PhD, University of Miami",
+        SCHURER_LAB = "Stephan Schürer PhD, University of Miami",
         SCHURER_LAB_LINK = "http://ccs.miami.edu/?p=1103",
         UPENN = "University of Pennsylvania";
 

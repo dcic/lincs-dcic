@@ -47,27 +47,35 @@ mod.controller("calendarCtrl", ["$scope", function($scope) {
     };
 
     var cleanFeed = function(feed) {
-        var results = [];
+        var upcoming = [],
+            past = [];
         $.each(feed, function(i, evt) {
             var title = evt.summary;
 
             var startObj = getStartTime(evt.start);
 
-            if (!startObj)
+            if (!startObj) {
                 return;
-            if (new Date().getTime() > startObj.getTime())
-                return;
+            }
 
-            results.push({
+            var event = {
                 title: evt.summary,
                 link: evt.htmlLink,
                 startTime: getStartTimeString(startObj, allDay(evt.start)),
                 day: startObj.getDate(),
                 month: monthNames[startObj.getMonth()],
                 year: startObj.getYear()
-            });
+            }
+            if (new Date().getTime() > startObj.getTime()) {
+                past.push(event)
+            } else {
+                upcoming.push(event);
+            }
         });
-        return results;
+        return {
+            upcoming: upcoming,
+            past: past
+        };
     };
 
     var API_KEY = "AIzaSyBoFmRASxqk6MuOZTxDYF5eWA5Q8hmyflo",

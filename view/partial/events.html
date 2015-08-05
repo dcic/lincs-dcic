@@ -1,8 +1,17 @@
 <div ng-controller="calendarCtrl" id="calendar" class="col-md-6">
     <h2>Events</h2>
-    <div ng-repeat="event in events | limitTo:4" class="event">
-        <a href="{{event.link}}" class="title" target="_blank">{{event.title}}</a>
-        <div class="time"><strong>{{event.month}} {{event.day}}</strong> {{event.startTime}}</div>
-    </div>
+    <section>
+        <h3>Upcoming</h3>
+        <div ng-repeat="event in events.upcoming | limitTo:4" class="event">
+            <a href="{{event.link}}" class="title" target="_blank">{{event.title}}</a>
+            <div class="time"><strong>{{event.month}} {{event.day}}</strong> {{event.startTime}}</div>
+        </div>
+    </section>
+    <section>
+        <h3>Past</h3>
+        <div ng-repeat="event in events.past" class="event">
+            <a href="{{event.link}}" class="title" target="_blank">{{event.title}}</a>
+            <div class="time"><strong>{{event.month}} {{event.day}}</strong> {{event.startTime}}</div>
+        </div>
+    </section>
 </div>
-<!--<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=dl9fj86o2ohe7o823s7jar920s%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>-->

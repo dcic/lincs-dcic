@@ -16,7 +16,7 @@ var mod = angular.module("lincsDcic", [
  	"teamMod",
  	"toolsMod",
  	"trainingMod",
- 	"subnavMod",
+ 	"navMod",
  	"summerFellowsMod",
  	"webinarsMod",
  	"htmlFilters"

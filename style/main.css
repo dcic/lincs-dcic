@@ -5,8 +5,8 @@
  * ------------------------------------------------------------------------- */
 /* colors */
 /* Logo and accent colors */
-/* Unused! */
 /* fonts */
+/* Specific variables. */
 /* Tag selectors, i.e. global settings.
  * ------------------------------------------------------------------------- */
 html,
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
 }
 .left {
   float: left;
@@ -43,6 +43,10 @@ h6 {
 .clear {
   clear: both;
 }
+.btn {
+  border: none;
+  border-radius: 0;
+}
 /* Structal elements: wrapper, header, footer, and related content.
  * ------------------------------------------------------------------------- */
 #wrapper {
@@ -51,86 +55,7 @@ h6 {
   height: auto;
 }
 #header {
-  border-bottom: 1px solid #dddddd;
-}
-#brand {
-  padding-top: 15px;
-}
-#brand #logo {
-  font-family: 'Archivo Narrow', sans-serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  line-height: 2em;
-}
-#brand #logo #dcic-title {
-  float: left;
-  padding: 0 0 0 15px;
-}
-#brand #logo img {
-  float: left;
-  /*display: block;
-            margin: 0 auto;*/
-  max-width: 160px;
-  padding-bottom: 10px;
-}
-#brand #logo a {
-  text-decoration: none;
-}
-#brand #logo a:hover,
-#brand #logo a:visited {
-  text-decoration: none;
-}
-#brand #logo span#lincs-title-top {
-  color: #808080;
-  display: block;
-  font-size: 20px;
-  font-weight: normal;
-}
-#brand #logo span#lincs-title-bottom {
-  color: #000000;
-  font-size: 24px;
-  font-weight: bold;
-}
-#subnav {
-  background: #3593b1;
-  padding: 0;
-  letter-spacing: 0.1em;
-  /* Override Bootstrap */
-  border: none;
-  min-height: 0;
-}
-#subnav a {
-  color: #ffffff;
-  display: inline-block;
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 20px;
-  width: 100%;
-}
-#subnav a:hover {
-  color: #ffffff;
-}
-#subnav ul {
-  margin-bottom: 0;
-}
-#subnav li {
-  /* This is to ensure the nav doesn't bump down on hover. */
-  border-bottom: 4px solid #3593b1;
-  padding: 8px;
-}
-#subnav li a {
-  font-size: 16px;
-  padding: 0;
-}
-#subnav li:hover {
-  border-bottom: 4px solid #09505b;
-}
-#subnav .navbar-right a {
-  font-size: 14px;
-}
-@media (max-width: 990px) {
-  #subnav .nav li a {
-    font-size: 11px;
-  }
+  border-bottom: 1px solid #f1f1f1;
 }
 #content-wrapper #index img.icon {
   padding: 10px;
@@ -144,8 +69,7 @@ h6 {
   padding-bottom: 20px;
 }
 #footer {
-  background: #222222;
-  border-top: 5px solid #888888;
+  background: #444;
   height: auto;
   margin-top: 40px;
   padding: 30px 0;
@@ -153,16 +77,15 @@ h6 {
 #footer a,
 #footer p {
   color: #ffffff;
-  font-size: 12px;
-}
-#footer a {
-  font-family: 'Open Sans';
+  font-size: 13px;
 }
 #footer a:hover {
   color: #599fb7;
 }
 #footer h4 {
   color: #ffffff;
+  border-bottom: 1px solid #666;
+  padding-bottom: 5px;
 }
 #footer ul {
   list-style-type: none;
@@ -245,7 +168,7 @@ h6 {
   width: 30%;
 }
 .category-page #news .first a {
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 20px;
 }
 .category-page #news .first .details {
@@ -323,6 +246,9 @@ h6 {
 .category-page .event .title {
   font-size: 16px;
 }
+.category-page #calendar section:first-of-type {
+  border-bottom: 1px solid #dddddd;
+}
 .category-page #team .pi {
   /* This is for when the page is collapsed. */
   padding-top: 10px;
@@ -392,26 +318,4 @@ a.important a:hover,
 }
 .clear {
   clear: both;
-}
-/* Override Bootstrap default */
-.navbar {
-  margin-bottom: 5px;
-}
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-}
-.navbar-right {
-  margin-right: 0;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
-}
-.navbar-default .navbar-toggle:hover:hover,
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:hover:active,
-.navbar-default .navbar-toggle:active,
-.navbar-default .navbar-toggle:hover:focus,
-.navbar-default .navbar-toggle:focus {
-  background: #09505b;
 }

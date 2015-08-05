@@ -1,5 +1,5 @@
 <div id="header">
-    <div id="subnav" class="navbar navbar-default">
+    <div id="nav" class="navbar navbar-default">
         <div class="container">
 
             <!-- This is the dropdown button for the mobile version of the site -->
@@ -12,10 +12,15 @@
                 </button>
             </div>
 
-            <div ng-controller="subnavCtrl" id="navbar" class="navbar-collapse collapse">
+            <div ng-controller="navCtrl" id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li ng-repeat="cat in categories">
-                        <a href="{{cat.url}}">{{cat.title}}</a>
+                    <li ng-repeat="cat in categories" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <a data-toggle="dropdown" href="{{cat.url}}">{{cat.title}}</a>
+                        <ul ng-if="cat.subnav" class="dropdown-menu subnav">
+                            <li ng-repeat="subcat in cat.subnav">
+                                <a href="{{subcat.url}}">{{subcat.title}}</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

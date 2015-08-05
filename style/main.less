@@ -40,7 +40,10 @@ h6 {
 .clear {
     clear: both;
 }
-
+.btn {
+    border: none;
+    border-radius: 0;
+}
 
 /* Structal elements: wrapper, header, footer, and related content.
  * ------------------------------------------------------------------------- */
@@ -50,93 +53,7 @@ h6 {
     height: auto;
 }
 #header {
-    border-bottom: 1px solid @color-gray;
-}
-#brand {
-    padding-top: 15px;
-    #logo {
-        font-family: @font-family-accent;
-        letter-spacing: @font-kerning-big;
-        text-transform: uppercase;
-        line-height: 2em;
-        #dcic-title {
-            float: left;
-            padding: 0 0 0 15px;
-        }
-        img {
-            float: left;
-            /*display: block;
-            margin: 0 auto;*/
-            max-width: 160px;
-            padding-bottom: 10px;
-        }
-        a {
-            text-decoration: none;
-            &:hover,
-            &:visited {
-                text-decoration: none;
-            }
-        }
-        span#lincs-title-top {
-            color: @color-lightcharcoal;
-            display: block;
-            font-size: 20px;
-            font-weight: normal;
-        }
-        span#lincs-title-bottom {
-            color: @color-black;
-            font-size: 24px;
-            font-weight: bold;
-        }
-    }
-}
-#subnav {
-    background: @color-primary;
-    padding: 0;
-    letter-spacing: @font-kerning-small;
-    /* Override Bootstrap */
-    border: none;
-    min-height: 0;
-    a {
-        color: @color-white;
-        display: inline-block;
-        font-family: @font-family-accent;
-        font-size: 20px;
-        width: 100%;
-        &:hover {
-            color: @color-white;
-        }
-    }
-    ul {
-        margin-bottom: 0;
-    }
-    li {
-        /* This is to ensure the nav doesn't bump down on hover. */
-        border-bottom: 4px solid @color-primary;
-        padding: 8px;
-        a {
-            font-size: 16px;
-            padding: 0;
-        }
-        &:hover {
-            border-bottom: 4px solid @color-primary-dark;
-        }
-    }
-    .navbar-right {
-        a {
-            font-size: 14px;
-        }
-
-    }
-    @media (max-width: 990px) {
-        .nav {
-            li {
-                a {
-                    font-size: 11px;
-                }
-            }
-        }
-    }
+    border-bottom: 1px solid @color-gray-light;
 }
 #content-wrapper {
     #index {
@@ -154,24 +71,24 @@ h6 {
     }
 }
 #footer {
-    background: @color-charcoal;
-    border-top: 5px solid @color-darkgray;
+    background: #444;
     height: auto;
     margin-top: 40px;
     padding: 30px 0;
 	a,
 	p {
 		color: @color-white;
-		font-size: 12px;
+		font-size: 13px;
 	}
 	a {
-		font-family: 'Open Sans';
 		&:hover {
 			color: @color-primary-light;
 		}
 	}
 	h4 {
         color: @color-white;
+        border-bottom: 1px solid #666;
+        padding-bottom: 5px;
 	}
 	ul {
         list-style-type: none;
@@ -345,6 +262,11 @@ h6 {
             font-size: 16px;
         }
     }
+    #calendar {
+        section:first-of-type {
+            border-bottom: 1px solid @color-gray;
+        }
+    }
     #team {
         .pi {
             /* This is for when the page is collapsed. */
@@ -367,7 +289,7 @@ h6 {
             display: inline-block;
         }
         .contact-header {
-            border-bottom: 1px solid @color-darkgray;
+            border-bottom: 1px solid @color-gray-dark;
             /*text-transform: uppercase;*/
             margin-top: 15px;
         }
@@ -400,7 +322,6 @@ h6 {
     color: @color-red;
 }
 
-
 /* Miscellaneous global selectors.
  * ------------------------------------------------------------------------- */
 .super {
@@ -421,25 +342,4 @@ a.important,
 }
 .clear {
     clear: both;
-}
-/* Override Bootstrap default */
-.navbar {
-    margin-bottom: 5px;
-}
-.navbar-default {
-	background-color: transparent;
-	border-color: transparent;
-}
-.navbar-right {
-    margin-right: 0;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: @color-white;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle {
-    &:hover,
-    &:active,
-    &:focus {
-        background: @color-primary-dark;
-    }
 }

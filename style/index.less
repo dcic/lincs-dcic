@@ -35,13 +35,12 @@
         bottom: 0;
     }
     .carousel-indicators li {
-        border: 1px solid @color-primary-dark;
+        border: 1px solid @color-gray-dark;
     }
     .carousel-caption-custom {
         background-color: rgba(255, 255, 255, .85);
-        border-bottom: @portal-border;
+        border-bottom: @fancy-border;
         color: @color-black;
-        margin: auto 50px;
         padding: 20px;
         position: absolute;
         text-align: left;
@@ -53,7 +52,6 @@
             a {
                 font-family: @font-family-accent;
                 font-size: 40px;
-                font-weight: bold;
                 &:hover {
                     color: @color-primary-light;
                 }
@@ -87,75 +85,102 @@
 }
 
 #index-page {
-    .overview {
+    #overview {
         margin-bottom: 50px;
         li {
             a {
                 font-size: 20px;
                 &:hover {
-                    color: @color-primary;
+                    text-decoration: underline;
                 }
             }
         }
     }
-    .portal {
-        padding: 0;
-        a {
-            font-size: 20px;
-            &:hover {
-                color: @color-primary;
+    .featured-stories  {
+        margin-top: @dim-gutter;
+        .story {
+            margin-bottom: 10px;
+            h2 {
+                border-bottom: @fancy-border;
             }
-        }
-        .research-links {
-            /*background-color: @color-gray-light;*/
-            height: @dim-portal-height;
-            margin: 0 @dim-portal-gutter;
-            /*padding: @dim-portal-padding @dim-portal-padding @dim-portal-padding 0;*/
-            .img-fixed-aspect {
-                height: @dim-portal-height;
-                background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4c/Bananas.jpg);
-            }
-            h2,
-            a {
-                color: black;
-            }
-            a {
-                font-size: 20px;
+            a.link-without-list {
+                font-weight: bold;
+                &:before {
+                    /* FontAwesome char code inside the '' */
+                    content: '\F105';
+                    color: @color-charcoal;
+                    font-family: 'FontAwesome';
+                    display: inline-block;
+                    width: 1.1em;
+                }
                 &:hover {
-                    color: @color-primary;
+                    text-decoration: underline;
                 }
             }
-            li {
-                padding-top: 5px;
+            ul {
+                a {
+                    font-weight: bold;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .image {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: @dim-box-height;
+            }
+            .caption {
+                height: 175px;
+                padding: @dim-box-padding 0 0 0;
+            }
+            &.research {
+                .image {
+                    background-image: url(http://previews.123rf.com/images/ronstik/ronstik1210/ronstik121000026/15941072-man-writes-mathematical-equations-on-whiteboard-Stock-Photo-formula-math-board.jpg);
+                }
+            }
+            &.webinar {
+                .image {
+                    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0c/White_House_teleconference_for_Hurricane_Sandy.jpg);
+                }
+            }
+            &.software {
+                .image {
+                    background-image: url(http://www.brightintegrasi.com/wp-content/uploads/2015/04/programmer1.jpg);
+                }
+            }
+            &.students {
+                .image {
+                    background-image: url(http://photos.uc.wisc.edu/photos/12307/original/Bascom_Hill_Frisbee10_7538.jpg?1286781146);
+                }
+            }
+            &.events {
+                .image {
+                    background-image: url(http://zenmarketinginc.com/wp-content/uploads/2015/06/Live-Concert-Event.jpg);
+                }
             }
         }
-        .research-photo {
-            margin: 0 @dim-portal-gutter;
-            .img-fixed-aspect {
-                height: @dim-portal-height;
-                background-image: url(http://www.myrtlebeachproduce.com/wp-content/uploads/2013/02/apples.jpg);
+        #twitter-fetcher-wrapper {
+            &> p {
+                background-color: @color-twitter;
+                padding: 20px;
+                text-align: center;
+                height: @dim-box-height;
+                margin: 0;
+                a {
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                }
+                &:hover {
+                    background-color: @color-twitter-dark;
+                }
             }
-        }
-        .research-highlight {
-            margin: 0 @dim-portal-gutter;
-            .img-fixed-aspect {
-                height: @dim-portal-height;
-            }
-            .top {
-                background-image: url(http://thecrabbycook.com/wp-content/uploads/EggplantOrAliens.jpg);
-            }
-            .bottom {
-                background-image: url(http://www.biomedcentral.com/content/figures/s12918-015-0173-z-4-l.jpg);
-                background-position-y: -645px;
-            }
-
-        }
-        &#twitter-fetcher-wrapper {
-            background: @color-gray-light;
-            border-bottom: @portal-border;
-            height: @dim-portal-height-half;
-            padding: @dim-portal-padding;
             #twitter-fetcher {
+                background: @color-gray-very-light;
+                height: 175px;
+                padding: 20px;
                 li:before {
                     content: "";
                 }
@@ -165,6 +190,8 @@
                 .tweet {
                     a {
                         word-wrap: break-word;
+                        font-size: 16px;
+                        font-weight: bold;
                         text-overflow: ellipsis;
                     }
                 }
@@ -172,66 +199,24 @@
                     padding: 0;
                 }
             }
-            .more {
-                font-size: 30px;
+            .fa {
+                font-size: 40px;
+                color: white;
+                position: relative;
+                top: 30%;
             }
         }
     }
-    .more-arrow {
-        font-size: 14px;
-    }
-    .caption,
-    .more {
-        color: black;
-    }
-    .caption {
-        background-color: rgba(255, 255, 255, .85);
-        border-bottom: @portal-border;
-        color: black;
-        margin: @dim-portal-padding;
-        padding: 20px;
-        position: absolute;
-        top: 0;
-        width: 60%;
-    }
-    .more {
-        background: black;
-        height: 100px;
-        z-index: 8;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        div:before {
-            color: white;
-            font-family: FontAwesome;
-            font-style: normal;
-            content: "\f105";
-            font-size: 1.7em;
-            font-weight: 300;
-        }
-        div {
-            position: relative;
-            top: 30%;
-            text-align: center;
-        }
-    }
-    .container.last {
-        margin-top: @dim-portal-gutter + @dim-portal-gutter;
-        .quote {
-            font-size: 20px;
-            height: @dim-portal-height-half;
-            padding-top: 30px;
-            position: relative;
-            & > p {
-                position: absolute;
-                top: 32%;
-                width: 90%;
+    #full-width-content {
+        #quote {
+            //border: @color-box-border;
+            //background-color: @color-box-background;
+            padding: 40px;
+            p {
+                font-family: @font-family-serif;
+                font-size: 20px;
+                font-style: italic;
             }
-        }
-    }
-    @media (max-width: 990px) {
-        .portal > div {
-            margin-bottom: @dim-portal-gutter + @dim-portal-gutter !important;
         }
     }
 }

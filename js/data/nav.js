@@ -1,8 +1,8 @@
-var mod = angular.module("subnavMod", []);
+var mod = angular.module("navMod", []);
 
 var $el;
 
-mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
+mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
     $el = $($element);
 
     $scope.categories = [

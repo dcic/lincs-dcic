@@ -13,25 +13,10 @@
 	<link rel="stylesheet" href="/lib/bower_components/fullcalendar/dist/fullcalendar.min.css">
     <link rel="stylesheet" href="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css">
     <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/nav.css">
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="style/side.css">
-
-	<!-- Embedded Twitter feed-->
-	<script>
-		!function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0],
-				p = /^http:/.test(d.location) ? 'http' : 'https';
-			if (!d.getElementById(id)) {
-				js = d.createElement(s);
-				js.id = id;
-				js.src = p + "://platform.twitter.com/widgets.js";
-				fjs.parentNode.insertBefore(js, fjs);
-			}
-		}(document, "script", "twitter-wjs");
-	</script>
 
     <!-- Google Analytics -->
 	<script>
@@ -84,7 +69,7 @@
     <script type="text/javascript" src="js/data/funding.js"></script>
 	<script type="text/javascript" src="js/data/news.js"></script>
 	<script type="text/javascript" src="js/data/publications.js"></script>
-	<script type="text/javascript" src="js/data/subnav.js"></script>
+	<script type="text/javascript" src="js/data/nav.js"></script>
 	<script type="text/javascript" src="js/data/summer-fellows.js"></script>
 	<script type="text/javascript" src="js/data/training.js"></script>
 	<script type="text/javascript" src="js/data/team.js"></script>

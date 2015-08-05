@@ -1,0 +1,99 @@
+@import "variable.less";
+
+#nav {
+    background: @color-nav;
+    border-bottom: 1px solid @color-nav-hover;
+    padding: 0;
+    min-height: 0;
+    a {
+        color: #444;
+        display: inline-block;
+        font-family: @font-family-accent;
+        font-size: 20px;
+        width: 100%;
+    }
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        /* This is to ensure the nav doesn't bump down on hover. */
+        border-bottom: 2px solid @color-nav;
+        padding: 8px;
+        a {
+            font-size: 18px;
+            padding: 0;
+            &:focus {
+                background-color: @color-nav;
+            }
+        }
+        &:hover {
+            border-bottom: 2px solid @color-nav-hover;
+        }
+    }
+    .navbar-right {
+        a {
+            /* This is scaled to fit with links on the left side.
+             * Don't change this height without confirming that the bottom
+             * border is still flush.
+             */
+            font-size: 16px;
+        }
+    }
+}
+#brand {
+    padding-top: 15px;
+    #logo {
+        font-family: @font-family-accent;
+        text-transform: uppercase;
+        line-height: 2em;
+        #dcic-title {
+            float: left;
+            padding: 0 0 0 15px;
+        }
+        img {
+            float: left;
+            /*display: block;
+            margin: 0 auto;*/
+            max-width: 160px;
+            padding-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            &:hover,
+            &:visited {
+                text-decoration: none;
+            }
+        }
+        span#lincs-title-top {
+            color: @color-lightcharcoal;
+            display: block;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        span#lincs-title-bottom {
+            color: @color-black;
+            font-size: 24px;
+        }
+    }
+}
+/* Override Bootstrap default */
+.navbar {
+    margin-bottom: 5px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-right {
+    margin-right: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: @color-white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle {
+    &:hover,
+    &:active,
+    &:focus {
+        background: @color-primary-dark;
+    }
+}
