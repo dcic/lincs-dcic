@@ -5,7 +5,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
 	
 	{
             date: '11 August 2015 | 3:00 PM Eastern Time',
-            topic: 'TBA',
+            topic: 'Biomedical Data Integration Toward Quality Healthcare Delivery',
             presenters: 'Qian Zhu, University of Maryland, Baltimore County'
         },
 	{
