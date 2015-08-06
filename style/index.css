@@ -4,6 +4,9 @@
 /* Logo and accent colors */
 /* fonts */
 /* Specific variables. */
+#index-page li:before {
+  margin-left: -1.2em;
+}
 /* Carousel or rotator. Most of the element names are defined by Bootstrap
  * and should not be renamed.
  * ------------------------------------------------------------------------- */
@@ -64,7 +67,7 @@
   color: #599fb7;
 }
 #carousel .carousel-caption-custom .caption-text {
-  font-size: 20px;
+  font-size: 16px;
 }
 #carousel .carousel-caption-custom.light {
   background: #3593b1;
@@ -76,6 +79,9 @@
 #carousel .carousel-caption-custom.light a:hover {
   color: #09505b;
 }
+#carousel .carousel-control {
+  background-image: none;
+}
 @media (max-width: 768px) {
   #carousel .carousel-caption-custom {
     display: none;
@@ -85,9 +91,6 @@
   #carousel .caption-text {
     display: none;
   }
-}
-#index-page #overview {
-  margin-bottom: 50px;
 }
 #index-page #overview li a {
   font-size: 20px;
@@ -131,70 +134,48 @@
   height: 175px;
 }
 #index-page .featured-stories .story .caption {
-  height: 175px;
   padding: 20px 0 0 0;
 }
-#index-page .featured-stories .story.research .image {
-  background-image: url(http://previews.123rf.com/images/ronstik/ronstik1210/ronstik121000026/15941072-man-writes-mathematical-equations-on-whiteboard-Stock-Photo-formula-math-board.jpg);
+#index-page #center-content {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-#index-page .featured-stories .story.webinar .image {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0c/White_House_teleconference_for_Hurricane_Sandy.jpg);
+#index-page #center-content #quote {
+  padding: 30px;
 }
-#index-page .featured-stories .story.software .image {
-  background-image: url(http://www.brightintegrasi.com/wp-content/uploads/2015/04/programmer1.jpg);
+#index-page #center-content #quote p {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-style: italic;
 }
-#index-page .featured-stories .story.students .image {
-  background-image: url(http://photos.uc.wisc.edu/photos/12307/original/Bascom_Hill_Frisbee10_7538.jpg?1286781146);
-}
-#index-page .featured-stories .story.events .image {
-  background-image: url(http://zenmarketinginc.com/wp-content/uploads/2015/06/Live-Concert-Event.jpg);
-}
-#index-page .featured-stories #twitter-fetcher-wrapper > p {
-  background-color: #55acee;
+#index-page #center-content #twitter {
+  background-color: #f9f9f9;
   padding: 20px;
+}
+#index-page #center-content #twitter > p {
   text-align: center;
-  height: 175px;
-  margin: 0;
 }
-#index-page .featured-stories #twitter-fetcher-wrapper > p a {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
+#index-page #center-content #twitter #twitter-fetcher li:before {
+  display: none;
 }
-#index-page .featured-stories #twitter-fetcher-wrapper > p:hover {
-  background-color: #3f8bc4;
-}
-#index-page .featured-stories #twitter-fetcher-wrapper #twitter-fetcher {
-  background: #f9f9f9;
-  height: 175px;
-  padding: 20px;
-}
-#index-page .featured-stories #twitter-fetcher-wrapper #twitter-fetcher li:before {
-  content: "";
-}
-#index-page .featured-stories #twitter-fetcher-wrapper #twitter-fetcher li {
+#index-page #center-content #twitter #twitter-fetcher li {
   list-style-type: none;
 }
-#index-page .featured-stories #twitter-fetcher-wrapper #twitter-fetcher .tweet a {
+#index-page #center-content #twitter #twitter-fetcher .tweet a {
   word-wrap: break-word;
   font-size: 16px;
   font-weight: bold;
   text-overflow: ellipsis;
 }
-#index-page .featured-stories #twitter-fetcher-wrapper #twitter-fetcher ul {
+#index-page #center-content #twitter #twitter-fetcher ul {
   padding: 0;
 }
-#index-page .featured-stories #twitter-fetcher-wrapper .fa {
+#index-page #center-content #twitter .fa {
   font-size: 40px;
-  color: white;
+  color: #55acee;
   position: relative;
   top: 30%;
 }
-#index-page #full-width-content #quote {
-  padding: 40px;
-}
-#index-page #full-width-content #quote p {
-  font-family: 'Georgia', serif;
-  font-size: 20px;
-  font-style: italic;
+#index-page #center-content #twitter .fa:hover {
+  color: #3f8bc4;
 }

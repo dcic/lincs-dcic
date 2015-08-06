@@ -2,11 +2,15 @@
 
 #nav {
     background: @color-nav;
-    border-bottom: 1px solid @color-nav-hover;
+    border-top: 0;
     padding: 0;
     min-height: 0;
+    border-bottom: 3px solid @color-nav;
+    &:hover {
+        border-bottom: 3px solid @color-nav-hover;
+    }
     a {
-        color: #444;
+        color: white;
         display: inline-block;
         font-family: @font-family-accent;
         font-size: 20px;
@@ -14,20 +18,17 @@
     }
     ul {
         margin-bottom: 0;
+        line-height: 1em;
     }
     li {
         /* This is to ensure the nav doesn't bump down on hover. */
-        border-bottom: 2px solid @color-nav;
         padding: 8px;
         a {
             font-size: 18px;
             padding: 0;
-            &:focus {
-                background-color: @color-nav;
-            }
         }
         &:hover {
-            border-bottom: 2px solid @color-nav-hover;
+            background-color: @color-nav-hover;
         }
         .subnav {
             background-color: @color-nav-hover;
@@ -41,12 +42,12 @@
                     font-family: @font-family-base;
                     font-size: 14px;
                     &:hover {
-                        background-color: @color-nav !important;
+                        background-color: @color-nav-hover !important;
+                        color: @color-primary-dusky-light;
                     }
-                }
-                &:hover {
-                    background-color: @color-nav;
-                    border-bottom: none;
+                    &:focus {
+                        background-color: @color-nav-hover;
+                    }
                 }
             }
         }
@@ -59,6 +60,9 @@
              */
             font-size: 16px;
         }
+    }
+    .dropdown.open {
+        background-color: @color-nav-hover;
     }
 }
 #brand {
@@ -111,15 +115,29 @@
 .navbar-default .navbar-toggle .icon-bar {
     background-color: @color-white;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle {
+.navbar-default .navbar-toggle {
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
         background: @color-primary-dark;
     }
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: @color-nav-hover;
 }
 @media (min-width: 979px) {
     ul.nav li.dropdown:hover > ul.dropdown-menu {
         display: block;
     }
+}
+@media (max-width: 1000px) {
+    #nav {
+        li {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
 }

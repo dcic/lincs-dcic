@@ -4,18 +4,20 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
     $scope.datasets = [
         {
             title: "Submit your gene signatures for analysis",
-            url: "#/analyze",
+            url: "#/analyze#nav",
             target: "_self"
         },
         {
             title: "Data and Signature Generation Centers",
-            url: "#/datacenters",
-            target: "_self"
+            url: "#/datacenters#nav",
+            target: "_self",
+            showOnIndexPage: true
         },
         {
             title: "L1000 data on GEO",
             url: "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138",
-            target: "_blank"
+            target: "_blank",
+            showOnIndexPage: true
         },
         {
             title: "L1000 and P100 data on lincscloud.org",

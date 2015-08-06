@@ -82,13 +82,19 @@ mod.controller("calendarCtrl", ["$scope", function($scope) {
         CALENDAR_ID = "dl9fj86o2ohe7o823s7jar920s%40group.calendar.google.com",
         OPTIONS = "&orderBy=startTime&singleEvents=true";
 
-    $.ajax({
-        type: "GET",
-        url: "https://www.googleapis.com/calendar/v3/calendars/" + CALENDAR_ID + "/events?key=" + API_KEY + OPTIONS,
-        success: function(data) {
-            $scope.$apply(function() {
-                $scope.events = cleanFeed(data.items);
-            });
-        }
+    $scope.getEvents = function(cb) {
+        $.ajax({
+            type: "GET",
+            url: "https://www.googleapis.com/calendar/v3/calendars/" + CALENDAR_ID + "/events?key=" + API_KEY + OPTIONS,
+            success: function(data) {
+                $scope.$apply(function() {
+                    cb(cleanFeed(data.items));
+                });
+            }
+        });
+    };
+
+    $scope.getEvents(function(data) {
+        $scope.events = data;
     });
 }]);

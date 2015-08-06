@@ -11,100 +11,59 @@
                     <div class="col-md-4">
                         <ul>
                             <li ng-repeat="item in overviewList">
-                                <a href="{{item.link}}">{{item.title}}</a>
+                                <a href="{{item.url}}">{{item.title}}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row featured-stories">
-                <div class="col-md-4">
-                    <div class="story research">
-                        <div class="image"></div>
-                        <div class="caption">
-                            <h2>Research</h2>
-                            <p>Focus on construction of high fidelity networks from LINCS data combined with other resources.</p>
-                            <ul>
-                                <li>
-                                    <a href="#/datacenters#nav">Data and Signature Generating Centers</a>
-                                </li>
-                                <li>
-                                    <a href="#/publications#nav">Publications</a>
-                                </li>
-                                <li>
-                                    <a href="#/edsr#nav">Collaborate with Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="story software">
-                        <div class="image"></div>
-                        <div class="caption">
-                            <h2>Software</h2>
-                            <p>The DCIC develops web-based tools for integrative data access and visualization across the distributed LINCS and BD2K sites and other relevant data sources.</p>
-                            <ul>
-                                <li>
-                                    <a href="#/resources#nav">Tools</a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/dcic" target="_blank">Open Source Code</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="story webinar">
-                        <div class="image"></div>
-                        <div class="caption">
-                            <h2>Webinars</h2>
-                            <p>These webinars provide a forum for data scientists within and outside of the LINCS project to present their work on problems related to LINCS data analysis and integration.</p>
-                            <ul></ul><a href="#/webinars#nav" class="link-without-list">Listen In</a>
+                <div ng-repeat="story in stories">
+                    <div ng-if="story.location == 'top'" class="story">
+                        <div class="col-md-4 story {{story.domClass}}">
+                            <div class="image" style="background-image: url({{story.image}});"></div>
+                            <div class="caption">
+                                <h2>{{story.title}}</h2>
+                                <p>{{story.description}}</p>
+                                <ul>
+                                    <li ng-repeat="link in story.links">
+                                        <a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="full-width-content">
-                        <div id="quote">
-                            <p>The BD2K-LINCS DCIC is part of the Big Data to Knowledge (BD2K) NIH initiative, and it is the data coordination center for the NIH Common Fund's Library of Integrated Network-based Cellular Signatures (LINCS) program.</p>
-                        </div>
+            <div id="center-content" class="row">
+                <div class="col-md-8">
+                    <div id="quote">
+                        <p>The BD2K-LINCS DCIC is part of the Big Data to Knowledge (BD2K) NIH initiative, and it is the data coordination center for the NIH Common Fund's Library of Integrated Network-based Cellular Signatures (LINCS) program.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="twitter">
+                        <p>
+                            <a href="https://twitter.com/bd2klincsdcic" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </p>
+                        <div id="twitter-fetcher"></div>
                     </div>
                 </div>
             </div>
             <div class="row featured-stories">
-                <div class="col-md-4">
-                    <div class="story students">
-                        <div class="image"></div>
+                <div class="col-md-4" ng-repeat="story in stories">
+                    <div ng-if="story.location == 'bottom'" class="story {{story.domClass}}">
+                        <div class="image" style="background-image: url({{story.image}});"></div>
                         <div class="caption">
-                            <h2>Summer Students</h2>
-                            <p>Research intensive ten-week training program in biomedical big data science .</p>
-                            <a href="#/summer-fellows#nav" class="link-without-list">Meet Them</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="story events">
-                        <div class="image"></div>
-                        <div class="caption">
-                            <h2>Events</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            <a href="#/news#nav" class="link-without-list">More News</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="twitter">
-                        <div id="twitter-fetcher-wrapper">
-                            <p>
-                                <a href="https://twitter.com/bd2klincsdcic" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </p>
-                            <div id="twitter-fetcher"></div>
+                            <h2>{{story.title}}</h2>
+                            <p>{{story.description}}</p>
+                            <ul>
+                                <li ng-repeat="link in story.links">
+                                    <a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

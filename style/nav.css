@@ -5,13 +5,17 @@
 /* fonts */
 /* Specific variables. */
 #nav {
-  background: #f9f9f9;
-  border-bottom: 1px solid #dddddd;
+  background: #3593b1;
+  border-top: 0;
   padding: 0;
   min-height: 0;
+  border-bottom: 3px solid #3593b1;
+}
+#nav:hover {
+  border-bottom: 3px solid #09505b;
 }
 #nav a {
-  color: #444;
+  color: white;
   display: inline-block;
   font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 20px;
@@ -19,24 +23,21 @@
 }
 #nav ul {
   margin-bottom: 0;
+  line-height: 1em;
 }
 #nav li {
   /* This is to ensure the nav doesn't bump down on hover. */
-  border-bottom: 2px solid #f9f9f9;
   padding: 8px;
 }
 #nav li a {
   font-size: 18px;
   padding: 0;
 }
-#nav li a:focus {
-  background-color: #f9f9f9;
-}
 #nav li:hover {
-  border-bottom: 2px solid #dddddd;
+  background-color: #09505b;
 }
 #nav li .subnav {
-  background-color: #dddddd;
+  background-color: #09505b;
   border: none;
   margin: 0;
   padding: 0;
@@ -50,11 +51,11 @@
   font-size: 14px;
 }
 #nav li .subnav li a:hover {
-  background-color: #f9f9f9 !important;
+  background-color: #09505b !important;
+  color: #c7e8f2;
 }
-#nav li .subnav li:hover {
-  background-color: #f9f9f9;
-  border-bottom: none;
+#nav li .subnav li a:focus {
+  background-color: #09505b;
 }
 #nav .navbar-right a {
   /* This is scaled to fit with links on the left side.
@@ -62,6 +63,9 @@
              * border is still flush.
              */
   font-size: 16px;
+}
+#nav .dropdown.open {
+  background-color: #09505b;
 }
 #brand {
   padding-top: 15px;
@@ -113,16 +117,22 @@
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
-.navbar-default .navbar-toggle:hover:hover,
 .navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:hover:active,
-.navbar-default .navbar-toggle:active,
-.navbar-default .navbar-toggle:hover:focus,
-.navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:active {
   background: #09505b;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #09505b;
 }
 @media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
+  }
+}
+@media (max-width: 1000px) {
+  #nav li a {
+    font-size: 14px;
   }
 }

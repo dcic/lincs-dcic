@@ -11,16 +11,16 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             url: '#/about',
             subnav: [
                 {
-                    title: 'DCIC',
+                    title: 'BD2K-LINCS DCIC',
                     url: '#/about#intro'
-                },
-                {
-                    title: 'Team',
-                    url: '#/about#team'
                 },
                 {
                     title: 'Data and Signature Generating Centers',
                     url: '#datacenters'
+                },
+                {
+                    title: 'Team',
+                    url: '#/about#team'
                 }
             ]
         },
@@ -33,8 +33,18 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
                     url: '#/summer-fellows'
                 },
                 {
-                    title: 'Webinars',
+                    title: 'Big Data Science on Coursera',
+                    url: 'https://www.coursera.org/course/bd2klincs',
+                    target: '_blank'
+                },
+                {
+                    title: 'Data Science Research Webinars',
                     url: '#/webinars'
+                },
+                {
+                    title: 'Big Data Biostatistics PhD Program',
+                    url: 'http://eh.uc.edu/',
+                    target: '_blank'
                 }
             ]
         },

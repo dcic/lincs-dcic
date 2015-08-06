@@ -9,5 +9,8 @@ lib/jquery-ui-1.11.4.custom/
 images/source/photographs/
 images/source/intro diagram/
 
-# VIM
+# Vim
 *.swp
+
+# WebStorm
+.idea/

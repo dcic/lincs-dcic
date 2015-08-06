@@ -47,6 +47,14 @@ h6 {
   border: none;
   border-radius: 0;
 }
+/* Bootstrap overrides
+ * ------------------------------------------------------------------------- */
+.navbar {
+  border-radius: 0;
+}
+.navbar-nav > li > .dropdown-menu {
+  border-radius: 0;
+}
 /* Structal elements: wrapper, header, footer, and related content.
  * ------------------------------------------------------------------------- */
 #wrapper {
@@ -109,6 +117,8 @@ h6 {
  * to content on the main page. "catgory-page" refers to content on
  * individual pages.
  * ------------------------------------------------------------------------- */
+#index-page ol,
+.category-page ol,
 #index-page ul,
 .category-page ul {
   padding: 0 0 0 15px;
@@ -143,6 +153,9 @@ h6 {
   color: #09505b;
   text-decoration: underline;
 }
+.category-page#analysis {
+  margin-top: 20px;
+}
 .category-page#analysis .col-md-4 textarea {
   height: 200px;
   width: 100%;
@@ -155,7 +168,7 @@ h6 {
 .category-page#analysis .submitted {
   position: absolute;
   padding: 1.6em;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   left: 3em;
 }
 .category-page#analysis #example {
@@ -283,6 +296,9 @@ h6 {
 }
 .category-page #team h4 {
   font-weight: bold;
+}
+.category-page#summer-fellows h3 {
+  margin-top: 0;
 }
 .category-page#summer-fellows h4 {
   margin-bottom: 0;

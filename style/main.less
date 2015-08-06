@@ -45,6 +45,15 @@ h6 {
     border-radius: 0;
 }
 
+/* Bootstrap overrides
+ * ------------------------------------------------------------------------- */
+.navbar {
+    border-radius: 0;
+}
+.navbar-nav > li > .dropdown-menu {
+    border-radius: 0;
+}
+
 /* Structal elements: wrapper, header, footer, and related content.
  * ------------------------------------------------------------------------- */
 #wrapper {
@@ -118,6 +127,7 @@ h6 {
  * ------------------------------------------------------------------------- */
 #index-page,
 .category-page {
+    ol,
     ul {
 		padding: 0 0 0 15px;
 	}
@@ -150,6 +160,7 @@ h6 {
         }
     }
     &#analysis {
+        margin-top: 20px;
         .col-md-4 {
             textarea {
                 height: 200px;
@@ -166,7 +177,7 @@ h6 {
         .submitted {
             position: absolute;
             padding: 1.6em;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             left: 3em;
         }
         #example {
@@ -305,6 +316,9 @@ h6 {
         }
     }
     &#summer-fellows {
+        h3 {
+            margin-top: 0;
+        }
         h4 {
             margin-bottom: 0;
         }

@@ -18,7 +18,7 @@
                         <a data-toggle="dropdown" href="{{cat.url}}">{{cat.title}}</a>
                         <ul ng-if="cat.subnav" class="dropdown-menu subnav">
                             <li ng-repeat="subcat in cat.subnav">
-                                <a href="{{subcat.url}}">{{subcat.title}}</a>
+                                <a href="{{subcat.url}}" target="{{subcat.target}}">{{subcat.title}}</a>
                             </li>
                         </ul>
                     </li>

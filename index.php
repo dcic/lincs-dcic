@@ -51,7 +51,6 @@
 	<script src='/lib/bower_components/moment/min/moment.min.js'></script>
 	<script src='/lib/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
 	<script src='/lib/bower_components/fullcalendar/dist/gcal.js'></script>
-	<script src="/lib/bower_components/bootstrap/js/dropdown.js"></script>
 	<script src="/lib/bower_components/bootstrap/js/collapse.js"></script>
 	<script src="/lib/bower_components/bootstrap/js/carousel.js"></script>
 	<script src="/lib/bower_components/bootstrap/js/transition.js"></script>
