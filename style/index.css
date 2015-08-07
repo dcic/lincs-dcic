@@ -163,9 +163,12 @@
 }
 #index-page #center-content #twitter #twitter-fetcher .tweet a {
   word-wrap: break-word;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-overflow: ellipsis;
+}
+#index-page #center-content #twitter #twitter-fetcher .tweet a:hover {
+  text-decoration: underline;
 }
 #index-page #center-content #twitter #twitter-fetcher ul {
   padding: 0;

@@ -107,7 +107,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
         {
             location: 'bottom',
             title: 'Outreach',
-            image: 'http://photos.uc.wisc.edu/photos/12307/original/Bascom_Hill_Frisbee10_7538.jpg?1286781146',
+            image: DIR + 'summer.jpg',
             description: 'The DCIC\'s outreach includes a research intensive summer program for undergraduates and Massive Open Online Courses.',
             links: [
                 {
