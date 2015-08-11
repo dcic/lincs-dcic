@@ -10,8 +10,7 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
         {
             title: "Data and Signature Generation Centers",
             url: "#/datacenters#nav",
-            target: "_self",
-            showOnIndexPage: true
+            target: "_self"
         },
         {
             title: "L1000 data on GEO",

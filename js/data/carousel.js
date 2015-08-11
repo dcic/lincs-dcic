@@ -33,4 +33,10 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         }
     ];
+
+    $(function() {
+       $('#carousel').carousel({
+           interval: 5000
+       });
+    });
 }]);

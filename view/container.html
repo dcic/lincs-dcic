@@ -27,7 +27,8 @@
                                 <p>{{story.description}}</p>
                                 <ul>
                                     <li ng-repeat="link in story.links">
-                                        <a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
+                                        <span ng-if="link.url != ''"><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></span>
+                                        <span ng-if="link.url == ''">{{link.title}}</span>
                                     </li>
                                 </ul>
                             </div>

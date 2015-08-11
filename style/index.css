@@ -107,6 +107,9 @@
 #index-page .featured-stories .story h2 {
   border-bottom: 1px solid #dddddd;
 }
+#index-page .featured-stories .story span {
+  font-weight: bold;
+}
 #index-page .featured-stories .story a.link-without-list {
   font-weight: bold;
 }

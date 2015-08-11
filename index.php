@@ -37,7 +37,7 @@
         <div ng-include="'view/partial/header.html'"></div>
 
         <!-- ng-view is used rather than ng-include to handle routing. -->
-        <div id="content-wrapper" ng-view></div>
+        <div id="content-wrapper" class="container" ng-view></div>
 
     </div>
 
