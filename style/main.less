@@ -4,11 +4,28 @@
 
 @import "variable.less";
 
+
+/* Sticky Footer. Do not change.
+ * ----------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: @dim-footer-height; /* bottom = footer height */
+}
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: @dim-footer-height;
+    width: 100%;
+}
+
 /* Tag selectors, i.e. global settings.
  * ------------------------------------------------------------------------- */
 html,
 body {
-    height: 100%;
     font-family: @font-family-base;
 }
 a {
@@ -23,12 +40,7 @@ a {
 		text-decoration: none;
 	}
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: @font-family-accent;
 }
 .left {
@@ -44,6 +56,9 @@ h6 {
     border: none;
     border-radius: 0;
 }
+.underline {
+    text-decoration: underline;
+}
 
 /* Bootstrap overrides
  * ------------------------------------------------------------------------- */
@@ -56,13 +71,11 @@ h6 {
 
 /* Structal elements: wrapper, header, footer, and related content.
  * ------------------------------------------------------------------------- */
-#wrapper {
-    background: @color-white;
-	min-height: 100%;
-    height: auto;
-}
 #header {
     border-bottom: 1px solid @color-gray-light;
+}
+#wrapper {
+    padding-bottom: 50px;
 }
 #content-wrapper {
     #index {
@@ -81,8 +94,7 @@ h6 {
 }
 #footer {
     background: #444;
-    height: auto;
-    margin-top: 40px;
+    height: @dim-footer-height;
     padding: 30px 0;
 	a,
 	p {
@@ -315,7 +327,7 @@ h6 {
             font-weight: bold;
         }
     }
-    &#summer-fellows {
+    &#summer-fellows-2015 {
         h3 {
             margin-top: 0;
         }
@@ -324,6 +336,31 @@ h6 {
         }
         .project {
             margin-bottom: 0;
+        }
+    }
+    &#internal-dsrp {
+        img {
+            width: 100%;
+        }
+        .caption {
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 15px;
+        }
+        section {
+            margin-top: 10px;
+        }
+    }
+    &#workshops-etc {
+        section {
+            margin-bottom: 20px;
+        }
+    }
+    &#seminar-series {
+        table {
+            p {
+                margin: 0;
+            }
         }
     }
 }

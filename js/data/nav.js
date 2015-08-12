@@ -30,7 +30,7 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             subnav: [
                 {
                     title: 'Summer Fellows',
-                    url: '#/summer-fellows'
+                    url: '#/summer-fellows-2015'
                 },
                 {
                     title: 'Big Data Science on Coursera',
@@ -58,7 +58,17 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
         },
         {
             title: 'News and Events',
-            url: '#/news'
+            url: '#/news',
+            subnav: [
+                {
+                    title: 'Workshops, Seminars, Symposia',
+                    url: '#/workshops-seminars-symposia#nav'
+                },
+                {
+                    title: 'BD2K-LINCS DCIC Seminar Series',
+                    url: '#/seminar-series#nav'
+                }
+            ]
         },
         {
             title: 'Funding Opportunities',

@@ -8,8 +8,11 @@ var mod = angular.module("lincsDcic", [
  	"datasetsMod",
 	"emailMod",
 	"edsrappMod",
+	"externalDsrpMod",
 	"fundingMod",
+	"htmlFilters",
 	"indexMod",
+	"internalDsrpMod",
  	"introMod",
  	"newsMod",
  	"publicationsMod",
@@ -17,9 +20,10 @@ var mod = angular.module("lincsDcic", [
  	"toolsMod",
  	"trainingMod",
  	"navMod",
+	"seminarSeriesMod",
  	"summerFellowsMod",
  	"webinarsMod",
- 	"htmlFilters"
+ 	"workshopsEtcMod"
 ]);
 
 mod.config(["$routeProvider", function($routeProvider) {
@@ -82,8 +86,20 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/events", {
 			templateUrl: "view/page/events.html"
 		}).
-		when("/summer-fellows", {
-            templateUrl: "view/page/summer-fellows.html"
+		when("/summer-fellows-2015", {
+            templateUrl: "view/page/summer-fellows-2015.html"
+		}).
+		when("/internal-dsrp", {
+			templateUrl: "view/page/internal-dsrp.html"
+		}).
+		when("/external-dsrp", {
+			templateUrl: "view/page/external-dsrp.html"
+		}).
+		when("/workshops-seminars-symposia", {
+			templateUrl: "view/page/workshops-etc.html"
+		}).
+		when("/seminar-series", {
+			templateUrl: "view/page/seminar-series.html"
 		}).
 
 		/* Default */

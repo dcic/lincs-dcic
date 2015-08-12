@@ -1,0 +1,34 @@
+<div class="container">
+    <div ng-controller="workshopsEtcCtrl" id="workshops-etc" class="row category-page">
+        <h2 class="col-md-12">Workshops, Seminars and Symposia</h2>
+        <p class="col-md-12">The BD2K-LINCS DCIC actively engages the research community through workshops, seminars and symposia to expose them to LINCS data and resources. Our Center aims to provide a bridge that will facilitate access toward integrative data analysis solutions that would combine LINCS data resources with other data to accelerate discoveries.</p>
+        <div class="col-md-6">
+            <h3 class="underline">Workshops</h3>
+            <section ng-repeat="workshop in workshops">
+                <h4>{{workshop.title}}</h4>
+                <p ng-bind-html="workshop.description"></p>
+                <p><em>{{workshop.details}}</em></p>
+            </section>
+            <h3 class="underline">Seminars</h3>
+            <section ng-repeat="seminar in seminars">
+                <h4>{{seminar.title}}</h4>
+                <p ng-bind-html="seminar.description"></p>
+                <p><em>{{seminar.details}}</em></p>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <h3 class="underline">Symposia</h3>
+            <section ng-repeat="symoposia in symposia">
+                <h4>{{symoposia.title}}</h4>
+                <p ng-bind-html="symoposia.description"></p>
+                <p><em>{{symoposia.details}}</em></p>
+            </section>
+            <h3 class="underline">Confererences</h3>
+            <section ng-repeat="conference in conferences">
+                <h4>{{conference.title}}</h4>
+                <p ng-bind-html="conference.description"></p>
+                <p><em>{{conference.details}}</em></p>
+            </section>
+        </div>
+    </div>
+</div>

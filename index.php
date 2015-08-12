@@ -63,17 +63,21 @@
 	<script type="text/javascript" src="js/data/carousel.js"></script>
 	<script type="text/javascript" src="js/data/datacenters.js"></script>
 	<script type="text/javascript" src="js/data/datasets.js"></script>
+	<script type="text/javascript" src="js/data/external-dsrp.js"></script>
     <script type="text/javascript" src="js/data/index.js"></script>
+    <script type="text/javascript" src="js/data/internal-dsrp.js"></script>
     <script type="text/javascript" src="js/data/intro.js"></script>
     <script type="text/javascript" src="js/data/funding.js"></script>
 	<script type="text/javascript" src="js/data/news.js"></script>
 	<script type="text/javascript" src="js/data/publications.js"></script>
 	<script type="text/javascript" src="js/data/nav.js"></script>
-	<script type="text/javascript" src="js/data/summer-fellows.js"></script>
+	<script type="text/javascript" src="js/data/seminar-series.js"></script>
+	<script type="text/javascript" src="js/data/summer-fellows-2015.js"></script>
 	<script type="text/javascript" src="js/data/training.js"></script>
 	<script type="text/javascript" src="js/data/team.js"></script>
 	<script type="text/javascript" src="js/data/tools.js"></script>
 	<script type="text/javascript" src="js/data/webinars.js"></script>
+	<script type="text/javascript" src="js/data/workshops-etc.js"></script>
 
 	<!-- Extra functionality -->
 	<script type="text/javascript" src="js/analyze.js"></script>

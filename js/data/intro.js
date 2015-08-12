@@ -24,7 +24,7 @@ mod.controller("introCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             id: "community-training-and-outreach",
             title: "Community Training and Outreach",
-            text: $sce.trustAsHtml("The Community Training and Outreach (CTO) component established several educational programs, including a <a href='https://www.coursera.org/course/bd2klincs' target='_blank'>Big Data Science MOOC on Coursera</a> and a <a href='#/summer-fellows'>Summer Research Training Program in Biomedical Big Data Science</a>. One of the objectives of the DCIC’s outreach efforts is to train biomedical researchers with LINCS-related experimental methods, datasets, and computational tools. In addition, the CTO is initiating and supporting diverse and collaborative projects that leverage LINCS resources and disseminate LINCS data and tools."),
+            text: $sce.trustAsHtml("The Community Training and Outreach (CTO) component established several educational programs, including a <a href='https://www.coursera.org/course/bd2klincs' target='_blank'>Big Data Science MOOC on Coursera</a> and a <a href='#/summer-fellows-2015'>Summer Research Training Program in Biomedical Big Data Science</a>. One of the objectives of the DCIC’s outreach efforts is to train biomedical researchers with LINCS-related experimental methods, datasets, and computational tools. In addition, the CTO is initiating and supporting diverse and collaborative projects that leverage LINCS resources and disseminate LINCS data and tools."),
             image: DIR + "mooc.png"
         },
         {

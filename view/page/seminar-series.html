@@ -1,0 +1,33 @@
+<div class="container">
+    <div ng-controller="seminarSeriesCtrl" id="seminar-series" class="row category-page">
+        <h2 class="col-md-12">BD2K-LINCS DCIC Seminar Series</h2>
+        <div class="col-md-12">
+            <h3>Invited Speakers</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date | Time | Location</th>
+                        <th>Speaker</th>
+                        <th>Seminar Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="seminar in seminars">
+                        <td>
+                            <p><strong>{{seminar.date}}</strong></p>
+                            <p>{{seminar.time}}</p>
+                            <p>{{seminar.location}}</p>
+                        </td>
+                        <td>
+                            <p><strong>{{seminar.speakerName}}</strong></p>
+                            <p>{{seminar.speakerTitle}}</p>
+                        </td>
+                        <td>
+                            <p>{{seminar.title}}</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

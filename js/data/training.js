@@ -5,7 +5,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
     var LINCS_MOOC_LINK = "https://www.coursera.org/course/bd2klincs",
         SYSBIO_MOOC_LINK = "https://www.coursera.org/course/netsysbio",
         SUMMER_RESEARCH_LINK = "#/srp#nav",
-        SUMMER_FELLOWS_LINK = "#/summer-fellows#nav",
+        SUMMER_FELLOWS_LINK = "#/summer-fellows-2015#nav",
         NETWORK_GAME_LINK = "http://www.maayanlab.net/NASB15/NMG/",
     
         DIR = "/images/general/";

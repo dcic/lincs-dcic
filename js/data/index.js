@@ -71,11 +71,11 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                 },
                 {
                     title: 'External Data Science Research Projects',
-                    url: '#'
+                    url: '#/external-dsrp#nav'
                 },
                 {
                     title: 'Internal Data Science Research Projects',
-                    url: '#'
+                    url: '#/internal-dsrp#nav'
                 }
             ]
         },
@@ -92,7 +92,8 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                 },
                 {
                     title: 'Metadata Standards',
-                    url: ''
+                    url: 'http://www.lincsproject.org/data/data-standards/',
+                    target: '_blank'
                 },
                 {
                     title: 'LINCS Data Registry',
@@ -100,7 +101,8 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                 },
                 {
                     title: 'Harmonizome',
-                    url: ''
+                    url: 'http://maayanlab.net/harmonizome/',
+                    target: '_blank'
                 },
                 {
                     title: 'Gene Set Libraries',
@@ -129,8 +131,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                     target: '_blank'
                 },
                 {
-                    // TODO: Keep this?
-                    title: 'Analyze Your Data',
+                    title: 'Analyze Your Data with the B2DK-LINCS DCIC Tools',
                     url: '#/analyze#nav'
                 },
                 {
@@ -138,14 +139,8 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                     url: '#/resources#global-visualization-of-lincs-data'
                 },
                 {
-                    // TODO: BD2K-LINCS DCIC?
-                    title: 'Analyze Your Data with the DCIC Tools',
-                    url: '#/analyze#nav'
-                },
-                {
                     title: 'APIs',
-                    // TODO: Where does this go?
-                    url: '#'
+                    url: '#/resources#nav'
                 }
             ]
         },
@@ -162,7 +157,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                 },
                 {
                     title: 'Past Trainees',
-                    url: '#/summer-fellows#nav'
+                    url: '#/summer-fellows-2015#nav'
                 },
                 {
                     title: 'Program Description',
@@ -178,13 +173,13 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
             links: [
                 {
                     title: 'Participate in Microtasks',
-                    // TODO: Implement page.
-                    url: '#/microtasks#nav'
+                    url: 'http://www.maayanlab.net/crowdsourcing/',
+                    target: '_blank'
                 },
                 {
                     title: 'Participate in Megatasks',
-                    // TODO: Implement page.
-                    url: '#/megatasks#nav'
+                    url: 'http://www.maayanlab.net/crowdsourcing/',
+                    target: '_blank'
                 },
                 {
                     title: 'Data Science Course on Coursera',
@@ -210,19 +205,12 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                     url: '#/webinars#nav'
                 },
                 {
-                    title: 'Workshops',
-                    // TODO: Implement page.
-                    url: '#/workshops#nav'
+                    title: 'Workshops, Seminars, Symposia',
+                    url: '#/workshops-seminars-symposia#nav'
                 },
                 {
-                    title: 'Symposiums',
-                    // TODO: Implement page.
-                    url: '#/symposium#nav'
-                },
-                {
-                    title: 'Seminars',
-                    // TODO: Implement page.
-                    url: '#/seminars#nav'
+                    title: 'BD2K-LINCS DCIC Seminar Series',
+                    url: '#/seminar-series#nav'
                 }
             ]
         }

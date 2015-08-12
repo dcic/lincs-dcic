@@ -7,11 +7,27 @@
 /* Logo and accent colors */
 /* fonts */
 /* Specific variables. */
+/* Sticky Footer. Do not change.
+ * ----------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 200px;
+  /* bottom = footer height */
+}
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+}
 /* Tag selectors, i.e. global settings.
  * ------------------------------------------------------------------------- */
 html,
 body {
-  height: 100%;
   font-family: 'Arial', sans-serif;
 }
 a {
@@ -47,6 +63,9 @@ h6 {
   border: none;
   border-radius: 0;
 }
+.underline {
+  text-decoration: underline;
+}
 /* Bootstrap overrides
  * ------------------------------------------------------------------------- */
 .navbar {
@@ -57,13 +76,11 @@ h6 {
 }
 /* Structal elements: wrapper, header, footer, and related content.
  * ------------------------------------------------------------------------- */
-#wrapper {
-  background: #ffffff;
-  min-height: 100%;
-  height: auto;
-}
 #header {
   border-bottom: 1px solid #f1f1f1;
+}
+#wrapper {
+  padding-bottom: 50px;
 }
 #content-wrapper #index img.icon {
   padding: 10px;
@@ -78,8 +95,7 @@ h6 {
 }
 #footer {
   background: #444;
-  height: auto;
-  margin-top: 40px;
+  height: 200px;
   padding: 30px 0;
 }
 #footer a,
@@ -297,14 +313,31 @@ h6 {
 .category-page #team h4 {
   font-weight: bold;
 }
-.category-page#summer-fellows h3 {
+.category-page#summer-fellows-2015 h3 {
   margin-top: 0;
 }
-.category-page#summer-fellows h4 {
+.category-page#summer-fellows-2015 h4 {
   margin-bottom: 0;
 }
-.category-page#summer-fellows .project {
+.category-page#summer-fellows-2015 .project {
   margin-bottom: 0;
+}
+.category-page#internal-dsrp img {
+  width: 100%;
+}
+.category-page#internal-dsrp .caption {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 15px;
+}
+.category-page#internal-dsrp section {
+  margin-top: 10px;
+}
+.category-page#workshops-etc section {
+  margin-bottom: 20px;
+}
+.category-page#seminar-series table p {
+  margin: 0;
 }
 .right-nav img {
   width: 100%;
