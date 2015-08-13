@@ -59,8 +59,8 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/webinars", {
 			templateUrl: "view/page/webinars.html"
 		}).
-		when("/srp", {
-			templateUrl: "view/page/srp.html"
+		when("/summer-research-app", {
+			templateUrl: "view/page/summer-research-app.html"
 		}).
 		when("/phd", {
 			templateUrl: "view/page/phd.html"

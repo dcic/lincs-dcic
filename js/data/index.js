@@ -1,26 +1,8 @@
 var mod = angular.module("indexMod", []);
 
-mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $sce, $controller) {
+mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     var DIR = '/images/index/';
-
-    var datasetsCtrlScope = $scope.$new();
-    $controller('datasetsCtrl', { $scope: datasetsCtrlScope });
-    var datasets = _.filter(datasetsCtrlScope.datasets, function(obj) {
-        return obj.showOnIndexPage;
-    });
-
-    /*var calendarCtrlScope = $scope.$new();
-    $controller('calendarCtrl', { $scope: calendarCtrlScope });
-    calendarCtrlScope.getEvents(function(data) {
-        var $eventsList = $('.events .caption ul'),
-            html;
-        html = _.map(data.upcoming.slice(0,2), function(obj) {
-            return '<li><a href="' + obj.link + '" target="_blank">' + obj.title + '</a>';
-        });
-        html += '<li><a href="#/news#nav">More</a>';
-        $eventsList.html(html);
-    });*/
 
     $scope.overviewText = $sce.trustAsHtml("The BD2K-LINCS DCIC is comprised of four major components: Integrated Knowledge Environment (IKE), Data Science Research (DSR), Community Training and Outreach (CTO) and Consortium Coordination and Administration (CCA). The Center is constructing a high-capacity scalable integrated knowledge environment enabling federated access, intuitive querying and integrative analysis and visualization across all LINCS resources and many additional external data types from other relevant resources. The Center’s data science research projects are aimed at addressing various data integration and intracellular molecular regulatory network challenges. The Center aims to develop: 1) methods to connect cellular and organismal phenotypes with molecular cellular signatures, and 2) novel data visualization methods for dynamically interacting with large-genomics and proteomics datasets.");
 
@@ -82,14 +64,9 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
         {
             location: 'top',
             title: 'Data',
-            image: DIR + 'big-data.png',
+            image: DIR + 'data.png',
             description: 'The BD2K-LINCS DCIC works with the Data and Signature Generation Centers to standardize metadata, integerate integrate datasets, and federate access to LINCS data.',
-            links: datasets.concat([
-                {
-                    title: 'Data Standards and Releases on lincsproject.org',
-                    url: 'http://www.lincsproject.org/data/',
-                    target: '_target'
-                },
+            links: [
                 {
                     title: 'Metadata Standards',
                     url: 'http://www.lincsproject.org/data/data-standards/',
@@ -108,12 +85,8 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                     title: 'Gene Set Libraries',
                     url: 'http://amp.pharm.mssm.edu/Enrichr/#stats',
                     target: '_blank'
-                },
-                {
-                    title: 'BD2K-LINCS DCIC Data Portal (under construction)',
-                    url: ''
                 }
-            ])
+            ]
         },
         {
             location: 'top',
@@ -126,17 +99,17 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                     url: '#/resources#nav'
                 },
                 {
-                    title: 'Open Source Code',
-                    url: 'https://github.com/dcic',
-                    target: '_blank'
+                    title: 'Global View of LINCS Datasets',
+                    url: '#/resources#global-visualization-of-lincs-data'
                 },
                 {
-                    title: 'Analyze Your Data with the B2DK-LINCS DCIC Tools',
+                    title: 'Analyze Your Data',
                     url: '#/analyze#nav'
                 },
                 {
-                    title: 'Global View of LINCS Datasets',
-                    url: '#/resources#global-visualization-of-lincs-data'
+                    title: 'Open Source Code',
+                    url: 'https://github.com/dcic',
+                    target: '_blank'
                 },
                 {
                     title: 'APIs',
@@ -146,22 +119,22 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
         },
         {
             location: 'bottom',
-            title: 'Summer Research Program',
-            image: DIR + 'summer.jpg',
+            title: 'Training',
+            image: DIR + 'summer.png',
             description: 'The BD2K-LINCS DCIC Summer Research Program is a research intensive, ten week training program for undergraduates in big data biomedical science.',
             links: [
                 {
-                    title: 'Online Application',
-                    url: 'https://docs.google.com/forms/d/1_gQ7En4jgWBZeAuV0gzg2TmOpgm0EQTfPF3hHY2e-go/viewform',
+                    title: 'Data Science Course on Coursera',
+                    url: 'https://www.coursera.org/course/bd2klincs',
                     target: '_blank'
                 },
                 {
-                    title: 'Past Trainees',
-                    url: '#/summer-fellows-2015#nav'
+                    title: 'Summer Research',
+                    url: '#/summer-research-app#nav'
                 },
                 {
-                    title: 'Program Description',
-                    url: '#/srp#nav'
+                    title: 'Postdoctoral Positions',
+                    url: '#/jobs#postdoctoral-positions'
                 }
             ]
         },
@@ -179,11 +152,6 @@ mod.controller("indexCtrl", ["$scope", "$sce", "$controller", function($scope, $
                 {
                     title: 'Participate in Megatasks',
                     url: 'http://www.maayanlab.net/crowdsourcing/',
-                    target: '_blank'
-                },
-                {
-                    title: 'Data Science Course on Coursera',
-                    url: 'https://www.coursera.org/course/bd2klincs',
                     target: '_blank'
                 },
                 {

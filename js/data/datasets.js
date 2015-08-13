@@ -15,8 +15,7 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
         {
             title: "L1000 data on GEO",
             url: "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138",
-            target: "_blank",
-            showOnIndexPage: true
+            target: "_blank"
         },
         {
             title: "L1000 and P100 data on lincscloud.org",
