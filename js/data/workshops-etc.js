@@ -43,7 +43,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.seminars = [
         {
-            title: '',
+            title: 'Community Science Project to Link Drugs, Targets and Diseases from Expression Signatures',
             description: $sce.trustAsHtml('Avi Ma’ayan PhD was an invited speaker for the Computational Biology Seminar Series at IBM T.J. Watson Research Center.'),
             details: 'March 4, 2015, Yorktown Heights, NY'
         },
