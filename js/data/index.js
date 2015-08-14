@@ -39,7 +39,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.stories = [
         {
             location: 'top',
-            title: 'Research',
+            title: 'Data Science',
             image: DIR + 'research.png',
             description: 'The BD2K-LINCS DCIC focuses on construction of high fidelity networks from LINCS data combined with other resources.',
             links: [
@@ -48,24 +48,24 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                     url: '#/publications#nav'
                 },
                 {
-                    title: 'Collaborate with Us',
-                    url: '#/edsr#nav'
+                    title: 'Internal Projects',
+                    url: '#/internal-dsrp#nav'
                 },
                 {
-                    title: 'External Data Science Research Projects',
+                    title: 'External Projects',
                     url: '#/external-dsrp#nav'
                 },
                 {
-                    title: 'Internal Data Science Research Projects',
-                    url: '#/internal-dsrp#nav'
+                    title: 'Collaborate with Us',
+                    url: '#/edsr#nav'
                 }
             ]
         },
         {
             location: 'top',
-            title: 'Data',
+            title: 'Data Integration',
             image: DIR + 'data.png',
-            description: 'The BD2K-LINCS DCIC works with the Data and Signature Generation Centers to standardize metadata, integerate integrate datasets, and federate access to LINCS data.',
+            description: 'Aims of the BD2K-LINCS DCIC include standardizing metadata, integrating datasets, and federating access to LINCS data.',
             links: [
                 {
                     title: 'Metadata Standards',
@@ -92,7 +92,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             location: 'top',
             title: 'Software',
             image: DIR + 'software.jpg',
-            description: 'The BD2K-LINCS DCIC develops web-based tools for integrative data access and visualization across the distributed LINCS and BD2K sites and other relevant data sources.',
+            description: 'We are developing tools for integrative data access and visualization across LINCS, BD2K and other relevant data sources.',
             links: [
                 {
                     title: 'Tools and Apps',
@@ -103,13 +103,8 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                     url: '#/resources#global-visualization-of-lincs-data'
                 },
                 {
-                    title: 'Analyze Your Data',
+                    title: 'Analyze Your Gene Signatures',
                     url: '#/analyze#nav'
-                },
-                {
-                    title: 'Open Source Code',
-                    url: 'https://github.com/dcic',
-                    target: '_blank'
                 },
                 {
                     title: 'APIs',
@@ -121,7 +116,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             location: 'bottom',
             title: 'Training',
             image: DIR + 'summer.png',
-            description: 'The BD2K-LINCS DCIC Summer Research Program is a research intensive, ten week training program for undergraduates in big data biomedical science.',
+            description: 'Our Center actively engages the research community by delivering data science courses as well as through mentoring trainees.',
             links: [
                 {
                     title: 'Data Science Course on Coursera',
@@ -142,7 +137,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             location: 'bottom',
             title: 'Crowdsourcing',
             image: DIR + 'webinars.png',
-            description: 'For problems that are difficult for machine learning and automation, crowdsourcing is a powerful alterantive. The BD2K-LINCS DCIC offers several crowdsourcing projects and tools.',
+            description: 'The BD2K-LINCS DCIC developed a crowdsourcing portal which engages the research community in various micro- and megatasks.',
             links: [
                 {
                     title: 'Participate in Microtasks',
@@ -166,18 +161,18 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             title: 'Events',
             domClass: 'events',
             image: DIR + 'events.jpg',
-            description: 'Participate in upcoming BD2K-LINCS DCIC events.',
+            description: 'The BD2K-LINCS DCIC uses webinars, training seminars, challenges, workshops and symposia to create an active LINCS community.',
             links: [
                 {
                     title: 'Webinars',
                     url: '#/webinars#nav'
                 },
                 {
-                    title: 'Workshops, Seminars, Symposia',
+                    title: 'Community Outreach',
                     url: '#/workshops-seminars-symposia#nav'
                 },
                 {
-                    title: 'BD2K-LINCS DCIC Seminar Series',
+                    title: 'Invited Seminar Series',
                     url: '#/seminar-series#nav'
                 }
             ]

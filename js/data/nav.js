@@ -8,19 +8,15 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
     $scope.categories = [
         {
             title: 'About',
-            url: '#/about',
+            url: '#/about#nav',
             subnav: [
                 {
-                    title: 'BD2K-LINCS DCIC',
-                    url: '#/about#intro'
+                    title: 'Internal Projects',
+                    url: '#/internal-dsrp#nav'
                 },
                 {
-                    title: 'Data and Signature Generating Centers',
-                    url: '#datacenters'
-                },
-                {
-                    title: 'Team',
-                    url: '#/about#team'
+                    title: 'External Projects',
+                    url: '#/external-dsrp#nav'
                 }
             ]
         },
@@ -29,22 +25,16 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             url: '#/training',
             subnav: [
                 {
-                    title: 'Summer Fellows',
-                    url: '#/summer-fellows-2015'
+                    title: 'Summer Research',
+                    url: '#/summer-research-app#nav'
                 },
                 {
-                    title: 'Big Data Science on Coursera',
-                    url: 'https://www.coursera.org/course/bd2klincs',
-                    target: '_blank'
+                    title: 'Webinars',
+                    url: '#/webinars#nav'
                 },
                 {
-                    title: 'Data Science Research Webinars',
-                    url: '#/webinars'
-                },
-                {
-                    title: 'Big Data Biostatistics PhD Program',
-                    url: 'http://eh.uc.edu/',
-                    target: '_blank'
+                    title: 'Community Outreach',
+                    url: '#/workshops-seminars-symposia#nav'
                 }
             ]
         },
@@ -61,12 +51,12 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             url: '#/news',
             subnav: [
                 {
-                    title: 'Workshops, Seminars, Symposia',
-                    url: '#/workshops-seminars-symposia#nav'
+                    title: 'Invited Seminar Series',
+                    url: '#/seminar-series#nav'
                 },
                 {
-                    title: 'BD2K-LINCS DCIC Seminar Series',
-                    url: '#/seminar-series#nav'
+                    title: '2014 Big Data Symposium',
+                    url: '#/2014-big-data-symposium#nav'
                 }
             ]
         },
