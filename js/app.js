@@ -2,6 +2,7 @@ var mod = angular.module("lincsDcic", [
 	"ngRoute",
  	"analyzeMod",
 	"apisMod",
+	"miniSymposiumMod",
 	"calendarMod",
 	"carouselMod",
  	"datacentersMod",
@@ -33,9 +34,6 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		
 		/* Main categorie pages */
-        when("/data", {
-			templateUrl: "view/page/datasets.html"
-		}).
 		when("/about", {
 			templateUrl: "view/page/about.html"
 		}).
@@ -100,6 +98,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		when("/seminar-series", {
 			templateUrl: "view/page/seminar-series.html"
+		}).
+		when("/2014-big-data-symposium", {
+			templateUrl: "view/page/2014-big-data-symposium.html"
 		}).
 
 		/* Default */

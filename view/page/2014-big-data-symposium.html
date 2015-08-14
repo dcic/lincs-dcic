@@ -1,0 +1,35 @@
+<div ng-controller="miniSymposiumCtrl" class="container">
+    <div class="row category-page" id="mini-symposium">
+        <div class="col-md-12">
+            <h2>Big Data Applications for Drug and Target Discovery</h2>
+            <p><em>BD2K-LINCS DCIC Mini-Symposium</em></p>
+        </div>
+        <div class="col-md-8">
+            <h3>Introduction to Big Data resources for target prioritization, development of novel therapeutics, and drug repurposing opportunities.</h3>
+            <section ng-repeat="event in events">
+                <p>{{event.time}}</p>
+                <h4>{{event.title}}</h4>
+                <p>{{event.speaker}}</p>
+            </section>
+        </div>
+        <div class="col-md-4">
+            <h3>Event Details</h3>
+            <ul>
+                <li><strong>Date:</strong> Wednesday, January 7, 2015</li>
+                <li><strong>Time:</strong> 2:30 – 5:30 p.m.</li>
+                <li><strong>Location:</strong> Annenberg Building, 19th Floor, Room 19-79<br>Icahn School of Medicine at Mount Sinai</li>
+            </ul>
+            <h3>Contact</h3>
+            <div class="">
+                Sherry Jenkins, MS<br>
+                Senior Program Manager<br>
+                E-mail: <a href="mailto:sherry.jenkins@mssm.edu">sherry.jenkins@mssm.edu</a>
+            </div>
+            <h3>Credits</h3>
+            <div class="">
+                <p>This mini-symposium is sponsored by Mount Sinai's Knowledge Management Center for Illuminating the Druggable Genome (KMC-IDG) and the BD2K-LINCS DCIC.</p>
+                <p><em>Grant numbers: U54CA189201, U54HL127624</em></p>
+            </div>
+        </div>
+    </div>
+</div>

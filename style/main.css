@@ -339,6 +339,14 @@ h6 {
 .category-page#seminar-series table p {
   margin: 0;
 }
+.category-page#mini-symposium section {
+  border-top: 1px solid #dddddd;
+  padding: 10px 0;
+}
+.category-page#mini-symposium section h4,
+.category-page#mini-symposium section p {
+  margin: 0;
+}
 .right-nav img {
   width: 100%;
 }

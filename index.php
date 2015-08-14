@@ -60,6 +60,7 @@
 	<!-- ************************ Application ************************ -->
 	<!-- Data -->
     <script type="text/javascript" src="js/data/apis.js"></script>
+    <script type="text/javascript" src="js/data/mini-symposium.js"></script>
 	<script type="text/javascript" src="js/data/carousel.js"></script>
 	<script type="text/javascript" src="js/data/datacenters.js"></script>
 	<script type="text/javascript" src="js/data/datasets.js"></script>
