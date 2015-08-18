@@ -6,6 +6,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         SYSBIO_MOOC_LINK = "https://www.coursera.org/course/netsysbio",
         SUMMER_RESEARCH_LINK = "#/summer-research-app#nav",
         SUMMER_FELLOWS_LINK = "#/summer-fellows-2015#nav",
+        SUMMER_PROGRAM_DESC = "#/summer-research-app#nav",
         NETWORK_GAME_LINK = "http://www.maayanlab.net/NASB15/NMG/",
     
         DIR = "/images/general/";
@@ -19,6 +20,9 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                 "<ul>" +
                     "<li>" +
                         "<a href='" + SUMMER_FELLOWS_LINK + "'>Summer Fellows 2015</a>" +
+                    "</li>" +
+                    "<li>" +
+                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description</a>" +
                     "</li>" +
                 "</ul>"),
             image: DIR + "mounica.png"
@@ -63,39 +67,16 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                     "</li>" +
                 "</ul>"),
             image: DIR + "crowd.png"
-        }
-    ];
-    
-    $scope.indexLinks = [
-		{
-            title: "Summer Research Training Program in Biomedical Big Data Science",
-            highlight: "Accepting applications: ",
-            url: SUMMER_RESEARCH_LINK,
-            target: "_self"
         },
         {
-            title: "LINCS MOOC on Coursera: Big Data Science with the BD2K-LINCS Data Coordination and Integration Center",
-            url: LINCS_MOOC_LINK,
-            highlight: "Open for sign-up: ",
-            target: "_blank"
-        },
-        {
-            title: "Network Analysis in Systems Biology on Coursera",
-            url: SYSBIO_MOOC_LINK,
-            highlight: "Started but registration still open: ",
-            target: "_blank"
-        },
-        {
-            title: "New PhD program in Biostatistics with an emphasis on Big Data Science",
-            url: "#/education/phd",
-            highlight: "",
-            target: "_self"
-        },
-        {
-            title: "Network Matching Game",
-            url: NETWORK_GAME_LINK,
-            highlight: "",
-            target: "_blank"
+            title: "Community Outreach",
+            text: $sce.trustAsHtml("Center investigators engage the research community through workshops, seminars and symposia to expose them to LINCS data and resources." +
+                "<ul>" +
+                    "<li>" +
+                        "<a href='#/workshops-seminars-symposia#nav'>Workshops, Seminars and Symposia</a>" +
+                    "</li>" +
+                "</ul>"),
+            image: DIR + "mjones.png"
         }
     ];
 }]);
