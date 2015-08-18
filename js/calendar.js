@@ -74,7 +74,7 @@ mod.controller("calendarCtrl", ["$scope", function($scope) {
         });
         return {
             upcoming: upcoming,
-            past: past
+            past: past.reverse()
         };
     };
 
