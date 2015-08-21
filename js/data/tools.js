@@ -19,10 +19,18 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             title: "GEO2Enrichr",
             description: "A browser extension and web application to extract gene sets from GEO and analyze these lists for common biological functions.",
-            url: "http://maayanlab.net/g2e",
+            url: "http://amp.pharm.mssm.edu/g2e/",
             target: "_blank",
             image: DIR + "g2e.png",
             shortDesc: "Differential Expression Analysis Tool"
+        },
+        {
+            title: "piLINCS",
+            description: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
+            url: "http://eh3.uc.edu/pilincs",
+            target: "_blank",
+            image: DIR + "pilincs.png",
+            shortDesc: "Interface to panoramaweb.org"
         },
         {
             title: "L1000CDS2",
