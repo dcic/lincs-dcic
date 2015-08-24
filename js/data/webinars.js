@@ -2,13 +2,12 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
-	
-	{
-            date: '11 August 2015 | 3:00 PM Eastern Time',
-            topic: 'Biomedical Data Integration Toward Quality Healthcare Delivery',
-            presenters: 'Qian Zhu, University of Maryland, Baltimore County'
+	    {
+            date: '25 August 2015 | 3:00 PM Eastern Time',
+            topic: 'Drug Repositioning by Integrating Target Information Through a Heterogeneous Network Model',
+            presenters: 'Jing Li, Case Western Reserve University'
         },
-	{
+	    {
             date: '8 September 2015 | 3:00 PM Eastern Time',
             topic: 'TBA',
             presenters: 'Stephen Piccolo, Brigham Young University'
@@ -18,34 +17,41 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
     $scope.pastWebinars = [
         {
+            date: '11 August 2015',
+            topic: 'Biomedical Data Integration Toward Quality Healthcare Delivery',
+            presenters: 'Qian Zhu, University of Maryland Baltimore County',
+	    synopsis:'Traditionally, scientists spend a great deal of time on sifting through large amounts of raw data to find useful information for their research. With the recent advance in computational technologies, computational approaches are being increasingly applied in biomedical, even clinical domain to support biomedical related research and clinical decision making, further improve the quality and efficacy of healthcare. In my talk, I will present the effort made by my group on developing computational medical and clinical applications based on integrative biomedical and clinical data. Specifically, I will primarily describe our effort made on 1) drug discovery and 2) precision medicine.',
+	    link: 'https://www.youtube.com/watch?v=U81g3BQhAe0'
+        },
+	{
             date: '23 June 2015',
             topic: 'The Construction of a Cluster Stack Based on Open Source Technologies',
             presenters: 'Matthew Jones, Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC',
-	    synopsis: 'Deploying applications and services across multiple computers can quickly become a complex operation. In addition, running distributed computing frameworks such as MPI, Hadoop or Spark on those same computers makes it even more challenging. To solve this problem we have combined a number of technologies to produce an operational cluster stack. Our stack is based on the Mesosphere Datacenter Operating System and provides a unified interface for interacting with many machines. In this webinar, we presented a stack built on Apache Mesos that uses Marathon for deploying web apps and other long running services; Docker for packaging dependencies and environments; Hadoop HDFS for storage; Spark for distributed data processing; Cassandra as a big data database; and Chronos for scheduled repetitive jobs. This webinar covered an overview of these technologies, why they are needed, and a brief demonstration on how to use them.',	
+	        synopsis: 'Deploying applications and services across multiple computers can quickly become a complex operation. In addition, running distributed computing frameworks such as MPI, Hadoop or Spark on those same computers makes it even more challenging. To solve this problem we have combined a number of technologies to produce an operational cluster stack. Our stack is based on the Mesosphere Datacenter Operating System and provides a unified interface for interacting with many machines. In this webinar, we presented a stack built on Apache Mesos that uses Marathon for deploying web apps and other long running services; Docker for packaging dependencies and environments; Hadoop HDFS for storage; Spark for distributed data processing; Cassandra as a big data database; and Chronos for scheduled repetitive jobs. This webinar covered an overview of these technologies, why they are needed, and a brief demonstration on how to use them.',
             link: 'https://www.youtube.com/watch?v=QJPirW-JjQ4'
-	},
-	{
+        },
+        {
             date: '16 June 2015',
             topic: 'L1K++: A Fast Pipeline that Increases the Accuracy of L1000 Gene Expression Data',
             presenters: 'Ling-Hong Hung, University of Washington',
-	    synopsis:'We have developed an alternative data processing pipeline called L1K++ for LINCS L1000 gene expression.  Our key idea in L1K++ is to combine the data from replicates before deconvoluting the two gene expression signals. This increases the accuracy of this step, and of all downstream inferences. Quantile normalization before deconvolution makes this possible. The gene expression signals are then robustly separated by fitting a gaussian mixture model. The pipeline is implemented entirely in C++ and uses linear and constant time algorithms. As a result, it is more than 1000x faster than current pipelines and can generate a complete set of Level 3 data from raw Level 1 data in a matter of hours. We expect that the L1K++ pipeline will result in the generation of more accurate drug signatures and gene networks.',
+	        synopsis:'We have developed an alternative data processing pipeline called L1K++ for LINCS L1000 gene expression.  Our key idea in L1K++ is to combine the data from replicates before deconvoluting the two gene expression signals. This increases the accuracy of this step, and of all downstream inferences. Quantile normalization before deconvolution makes this possible. The gene expression signals are then robustly separated by fitting a gaussian mixture model. The pipeline is implemented entirely in C++ and uses linear and constant time algorithms. As a result, it is more than 1000x faster than current pipelines and can generate a complete set of Level 3 data from raw Level 1 data in a matter of hours. We expect that the L1K++ pipeline will result in the generation of more accurate drug signatures and gene networks.',
             link:'https://www.youtube.com/watch?v=jcpEagg1iaQ'
-	},
-	{
+        },
+        {
             date: '9 June 2015',
             topic: 'Drug Toxicity Signature Generation Center',
             presenters: 'Eric Sobie, Icahn School of Medicine at Mount Sinai, DToxS',
             synopsis: '',
-	    link: 'https://www.youtube.com/watch?v=85xfd9YS3vQ'
+	        link: 'https://www.youtube.com/watch?v=85xfd9YS3vQ'
         },
-	{
+	    {
             date: '26 May 2015',
             topic: 'Integrative Analysis of Proteomics Data of Multi-Layered Post Translational Modifications Collected from Human Lung Cancer Cell Lines',
             presenters: 'Peter Hornbeck, Klarisa Rikova, Mark Grimes (Cell Signaling Technology Inc.) and Neil Clark, Nicolas Fernandez (Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC)',
             synopsis: '',
-	    link: 'https://www.youtube.com/watch?v=HQxincOIqNM'
+	        link: 'https://www.youtube.com/watch?v=HQxincOIqNM'
         },
-	{
+	    {
             date: '5 May 2015',
             topic: 'Assessing the Global Dimensionality of LINCS Signatures',
             presenters: 'Neil Clark, Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC',
@@ -56,8 +62,8 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             date: '21 April 2015',
             topic: 'Target Predictions using LINCS Perturbation Data',
             presenters: 'Yan Xia, Carnegie Mellon University',
-	    synopsis: '',
-	    link: 'https://www.youtube.com/watch?v=afz36W6G7iE'		
+	        synopsis: '',
+	        link: 'https://www.youtube.com/watch?v=afz36W6G7iE'
         },
         {
             date: '14 April 2015',
@@ -109,7 +115,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             synopsis: '',
             link: 'https://www.youtube.com/watch?v=eEIXm5rpo-E'
         },
-	{
+	    {
             date: '18 Nov 2014',
             topic: 'Creating Signatures from the ENCODE Data',
             presenters: 'Yan Kou, Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC',
