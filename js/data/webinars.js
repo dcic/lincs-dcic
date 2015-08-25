@@ -3,9 +3,9 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	    {
-            date: '11 August 2015 | 3:00 PM Eastern Time',
-            topic: 'Biomedical Data Integration Toward Quality Healthcare Delivery',
-            presenters: 'Qian Zhu, University of Maryland, Baltimore County'
+            date: '25 August 2015 | 3:00 PM Eastern Time',
+            topic: 'Drug Repositioning by Integrating Target Information Through a Heterogeneous Network Model',
+            presenters: 'Jing Li, Case Western Reserve University'
         },
 	    {
             date: '8 September 2015 | 3:00 PM Eastern Time',
@@ -17,6 +17,13 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
     $scope.pastWebinars = [
         {
+            date: '11 August 2015',
+            topic: 'Biomedical Data Integration Toward Quality Healthcare Delivery',
+            presenters: 'Qian Zhu, University of Maryland Baltimore County',
+	    synopsis:'Traditionally, scientists spend a great deal of time on sifting through large amounts of raw data to find useful information for their research. With the recent advance in computational technologies, computational approaches are being increasingly applied in biomedical, even clinical domain to support biomedical related research and clinical decision making, further improve the quality and efficacy of healthcare. In my talk, I will present the effort made by my group on developing computational medical and clinical applications based on integrative biomedical and clinical data. Specifically, I will primarily describe our effort made on 1) drug discovery and 2) precision medicine.',
+	    link: 'https://www.youtube.com/watch?v=U81g3BQhAe0'
+        },
+	{
             date: '23 June 2015',
             topic: 'The Construction of a Cluster Stack Based on Open Source Technologies',
             presenters: 'Matthew Jones, Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC',
