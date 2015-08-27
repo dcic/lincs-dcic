@@ -3,20 +3,22 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	    {
-            date: '25 August 2015 | 3:00 PM Eastern Time',
-            topic: 'Drug Repositioning by Integrating Target Information Through a Heterogeneous Network Model',
-            presenters: 'Jing Li, Case Western Reserve University'
-        },
-	    {
             date: '8 September 2015 | 3:00 PM Eastern Time',
-            topic: 'TBA',
+            topic: 'Using Machine Learning to Identify Aberrant Pathway Activity',
             presenters: 'Stephen Piccolo, Brigham Young University'
-        },
+            },
 
 
     ];
     $scope.pastWebinars = [
         {
+            date: '25 August 2015',
+            topic: 'Drug Repositioning by Integrating Target Information Through a Heterogeneous Network Model',
+            presenters: 'Jing Li, Case Western Reserve University',
+            synopsis:'The emergence of network medicine not only offers more opportunities for better and more complete understanding of the molecular complexities of diseases, but also serves as a promising tool for identifying new drug targets and establishing new relationships among diseases that enable drug repositioning. Computational approaches for drug repositioning by integrating information from multiple sources and multiple levels have the potential to provide great insights to the complex relationships among drugs, targets, disease genes and diseases at a system level. In this talk, I will present a computational framework based on a heterogeneous network model for drug repositioning by using existing omics data about diseases, drugs and drug targets. The novelty of the framework lies in the fact that the strength between a disease-drug pair is calculated through an iterative algorithm on the heterogeneous graph that also incorporates drug-target information. Comprehensive experimental results show that the approach significantly outperforms several recent approaches. Case studies further illustrate its practical usefulness.',
+            link: '',
+            },
+	{
             date: '11 August 2015',
             topic: 'Biomedical Data Integration Toward Quality Healthcare Delivery',
             presenters: 'Qian Zhu, University of Maryland Baltimore County',

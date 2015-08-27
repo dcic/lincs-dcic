@@ -2,29 +2,14 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function($scope) {
 	$scope.publications = [
-        {
+           {
             title: "An Integrated Transcriptome Atlas of Embryonic Hair Follicle Progenitors, Their Niche, and the Developing Skin",
-            url: "http://www.cell.com/developmental-cell/abstract/S1534-5807(15)00430-X",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26256211",
             authors: "Sennett R, Wang Z, Rezza A, Grisanti L, Roitershtein N, Sicchio C, Mok KW, Heitman NJ, Clavel C, Ma'ayan A, Rendl M.",
-            citation: "Developmental Cell 2015 Aug.",
+            citation: "Developmental Cell 2015 Aug 5. pii: S1534-5807(15)00430-X.",
+	    ids: "PMID: 26256211",
             year: 2015
-        },
-        {
-            title: "cDREM: inferring dynamic combinatorial gene regulation",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/25844671",
-            authors: "Wise A, Bar-Joseph Z.",
-            citation: "J Comput Biol. 2015 Apr;22(4):324-33.",
-            ids: "PMID: 25844671",
-            year: 2015
-        },
-        {
-            title: "SMARTS: reconstructing disease response networks from multiple individuals using time series gene expression data",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/25480376",
-            authors: "Wise A, Bar-Joseph Z.",
-            citation: "Bioinformatics. 2015 Apr 15;31(8):1250-7.",
-            ids: "PMID: 25480376",
-            year: 2015
-        },
+            },
 	    {
             title: "Morphine regulated synaptic networks revealed by integrated proteomics and network analysis",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26149443",
@@ -57,6 +42,22 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             ids: "PMID: 25971742",
             year: 2015
 	    },
+	    {
+            title: "cDREM: inferring dynamic combinatorial gene regulation",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25844671",
+            authors: "Wise A, Bar-Joseph Z.",
+            citation: "Journal of Computational Biology 2015 Apr;22(4):324-33.",
+            ids: "PMID: 25844671",
+            year: 2015
+            },
+	    {
+            title: "SMARTS: reconstructing disease response networks from multiple individuals using time series gene expression data",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25480376",
+            authors: "Wise A, Bar-Joseph Z.",
+            citation: "Bioinformatics 2015 Apr 15;31(8):1250-7.",
+            ids: "PMID: 25480376",
+            year: 2015
+            },
 	    {
             title: "PhosphoSitePlus, 2014: mutations, PTMs and recalibrations",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25514926",
