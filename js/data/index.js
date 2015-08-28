@@ -78,7 +78,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                 },
                 {
                     title: 'Harmonizome',
-                    url: 'http://maayanlab.net/harmonizome/',
+                    url: 'http://amp.pharm.mssm.edu/Harmonizome',
                     target: '_blank'
                 },
                 {
