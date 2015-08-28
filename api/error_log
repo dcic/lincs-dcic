@@ -1,0 +1,8 @@
+[28-Aug-2015 11:34:57] PHP Warning:  upload_max_filesize of 2097152 bytes exceeded - file [pdf=Grimes_LINCS_proposal_all.pdf] not saved in Unknown on line 0
+[28-Aug-2015 12:46:31] PHP Warning:  upload_max_filesize of 2097152 bytes exceeded - file [pdf=Yeung_UWT_BD2K LINCS DCIC_01Sept2015.pdf] not saved in Unknown on line 0
+[28-Aug-2015 14:09:54] PHP Warning:  POST Content-Length of 20703522 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Aug-2015 14:12:24] PHP Warning:  POST Content-Length of 20703497 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Aug-2015 15:03:14] PHP Warning:  POST Content-Length of 9245492 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[28-Aug-2015 15:03:14] PHP Parse error:  syntax error, unexpected '{' in /home/lincs5/public_html/api/index.php on line 45
+[28-Aug-2015 15:21:19] PHP Fatal error:  Call to undefined function:  date_default_timezone_set() in /home/lincs5/public_html/api/index.php on line 3
+[28-Aug-2015 15:26:49] PHP Warning:  POST Content-Length of 9245479 bytes exceeds the limit of 8388608 bytes in Unknown on line 0

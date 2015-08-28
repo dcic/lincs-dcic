@@ -66,6 +66,18 @@ h6 {
 .underline {
   text-decoration: underline;
 }
+.loader {
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 25%;
+  font-size: 30px;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
 /* Bootstrap overrides
  * ------------------------------------------------------------------------- */
 .navbar {

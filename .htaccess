@@ -1,0 +1,6 @@
+AuthUserFile "/home/lincs5/.htpasswds/public_html/passwd"
+AuthName "/home/lincs5/public_html/"
+
+<IfModule mod_suphp.c>
+suPHP_ConfigPath /home/lincs5/public_html
+</IfModule>
