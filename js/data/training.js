@@ -16,13 +16,13 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.sections = [
 		{
             title: "Summer Research Training Program",
-            text: $sce.trustAsHtml("The 2015 Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program offered at six sites affiliated with our NIH-funded BD2K Center:" +
+            text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students. We are currently accepting applications for the summer 2016 session:" +
                 "<ul>" +
                     "<li>" +
-                        "<a href='" + SUMMER_FELLOWS_LINK + "'>Summer Fellows 2015</a>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK + "'>2015 Summer Fellows and Research Projects</a>" +
                     "</li>" +
                     "<li>" +
-                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description</a>" +
+                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
                     "</li>" +
                 "</ul>"),
             image: DIR + "mounica.png"
