@@ -14,3 +14,6 @@ images/source/intro diagram/
 
 # WebStorm
 .idea/
+
+# EDSR applications
+static/edsr/
