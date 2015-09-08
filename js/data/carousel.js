@@ -18,14 +18,14 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             image: DIR + 'dag.png',
             title: 'Research Projects',
             caption: 'The BD2K-LINCS DCIC is conducting research by integrating and analyzing various big data resources.',
-            link: '#/summer-fellows-2015'
+            link: '#/internal-dsrp#nav'
         },
         {
             index: 2,
             image: DIR + 'summer-fellows-2015.png',
             title: 'Summer Research Program',
             caption: 'BD2K-LINCS DCIC summer fellows complete a ten-week intensive research experience within our Center.',
-            link: '#/summer-fellows-2015'
+            link: '#/summer-fellows-2015#nav'
         }
     ];
 
