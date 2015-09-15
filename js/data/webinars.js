@@ -16,7 +16,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             topic: 'Using Machine Learning to Identify Aberrant Pathway Activity',
             presenters: 'Stephen Piccolo PhD, Brigham Young University',
 	    synopsis:'Although in some cases individual genes or proteins may operate in isolation to influence a biological phenomenon, genes and proteins typically operate in the context of biological pathways. Researchers have access to curated pathway databases, which help to characterize which genes and proteins play a role in a given pathway. Molecular-level data can be mapped to these curated databases to gain a better understanding of the role that the pathways play in a given phenomenon of interest. However, most such methods can only be applied to a single type of molecular data (typically, gene-expression profiles), and few methods explicitly account for interdependencies among variables. We developed a method, Gene Set Omic Analysis, which uses machine-learning algorithms to identify patterns that differ between two sets of biological samples and ranks pathways accordingly to the robustness of these patterns. This method can be applied to any type of omic data that can be mapped to curated pathway databases. This includes gene-expression data, copy-number variations, DNA variants, DNA methylation profiles, etc. It can also be applied to multiple types of omic data simultaneously. In the second part of my talk, I will explain an alternative approach, which uses machine learning to identify patterns in perturbational data and derives predictions of pathway activity for individual samples.',
-	    link:''
+	    link:'https://www.youtube.com/watch?v=baJOSU6Yino'
          },
 
 	{
@@ -24,7 +24,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             topic: 'Drug Repositioning by Integrating Target Information Through a Heterogeneous Network Model',
             presenters: 'Jing Li PhD, Case Western Reserve University',
             synopsis:'The emergence of network medicine not only offers more opportunities for better and more complete understanding of the molecular complexities of diseases, but also serves as a promising tool for identifying new drug targets and establishing new relationships among diseases that enable drug repositioning. Computational approaches for drug repositioning by integrating information from multiple sources and multiple levels have the potential to provide great insights to the complex relationships among drugs, targets, disease genes and diseases at a system level. In this talk, I will present a computational framework based on a heterogeneous network model for drug repositioning by using existing omics data about diseases, drugs and drug targets. The novelty of the framework lies in the fact that the strength between a disease-drug pair is calculated through an iterative algorithm on the heterogeneous graph that also incorporates drug-target information. Comprehensive experimental results show that the approach significantly outperforms several recent approaches. Case studies further illustrate its practical usefulness.',
-            link: 'https://www.youtube.com/watch?v=4fL8c9EtNsE',
+            link: 'https://www.youtube.com/watch?v=4fL8c9EtNsE'
             },
 	{
             date: '11 August 2015',
@@ -100,7 +100,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             date: '17 February 2015',
             topic: 'Discussion of Causes for Some Artifacts Observed in L1000 Data',
-            presenters: 'Chad Young, University of Washington',
+            presenters: 'William Chad Young, University of Washington',
             synopsis: 'Chad Young examines the relationships between Level 3 expression level measurements for pairs of genes probed by the "same color" beads. He shows that in some situations the deconvolution algorithm produces misleading expression levels, In some situations, plate-level normalization helps in some it does not. Possibility that observed patterns represent underlying biology was suggested by audience and discussed, as well as alternative strategies for systematically identifying artifacts and benchmarking of such alternative strategies.',
             link: 'https://www.youtube.com/watch?v=d-E_siojRg4'
         },

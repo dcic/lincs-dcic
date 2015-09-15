@@ -1,0 +1,10 @@
+<div ng-controller="datasetsCtrl" id="datasets" class="col-md-4">
+    <h3>Datasets and Assays</h3>
+    <div>
+        <ul>
+            <li ng-repeat="link in datasets">
+                <a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

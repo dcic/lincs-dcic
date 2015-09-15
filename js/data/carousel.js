@@ -15,13 +15,21 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         },
         {
             index: 1,
+            image: DIR + 'harmonizome.png',
+            title: 'The Harmonizome',
+            caption: 'The BD2K-LINCS DCIC is developing a biological knowledge engine built on top of information about genes and proteins from 114 datasets.',
+            link: 'http://amp.pharm.mssm.edu/Harmonizome',
+            target: '_blank'
+        },
+        {
+            index: 2,
             image: DIR + 'dag.png',
             title: 'Research Projects',
             caption: 'The BD2K-LINCS DCIC is conducting research by integrating and analyzing various big data resources.',
             link: '#/internal-dsrp#nav'
         },
         {
-            index: 2,
+            index: 3,
             image: DIR + 'summer-fellows-2015.png',
             title: 'Summer Research Program',
             caption: 'BD2K-LINCS DCIC summer fellows complete a ten-week intensive research experience within our Center.',
