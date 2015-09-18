@@ -9,6 +9,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.tools = [
         {
+            title: "Harmonizome",
+            description: "Built on top of information about genes and proteins from 114 datasets, the Harmonizome is a knowledge engine for a diverse set of integrated resources.",
+            url: "http://amp.pharm.mssm.edu/Harmonizome",
+            target: "_blank",
+            image: DIR + "harmonizome.png",
+            shortDesc: "Biological Knowledge Engine"
+        },
+        {
             title: "Enrichr",
             description: "An easy to use intuitive enrichment analysis web-based tool providing various types of visualization summaries of collective functions of gene lists.",
             url: "http://amp.pharm.mssm.edu/Enrichr/",
@@ -98,7 +106,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/public/docent/",
             target: "_blank",
             image: DIR + "docent-i.png",
-            shortDesc: "An overview guide into LINCS data"
+            shortDesc: "Overview guide into LINCS data"
         },
         {
             title: "Docent II",
@@ -108,6 +116,13 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "docent-ii.png",
             shortDesc: "Overview of the LINCS Data Signature Generation Centers (DSGCs) Data Release Milestones"
         },
-
+        {
+            title: "Docent III",
+            description: "Docent III provides an interactive matrix of the most studied cell lines by assay.",
+            url: "http://amp.pharm.mssm.edu/docent3/",
+            target: "_blank",
+            image: DIR + "docent-iii.png",
+            shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
+        }
     ];
 }]);
