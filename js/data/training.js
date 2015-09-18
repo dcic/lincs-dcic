@@ -7,8 +7,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         SUMMER_RESEARCH_LINK = "#/summer-research-app#nav",
         SUMMER_FELLOWS_LINK = "#/summer-fellows-2015#nav",
         SUMMER_PROGRAM_DESC = "#/summer-research-app#nav",
-        NETWORK_GAME_LINK = "http://www.maayanlab.net/NASB15/NMG/",
-    
+        NETWORK_GAME_LINK = "http://www.maayanlab.net/NMG/2015/",
         DIR = "/images/general/";
 
     $scope.introText = $sce.trustAsHtml("The BD2K-LINCS DCIC engages the research community by delivering high quality educational materials through the web as well as through mentoring, seminars and symposia. Also, Center investigators actively engage in the education of a new generation of Big Data Scientists by developing a graduate-level Big Data Science MOOC that will be delivered to graduate students in Big Data Biostatistics and other Biomedical Informatics graduate programs.");
