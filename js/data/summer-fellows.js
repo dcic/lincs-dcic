@@ -7,9 +7,21 @@ mod.controller("summerFellowsCtrl", ["$scope", "$sce", function($scope, $sce) {
         MAAYAN_LAB = "Avi Ma'ayan PhD, Icahn School of Medicine at Mount Sinai",
         MAAYAN_LAB_LINK = "http://icahn.mssm.edu/research/labs/maayan-laboratory",
         CMU = "Carnegie Mellon University",
-        WASHINGTON = "University of Washington";
+        WASHINGTON = "University of Washington",
+        MIAMI = "University of Miami",
+        SCHURER_LAB = "Stephan Schürer PhD, University of Miami",
+        SCHURER_LAB_LINK = "http://ccs.miami.edu/?p=1103",
+        UPENN = "University of Pennsylvania";
 
     $scope.fellows = [
+        {
+            name: "Byron Fang",
+            image: DIR + "byron_fang.png",
+            school: MIAMI,
+            project: "Exploration and Classification of LINCS Small Molecules by Topological and Shape Similarity",
+            labName: SCHURER_LAB,
+            labLink: SCHURER_LAB_LINK
+        },
         {
             name: "Benjamin Kaplan",
             image: DIR + "benjamin_kaplan.jpg",
@@ -41,6 +53,14 @@ mod.controller("summerFellowsCtrl", ["$scope", "$sce", function($scope, $sce) {
             project: "Exploration, Processing and Analyses of LINCS L1000 Gene Expression Data",
             labName: "Ka Yee Yeung PhD, University of Washington",
             labLink: "http://directory.tacoma.uw.edu/employee/kayee"
+        },
+        {
+            name: "Stephanie Tillit",
+            image: DIR + "stephanie_tillit.png",
+            school: UPENN,
+            project: "Classification and Annotation of Epigenetic Drug Target Proteins for Integrated Data Analysis",
+            labName: SCHURER_LAB,
+            labLink: SCHURER_LAB_LINK
         },
         {
             name: "Christine Xu",

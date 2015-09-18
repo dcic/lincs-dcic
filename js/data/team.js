@@ -18,7 +18,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
         },
         {
             name: 'Mario Medvedovic PhD',
-            position: 'Associate Professor',
+            position: 'Professor',
             affiliation: UC,
             email: 'mario.medvedovic {at} uc.edu',
             portrait: 'mario.jpg',
@@ -132,16 +132,77 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
             members: [
                 {
                     firstName: "Jarek",
-                    lastName: "Meller ",
+                    lastName: "Meller",
                     affiliation: "University of Cincinnati",
-                    email: "jmeller {at} cchmc.org"
+                    email: "mellerj {at} ucmail.uc.edu"
                 },
                 {
                     firstName: "Michal",
                     lastName: "Kouril",
                     affiliation: "University of Cincinnati",
                     email: "michal.kouril {at} cchmc.org"
+                },
+		{
+                    firstName: "Matthew",
+                    lastName: "Weirauch",
+                    affiliation: "University of Cincinnati",
+                    email: "matthew.weirauch {at} cchmc.org"
+                },
+		{
+                    firstName: "Juozas",
+                    lastName: "Vasiliauskas",
+                    affiliation: "University of Cincinnati",
+                    email: "vasilijs {at} ucmail.uc.edu"
+                },
+		{
+                    firstName: "Wen",
+                    lastName: "Niu",
+                    affiliation: "University of Cincinnati",
+                    email: "niuw {at} ucmail.uc.edu"
+                },
+		{
+                    firstName: "Marcin",
+                    lastName: "Pilarczyk",
+                    affiliation: "University of Cincinnati",
+                    email: "pilarcmn {at} ucmail.uc.edu"
+                },
+		{
+                    firstName: "Szymon",
+                    lastName: "Chojnacki",
+                    affiliation: "University of Cincinnati",
+                    email: "chojnasm {at} ucmail.uc.edu"
+                },
+		{
+                    firstName: "Mehdi",
+                    lastName: "Najafabadi",
+                    affiliation: "University of Cincinnati",
+                    email: "fazelnmi {at} ucmail.uc.edu"
+                },
+		{
+                    firstName: "Naim",
+                    lastName: "Mahi",
+                    affiliation: "University of Cincinnati",
+                    email: "mahina {at} ucmail.uc.edu"
+                },
+		{
+                    firstName: "John",
+                    lastName: "Reichard",
+                    affiliation: "University of Cincinnati",
+                    email: "reichajf {at} ucmail.uc.edu"
+                },
+		{
+                    firstName: "Nicholas",
+                    lastName: "Clark",
+                    affiliation: "University of Cincinnati",
+                    email: "clarkno {at} ucmail.uc.edu"
+                },
+		{
+                    firstName: "Prudhvi",
+                    lastName: "Shedimbi",
+                    affiliation: "University of Cincinnati",
+                    email: "shedimpro {at} ucmail.uc.edu"
                 }
+
             ]
         },
         {
