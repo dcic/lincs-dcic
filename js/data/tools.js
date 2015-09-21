@@ -123,6 +123,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: DIR + "docent-iii.png",
             shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
+        },
+        {
+            title: "Docent IV",
+            description: "Docent IV provides two interfaces for searching LINCS data by assay, perturbagen, cell, and readout.",
+            url: "http://amp.pharm.mssm.edu/milestones/cards.html",
+            target: "_blank",
+            image: DIR + "docent-iv.png",
+            shortDesc: "Searchable overview of the LINCS Consortium's datasets."
         }
     ];
 }]);
