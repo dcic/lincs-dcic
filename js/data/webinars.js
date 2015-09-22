@@ -3,11 +3,15 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	    {
-            date: 'TBA',
-            topic: '',
-            presenters: '',
+            date: '3 November 2015 | 3:00 PM ET',
+            topic: 'Imputing New LINCS L1000 Drug Signatures',
+            presenters: 'Rachel Hodos, Icahn School of Medicine at Mount Sinai',
             },
-
+	    {
+            date: '10 November 2015 | 3:00 PM ET',
+            topic: 'TBA',
+            presenters: 'Hassan Al-Ali PhD, University of Miami Miller School of Medicine',
+            }
 
     ];
     $scope.pastWebinars = [

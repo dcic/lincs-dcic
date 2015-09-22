@@ -7,7 +7,9 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         SUMMER_RESEARCH_LINK = "#/summer-research-app#nav",
         SUMMER_FELLOWS_LINK = "#/summer-fellows-2015#nav",
         SUMMER_PROGRAM_DESC = "#/summer-research-app#nav",
-        NETWORK_GAME_LINK = "http://www.maayanlab.net/NMG/2015/",
+        GEO2Enrichr_LINK = "http://amp.pharm.mssm.edu/g2e/",
+	DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
+	Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
     
         DIR = "/images/general/";
 
@@ -45,8 +47,11 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             text: $sce.trustAsHtml("These webinars provide a forum for data scientists within and outside of the LINCS project to present their work on problems related to LINCS data analysis and integration:" +
                 "<ul>" +
                     "<li>" +
-                        "<a href='#/webinars'>Data Science Research Webinars</a>" +
+                        "<a href='#/webinars'>LINCS Data Science Research Webinars</a>" +
                     "</li>" +
+		    "<li>" +
+			"<a href='" + DCIC_Youtube_LINK + "' target='blank'>BD2K-LINCS DCIC YouTube Channel</a>" +
+		    "</li>" +
                 "</ul>"),
             image: DIR + "webinars.png"
         },
@@ -57,13 +62,13 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: "Crowdsourcing Projects",
-            text: $sce.trustAsHtml("As part of our educational efforts to bring awareness to LINCS data and explain the efforts of LINCS to the general public, we developed interactive games to teach the research community about LINCS data, how it is collected, and how it can be analyzed and integrated." +
+            text: $sce.trustAsHtml("As part of our educational efforts to bring awareness to LINCS data and explain the efforts of LINCS to the general public, we developed a crowdsourcing portal to engage the research community in various micro- and megatasks." +
                 "<ul>" +
                     "<li>" +
                         "<a href='http://www.maayanlab.net/crowdsourcing/' target='blank'>Crowdsourcing Portal</a>" +
                     "</li>" +
                     "<li>" +
-                        "<a href='" + NETWORK_GAME_LINK + "' target='blank'>Network Matching Game</a>" +
+                        "<a href='" + GEO2Enrichr_LINK + "' target='blank'>Extract Gene Sets with GEO2Enrichr</a>" +
                     "</li>" +
                 "</ul>"),
             image: DIR + "crowd.png"
@@ -75,6 +80,9 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                     "<li>" +
                         "<a href='#/workshops-seminars-symposia#nav'>Workshops, Seminars and Symposia</a>" +
                     "</li>" +
+		    "<li>" +
+			"<a href='" + Google_LINK + "' target='blank'>google.com/+BD2KLINCSDCIC</a>" +
+		    "</li>" +
                 "</ul>"),
             image: DIR + "mjones.png"
         }
