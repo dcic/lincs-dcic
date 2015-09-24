@@ -11,3 +11,5 @@ images/source/intro diagram/
 
 # VIM
 *.swp
+
+.idea
