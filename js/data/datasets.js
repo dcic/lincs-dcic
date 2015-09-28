@@ -34,7 +34,7 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
         },
         {
             title: "ALS data on NeuroLINCS",
-            url: "http://neurolincs.org/index.php?pageID=5",
+            url: "http://www.neurolincs.org/data",
             target: "_blank"
         },
         {
