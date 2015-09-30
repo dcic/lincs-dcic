@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="The BD2K-LINCS Data Coordination and Integration Center">
     <meta name="twitter:image" content="http://lincs-dcic.org/images/dcic-logo/DCIC_500x375_cropped.png">
 
-	<title>BD2K-LINCS DCIC</title>
+    <title>BD2K-LINCS DCIC</title>
 
     <link rel="shortcut icon" href="images/dcic-logo/favicon.png?v=2">
 
