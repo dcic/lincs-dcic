@@ -1,7 +1,23 @@
 <!doctype html>
 <html lang="en" ng-app="lincsDcic">
 <head>
-	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="The BD2K-LINCS Data Coordination and Integration Center (DCIC) is the data coordination center for the NIH Common Fund’s Library of Integrated Network-based Cellular Signatures (LINCS) program.">
+    <meta name="keywords" content="lincs, bd2k, dcic, bd2k-lincs dcic, data coordination and integration center, biomedical, research, systems biology, gene signature, data science, big data, harmonizome, enrichr, geo2enrichr, pilincs, l1000cds2, paea, lincs information framework, ilincs, lincs canvas browser, drug/cell-line browser, network2canvas, l1000, kinomescan, neurolincs, dotxs, avi ma'ayan, avi maayan, stephan schurer, mario medvedovic">
+    <meta name="application-name" content="BD2K-LINCS Data Coordination and Integration Center">
+
+    <!-- AngularJS / IE: http://stackoverflow.com/a/22005047/1830334 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- These tags specify how content is displayed on various social media sites -->
+    <!-- cf. OpenGraph: http://ogp.me/ -->
+    <meta property="og:url" content="http://lincs-dcic.org/">
+    <meta property="og:image" content="http://lincs-dcic.org/images/dcic-logo/DCIC_500x375_cropped.png">
+
+    <!-- These tags specify how content is displayed on a Twitter feed -->
+    <meta name="twitter:card" content="The BD2K-LINCS Data Coordination and Integration Center">
+    <meta name="twitter:image" content="http://lincs-dcic.org/images/dcic-logo/DCIC_500x375_cropped.png">
+
 	<title>BD2K-LINCS DCIC</title>
 
     <link rel="shortcut icon" href="images/dcic-logo/favicon.png?v=2">
