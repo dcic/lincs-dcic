@@ -32,6 +32,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "g2e.png",
             shortDesc: "Differential Expression Analysis Tool"
         },
+	    {
+            title: "LINCS Data Portal (alpha version)",
+            description: "Features for searching and exploring LINCS dataset packages and reagents.",
+            url: "http://lincsportal.ccs.miami.edu/dcic-portal/",
+            target: "_blank",
+            image: DIR + "portal.png",
+            shortDesc: "Access to LINCS Data and Signatures"
+        },
         {
             title: "piLINCS",
             description: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",

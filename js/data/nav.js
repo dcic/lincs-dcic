@@ -49,15 +49,19 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
         {
             title: 'News and Events',
             url: '#/news',
-            subnav: [
-                {
+            subnav: [  
+		        {
+                    title: '2016 Data Science Symposium',
+                    url: '#/2016-data-science-symposium'
+                },
+		        {
+                    title: '2014 Big Data Symposium',
+                    url: '#/2014-big-data-symposium#nav'
+                },
+		        {
                     title: 'Invited Seminar Series',
                     url: '#/seminar-series#nav'
                 },
-                {
-                    title: '2014 Big Data Symposium',
-                    url: '#/2014-big-data-symposium#nav'
-                }
             ]
         },
         {

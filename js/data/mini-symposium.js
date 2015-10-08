@@ -24,7 +24,7 @@ mod.controller("miniSymposiumCtrl", ["$scope", function($scope) {
         },
         {
             time: '5:10 – 5:30 PM',
-            title: 'Connecting the Immune-Pharmacology Universe to Better Understand Health and Diseas',
+            title: 'Connecting the Immune-Pharmacology Universe to Better Understand Health and Disease',
             speaker: 'Brian Kidd, PhD, Dudley Laboratory, Icahn School of Medicine at Mount Sinai'
         }
     ];

@@ -23,7 +23,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: 'Society of Toxicology’s Annual Meeting',
-            description: $sce.trustAsHtml('The BD2K-LINCS DCIC held an outreach sessixon, "Turning Big Data to Knowledge - An Introduction to the BD2K and LINCS Projects" at the <a href="http://www.toxicology.org/pubs/docs/Prog/2015Program.pdf" target="_blank">SOT Annual Meeting</a>. Poster session: Big Data to Knowledge (BD2K) - A Graphical Approach for Data Coordination and Integration presented by John Reichard PhD, Mario Medvedovic PhD, Siva Sivaganesan PhD.'),
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC held an outreach session, "Turning Big Data to Knowledge - An Introduction to the BD2K and LINCS Projects" at the <a href="http://www.toxicology.org/pubs/docs/Prog/2015Program.pdf" target="_blank">SOT Annual Meeting</a>. Poster session: Big Data to Knowledge (BD2K) - A Graphical Approach for Data Coordination and Integration presented by John Reichard PhD, Mario Medvedovic PhD, Siva Sivaganesan PhD.'),
             details: 'March 23, 2015, San Diego, CA'
         },
         {

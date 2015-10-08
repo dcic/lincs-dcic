@@ -103,7 +103,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/2014-big-data-symposium", {
 			templateUrl: "view/page/2014-big-data-symposium.html"
 		}).
-
+		when("/2016-data-science-symposium", {
+			templateUrl: "view/page/2016-data-science-symposium.html"
+		}).
 		/* Default */
 		otherwise({
 			redirectTo: "/"
