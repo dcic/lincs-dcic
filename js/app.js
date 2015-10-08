@@ -2,23 +2,29 @@ var mod = angular.module("lincsDcic", [
 	"ngRoute",
  	"analyzeMod",
 	"apisMod",
+	"miniSymposiumMod",
 	"calendarMod",
 	"carouselMod",
  	"datacentersMod",
  	"datasetsMod",
 	"emailMod",
 	"edsrappMod",
+	"externalDsrpMod",
 	"fundingMod",
+	"htmlFilters",
 	"indexMod",
+	"internalDsrpMod",
  	"introMod",
  	"newsMod",
  	"publicationsMod",
  	"teamMod",
  	"toolsMod",
  	"trainingMod",
- 	"subnavMod",
+ 	"navMod",
+	"seminarSeriesMod",
+ 	"summerFellowsMod",
  	"webinarsMod",
- 	"htmlFilters"
+ 	"workshopsEtcMod"
 ]);
 
 mod.config(["$routeProvider", function($routeProvider) {
@@ -28,9 +34,6 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		
 		/* Main categorie pages */
-        when("/data", {
-			templateUrl: "view/page/datasets.html"
-		}).
 		when("/about", {
 			templateUrl: "view/page/about.html"
 		}).
@@ -54,8 +57,8 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/webinars", {
 			templateUrl: "view/page/webinars.html"
 		}).
-		when("/srp", {
-			templateUrl: "view/page/srp.html"
+		when("/summer-research-app", {
+			templateUrl: "view/page/summer-research-app.html"
 		}).
 		when("/phd", {
 			templateUrl: "view/page/phd.html"
@@ -72,19 +75,50 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/edsr", {
 			templateUrl: "view/page/edsr.html"
 		}).
-		when("/edsrapp", {
-		    templateUrl: "view/page/edsrapp.html"
-		}).
+		// Applications are closed.
+		//when("/edsrapp", {
+		//    templateUrl: "view/page/edsrapp.html"
+		//}).
 		when("/datacenters", {
 			templateUrl: "view/page/datacenters.html"
 		}).
 		when("/events", {
 			templateUrl: "view/page/events.html"
 		}).
-
+		when("/summer-fellows-2015", {
+            templateUrl: "view/page/summer-fellows-2015.html"
+		}).
+		when("/internal-dsrp", {
+			templateUrl: "view/page/internal-dsrp.html"
+		}).
+		when("/external-dsrp", {
+			templateUrl: "view/page/external-dsrp.html"
+		}).
+		when("/workshops-seminars-symposia", {
+			templateUrl: "view/page/workshops-etc.html"
+		}).
+		when("/seminar-series", {
+			templateUrl: "view/page/seminar-series.html"
+		}).
+		when("/2014-big-data-symposium", {
+			templateUrl: "view/page/2014-big-data-symposium.html"
+		}).
+		when("/2016-data-science-symposium", {
+			templateUrl: "view/page/2016-data-science-symposium.html"
+		}).
 		/* Default */
 		otherwise({
 			redirectTo: "/"
 		});
 	}
 ]);
+
+mod.run(function($rootScope, $location, $anchorScroll) {
+    $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+        if ($location.hash()) {
+            setTimeout(function() {
+                $anchorScroll();
+            }, 100);
+        }
+    });
+});
