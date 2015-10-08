@@ -16,14 +16,6 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "harmonizome.png",
             shortDesc: "Biological Knowledge Engine"
         },
-	{
-            title: "Data Portal",
-            description: "Features for searching and exploring LINCS dataset packages and reagents.",
-            url: "http://lincsportal.ccs.miami.edu/dcic-portal/",
-            target: "_blank",
-            image: DIR + "portal.png",
-            shortDesc: "Access to LINCS Data and Signatures"
-        },
         {
             title: "Enrichr",
             description: "An easy to use intuitive enrichment analysis web-based tool providing various types of visualization summaries of collective functions of gene lists.",
@@ -39,6 +31,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: DIR + "g2e.png",
             shortDesc: "Differential Expression Analysis Tool"
+        },
+	{
+            title: "LINCS Data Portal (alpha version)",
+            description: "Features for searching and exploring LINCS dataset packages and reagents.",
+            url: "http://lincsportal.ccs.miami.edu/dcic-portal/",
+            target: "_blank",
+            image: DIR + "portal.png",
+            shortDesc: "Access to LINCS Data and Signatures"
         },
         {
             title: "piLINCS",
