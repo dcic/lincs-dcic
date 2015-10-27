@@ -39,7 +39,7 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
         },
         {
             title: "Drug combination data on DToxS",
-            url: "http://research.mssm.edu/pst/DToxS/data.html",
+            url: "https://martip03.u.hpc.mssm.edu/",
             target: "_blank"
         }
     ];

@@ -32,8 +32,8 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 3,
             image: DIR + 'summer-fellows-2015.png',
             title: 'Summer Research Program',
-            caption: 'BD2K-LINCS DCIC summer fellows complete a ten-week intensive research experience within our Center.',
-            link: '#/summer-fellows-2015#nav'
+            caption: 'The BD2K-LINCS DCIC Summer Research Program is currently accepting applications for summer 2016!',
+            link: '#/summer-research-app#nav'
         }
     ];
 
