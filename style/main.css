@@ -66,6 +66,9 @@ h6 {
 .underline {
   text-decoration: underline;
 }
+.instruction {
+  font-style: italic;
+}
 .loader {
   background: rgba(255, 255, 255, 0.8);
   position: fixed;
@@ -252,23 +255,23 @@ h6 {
 .category-page#edsrapp #submit:hover {
   background: #09505b;
 }
-.category-page #sections {
+.category-page .sections {
   padding-top: 20px;
 }
-.category-page #sections .section {
+.category-page .sections .section {
   padding-bottom: 20px;
 }
-.category-page #sections .section h3 {
+.category-page .sections .section h3 {
   margin-top: 0;
 }
-.category-page #sections .section img,
-.category-page #sections .section .text {
+.category-page .sections .section img,
+.category-page .sections .section .text {
   float: left;
 }
-.category-page #sections .section img {
+.category-page .sections .section img {
   width: 20%;
 }
-.category-page #sections .section .text {
+.category-page .sections .section .text {
   padding-left: 20px;
   width: 80%;
 }

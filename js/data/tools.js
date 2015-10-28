@@ -106,8 +106,37 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Network Visualization on a Canvas with Enrichment Analysis"    
         }
     ];
-    
+
+    $scope.docentWarning = "*Experiments with content that may not be up to date.";
+
     $scope.lincsVizTools = [
+        {
+            title: "Docent - List view",
+            description: "Docent's list view provides an interactive matrix of the most studied cell lines by assay.",
+            url: "http://amp.pharm.mssm.edu/milestones/product.html",
+            target: "_blank",
+            image: DIR + "docent-list.png",
+            shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
+        },
+        {
+            title: "Docent - Card view",
+            description: "Docent's card view provides an interactive matrix of the most studied cell lines by assay.",
+            url: "http://amp.pharm.mssm.edu/milestones/cards.html",
+            target: "_blank",
+            image: DIR + "docent-card.png",
+            shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
+        },
+        {
+            title: "Docent - Grid view",
+            description: "Docent's grid view provides two interfaces for searching LINCS data by assay, perturbagen, cell, and readout.",
+            url: "http://amp.pharm.mssm.edu/milestones/grid.html",
+            target: "_blank",
+            image: DIR + "docent-grid.png",
+            shortDesc: "Searchable overview of the LINCS Consortium's datasets."
+        }
+    ];
+
+    $scope.lincsVizToolsArchived = [
         {
             title: "Docent I",
             description: "Docent provides a quantified, interactive view of the biological entities such as cell lines, small molecules, and assays within LINCS data.",
@@ -123,22 +152,6 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: DIR + "docent-ii.png",
             shortDesc: "Overview of the LINCS Data Signature Generation Centers (DSGCs) Data Release Milestones"
-        },
-        {
-            title: "Docent III",
-            description: "Docent III provides an interactive matrix of the most studied cell lines by assay.",
-            url: "http://amp.pharm.mssm.edu/docent3/",
-            target: "_blank",
-            image: DIR + "docent-iii.png",
-            shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
-        },
-        {
-            title: "Docent IV",
-            description: "Docent IV provides two interfaces for searching LINCS data by assay, perturbagen, cell, and readout.",
-            url: "http://amp.pharm.mssm.edu/milestones/cards.html",
-            target: "_blank",
-            image: DIR + "docent-iv.png",
-            shortDesc: "Searchable overview of the LINCS Consortium's datasets."
         }
     ];
 }]);
