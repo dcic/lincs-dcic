@@ -111,6 +111,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.lincsVizTools = [
         {
+            title: "Docent - Grid view",
+            description: "Docent's grid view provides two interfaces for searching LINCS data by assay, perturbagen, cell, and readout.",
+            url: "http://amp.pharm.mssm.edu/milestones/grid.html",
+            target: "_blank",
+            image: DIR + "docent-grid.png",
+            shortDesc: "Searchable overview of the LINCS Consortium's datasets."
+        },
+        {
             title: "Docent - List view",
             description: "Docent's list view provides an interactive matrix of the most studied cell lines by assay.",
             url: "http://amp.pharm.mssm.edu/milestones/product.html",
@@ -125,14 +133,6 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             target: "_blank",
             image: DIR + "docent-card.png",
             shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
-        },
-        {
-            title: "Docent - Grid view",
-            description: "Docent's grid view provides two interfaces for searching LINCS data by assay, perturbagen, cell, and readout.",
-            url: "http://amp.pharm.mssm.edu/milestones/grid.html",
-            target: "_blank",
-            image: DIR + "docent-grid.png",
-            shortDesc: "Searchable overview of the LINCS Consortium's datasets."
         }
     ];
 
