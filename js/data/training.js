@@ -10,6 +10,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         GEO2Enrichr_LINK = "http://amp.pharm.mssm.edu/g2e/",
 	DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
 	Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
+	Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
     
         DIR = "/images/general/";
 
@@ -34,7 +35,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             text: $sce.trustAsHtml("The DCIC investigators and research staff are currently offering two graduate-level courses on Coursera:" +
                 "<ul>" +
                     "<li>" +
-                        "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science</a>" +
+                        "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC</a>" +
                     "</li>" +
                     "<li>" +
                         "<a href='" + SYSBIO_MOOC_LINK + "' target='blank'>Network Analysis in Systems Biology</a>" +
@@ -74,7 +75,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "crowd.png"
         },
         {
-            title: "Community Outreach",
+            title: "Community Outreach | Social Media",
             text: $sce.trustAsHtml("Center investigators engage the research community through workshops, seminars and symposia to expose them to LINCS data and resources." +
                 "<ul>" +
                     "<li>" +
@@ -83,6 +84,13 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
 		    "<li>" +
 			"<a href='" + Google_LINK + "' target='blank'>google.com/+BD2KLINCSDCIC</a>" +
 		    "</li>" +
+		    "<li>" +
+			"<a href='" + DCIC_Youtube_LINK + "' target='blank'>BD2K-LINCS DCIC YouTube Channel</a>" +
+		    "</li>" +
+		     "<li>" +
+			"<a href='" + Twitter_LINK + "' target='blank'>@BD2KLINCSDCIC on Twitter</a>" +
+		    "</li>" +
+
                 "</ul>"),
             image: DIR + "mjones.png"
         }
