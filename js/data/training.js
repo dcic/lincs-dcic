@@ -11,6 +11,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
 	DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
 	Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
 	Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
+	FLYER_LINK = "static/dcic_summer_program.pdf",
     
         DIR = "/images/general/";
 
@@ -19,13 +20,16 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.sections = [
 		{
             title: "Summer Research Training Program",
-            text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students. We are currently accepting applications for the summer 2016 session:" +
+            text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students. <strong>We are currently accepting applications for the summer 2016 session!</strong>" +
                 "<ul>" +
-                    "<li>" +
-                        "<a href='" + SUMMER_FELLOWS_LINK + "'>2015 Summer Fellows and Research Projects</a>" +
+		     "<li>" +
+                        "<a href='" + FLYER_LINK + "'>2016 Program Flyer</a>" +
+                    "</li>" +
+		     "<li>" +
+                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
                     "</li>" +
                     "<li>" +
-                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK + "'>2015 Summer Fellows and Research Projects</a>" +
                     "</li>" +
                 "</ul>"),
             image: DIR + "mounica.png"

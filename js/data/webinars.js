@@ -15,7 +15,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             topic: 'Imputing New LINCS L1000 Drug Signatures',
             presenters: 'Rachel Hodos, Icahn School of Medicine at Mount Sinai',
 	    synopsis:'',
-	    link:''
+	    link:'https://www.youtube.com/watch?v=jS-6fSYErKA'
          },
 	{
             date: '8 September 2015',
