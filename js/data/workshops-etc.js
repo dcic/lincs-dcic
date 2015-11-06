@@ -16,7 +16,12 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.symposia = [
-        {
+         {
+            title: 'Systems Biology Data Science Symposium',
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC will host the two-day <a href="#/2016-data-science-symposium" target="_blank">symposium</a> at the University of Miami. The aim of the symposium is to provide a unique opportunity to listen and discuss, with colleagues and peers, all the challenges and solutions on scientific, technological, educational and community building aspects of systems biology data sciences. Keynote lectures will provide a big picture, complemented with speaker sessions comprising both oral and poster presentations.'),
+            details: 'January 19-20, 2016, Coral Gables, FL'
+        },
+	{
             title: 'Big Data Symposium: Convergence of Science, Technology and Data Sciences – Impact on Pharma',
             description: $sce.trustAsHtml('In the Impact on Big Data on Drug Discovery session, Avi Ma’ayan PhD presented, "GEO2Enrichr, Enrichr and L1000CDS2: BD2K-LINCS DCIC Software Tools for Drug Discovery and Repurposing".'),
             details: 'June 29-30, 2015, Cambridge, MA'
