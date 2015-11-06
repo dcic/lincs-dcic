@@ -101,30 +101,18 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "maxim.kuleshov {at} mssm.edu"
                 },
                 {
-                    firstName: "Azu",
-                    lastName: "Lee",
+                    firstName: "Anders",
+                    lastName: "Dohlman",
                     affiliation: ISMMS,
-                    email: "azu.lee {at} mssm.edu"
+                    email: "anders.dohlman {at} mssm.edu"
                 },
 		{
-                    firstName: "Mounica",
-                    lastName: "Kamesam",
+                    firstName: "Caroline",
+                    lastName: "Monteiro",
                     affiliation: ISMMS,
-                    email: "mounica.kamesam {at} mssm.edu"
-                },
-
-                {
-                    firstName: "Benjamin",
-                    lastName: "Kaplan",
-                    affiliation: ISMMS,
-                    email: "benjamin.kaplan {at} mssm.edu"
-                },
-                {
-                    firstName: "Emily",
-                    lastName: "Kuang",
-                    affiliation: ISMMS,
-                    email: "emily.kuang {at} mssm.edu"
+                    email: "caroline.monteiro {at} mssm.edu"
                 }
+
             ]
         },
         {

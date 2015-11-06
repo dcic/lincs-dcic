@@ -3,19 +3,21 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	    {
-            date: '3 November 2015 | 3:00 PM ET',
-            topic: 'Imputing New LINCS L1000 Drug Signatures',
-            presenters: 'Rachel Hodos, Icahn School of Medicine at Mount Sinai',
-            },
-	    {
             date: '10 November 2015 | 3:00 PM ET',
-            topic: 'TBA',
+            topic: 'Combining Phenotypic and Biochemical Screening to Identify Drug Targets',
             presenters: 'Hassan Al-Ali PhD, University of Miami Miller School of Medicine',
             }
 
     ];
-    $scope.pastWebinars = [
-         {
+    $scope.pastWebinars = [   
+	{
+            date: '3 November 2015',
+            topic: 'Imputing New LINCS L1000 Drug Signatures',
+            presenters: 'Rachel Hodos, Icahn School of Medicine at Mount Sinai',
+	    synopsis:'',
+	    link:'https://www.youtube.com/watch?v=jS-6fSYErKA'
+         },
+	{
             date: '8 September 2015',
             topic: 'Using Machine Learning to Identify Aberrant Pathway Activity',
             presenters: 'Stephen Piccolo PhD, Brigham Young University',
