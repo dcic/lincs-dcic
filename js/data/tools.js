@@ -63,7 +63,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/PAEA/",
             target: "_blank",
             image: DIR + "paea.png",
-            shortDesc: "Principle Angle Enrichment Analysis"
+            shortDesc: "Principal Angle Enrichment Analysis"
         },
         {
             title: "LINCS Information Framework (LIFE)",
@@ -151,7 +151,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/milestonesViz/",
             target: "_blank",
             image: DIR + "docent-ii.png",
-            shortDesc: "Overview of the LINCS Data Signature Generation Centers (DSGCs) Data Release Milestones"
+            shortDesc: "Overview of the LINCS Data and Signature Generation Centers (DSGCs) Data Release Milestones"
         }
     ];
 }]);
