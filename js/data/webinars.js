@@ -3,13 +3,20 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	    {
-            date: '10 November 2015 | 3:00 PM ET',
-            topic: 'Combining Phenotypic and Biochemical Screening to Identify Drug Targets',
-            presenters: 'Hassan Al-Ali PhD, University of Miami Miller School of Medicine',
+            date: 'TBA | 3:00 PM ET',
+            topic: '',
+            presenters: ''
             }
 
     ];
     $scope.pastWebinars = [   
+	 {
+            date: '10 November 2015',
+            topic: 'Combining Phenotypic and Biochemical Screening to Identify Drug Targets',
+            presenters: 'Hassan Al-Ali PhD, University of Miami Miller School of Medicine',
+	    synopsis:'Despite explosive growth in biological data, drug discovery success rates have not increased, and may be decreasing. Comprehensive systems biology models should ultimately enable exact predictions of drug targets, or combinations of targets, that need to be engaged in order to effectively induce therapeutic responses. Given the robustness of biological networks, engaging multiple targets may be a critical requirement for successful therapies. Indeed, approved drugs are constantly being revealed to exert their effects through targets in addition to those previously recognized. While systems biology approaches are improving steadily, their ability to accurately predict effective targets remains a work in progress. To bypass the need for complete network understanding, we used information theory and machine learning to parse and relate data from cellular and biochemical assays. This enabled us to quickly identify drug targets (proteins that should be engaged to produce therapeutic effect) as well as anti-targets (proteins that must not be engaged to avoid counteracting therapeutic effects). Consequently, we were able to identify compounds with beneficial poly-pharmacology; i.e., compounds that engage several targets and do not engage anti-targets. This poly-pharmacology correlated with high efficacy in cell-based models and also in vivo. Thus the approach can help bridge the gap between classical drug discovery and systems biology, accelerate the discovery of new and effective drugs, and assist in the re-positioning of pre-approved drugs.',
+	    link:'https://www.youtube.com/watch?v=Yg3g895lSBM'
+        },
 	{
             date: '3 November 2015',
             topic: 'Imputing New LINCS L1000 Drug Signatures',
