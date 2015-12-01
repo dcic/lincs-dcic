@@ -52,6 +52,13 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/funding", {
             templateUrl: "view/page/funding.html"
 		}).
+        /* Getting started and pages */
+        when("/getting-started", {
+            templateUrl: "view/getting-started/index.html"
+        }).
+        when("/getting-started/the-lincs-program", {
+            templateUrl: "view/getting-started/the-lincs-program.html"
+        }).
 
 		/* Extra pages */
 		when("/webinars", {

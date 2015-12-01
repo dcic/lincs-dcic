@@ -21,6 +21,10 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             ]
         },
         {
+            title: 'Getting Started',
+            url: '#/getting-started#nav'
+        },
+        {
             title: 'Training and Outreach',
             url: '#/training',
             subnav: [

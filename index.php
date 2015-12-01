@@ -103,6 +103,7 @@
 	<script type="text/javascript" src="js/extra.js"></script>
 	<script type="text/javascript" src="js/edsrapp.js"></script>
 	<script type="text/javascript" src="js/filters.js"></script>
+    <script type="text/javascript" src="js/getting-started.js"></script>
 
 	<!-- Routes -->
 	<script type="text/javascript" src="js/app.js"></script>

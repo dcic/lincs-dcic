@@ -362,6 +362,22 @@ h6 {
 .category-page#mini-symposium section p {
   margin: 0;
 }
+.category-page.getting-started-page .section {
+  font-size: 20px;
+  font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
+}
+.category-page.getting-started-page .section p {
+  height: 100px;
+  padding: 20px;
+  vertical-align: middle;
+  background: #c7e8f2;
+}
+.category-page.getting-started-page .section p:hover {
+  cursor: pointer;
+}
+.category-page.getting-started-page .section ul {
+  opacity: .5;
+}
 .right-nav img {
   width: 100%;
 }
