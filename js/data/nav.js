@@ -22,7 +22,22 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
         },
         {
             title: 'Getting Started',
-            url: '#/getting-started#nav'
+            url: '#/',
+            subnav: [
+                {
+                    title: 'Concierge',
+                    url: '#/getting-started/concierge'
+                },
+                {
+                    title: 'Search Portal',
+                    url: '#/getting-started/portal'
+                },
+                {
+                    title: 'Tools',
+                    // TODO: Change this if Avi approves of new nav location.
+                    url: '#/resources'
+                }
+            ]
         },
         {
             title: 'Training and Outreach',
@@ -42,10 +57,10 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
                 }
             ]
         },
-        {
-            title: 'Resources',
-            url: '#/resources'
-        },
+        //{
+        //    title: 'Resources',
+        //    url: '#/resources'
+        //},
         {
             title: 'Publications',
             url: '#/publications'

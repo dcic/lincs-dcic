@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="/lib/bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/lib/bower_components/bootstrap-social/bootstrap-social.css">
 	<link rel="stylesheet" href="/lib/bower_components/fullcalendar/dist/fullcalendar.min.css">
+	<link rel="stylesheet" href="/lib/ngTagsInput/ng-tags-input.min.css"/>
     <link rel="stylesheet" href="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css">
     <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style/main.css">
@@ -71,6 +72,11 @@
 	<script src="/lib/bower_components/bootstrap/js/carousel.js"></script>
 	<script src="/lib/bower_components/bootstrap/js/transition.js"></script>
 	<script src="/lib/bower_components/underscore/underscore-min.js"></script>
+	<script src="/lib/ngTagsInput/ng-tags-input.min.js"></script>
+
+	<script src="/lib/angular-strap-2.3.6/angular-strap.min.js"></script>
+	<script src="/lib/angular-strap-2.3.6/angular-strap.tpl.min.js"></script>
+
 	<script src="/lib/twitter-fetcher.min.js"></script>
 	
 	<!-- ************************ Application ************************ -->
@@ -104,6 +110,7 @@
 	<script type="text/javascript" src="js/edsrapp.js"></script>
 	<script type="text/javascript" src="js/filters.js"></script>
     <script type="text/javascript" src="js/getting-started.js"></script>
+	<script type="text/javascript" src="js/portral.js"></script>
 
 	<!-- Routes -->
 	<script type="text/javascript" src="js/app.js"></script>

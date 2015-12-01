@@ -11,11 +11,13 @@ var mod = angular.module("lincsDcic", [
 	"edsrappMod",
 	"externalDsrpMod",
 	"fundingMod",
+	"gettingStartedMod",
 	"htmlFilters",
 	"indexMod",
 	"internalDsrpMod",
  	"introMod",
  	"newsMod",
+    "portalMod",
  	"publicationsMod",
  	"teamMod",
  	"toolsMod",
@@ -53,11 +55,14 @@ mod.config(["$routeProvider", function($routeProvider) {
             templateUrl: "view/page/funding.html"
 		}).
         /* Getting started and pages */
-        when("/getting-started", {
-            templateUrl: "view/getting-started/index.html"
+        when("/getting-started/concierge", {
+            templateUrl: "view/getting-started/concierge.html"
         }).
-        when("/getting-started/the-lincs-program", {
-            templateUrl: "view/getting-started/the-lincs-program.html"
+		when("/getting-started/portal", {
+			templateUrl: "view/getting-started/portal.html"
+		}).
+        when("/getting-started/temp", {
+            templateUrl: "view/getting-started/temp.html"
         }).
 
 		/* Extra pages */
