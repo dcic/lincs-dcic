@@ -22,7 +22,7 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             title: "GEO2Enrichr: browser extension and server app to extract gene sets from GEO and analyze them for biological functions",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25971742",
             authors: "Gundersen GW, Jones MR, Rouillard AD, Kou Y, Monteiro CD, Feldmann AS, Hu KS, Ma'ayan A.",
-            citation: "Bioinformatics. 2015 Sep 15;31(18):3060-2.",
+            citation: "Bioinformatics 2015 Sep 15;31(18):3060-2.",
             ids: "PMID: 25971742 | PMCID: PMC4607730",
             year: 2015
 	    },
