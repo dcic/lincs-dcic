@@ -1,48 +1,56 @@
 var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function($scope) {
-	$scope.publications = [
-           {
-            title: "An Integrated Transcriptome Atlas of Embryonic Hair Follicle Progenitors, Their Niche, and the Developing Skin",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/26256211",
-            authors: "Sennett R, Wang Z, Rezza A, Grisanti L, Roitershtein N, Sicchio C, Mok KW, Heitman NJ, Clavel C, Ma'ayan A, Rendl M.",
-            citation: "Developmental Cell 2015 Aug 5. pii: S1534-5807(15)00430-X.",
-	    ids: "PMID: 26256211",
+    $scope.publications = [
+        {
+            title: "Large-Scale Computational Screening Identifies First in Class Multitarget Inhibitor of EGFR Kinase and BRD4",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26596901",
+            authors: "Allen BK, Mehta S, Ember SW, Schonbrunn E, Ayad N, Schurer SC.",
+            citation: "Scientific Reports 2015 Nov 24;5:16924.",
+            ids: "PMID: 26596901 | PMCID: PMC4657038",
             year: 2015
-            },
-	    {
+        },
+        {
             title: "Morphine regulated synaptic networks revealed by integrated proteomics and network analysis",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26149443",
             authors: "Stockton SD Jr, Gomes I, Liu T, Moraje C, Hipolito L, Jones MR, Ma'ayan A, Moron JA, Li H, Devi LA.",
-            citation: "Molecular and Cellular Proteomics 2015 Jul;pii: mcp.M115.047977.",
-            ids: "PMID: 26149443",
+            citation: "Molecular and Cellular Proteomics 2015 Oct;14(10):2564-76.",
+            ids: "PMID: 26149443 | PMCID: PMC4597137",
             year: 2015
-	    },
-	    {
+        },
+        {
+            title: "GEO2Enrichr: browser extension and server app to extract gene sets from GEO and analyze them for biological functions",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25971742",
+            authors: "Gundersen GW, Jones MR, Rouillard AD, Kou Y, Monteiro CD, Feldmann AS, Hu KS, Ma'ayan A.",
+            citation: "Bioinformatics 2015 Sep 15;31(18):3060-2.",
+            ids: "PMID: 25971742 | PMCID: PMC4607730",
+            year: 2015
+        },
+        {
+            title: "An Integrated Transcriptome Atlas of Embryonic Hair Follicle Progenitors, Their Niche, and the Developing Skin",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26256211",
+            authors: "Sennett R, Wang Z, Rezza A, Grisanti L, Roitershtein N, Sicchio C, Mok KW, Heitman NJ, Clavel C, Ma'ayan A, Rendl M.",
+            citation: "Developmental Cell 2015 Sep 14;34(5):577-91.",
+            ids: "PMID: 26256211 | PMCID: PMC4573840",
+            year: 2015
+            },
+        {
             title: "Abstraction for data integration: Fusing mammalian molecular, cellular and phenotype big datasets for better knowledge extraction",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26101093",
             authors: "Rouillard AD, Wang Z, Ma'ayan A.",
             citation: "Computational Biology and Chemistry 2015 Jun;58:104-119.",
             ids: "PMID: 26101093",
             year: 2015
-	    },
-	    {
+        },
+        {
             title: "Dynamics of the discovery process of protein-protein interactions from low content studies",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26048415",
             authors: "Wang Z, Clark NR, Ma'ayan A.",
             citation: "BMC Systems Biology 2015 Jun;9(1):26.",
             ids: "PMID: 26048415 | PMCID: PMC4456804",
             year: 2015
-	    }, 
-	    {
-            title: "GEO2Enrichr: browser extension and server app to extract gene sets from GEO and analyze them for biological functions",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/25971742",
-            authors: "Gundersen GW, Jones MR, Rouillard AD, Kou Y, Monteiro CD, Feldmann AS, Hu KS, Ma'ayan A.",
-            citation: "Bioinformatics. 2015 Sep 15;31(18):3060-2.",
-            ids: "PMID: 25971742",
-            year: 2015
-	    },
-	    {
+        }, 
+        {
             title: "cDREM: inferring dynamic combinatorial gene regulation",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25844671",
             authors: "Wise A, Bar-Joseph Z.",
@@ -50,7 +58,7 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             ids: "PMID: 25844671",
             year: 2015
             },
-	    {
+        {
             title: "SMARTS: reconstructing disease response networks from multiple individuals using time series gene expression data",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25480376",
             authors: "Wise A, Bar-Joseph Z.",
@@ -58,30 +66,30 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             ids: "PMID: 25480376",
             year: 2015
             },
-	    {
+        {
             title: "PhosphoSitePlus, 2014: mutations, PTMs and recalibrations",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25514926",
             authors: "Hornbeck PV, Zhang B, Murray B, Kornhauser JM, Latham V, Skrzypek E.",
             citation: "Nucleic Acids Research 2015 Jan;43:D512-20.",
             ids: "PMID: 25514926 | PMCID: PMC4383998",
             year: 2015
-	    },
-	    {
+        },
+        {
             title: "Sex- and tissue-specific methylome changes in brains of mice perinatally exposed to lead",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25530354",
             authors: "Sánchez-Martín FJ, Lindquist DM, Landero-Figueroa J, Zhang X, Chen J, Cecil KM, Medvedovic M, Puga A.",
             citation: "Neurotoxicology 2015 Jan;46:92-100.",
             ids: "PMID: 25530354 | PMCID: PMC4339411",
             year: 2015
-	    },
-	    {
+        },
+        {
             title: "Multitask learning of signaling and regulatory networks with application to studying human response to flu",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25522349",
             authors: "Jain S, Gitter A, Bar-Joseph Z.",
             citation: "PLoS Computational Biology 2014 Dec 18;10(12):e1003943.",
             ids: "PMID: 25522349 | PMCID: PMC4270428",
             year: 2014
-	    },
+        },
         {
             title: "Drug/Cell-line Browser: interactive canvas visualization of cancer drug/cell-line viability assay datasets",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/?term=25100688",

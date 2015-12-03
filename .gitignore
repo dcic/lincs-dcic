@@ -5,6 +5,7 @@
 lib/node_modules/
 lib/bower_components/
 lib/jquery-ui-1.11.4.custom/
+lib/
 
 images/source/photographs/
 images/source/intro diagram/
