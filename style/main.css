@@ -425,6 +425,18 @@ h6 {
 .category-page.search-portal-page ul li:before {
   content: '';
 }
+.category-page.search-portal-page button {
+  margin: 10px 0;
+}
+.category-page.search-portal-page input,
+.category-page.search-portal-page textarea {
+  border: 1px solid #dddddd;
+}
+.category-page.search-portal-page textarea {
+  width: 48%;
+  height: 200px;
+  padding: 5px;
+}
 .category-page.search-portal-page .introduction {
   margin-bottom: 50px;
 }
@@ -436,16 +448,16 @@ h6 {
   height: 40px;
   box-shadow: none;
 }
-.category-page.search-portal-page button {
-  margin-top: 10px;
+.category-page.search-portal-page a:hover {
+  opacity: .75;
 }
-.category-page.search-portal-page #lich a {
-  color: black;
+.category-page.search-portal-page .l2s {
+  /* Qiaonan uses tags input. */
 }
-.category-page.search-portal-page #lich a:hover {
-  text-decoration: none;
+.category-page.search-portal-page .l2s input {
+  border: none;
 }
-.category-page.search-portal-page #lich tags-input .host {
+.category-page.search-portal-page tags-input .host {
   margin-bottom: 0;
 }
 .category-page.search-portal-page .search-tool {

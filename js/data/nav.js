@@ -29,11 +29,11 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
                     url: '#/getting-started/concierge'
                 },
                 {
-                    title: 'Search Portal',
+                    title: 'Direct Access to the BD2K-LINCS DCIC Tools',
                     url: '#/getting-started/portal'
                 },
                 {
-                    title: 'Tools',
+                    title: 'Resources',
                     // TODO: Change this if Avi approves of new nav location.
                     url: '#/resources'
                 }

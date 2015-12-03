@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
 }
 .loader {
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, .8);
     position: fixed;
     height: 100%;
     width: 100%;
@@ -464,6 +464,18 @@ h1, h2, h3, h4, h5, h6 {
                 }
             }
         }
+        button {
+            margin: 10px 0;
+        }
+        input,
+        textarea {
+            border: 1px solid @color-gray;
+        }
+        textarea {
+            width: 48%;
+            height: 200px;
+            padding: 5px;
+        }
         .introduction {
             margin-bottom: 50px;
         }
@@ -475,19 +487,19 @@ h1, h2, h3, h4, h5, h6 {
             height: 40px;
             box-shadow: none;
         }
-        button {
-            margin-top: 10px;
+        a {
+            &:hover {
+                opacity: .75;
+            }
         }
-        #lich {
-            a {
-                color: black;
-                &:hover {
-                    text-decoration: none;
-                }
+        .l2s {
+            /* Qiaonan uses tags input. */
+            input {
+                border: none;
             }
-            tags-input .host {
-                margin-bottom: 0;
-            }
+        }
+        tags-input .host {
+            margin-bottom: 0;
         }
         .search-tool {
             margin-bottom: 50px;
