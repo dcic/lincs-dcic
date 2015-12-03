@@ -18,7 +18,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.symposia = [
          {
             title: 'Systems Biology Data Science Symposium',
-            description: $sce.trustAsHtml('The BD2K-LINCS DCIC will host the two-day <a href="#/2016-data-science-symposium" target="_blank">symposium</a> at the University of Miami. The aim of the symposium is to provide a unique opportunity to listen and discuss, with colleagues and peers, all the challenges and solutions on scientific, technological, educational and community building aspects of systems biology data sciences. Keynote lectures will provide a big picture, complemented with speaker sessions comprising both oral and poster presentations.'),
+            description: $sce.trustAsHtml('This first <a href="#/2016-data-science-symposium" target="_blank">Systems Biology Data Science Symposium</a> at the University of Miami will bring together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
             details: 'January 19-20, 2016, Coral Gables, FL'
         },
 	{

@@ -2,22 +2,38 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function($scope) {
 	$scope.publications = [
-           {
-            title: "An Integrated Transcriptome Atlas of Embryonic Hair Follicle Progenitors, Their Niche, and the Developing Skin",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/26256211",
-            authors: "Sennett R, Wang Z, Rezza A, Grisanti L, Roitershtein N, Sicchio C, Mok KW, Heitman NJ, Clavel C, Ma'ayan A, Rendl M.",
-            citation: "Developmental Cell 2015 Aug 5. pii: S1534-5807(15)00430-X.",
-	    ids: "PMID: 26256211",
+            {
+            title: "Large-Scale Computational Screening Identifies First in Class Multitarget Inhibitor of EGFR Kinase and BRD4",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26596901",
+            authors: "Allen BK, Mehta S, Ember SW, Schonbrunn E, Ayad N, Schurer SC.",
+            citation: "Scientific Reports 2015 Nov 24;5:16924.",
+	    ids: "PMID: 26596901 | PMCID: PMC4657038",
             year: 2015
             },
-	    {
+            {
             title: "Morphine regulated synaptic networks revealed by integrated proteomics and network analysis",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26149443",
             authors: "Stockton SD Jr, Gomes I, Liu T, Moraje C, Hipolito L, Jones MR, Ma'ayan A, Moron JA, Li H, Devi LA.",
-            citation: "Molecular and Cellular Proteomics 2015 Jul;pii: mcp.M115.047977.",
-            ids: "PMID: 26149443",
+            citation: "Molecular and Cellular Proteomics 2015 Oct;14(10):2564-76.",
+            ids: "PMID: 26149443 | PMCID: PMC4597137",
             year: 2015
 	    },
+            {
+            title: "GEO2Enrichr: browser extension and server app to extract gene sets from GEO and analyze them for biological functions",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/25971742",
+            authors: "Gundersen GW, Jones MR, Rouillard AD, Kou Y, Monteiro CD, Feldmann AS, Hu KS, Ma'ayan A.",
+            citation: "Bioinformatics 2015 Sep 15;31(18):3060-2.",
+            ids: "PMID: 25971742 | PMCID: PMC4607730",
+            year: 2015
+	    },
+	    {
+            title: "An Integrated Transcriptome Atlas of Embryonic Hair Follicle Progenitors, Their Niche, and the Developing Skin",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26256211",
+            authors: "Sennett R, Wang Z, Rezza A, Grisanti L, Roitershtein N, Sicchio C, Mok KW, Heitman NJ, Clavel C, Ma'ayan A, Rendl M.",
+            citation: "Developmental Cell 2015 Sep 14;34(5):577-91.",
+	    ids: "PMID: 26256211 | PMCID: PMC4573840",
+            year: 2015
+            },
 	    {
             title: "Abstraction for data integration: Fusing mammalian molecular, cellular and phenotype big datasets for better knowledge extraction",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26101093",
@@ -34,14 +50,6 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             ids: "PMID: 26048415 | PMCID: PMC4456804",
             year: 2015
 	    }, 
-	    {
-            title: "GEO2Enrichr: browser extension and server app to extract gene sets from GEO and analyze them for biological functions",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/25971742",
-            authors: "Gundersen GW, Jones MR, Rouillard AD, Kou Y, Monteiro CD, Feldmann AS, Hu KS, Ma'ayan A.",
-            citation: "Bioinformatics 2015 May 13. pii: btv297.",
-            ids: "PMID: 25971742",
-            year: 2015
-	    },
 	    {
             title: "cDREM: inferring dynamic combinatorial gene regulation",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25844671",
