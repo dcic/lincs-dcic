@@ -246,7 +246,6 @@ mod.directive('harmonizomeBar', function() {
         restrict: 'AE',
         link: function(scope, element, attrs) {
             scope.searchTerm = '';
-            scope.states = ['foo', 'bar'];
         },
         controller: ['$scope', '$http', function($scope, $http) {
             var BASE_URL = 'http://amp.pharm.mssm.edu/Harmonizome/',
@@ -256,6 +255,7 @@ mod.directive('harmonizomeBar', function() {
                 window.open(SEARCH_URL + $scope.searchTerm, '_blank');
             };
             $scope.entities = function(searchTerm) {
+                console.log(searchTerm);
                 return $http.get(SUGGEST_URL + searchTerm).then(function(response){
                     return response.data;
                 });
