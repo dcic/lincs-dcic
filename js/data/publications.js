@@ -1,13 +1,29 @@
 var mod = angular.module("publicationsMod", []);
 
-mod.controller("publicationsCtrl", ["$scope", function($scope) {
+mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
         {
-            title: "Large-Scale Computational Screening Identifies First in Class Multitarget Inhibitor of EGFR Kinase and BRD4",
+            title: "Fetal liver hematopoietic stem cell niches associate with portal vessels",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26634440",
+            authors: "Khan JA, Mendelson A, Kunisaki Y, Birbrair A, Kou Y, Arnal-Estape A, Pinho S, Ciero P, Nakahara F, Ma'ayan A, Bergman A, Merad M, Frenette PS.",
+            citation: "Science 2015 Dec 3;pii: aad0084.",
+            ids: "PMID: 26634440",
+            year: 2015
+        },
+        {
+            title: "Large-scale computational screening identifies first in class multitarget inhibitor of EGFR kinase and BRD4",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26596901",
             authors: "Allen BK, Mehta S, Ember SW, Schonbrunn E, Ayad N, Schurer SC.",
             citation: "Scientific Reports 2015 Nov 24;5:16924.",
             ids: "PMID: 26596901 | PMCID: PMC4657038",
+            year: 2015
+        },
+        {
+            title: "CyNetworkBMA: a Cytoscape app for inferring gene regulatory networks",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26566394",
+            authors: "Fronczuk M, Raftery AE, Yeung KY.",
+            citation: "Source Code for Biology and Medicine 2015 Nov 11;10:11.",
+            ids: "PMID: 26566394 | PMCID: PMC4642660",
             year: 2015
         },
         {
@@ -27,19 +43,19 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             year: 2015
         },
         {
-            title: "An Integrated Transcriptome Atlas of Embryonic Hair Follicle Progenitors, Their Niche, and the Developing Skin",
+            title: "An integrated transcriptome atlas of embryonic hair follicle progenitors, their niche, and the developing skin",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26256211",
             authors: "Sennett R, Wang Z, Rezza A, Grisanti L, Roitershtein N, Sicchio C, Mok KW, Heitman NJ, Clavel C, Ma'ayan A, Rendl M.",
             citation: "Developmental Cell 2015 Sep 14;34(5):577-91.",
             ids: "PMID: 26256211 | PMCID: PMC4573840",
             year: 2015
-            },
+        },
         {
             title: "Abstraction for data integration: Fusing mammalian molecular, cellular and phenotype big datasets for better knowledge extraction",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/26101093",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26297300",
             authors: "Rouillard AD, Wang Z, Ma'ayan A.",
-            citation: "Computational Biology and Chemistry 2015 Jun;58:104-119.",
-            ids: "PMID: 26101093",
+            citation: "Computational Biology and Chemistry 2015 Aug 18;pii: S1476-9271(15)00083-3.",
+            ids: "PMID: 26297300",
             year: 2015
         },
         {
@@ -49,23 +65,23 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             citation: "BMC Systems Biology 2015 Jun;9(1):26.",
             ids: "PMID: 26048415 | PMCID: PMC4456804",
             year: 2015
-        }, 
+        },
         {
             title: "cDREM: inferring dynamic combinatorial gene regulation",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25844671",
             authors: "Wise A, Bar-Joseph Z.",
             citation: "Journal of Computational Biology 2015 Apr;22(4):324-33.",
-            ids: "PMID: 25844671",
+            ids: "PMID: 25844671 | PMCID: PMC4394168",
             year: 2015
-            },
+        },
         {
             title: "SMARTS: reconstructing disease response networks from multiple individuals using time series gene expression data",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25480376",
             authors: "Wise A, Bar-Joseph Z.",
             citation: "Bioinformatics 2015 Apr 15;31(8):1250-7.",
-            ids: "PMID: 25480376",
+            ids: "PMID: 25480376 | PMCID: PMC4393515",
             year: 2015
-            },
+        },
         {
             title: "PhosphoSitePlus, 2014: mutations, PTMs and recalibrations",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/25514926",
@@ -123,7 +139,7 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             year: 2014,
         },
         {
-            title: "Lean Big Data integration in systems biology and systems pharmacology",
+            title: "Lean big data integration in systems biology and systems pharmacology",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/?term=25109570",
             authors: "Ma'ayan A, Rouillard AD, Clark NR, Wang Z, Duan Q, Kou Y.",
             citation: "Trends Pharmacological Sciences 2014 Sep;35(9):450-60.",
@@ -155,7 +171,7 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             ids: "PMID: 25093074 | PMCID: PMC4108877"
         },
         {
-            title: "Metadata Standard and Data Exchange Specifications to Describe, Model, and Integrate Complex and Diverse High-Throughput Screening Data from the Library of Integrated Network-based Cellular Signatures (LINCS)",
+            title: "Metadata standard and data exchange specifications to describe, model, and integrate complex and diverse high-throughput screening data from the Library of Integrated Network-based Cellular Signatures (LINCS)",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/24518066",
             authors: "Vempati UD, Chung C, Mader C, Koleti A, Datar N, Vidović D, Wrobel D, Erickson S, Muhlich JL, Berriz G, Benes CH, Subramanian A, Pillai A, Shamu CE, Schürer SC.",
             citation: "Journal of Biomolecular Screening 2014 Feb 11;19(5):803-816.",
@@ -182,7 +198,7 @@ mod.controller("publicationsCtrl", ["$scope", function($scope) {
             title: "Metasignatures identify two major subtypes of breast cancer",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/23836026",
             authors: "Duan Q, Kou Y, Clark NR, Gordonov S, Ma'ayan A.",
-            citation: "CPT Pharmacometrics and Systems Pharmacology. 2013 Mar 27;2:e35.",
+            citation: "CPT Pharmacometrics and Systems Pharmacology 2013 Mar 27;2:e35.",
             year: 2013,
             ids: "PMID: 23836026 | PMCID: PMC3615534"
         },
