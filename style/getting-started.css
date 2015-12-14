@@ -64,53 +64,72 @@
 .category-page.getting-started-page .content .row {
   display: none;
 }
-.category-page.search-portal-page img {
-  height: 100px;
+.category-page.direct-access-tools-page .tools-summary img {
+  margin-left: 10px;
+  width: 50px;
 }
-.category-page.search-portal-page ul li:before {
+.category-page.direct-access-tools-page .tools {
+  border-top: 1px solid #f1f1f1;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+.category-page.direct-access-tools-page .tools img {
+  height: 25px;
+}
+.category-page.direct-access-tools-page .tools ul li:before {
   content: '';
 }
-.category-page.search-portal-page button {
+.category-page.direct-access-tools-page .tools button {
   margin: 10px 0;
 }
-.category-page.search-portal-page input,
-.category-page.search-portal-page textarea {
+.category-page.direct-access-tools-page .tools input,
+.category-page.direct-access-tools-page .tools textarea {
   border: 1px solid #dddddd;
 }
-.category-page.search-portal-page .textarea-wrapper {
+.category-page.direct-access-tools-page .tools .textarea-wrapper {
   float: left;
   width: 48%;
 }
-.category-page.search-portal-page .textarea-wrapper textarea {
+.category-page.direct-access-tools-page .tools .textarea-wrapper textarea {
   height: 200px;
   padding: 5px;
   width: 100%;
 }
-.category-page.search-portal-page .introduction {
+.category-page.direct-access-tools-page .tools .introduction {
   margin-bottom: 50px;
 }
-.category-page.search-portal-page #lincs-data-portal input,
-.category-page.search-portal-page #pi-lincs input,
-.category-page.search-portal-page #slicr .tags,
-.category-page.search-portal-page #harmonizome input {
+.category-page.direct-access-tools-page .tools #lincs-data-portal input,
+.category-page.direct-access-tools-page .tools #pi-lincs input,
+.category-page.direct-access-tools-page .tools #slicr .tags,
+.category-page.direct-access-tools-page .tools #harmonizome input {
   border: 1px solid #dddddd;
   width: 100%;
   padding: 5px;
   height: 40px;
   box-shadow: none;
 }
-.category-page.search-portal-page a:hover {
-  opacity: .75;
+.category-page.direct-access-tools-page .tools a {
+  color: black;
 }
-.category-page.search-portal-page #slicr {
+.category-page.direct-access-tools-page .tools a:hover {
+  color: black;
+  opacity: .75;
+  text-decoration: none;
+}
+.category-page.direct-access-tools-page .tools #slicr {
   /* Qiaonan uses tags input. */
 }
-.category-page.search-portal-page #slicr input {
+.category-page.direct-access-tools-page .tools #slicr input {
   border: none;
 }
-.category-page.search-portal-page tags-input .host {
+.category-page.direct-access-tools-page .tools tags-input .host {
   margin-bottom: 0;
 }
-.category-page.search-portal-page .search-tool {
+.category-page.direct-access-tools-page .tools .tool {
+  border-right: 1px solid #dddddd;
+  height: 400px;
   margin-bottom: 50px;
+}
+.category-page.direct-access-tools-page .tools .tool.last {
+  border-right: none;
 }

@@ -71,62 +71,81 @@
             }
         }
     }
-    &.search-portal-page {
-        img {
-            height: 100px;
+    &.direct-access-tools-page {
+        .tools-summary {
+            img {
+                margin-left: 10px;
+                width: 50px;
+            }
         }
-        ul {
-            li {
-                &:before {
-                    content: '';
+        .tools {
+            border-top: 1px solid @color-gray-light;
+            padding-top: 20px;
+            margin-top: 50px;
+            img {
+                height: 25px;
+            }
+            ul {
+                li {
+                    &:before {
+                        content: '';
+                    }
                 }
             }
-        }
-        button {
-            margin: 10px 0;
-        }
-        input,
-        textarea {
-            border: 1px solid @color-gray;
-        }
-        .textarea-wrapper {
-            float: left;
-            width: 48%;
+            button {
+                margin: 10px 0;
+            }
+            input,
             textarea {
-                height: 200px;
-                padding: 5px;
+                border: 1px solid @color-gray;
+            }
+            .textarea-wrapper {
+                float: left;
+                width: 48%;
+                textarea {
+                    height: 200px;
+                    padding: 5px;
+                    width: 100%;
+                }
+            }
+            .introduction {
+                margin-bottom: 50px;
+            }
+            #lincs-data-portal input,
+            #pi-lincs input,
+            #slicr .tags,
+            #harmonizome input {
+                border: 1px solid @color-gray;
                 width: 100%;
+                padding: 5px;
+                height: 40px;
+                box-shadow: none;
             }
-        }
-        .introduction {
-            margin-bottom: 50px;
-        }
-        #lincs-data-portal input,
-        #pi-lincs input,
-        #slicr .tags,
-        #harmonizome input {
-            border: 1px solid @color-gray;
-            width: 100%;
-            padding: 5px;
-            height: 40px;
-            box-shadow: none;
-        }
-        a {
-            &:hover {
-                opacity: .75;
+            a {
+                color: black;
+                &:hover {
+                    color: black;
+                    opacity: .75;
+                    text-decoration: none;
+                }
             }
-        }
-        #slicr {
-            /* Qiaonan uses tags input. */
-            input {
-                border: none;
+            #slicr {
+                /* Qiaonan uses tags input. */
+                input {
+                    border: none;
+                }
             }
-        }
-        tags-input .host {
-            margin-bottom: 0;
-        }
-        .search-tool {
-            margin-bottom: 50px;
+            tags-input .host {
+                margin-bottom: 0;
+            }
+            .tool {
+                border-right: 1px solid @color-gray;
+                height: 400px;
+                margin-bottom: 50px;
+                &.last {
+                    border-right: none;
+                }
+            }
         }
     }
 }

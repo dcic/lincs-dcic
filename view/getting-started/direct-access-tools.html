@@ -1,40 +1,46 @@
 <link rel="stylesheet" href="style/getting-started.css">
 
 <div class="container">
-    <div class="category-page search-portal-page" ng-controller="portalCtrl">
+    <div class="category-page direct-access-tools-page" ng-controller="directAccessToolsCtrl">
         <h1>Direct Access to the BD2K-LINCS DCIC Tools</h1>
         <p class="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <div ng-repeat="t in tools" ng-if="$index % 3 == 0" class="row">
+        <div class="tools-summary">
+            <img ng-repeat="t in tools" src="{{t.image}}"/>
+        </div>
 
-            {{tool=tools[$index];""}}
-            <div class="col-md-4 search-tool" tool-directive-wrapper="$index" ng-class="tool.cssClass">
-                <a ng-href="{{tool.url}}" target="_blank">
-                    <img ng-src="{{tool.image}}"/>
-                </a>
-                <h3>{{tool.title}}</h3>
-                <p>{{tool.description}}</p>
-                <placeholder style="display: none"></placeholder>
-            </div>
+        <div class="tools">
+            <div ng-repeat="t in tools" ng-if="$index % 3 == 0" class="row">
 
-            {{tool1=tools[$index+1];""}}
-            <div class="col-md-4 search-tool" tool-directive-wrapper="$index+1" ng-class="tool1.cssClass">
-                <a ng-href="{{tool1.url}}" target="_blank">
-                    <img ng-src="{{tool1.image}}"/>
-                </a>
-                <h3>{{tool1.title}}</h3>
-                <p trust-as-html="tool.interface">{{tool1.description}}</p>
-                <placeholder style="display: none"></placeholder>
-            </div>
+                {{tool=tools[$index];""}}
+                <div class="col-md-4 tool" tool-directive-wrapper="$index" ng-class="tool.cssClass">
+                    <h3>
+                        <img ng-src="{{tool.image}}"/>
+                        <a ng-href="{{tool.url}}" target="_blank">{{tool.title}}</a>
+                    </h3>
+                    <p>{{tool.description}}</p>
+                    <placeholder style="display: none"></placeholder>
+                </div>
 
-            {{tool2=tools[$index+2];""}}
-            <div class="col-md-4 search-tool" tool-directive-wrapper="$index+2" ng-class="tool2.cssClass">
-                <a ng-href="{{tool2.url}}" target="_blank">
-                    <img ng-src="{{tool2.image}}"/>
-                </a>
-                <h3>{{tool2.title}}</h3>
-                <p trust-as-html="tool.interface">{{tool2.description}}</p>
-                <placeholder style="display: none"></placeholder>
+                {{tool1=tools[$index+1];""}}
+                <div class="col-md-4 tool" tool-directive-wrapper="$index+1" ng-class="tool1.cssClass">
+                    <h3>
+                        <img ng-src="{{tool1.image}}"/>
+                        <a ng-href="{{tool1.url}}" target="_blank">{{tool1.title}}</a>
+                    </h3>
+                    <p trust-as-html="tool.interface">{{tool1.description}}</p>
+                    <placeholder style="display: none"></placeholder>
+                </div>
+
+                {{tool2=tools[$index+2];""}}
+                <div class="col-md-4 tool last" tool-directive-wrapper="$index+2" ng-class="tool2.cssClass">
+                    <h3>
+                        <img ng-src="{{tool2.image}}"/>
+                        <a ng-href="{{tool2.url}}" target="_blank">{{tool2.title}}</a>
+                    </h3>
+                    <p trust-as-html="tool.interface">{{tool2.description}}</p>
+                    <placeholder style="display: none"></placeholder>
+                </div>
             </div>
         </div>
     </div>

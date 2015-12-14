@@ -109,7 +109,7 @@
 	<script type="text/javascript" src="js/edsrapp.js"></script>
 	<script type="text/javascript" src="js/filters.js"></script>
     <script type="text/javascript" src="js/getting-started.js"></script>
-	<script type="text/javascript" src="js/portral.js"></script>
+	<script type="text/javascript" src="js/direct-access-tools.js"></script>
 
 	<!-- Routes -->
 	<script type="text/javascript" src="js/app.js"></script>

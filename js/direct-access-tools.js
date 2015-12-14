@@ -1,6 +1,6 @@
-var mod = angular.module('portalMod', ['ngTagsInput']);
+var mod = angular.module('directAccessToolsMod', ['ngTagsInput']);
 
-mod.controller('portalCtrl', ['$scope', '$sce', '$compile', function($scope, $sce, $compile) {
+mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function($scope, $sce, $compile) {
 
     var DIR = 'images/apps/';
 
@@ -103,7 +103,7 @@ mod.directive('lincsDataPortalBar', function($compile) {
                 });
             };
         }],
-        templateUrl: 'view/getting-started/lincs-data-direct-access-tools.html'
+        templateUrl: 'view/getting-started/lincs-data-portal.html'
     }
 });
 

@@ -17,7 +17,7 @@ var mod = angular.module("lincsDcic", [
 	"internalDsrpMod",
  	"introMod",
  	"newsMod",
-    "portalMod",
+    "directAccessToolsMod",
  	"publicationsMod",
  	"teamMod",
  	"toolsMod",
