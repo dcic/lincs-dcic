@@ -61,10 +61,13 @@
     <div ng-include="'view/partial/footer.html'"></div>
     
 	<!-- Libraries -->
+	<script src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 	<script src="/lib/bower_components/angular/angular.js"></script>
 	<script src="/lib/bower_components/angular-route/angular-route.js"></script>
-	<script src="/lib/bower_components/jquery/jquery.min.js"></script>
-	<script src="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+	<link href="/lib/bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet"/>
+	<script src="/lib/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="/lib/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 	<script src='/lib/bower_components/moment/min/moment.min.js'></script>
 	<script src='/lib/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
 	<script src='/lib/bower_components/fullcalendar/dist/gcal.js'></script>
@@ -73,10 +76,6 @@
 	<script src="/lib/bower_components/bootstrap/js/transition.js"></script>
 	<script src="/lib/bower_components/underscore/underscore-min.js"></script>
 	<script src="/lib/ngTagsInput/ng-tags-input.min.js"></script>
-
-	<script src="/lib/angular-strap-2.3.6/angular-strap.min.js"></script>
-	<script src="/lib/angular-strap-2.3.6/angular-strap.tpl.min.js"></script>
-
 	<script src="/lib/twitter-fetcher.min.js"></script>
 	
 	<!-- ************************ Application ************************ -->

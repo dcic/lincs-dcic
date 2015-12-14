@@ -440,7 +440,7 @@ h6 {
 .category-page.search-portal-page .introduction {
   margin-bottom: 50px;
 }
-.category-page.search-portal-page #lich .tags,
+.category-page.search-portal-page #slicer .tags,
 .category-page.search-portal-page #harmonizome input {
   border: 1px solid #dddddd;
   width: 100%;
@@ -451,10 +451,10 @@ h6 {
 .category-page.search-portal-page a:hover {
   opacity: .75;
 }
-.category-page.search-portal-page .l2s {
+.category-page.search-portal-page #slicer {
   /* Qiaonan uses tags input. */
 }
-.category-page.search-portal-page .l2s input {
+.category-page.search-portal-page #slicer input {
   border: none;
 }
 .category-page.search-portal-page tags-input .host {

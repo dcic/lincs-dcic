@@ -27,6 +27,7 @@ mod.controller('portalCtrl', ['$scope', '$sce', '$compile', function($scope, $sc
             description: 'Search and download LINCS datasets and entities.',
             url: 'http://lincsportal.ccs.miami.edu/dcic-portal/',
             image: 'https://placeholdit.imgix.net/~text?txtsize=33&w=100&h=100',
+            directive: 'lincs-data-portal-bar',
             cssClass: 'lincs-data-portal'
         },
         {
@@ -37,12 +38,12 @@ mod.controller('portalCtrl', ['$scope', '$sce', '$compile', function($scope, $sc
             cssClass: 'pilincs'
         },
         {
-            title: 'L2S',
-            description: 'Use L2S to search LINCS L1000 gene expression profiles.',
-            url: 'http://amp.pharm.mssm.edu/Lich/#/search',
-            image: DIR + 'l2s.png',
-            directive: 'l2s-bar',
-            cssClass: 'l2s'
+            title: 'Slicer',
+            description: 'Use Slicer to search LINCS L1000 gene expression profiles.',
+            url: 'http://amp.pharm.mssm.edu/slicer/',
+            image: DIR + 'slicer.png',
+            directive: 'slicer-bar',
+            cssClass: 'slicer'
         },
         {
             title: 'Enrichr',
@@ -63,23 +64,58 @@ mod.controller('portalCtrl', ['$scope', '$sce', '$compile', function($scope, $sc
     ];
 }]);
 
-mod.directive('toolDirectiveWrapper', function($compile) {
-   return {
-       restrict: 'A',
-       scope: {
-           // This is confusing to me.
-           // We're using the directive name as a scope variable.
-           toolDirectiveWrapper: '='
-       },
-       link: function(scope, elem, attrs) {
-           var toolObj = scope.$parent.tools[scope.toolDirectiveWrapper];
-           if (toolObj && toolObj.directive !== 'undefined') {
-               elem.find('placeholder').replaceWith(
-                   $compile('<' + toolObj.directive + '></' + toolObj.directive + '>')(scope)
-               )
-           }
-       }
-   }
+mod.directive('toolDirectiveWrapper', function ($compile) {
+    return {
+        restrict: 'A',
+        scope: {
+            toolDirectiveWrapper: '='
+        },
+        link: function (scope, elem, attrs) {
+            var toolObj = scope.$parent.tools[scope.toolDirectiveWrapper];
+            if (toolObj && toolObj.directive !== 'undefined') {
+                elem.find('placeholder').replaceWith(
+                    $compile('<' + toolObj.directive + '></' + toolObj.directive + '>')(scope)
+                )
+            }
+        }
+    }
+});
+
+mod.directive('lincsDataPortalBar', function($compile) {
+    return {
+        restrict: 'AE',
+        scope: {
+            toolDirectiveWrapper: '='
+        },
+        link: function(scope, element, attrs) {
+            scope.searchTerm = '';
+
+        },
+        controller:['$scope', '$http', function($scope, $http) {
+            var BASE_URL = 'http://dev3.ccs.miami.edu:8080/',
+                SUGGEST_URL = BASE_URL + 'dcic/api/autosuggest?searchTerm=',
+                SEARCH_URL;
+            $scope.search = function() {
+                SEARCH_URL = BASE_URL + $scope.searchType + '/#?query=';
+                window.open(SEARCH_URL + $scope.searchTerm, '_blank');
+            };
+            $scope.searchTypeOptions = [
+                {
+                    name: 'Datasets',
+                    value: 'datasets'
+                }, {
+                    name: 'Entities',
+                    value: 'entities'
+                }
+            ];
+            $scope.entities = function(searchTerm) {
+                return $http.get(SUGGEST_URL + searchTerm).then(function(response) {
+                    return response.data.suggestTerms;
+                });
+            };
+        }],
+        templateUrl: 'view/getting-started/lincs-data-portal-bar.html'
+    }
 });
 
 mod.directive('l1000cds2Textarea', function() {
@@ -202,8 +238,6 @@ mod.directive('enrichrTextarea', function() {
                 ].join('\n');
             };
             $scope.search = function() {
-                console.log($scope.genes.split('\n'));
-
                 var payload = {};
                 $.ajax({
                     type: 'POST',
@@ -221,11 +255,11 @@ mod.directive('enrichrTextarea', function() {
     }
 });
 
-mod.directive('l2sBar', function() {
+mod.directive('slicerBar', function() {
     return {
         restrict: 'AE',
         controller: ['$scope', '$http', function($scope, $http) {
-            var url = 'http://amp.pharm.mssm.edu/Lich/';
+            var url = 'http://amp.pharm.mssm.edu/slicer/';
             $scope.tags = [];
             $scope.loadTags = function(typed) {
                 return $http.get(url + 'tags?typed=' + typed);
@@ -234,10 +268,10 @@ mod.directive('l2sBar', function() {
                 var tagString = $scope.tags.map(function(tag) {
                     return tag.text;
                 }).join(',');
-                $scope.lichSearchUrl = url + '#/search/' + tagString
+                $scope.slicerSearchUrl = url + '#/search/' + tagString
             });
         }],
-        templateUrl: 'view/getting-started/lich.html'
+        templateUrl: 'view/getting-started/slicer.html'
     }
 });
 
@@ -256,7 +290,7 @@ mod.directive('harmonizomeBar', function() {
             };
             $scope.entities = function(searchTerm) {
                 console.log(searchTerm);
-                return $http.get(SUGGEST_URL + searchTerm).then(function(response){
+                return $http.get(SUGGEST_URL + searchTerm).then(function(response) {
                     return response.data;
                 });
             };

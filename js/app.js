@@ -26,7 +26,8 @@ var mod = angular.module("lincsDcic", [
 	"seminarSeriesMod",
  	"summerFellowsMod",
  	"webinarsMod",
- 	"workshopsEtcMod"
+ 	"workshopsEtcMod",
+	"ui.bootstrap"
 ]);
 
 mod.config(["$routeProvider", function($routeProvider) {
