@@ -59,8 +59,8 @@ mod.config(["$routeProvider", function($routeProvider) {
         when("/getting-started/concierge", {
             templateUrl: "view/getting-started/concierge.html"
         }).
-		when("/getting-started/portal", {
-			templateUrl: "view/getting-started/portal.html"
+		when("/getting-started/direct-access-tools", {
+			templateUrl: "view/getting-started/direct-access-tools.html"
 		}).
         when("/getting-started/temp", {
             templateUrl: "view/getting-started/temp.html"

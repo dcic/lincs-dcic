@@ -30,7 +30,7 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
                 },
                 {
                     title: 'Direct Access to the BD2K-LINCS DCIC Tools',
-                    url: '#/getting-started/portal'
+                    url: '#/getting-started/direct-access-tools'
                 },
                 {
                     title: 'Resources',

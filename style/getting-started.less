@@ -1,0 +1,132 @@
+/*
+ * Style for the LINCS-DCIC website.
+ */
+
+@import "variable.less";
+
+
+.category-page {
+    &.getting-started-page {
+        .faq {
+            border: 1px solid @color-gray-light;
+            padding: 20px;
+        }
+        .section {
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+            font-family: @font-family-accent;
+            padding: 20px;
+            vertical-align: middle;
+            background: @color-gray-light;
+            margin-bottom: 20px;
+            &:hover {
+                cursor: pointer;
+                background-color: @color-primary-dusky-light;
+                -webkit-transition: background-color 1000ms linear;
+                -moz-transition: background-color 1000ms linear;
+                -o-transition: background-color 1000ms linear;
+                -ms-transition: background-color 1000ms linear;
+                transition: background-color 1000ms linear;
+            }
+            ul {
+                opacity: .5;
+            }
+        }
+        .start p,
+        .middle,
+        .end p {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .start {
+            p {
+                font-size: 35px;
+                height: 90px;
+            }
+        }
+        .middle {
+            display: none;
+            p {
+                font-size: 35px;
+                height: 150px;
+            }
+        }
+        .end {
+            .row {
+                display: none;
+                p {
+                    height: 150px;
+                    color: black;
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 35px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .content {
+            .row {
+                display: none;
+            }
+        }
+    }
+    &.search-portal-page {
+        img {
+            height: 100px;
+        }
+        ul {
+            li {
+                &:before {
+                    content: '';
+                }
+            }
+        }
+        button {
+            margin: 10px 0;
+        }
+        input,
+        textarea {
+            border: 1px solid @color-gray;
+        }
+        .textarea-wrapper {
+            float: left;
+            width: 48%;
+            textarea {
+                height: 200px;
+                padding: 5px;
+                width: 100%;
+            }
+        }
+        .introduction {
+            margin-bottom: 50px;
+        }
+        #lincs-data-portal input,
+        #pi-lincs input,
+        #slicr .tags,
+        #harmonizome input {
+            border: 1px solid @color-gray;
+            width: 100%;
+            padding: 5px;
+            height: 40px;
+            box-shadow: none;
+        }
+        a {
+            &:hover {
+                opacity: .75;
+            }
+        }
+        #slicr {
+            /* Qiaonan uses tags input. */
+            input {
+                border: none;
+            }
+        }
+        tags-input .host {
+            margin-bottom: 0;
+        }
+        .search-tool {
+            margin-bottom: 50px;
+        }
+    }
+}

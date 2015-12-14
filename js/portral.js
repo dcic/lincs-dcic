@@ -9,18 +9,11 @@ mod.controller('portalCtrl', ['$scope', '$sce', '$compile', function($scope, $sc
     $scope.tools = [
         {
             title: 'L1000CDS2',
-            description: 'Use L1000CDS2 to find consensus signatures that match your input signature vector.',
+            description: 'Find consensus signatures that match your input signature vector.',
             url: 'http://amp.pharm.mssm.edu/L1000CDS2',
             image: DIR + 'l1000cds2.png',
             directive: 'l1000cds2-textarea',
             cssClass: 'l1000cds2'
-        },
-        {
-            title: 'iLINCS',
-            description: 'Use iLINCS to analyze differential gene expression in a dataset identified via LINCS Data Portal.',
-            url: 'http://eh3.uc.edu/GenomicsPortals/Lincs.jsp',
-            image: DIR + 'ilincs.png',
-            cssClass: 'ilincs'
         },
         {
             title: 'LINCS Data Portal',
@@ -32,22 +25,23 @@ mod.controller('portalCtrl', ['$scope', '$sce', '$compile', function($scope, $sc
         },
         {
             title: 'piLINCS',
-            description: 'Use piLINCS to access to LINCS proteomics datasets (P100, GCP, etc.) available in Panorama.',
+            description: 'Access to LINCS proteomics datasets (P100, GCP, etc.) available in Panorama.',
             url: 'http://eh3.uc.edu/pilincs/',
             image: DIR + 'pilincs.png',
-            cssClass: 'pilincs'
+            directive: 'pi-lincs-bar',
+            cssClass: 'pi-lincs'
         },
         {
-            title: 'Slicer',
-            description: 'Use Slicer to search LINCS L1000 gene expression profiles.',
-            url: 'http://amp.pharm.mssm.edu/slicer/',
-            image: DIR + 'slicer.png',
-            directive: 'slicer-bar',
-            cssClass: 'slicer'
+            title: 'Slicr',
+            description: 'Search LINCS L1000 gene expression profiles.',
+            url: 'http://amp.pharm.mssm.edu/slicr/',
+            image: DIR + 'slicr.png',
+            directive: 'slicr-bar',
+            cssClass: 'slicr'
         },
         {
             title: 'Enrichr',
-            description: 'Use Enrichr to perform gene set enrichment analysis.',
+            description: 'Perform gene set enrichment analysis.',
             url: 'http://amp.pharm.mssm.edu/Enrichr/',
             image: DIR + 'enrichr.png',
             directive: 'enrichr-textarea',
@@ -55,7 +49,7 @@ mod.controller('portalCtrl', ['$scope', '$sce', '$compile', function($scope, $sc
         },
         {
             title: 'The Harmonizome',
-            description: 'Use the Harmonizome to search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.',
+            description: 'Search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.',
             url: 'http://amp.pharm.mssm.edu/Harmonizome/',
             image: DIR + 'harmonizome.png',
             directive: 'harmonizome-bar',
@@ -94,19 +88,14 @@ mod.directive('lincsDataPortalBar', function($compile) {
         controller:['$scope', '$http', function($scope, $http) {
             var BASE_URL = 'http://dev3.ccs.miami.edu:8080/',
                 SUGGEST_URL = BASE_URL + 'dcic/api/autosuggest?searchTerm=',
-                SEARCH_URL;
+                searchUrl;
             $scope.search = function() {
-                SEARCH_URL = BASE_URL + $scope.searchType + '/#?query=';
-                window.open(SEARCH_URL + $scope.searchTerm, '_blank');
+                searchUrl = BASE_URL + $scope.searchType + '/#?query=' + $scope.searchTerm;
+                window.open(searchUrl, '_blank');
             };
             $scope.searchTypeOptions = [
-                {
-                    name: 'Datasets',
-                    value: 'datasets'
-                }, {
-                    name: 'Entities',
-                    value: 'entities'
-                }
+                {name: 'Datasets', value: 'datasets'},
+                {name: 'Entities', value: 'entities'}
             ];
             $scope.entities = function(searchTerm) {
                 return $http.get(SUGGEST_URL + searchTerm).then(function(response) {
@@ -114,7 +103,41 @@ mod.directive('lincsDataPortalBar', function($compile) {
                 });
             };
         }],
-        templateUrl: 'view/getting-started/lincs-data-portal-bar.html'
+        templateUrl: 'view/getting-started/lincs-data-direct-access-tools.html'
+    }
+});
+
+mod.directive('piLincsBar', function($compile) {
+    return {
+        restrict: 'AE',
+        scope: {
+            toolDirectiveWrapper: '='
+        },
+        link: function(scope, element, attrs) {
+            scope.searchTerm = '';
+        },
+        controller:['$scope', '$http', function($scope, $http) {
+            var URL_PARTS = ['http://www.eh3.uc.edu/pilincs/#/technical-profiles/name', '', 'annotation', ''],
+                SUGGEST_URL = 'http://www.eh3.uc.edu/pilincs/api-tags',
+                searchUrl;
+            $scope.searchTypeOptions = [
+                {name: 'Cell ID', value: 'CellId'},
+                {name: 'Perturbation Name', value: 'Pertiname'},
+                {name: 'Gene Symbol', value: 'PrGeneSymbol'}
+            ];
+            $scope.search = function() {
+                URL_PARTS[1] = $scope.searchTerm;
+                URL_PARTS[3] = $scope.searchType;
+                var searchUrl = URL_PARTS.join('/');
+                window.open(searchUrl, '_blank');
+            };
+            $scope.entities = function() {
+                return $http.get(SUGGEST_URL).then(function(response) {
+                    return response.data;
+                });
+            };
+        }],
+        templateUrl: 'view/getting-started/pi-lincs.html'
     }
 });
 
@@ -192,8 +215,10 @@ mod.directive('l1000cds2Textarea', function() {
 mod.directive('enrichrTextarea', function() {
     return {
         restrict: 'AE',
-        controller: ['$scope', function($scope) {
+        controller: ['$scope', '$element', function($scope, $element) {
+            var BASE_URL = 'http://amp.pharm.mssm.edu/Enrichr/';
             $scope.genes = '';
+            $scope.enrichUrl;
             $scope.example = function() {
                 $scope.genes = [
                     'Nsun3', 'Polrmt', 'Nlrx1', 'Sfxn5', 'Zc3h12c', 'Slc25a39', 'Arsg', 'Defb29', 'Ndufb6', 'Zfand1', 'Tmem77', '5730403B10Rik',
@@ -238,16 +263,25 @@ mod.directive('enrichrTextarea', function() {
                 ].join('\n');
             };
             $scope.search = function() {
-                var payload = {};
+                var formData = new FormData();
+                formData.append('list', $scope.genes);
+                formData.append('description', '');
                 $.ajax({
                     type: 'POST',
-                    url: 'http://amp.pharm.mssm.edu/Enrichr/enrich',
-                    crossDomain: true,
-                    data: '{"some":"json"}',
-                    dataType: 'json',
-                    success: function(data) {
-                        debugger;
-                    }
+                    url: BASE_URL + 'addList',
+                    cache:false,
+                    processData:false,
+                    contentType:false,
+                    data: formData
+                }).success(function(response, status, headers, config) {
+                    var resp = JSON.parse(response),
+                        url = BASE_URL + 'enrich?dataset=' + resp.shortId;
+                    var a = $element.find('a');
+                    a.attr('href', url);
+                    a.removeClass('hidden');
+                    a.text('Enrichr results');
+                }).error(function(error, status, headers, config) {
+                    alert('Unknown error. Please try again later or contact the DCIC at support@lincs-dcic.org.');
                 });
             }
         }],
@@ -255,11 +289,11 @@ mod.directive('enrichrTextarea', function() {
     }
 });
 
-mod.directive('slicerBar', function() {
+mod.directive('slicrBar', function() {
     return {
         restrict: 'AE',
         controller: ['$scope', '$http', function($scope, $http) {
-            var url = 'http://amp.pharm.mssm.edu/slicer/';
+            var url = 'http://amp.pharm.mssm.edu/slicr/';
             $scope.tags = [];
             $scope.loadTags = function(typed) {
                 return $http.get(url + 'tags?typed=' + typed);
@@ -271,7 +305,7 @@ mod.directive('slicerBar', function() {
                 $scope.slicerSearchUrl = url + '#/search/' + tagString
             });
         }],
-        templateUrl: 'view/getting-started/slicer.html'
+        templateUrl: 'view/getting-started/slicr.html'
     }
 });
 
@@ -289,7 +323,6 @@ mod.directive('harmonizomeBar', function() {
                 window.open(SEARCH_URL + $scope.searchTerm, '_blank');
             };
             $scope.entities = function(searchTerm) {
-                console.log(searchTerm);
                 return $http.get(SUGGEST_URL + searchTerm).then(function(response) {
                     return response.data;
                 });
