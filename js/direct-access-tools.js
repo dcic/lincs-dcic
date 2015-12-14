@@ -32,6 +32,14 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             cssClass: 'pi-lincs'
         },
         {
+            title: 'iLINCS',
+            description: 'Use iLINCS to analyze differential gene expression in a dataset identified via LINCS Data Portal.',
+            url: 'http://eh3.uc.edu/GenomicsPortals/Lincs.jsp',
+            image: DIR + 'i-lincs.png',
+            directive: 'i-lincs-bar',
+            cssClass: 'i-lincs'
+        },
+        {
             title: 'Slicr',
             description: 'Search LINCS L1000 gene expression profiles.',
             url: 'http://amp.pharm.mssm.edu/slicr/',
@@ -117,27 +125,58 @@ mod.directive('piLincsBar', function($compile) {
             scope.searchTerm = '';
         },
         controller:['$scope', '$http', function($scope, $http) {
-            var URL_PARTS = ['http://www.eh3.uc.edu/pilincs/#/technical-profiles/name', '', 'annotation', ''],
-                SUGGEST_URL = 'http://www.eh3.uc.edu/pilincs/api-tags',
-                searchUrl;
             $scope.searchTypeOptions = [
                 {name: 'Cell ID', value: 'CellId'},
                 {name: 'Perturbation Name', value: 'Pertiname'},
                 {name: 'Gene Symbol', value: 'PrGeneSymbol'}
             ];
             $scope.search = function() {
+                var URL_PARTS = ['http://www.eh3.uc.edu/pilincs/#/technical-profiles/name', '', 'annotation', ''];
                 URL_PARTS[1] = $scope.searchTerm;
                 URL_PARTS[3] = $scope.searchType;
                 var searchUrl = URL_PARTS.join('/');
                 window.open(searchUrl, '_blank');
             };
             $scope.entities = function() {
+                var SUGGEST_URL = 'http://www.eh3.uc.edu/pilincs/api-tags';
                 return $http.get(SUGGEST_URL).then(function(response) {
                     return response.data;
                 });
             };
         }],
         templateUrl: 'view/getting-started/pi-lincs.html'
+    }
+});
+
+mod.directive('iLincsBar', function($compile) {
+    return {
+        restrict: 'AE',
+        scope: {
+            toolDirectiveWrapper: '='
+        },
+        link: function(scope, element, attrs) {
+            scope.searchTerm = '';
+        },
+        controller:['$scope', '$http', function($scope, $http) {
+            $scope.searchTypeOptions = [
+                {name: 'Genes', value: 'genesearch'},
+                {name: 'Datasets', value: 'datasetsearch'},
+                {name: 'Signatures', value: 'signaturesearch'}
+            ];
+            $scope.search = function() {
+                var BASE_URL = 'http://www.eh3.uc.edu/GenomicsPortals/',
+                    path = $scope.searchType,
+                    map_ = {
+                        genesearch: 'genelist',
+                        datasetsearch: 'keyword',
+                        signaturesearch: 'search_term'
+                    },
+                    key = map_[path];
+                var searchUrl = BASE_URL + path + '?' + key + '=' + $scope.searchTerm;
+                window.open(searchUrl, '_blank');
+            };
+        }],
+        templateUrl: 'view/getting-started/i-lincs.html'
     }
 });
 
