@@ -48,6 +48,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "pilincs.png",
             shortDesc: "Interface to panoramaweb.org"
         },
+	{
+            title: "Slicr",
+            description: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
+            url: "http://amp.pharm.mssm.edu/Slicr",
+            target: "_blank",
+            image: DIR + "slicr2.png",
+            shortDesc: "LINCS L1000 Slicer [GSE70138 data only]"
+        },
         {
             title: "L1000CDS2",
             description: "L1000CDS<span class='super'>2</span> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
@@ -84,7 +92,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             title: "LINCS Canvas Browser",
             description: "The LINCS Canvas Browser is an interactive web app to query, browse and interrogate LINCS L1000 gene expression signatures.",
-            url: "http://www.maayanlab.net/LINCS/LCB/",
+            url: "http://www.maayanlab.net/LINCS/LCB",
             target: "_blank",
             image: DIR + "lincs-canvas-browser.png",
             shortDesc: "LINCS L1000 Clustering, Visualization and Enrichment Analysis Tool"
