@@ -54,7 +54,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/Slicr",
             target: "_blank",
             image: DIR + "slicr2.png",
-            shortDesc: "LINCS L1000 Slicer [GSE70138 data only]"
+            shortDesc: "LINCS L1000 Slicr [GSE70138 data only]"
         },
         {
             title: "L1000CDS2",
