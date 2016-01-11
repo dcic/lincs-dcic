@@ -1,0 +1,36 @@
+<!--
+Angular directive template for LINCS centers.
+Input: data, contains description, tags, and links for the particular center.
+ -->
+<div class="panel">
+    <div class="row lincs-data">
+    	<!--  -->
+        <div class="col-xs-6">
+            <img ng-src='{{data.logoUrl}}' class="center-logo">
+        </div>
+        <div class="col-xs-6 text-right">
+        	<span ng-repeat="(name, address) in data.links">
+        		<a href="{{address}}">{{ name }}</a>
+                <!-- | separator, except for last entry --> 
+        		{{$last ? '' : '|'}}
+        	</span>
+        </div>
+    </div>
+    <div class="row lincs-data">
+        <div class="col-xs-12">
+            <h3>{{data.name}}</h3>
+        </div>
+    </div>
+    <div class="row lincs-data">
+        <div class="col-xs-12 muted">
+        	{{ data.tags.join(", ") }}
+            <hr>
+        </div>
+    </div>
+    <div class="row lincs-data">
+        <div class="col-xs-12">
+        	<p>{{data.description}}</p>
+        	<p class="muted text-right">{{data.affiliation}}</p>
+        </div>
+    </div>
+</div>
