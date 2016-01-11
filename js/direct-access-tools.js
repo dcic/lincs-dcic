@@ -64,9 +64,15 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             cssClass: 'harmonizome'
         }
     ];
+
+    $scope.findIndex = function(title) {
+        return   $scope.tools.map(function(tool) {
+            return tool.title;
+        }).indexOf(title);
+    }
 }]);
 
-mod.directive('toolDirectiveWrapper', function ($compile) {
+mod.directive('toolDirectiveWrapper', function($compile) {
     return {
         restrict: 'A',
         scope: {
@@ -93,7 +99,7 @@ mod.directive('lincsDataPortalBar', function($compile) {
             scope.searchTerm = '';
 
         },
-        controller:['$scope', '$http', function($scope, $http) {
+        controller: ['$scope', '$http', function($scope, $http) {
             var BASE_URL = 'http://dev3.ccs.miami.edu:8080/',
                 SUGGEST_URL = BASE_URL + 'dcic/api/autosuggest?searchTerm=',
                 searchUrl;

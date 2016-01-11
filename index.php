@@ -77,6 +77,9 @@
 	<script src="/lib/bower_components/underscore/underscore-min.js"></script>
 	<script src="/lib/ngTagsInput/ng-tags-input.min.js"></script>
 	<script src="/lib/twitter-fetcher.min.js"></script>
+	<script src="/lib/bower_components/d3/d3.min.js"></script>
+	<script src="/lib/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
+	<script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script>
 	
 	<!-- ************************ Application ************************ -->
 	<!-- Data -->

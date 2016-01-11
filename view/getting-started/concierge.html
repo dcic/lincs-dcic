@@ -1,105 +1,297 @@
 <link rel="stylesheet" href="style/getting-started.css">
 
+<!-- Handwritten font -->
+<!-- <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'> -->
+
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
 <div class="container">
     <div class="category-page getting-started-page" ng-controller="gettingStartedCtrl">
-        <h1>Concierge</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- Concierge greeting -->
+        <div class="row">
+            <div class="col-xs-12">
+                <br>
+                <p class="hand-written">Welcome to Lincs.</p>
+                <p class="hand-written">Please consult the Concierge if you need assistance.</p>
+            </div>
+        </div>
+
+        <!-- FAQ selector and main div containing content -->
         <div class="faq">
             <div class="start row">
-                <div class="col-md-12">
-                    <p class="section">Get started with LINCS</p>
+                <div class="col-xs-12">
+                    <p class="section">
+                        <img class="horizontal" src="images/concierge-icons/concierge_bell.svg" >
+                        Get started with LINCS
+                    </p>
                 </div>
             </div>
             <div class="middle row">
-                <div class="col-md-3" data-selector="general-information">
-                    <p class="section">General information</p>
+                <div class="col-xs-3" data-selector="general-information">
+                    <p class="section">
+                        <img class="vertical" src="images/concierge-icons/circle_information.svg">
+                        <br>
+                        General information
+                        <!-- <br> -->
+                        <!-- <img class="vertical" src="/images/concierge-icons/info_orange.svg"> -->
+                    </p>
                 </div>
-                <div class="col-md-3" data-selector="lincs-data">
-                    <p class="section">Searching LINCS data</p>
+                <div class="col-xs-3" data-selector="lincs-data">
+                    <p class="section">
+                        <!-- <img class="vertical" src="/images/concierge-icons/search.svg"> -->
+                        <!-- http://www.iconsolid.com/ -->
+                        <img class="vertical" src="images/concierge-icons/find_solid.svg">
+                        <br>
+                        Searching data
+                    </p>
                 </div>
-                <div class="col-md-3" data-selector="apis-and-downloads">
-                    <p class="section">Using LINCS data</p>
+                <div class="col-xs-3" data-selector="apis-and-downloads">
+                    <p class="section">
+                        <img class="vertical" src="images/concierge-icons/chart48.svg">
+                        <br>
+                        Using data
+                    </p>
                 </div>
-                <div class="col-md-3" data-selector="opportunities">
-                    <p class="section">Opportunities</p>
+                <div class="col-xs-3" data-selector="opportunities">
+                    <p class="section">
+                        <img class="vertical" src="images/concierge-icons/open_door.svg">
+                        <br>
+                        Opportunities
+                    </p>
                 </div>
             </div>
             <div class="end">
                 <div class="row general-information">
-                    <div class="col-md-4" data-selector="general-information">
-                        <p class="section">The LINCS program</p>
+                    <div class="col-xs-3" data-selector="lincs-program">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/lincs_logo2.png">
+                            <br>
+                            The program
+                        </p>
                     </div>
-                    <div class="col-md-4" data-selector="general-information">
-                        <p class="section">The LINCS Data Generation Centers</p>
+                    <div class="col-xs-3" data-selector="lincs-data">
+                        <p class="section">
+                            <!-- http://ymbproperties.com/ -->
+                            <!-- <img class="vertical" src="images/concierge-icons/handdrawn_microscope.svg"> -->
+                            <!-- <img class="vertical" src="images/concierge-icons/microscope.svg"> -->
+                            <img class="vertical" src="images/concierge-icons/microscope4.svg">
+                            <br>
+                            Data generation centers
+                        </p>
                     </div>
-                    <div class="col-md-4" data-selector="general-information">
-                        <p class="section">LINCS Event</p>
+                    <div class="col-xs-3" data-selector="general-information">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/calendar146.svg">
+                            <br>
+                            Events
+                        </p>
+                    </div>
+                    <div class="col-xs-3" data-selector="publications">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/text70.svg">
+                            <br>
+                            Publications
+                        </p>
                     </div>
                 </div>
                 <div class="row lincs-data">
-                    <div class="col-md-4" data-selector="lincs-data">
-                        <p class="section">Drugs</p>
+                    <div class="col-xs-3" data-selector="drugs-search">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/chemistry43.svg">
+                            <br>
+                            Drugs
+                        </p>
                     </div>
-                    <div class="col-md-4" data-selector="lincs-data">
-                        <p class="section">Cell Lines</p>
+                    <div class="col-xs-3" data-selector="lincs-data">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/dna17.svg">
+                            <br>
+                            Genetic alterations
+                        </p>
                     </div>
-                    <div class="col-md-4" data-selector="lincs-data">
-                        <p class="section">Assays</p>
+                    <div class="col-xs-3" data-selector="lincs-data">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/cell1.svg">
+                            <br>
+                            Cell lines
+                        </p>
+                    </div>
+                    <div class="col-xs-3" data-selector="lincs-data">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/lab2.svg">
+                            <br>
+                            Assays
+                        </p>
                     </div>
                 </div>
                 <div class="row apis-and-downloads">
-                    <div class="col-md-4" data-selector="apis-and-downloads">
-                        <p class="section">APIs</p>
+                    <div class="col-xs-3" data-selector="data-explorer">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/compass.svg">
+                            <br>
+                            Exploring data
+                        </p>
                     </div>
-                    <div class="col-md-4" data-selector="apis-and-downloads">
-                        <p class="section">Downloads</p>
+                    <div class="col-xs-3" data-selector="apis-and-downloads">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/web2.svg">
+                            <br>
+                            APIs
+                        </p>
                     </div>
-                    <div class="col-md-4" data-selector="apis-and-downloads">
-                        <p class="section">Analyze my gene sets with LINCS</p>
+                    <div class="col-xs-3" data-selector="apis-and-downloads">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/download168.svg">
+                            <br>
+                            Downloads
+                        </p>
+                    </div>
+                    <div class="col-xs-3" data-selector="apis-and-downloads">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/stacked7.svg">
+                            <br>
+                            Analyze my gene sets
+                        </p>
                     </div>
                 </div>
                 <div class="row opportunities">
-                    <div class="col-md-4" data-selector="opportunities">
-                        <p class="section">Education</p>
+                    <div class="col-xs-4" data-selector="opportunities">
+                        <p class="section">
+                            <!-- <img class="vertical" src="images/concierge-icons/student-3.svg"> -->
+                            <img class="vertical" src="images/concierge-icons/education.svg">
+                            <br>
+                            Education
+                        </p>
                     </div>
-                    <div class="col-md-4" data-selector="opportunities">
-                        <p class="section">Funding</p>
+                    <div class="col-xs-4" data-selector="opportunities">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/coin11.svg">
+                            <br>
+                            Funding
+                        </p>
                     </div>
-                    <div class="col-md-4" data-selector="opportunities">
-                        <p class="section">Collaboration</p>
+                    <div class="col-xs-4" data-selector="opportunities">
+                        <p class="section">
+                            <img class="vertical" src="images/concierge-icons/social-network12.svg">
+                            <br>
+                            Collaboration
+                        </p>
                     </div>
                 </div>
+            <!-- END selector -->
             </div>
+
+            <!-- PAGE CONTENT -->
             <div class="content">
-                <div class="row general-information">
-                    <div class="col-md-12">
-                        <h2>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <!-- LINCS program section -->
+                <div class="row lincs-program">
+                    <div class="col-sm-6">
+                        <h2>The LINCS program </h2>
+                        <p>LINCS aims to create a network-based understanding of biology by cataloging changes in gene expression and other cellular processes after chemical and genetic perturbations.</p>
+                        <p>Computational methods which integrate diverse data into a comprehensive view of normal and disease states can be applied for the development of new biomarkers and therapeutics.</p>
+                        <p>By generating and making public data on how cells respond to genetic and environmental stressors, the LINCS project will help us gain a more detailed understanding of cellular pathways and aid the development of new therapies that target diseased cell states.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="muted">
+                            LINCS: <b>L</b>ibrary of <b>I</b>ntegrated <b>N</b>etwork-based <b>C</b>ellular <b>S</b>ignatures
+                        </h3>
+
+                        <img src="/images/general/lincs.jpg" width="100%">
+
+                        <div>
+                            <h3>Websites</h3>
+                            <ul>
+                                <li><a href="http://www.lincsproject.org/">LINCS project</a></li>
+                                <li><a href="http://commonfund.nih.gov/LINCS/index">NIH LINCS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="text-center">
+                            <img src="/images/general/LINCS_cube.svg">
+                        </div>
+                            <h3>Data cubes</h3>
+                            <p>The combinatorial possibilities of cell lines, perturbations, and experimental platforms are viewed as data cubes. The LINCS project generates and analyses data in this form thus systematically filling out the space of experimental possibilities.</p>
                     </div>
                 </div>
-                <div class="row lincs-data">
-                    <div class="col-md-12">
-                        <h2>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+                <!-- LINCS data generation centers -->
+                <div class="row lincs-data" ng-controller="lincsCentersCtrl">
+                    <div class="col-sm-6">
+                        <h2>Data and signature generation centers</h2>
+                        <p>LINCS data are generated at 6 research centers each contributing complementary data cubes consisting of cell lines, perturbations, and assays. The centers have their own research goals and scientific priorities which are here outlined.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-center">
+                            <img src="/images/general/LINCS_cube_multicenter.svg">
+                        </div>
+                    </div>
+
+                    <div class="row lincs-data">
+                        <!-- Loop over each data generation center -->
+                        <div class="col-sm-6" ng-repeat="center in centers_info">
+                            <div center class="lincs-data" data="center"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Drug specific searches -->
+                <div class="row drugs-search category-page direct-access-tools-page" ng-controller="directAccessToolsCtrl">
+                    <div class="col-xs-12">
+                        <h2>How to find data on small-molecules?</h2>
+                        <p>The LINCS project encompass a diverse and large-scale collection of data which is relevant to particular small-molecules. There are many different search tools which can be used for this task. The most important such tools are here highlighted.
+                        data which is relevant to specific drugs.</p>
+
+                        <h3>Text-based queries</h3>
+
+                        <div class="tools">
+                            {{ tool=tools[1];""}}
+                            <div class="col-md-4 tool" tool-directive-wrapper="1" ng-class="tool.cssClass">
+                                <h3>
+                                    <img ng-src="{{tool.image}}"/>
+                                    <a ng-href="{{tool.url}}" target="_blank">{{tool.title}}</a>
+                                </h3>
+                                <p>{{tool.description}}</p>
+                                <placeholder style="display: none"></placeholder>
+                            </div>
+                        </div>
+
+                        <p>test</p>
+
+                        <h4>The LINCS data portal</h4>
+                        <p>Test</p>
+
+                        <h3>Signature-based</h3>
+                        <p>Provided genes that are up or down regulated, can I find small-molecules which are relevant?</p>
+
+                        <h3>External data</h3>
+                        <p>In addition to the LINCS data</p>
                     </div>
                 </div>
                 <div class="row apis-and-downloads">
-                    <div class="col-md-12">
+                    <div class="col-xs-12">
                         <h2>Lorem Ipsum</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
                     </div>
                 </div>
                 <div class="row opportunities">
-                    <div class="col-md-12">
+                    <div class="col-xs-12">
                         <h2>Lorem Ipsum</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
                     </div>
                 </div>
+            <!-- END content -->
             </div>
+        <!-- END FAQ div: the main div of Concierge -->
         </div>
-    </div>
+    <!-- END getting stared div -->
+    </div>  
+
+    <br><br><br><br>
+    <div class="small">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+
 </div>
