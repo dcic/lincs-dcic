@@ -72,20 +72,22 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
     }
 }]);
 
+// Wrapper for tools. Sets up the frame with icon, 
 mod.directive('toolDirectiveWrapper', function($compile) {
     return {
         restrict: 'A',
         scope: {
             toolDirectiveWrapper: '='
         },
-        link: function (scope, elem, attrs) {
-            var toolObj = scope.$parent.tools[scope.toolDirectiveWrapper];
-            if (toolObj && toolObj.directive !== 'undefined') {
+        link: function(scope, elem, attrs) {
+            var tool_obj = scope.toolDirectiveWrapper;
+            if (tool_obj && tool_obj.directive !== 'undefined') {
                 elem.find('placeholder').replaceWith(
-                    $compile('<' + toolObj.directive + '></' + toolObj.directive + '>')(scope)
+                    $compile('<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
                 )
             }
-        }
+        },
+        templateUrl: "view/getting-started/tool-directive-wrapper.html"
     }
 });
 

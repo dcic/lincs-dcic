@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="row lincs-data">
-                    <div class="col-xs-3" data-selector="drugs-search">
+                    <div class="col-xs-3" data-selector="drug-search">
                         <p class="section">
                             <img class="vertical" src="images/concierge-icons/chemistry43.svg">
                             <br>
@@ -238,38 +238,48 @@
                 </div>
 
                 <!-- Drug specific searches -->
-                <div class="row drugs-search category-page direct-access-tools-page" ng-controller="directAccessToolsCtrl">
-                    <div class="col-xs-12">
-                        <h2>How to find data on small-molecules?</h2>
-                        <p>The LINCS project encompass a diverse and large-scale collection of data which is relevant to particular small-molecules. There are many different search tools which can be used for this task. The most important such tools are here highlighted.
-                        data which is relevant to specific drugs.</p>
+                <div class="row drug-search category-page direct-access-tools-page" ng-controller="directAccessToolsCtrl">
+                    <div class="row drug-search">
+                        <div class="col-xs-12">
+                            <h2>How to find data on small-molecules?</h2>
+                            <p>The LINCS project encompass a diverse and large-scale collection of data which is relevant to particular small-molecules. There are many different search tools which can be used for this task. The most important such tools are here highlighted.
+                            data which is relevant to specific drugs.</p>
 
-                        <h3>Text-based queries</h3>
-
-                        <div class="tools">
-                            {{ tool=tools[1];""}}
-                            <div class="col-md-4 tool" tool-directive-wrapper="1" ng-class="tool.cssClass">
-                                <h3>
-                                    <img ng-src="{{tool.image}}"/>
-                                    <a ng-href="{{tool.url}}" target="_blank">{{tool.title}}</a>
-                                </h3>
-                                <p>{{tool.description}}</p>
-                                <placeholder style="display: none"></placeholder>
+                            <h3>Text-based queries</h3>
+                        </div>
+                    </div>
+                    <div class="row drug-search">
+                        <div class="col-xs-12">
+                            <div class="tools">
+                                {{ tool=tools[1];""}}
+                                <div class="col-md-4 tool" tool-directive-wrapper="1" ng-class="tool.cssClass">
+                                    <h3>
+                                        <img ng-src="{{tool.image}}"/>
+                                        <a ng-href="{{tool.url}}" target="_blank">{{tool.title}}</a>
+                                    </h3>
+                                    <p>{{tool.description}}</p>
+                                    <placeholder style="display: none"></placeholder>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row drug-search">
+                        <div class="col-xs-12">
+                            <p>test</p>
 
-                        <p>test</p>
+                            <h4>The LINCS data portal</h4>
+                            <p>Test</p>
 
-                        <h4>The LINCS data portal</h4>
-                        <p>Test</p>
+                            <h3>Signature-based</h3>
+                            <p>Provided genes that are up or down regulated, can I find small-molecules which are relevant?</p>
 
-                        <h3>Signature-based</h3>
-                        <p>Provided genes that are up or down regulated, can I find small-molecules which are relevant?</p>
+                            <h3>External data</h3>
+                            <p>In addition to the LINCS data</p>
 
-                        <h3>External data</h3>
-                        <p>In addition to the LINCS data</p>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="row apis-and-downloads">
                     <div class="col-xs-12">
                         <h2>Lorem Ipsum</h2>
