@@ -82,14 +82,13 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
     ];
 
     $scope.findTool = function(title) {
-        // console.log("findTool called");
         // Find tool index from tool array
         var tool_index = $scope.tools.map(function(tool) {
             return tool.title;
         }).indexOf(title);
 
         // Return tool object, or -1 if not found.
-        if (tool_index > 0) {
+        if (tool_index >= 0) {
             return $scope.tools[tool_index];
         } else {
             return tool_index;
@@ -412,8 +411,6 @@ mod.directive("hmsDbBar", function() {
         },
         controller: ["$scope", "$http", function($scope, $http) {
             var search_url = $scope.toolDirectiveWrapper.url + "?search="
-            // toolDirectiveWrapper
-            console.log(search_url);
             $scope.search = function() {
                 window.open(search_url + $scope.searchTerm, "_blank");
             }
@@ -430,7 +427,6 @@ mod.directive("lifeBar", function() {
         },
         controller: ["$scope", "$http", function($scope, $http) {
             $scope.search = function() {
-                console.log($scope.searchTerm);
                 window.open($scope.toolDirectiveWrapper.url + "search?load=AssayTypeName&search=" + $scope.searchTerm + "&q=" + $scope.searchTerm + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
                     "_blank");
             };
