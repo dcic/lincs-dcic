@@ -12,8 +12,15 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: 'Find consensus signatures that match your input signature vector.',
             url: 'http://amp.pharm.mssm.edu/L1000CDS2',
             image: DIR + 'l1000cds2.png',
+            // alternative modes and description specification
+            modes: {
+                // functionality
+                functionality: ["search", "analysis"],
+                // content
+                content: ["cells", "drugs", "genetics"]
+            },
             directive: 'l1000cds2-textarea',
-            cssClass: 'l1000cds2'
+            cssClass: 'l1000cds2',
         },
         {
             title: 'LINCS Data Portal',
@@ -73,11 +80,83 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "LIFE",
-            description: "The LIFE search engine integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
+            description: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
             url: "http://life.ccs.miami.edu/life/",
             image: DIR + "life.png",
             directive: "LIFE-bar",
             cssCLass: "life"
+        },
+        {
+            title: "Docent",
+            description: "Global visual summaries of the currently available LINCS Phase II datasets.",
+            url: "http://amp.pharm.mssm.edu/milestones/grid.html",
+            image: DIR + "docent-grid.png",
+            directive: "Docent-bar",
+            cssClass: "docent"
+        },
+        {
+            title: "LDR",
+            description: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers",
+            url: "http://amp.pharm.mssm.edu/ldr/",
+            image: "",
+            directive: "LDR-bar",
+            cssClass: "ldr"
+        },
+        {
+            title: "Gen3va",
+            description: "GEN3VA: the GENE Expression and Enrichment Vector Analyzer aggregates and analyzes gene expression signatures extracted from GEO by the crowd using GEO2Enrichr.",
+            url: "http://amp.pharm.mssm.edu/gen3va/",
+            image: DIR + "gen3va_logo.png",
+            directive: "Geneva-bar",
+            cssClass: "geneva"
+        },
+        {
+            title: "Lincscloud",
+            description: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience. It enables integrated analysis of LINCS L1000 datasets across data types, user types, and institutions.",
+            url: "http://www.lincscloud.org/",
+            image: DIR + "cmap2.jpg",
+            directive: "Lincscloud-bar",
+            cssClass: "lincscloud"
+        },
+        {
+            title: "PAEA",
+            description: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
+            url: "http://amp.pharm.mssm.edu/PAEA/",
+            image: DIR + "paea.png",
+            directive: "Paea-bar",
+            cssClass: "paea"
+        },
+        {
+            title: "LINCS Canvas Browser",
+            description: "The LINCS Canvas Browser is an interactive web app to query, browse and interrogate LINCS L1000 gene expression signatures.",
+            url: "http://www.maayanlab.net/LINCS/LCB",
+            image: DIR + "lincs-canvas-browser.png",
+            directive: "LCB-bar",
+            cssClass: "lcb"
+        },
+        {
+            title: "Drug/Cell-line Browser",
+            description: "An online interactive HTML5 data visualization tool for interacting with three of the recently published datasets of cancer cell lines/drug-viability studies.",
+            url: "http://www.maayanlab.net/LINCS/DCB/",
+            image: DIR + "drug-cell-line-browser.png",
+            directive: "DCB-bar",
+            cssClass: "dcb"
+        },
+        {
+            title: "Network2Canvas",
+            description: "A web application that provides an alternative way to view networks and visualizes them by placing nodes on a square toroidal canvas.",
+            url: "http://www.maayanlab.net/N2C/",
+            image: DIR + "network2canvas.png",
+            directive: "Network2Canvas-bar",
+            cssClass: "network2canvas"
+        },
+        {
+            title: "P100/GCP Mosaic",
+            description: "Mosaic visualization of targeted phosphoproteomics and post-translation histone modifications after chemical perturbation of cancer cell lines",
+            url: "http://amp.pharm.mssm.edu/p100mosaic",
+            image: DIR + "mosaic_by_freepik.jpg",
+            directive: "P100mosaic-bar",
+            cssClass: "p100mosaic"
         }
     ];
 
