@@ -10,13 +10,14 @@
             <img ng-repeat="t in tools" ng-src="{{t.image}}"/>
         </div>
 
+        <hr>
+
         <!-- All tools -->
-        <div class="tools">
-            <div ng-repeat="t in tools" ng-if="$index % 3 == 0" class="row">
-                <div tool-directive-wrapper="tools[$index]"></div>
-                <div tool-directive-wrapper="tools[$index+1]"></div>
-                <div tool-directive-wrapper="tools[$index+2]"></div>
+        <div class="tools row">
+            <div class="col-sm-6" ng-repeat="tool in tools">
+                <div tool-directive-wrapper="tool"></div>
             </div>
         </div>
+
     </div>
 </div>

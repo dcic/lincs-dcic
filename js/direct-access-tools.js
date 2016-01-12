@@ -62,13 +62,38 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             image: DIR + 'harmonizome.png',
             directive: 'harmonizome-bar',
             cssClass: 'harmonizome'
+        },
+        {
+            title: "HMS LINCS Database",
+            description: "Search Harvard Medical School's LINCS data base.",
+            url: "http://lincs.hms.harvard.edu/db/",
+            image: DIR + "hms_lincs.png",
+            directive: "HMS-DB-bar",
+            cssClass: "hms-db"
+        },
+        {
+            title: "LIFE",
+            description: "The LIFE search engine integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
+            url: "http://life.ccs.miami.edu/life/",
+            image: DIR + "life.png",
+            directive: "LIFE-bar",
+            cssCLass: "life"
         }
     ];
 
-    $scope.findIndex = function(title) {
-        return   $scope.tools.map(function(tool) {
+    $scope.findTool = function(title) {
+        // console.log("findTool called");
+        // Find tool index from tool array
+        var tool_index = $scope.tools.map(function(tool) {
             return tool.title;
         }).indexOf(title);
+
+        // Return tool object, or -1 if not found.
+        if (tool_index > 0) {
+            return $scope.tools[tool_index];
+        } else {
+            return tool_index;
+        }
     }
 }]);
 
@@ -376,5 +401,40 @@ mod.directive('harmonizomeBar', function() {
             };
         }],
         templateUrl: 'view/getting-started/harmonizome.html'
+    }
+});
+
+mod.directive("hmsDbBar", function() {
+    return {
+        restrict: "AE",
+        link: function(scope, element, attrs) {
+            scope.searchTerm = "";
+        },
+        controller: ["$scope", "$http", function($scope, $http) {
+            var search_url = $scope.toolDirectiveWrapper.url + "?search="
+            // toolDirectiveWrapper
+            console.log(search_url);
+            $scope.search = function() {
+                window.open(search_url + $scope.searchTerm, "_blank");
+            }
+        }],
+        templateUrl: "view/getting-started/hms-db.html"
+    }
+});
+
+mod.directive("lifeBar", function() {
+    return {
+        restrict: "AE",
+        link: function(scope, element, attrs) {
+            scope.searchTerm = "";
+        },
+        controller: ["$scope", "$http", function($scope, $http) {
+            $scope.search = function() {
+                console.log($scope.searchTerm);
+                window.open($scope.toolDirectiveWrapper.url + "search?load=AssayTypeName&search=" + $scope.searchTerm + "&q=" + $scope.searchTerm + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
+                    "_blank");
+            };
+        }],
+        templateUrl: "view/getting-started/life.html"
     }
 });

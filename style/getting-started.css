@@ -81,9 +81,10 @@
   width: 50px;
 }
 .category-page.direct-access-tools-page .tools {
-  border-top: 1px solid #f1f1f1;
-  padding-top: 20px;
-  margin-top: 50px;
+  /*border-top: 1px solid #f1f1f1;*/
+  /*padding-top: 20px;*/
+  /*margin-top: 50px;*/
+  /*margin: 10px;*/
 }
 .category-page.direct-access-tools-page .tools img {
   height: 25px;
@@ -113,7 +114,9 @@
 .category-page.direct-access-tools-page .tools #lincs-data-portal input,
 .category-page.direct-access-tools-page .tools #pi-lincs input,
 .category-page.direct-access-tools-page .tools #slicr .tags,
-.category-page.direct-access-tools-page .tools #harmonizome input {
+.category-page.direct-access-tools-page .tools #harmonizome input,
+.category-page.direct-access-tools-page .tools #life input,
+.category-page.direct-access-tools-page .tools #hms-db input {
   border: 1px solid #dddddd;
   width: 100%;
   padding: 5px;
@@ -138,12 +141,12 @@
   margin-bottom: 0;
 }
 .category-page.direct-access-tools-page .tools .tool {
-  border-right: 1px solid #dddddd;
-  height: 400px;
-  margin-bottom: 50px;
+  /*border-right: 1px solid #dddddd;*/
+  /*height: 400px;*/
+  /*margin-bottom: 50px;*/
 }
 .category-page.direct-access-tools-page .tools .tool.last {
-  border-right: none;
+  /*border-right: none;*/
 }
 
 /* For greying out text */
@@ -159,6 +162,7 @@ p.hand-written {
   border-style: solid;
   border-color: rgb(240,240,240);
   padding: 5px;
+  /*margin: 10px;*/
 }
 
 .center-logo {
@@ -166,7 +170,7 @@ p.hand-written {
   max-width: 140px;
 }
 
-/* Boostrap clear column fix: implicit new rows are cleared according to left element in the row above. */
+/* bootstrip fix. Words for .col-sm-6 classes only.*/
 .col-sm-6:nth-child(2n+1){
     clear: left;
 }

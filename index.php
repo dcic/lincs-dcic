@@ -80,7 +80,7 @@
 	<script src="/lib/bower_components/d3/d3.min.js"></script>
 	<script src="/lib/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
 	<script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script>
-	
+		
 	<!-- ************************ Application ************************ -->
 	<!-- Data -->
     <script type="text/javascript" src="js/data/apis.js"></script>

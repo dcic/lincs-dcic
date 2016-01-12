@@ -255,6 +255,7 @@ modLincsCenters.directive("center", function() {
             // Draw the text speficications to a svg element.
             $scope.drawWordCloud = function(words) {
                 var div_width = $element[0].querySelector(".cloud-div").clientWidth;
+                // div_width -= 40;  // margin
 
                 d3.select($element[0]).select("div.cloud-div").append("svg")  // gets raw DOM element
                     // svg
