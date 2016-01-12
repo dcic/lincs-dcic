@@ -76,29 +76,57 @@
 .category-page.getting-started-page .content .row {
   display: none;
 }
+
+
+/* Tools summary visualization using the tool icons. */
 .category-page.direct-access-tools-page .tools-summary img {
   margin-left: 10px;
   width: 50px;
 }
-.category-page.direct-access-tools-page .tools {
-  /*border-top: 1px solid #f1f1f1;*/
-  /*padding-top: 20px;*/
-  /*margin-top: 50px;*/
-  /*margin: 10px;*/
-}
-.category-page.direct-access-tools-page .tools img {
-  height: 25px;
-}
 .category-page.direct-access-tools-page .tools ul li:before {
   content: '';
 }
-.category-page.direct-access-tools-page .tools button {
+
+/* Direct access tool common styling */
+div.tool input {
+  border: 1px solid #dddddd;
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  box-shadow: none;
+}
+
+div.tool a {
+  color: black;
+}
+div.tool a:hover {
+  color: black;
+  opacity: .75;
+  text-decoration: none;
+}
+
+div.tool img {
+  height: 26px;
+}
+
+div.tool button {
   margin: 10px 0;
 }
-.category-page.direct-access-tools-page .tools input,
-.category-page.direct-access-tools-page .tools textarea {
+div.tool input,
+div.tool textarea {
   border: 1px solid #dddddd;
 }
+
+div.tool .tool-title {
+  font-size: 20px;
+}
+
+div.tool .row.tool-header {
+  margin-bottom: 5px;
+}
+
+/* Specific tool styling */
+/* multiline text area styling. TODO: move to general tool style */
 .category-page.direct-access-tools-page .tools .textarea-wrapper {
   float: left;
   width: 48%;
@@ -111,26 +139,6 @@
 .category-page.direct-access-tools-page .tools .introduction {
   margin-bottom: 50px;
 }
-.category-page.direct-access-tools-page .tools #lincs-data-portal input,
-.category-page.direct-access-tools-page .tools #pi-lincs input,
-.category-page.direct-access-tools-page .tools #slicr .tags,
-.category-page.direct-access-tools-page .tools #harmonizome input,
-.category-page.direct-access-tools-page .tools #life input,
-.category-page.direct-access-tools-page .tools #hms-db input {
-  border: 1px solid #dddddd;
-  width: 100%;
-  padding: 5px;
-  height: 40px;
-  box-shadow: none;
-}
-.category-page.direct-access-tools-page .tools a {
-  color: black;
-}
-.category-page.direct-access-tools-page .tools a:hover {
-  color: black;
-  opacity: .75;
-  text-decoration: none;
-}
 .category-page.direct-access-tools-page .tools #slicr {
   /* Qiaonan uses tags input. */
 }
@@ -140,14 +148,7 @@
 .category-page.direct-access-tools-page .tools tags-input .host {
   margin-bottom: 0;
 }
-.category-page.direct-access-tools-page .tools .tool {
-  /*border-right: 1px solid #dddddd;*/
-  /*height: 400px;*/
-  /*margin-bottom: 50px;*/
-}
-.category-page.direct-access-tools-page .tools .tool.last {
-  /*border-right: none;*/
-}
+
 
 /* For greying out text */
 .muted {

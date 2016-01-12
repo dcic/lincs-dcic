@@ -176,21 +176,21 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
 }]);
 
 // Wrapper for tools. Sets up the frame with icon, 
-mod.directive('toolDirectiveWrapper', function($compile) {
+mod.directive('toolDirective', function($compile) {
     return {
         restrict: 'A',
         scope: {
-            toolDirectiveWrapper: '='
+            toolDirective: '='
         },
         link: function(scope, elem, attrs) {
-            var tool_obj = scope.toolDirectiveWrapper;
+            var tool_obj = scope.toolDirective;
             if (tool_obj && tool_obj.directive !== 'undefined') {
                 elem.find('placeholder').replaceWith(
                     $compile('<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
                 )
             }
         },
-        templateUrl: "view/getting-started/tool-directive-wrapper.html"
+        templateUrl: "view/getting-started/tool-directive.html"
     }
 });
 
@@ -198,7 +198,7 @@ mod.directive('lincsDataPortalBar', function($compile) {
     return {
         restrict: 'AE',
         scope: {
-            toolDirectiveWrapper: '='
+            toolDirective: '='
         },
         link: function(scope, element, attrs) {
             scope.searchTerm = '';
@@ -230,7 +230,7 @@ mod.directive('piLincsBar', function($compile) {
     return {
         restrict: 'AE',
         scope: {
-            toolDirectiveWrapper: '='
+            toolDirective: '='
         },
         link: function(scope, element, attrs) {
             scope.searchTerm = '';
@@ -263,7 +263,7 @@ mod.directive('iLincsBar', function($compile) {
     return {
         restrict: 'AE',
         scope: {
-            toolDirectiveWrapper: '='
+            toolDirective: '='
         },
         link: function(scope, element, attrs) {
             scope.searchTerm = '';
@@ -489,7 +489,7 @@ mod.directive("hmsDbBar", function() {
             scope.searchTerm = "";
         },
         controller: ["$scope", "$http", function($scope, $http) {
-            var search_url = $scope.toolDirectiveWrapper.url + "?search="
+            var search_url = $scope.toolDirective.url + "?search="
             $scope.search = function() {
                 window.open(search_url + $scope.searchTerm, "_blank");
             }
@@ -506,7 +506,7 @@ mod.directive("lifeBar", function() {
         },
         controller: ["$scope", "$http", function($scope, $http) {
             $scope.search = function() {
-                window.open($scope.toolDirectiveWrapper.url + "search?load=AssayTypeName&search=" + $scope.searchTerm + "&q=" + $scope.searchTerm + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
+                window.open($scope.toolDirective.url + "search?load=AssayTypeName&search=" + $scope.searchTerm + "&q=" + $scope.searchTerm + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
                     "_blank");
             };
         }],

@@ -1,0 +1,16 @@
+<!-- tool Directive wrapper -->
+<div class="tool panel" ng-class="toolDirective.cssClass">
+	<div class="row tool-header">
+		<div class="col-xs-8">
+			<span class="tool-title">
+			    <img ng-src="{{toolDirective.image}}"/>
+			    <a ng-href="{{toolDirective.url}}" target="_blank">{{toolDirective.title}}</a>
+			</span>
+		</div>
+		<div class="col-xs-4">a b c</div>
+	</div>
+
+	<p>{{toolDirective.description}}</p>
+	<!-- Placeholder for nested directives which are compiled in place. -->
+	<placeholder style="display: none"></placeholder>
+</div>
