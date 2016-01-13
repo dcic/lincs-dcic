@@ -1,19 +1,17 @@
-<div id="l1000cds2">
-    <div>
-        <button ng-click="example()" class="btn btn-default" >Example</button>
+<div>
+    <button ng-click="example()" class="btn btn-default" >Example</button>
+</div>
+<div>
+    <div class="textarea-wrapper">
+        <p><strong>Up</strong></p>
+        <textarea ng-model="upGenes" placeholder="Up genes"></textarea>
     </div>
-    <div>
-        <div class="textarea-wrapper">
-            <p><strong>Up</strong></p>
-            <textarea ng-model="upGenes" placeholder="Up genes"></textarea>
-        </div>
-        <div class="textarea-wrapper">
-            <p><strong>Down</strong></p>
-            <textarea ng-model="dnGenes" placeholder="Down genes"></textarea>
-        </div>
+    <div class="textarea-wrapper">
+        <p><strong>Down</strong></p>
+        <textarea ng-model="dnGenes" placeholder="Down genes"></textarea>
     </div>
-    <div class="results">
-        <button ng-click="search()" class="btn btn-default" >Search</button>
-        <a href="" target="_blank" class="btn btn-default hidden"></a>
-    </div>
+</div>
+<div class="results">
+    <button ng-click="search()" class="btn btn-default" >Search</button>
+    <a href="" target="_blank" class="btn btn-default hidden"></a>
 </div>

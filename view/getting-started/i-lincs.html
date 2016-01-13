@@ -1,10 +1,8 @@
-<div id="pi-lincs">
-    <select ng-model="searchType"
-            ng-init="searchType = searchType || searchTypeOptions[0].value"
-            ng-options="option.value as option.name for option in searchTypeOptions">
-    </select>
-    <input type="text"
-           ng-model="searchTerm"
-           placeholder="Search iLincs">
-    <button class="btn btn-default" ng-click="search()">Search</button>
-</div>
+<select ng-model="query.option"
+        ng-init="searchType = searchType || searchTypeOptions[0].value"
+        ng-options="option.value as option.name for option in searchTypeOptions">
+</select>
+<input type="text"
+       ng-model="query.term"
+       placeholder="Search iLincs">
+<button class="btn btn-default" ng-click="search()">Search</button>

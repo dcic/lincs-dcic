@@ -291,8 +291,6 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
     // Type search query in all child <tool>
     $scope.typeSearch = function(query) {
         console.log("typing: ", query);
-        // console.log($element);
-        // $element.find("tool").setSearchTerm(query);
         // broadcast type-search event
         $scope.$broadcast("type-search", query);
     };
@@ -314,13 +312,6 @@ mod.factory("tooltips", function() {
     };
 });
 
-// // Type query in all search fields
-// mod.factory("typeSearch", function() {
-//     return function(query) {
-//         console.log("typing: ", query);
-//     };
-// });
-
 // Wrapper for tools. Sets up the frame with icon, 
 mod.directive("tool", function($compile, $timeout) {
     return {
@@ -332,12 +323,14 @@ mod.directive("tool", function($compile, $timeout) {
             toolMode: '@'
         },
         link: function(scope, elem, attrs) {
+            // console.log("test");
             var tool_obj = scope.toolData;
             if (tool_obj && tool_obj.directive !== 'undefined') {
                 elem.find('placeholder').replaceWith(
                     $compile('<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
                 );
             };
+
             // Call change mode after directive has rendered. timeout makes it work -- even with 0ms. It's magic.
             $timeout(function(){
                 if (typeof scope.toolMode !== "undefined") {
@@ -353,7 +346,13 @@ mod.directive("tool", function($compile, $timeout) {
             // Selected descriptions
             $scope.functional_description = "";
             $scope.data_content_description = "";
-            $scope.search_term = "";
+
+            // For inherited "Dot" syntax in child controllers.
+            // Query template.
+            $scope.query = {
+                term: "",
+                option: ""
+            };
 
             // Change viewiew mode. To be overwritten by child directives.
             $scope.mode = function(mode_id) {
@@ -391,8 +390,9 @@ mod.directive("tool", function($compile, $timeout) {
             $scope.buttonTooltip = function(name) {
                 return tooltips[name];
             };
+            // On function is inherited
             $scope.$on("type-search", function(event, query) {
-                $scope.search_term = query;
+                $scope.query.term = query;
             });
         }],
         templateUrl: "view/getting-started/tool-directive.html"
@@ -401,26 +401,29 @@ mod.directive("tool", function($compile, $timeout) {
 
 mod.directive('lincsDataPortalBar', function($compile) {
     return {
-        restrict: 'AE',
-        scope: {
-            toolDirective: '='
-        },
-        link: function(scope, element, attrs) {
-            // scope.searchTerm = '';
+        restrict: 'E',
+        scope: true,
+        link: function(scope, element, attrs, ctrls) {
+            console.log("lincsDataPortalBar controller: ", ctrls);
         },
         controller: ['$scope', '$http', function($scope, $http) {
-            // $scope.search_term = "";
-            var BASE_URL = 'http://dev3.ccs.miami.edu:8080/',
-                SUGGEST_URL = BASE_URL + 'dcic/api/autosuggest?searchTerm=',
-                searchUrl;
-            $scope.search = function() {
-                searchUrl = BASE_URL + $scope.searchType + '/#?query=' + $scope.search_term;
-                window.open(searchUrl, '_blank');
-            };
+            $scope.query = $scope.$parent.query;  // query binding from parent
+
             $scope.searchTypeOptions = [
                 {name: 'Datasets', value: 'datasets'},
                 {name: 'Entities', value: 'entities'}
             ];
+
+            $scope.query.option = $scope.searchTypeOptions[0].value;  // default search type
+
+            var base_url = 'http://dev3.ccs.miami.edu:8080/';
+            var suggest_url = base_url + 'dcic/api/autosuggest?searchTerm=';
+
+            $scope.search = function() {
+                // construct search url
+                var search_url = base_url + $scope.query.option + '/#?query=' + $scope.query.term;
+                window.open(search_url, '_blank');
+            };
             $scope.entities = function(searchTerm) {
                 return $http.get(SUGGEST_URL + searchTerm).then(function(response) {
                     return response.data.suggestTerms;
@@ -433,14 +436,13 @@ mod.directive('lincsDataPortalBar', function($compile) {
 
 mod.directive('piLincsBar', function($compile) {
     return {
-        restrict: 'AE',
-        scope: {
-            toolDirective: '='
-        },
+        restrict: 'E',
+        scope: true,
         link: function(scope, element, attrs) {
-            scope.searchTerm = '';
         },
         controller:['$scope', '$http', function($scope, $http) {
+            // $scope.query = $scope.$parent.query;  // query binding from parent
+
             $scope.searchTypeOptions = [
                 {name: 'Cell ID', value: 'CellId'},
                 {name: 'Perturbation Name', value: 'Pertiname'},
@@ -448,7 +450,7 @@ mod.directive('piLincsBar', function($compile) {
             ];
             $scope.search = function() {
                 var URL_PARTS = ['http://www.eh3.uc.edu/pilincs/#/technical-profiles/name', '', 'annotation', ''];
-                URL_PARTS[1] = $scope.searchTerm;
+                URL_PARTS[1] = $scope.search_term;
                 URL_PARTS[3] = $scope.searchType;
                 var searchUrl = URL_PARTS.join('/');
                 window.open(searchUrl, '_blank');
@@ -466,29 +468,31 @@ mod.directive('piLincsBar', function($compile) {
 
 mod.directive('iLincsBar', function($compile) {
     return {
-        restrict: 'AE',
-        scope: {
-            toolDirective: '='
-        },
+        restrict: 'E',
+        scope: true,
         link: function(scope, element, attrs) {
-            scope.searchTerm = '';
+            // scope.searchTerm = '';
         },
-        controller:['$scope', '$http', function($scope, $http) {
+        controller: ['$scope', '$http', function($scope, $http) {
+
             $scope.searchTypeOptions = [
-                {name: 'Genes', value: 'genesearch'},
-                {name: 'Datasets', value: 'datasetsearch'},
-                {name: 'Signatures', value: 'signaturesearch'}
+                {name: 'LINCS', value: "Lincs.jsp?"},
+                {name: 'External', value: "bs_keywordSearch.do?organism=%&sample_type=%&data_type=%&portal_name=ALL&gene_list_selected=false&"}
             ];
+
+            $scope.query.option = $scope.searchTypeOptions[0].value;
             $scope.search = function() {
-                var BASE_URL = 'http://www.eh3.uc.edu/GenomicsPortals/',
-                    path = $scope.searchType,
-                    map_ = {
-                        genesearch: 'genelist',
-                        datasetsearch: 'keyword',
-                        signaturesearch: 'search_term'
-                    },
-                    key = map_[path];
-                var searchUrl = BASE_URL + path + '?' + key + '=' + $scope.searchTerm;
+                // LINCS genomics portal
+                var base_url = "http://www.eh3.uc.edu/GenomicsPortals/"
+
+                // path = $scope.searchType,
+                // map_ = {
+                //     genesearch: 'genelist',
+                //     datasetsearch: 'keyword',
+                //     signaturesearch: 'search_term'
+                // },
+                // key = map_[path];
+                var searchUrl = base_url + $scope.query.option + "keyword=" + $scope.query.term;
                 window.open(searchUrl, '_blank');
             };
         }],
@@ -498,7 +502,8 @@ mod.directive('iLincsBar', function($compile) {
 
 mod.directive('l1000cds2Textarea', function() {
     return {
-        restrict: 'AE',
+        restrict: 'E',
+        scope: true,
         controller: ['$scope', '$element', function($scope, $element) {
             $scope.upGenes = '';
             $scope.dnGenes = '';
@@ -569,7 +574,8 @@ mod.directive('l1000cds2Textarea', function() {
 
 mod.directive('enrichrTextarea', function() {
     return {
-        restrict: 'AE',
+        restrict: 'E',
+        scope: true,
         controller: ['$scope', '$element', function($scope, $element) {
             var BASE_URL = 'http://amp.pharm.mssm.edu/Enrichr/';
             $scope.genes = '';
@@ -646,19 +652,25 @@ mod.directive('enrichrTextarea', function() {
 
 mod.directive('slicrBar', function() {
     return {
-        restrict: 'AE',
+        restrict: 'E',
+        scope: true,
         controller: ['$scope', '$http', function($scope, $http) {
-            var url = 'http://amp.pharm.mssm.edu/slicr/';
+            var url = $scope.toolData.url;
             $scope.tags = [];
             $scope.loadTags = function(typed) {
                 return $http.get(url + 'tags?typed=' + typed);
             };
             $scope.$watchCollection('tags', function(newVal, oldVal) {
-                var tagString = $scope.tags.map(function(tag) {
+                $scope.search_term = $scope.tags.map(function(tag) {
                     return tag.text;
                 }).join(',');
-                $scope.slicerSearchUrl = url + '#/search/' + tagString
+                $scope.slicerSearchUrl = url + '#/search/' + $scope.search_term;
             });
+            // Overwrite type-search listener, changes tags variable (the search query model of slicrBar).
+            $scope.$on("type-search", function(event, query) {
+                $scope.tags = query.split(" ");
+            });
+
         }],
         templateUrl: 'view/getting-started/slicr.html'
     }
@@ -666,19 +678,20 @@ mod.directive('slicrBar', function() {
 
 mod.directive('harmonizomeBar', function() {
     return {
-        restrict: 'AE',
+        restrict: 'E',
+        scope: true,
         link: function(scope, element, attrs) {
-            scope.searchTerm = '';
         },
         controller: ['$scope', '$http', function($scope, $http) {
-            var BASE_URL = 'http://amp.pharm.mssm.edu/Harmonizome/',
-                SEARCH_URL = BASE_URL + 'search?q=',
-                SUGGEST_URL = BASE_URL + 'api/1.0/suggest?q=';
+
+            var base_url = 'http://amp.pharm.mssm.edu/Harmonizome/';
+            var search_url = base_url + 'search?q=';
+            var suggest_url = base_url + 'api/1.0/suggest?q='
             $scope.search = function() {
-                window.open(SEARCH_URL + $scope.searchTerm, '_blank');
+                window.open(search_url + $scope.query.term, '_blank');
             };
             $scope.entities = function(searchTerm) {
-                return $http.get(SUGGEST_URL + searchTerm).then(function(response) {
+                return $http.get(suggest_url + searchTerm).then(function(response) {
                     return response.data;
                 });
             };
@@ -689,14 +702,14 @@ mod.directive('harmonizomeBar', function() {
 
 mod.directive("hmsDbBar", function() {
     return {
-        restrict: "AE",
+        restrict: "E",
+        scope: true,
         link: function(scope, element, attrs) {
-            scope.searchTerm = "";
         },
         controller: ["$scope", "$element", "$http", function($scope, $element, $http) {
             var search_url = $scope.toolData.url + "?search="
             $scope.search = function() {
-                window.open(search_url + $scope.searchTerm, "_blank");
+                window.open(search_url + $scope.query.term, "_blank");
             }
 
             // Extend mode() function from parent scope. Inherited mode() functionality from toolDirective.
@@ -714,23 +727,17 @@ mod.directive("hmsDbBar", function() {
 
 mod.directive("lifeBar", function() {
     return {
-        restrict: "AE",
+        restrict: "E",
+        scope: true,
         link: function(scope, element, attrs) {
-            scope.searchTerm = "";
+            // scope.search_term = "";
         },
         controller: ["$scope", "$http", function($scope, $http) {
             $scope.search = function() {
-                window.open($scope.toolData.url + "search?load=AssayTypeName&search=" + $scope.searchTerm + "&q=" + $scope.searchTerm + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
+                window.open($scope.toolData.url + "search?load=AssayTypeName&search=" + $scope.query.term + "&q=" + $scope.query.term + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
                     "_blank");
             };
         }],
         templateUrl: "view/getting-started/life.html"
     }
 });
-
-// mod.directive("hmsDbBar", function() {
-//     return {
-//         restrict: "AE",
-//         link: function
-//     }
-// }):
