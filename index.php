@@ -30,6 +30,7 @@
 	<link rel="stylesheet" href="/lib/ngTagsInput/ng-tags-input.min.css"/>
     <link rel="stylesheet" href="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css">
     <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="/lib/bower_components/hint.css/hint.min.css"> -->
 	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="style/nav.css">
 	<link rel="stylesheet" href="style/index.css">
@@ -80,6 +81,7 @@
 	<script src="/lib/bower_components/d3/d3.min.js"></script>
 	<script src="/lib/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
 	<script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script>
+
 		
 	<!-- ************************ Application ************************ -->
 	<!-- Data -->

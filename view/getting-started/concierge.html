@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="style/getting-started.css">
 
 <!-- Handwritten font -->
-<!-- <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'> -->
-
 <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 
 <div class="container">
@@ -228,18 +226,18 @@
                         </div>
                     </div>
 
-                    <div class="row lincs-data">
+                    <div class="row">
                         <!-- Loop over each data generation center -->
                         <div class="col-sm-6" ng-repeat="center in centers_info">
-                            <div center class="lincs-data" data="center"></div>
+                            <div center data="center"></div>
                         </div>
                     </div>
 
                 </div>
 
                 <!-- Drug specific searches -->
-                <div class="row drug-search category-page direct-access-tools-page" ng-controller="directAccessToolsCtrl">
-                    <div class="row drug-search">
+                <div class="row drug-search" ng-controller="directAccessToolsCtrl">
+                    <div class="row">
                         <div class="col-xs-12">
                             <h2>How to find data on the effects of small-molecule perturbations?</h2>
                             <p>The LINCS project encompass a diverse and large-scale collection of data with relevance to many small-molecule compounds. There are many different search tools which can be used for querying such data. Each search tool has a distinct scope ranging from individual data sets, data from particular centers, all lincs data, and external data.</p>
@@ -247,7 +245,7 @@
                         </div>
                     </div>
 
-                    <div class="row drug-search">
+                    <div class="row">
                         <div class="col-xs-12">
                             <hr>
                             <h2>Text-based queries accross all LINCS data</h2>
@@ -255,15 +253,15 @@
                         </div>
 
                         <div class="col-xs-12">
-                            <div class="row drug-search tools">
-                                <div class="col-sm-6" tool-directive-wrapper="findTool('LINCS Data Portal')"></div>
-                                <div class="col-sm-6" tool-directive-wrapper="findTool('LIFE')"></div>
-                                <div class="col-sm-6" tool-directive-wrapper="findTool('iLINCS')"></div>
+                            <div class="row">
+                                <tool class="col-sm-6" tool-data="findTool('LINCS Data Portal')" tool-mode="search"></tool>
+                                <tool class="col-sm-6" tool-data="findTool('LIFE')" tool-mode="search"></tool>
+                                <tool class="col-sm-6" tool-data="findTool('iLINCS')" tool-mode="search"></tool>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row drug-search">
+                    <div class="row">
                         <div class="col-xs-12">
                             <hr>
                             <h2>Text-based queries on specific data sets</h2>
@@ -271,17 +269,17 @@
                         </div>
 
                         <div class="col-xs-12">
-                            <div class="row drug-search tools">
-                                <div class="col-sm-6" tool-directive-wrapper="findTool('piLINCS')"></div>
-                                <div class="col-sm-6" tool-directive-wrapper="findTool('Slicr')"></div>
-                                <div class="col-sm-6" tool-directive-wrapper="findTool('HMS LINCS Database')"></div>
+                            <div class="row">
+                                <tool class="col-sm-6" tool-data="findTool('piLINCS')" tool-mode="search"></tool>
+                                <tool class="col-sm-6" tool-data="findTool('Slicr')" tool-mode="search"></tool>
+                                <tool class="col-sm-6" tool-data="findTool('HMS LINCS Database')" tool-mode="search"></tool>
                             </div>
                         </div>
                     </div>
 
 
 
-                    <div class="row drug-search">
+                    <div class="row">
                         <div class="col-xs-12">
                             <hr>
                             <h2>External data</h2>
@@ -289,13 +287,13 @@
                         </div>
 
                         <div class="col-xs-12">
-                            <div class="row drug-search tools">
-                                <div class="col-sm-6" tool-directive-wrapper="findTool('The Harmonizome')"></div>
+                            <div class="row">
+                                <tool class="col-sm-6" tool-data="findTool('Harmonizome')" tool-mode="search"></tool>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row drug-search">
+                    <div class="row">
                         <div class="col-xs-12">
                             <hr>
                             <h2>Gene expression signature queries</h2>
@@ -303,9 +301,9 @@
                         </div>
 
                         <div class="col-xs-12">
-                            <div class="row drug-search tools">
-                                <!-- <div class="col-sm-6" tool-directive-wrapper="findTool('The Harmonizome')"></div> -->
-                                <div class="col-sm-6" tool-directive-wrapper="findTool('L1000CDS2')"></div>
+                            <div class="row">
+                                <tool class="col-sm-6" tool-data="findTool('L1000CDS2')" tool-mode="search"></tool>
+                                <tool class="col-sm-6" tool-data="findTool('Lincscloud')" tool-mode="search"></tool>
                             </div>
                         </div>
 

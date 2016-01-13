@@ -1,4 +1,7 @@
-var mod = angular.module('directAccessToolsMod', ['ngTagsInput']);
+var mod = angular.module('directAccessToolsMod', 
+    ['ngTagsInput',
+    'ui.bootstrap.tooltip']  // for tooltips
+);
 
 mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function($scope, $sce, $compile) {
 
@@ -15,7 +18,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             // alternative modes and description specification
             modes: {
                 // functionality
-                functionality: ["search", "analysis"],
+                functionality: ["analysis", "search"],
                 // content
                 content: ["cells", "drugs", "genetics"]
             },
@@ -27,6 +30,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: 'Search and download LINCS datasets and entities.',
             url: 'http://lincsportal.ccs.miami.edu/dcic-portal/',
             image: 'https://placeholdit.imgix.net/~text?txtsize=33&w=100&h=100',
+            modes: {
+                functionality: ["search", "api", "download"],
+                content: ["cells", "drugs", "genetics", "assays"]
+            },
             directive: 'lincs-data-portal-bar',
             cssClass: 'lincs-data-portal'
         },
@@ -35,6 +42,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: 'Access to LINCS proteomics datasets (P100, GCP, etc.) available in Panorama.',
             url: 'http://eh3.uc.edu/pilincs/',
             image: DIR + 'pilincs.png',
+            modes: {
+                functionality: ["navigation", "search"],
+                content: ["drugs", "cells"]
+            },
             directive: 'pi-lincs-bar',
             cssClass: 'pi-lincs'
         },
@@ -43,6 +54,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: 'Use iLINCS to analyze differential gene expression in a dataset identified via LINCS Data Portal.',
             url: 'http://eh3.uc.edu/GenomicsPortals/Lincs.jsp',
             image: DIR + 'i-lincs.png',
+            modes: {
+                functionality: ["analysis", "search"],
+                content: ["cells", "drugs", "genetics", "assays"]
+            },
             directive: 'i-lincs-bar',
             cssClass: 'i-lincs'
         },
@@ -51,6 +66,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: 'Search LINCS L1000 gene expression profiles.',
             url: 'http://amp.pharm.mssm.edu/slicr/',
             image: DIR + 'slicr.png',
+            modes: {
+                functionality: ["search", "download"],
+                content: ["drugs", "genetics", "cells"]
+            },
             directive: 'slicr-bar',
             cssClass: 'slicr'
         },
@@ -59,14 +78,22 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: 'Perform gene set enrichment analysis.',
             url: 'http://amp.pharm.mssm.edu/Enrichr/',
             image: DIR + 'enrichr.png',
+            modes: {
+                functionality: ["analysis"],
+                content: ["external"]
+            },
             directive: 'enrichr-textarea',
             cssClass: 'enrichr'
         },
         {
-            title: 'The Harmonizome',
+            title: 'Harmonizome',
             description: 'Search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.',
             url: 'http://amp.pharm.mssm.edu/Harmonizome/',
             image: DIR + 'harmonizome.png',
+            modes: {
+                functionality: ["search"],
+                content: ["external"]
+            },
             directive: 'harmonizome-bar',
             cssClass: 'harmonizome'
         },
@@ -75,6 +102,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "Search Harvard Medical School's LINCS data base.",
             url: "http://lincs.hms.harvard.edu/db/",
             image: DIR + "hms_lincs.png",
+            modes: {
+                functionality: ["search", "download"],
+                content: ["assays", "drugs", "cells"]
+            },
             directive: "HMS-DB-bar",
             cssClass: "hms-db"
         },
@@ -83,6 +114,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
             url: "http://life.ccs.miami.edu/life/",
             image: DIR + "life.png",
+            modes: {
+                functionality: ["search", "navigation"],
+                content: ["cells", "drugs", "assays", "genetics"]
+            },
             directive: "LIFE-bar",
             cssCLass: "life"
         },
@@ -91,6 +126,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "Global visual summaries of the currently available LINCS Phase II datasets.",
             url: "http://amp.pharm.mssm.edu/milestones/grid.html",
             image: DIR + "docent-grid.png",
+            modes: {
+                functionality: ["navigation"],
+                content: ["assays", "cells"]
+            },
             directive: "Docent-bar",
             cssClass: "docent"
         },
@@ -99,6 +138,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers",
             url: "http://amp.pharm.mssm.edu/ldr/",
             image: "",
+            modes: {
+                functionality: ["search"],
+                content: ["assays"]
+            },
             directive: "LDR-bar",
             cssClass: "ldr"
         },
@@ -107,6 +150,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "GEN3VA: the GENE Expression and Enrichment Vector Analyzer aggregates and analyzes gene expression signatures extracted from GEO by the crowd using GEO2Enrichr.",
             url: "http://amp.pharm.mssm.edu/gen3va/",
             image: DIR + "gen3va_logo.png",
+            modes: {
+                functionality: ["analysis", "download"],
+                content: ["external"]
+            },
             directive: "Geneva-bar",
             cssClass: "geneva"
         },
@@ -115,6 +162,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience. It enables integrated analysis of LINCS L1000 datasets across data types, user types, and institutions.",
             url: "http://www.lincscloud.org/",
             image: DIR + "cmap2.jpg",
+            modes: {
+                functionality: ["api", "analysis", "search"],
+                content: ["drugs", "genetics", "cells"]
+            },
             directive: "Lincscloud-bar",
             cssClass: "lincscloud"
         },
@@ -123,6 +174,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
             url: "http://amp.pharm.mssm.edu/PAEA/",
             image: DIR + "paea.png",
+            modes: {
+                functionality: ["analysis"],
+                content: []
+            },
             directive: "Paea-bar",
             cssClass: "paea"
         },
@@ -131,6 +186,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "The LINCS Canvas Browser is an interactive web app to query, browse and interrogate LINCS L1000 gene expression signatures.",
             url: "http://www.maayanlab.net/LINCS/LCB",
             image: DIR + "lincs-canvas-browser.png",
+            modes: {
+                functionality: ["navigation"],
+                content: ["drugs", "cells", "external"]
+            },
             directive: "LCB-bar",
             cssClass: "lcb"
         },
@@ -139,6 +198,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "An online interactive HTML5 data visualization tool for interacting with three of the recently published datasets of cancer cell lines/drug-viability studies.",
             url: "http://www.maayanlab.net/LINCS/DCB/",
             image: DIR + "drug-cell-line-browser.png",
+            modes: {
+                functionality: ["navigation"],
+                content: ["drugs", "cells"]
+            },
             directive: "DCB-bar",
             cssClass: "dcb"
         },
@@ -147,6 +210,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "A web application that provides an alternative way to view networks and visualizes them by placing nodes on a square toroidal canvas.",
             url: "http://www.maayanlab.net/N2C/",
             image: DIR + "network2canvas.png",
+            modes: {
+                functionality: ["analysis", "navigation"],
+                content: []
+            },
             directive: "Network2Canvas-bar",
             cssClass: "network2canvas"
         },
@@ -155,6 +222,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
             description: "Mosaic visualization of targeted phosphoproteomics and post-translation histone modifications after chemical perturbation of cancer cell lines",
             url: "http://amp.pharm.mssm.edu/p100mosaic",
             image: DIR + "mosaic_by_freepik.jpg",
+            modes: {
+                functionality: ["navigation"],
+                content: ["drugs", "cells"]
+            },
             directive: "P100mosaic-bar",
             cssClass: "p100mosaic"
         }
@@ -175,21 +246,54 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
     }
 }]);
 
-// Wrapper for tools. Sets up the frame with icon, 
-mod.directive('toolDirective', function($compile) {
+// Tooltip texts for toolDirective buttons
+mod.factory("tooltips", function() {
     return {
-        restrict: 'A',
+        search: "Search data collection",
+        analysis: "Analyze data",
+        api: "Programatic access through API",
+        navigation: "Visual elements that help navigate data",
+        download: "Download",
+        cells: "LINCS cell lines",
+        drugs: "LINCS small-molecule compounds",
+        genetics: "LINCS genetic experiments",
+        assays: "LINCS assay types",
+        external: "Data from external sources"
+    };
+});
+
+// Wrapper for tools. Sets up the frame with icon, 
+mod.directive("tool", function($compile, $timeout) {
+    return {
+        restrict: 'E',
         scope: {
-            toolDirective: '='
+            // data object assignemnt
+            toolData: '=',
+            // string specification
+            toolMode: '@'
         },
         link: function(scope, elem, attrs) {
-            var tool_obj = scope.toolDirective;
+            var tool_obj = scope.toolData;
             if (tool_obj && tool_obj.directive !== 'undefined') {
                 elem.find('placeholder').replaceWith(
                     $compile('<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
-                )
-            }
+                );
+            };
+            // Call change mode after directive has rendered. timeout makes it work -- even with 0ms. It's magic.
+            $timeout(function(){scope.mode(scope.toolMode)}, 0);
         },
+        controller: ["$scope", "$element", "tooltips", function($scope, $element, tooltips) {
+
+            // Change viewiew mode. To be overwritten by child directives.
+            $scope.mode = function(mode_id) {
+                // console.log("mode: ", mode_id);
+                $element.find(".mode-button").removeClass("selected");
+                $element.find("." + mode_id).addClass("selected");
+            };
+            $scope.buttonTooltip = function(name) {
+                return tooltips[name];
+            };
+        }],
         templateUrl: "view/getting-started/tool-directive.html"
     }
 });
@@ -488,10 +592,19 @@ mod.directive("hmsDbBar", function() {
         link: function(scope, element, attrs) {
             scope.searchTerm = "";
         },
-        controller: ["$scope", "$http", function($scope, $http) {
-            var search_url = $scope.toolDirective.url + "?search="
+        controller: ["$scope", "$element", "$http", function($scope, $element, $http) {
+            var search_url = $scope.toolData.url + "?search="
             $scope.search = function() {
                 window.open(search_url + $scope.searchTerm, "_blank");
+            }
+
+            // Extend mode() function from parent scope. Inherited mode() functionality from toolDirective.
+            // Copies base function, overwrites, and recalls.
+            $scope.baseMode = $scope.mode;
+            $scope.mode = function(name) {
+                $scope.baseMode(name);
+
+                console.log("HMS overwritten mode called with: ", name);
             }
         }],
         templateUrl: "view/getting-started/hms-db.html"
@@ -506,10 +619,17 @@ mod.directive("lifeBar", function() {
         },
         controller: ["$scope", "$http", function($scope, $http) {
             $scope.search = function() {
-                window.open($scope.toolDirective.url + "search?load=AssayTypeName&search=" + $scope.searchTerm + "&q=" + $scope.searchTerm + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
+                window.open($scope.toolData.url + "search?load=AssayTypeName&search=" + $scope.searchTerm + "&q=" + $scope.searchTerm + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
                     "_blank");
             };
         }],
         templateUrl: "view/getting-started/life.html"
     }
 });
+
+// mod.directive("hmsDbBar", function() {
+//     return {
+//         restrict: "AE",
+//         link: function
+//     }
+// }):

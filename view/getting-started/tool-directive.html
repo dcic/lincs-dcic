@@ -1,16 +1,32 @@
 <!-- tool Directive wrapper -->
-<div class="tool panel" ng-class="toolDirective.cssClass">
+<div class="tool panel" ng-class="toolData.cssClass">
 	<div class="row tool-header">
-		<div class="col-xs-8">
+		<div class="col-xs-7">
 			<span class="tool-title">
-			    <img ng-src="{{toolDirective.image}}"/>
-			    <a ng-href="{{toolDirective.url}}" target="_blank">{{toolDirective.title}}</a>
+			    <img ng-src="{{toolData.image}}"/>
+			    <a ng-href="{{toolData.url}}" target="_blank">{{toolData.title}}</a>
 			</span>
 		</div>
-		<div class="col-xs-4">a b c</div>
+		<!-- Buttons -->
+		<div class="col-xs-5 action text-right">
+			<!-- div wrapper for tooltip-specific style different from button element -->
+			<button ng-repeat="button_name in toolData.modes.functionality"
+				title="{{::buttonTooltip(button_name)}}"
+				ng-click="mode(button_name)"
+				class="{{button_name}} mode-button">
+			</button>
+			|
+			<button ng-repeat="button_name in toolData.modes.content"
+				title="{{::buttonTooltip(button_name)}}"
+				ng-click="mode(button_name)"
+				class="{{button_name}} mode-button">
+			</button>
+		</div>
 	</div>
 
-	<p>{{toolDirective.description}}</p>
+	<!-- Main description -->
+	<p>{{toolData.description}}</p>
+	
 	<!-- Placeholder for nested directives which are compiled in place. -->
 	<placeholder style="display: none"></placeholder>
 </div>

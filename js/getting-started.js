@@ -17,7 +17,7 @@ mod.controller("gettingStartedCtrl", ["$scope", function($scope) {
                     'box-shadow': '0 2px 5px 0 rgba(0, 0, 0, 0.26)'
                 });
             });
-            $('.content .row').hide();
+            $('.content > .row').hide();
         } else {
             started = true;
             $('.middle').fadeIn();
@@ -39,12 +39,12 @@ mod.controller("gettingStartedCtrl", ["$scope", function($scope) {
             $('.end .row').hide();
             selected[0] = class_;
             $('.end').find(class_).fadeIn()
-            $('.content .row').hide();
+            $('.content > .row').hide();
         }
     });
 
     $('.end p').click(function() {
-        $('.content .row').hide();
+        $('.content > .row').hide();
         var class_ = '.' + $(this).parent().attr('data-selector');
         // console.log(class_);
         // console.log($('.content').find(class_));
