@@ -175,8 +175,8 @@ div.tool div.action button {
 
    /*3px 5px no-repeat;*/
   background-color: white;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   opacity: 0.5;
 }
 
@@ -189,9 +189,53 @@ div.tool div.action button:hover {
 div.tool div.action button.selected {
   opacity: 1.0;
   /*background-color: rgb(179,205,227);*/
-  /*background-color: rgb(236,231,242);*/
-  outline: 1px solid rgb(5,112,176);
+  /*outline: 1px solid rgb(5,112,176);*/
 }
+
+div.tool div.action button.functionality-button.selected {
+  background-color: rgb(204,235,197);
+}
+
+div.tool div.action button.content-button.selected {
+  background-color: rgb(179,205,227);
+}
+
+div.tool p.functionality-description:empty {
+  border-style: none;
+  padding: 0;
+}
+
+div.tool p.data-content-description:empty {
+  border-style: none;
+  padding: 0;
+}
+
+div.tool p.functionality-description {
+  /*background-color: rgb(204,235,197);*/
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(204,235,197);
+  border-collapse: collapse;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+div.tool p.data-content-description {
+  /*background-color: rgb(179,205,227);*/
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(179,205,227);
+  border-collapse: collapse;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+/* dropdown menu list without images */
+div.tool ul.dropdown-menu li:before {
+  content: none;
+}
+
+
 
 /*div.tool div.action button.hint:hover*/
 

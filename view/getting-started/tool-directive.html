@@ -13,19 +13,22 @@
 			<button ng-repeat="button_name in toolData.modes.functionality"
 				title="{{::buttonTooltip(button_name)}}"
 				ng-click="mode(button_name)"
-				class="{{button_name}} mode-button">
+				class="{{button_name}} mode-button functionality-button">
 			</button>
 			|
 			<button ng-repeat="button_name in toolData.modes.content"
 				title="{{::buttonTooltip(button_name)}}"
 				ng-click="mode(button_name)"
-				class="{{button_name}} mode-button">
+				class="{{button_name}} mode-button content-button">
 			</button>
 		</div>
 	</div>
 
 	<!-- Main description -->
-	<p>{{toolData.description}}</p>
+	<p id="main">{{toolData.description["main"]}}</p>
+
+	<p class="functionality-description" ng-bind="functional_description"></p>
+	<p class="data-content-description" ng-bind="data_content_description"></p>
 	
 	<!-- Placeholder for nested directives which are compiled in place. -->
 	<placeholder style="display: none"></placeholder>

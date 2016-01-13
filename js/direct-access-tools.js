@@ -3,7 +3,7 @@ var mod = angular.module('directAccessToolsMod',
     'ui.bootstrap.tooltip']  // for tooltips
 );
 
-mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function($scope, $sce, $compile) {
+mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile', function($scope, $element, $sce, $compile) {
 
     var DIR = 'images/apps/';
 
@@ -12,10 +12,19 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
     $scope.tools = [
         {
             title: 'L1000CDS2',
-            description: 'Find consensus signatures that match your input signature vector.',
             url: 'http://amp.pharm.mssm.edu/L1000CDS2',
             image: DIR + 'l1000cds2.png',
-            // alternative modes and description specification
+            description: {
+                // main description always shown.
+                main: 'Find consensus signatures that match your input signature vector.',
+                // mode-specific descriptions shown when mode buttons are clicked
+                analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyse such gene lists.",
+                search: "Data-oriented search allows finding relevant signatures where the query is based on data rather than names.",
+                cells: "The cell lines are from the L1000 data set.",
+                drugs: "Small-molecule perturbations in the L1000 data set.",
+                genetics: "RNAi interference experiments of the L1000 data set."
+            },
+            // alternative modes which can be selected by clicking the mode buttons
             modes: {
                 // functionality
                 functionality: ["analysis", "search"],
@@ -27,9 +36,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: 'LINCS Data Portal',
-            description: 'Search and download LINCS datasets and entities.',
             url: 'http://lincsportal.ccs.miami.edu/dcic-portal/',
             image: 'https://placeholdit.imgix.net/~text?txtsize=33&w=100&h=100',
+            description: {
+                main: 'Search and download LINCS datasets and entities.'
+            },
             modes: {
                 functionality: ["search", "api", "download"],
                 content: ["cells", "drugs", "genetics", "assays"]
@@ -39,9 +50,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: 'piLINCS',
-            description: 'Access to LINCS proteomics datasets (P100, GCP, etc.) available in Panorama.',
             url: 'http://eh3.uc.edu/pilincs/',
             image: DIR + 'pilincs.png',
+            description: {
+                main: 'Access to LINCS proteomics datasets (P100, GCP, etc.) available in Panorama.'
+            },
             modes: {
                 functionality: ["navigation", "search"],
                 content: ["drugs", "cells"]
@@ -51,9 +64,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: 'iLINCS',
-            description: 'Use iLINCS to analyze differential gene expression in a dataset identified via LINCS Data Portal.',
             url: 'http://eh3.uc.edu/GenomicsPortals/Lincs.jsp',
             image: DIR + 'i-lincs.png',
+            description: {
+                main: 'Use iLINCS to analyze differential gene expression in a dataset identified via LINCS Data Portal.'
+            },
             modes: {
                 functionality: ["analysis", "search"],
                 content: ["cells", "drugs", "genetics", "assays"]
@@ -63,9 +78,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: 'Slicr',
-            description: 'Search LINCS L1000 gene expression profiles.',
             url: 'http://amp.pharm.mssm.edu/slicr/',
             image: DIR + 'slicr.png',
+            description: {
+                main: 'Search LINCS L1000 gene expression profiles.'
+            },
             modes: {
                 functionality: ["search", "download"],
                 content: ["drugs", "genetics", "cells"]
@@ -75,9 +92,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: 'Enrichr',
-            description: 'Perform gene set enrichment analysis.',
             url: 'http://amp.pharm.mssm.edu/Enrichr/',
             image: DIR + 'enrichr.png',
+            description: {
+                main: 'Perform gene set enrichment analysis.'
+            },
             modes: {
                 functionality: ["analysis"],
                 content: ["external"]
@@ -87,9 +106,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: 'Harmonizome',
-            description: 'Search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.',
             url: 'http://amp.pharm.mssm.edu/Harmonizome/',
             image: DIR + 'harmonizome.png',
+            description: {
+                main: 'Search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.'
+            },
             modes: {
                 functionality: ["search"],
                 content: ["external"]
@@ -99,9 +120,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "HMS LINCS Database",
-            description: "Search Harvard Medical School's LINCS data base.",
             url: "http://lincs.hms.harvard.edu/db/",
             image: DIR + "hms_lincs.png",
+            description: {
+                main: "Search Harvard Medical School's LINCS data base."
+            },
             modes: {
                 functionality: ["search", "download"],
                 content: ["assays", "drugs", "cells"]
@@ -111,9 +134,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "LIFE",
-            description: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
             url: "http://life.ccs.miami.edu/life/",
             image: DIR + "life.png",
+            description: {
+                main: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards."
+            },
             modes: {
                 functionality: ["search", "navigation"],
                 content: ["cells", "drugs", "assays", "genetics"]
@@ -123,9 +148,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "Docent",
-            description: "Global visual summaries of the currently available LINCS Phase II datasets.",
             url: "http://amp.pharm.mssm.edu/milestones/grid.html",
             image: DIR + "docent-grid.png",
+            description: {
+                main: "Global visual summaries of the currently available LINCS Phase II datasets."
+            },
             modes: {
                 functionality: ["navigation"],
                 content: ["assays", "cells"]
@@ -135,9 +162,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "LDR",
-            description: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers",
             url: "http://amp.pharm.mssm.edu/ldr/",
             image: "",
+            description: {
+                main: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers"
+            },
             modes: {
                 functionality: ["search"],
                 content: ["assays"]
@@ -147,9 +176,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "Gen3va",
-            description: "GEN3VA: the GENE Expression and Enrichment Vector Analyzer aggregates and analyzes gene expression signatures extracted from GEO by the crowd using GEO2Enrichr.",
             url: "http://amp.pharm.mssm.edu/gen3va/",
             image: DIR + "gen3va_logo.png",
+            description: {
+                main: "GEN3VA: the GENE Expression and Enrichment Vector Analyzer aggregates and analyzes gene expression signatures extracted from GEO by the crowd using GEO2Enrichr."
+            },
             modes: {
                 functionality: ["analysis", "download"],
                 content: ["external"]
@@ -159,9 +190,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "Lincscloud",
-            description: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience. It enables integrated analysis of LINCS L1000 datasets across data types, user types, and institutions.",
             url: "http://www.lincscloud.org/",
             image: DIR + "cmap2.jpg",
+            description: {
+                main: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience. It enables integrated analysis of LINCS L1000 datasets across data types, user types, and institutions."
+            },
             modes: {
                 functionality: ["api", "analysis", "search"],
                 content: ["drugs", "genetics", "cells"]
@@ -171,9 +204,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "PAEA",
-            description: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
             url: "http://amp.pharm.mssm.edu/PAEA/",
             image: DIR + "paea.png",
+            description: {
+                main: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis."
+            },
             modes: {
                 functionality: ["analysis"],
                 content: []
@@ -183,9 +218,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "LINCS Canvas Browser",
-            description: "The LINCS Canvas Browser is an interactive web app to query, browse and interrogate LINCS L1000 gene expression signatures.",
             url: "http://www.maayanlab.net/LINCS/LCB",
             image: DIR + "lincs-canvas-browser.png",
+            description: {
+                main: "The LINCS Canvas Browser is an interactive web app to query, browse and interrogate LINCS L1000 gene expression signatures."
+            },
             modes: {
                 functionality: ["navigation"],
                 content: ["drugs", "cells", "external"]
@@ -195,9 +232,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "Drug/Cell-line Browser",
-            description: "An online interactive HTML5 data visualization tool for interacting with three of the recently published datasets of cancer cell lines/drug-viability studies.",
             url: "http://www.maayanlab.net/LINCS/DCB/",
             image: DIR + "drug-cell-line-browser.png",
+            description: {
+                main: "An online interactive HTML5 data visualization tool for interacting with three of the recently published datasets of cancer cell lines/drug-viability studies."
+            },
             modes: {
                 functionality: ["navigation"],
                 content: ["drugs", "cells"]
@@ -207,9 +246,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "Network2Canvas",
-            description: "A web application that provides an alternative way to view networks and visualizes them by placing nodes on a square toroidal canvas.",
             url: "http://www.maayanlab.net/N2C/",
             image: DIR + "network2canvas.png",
+            description: {
+                main: "A web application that provides an alternative way to view networks and visualizes them by placing nodes on a square toroidal canvas."
+            },
             modes: {
                 functionality: ["analysis", "navigation"],
                 content: []
@@ -219,9 +260,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         },
         {
             title: "P100/GCP Mosaic",
-            description: "Mosaic visualization of targeted phosphoproteomics and post-translation histone modifications after chemical perturbation of cancer cell lines",
             url: "http://amp.pharm.mssm.edu/p100mosaic",
             image: DIR + "mosaic_by_freepik.jpg",
+            description: {
+                main: "Mosaic visualization of targeted phosphoproteomics and post-translation histone modifications after chemical perturbation of cancer cell lines"
+            },
             modes: {
                 functionality: ["navigation"],
                 content: ["drugs", "cells"]
@@ -243,7 +286,16 @@ mod.controller('directAccessToolsCtrl', ['$scope', '$sce', '$compile', function(
         } else {
             return tool_index;
         }
-    }
+    };
+
+    // Type search query in all child <tool>
+    $scope.typeSearch = function(query) {
+        console.log("typing: ", query);
+        // console.log($element);
+        // $element.find("tool").setSearchTerm(query);
+        // broadcast type-search event
+        $scope.$broadcast("type-search", query);
+    };
 }]);
 
 // Tooltip texts for toolDirective buttons
@@ -261,6 +313,13 @@ mod.factory("tooltips", function() {
         external: "Data from external sources"
     };
 });
+
+// // Type query in all search fields
+// mod.factory("typeSearch", function() {
+//     return function(query) {
+//         console.log("typing: ", query);
+//     };
+// });
 
 // Wrapper for tools. Sets up the frame with icon, 
 mod.directive("tool", function($compile, $timeout) {
@@ -280,19 +339,61 @@ mod.directive("tool", function($compile, $timeout) {
                 );
             };
             // Call change mode after directive has rendered. timeout makes it work -- even with 0ms. It's magic.
-            $timeout(function(){scope.mode(scope.toolMode)}, 0);
+            $timeout(function(){
+                if (typeof scope.toolMode !== "undefined") {
+                    // Input mode provided
+                    // loop over space delimited input calling the mode() function for each
+                    scope.toolMode.split(" ")
+                        .forEach(scope.mode);
+                }
+            }, 0);
         },
         controller: ["$scope", "$element", "tooltips", function($scope, $element, tooltips) {
 
+            // Selected descriptions
+            $scope.functional_description = "";
+            $scope.data_content_description = "";
+            $scope.search_term = "";
+
             // Change viewiew mode. To be overwritten by child directives.
             $scope.mode = function(mode_id) {
-                // console.log("mode: ", mode_id);
-                $element.find(".mode-button").removeClass("selected");
-                $element.find("." + mode_id).addClass("selected");
+                var button = $element.find("." + mode_id);  // the button associated with the mode
+                var was_selected = button.hasClass("selected");  // already selected?
+
+                if (button.hasClass("functionality-button")) {
+                    // Other functionality buttons
+                    $element.find(".mode-button.functionality-button").removeClass("selected");  // remove all selected
+                    if (was_selected) {
+                        // unselect and revert  to default
+                        button.removeClass("selected");
+                        $scope.functional_description = "";
+                    } else {
+                        // select and instiantiate functionality
+                        button.addClass("selected");
+                        $scope.functional_description = $scope.toolData.description[mode_id];
+                    }
+
+                } else if (button.hasClass("content-button")) {
+                    // Other content buttons
+                    $element.find(".mode-button.content-button").removeClass("selected");
+
+                    if (was_selected) {
+                        button.removeClass("selected");
+                        $scope.data_content_description = "";
+                    } else {
+                        button.addClass("selected");
+                        $scope.data_content_description = $scope.toolData.description[mode_id];
+                    }
+                } else {
+                    throw "Functionality or content button not found in tool directive mode().";
+                }
             };
             $scope.buttonTooltip = function(name) {
                 return tooltips[name];
             };
+            $scope.$on("type-search", function(event, query) {
+                $scope.search_term = query;
+            });
         }],
         templateUrl: "view/getting-started/tool-directive.html"
     }
@@ -305,15 +406,15 @@ mod.directive('lincsDataPortalBar', function($compile) {
             toolDirective: '='
         },
         link: function(scope, element, attrs) {
-            scope.searchTerm = '';
-
+            // scope.searchTerm = '';
         },
         controller: ['$scope', '$http', function($scope, $http) {
+            // $scope.search_term = "";
             var BASE_URL = 'http://dev3.ccs.miami.edu:8080/',
                 SUGGEST_URL = BASE_URL + 'dcic/api/autosuggest?searchTerm=',
                 searchUrl;
             $scope.search = function() {
-                searchUrl = BASE_URL + $scope.searchType + '/#?query=' + $scope.searchTerm;
+                searchUrl = BASE_URL + $scope.searchType + '/#?query=' + $scope.search_term;
                 window.open(searchUrl, '_blank');
             };
             $scope.searchTypeOptions = [
