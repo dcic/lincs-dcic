@@ -11,30 +11,6 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
 
     $scope.tools = [
         {
-            title: 'L1000CDS2',
-            url: 'http://amp.pharm.mssm.edu/L1000CDS2',
-            image: DIR + 'l1000cds2.png',
-            description: {
-                // main description always shown.
-                main: "Analyse gene expression profiles using a signature search engine for the LINCS L1000 data set.",
-                // mode-specific descriptions shown when mode buttons are clicked
-                analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyse such gene lists in the context of the L1000 gene expressin data set. Alternatively, numerical vectors can also be analyzed.",
-                search: "Data-oriented search allows finding relevant signatures where the query is based on data rather than names.",
-                cells: "The L1000 data set contains numerous human cell lines including several tissue and disease models",
-                drugs: "All small-molecule perturbations from the L1000 data set are used as a reference and search target.",
-                genetics: "RNAi interference experiments of the L1000 data set."
-            },
-            // alternative modes which can be selected by clicking the mode buttons
-            modes: {
-                // functionality
-                functionality: ["analysis", "search"],
-                // content
-                content: ["cells", "drugs", "genetics"]
-            },
-            directive: 'l1000cds2-textarea',
-            cssClass: 'l1000cds2',
-        },
-        {
             title: 'LINCS Data Portal',
             url: 'http://lincsportal.ccs.miami.edu/dcic-portal/',
             image: DIR + "LINCS_data_portal.png",
@@ -128,6 +104,30 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             cssClass: 'enrichr'
         },
         {
+            title: 'L1000CDS2',
+            url: 'http://amp.pharm.mssm.edu/L1000CDS2',
+            image: DIR + 'l1000cds2.png',
+            description: {
+                // main description always shown.
+                main: "Analyse gene expression profiles using a signature search engine for the LINCS L1000 data set.",
+                // mode-specific descriptions shown when mode buttons are clicked
+                analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyse such gene lists in the context of the L1000 gene expressin data set. Alternatively, numerical vectors can also be analyzed.",
+                search: "Data-oriented search allows finding relevant signatures where the query is based on data rather than names.",
+                cells: "The L1000 data set contains numerous human cell lines including several tissue and disease models",
+                drugs: "All small-molecule perturbations from the L1000 data set are used as a reference and search target.",
+                genetics: "RNAi interference experiments of the L1000 data set."
+            },
+            // alternative modes which can be selected by clicking the mode buttons
+            modes: {
+                // functionality
+                functionality: ["analysis", "search"],
+                // content
+                content: ["cells", "drugs", "genetics"]
+            },
+            directive: 'l1000cds2-textarea',
+            cssClass: 'l1000cds2',
+        },
+        {
             title: 'Harmonizome',
             url: 'http://amp.pharm.mssm.edu/Harmonizome/',
             image: DIR + 'harmonizome.png',
@@ -135,7 +135,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 main: 'Search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.',
                 search: "General text-based search.",
                 api: "Data can be accessed programmatically through GET requests. Consult <a target='_blank' href='http://amp.pharm.mssm.edu/Harmonizome/documentation'>API documentation</a> for more information.",
-                external: "External data include "
+                external: "External data are collected from many different large-scale data projects."
             },
             modes: {
                 functionality: ["search", "api"],
@@ -359,7 +359,6 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
 
     // Type search query in all child <tool>
     $scope.typeSearch = function(query) {
-        console.log("typing: ", query);
         // broadcast type-search event
         $scope.$broadcast("type-search", query);
     };
@@ -394,7 +393,6 @@ mod.directive("tool", function($compile, $timeout) {
         link: function(scope, elem, attrs) {
             // console.log("test");
             var tool_obj = scope.toolData;
-            console.log(tool_obj.directive);
             if (tool_obj && tool_obj.directive !== undefined) {
                 elem.find('placeholder').replaceWith(
                     $compile("<hr><h4>Direct access</h4>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
@@ -474,7 +472,7 @@ mod.directive('lincsDataPortalBar', function($compile) {
         restrict: 'E',
         scope: true,
         link: function(scope, element, attrs, ctrls) {
-            console.log("lincsDataPortalBar controller: ", ctrls);
+            // console.log("lincsDataPortalBar controller: ", ctrls);
         },
         controller: ['$scope', '$http', function($scope, $http) {
             $scope.query = $scope.$parent.query;  // query binding from parent
@@ -545,12 +543,12 @@ mod.directive('iLincsBar', function($compile) {
         },
         controller: ['$scope', '$http', function($scope, $http) {
 
-            $scope.searchTypeOptions = [
+            $scope.search_type_options = [
                 {name: 'LINCS', value: "Lincs.jsp?"},
                 {name: 'External', value: "bs_keywordSearch.do?organism=%&sample_type=%&data_type=%&portal_name=ALL&gene_list_selected=false&"}
             ];
 
-            $scope.query.option = $scope.searchTypeOptions[0].value;
+            $scope.query.option = $scope.search_type_options[0].value;
             $scope.search = function() {
                 // LINCS genomics portal
                 var base_url = "http://www.eh3.uc.edu/GenomicsPortals/"
@@ -837,6 +835,52 @@ mod.directive("network2canvasBar", function() {
             };
         }],
         templateUrl: "view/getting-started/network2canvas.html"
+    }
+});
+
+mod.directive("lincscloudBar", function() {
+    return {
+        restrict: "E",
+        scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
+        controller: ["$scope", function($scope) {
+            console.log($scope.query);
+            console.log($scope);
+
+            var base_url = "http://api.lincscloud.org/a2/";
+            var user_key = "lincsdemo";
+
+            // API choices
+            $scope.engine_options = [
+                {name: "Cell line", value: "cellinfo"},
+                {name: "Genes", value: "geneinfo"},
+                // {name: "Instance metadata", value: "instinfo"},
+                {name: "Perturbations", value: "pertinfo"},
+                // {name: "Plates", value: "plateinfo"},
+                // {name: "Signature metadata", value: "siginfo"}
+            ];
+
+            // Selected exampple for each engine
+            $scope.engine_example_fields = {
+                cellinfo: "cell_id",
+                geneinfo: "pr_gene_symbol",
+                // instinfo: "",
+                pertinfo: "pert_iname",
+                // plateinfo: "",
+                // siginfo: ""
+            };
+
+            // Extending the query object, and specifying default selection
+            $scope.query.engine = "pertinfo";
+            $scope.query.field = "pert_iname";
+
+            $scope.search = function() {
+                $scope.query.field = $scope.engine_example_fields[$scope.query.engine];  // find example field for engine
+                console.log($scope.query.field);
+                var http_request = base_url + $scope.query.engine + "?q={\"" + $scope.query.field + "\":\"" + $scope.query.term + "\"}&user_key=" + user_key;
+                window.open(http_request, "_blank");
+            };
+        }],
+        templateUrl: "view/getting-started/lincscloud.html"
     }
 });
 

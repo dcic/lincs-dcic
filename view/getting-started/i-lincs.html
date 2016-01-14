@@ -1,10 +1,9 @@
 <select ng-model="query.option"
-        ng-init="searchType = searchType || searchTypeOptions[0].value"
-        ng-options="option.value as option.name for option in searchTypeOptions">
+        ng-options="option.value as option.name for option in search_type_options">
 </select>
 <form>
 	<input type="text"
 	       ng-model="query.term"
 	       placeholder="Search iLincs">
-	<button class="btn btn-default" ng-click="search()">Search</button>
+	<button class="btn btn-default" ng-click="search()">search</button>
 </form>
