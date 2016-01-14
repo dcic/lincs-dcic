@@ -100,10 +100,10 @@ div.tool input {
   box-shadow: none;
 }
 
-div.tool a {
+div.tool .tool-title a {
   color: black;
 }
-div.tool a:hover {
+div.tool .tool-title a:hover {
   color: black;
   opacity: .75;
   text-decoration: none;
@@ -180,6 +180,18 @@ div.tool div.action button {
   opacity: 0.5;
 }
 
+/* dropdown menu list without images */
+div.tool ul.dropdown-menu li:before {
+  content: none;
+}
+
+/* for youtube video embedding */
+div.tool iframe {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* MODE SELECTION BUTTONS AND ASSOCIATED TEXT */
 div.tool div.action button:hover {
   opacity: 1.0;
   /*-webkit-filter: invert(1);*/
@@ -211,34 +223,26 @@ div.tool p.data-content-description:empty {
 }
 
 div.tool p.functionality-description {
-  /*background-color: rgb(204,235,197);*/
+  background-color: rgb(204,235,197);
   border-style: solid;
   border-width: 2px;
   border-color: rgb(204,235,197);
   border-collapse: collapse;
   border-radius: 2px;
-  padding: 5px;
+  padding: 10px 5px;
 }
 
 div.tool p.data-content-description {
-  /*background-color: rgb(179,205,227);*/
+  background-color: rgb(179,205,227);
   border-style: solid;
   border-width: 2px;
   border-color: rgb(179,205,227);
   border-collapse: collapse;
   border-radius: 2px;
-  padding: 5px;
+  padding: 10px 5px;
 }
-
-/* dropdown menu list without images */
-div.tool ul.dropdown-menu li:before {
-  content: none;
-}
-
-
 
 /*div.tool div.action button.hint:hover*/
-
 div.tool div.action button.search {
   background-image: url("/images/concierge-icons/find_solid.svg");
 }
@@ -290,9 +294,9 @@ p.hand-written {
 }
 .panel {
   border-style: solid;
-  border-color: rgb(240,240,240);
+  border-color: rgb(230,230,230);
   padding: 5px;
-  /*margin: 10px;*/
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .center-logo {
@@ -312,5 +316,9 @@ p.hand-written {
 
 /* bootstrip fix. Words for .col-sm-6 classes only.*/
 .col-sm-6:nth-child(2n+1){
+    clear: left;
+}
+
+.col-sm-4:nth-child(3n+1){
     clear: left;
 }

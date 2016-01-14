@@ -1,6 +1,7 @@
 // Concierge module
 var mod = angular.module("gettingStartedMod", ["lincsCentersMod"]);
 
+// Concierge menu selection
 mod.controller("gettingStartedCtrl", ["$scope", function($scope) {
     var started = false,
         selected = [],

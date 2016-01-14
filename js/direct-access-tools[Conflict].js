@@ -823,8 +823,8 @@ mod.directive("network2canvasBar", function() {
                 if ($scope.tutorials_shown) {
                     // remove toggle
                     $scope.tutorials_shown = false;
-                    $element.find("#tutorial1").empty();
-                    $element.find("#tutorial2").empty();
+                    $element.find("#tutorial1").html("");
+                    $element.find("#tutorial2").html("");
                 } else {
                     // load and show
                     $scope.tutorials_shown = true;

@@ -27,9 +27,14 @@
 	<!-- Main description -->
 	<p id="main">{{toolData.description["main"]}}</p>
 
-	<p class="functionality-description" ng-bind="functional_description"></p>
-	<p class="data-content-description" ng-bind="data_content_description"></p>
-	
+	<div>
+		<p class="functionality-description" ng-bind-html="functional_description"></p>
+	</div>
+	<div>
+		<p class="data-content-description" ng-bind-html="data_content_description"></p>
+	</div>
+	<hr>
+	<h4>Direct access</h4>
 	<!-- Placeholder for nested directives which are compiled in place. -->
-	<placeholder style="display: none"></placeholder>
+	<placeholder style="display	: none"></placeholder>
 </div>
