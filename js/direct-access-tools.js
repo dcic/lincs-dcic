@@ -196,7 +196,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["navigation"],
                 content: ["assays", "cells"]
             },
-            directive: "Docent-bar",
+            // directive: "Docent-bar",
             cssClass: "docent"
         },
         {
@@ -212,7 +212,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["search"],
                 content: ["assays"]
             },
-            directive: "LDR-bar",
+            // directive: "LDR-bar",
             cssClass: "ldr"
         },
         {
@@ -229,7 +229,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["analysis", "download"],
                 content: ["external"]
             },
-            directive: "Geneva-bar",
+            // directive: "Geneva-bar",
             cssClass: "geneva"
         },
         {
@@ -267,7 +267,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["analysis"],
                 content: ["external"]
             },
-            directive: "Paea-bar",
+            // directive: "Paea-bar",
             cssClass: "paea"
         },
         {
@@ -286,7 +286,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["navigation", "search"],
                 content: ["drugs", "cells", "external"]
             },
-            directive: "LCB-bar",
+            // directive: "LCB-bar",
             cssClass: "lcb"
         },
         {
@@ -304,7 +304,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["navigation"],
                 content: ["drugs", "cells"]
             },
-            directive: "DCB-bar",
+            // directive: "DCB-bar",
             cssClass: "dcb"
         },
         {
@@ -338,7 +338,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["navigation"],
                 content: ["drugs", "cells"]
             },
-            directive: "P100mosaic-bar",
+            // directive: "P100mosaic-bar",
             cssClass: "p100mosaic"
         }
     ];
@@ -394,9 +394,10 @@ mod.directive("tool", function($compile, $timeout) {
         link: function(scope, elem, attrs) {
             // console.log("test");
             var tool_obj = scope.toolData;
-            if (tool_obj && tool_obj.directive !== 'undefined') {
+            console.log(tool_obj.directive);
+            if (tool_obj && tool_obj.directive !== undefined) {
                 elem.find('placeholder').replaceWith(
-                    $compile('<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
+                    $compile("<hr><h4>Direct access</h4>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
                 );
             };
 
@@ -494,7 +495,7 @@ mod.directive('lincsDataPortalBar', function($compile) {
                 window.open(search_url, '_blank');
             };
             $scope.entities = function(searchTerm) {
-                return $http.get(SUGGEST_URL + searchTerm).then(function(response) {
+                return $http.get(suggest_url + searchTerm).then(function(response) {
                     return response.data.suggestTerms;
                 });
             };
@@ -735,11 +736,13 @@ mod.directive('slicrBar', function() {
                 }).join(',');
                 $scope.slicerSearchUrl = url + '#/search/' + $scope.search_term;
             });
+            $scope.search = function() {
+                window.open($scope.slicerSearchUrl, "_blank");
+            };
             // Overwrite type-search listener, changes tags variable (the search query model of slicrBar).
             $scope.$on("type-search", function(event, query) {
                 $scope.tags = query.split(" ");
             });
-
         }],
         templateUrl: 'view/getting-started/slicr.html'
     }
@@ -751,11 +754,11 @@ mod.directive('harmonizomeBar', function() {
         scope: true,
         link: function(scope, element, attrs) {
         },
-        controller: ['$scope', '$http', function($scope, $http) {
-
+        controller: ["$scope", "$element", "$http", function($scope, $element, $http) {
             var base_url = 'http://amp.pharm.mssm.edu/Harmonizome/';
             var search_url = base_url + 'search?q=';
             var suggest_url = base_url + 'api/1.0/suggest?q='
+
             $scope.search = function() {
                 window.open(search_url + $scope.query.term, '_blank');
             };
@@ -832,8 +835,6 @@ mod.directive("network2canvasBar", function() {
                     $element.find("#tutorial2").html("<iframe src='https://www.youtube.com/embed/R3eBQcRcOEY' frameborder='0' allowfullscreen></iframe>");
                 }
             };
-
-
         }],
         templateUrl: "view/getting-started/network2canvas.html"
     }

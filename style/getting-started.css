@@ -154,9 +154,11 @@ div.tool img {
 }
 
 div.tool button {
-  margin: 10px 0;
+  margin: 5px 0;
+  padding: 3px;
   /* not selection outline */
   outline: none;
+  border-radius: 2px;
 }
 
 /* tool action bar */
@@ -223,22 +225,22 @@ div.tool p.data-content-description:empty {
 }
 
 div.tool p.functionality-description {
-  background-color: rgb(204,235,197);
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(204,235,197);
-  border-collapse: collapse;
-  border-radius: 2px;
+  background-color: rgba(204,235,197,0.5);
+  /*border-style: solid;*/
+  /*border-width: 2px;*/
+  /*border-color: rgb(204,235,197);*/
+  /*border-collapse: collapse;*/
+  /*border-radius: 2px;*/
   padding: 10px 5px;
 }
 
 div.tool p.data-content-description {
-  background-color: rgb(179,205,227);
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(179,205,227);
-  border-collapse: collapse;
-  border-radius: 2px;
+  background-color: rgba(179,205,227,0.5);
+  /*border-style: solid;*/
+  /*border-width: 2px;*/
+  /*border-color: rgb(179,205,227);*/
+  /*border-collapse: collapse;*/
+  /*border-radius: 2px;*/
   padding: 10px 5px;
 }
 

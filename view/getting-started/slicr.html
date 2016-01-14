@@ -1,6 +1,6 @@
-<tags-input placeholder="Search by perturbation, cell, time or dose" ng-model="tags" min-length="2" class="search-box">
-    <auto-complete min-length="2" source="loadTags($query)"></auto-complete>
-</tags-input>
-<button class="btn btn-default">
-    <a ng-href='{{slicerSearchUrl}}' target="_blank">Search</a>
-</button>
+<form>
+	<tags-input placeholder="Search by perturbation, cell, time or dose" ng-model="tags" min-length="2" class="search-box">
+	    <auto-complete min-length="2" source="loadTags($query)"></auto-complete>
+	</tags-input>
+	<button class="btn btn-default" ng-click="search()">Search</button>
+</form>
