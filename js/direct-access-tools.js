@@ -135,10 +135,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 main: 'Search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.',
                 search: "General text-based search.",
                 api: "Data can be accessed programmatically through GET requests. Consult <a target='_blank' href='http://amp.pharm.mssm.edu/Harmonizome/documentation'>API documentation</a> for more information.",
+                download: "Data can be downloaded in a standardized format.",
                 external: "External data are collected from many different large-scale data projects."
             },
             modes: {
-                functionality: ["search", "api"],
+                functionality: ["search", "api", "download"],
                 content: ["external"]
             },
             directive: 'harmonizome-bar',
@@ -151,6 +152,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             description: {
                 main: "Harvard Medical School's LINCS database.",
                 search: "General text-based search. Find data sets and information about experimental reagents. Small-molecule compounds can be queried based on SMILES.",
+                download: "Data is hosted on the web-site and can be downloaded.",
                 api: "Programmatic access is detailed in the <a target='_blank' href='https://docs.google.com/document/d/1R_d_1UWO0C9y1TceXpKIUkhjk08DfvP1D19txi4Tbas/edit'>URL Scheme and Access Guide</a>.",
                 assays: "The available data are focused on dose-dependence and dynamics of responses to small-molecule perturbations. It primarily has data on biochemical binding assays and microscopy imaging measuring cell viability.",
                 drugs: "A wide range of small-molecule compounds.",
@@ -173,11 +175,12 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 navigation: "The data categories can be navigated using layered pie charts.",
                 cells: "A wide range of human cell lines across different tissue types.",
                 drugs: "A wide range of small-molecule compounds which are annotated based on mechanism of action.",
+                genetics: "L1000 data based on shRNA and cDNA screens are available.",
                 assays: "A wide range of assays."
             },
             modes: {
                 functionality: ["search", "navigation"],
-                content: ["cells", "drugs", "assays"]
+                content: ["cells", "drugs", "genetics", "assays"]
             },
             directive: "LIFE-bar",
             cssCLass: "life"
@@ -204,7 +207,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: "http://amp.pharm.mssm.edu/ldr/",
             image: "",
             description: {
-                main: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers",
+                main: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers.",
                 search: "Search registered datasets based on submitting institute or experimental condition.",
                 assays: "The available assays are from LINCS phase II."
             },
@@ -238,12 +241,12 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             image: DIR + "cmap2.jpg",
             description: {
                 main: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience.",
-                api: "For programmatic access refer to the <a target='_blank' href='http://api.lincscloud.org/'>API documentation.</a>.",
+                api: "For programmatic access refer to the <a target='_blank' href='http://api.lincscloud.org/'>API documentation</a>.",
                 analysis: "Web-based analysis of the L1000 dataset in the CLUE unified research environment. In development.",
-                search: "The API can be used for searching the L1000 dataset.",
+                search: "The API can be used for searching the L1000 dataset. Note that the direct access search only provides a small fraction of the functionality available through the API.",
                 download: "The entire L1000 dataset can be <a target='_blank' href='http://download.lincscloud.org/'>downloaded from Amazon S3</a>.",
                 drugs: "A collection of ~18000 small-molecule compounds.",
-                genetics: "RNAi screen.",
+                genetics: "Systematic RNAi/shRNA screens and cDNA overexpression screens.",
                 cells: "A wide range of cell lines.",
                 assay: "L1000 gene expression of ~1000 landmark genes and image-based morphology profiles."
             },
@@ -329,8 +332,8 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: "http://amp.pharm.mssm.edu/p100mosaic",
             image: DIR + "mosaic_by_freepik.jpg",
             description: {
-                main: "Mosaic visualization of targeted phosphoproteomics and post-translation histone modifications after chemical perturbation of cancer cell lines",
-                navigation: "Phosphosites and histone modifications can be used ",
+                main: "Mosaic visualization of targeted phosphoproteomics and post-translation histone modifications after chemical perturbation of cancer cell lines.",
+                navigation: "Clusters and correlations of phosphosites and histone modifications can be investigated using 2d canvas visualizations.",
                 drugs: "Small-molecule compounds which can be categorized as kinase inhibitors, epigenetically active, or neurologically active.",
                 cells: "Small set of cancer and brain cell lines."
             },
@@ -424,6 +427,9 @@ mod.directive("tool", function($compile, $timeout) {
 
             // Change viewiew mode. To be overwritten by child directives.
             $scope.mode = function(mode_id) {
+                $scope.$broadcast("mode", mode_id);
+
+                // console.log("base mode called: ", mode_id);
                 var button = $element.find("." + mode_id);  // the button associated with the mode
                 var was_selected = button.hasClass("selected");  // already selected?
 
@@ -628,10 +634,10 @@ mod.directive('l1000cds2Textarea', function() {
                         input: JSON.stringify(payload)
                     },
                     success: function(data) {
-                        var a = $element.find('a');
-                        a.attr('href', 'http://amp.pharm.mssm.edu/L1000CDS2/#/result/' + data.shareId);
-                        a.removeClass('hidden');
-                        a.text('L1000CDS2 results');
+                        var button_result = $element.find('button .result');
+                        button_result.attr('href', 'http://amp.pharm.mssm.edu/L1000CDS2/#/result/' + data.shareId);
+                        button_result.removeClass('hidden');
+                        // a.text('L1000CDS2 results');
                     }
                 });
             }
@@ -784,12 +790,11 @@ mod.directive("hmsDbBar", function() {
 
             // Extend mode() function from parent scope. Inherited mode() functionality from toolDirective.
             // Copies base function, overwrites, and recalls.
-            $scope.baseMode = $scope.mode;
-            $scope.mode = function(name) {
-                $scope.baseMode(name);
+            // console.log($scope);
 
-                console.log("HMS overwritten mode called with: ", name);
-            }
+            $scope.$on("mode", function(event, mode_id) {
+                // console.log("broadcast recieved: ", event, mode_id);
+            });
         }],
         templateUrl: "view/getting-started/hms-db.html"
     }
@@ -843,9 +848,6 @@ mod.directive("lincscloudBar", function() {
         restrict: "E",
         scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
         controller: ["$scope", function($scope) {
-            console.log($scope.query);
-            console.log($scope);
-
             var base_url = "http://api.lincscloud.org/a2/";
             var user_key = "lincsdemo";
 
@@ -875,10 +877,27 @@ mod.directive("lincscloudBar", function() {
 
             $scope.search = function() {
                 $scope.query.field = $scope.engine_example_fields[$scope.query.engine];  // find example field for engine
-                console.log($scope.query.field);
+                // console.log($scope.query.field);
                 var http_request = base_url + $scope.query.engine + "?q={\"" + $scope.query.field + "\":\"" + $scope.query.term + "\"}&user_key=" + user_key;
                 window.open(http_request, "_blank");
             };
+
+            // Extend mode switch function
+            $scope.$on("mode", function(event, mode_id) {
+
+                // console.log(mode_id);
+
+                switch (mode_id) {
+                    case "cells":
+                        $scope.query.engine = "cellinfo";
+                        break;
+                    case "drugs":
+                        $scope.query.engine = "pertinfo";
+                        break;
+                }
+                // console.log("HMS overwritten mode called with: ", name);
+            });
+
         }],
         templateUrl: "view/getting-started/lincscloud.html"
     }
@@ -892,6 +911,10 @@ mod.directive("myDirective", function() {
         restrict: "E",
         scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
         controller: ["$scope", function($scope) {
+            // Listener to click events from parent <tool>
+            $scope.$on("mode", function(event, mode_id) {
+                console.log("new mode: ", mode_id);
+            })
         }],
         // templateUrl: "view/getting-started/myDirective.html"
     }
