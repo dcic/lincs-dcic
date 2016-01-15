@@ -67,7 +67,7 @@
                             The program
                         </p>
                     </div>
-                    <div class="col-xs-3" data-selector="lincs-data">
+                    <div class="col-xs-3" data-selector="lincs-centers">
                         <p class="section">
                             <!-- http://ymbproperties.com/ -->
                             <!-- <img class="vertical" src="images/concierge-icons/handdrawn_microscope.svg"> -->
@@ -77,14 +77,14 @@
                             Data generation centers
                         </p>
                     </div>
-                    <div class="col-xs-3" data-selector="general-information">
+                    <div class="col-xs-3" data-selector="lincs-events">
                         <p class="section">
                             <img class="vertical" src="images/concierge-icons/calendar146.svg">
                             <br>
                             Events
                         </p>
                     </div>
-                    <div class="col-xs-3" data-selector="publications">
+                    <div class="col-xs-3" data-selector="lincs-publications">
                         <p class="section">
                             <img class="vertical" src="images/concierge-icons/text70.svg">
                             <br>
@@ -215,7 +215,7 @@
                 </div>
 
                 <!-- LINCS data generation centers -->
-                <div class="row lincs-data" ng-controller="lincsCentersCtrl">
+                <div class="row lincs-centers" ng-controller="lincsCentersCtrl">
                     <div class="col-sm-6">
                         <h2>Data and signature generation centers</h2>
                         <p>LINCS data are generated at 6 research centers each contributing complementary data cubes consisting of cell lines, perturbations, and assays. The centers have their own research goals and scientific priorities which are here outlined.</p>
@@ -232,7 +232,22 @@
                             <div center data="center"></div>
                         </div>
                     </div>
+                </div>
 
+                <div class="row lincs-events">
+                    <div class="col-xs-12">
+                        <h2>Events</h2>
+                    </div>
+                </div>
+
+                <!-- LINCS publications -->
+                <div class="row lincs-publications">
+                    <div class="col-xs-12">
+                        <h2>Publications</h2>
+                        <ul>
+                            <li><a href="http://www.lincsproject.org/publications/">Publication overview</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Drug specific searches -->
@@ -560,14 +575,15 @@
                     </div>
 
                     <div class="row">
-                        <tool class="col-sm-6" tool-data="findTool('Lincscloud')" tool-mode="analysis"></tool>
                         <tool class="col-sm-6" tool-data="findTool('L1000CDS2')" tool-mode="analysis"></tool>
                         <tool class="col-sm-6" tool-data="findTool('Enrichr')" tool-mode="analysis"></tool>
+                        <tool class="col-sm-6" tool-data="findTool('Lincscloud')" tool-mode="analysis"></tool>
                     </div>
+
 
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2>What are some unique statistical analysis approaches of the LINCS project?</h2>
+                            <h2>What are some unique statistical approaches of the LINCS project?</h2>
                         </div>
                     </div>
 
