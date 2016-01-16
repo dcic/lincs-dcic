@@ -250,43 +250,43 @@ div.tool p.data-content-description {
 
 /*div.tool div.action button.hint:hover*/
 div.tool div.action button.search {
-  background-image: url("/images/concierge-icons/find_solid.svg");
+  background-image: url(/images/concierge-icons/find_solid.svg);
 }
 
 div.tool div.action button.analysis {
-  background-image: url("/images/concierge-icons/stacked.svg");
+  background-image: url(/images/concierge-icons/stacked.svg);
 }
 
 div.tool div.action button.api {
-  background-image: url("/images/concierge-icons/web2.svg");
+  background-image: url(/images/concierge-icons/web2.svg);
 }
 
 div.tool div.action button.navigation {
-  background-image: url("/images/concierge-icons/compass.svg");
+  background-image: url(/images/concierge-icons/compass.svg);
 }
 
 div.tool div.action button.download {
-  background-image: url("/images/concierge-icons/download168.svg");
+  background-image: url(/images/concierge-icons/download168.svg);
 }
 
 div.tool div.action button.cells {
-  background-image: url("/images/concierge-icons/cell1.svg");
+  background-image: url(/images/concierge-icons/cell1.svg);
 }
 
 div.tool div.action button.drugs {
-  background-image: url("/images/concierge-icons/chemistry43.svg");
+  background-image: url(/images/concierge-icons/chemistry43.svg);
 }
 
 div.tool div.action button.genetics {
-  background-image: url("/images/concierge-icons/dna17.svg");
+  background-image: url(/images/concierge-icons/dna17.svg);
 }
 
 div.tool div.action button.assays {
-  background-image: url("/images/concierge-icons/lab2.svg");
+  background-image: url(/images/concierge-icons/lab2.svg);
 }
 /* External data */
 div.tool div.action button.external {
-  background-image: url("/images/concierge-icons/data110.svg");
+  background-image: url(/images/concierge-icons/data110.svg);
 }
 
 /* For greying out text */
