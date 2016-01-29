@@ -10,7 +10,7 @@ Input: data, contains description, tags, and links for the particular center.
         </div>
         <div class="col-xs-6 text-right">
         	<span ng-repeat="(name, address) in data.links">
-        		<a href="{{address}}">{{ name }}</a>
+        		<a target="_blank" href="{{address}}">{{ name }}</a>
                 <!-- | separator, except for last entry --> 
         		{{$last ? '' : '|'}}
         	</span>
@@ -33,11 +33,10 @@ Input: data, contains description, tags, and links for the particular center.
         	<p class="muted text-right">{{data.affiliation}}</p>
         </div>
     </div>
-    <button class="btn-primary" ng-click="toggleWordCloud()">+word cloud</button>
-    <div class="row lincs-data">
-        <div class="col-xs-12 text-center cloud-div">
-            <!-- <hr> -->
-            <!-- <svg class="cloud-svg" display="none"></svg> -->
-        </div>
-    </div>
+
+    <!-- <button class="btn-primary" ng-click="toggleWordCloud()">+word cloud</button> -->
+    <!-- <div class="row lincs-data"> -->
+        <!-- <div class="col-xs-12 text-center cloud-div"></div> -->
+    <!-- </div> -->
+
 </div>

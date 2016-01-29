@@ -136,10 +136,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 search: "General text-based search.",
                 api: "Data can be accessed programmatically through GET requests. Consult <a target='_blank' href='http://amp.pharm.mssm.edu/Harmonizome/documentation'>API documentation</a> for more information.",
                 download: "Data can be downloaded in a standardized format.",
-                external: "External data are collected from many different large-scale data projects."
+                external: "External data are collected from many different large-scale data projects.",
+                analysis: "Data sets can be analysed for gene co-expression using measures of similarity."
             },
             modes: {
-                functionality: ["search", "api", "download"],
+                functionality: ["search", "api", "download", "analysis"],
                 content: ["external"]
             },
             directive: 'harmonizome-bar',
@@ -343,6 +344,20 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             },
             // directive: "P100mosaic-bar",
             cssClass: "p100mosaic"
+        },
+        {
+            title: "Crowdsourcing Portal",
+            url: "http://www.maayanlab.net/crowdsourcing/",
+            image: "",
+            description: {
+                main: "The portal enables user contributions to an assortment of scientific challenges termed microtasks and megatasks.",
+                collaboration: "By organizing scientific challenges and allowing users, both within the LINCS consortium and students, to submit and share solutions, the Crowsourcing Portal faciliates collaboration.",
+                education: "The Crowdsourcing Portal is associated with the <a href='https://www.coursera.org/course/bd2klincs'>BD2K-LINCS data science course</a>, enabling students to contribute to the process of scientific discovery."
+            },
+            modes: {
+                functionality: ["collaboration", "education"],
+                // content: [""]
+            }
         }
     ];
 
@@ -379,7 +394,9 @@ mod.factory("tooltips", function() {
         drugs: "LINCS small-molecule compounds",
         genetics: "LINCS genetic experiments",
         assays: "LINCS assay types",
-        external: "Data from external sources"
+        external: "Data from external sources",
+        education: "Educational resource",
+        collaboration: "Tool that faciliate scientific collaboration"
     };
 });
 
