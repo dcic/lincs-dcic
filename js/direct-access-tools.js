@@ -358,6 +358,20 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["collaboration", "education"],
                 // content: [""]
             }
+        },
+        {
+            title: "Geo2Enrichr",
+            url: "http://amp.pharm.mssm.edu/g2e/",
+            image: DIR + "Geo2Enrichr.png",
+            description: {
+                main: "GEO2Enrichr is a web application and two browser extensions designed to ease the extraction of signatures from studies posted on the Gene Expression Omnibus (GEO) database as well as extract signatures from your own data tables.",
+                analysis: "Analyses gene expression data using t-tests or the characteristic direction method.",
+                external: "External data from the Gene Expression Omnibus (GEO)."
+            },
+            modes: {
+                functionality: ["analysis"],
+                content: ["external"]
+            }
         }
     ];
 
