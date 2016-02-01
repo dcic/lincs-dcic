@@ -3,9 +3,9 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	    {
-            date: 'TBA | 3:00 PM ET',
-            topic: '',
-            presenters: ''
+            date: '1 March 2016 | 3:00 PM ET',
+            topic: 'TBA',
+            presenters: 'Silvio Bicciato PhD, University of Modena and Reggio Emilia'
             }
 
     ];
