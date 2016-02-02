@@ -96,23 +96,11 @@
 
 /* Direct access tool common styling */
 div.tool {
-  /*height: 300px;*/
   font-size: 12px;
-  /*background: blue*/
 }
-
-/*div.tool input {
-  border: 1px solid #dddddd;
-  width: 100%;
-  padding: 5px;
-  height: 40px;
-  box-shadow: none;
-}
-*/
 div.tool form {
   text-align: center;
 }
-
 div.tool .tool-title a {
   color: black;
 }
@@ -121,7 +109,6 @@ div.tool .tool-title a:hover {
   opacity: .75;
   text-decoration: none;
 }
-
 div.tool input,
 div.tool textarea {
   border: 1px solid #dddddd;
@@ -135,7 +122,6 @@ div.tool textarea {
   height: 40px;
   box-shadow: none;
 }
-
 div.tool .tool-title {
   font-size: 20px;
 }
@@ -323,6 +309,16 @@ div.tool div.action button.collaboration {
   background-image: url(/images/concierge-icons/social-network12.svg);
 }
 
+
+div.category-selector {
+  padding-bottom: 10px;
+}
+
+/* button modification for legend */
+div.tool div.action div.category-selector button {
+  width: 24px;
+  height: 24px;
+}
 
 /* For greying out text */
 .muted {

@@ -9,6 +9,59 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
 
     $scope.introText = $sce.trustAsHtml('');
 
+    $scope.mode = "api";  // currenlty selected mode
+
+    $scope.buttons = [
+        {
+            name: "search",
+            description: "Search data collection"
+        },
+        {
+            name: "analysis",
+            description: "Analyze data"
+        },
+        {
+            name: "api",
+            description: "Programatic access through API"
+        },
+        {
+            name: "navigation",
+            description: "Visual elements that help navigate data"
+        },
+        {
+            name: "download",
+            description: "Download"
+        },
+        {
+            name: "cells",
+            description: "LINCS cell lines"
+        },
+        {
+            name: "drugs",
+            description: "LINCS small-molecule compounds"
+        },
+        {
+            name: "genetics",
+            description: "LINCS genetic experiments"
+        },
+        {
+            name: "assays",
+            description: "LINCS assay types"
+        },
+        {
+            name: "external",
+            description: "Data from external sources"
+        },
+        {
+            name: "education",
+            description: "Educational resource"
+        },
+        {
+            name: "collaboration",
+            description: "Tool that faciliate scientific collaboration"
+        }
+    ];
+
     $scope.tools = [
         {
             title: 'LINCS Data Portal',
@@ -389,11 +442,38 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         }
     };
 
+    // Filter tools based on modes (buttons) in the tool data.
+    // Returns a list of filtered tool data.
+    $scope.filterTools = function(tool_data, query_mode) {
+        var out_tools = [];  // filtered tools
+
+        for (var i in tool_data) {
+            try {
+                if (query_mode === "" || tool_data[i].modes.functionality.indexOf(query_mode) > -1 || tool_data[i].modes.content.indexOf(query_mode) > -1) {
+                    out_tools.push(tool_data[i]);
+                }
+            } catch(err) {
+                // errors such as undefined allowed
+            }
+        }
+
+        // return tool_data;
+        return out_tools;
+    };
+
     // Type search query in all child <tool>
     $scope.typeSearch = function(query) {
         // broadcast type-search event
         $scope.$broadcast("type-search", query);
     };
+
+    // Change selected mode for all tool elements.
+    // Changes which tools are displayed.
+    $scope.setMode = function(mode) {
+        console.log("setting mode: ", mode);
+        $scope.mode = mode;
+    }
+
 }]);
 
 // Tooltip texts for toolDirective buttons

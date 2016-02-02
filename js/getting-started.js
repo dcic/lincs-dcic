@@ -284,6 +284,3 @@ modLincsCenters.directive("center", function() {
         templateUrl: "view/getting-started/center.html"
     };
 });
-
-
-
