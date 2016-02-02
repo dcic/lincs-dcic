@@ -85,15 +85,6 @@
 .category-page.direct-access-tools-page .tools ul li:before {
   content: '';
 }
-
-.row.equalheights {
-  overflow: hidden; 
-}
-.row.equalheights > [class*="col-"]{
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
-}
-
 /* Direct access tool common styling */
 div.tool {
   font-size: 12px;
@@ -119,15 +110,25 @@ div.tool textarea {
   border: 1px solid #dddddd;
   width: 100%;
   padding: 5px;
-  height: 40px;
   box-shadow: none;
+  resize: none;
 }
+
+div.tool textarea {
+  height: 150px;
+}
+
 div.tool .tool-title {
   font-size: 20px;
 }
 
 div.tool .row.tool-header {
   margin-bottom: 5px;
+}
+
+div.tool hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Specific tool styling */
@@ -137,7 +138,7 @@ div.tool .textarea-wrapper {
   width: 48%;
 }
 div.tool .textarea-wrapper textarea {
-  height: 50px;
+  /*height: 100px;*/
   padding: 2px;
   width: 100%;
   resize: none;
@@ -168,7 +169,6 @@ div.tool button {
   outline: none;
   border-radius: 2px;
 }
-
 div.tool a.btn {
   margin: 5px 0;
   padding: 3px;
@@ -176,8 +176,9 @@ div.tool a.btn {
   outline: none;
   border-radius: 2px;
 }
-
-/* tool action bar */
+div.tool div.action  {
+  padding-left: 0;
+}
 div.tool div.action button {
   margin-top: 0;
   margin-left: 0;
@@ -185,7 +186,6 @@ div.tool div.action button {
   margin-right: 1px;
   padding: 0;
 }
-
 div.tool div.action button {
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,8 +193,8 @@ div.tool div.action button {
 
    /*3px 5px no-repeat;*/
   background-color: white;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   opacity: 0.5;
 }
 
@@ -308,7 +308,6 @@ div.tool div.action button.education {
 div.tool div.action button.collaboration {
   background-image: url(/images/concierge-icons/social-network12.svg);
 }
-
 
 div.category-selector {
   padding-bottom: 10px;

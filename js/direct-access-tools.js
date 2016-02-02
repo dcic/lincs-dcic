@@ -9,12 +9,12 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
 
     $scope.introText = $sce.trustAsHtml('');
 
-    $scope.mode = "api";  // currenlty selected mode
+    $scope.mode = "";  // selected mode
 
     $scope.buttons = [
         {
             name: "search",
-            description: "Search data collection"
+            description: "Search data"
         },
         {
             name: "analysis",
@@ -22,15 +22,15 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         },
         {
             name: "api",
-            description: "Programatic access through API"
+            description: "Access through API"
         },
         {
             name: "navigation",
-            description: "Visual elements that help navigate data"
+            description: "Data visualization"
         },
         {
             name: "download",
-            description: "Download"
+            description: "Download data"
         },
         {
             name: "cells",
@@ -38,7 +38,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         },
         {
             name: "drugs",
-            description: "LINCS small-molecule compounds"
+            description: "LINCS small molecules"
         },
         {
             name: "genetics",
@@ -50,7 +50,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         },
         {
             name: "external",
-            description: "Data from external sources"
+            description: "External data"
         },
         {
             name: "education",
@@ -58,7 +58,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         },
         {
             name: "collaboration",
-            description: "Tool that faciliate scientific collaboration"
+            description: "Collaboration"
         }
     ];
 
@@ -66,9 +66,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         {
             title: 'LINCS Data Portal',
             url: 'http://lincsportal.ccs.miami.edu/dcic-portal/',
-            image: DIR + "LINCS_data_portal.png",
+            image: DIR + "portal.png",
             description: {
-                main: "Search and download LINCS datasets and entities.",
+                // main: "Search and download LINCS data sets and entities.",
+                main: "Features for searching and exploring LINCS dataset packages and reagents.",
                 search: "Search for LINCS data sets in a data base containing controlled entities of the LINCS experiments.",
                 api: "The data can also be accessed programmatically increasing the utility of the data base. For programmatic access, refer to the <a target='_blank' href='http://lincsportal.ccs.miami.edu/apis/'>API documentation</a>.",
                 download: "Data packages for each data set can be downloaded after login.",
@@ -89,7 +90,8 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: 'http://eh3.uc.edu/pilincs/',
             image: DIR + 'pilincs.png',
             description: {
-                main: "Access to LINCS proteomics datasets with platforms P100 and GCP.",
+                // main: "Access to LINCS proteomics data sets with platforms P100 and GCP.",
+                main: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
                 navigation: "Each protein signature can be browsed as a histogram.",
                 search: "The experimental conditions can be searched.",
                 drugs: "The compounds are throught to be kinase inhibitors, epigenetically active drugs, or neuroactive drugs. For more information about the experimental setup consult the <a target='_blank' href='https://panoramaweb.org/labkey/project/LINCS/begin.view'>Panorama repository</a>  .",
@@ -107,8 +109,9 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: 'http://eh3.uc.edu/GenomicsPortals/Lincs.jsp',
             image: DIR + 'i-lincs.png',
             description: {
-                main: 'Use iLINCS to analyze differential gene expression in a dataset identified via LINCS Data Portal.',
-                analysis: "Data sets on the portal can be analysed using a collection of standard statistical methods including correlations, heatmaps, and PCA.",
+                // main: 'Use iLINCS to analyze differential gene expression in a data set identified via LINCS Data Portal.',
+                main: "A computational biology project aimed at developing statistical methods and computational tools for integrative analysis of the data produced by the Library of Integrated Network-based Cellular Signatures (LINCS) program.",
+                analysis: "Data sets on the portal can be analyzed using a collection of standard statistical methods including correlations, heatmaps, and PCA.",
                 search: "The data sets can be searched for experimental conditions.",
                 cells: "Data on selected LICNS cell lines are available.",
                 drugs: "Data on selected LINCS small-molecules are available.",
@@ -126,7 +129,8 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: 'http://amp.pharm.mssm.edu/slicr/',
             image: DIR + 'slicr.png',
             description: {
-                main: "Search LINCS L1000 gene expression profiles.",
+                // main: "Search LINCS L1000 gene expression profiles.",
+                main: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
                 search: "The experimental conditions of the L1000 data set can be searched.",
                 download: "Each individual signature can be selected and downloaded.",
                 drugs: "All L1000 small-molecule compounds.",
@@ -145,7 +149,8 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: 'http://amp.pharm.mssm.edu/Enrichr/',
             image: DIR + 'enrichr.png',
             description: {
-                main: "Perform gene set enrichment analysis.",
+                // main: "Perform gene set enrichment analysis.",
+                main: "An easy to use intuitive enrichment analysis web-based tool providing various types of visualization summaries of collective functions of gene lists.",
                 analysis: "Gene set enrichment analysis for identifying functional signals.",
                 external: "Choose between a wide selection of external gene libraries such as Gene Onthologies for functional analysis."
             },
@@ -162,9 +167,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             image: DIR + 'l1000cds2.png',
             description: {
                 // main description always shown.
-                main: "Analyse gene expression profiles using a signature search engine for the LINCS L1000 data set.",
+                // main: "Analyze gene expression profiles using a signature search engine for the LINCS L1000 data set.",
+                main: "L1000CDS2 queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
                 // mode-specific descriptions shown when mode buttons are clicked
-                analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyse such gene lists in the context of the L1000 gene expressin data set. Alternatively, numerical vectors can also be analyzed.",
+                analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyze such gene lists in the context of the L1000 gene expressin data set. Alternatively, numerical vectors can also be analyzed.",
                 search: "Data-oriented search allows finding relevant signatures where the query is based on data rather than names.",
                 cells: "The L1000 data set contains numerous human cell lines including several tissue and disease models",
                 drugs: "All small-molecule perturbations from the L1000 data set are used as a reference and search target.",
@@ -185,12 +191,13 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: 'http://amp.pharm.mssm.edu/Harmonizome/',
             image: DIR + 'harmonizome.png',
             description: {
-                main: 'Search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.',
+                // main: 'Search for genes or proteins and their functional terms extracted and organized from over 100 publicly available resources.',
+                main: "Built on top of information about genes and proteins from 114 datasets, the Harmonizome is a knowledge engine for a diverse set of integrated resources.",
                 search: "General text-based search.",
                 api: "Data can be accessed programmatically through GET requests. Consult <a target='_blank' href='http://amp.pharm.mssm.edu/Harmonizome/documentation'>API documentation</a> for more information.",
                 download: "Data can be downloaded in a standardized format.",
                 external: "External data are collected from many different large-scale data projects.",
-                analysis: "Data sets can be analysed for gene co-expression using measures of similarity."
+                analysis: "Data sets can be analyzed for gene co-expression using measures of similarity."
             },
             modes: {
                 functionality: ["search", "api", "download", "analysis"],
@@ -224,7 +231,8 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: "http://life.ccs.miami.edu/life/",
             image: DIR + "life.png",
             description: {
-                main: "LINCS information framework. Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
+                // main: "LINCS information framework. Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
+                main: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
                 search: "Find data aggregated from HMS LINCS Database, the Broad institute, and other LINCS data generation centers.",
                 navigation: "The data categories can be navigated using layered pie charts.",
                 cells: "A wide range of human cell lines across different tissue types.",
@@ -244,7 +252,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: "http://amp.pharm.mssm.edu/milestones/grid.html",
             image: DIR + "docent-grid.png",
             description: {
-                main: "Global visual representation of available LINCS Phase II datasets.",
+                main: "Global visual representation of available LINCS Phase II data sets.",
                 navigation: "Available data on specific cell line and assay combinations can be navigated and compared via a matrix representation.",
                 assays: "The assays include RNA-seq, RPPA, ATAC-seq, cell viability assays, and many others.",
                 cells: "A core set of cell lines."
@@ -262,7 +270,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             image: "",
             description: {
                 main: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers.",
-                search: "Search registered datasets based on submitting institute or experimental condition.",
+                search: "Search registered data sets based on submitting institute or experimental condition.",
                 assays: "The available assays are from LINCS phase II."
             },
             modes: {
@@ -296,9 +304,9 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             description: {
                 main: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience.",
                 api: "For programmatic access refer to the <a target='_blank' href='http://api.lincscloud.org/'>API documentation</a>.",
-                analysis: "Web-based analysis of the L1000 dataset in the CLUE unified research environment. In development.",
-                search: "The API can be used for searching the L1000 dataset. Note that the direct access search only provides a small fraction of the functionality available through the API.",
-                download: "The entire L1000 dataset can be <a target='_blank' href='http://download.lincscloud.org/'>downloaded from Amazon S3</a>.",
+                analysis: "Web-based analysis of the L1000 data set in the CLUE unified research environment. In development.",
+                search: "The API can be used for searching the L1000 data set. Note that the direct access search only provides a small fraction of the functionality available through the API.",
+                download: "The entire L1000 data set can be <a target='_blank' href='http://download.lincscloud.org/'>downloaded from Amazon S3</a>.",
                 drugs: "A collection of ~18000 small-molecule compounds.",
                 genetics: "Systematic RNAi/shRNA screens and cDNA overexpression screens.",
                 cells: "A wide range of cell lines.",
@@ -316,7 +324,8 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: "http://amp.pharm.mssm.edu/PAEA/",
             image: DIR + "paea.png",
             description: {
-                main: "Principal Angle Enrichment Analysis (PAEA) is a R/Shiny gene set enrichment web application.",
+                // main: "Principal Angle Enrichment Analysis (PAEA) is a R/Shiny gene set enrichment web application.",
+                main: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
                 analysis: "Multivariate approach to gene-set enrichment based on the concept of principle angles.",
                 external: "70 gene set libraries available for enrichment analysis."
             },
@@ -351,7 +360,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: "http://www.maayanlab.net/LINCS/DCB/",
             image: DIR + "drug-cell-line-browser.png",
             description: {
-                main: "An interactive HTML5 data visualization for interacting with datasets of cancer cell lines/drug-viability studies.",
+                main: "An interactive HTML5 data visualization for interacting with data sets of cancer cell lines/drug-viability studies.",
                 navigation: "2D canvases show clustering of cell lines and small-molecule drugs across cancer tissue types.",
                 drugs: "A selection of anticancer small-molecule compounds from LINCS phase I: the MGH/Sanger and Heiser data sets.",
                 cells: "Human cancer cell lines deriving from numerous tissue types.",
@@ -417,8 +426,9 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: "http://amp.pharm.mssm.edu/g2e/",
             image: DIR + "Geo2Enrichr.png",
             description: {
-                main: "GEO2Enrichr is a web application and two browser extensions designed to ease the extraction of signatures from studies posted on the Gene Expression Omnibus (GEO) database as well as extract signatures from your own data tables.",
-                analysis: "Analyses gene expression data using t-tests or the characteristic direction method.",
+                // main: "GEO2Enrichr is a web application and two browser extensions designed to ease the extraction of signatures from studies posted on the Gene Expression Omnibus (GEO) database as well as extract signatures from your own data tables.",
+                main: "A browser extension and web application to extract gene sets from GEO and analyze these lists for common biological functions.",
+                analysis: "Analyzes gene expression data using t-tests or the characteristic direction method.",
                 external: "External data from the Gene Expression Omnibus (GEO)."
             },
             modes: {
@@ -470,7 +480,6 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
     // Change selected mode for all tool elements.
     // Changes which tools are displayed.
     $scope.setMode = function(mode) {
-        console.log("setting mode: ", mode);
         $scope.mode = mode;
     }
 
@@ -502,7 +511,8 @@ mod.directive("tool", function($compile, $timeout) {
             // data object assignemnt
             toolData: '=',
             // string specification
-            toolMode: '@'
+            toolMode: '@',
+            toolButtons: '@'
         },
         link: function(scope, elem, attrs) {
             // console.log("test");
@@ -518,8 +528,13 @@ mod.directive("tool", function($compile, $timeout) {
                 if (typeof scope.toolMode !== "undefined") {
                     // Input mode provided
                     // loop over space delimited input calling the mode() function for each
-                    scope.toolMode.split(" ")
-                        .forEach(scope.mode);
+                    try {
+                        scope.toolMode.split(" ")
+                            .forEach(scope.mode);
+                    } catch(err) {
+                        // WARNING: suppresses all errors from toolMode()
+                        // including syntax errors from button-less <tools>
+                    }
                 }
             }, 0);
         },
@@ -595,7 +610,7 @@ mod.directive('lincsDataPortalBar', function($compile) {
             $scope.query = $scope.$parent.query;  // query binding from parent
 
             $scope.searchTypeOptions = [
-                {name: 'Datasets', value: 'datasets'},
+                {name: 'Data sets', value: 'datasets'},
                 {name: 'Entities', value: 'entities'}
             ];
 

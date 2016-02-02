@@ -25,16 +25,6 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             ]
         },
         {
-            title: 'Resources',
-            url: '#/resources',
-            subnav: [
-                {
-                    title: 'Quick Start With the DCIC Tools',
-                    url: '#/getting-started/direct-access-tools'
-                }
-            ]
-        },
-        {
             title: 'Training and Outreach',
             url: '#/training',
             subnav: [
@@ -52,10 +42,10 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
                 }
             ]
         },
-        //{
-        //    title: 'Resources',
-        //    url: '#/resources'
-        //},
+        {
+            title: 'Resources',
+            url: '#/resources'
+        },
         {
             title: 'Publications',
             url: '#/publications'
@@ -81,6 +71,10 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
         {
             title: 'Funding Opportunities',
             url: '#/funding'
+        },
+        {
+            title: 'Quick Start',
+            url: '#/getting-started/direct-access-tools'
         }
     ];
 

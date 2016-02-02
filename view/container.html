@@ -1,20 +1,54 @@
 <link rel="stylesheet" href="style/getting-started.css">
 
 <div ng-include="'view/partial/carousel.html'"></div>
-<div class="row equalHeights" ng-controller="directAccessToolsCtrl">
-    <div class="col-sm-4 col-height">
-        <tool tool-data="findTool('LINCS Data Portal')" tool-mode=""></tool>
-    </div>
-    <div class="col-sm-4 col-height">
-        <tool tool-data="findTool('L1000CDS2')" tool-mode=""></tool>
-    </div>
-    <div class="col-sm-4 col-height">
-        <tool tool-data="findTool('iLINCS')" tool-mode=""></tool>
-    </div>
-</div>
+
 <div ng-controller="indexCtrl" id="index">
     <div id="index-page">
         <div class="container">
+            <!-- Quick start -->
+            <div id="quick-start">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Quick Start with LINCS</h1>
+                    </div>
+                </div>
+                <div class="row" ng-controller="directAccessToolsCtrl">
+
+                    <div class="col-sm-4">
+                        <h3>Search Signatures</h3>
+                        <tool tool-data="findTool('L1000CDS2')" tool-mode="" tool-buttons="none"></tool>
+                        <h3>Examples</h3>
+                        <a href="" ng-click="typeSearch('Ruxolitinib')">Ruxolitinib</a>,
+                        <a href="" ng-click="typeSearch('MCF7')">MCF7</a>,
+                        <a href="" ng-click="typeSearch('shRNA')">shRNA</a>,
+                        <a href="" ng-click="typeSearch('Phosphorylation')">Phosphorylation</a>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h3>Access Data</h3>
+                                <tool tool-data="findTool('LINCS Data Portal')" tool-mode="" tool-buttons="none"></tool>
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>Search Transcriptomics</h3>
+                                <tool tool-data="findTool('Slicr')" tool-mode="" tool-buttons="none"></tool>
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>Analyze Data</h3>
+                                <tool tool-data="findTool('iLINCS')" tool-mode="" tool-buttons="none"></tool>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <h3>Visualize Proteomics</h3>
+                                <tool tool-data="findTool('piLINCS')" tool-mode="" tool-buttons="none"></tool>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-4"> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+
             <div id="overview">
                 <div class="row">
                     <div class="col-md-12">
