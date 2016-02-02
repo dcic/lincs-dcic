@@ -77,7 +77,6 @@
   display: none;
 }
 
-
 /* Tools summary visualization using the tool icons. */
 .category-page.direct-access-tools-page .tools-summary img {
   margin-left: 10px;
@@ -87,19 +86,29 @@
   content: '';
 }
 
-/* Direct access tool common styling */
-div.tool {
-  font-size: 12px;
+.row.equalheights {
+  overflow: hidden; 
+}
+.row.equalheights > [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
-div.tool input {
+/* Direct access tool common styling */
+div.tool {
+  /*height: 300px;*/
+  font-size: 12px;
+  /*background: blue*/
+}
+
+/*div.tool input {
   border: 1px solid #dddddd;
   width: 100%;
   padding: 5px;
   height: 40px;
   box-shadow: none;
 }
-
+*/
 div.tool form {
   text-align: center;
 }
@@ -116,8 +125,16 @@ div.tool .tool-title a:hover {
 div.tool input,
 div.tool textarea {
   border: 1px solid #dddddd;
+  /*font-size: x-small;*/
+  font-weight: normal;
+  /*color: grey;*/
+  /*background-color: blue;*/
+  border: 1px solid #dddddd;
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  box-shadow: none;
 }
-
 
 div.tool .tool-title {
   font-size: 20px;
@@ -134,9 +151,10 @@ div.tool .textarea-wrapper {
   width: 48%;
 }
 div.tool .textarea-wrapper textarea {
-  height: 200px;
-  padding: 5px;
+  height: 50px;
+  padding: 2px;
   width: 100%;
+  resize: none;
 }
 div.tool .introduction {
   margin-bottom: 50px;
@@ -158,6 +176,14 @@ div.tool img {
 }
 
 div.tool button {
+  margin: 5px 0;
+  padding: 3px;
+  /* not selection outline */
+  outline: none;
+  border-radius: 2px;
+}
+
+div.tool a.btn {
   margin: 5px 0;
   padding: 3px;
   /* not selection outline */

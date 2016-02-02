@@ -429,7 +429,7 @@ mod.directive("tool", function($compile, $timeout) {
             var tool_obj = scope.toolData;
             if (tool_obj && tool_obj.directive !== undefined) {
                 elem.find('placeholder').replaceWith(
-                    $compile("<hr><h4>Direct access</h4>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
+                    $compile("<hr>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
                 );
             };
 
@@ -665,7 +665,7 @@ mod.directive('l1000cds2Textarea', function() {
                         input: JSON.stringify(payload)
                     },
                     success: function(data) {
-                        var button_result = $element.find('button .result');
+                        var button_result = $element.find('a.result');
                         button_result.attr('href', 'http://amp.pharm.mssm.edu/L1000CDS2/#/result/' + data.shareId);
                         button_result.removeClass('hidden');
                         // a.text('L1000CDS2 results');

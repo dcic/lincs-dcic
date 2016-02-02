@@ -1,4 +1,17 @@
+<link rel="stylesheet" href="style/getting-started.css">
+
 <div ng-include="'view/partial/carousel.html'"></div>
+<div class="row equalHeights" ng-controller="directAccessToolsCtrl">
+    <div class="col-sm-4 col-height">
+        <tool tool-data="findTool('LINCS Data Portal')" tool-mode=""></tool>
+    </div>
+    <div class="col-sm-4 col-height">
+        <tool tool-data="findTool('L1000CDS2')" tool-mode=""></tool>
+    </div>
+    <div class="col-sm-4 col-height">
+        <tool tool-data="findTool('iLINCS')" tool-mode=""></tool>
+    </div>
+</div>
 <div ng-controller="indexCtrl" id="index">
     <div id="index-page">
         <div class="container">

@@ -11,6 +11,10 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             url: '#/about#nav',
             subnav: [
                 {
+                    title: 'Concierge',
+                    url: '#/getting-started/concierge'
+                },
+                {
                     title: 'Internal Projects',
                     url: '#/internal-dsrp#nav'
                 },
@@ -21,21 +25,12 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             ]
         },
         {
-            title: 'Getting Started',
-            url: '#/',
+            title: 'Resources',
+            url: '#/resources',
             subnav: [
                 {
-                    title: 'Concierge',
-                    url: '#/getting-started/concierge'
-                },
-                {
-                    title: 'Direct Access to the BD2K-LINCS DCIC Tools',
+                    title: 'Quick Start With the DCIC Tools',
                     url: '#/getting-started/direct-access-tools'
-                },
-                {
-                    title: 'Resources',
-                    // TODO: Change this if Avi approves of new nav location.
-                    url: '#/resources'
                 }
             ]
         },
