@@ -10,10 +10,10 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             title: 'About',
             url: '#/about#nav',
             subnav: [
-                // {
-                //     title: 'Concierge',
-                //     url: '#/getting-started/concierge'
-                // },
+                {
+                    title: 'Concierge',
+                    url: '#/getting-started/concierge'
+                },
                 {
                     title: 'Internal Projects',
                     url: '#/internal-dsrp#nav'
@@ -72,10 +72,10 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             title: 'Funding Opportunities',
             url: '#/funding'
         },
-        // {
-        //     title: 'Quick Start',
-        //     url: '#/getting-started/direct-access-tools'
-        // }
+        {
+            title: 'Quick Start',
+            url: '#/getting-started/direct-access-tools'
+        }
     ];
 
     $scope.categoriesRight = [
