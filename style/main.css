@@ -24,6 +24,12 @@ body {
   height: 200px;
   width: 100%;
 }
+
+/* Angular cloaking */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 /* Tag selectors, i.e. global settings.
  * ------------------------------------------------------------------------- */
 html,
@@ -401,3 +407,4 @@ a.important a:hover,
 .clear {
   clear: both;
 }
+

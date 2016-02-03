@@ -481,7 +481,18 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
     // Changes which tools are displayed.
     $scope.setMode = function(mode) {
         $scope.mode = mode;
-    }
+    };
+
+    // Broadcasts an '\n' separated string of all arguments
+    $scope.typeUpGenes = function() {
+        genes = $.makeArray(arguments)
+        $scope.$broadcast("up-genes", genes.join("\n"));
+    };
+
+    $scope.typeDownGenes = function(genes) {
+        genes = $.makeArray(arguments)
+        $scope.$broadcast("down-genes", genes.join("\n"));
+    };
 
 }]);
 
@@ -551,6 +562,12 @@ mod.directive("tool", function($compile, $timeout) {
                 option: ""
             };
 
+            // Query data object for up and down gene lists.
+            $scope.list_query = {
+                up: [],
+                down: []
+            };
+
             // Change viewiew mode. To be overwritten by child directives.
             $scope.mode = function(mode_id) {
                 $scope.$broadcast("mode", mode_id);
@@ -593,6 +610,17 @@ mod.directive("tool", function($compile, $timeout) {
             // On function is inherited
             $scope.$on("type-search", function(event, query) {
                 $scope.query.term = query;
+            });
+
+            $scope.$on("up-genes", function(event, genes) {
+                // console.log(genes);
+                // console.log(typeof genes);
+                // $scope.list_query.up = genes.join("\n");
+                $scope.list_query.up = genes;
+            });
+
+            $scope.$on("down-genes", function(event, genes) {
+                $scope.list_query.down = genes;
             });
         }],
         templateUrl: "view/getting-started/tool-directive.html"
@@ -705,10 +733,10 @@ mod.directive('l1000cds2Textarea', function() {
         restrict: 'E',
         scope: true,
         controller: ['$scope', '$element', function($scope, $element) {
-            $scope.upGenes = '';
-            $scope.dnGenes = '';
+            $scope.list_query.up = '';
+            $scope.list_query.down = '';
             $scope.example = function() {
-                $scope.upGenes = [
+                $scope.list_query.up = [
                     'KIAA0907', 'KDM5A', 'CDC25A',
                     'EGR1', 'GADD45B', 'RELB', 'TERF2IP',
                     'SMNDC1', 'TICAM1', 'NFKB2', 'RGS2',
@@ -722,7 +750,7 @@ mod.directive('l1000cds2Textarea', function() {
                     'TIPARP', 'FOS', 'ARPP19', 'TFAP2A',
                     'KDM5B', 'NPC1', 'TP53BP2', 'NUSAP1'
                 ].join('\n');
-                $scope.dnGenes = [
+                $scope.list_query.down = [
                     'SCCPDH', 'KIF20A',
                     'FZD7', 'USP22', 'PIP4K2B', 'CRYZ',
                     'GNB5', 'EIF4EBP1', 'PHGDH', 'RRAGA',
@@ -741,8 +769,8 @@ mod.directive('l1000cds2Textarea', function() {
             $scope.search = function() {
                 var payload = {
                     data: {
-                        upGenes: $scope.upGenes.split('\n'),
-                        dnGenes: $scope.dnGenes.split('\n')
+                        upGenes: $scope.list_query.up.split('\n'),
+                        dnGenes: $scope.list_query.down.split('\n')
                     },
                     config: {
                         aggravate: true,

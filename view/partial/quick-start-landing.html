@@ -11,8 +11,18 @@
             <h4>Search Signatures</h4>
             <tool tool-data="findTool('L1000CDS2')" tool-mode="" tool-buttons="none"></tool>
             <h4>Cross-tool Examples</h4>
+            <!-- the up/down signature was taked from http://amp.pharm.mssm.edu/CREEDS/#downloads, first 20 -->
+            <a href="" ng-click="
+                typeSearch('Imatinib');
+                typeUpGenes(
+                    'ALAS2','HBZ','LBH','COL18A1','GYPB','PPOX','SLC4A1','AQP1','RELN','GYPA','TSC22D1','SLC25A37','KEL','OAT','SLC22A4','HMBS','AHSP','SLC30A10','FECH','XK'
+                );
+                typeDownGenes(
+                    'TMEM158','SLC2A3','HHEX','SAMSN1','IGFBP4','ID1','FCGR2A','MLLT11','FAM216A','PKM','CD69','SLC2A14','NQO2','EGR1','SLC39A14','GABRE','SOCS2','CMTM6','PRKCB','WARS','SLC25A32'    
+                );
+                ">
+                Imatinib</a>,
             <a href="" ng-click="typeSearch('Ruxolitinib')">Ruxolitinib</a>,
-            <a href="" ng-click="typeSearch('Imatinib')">Imatinib</a>,
             <a href="" ng-click="typeSearch('MCF7')">MCF7</a>,
             <a href="" ng-click="typeSearch('shRNA')">shRNA</a>,
             <a href="" ng-click="typeSearch('Phosphorylation')">Phosphorylation</a>

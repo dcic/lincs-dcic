@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="lincsDcic">
+<html lang="en" ng-app="lincsDcic" class="ng-cloak">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="The BD2K-LINCS Data Coordination and Integration Center (DCIC) is the data coordination center for the NIH Common Fund’s Library of Integrated Network-based Cellular Signatures (LINCS) program.">
@@ -35,6 +35,9 @@
 	<link rel="stylesheet" href="style/nav.css">
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="style/side.css">
+
+	<link rel="stylesheet" href="style/getting-started.css">
+
 
     <!-- Google Analytics -->
 	<script>
