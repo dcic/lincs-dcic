@@ -1,0 +1,52 @@
+<!-- Quick start -->
+<div id="quick-start">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Quick Start with LINCS</h1>
+        </div>
+    </div>
+    <div class="row" ng-controller="directAccessToolsCtrl">
+
+        <div class="col-sm-4">
+            <h4>Search Signatures</h4>
+            <tool tool-data="findTool('L1000CDS2')" tool-mode="" tool-buttons="none"></tool>
+            <h4>Cross-tool Examples</h4>
+            <a href="" ng-click="typeSearch('Ruxolitinib')">Ruxolitinib</a>,
+            <a href="" ng-click="typeSearch('Imatinib')">Imatinib</a>,
+            <a href="" ng-click="typeSearch('MCF7')">MCF7</a>,
+            <a href="" ng-click="typeSearch('shRNA')">shRNA</a>,
+            <a href="" ng-click="typeSearch('Phosphorylation')">Phosphorylation</a>
+
+            <h4><a class="ng-binding" href="#/getting-started/direct-access-tools">More tools...</a></h4>
+        </div>
+        <div class="col-sm-8">
+            <div class="row row-eq-height">
+                <div class="col-sm-6">
+                    <h4>Access Data</h4>
+                    <!-- <label> -->
+                        <!-- Access Data -->
+                    <tool tool-data="findTool('LINCS Data Portal')" tool-mode="" tool-buttons="none"></tool>
+                    <!-- </label> -->
+                </div>
+                <div class="col-sm-6">
+                    <h4>Search Transcriptomics</h4>
+                    <tool tool-data="findTool('Slicr')" tool-mode="" tool-buttons="none"></tool>
+                </div>
+            </div>
+
+            <div class="row row-eq-height">
+                <!-- </div> -->
+                <div class="col-sm-6">
+                    <h4>Analyze Data</h4>
+                    <tool tool-data="findTool('iLINCS')" tool-mode="" tool-buttons="none"></tool>
+                </div>
+
+                <div class="col-sm-6">
+                    <h4>Visualize Proteomics</h4>
+                    <tool tool-data="findTool('piLINCS')" tool-mode="" tool-buttons="none"></tool>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

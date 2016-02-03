@@ -506,7 +506,7 @@ mod.factory("tooltips", function() {
 // Wrapper for tools. Sets up the frame with icon, 
 mod.directive("tool", function($compile, $timeout) {
     return {
-        restrict: 'E',
+        restrict: 'EA',
         scope: {
             // data object assignemnt
             toolData: '=',

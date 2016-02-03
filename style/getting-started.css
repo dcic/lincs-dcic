@@ -85,6 +85,7 @@
 .category-page.direct-access-tools-page .tools ul li:before {
   content: '';
 }
+
 /* Direct access tool common styling */
 div.tool {
   font-size: 12px;
@@ -324,15 +325,22 @@ div.tool div.action div.category-selector button {
   color: rgb(150, 150, 150);
 }
 
+.muted2 {
+  color: rgb(80, 80, 80);
+}
+
+
 p.hand-written {
   font: 400 24px/0.8 'Great Vibes', Helvetica, sans-serif;
   text-align: center;
 }
 .panel {
   border-style: solid;
-  border-color: rgb(230,230,230);
+  /*border-color: rgb(230,230,230);*/
+  border-color: rgb(235,235,235);
   padding: 5px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);*/
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.10);
 }
 
 .center-logo {
