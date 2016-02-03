@@ -32,16 +32,25 @@ body {
 }
 a {
   /* Set default to override Bootstrap's default. */
-  color: #000000;
+  /*color: #000000;*/
+  color: #3593b1;
 }
-a:hover,
+
+a:hover {
+  color: #09505b;
+  text-decoration: underline;
+}
+
 a:active,
 a:link,
 a:visited {
-  color: #000000;
-  cursor: pointer;
-  text-decoration: none;
+  /*color: #09505b;*/
+  /*text-decoration: underline;*/
+  /*color: #000000;*/
+  /*cursor: pointer;*/
+  /*text-decoration: none;*/
 }
+
 h1,
 h2,
 h3,
@@ -178,11 +187,11 @@ h6 {
   padding-left: 6px;
 }
 .category-page a {
-  color: #3593b1;
+  /*color: #3593b1;*/
 }
 .category-page a:hover {
-  color: #09505b;
-  text-decoration: underline;
+  /*color: #09505b;*/
+  /*text-decoration: underline;*/
 }
 .category-page#analysis {
   margin-top: 20px;
