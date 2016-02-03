@@ -39,7 +39,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
     ];
 
     $(function() {
-       $('#carousel').carousel({
+       $('#carousel').carousel( {
            interval: 10000
        });
     });
