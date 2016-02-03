@@ -1,4 +1,5 @@
-var mod = angular.module("carouselMod", []);
+
+var mod = angular.module("carouselMod", ["ui.bootstrap"]);
 
 mod.controller("carouselCtrl", ["$scope", function($scope) {
 
@@ -39,7 +40,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
 
     $(function() {
        $('#carousel').carousel({
-           interval: 5000
+           interval: 10000
        });
     });
 }]);
