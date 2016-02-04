@@ -34,19 +34,19 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         },
         {
             name: "cells",
-            description: "LINCS cell lines"
+            description: "Cell lines"
         },
         {
             name: "drugs",
-            description: "LINCS small molecules"
+            description: "Small molecules"
         },
         {
             name: "genetics",
-            description: "LINCS gene experiments"
+            description: "Gene experiments"
         },
         {
             name: "assays",
-            description: "LINCS assay types"
+            description: "Assay types"
         },
         {
             name: "external",
