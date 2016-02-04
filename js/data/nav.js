@@ -78,7 +78,7 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
         {
             title: 'QUICK START',
             url: '#/getting-started/direct-access-tools',
-            target: '_blank'
+            target: '_self'
         },
         {
             title: 'LINCSPROJECT',

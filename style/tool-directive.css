@@ -1,3 +1,12 @@
+.category-page.direct-access-tools-page .tools-summary img {
+  margin-left: 10px;
+  width: 30px;
+}
+
+.category-page.direct-access-tools-page .tools ul li:before {
+  content: '';
+}
+
 /* Direct access tool common styling */
 div.tool {
   font-size: 12px;
