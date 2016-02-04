@@ -253,7 +253,8 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             modes: {
                 functionality: ["analysis"],
                 content: ["external"]
-            }
+            },
+            directive: "geo2enrichr-bar"
         },
         {
             title: "LINCS Canvas Browser",
@@ -271,7 +272,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["navigation", "search"],
                 content: ["drugs", "cells", "external"]
             },
-            // directive: "LCB-bar",
+            directive: "Canvas-Browser-bar",
             cssClass: "lcb"
         },
         {
@@ -327,7 +328,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 functionality: ["analysis"],
                 content: ["external"]
             },
-            // directive: "Paea-bar",
+            directive: "Paea-bar",
             cssClass: "paea"
         },
         {
@@ -350,7 +351,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         {
             title: "LDR",
             url: "http://amp.pharm.mssm.edu/ldr/",
-            image: "",
+            image: DIR + "LDR.png",
             description: {
                 main: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers.",
                 search: "Search registered data sets based on submitting institute or experimental condition.",
@@ -405,7 +406,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         {
             title: "Crowdsourcing Portal",
             url: "http://www.maayanlab.net/crowdsourcing/",
-            image: "",
+            image: DIR + "crowd.png",
             description: {
                 main: "The portal enables user contributions to an assortment of scientific challenges termed microtasks and megatasks.",
                 collaboration: "By organizing scientific challenges and allowing users, both within the LINCS consortium and students, to submit and share solutions, the Crowsourcing Portal faciliates collaboration.",
@@ -923,8 +924,22 @@ mod.directive('harmonizomeBar', function() {
             $scope.entities = function(searchTerm) {
                 return $http.get(suggest_url + searchTerm).then(function(response) {
                     return response.data;
-                });
+                })  ;
             };
+            $scope.loadTutorials = function() {
+                if ($scope.tutorials_shown) {
+                    // remove toggle
+                    $scope.tutorials_shown = false;
+                    $element.find("#tutorial1").empty();
+                    $element.find("#tutorial2").empty();
+                } else {
+                    // load and show
+                    $scope.tutorials_shown = true;
+                    $element.find("#tutorial1").html("<iframe src='https://www.youtube.com/embed/yGkIQjeWh9U' frameborder='0' allowfullscreen></iframe>");
+                    $element.find("#tutorial2").html("<iframe src='https://www.youtube.com/embed/ZyOIQwEh_58' frameborder='0' allowfullscreen></iframe>");
+                }
+            };
+
         }],
         templateUrl: 'view/getting-started/harmonizome.html'
     }
@@ -971,7 +986,6 @@ mod.directive("lifeBar", function() {
     }
 });
 
-// Tool directive extension template
 mod.directive("network2canvasBar", function() {
     return {
         restrict: "E",
@@ -996,6 +1010,78 @@ mod.directive("network2canvasBar", function() {
         templateUrl: "view/getting-started/network2canvas.html"
     }
 });
+
+mod.directive("canvasBrowserBar", function() {
+    return {
+        restrict: "E",
+        scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
+        controller: ["$scope", "$element", function($scope, $element) {
+            $scope.tutorials_shown = false;
+            // Load tutorial video when tutorial button is pressed. For performance reasons; avoids delay on page load.
+            $scope.loadTutorials = function() {
+                if ($scope.tutorials_shown) {
+                    // remove toggle
+                    $scope.tutorials_shown = false;
+                    $element.find("#tutorial").empty();
+                } else {
+                    // load and show
+                    $scope.tutorials_shown = true;
+                    $element.find("#tutorial").html("<iframe src='https://www.youtube.com/embed/G8IYNmzzk0c' frameborder='0' allowfullscreen></iframe>");
+                }
+            };
+        }],
+        templateUrl: "view/getting-started/canvas-browser.html"
+    }
+});
+
+mod.directive("geo2enrichrBar", function() {
+    return {
+        restrict: "E",
+        scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
+        controller: ["$scope", "$element", function($scope, $element) {
+            $scope.tutorials_shown = false;
+            // Load tutorial video when tutorial button is pressed. For performance reasons; avoids delay on page load.
+            $scope.loadTutorials = function() {
+                if ($scope.tutorials_shown) {
+                    // remove toggle
+                    $scope.tutorials_shown = false;
+                    $element.find("#tutorial").empty();
+                } else {
+                    // load and show
+                    $scope.tutorials_shown = true;
+                    $element.find("#tutorial").html("<iframe src='https://www.youtube.com/embed/IWurkCCacFU' frameborder='0' allowfullscreen></iframe>");
+                }
+            };
+        }],
+        templateUrl: "view/getting-started/geo2enrichr.html"
+    }
+});
+
+mod.directive("paeaBar", function() {
+    return {
+        restrict: "E",
+        scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
+        controller: ["$scope", "$element", function($scope, $element) {
+            $scope.tutorials_shown = false;
+            // Load tutorial video when tutorial button is pressed. For performance reasons; avoids delay on page load.
+            $scope.loadTutorials = function() {
+                if ($scope.tutorials_shown) {
+                    // remove toggle
+                    $scope.tutorials_shown = false;
+                    $element.find("#tutorial").empty();
+                } else {
+                    // load and show
+                    $scope.tutorials_shown = true;
+                    $element.find("#tutorial").html("<iframe src='https://www.youtube.com/embed/8vez3CHNGHY' frameborder='0' allowfullscreen></iframe>");
+                }
+            };
+        }],
+        templateUrl: "view/getting-started/paea.html"
+    }
+});
+
+
+
 
 mod.directive("lincscloudBar", function() {
     return {
