@@ -4,7 +4,6 @@
 
 @import "variable.less";
 
-
 .category-page {
     &.getting-started-page {
         .faq {
@@ -27,8 +26,28 @@
                 -ms-transition: background-color 500ms linear;
                 transition: background-color 500ms linear;
             }
+            // Greyed out buttons
+            &.subtle {
+                opacity: 0.3;
+                box-shadow: 'none';
+                &:hover {
+                    // Reset opacity with linear transition
+                    opacity: 1.0;
+                    -webkit-transition: opacity 500ms linear;
+                    -moz-transition: opacity 500ms linear;
+                    -o-transition: opacity 500ms linear;
+                    -ms-transition: opacity 500ms linear;
+                    transition: opacity 500ms linear;
+                }
+            }
             ul {
                 opacity: .5;
+            }
+            >img.horizontal {
+                width: 50px;
+            }
+            >img.vertical {
+                height: 36px;
             }
         }
         .start p,
@@ -66,87 +85,10 @@
             }
         }
         .content {
-            .row {
+            >.row {
+                // Hide all content from the start
                 display: none;
             }
         }
     }
-
-    // &.direct-access-tools-page {
-    //     .tools-summary {
-    //         img {
-    //             margin-left: 10px;
-    //             width: 30px;
-    //         }
-    //     }
-    //     .tools {
-    //         border-top: 1px solid @color-gray-light;
-    //         padding-top: 20px;
-    //         margin-top: 50px;
-    //         img {
-    //             height: 25px;
-    //         }
-    //         ul {
-    //             li {
-    //                 &:before {
-    //                     content: '';
-    //                 }
-    //             }
-    //         }
-    //         button {
-    //             margin: 10px 0;
-    //         }
-    //         input,
-    //         textarea {
-    //             border: 1px solid @color-gray;
-    //         }
-    //         .textarea-wrapper {
-    //             float: left;
-    //             width: 48%;
-    //             textarea {
-    //                 height: 200px;
-    //                 padding: 5px;
-    //                 width: 100%;
-    //             }
-    //         }
-    //         .introduction {
-    //             margin-bottom: 50px;
-    //         }
-    //         #lincs-data-portal input,
-    //         #pi-lincs input,
-    //         #slicr .tags,
-    //         #harmonizome input {
-    //             border: 1px solid @color-gray;
-    //             width: 100%;
-    //             padding: 5px;
-    //             height: 40px;
-    //             box-shadow: none;
-    //         }
-    //         a {
-    //             color: black;
-    //             &:hover {
-    //                 color: black;
-    //                 opacity: .75;
-    //                 text-decoration: none;
-    //             }
-    //         }
-    //         #slicr {
-    //             /* Qiaonan uses tags input. */
-    //             input {
-    //                 border: none;
-    //             }
-    //         }
-    //         tags-input .host {
-    //             margin-bottom: 0;
-    //         }
-    //         .tool {
-    //             border-right: 1px solid @color-gray;
-    //             height: 400px;
-    //             margin-bottom: 50px;
-    //             &.last {
-    //                 border-right: none;
-    //             }
-    //         }
-    //     }
-    // }
 }

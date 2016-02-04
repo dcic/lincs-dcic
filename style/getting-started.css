@@ -12,36 +12,42 @@
   padding: 20px;
 }
 .category-page.getting-started-page .section {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
   padding: 20px;
   vertical-align: middle;
   background: #f1f1f1;
   margin-bottom: 20px;
 }
-.category-page.getting-started-page .section > img.horizontal {
-  /*height: 100%;*/
-  /*max-width: 75px;*/
-  width: 50px;
-}
-.category-page.getting-started-page .section > img.vertical {
-  /*width: 33%;*/
-  /*max-width: 75px;*/
-  /*position: relative;*/
-  /*top: 60px;*/
-  height: 36px;
-}
 .category-page.getting-started-page .section:hover {
   cursor: pointer;
-  background-color: #c7e8f2;
+  background-color: #C7E8F2;
   -webkit-transition: background-color 500ms linear;
   -moz-transition: background-color 500ms linear;
   -o-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
 }
+.category-page.getting-started-page .section.subtle {
+  opacity: 0.3;
+  box-shadow: 'none';
+}
+.category-page.getting-started-page .section.subtle:hover {
+  opacity: 1.0;
+  -webkit-transition: opacity 500ms linear;
+  -moz-transition: opacity 500ms linear;
+  -o-transition: opacity 500ms linear;
+  -ms-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
 .category-page.getting-started-page .section ul {
   opacity: .5;
+}
+.category-page.getting-started-page .section > img.horizontal {
+  width: 50px;
+}
+.category-page.getting-started-page .section > img.vertical {
+  height: 36px;
 }
 .category-page.getting-started-page .start p,
 .category-page.getting-started-page .middle,
@@ -75,15 +81,4 @@
 }
 .category-page.getting-started-page .content > .row {
   display: none;
-}
-
-/* Tools summary visualization using the tool icons. */
-
-.category-page.direct-access-tools-page .tools-summary img {
-  margin-left: 10px;
-  width: 30px;
-}
-
-.category-page.direct-access-tools-page .tools ul li:before {
-  content: '';
 }

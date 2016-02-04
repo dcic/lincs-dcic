@@ -30,6 +30,8 @@
 	<link rel="stylesheet" href="/lib/ngTagsInput/ng-tags-input.min.css"/>
     <link rel="stylesheet" href="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css">
     <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- Handwritten font -->
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <!-- <link rel="stylesheet" href="/lib/bower_components/hint.css/hint.min.css"> -->
 	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="style/nav.css">
