@@ -35,9 +35,8 @@
 	<link rel="stylesheet" href="style/nav.css">
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="style/side.css">
-
 	<link rel="stylesheet" href="style/getting-started.css">
-
+	<link rel="stylesheet" href="style/tool-directive.css">
 
     <!-- Google Analytics -->
 	<script>

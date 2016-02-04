@@ -72,13 +72,14 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             title: 'Funding Opportunities',
             url: '#/funding'
         },
-        {
-            title: 'Quick Start',
-            url: '#/getting-started/direct-access-tools'
-        }
     ];
 
     $scope.categoriesRight = [
+        {
+            title: 'QUICK START',
+            url: '#/getting-started/direct-access-tools',
+            target: '_blank'
+        },
         {
             title: 'LINCSPROJECT',
             url: 'http://www.lincsproject.org/',
