@@ -25,14 +25,14 @@
 				</div>
 				<!-- Buttons -->
 				<div class="col-xs-4 col-sm-3 action">
-					<!-- div wrapper for tooltip-specific style different from button element -->
-					<button ng-repeat="button_name in toolData.modes.functionality"
+					<!-- div wrapper for tooltip-specific style different from button element. Reverse order; left to right importance. -->
+					<button ng-repeat="button_name in toolData.modes.functionality.slice().reverse()"
 						title="{{::buttonTooltip(button_name)}}"
 						ng-click="mode(button_name)"
 						class="{{button_name}} mode-button functionality-button pull-right">
 					</button>
 					<br>
-					<button ng-repeat="button_name in toolData.modes.content"
+					<button ng-repeat="button_name in toolData.modes.content.slice().reverse()"
 						title="{{::buttonTooltip(button_name)}}"
 						ng-click="mode(button_name)"
 						class="{{button_name}} mode-button content-button pull-right">

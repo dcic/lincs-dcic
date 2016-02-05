@@ -72,11 +72,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 // main: "Analyze gene expression profiles using a signature search engine for the LINCS L1000 data set.",
                 main: "L1000CDS2 queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
                 // mode-specific descriptions shown when mode buttons are clicked
-                analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyze such gene lists in the context of the L1000 gene expressin data set. Alternatively, numerical vectors can also be analyzed.",
+                analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyze such gene lists in the context of the L1000 gene expression data set. Alternatively, numerical vectors can also be analyzed.",
                 search: "Data-oriented search allows finding relevant signatures where the query is based on data rather than names.",
-                cells: "The L1000 data set contains numerous human cell lines including several tissue and disease models",
+                cells: "The L1000 data set contains numerous human cell lines including several tissue and disease models.",
                 drugs: "All small-molecule perturbations from the L1000 data set are used as a reference and search target.",
-                genetics: "RNAi interference experiments of the L1000 data set."
+                genetics: "Gene expression after RNAi interference are searched for a systematic set of knock-down genes."
             },
             // alternative modes which can be selected by clicking the mode buttons
             modes: {
