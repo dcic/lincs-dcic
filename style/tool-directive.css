@@ -233,6 +233,11 @@ div.tool div.action button.collaboration {
   background-image: url(/images/concierge-icons/social-network12.svg);
 }
 
+div.tool div.action button.integration {
+  background-image: url(/images/concierge-icons/integration.svg);
+}
+
+
 div.category-selector {
   padding-bottom: 10px;
 }

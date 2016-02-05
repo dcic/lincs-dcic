@@ -21,12 +21,16 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             description: "Download"
         },
         {
+            name: "navigation",
+            description: "Visualize"
+        },
+        {
             name: "analysis",
             description: "Analyze"
         },
         {
-            name: "navigation",
-            description: "Visualization"
+            name: "integration",
+            description: "Integrate"
         },
         {
             name: "api",
@@ -58,7 +62,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         },
         {
             name: "collaboration",
-            description: "Collaboration"
+            description: "Collaborate"
         }
     ];
 
@@ -139,7 +143,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 main: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
                 navigation: "Each protein phosphosite signature can be browsed as a histogram.",
                 search: "Experimental conditions can be searched including cell lines and small molecules.",
-                drugs: "The small molecules investigated in the experiment are thought to be kinase inhibitors, epigenetically active drugs, or neuroactive drugs. For more information about the experimental setup consult the <a target='_blank' href='https://panoramaweb.org/labkey/project/LINCS/begin.view'>Panorama repository</a>  .",
+                drugs: "The small molecules investigated in the experiment are thought to be kinase inhibitors, epigenetically active drugs, or neuroactive drugs. For more information about the experimental setup consult the <a target='_blank' href='https://panoramaweb.org/labkey/project/LINCS/begin.view'>Panorama repository</a>.",
                 cells: "A targeted set of cell lines are available at this stage."
             },
             modes: {
@@ -176,11 +180,12 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             description: {
                 main: "Mosaic visualization of targeted phosphoproteomics and post-translation histone modifications after chemical perturbation of cancer cell lines.",
                 navigation: "Clusters and correlations of phosphosites and histone modifications can be investigated using 2D canvas visualizations.",
+                integration: "Data integration of mass spectroscopy data on phosphoproteomic and global chromatin post-translational modifications.",
                 drugs: "Small-molecule compounds which can be categorized as kinase inhibitors, epigenetically active, or neurologically active.",
                 cells: "Small set of cancer and brain cell lines including MCF7, PC3, HL60, A549, NPC, and A375."
             },
             modes: {
-                functionality: ["navigation"],
+                functionality: ["navigation", "integration"],
                 content: ["drugs", "cells"]
             },
             // directive: "P100mosaic-bar",

@@ -9,8 +9,10 @@
 				<!-- Only title in header -->
 				<div class="col-xs-12">
 					<span class="tool-title">
-					    <img ng-src="{{toolData.image}}"/>
-					    <a ng-href="{{toolData.url}}" target="_blank">{{toolData.title}}</a>
+					    <a ng-href="{{toolData.url}}" target="_blank">
+					    	<img ng-src="{{toolData.image}}"/>
+					    	{{toolData.title}}
+					    </a>
 					</span>
 				</div>
 			</div>
@@ -19,8 +21,10 @@
 			<div ng-switch-default>
 				<div class="col-xs-8 col-sm-9">
 					<span class="tool-title">
-					    <img ng-src="{{toolData.image}}"/>
-					    <a ng-href="{{toolData.url}}" target="_blank">{{toolData.title}}</a>
+					    <a ng-href="{{toolData.url}}" target="_blank">
+					    	<img ng-src="{{toolData.image}}"/>
+					    	{{toolData.title}}
+					    </a>
 					</span>
 				</div>
 				<!-- Buttons -->
