@@ -116,11 +116,11 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             image: DIR + 'i-lincs.png',
             description: {
                 // main: 'Use iLINCS to analyze differential gene expression in a data set identified via LINCS Data Portal.',
-                main: "A computational biology project aimed at developing statistical methods and computational tools for integrative analysis of the data produced by the Library of Integrated Network-based Cellular Signatures (LINCS) program.",
-                analysis: "Data sets on the portal can be analyzed using a collection of standard statistical methods including correlations, heatmaps, and PCA.",
-                search: "The data sets can be searched for experimental conditions.",
-                cells: "Data on selected LICNS cell lines are available.",
-                drugs: "Data on selected LINCS small-molecules are available.",
+                main: "A computational biology project aimed at developing statistical methods and computational tools for integrative analysis of the data produced by the LINCS program.",
+                analysis: "Data sets on the portal can be analyzed using a collection of standard statistical methods including correlations, heatmaps, and principal component analysis (PCA).",
+                search: "Data sets can be searched for experimental conditions such as small-molecule perturbations and cell lines.",
+                cells: "Data on a subset of LINCS cell lines are available.",
+                drugs: "Data on a subset of LINCS small molecules are available.",
                 assays: "Experimental platforms include RNA-seq, phosphosite mass spectrometry."
             },
             modes: {
@@ -137,10 +137,10 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             description: {
                 // main: "Access to LINCS proteomics data sets with platforms P100 and GCP.",
                 main: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
-                navigation: "Each protein signature can be browsed as a histogram.",
-                search: "The experimental conditions can be searched.",
-                drugs: "The compounds are throught to be kinase inhibitors, epigenetically active drugs, or neuroactive drugs. For more information about the experimental setup consult the <a target='_blank' href='https://panoramaweb.org/labkey/project/LINCS/begin.view'>Panorama repository</a>  .",
-                cells: "A targeted set of cell lines are available."
+                navigation: "Each protein phosphosite signature can be browsed as a histogram.",
+                search: "Experimental conditions can be searched including cell lines and small molecules.",
+                drugs: "The small molecules investigated in the experiment are thought to be kinase inhibitors, epigenetically active drugs, or neuroactive drugs. For more information about the experimental setup consult the <a target='_blank' href='https://panoramaweb.org/labkey/project/LINCS/begin.view'>Panorama repository</a>  .",
+                cells: "A targeted set of cell lines are available at this stage."
             },
             modes: {
                 functionality: ["navigation", "search"],
@@ -158,8 +158,8 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 main: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
                 search: "The experimental conditions of the L1000 data set can be searched.",
                 download: "Each individual signature can be selected and downloaded.",
-                drugs: "All L1000 small-molecule compounds.",
-                genetics: "All L1000 genetic alterations.",
+                drugs: "All L1000 small molecules.",
+                genetics: "All L1000 genetic experiments.",
                 cells: "All L1000 cell lines."
             },
             modes: {
@@ -175,9 +175,9 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             image: DIR + "mosaic_by_freepik.jpg",
             description: {
                 main: "Mosaic visualization of targeted phosphoproteomics and post-translation histone modifications after chemical perturbation of cancer cell lines.",
-                navigation: "Clusters and correlations of phosphosites and histone modifications can be investigated using 2d canvas visualizations.",
+                navigation: "Clusters and correlations of phosphosites and histone modifications can be investigated using 2D canvas visualizations.",
                 drugs: "Small-molecule compounds which can be categorized as kinase inhibitors, epigenetically active, or neurologically active.",
-                cells: "Small set of cancer and brain cell lines."
+                cells: "Small set of cancer and brain cell lines including MCF7, PC3, HL60, A549, NPC, and A375."
             },
             modes: {
                 functionality: ["navigation"],
@@ -192,9 +192,9 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             image: DIR + "gen3va_logo.png",
             description: {
                 main: "GEN3VA: the GENE Expression and Enrichment Vector Analyzer aggregates and analyzes gene expression signatures extracted from GEO by the crowd using GEO2Enrichr.",
-                analysis: "Data can be analyzed using PCA and heatmaps. Data can be aggregated from multiple studies using tags.",
+                analysis: "Data can be analyzed using principal component analysis (PCA) and heatmaps. Data can be aggregated from multiple studies using tags.",
                 download: "Data can be downloaded as TSV text files.",
-                external: "The data is aggregated from GEO."
+                external: "The data is aggregated from GEO by crowd-sourcing through GEO2Enrichr browser extension."
             },
             modes: {
                 functionality: ["analysis", "download"],
@@ -228,10 +228,9 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             url: 'http://amp.pharm.mssm.edu/Enrichr/',
             image: DIR + 'enrichr.png',
             description: {
-                // main: "Perform gene set enrichment analysis.",
                 main: "An easy to use intuitive enrichment analysis web-based tool providing various types of visualization summaries of collective functions of gene lists.",
                 analysis: "Gene set enrichment analysis for identifying functional signals.",
-                external: "Choose between a wide selection of external gene libraries such as Gene Onthologies for functional analysis."
+                external: "Choose between a wide selection of external gene libraries such as Gene Ontologies for functional analysis."
             },
             modes: {
                 functionality: ["analysis"],
@@ -265,7 +264,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 navigation: "Each L1000 experiment is visualized in the content of other L1000 experiments using canvases where similar signatures are located next to each other.",
                 search: "Search for L1000 experiments based on small-molecule compounds, time points, or cell lines.",
                 drugs: "A subset of L1000 small-molecule compounds.",
-                cells: "A subset of cell lines: MCF7, MCF10A, BT20, HS578T, MDAMB2, and SKBR3",
+                cells: "A subset of cell lines: MCF7, MCF10A, BT20, HS578T, MDAMB2, and SKBR3.",
                 external: "Gene set libraries such as Gene Ontology is analyzed for functional analysis of the L1000."
             },
             modes: {
@@ -305,7 +304,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 cells: "A wide range of human cell lines across different tissue types.",
                 drugs: "A wide range of small-molecule compounds which are annotated based on mechanism of action.",
                 genetics: "L1000 data based on shRNA and cDNA screens are available.",
-                assays: "A wide range of assays."
+                assays: "All assays which are part of the LINCS project."
             },
             modes: {
                 functionality: ["search", "navigation"],
@@ -339,7 +338,7 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
                 main: "Global visual representation of available LINCS Phase II data sets.",
                 navigation: "Available data on specific cell line and assay combinations can be navigated and compared via a matrix representation.",
                 assays: "The assays include RNA-seq, RPPA, ATAC-seq, cell viability assays, and many others.",
-                cells: "A core set of cell lines."
+                cells: "A core set of cell lines highlighting common experiments for characterizing these cell lines."
             },
             modes: {
                 functionality: ["navigation"],
