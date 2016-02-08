@@ -499,6 +499,31 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
         $scope.$broadcast("down-genes", genes.join("\n"));
     };
 
+    $scope.highlightSelector = function(modes) {
+        var all_modes = [];
+        if ("content" in modes && "functionality" in modes) {
+            // Both  functionality and content modes
+            all_modes = modes.functionality.concat(modes.content);
+        } else if ("content" in modes) {
+            // only content modes
+            all_modes = modes.content;
+        } else if ("functionality") {
+            // only functionality modes
+            all_modes = modes.functionality;
+        }
+
+        $("#tool-categories button").removeClass("selected");  // remove precious selection
+
+        for (var i in all_modes) {
+            // Highlight tool selector buttons
+            $("#tool-categories button." + all_modes[i]).addClass("selected");
+        }
+    };
+
+    $scope.resetSelector = function() {
+        $("#tool-categories button").removeClass("selected");
+    };
+
 }]);
 
 // Tooltip texts for toolDirective buttons
