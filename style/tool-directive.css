@@ -248,6 +248,11 @@ div.tool div.action div.category-selector button {
   height: 24px;
 }
 
+img.img-selector {
+  cursor: pointer;
+  /*opacity: 0.5;*/
+}
+
 /* For greying out text */
 .muted {
   color: rgb(150, 150, 150);

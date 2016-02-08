@@ -3,7 +3,9 @@ var mod = angular.module('directAccessToolsMod',
     'ui.bootstrap.tooltip']  // for tooltips
 );
 
-mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile', function($scope, $element, $sce, $compile) {
+mod.controller('directAccessToolsCtrl',
+    ['$scope', "$element", '$sce', '$compile', '$anchorScroll', '$location',
+    function($scope, $element, $sce, $compile, $anchorScroll, $location) {
 
     var DIR = 'images/apps/';
 
@@ -442,6 +444,15 @@ mod.controller('directAccessToolsCtrl', ['$scope', "$element", '$sce', '$compile
             cssClass: "hms-db"
         },
     ];
+
+    // Go to class 'anchor' element on page with the provided id.
+    $scope.gotoAnchor = function(id) {
+        if ($location.hash() !== id) {
+            $location.hash(id);
+        } else {
+            $anchorScroll();
+        }
+    };
 
     $scope.findTool = function(title) {
         // Find tool index from tool array

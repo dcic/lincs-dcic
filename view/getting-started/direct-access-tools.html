@@ -31,10 +31,10 @@
                 <h3>Tool icons</h3>
                 <!-- All tool icons -->
                 <div class="tools-summary">
-                    <img ng-repeat="tool in tools"
-                        ng-src="{{tool.image}}"
+                    <img class="img-selector" ng-repeat="tool in tools" ng-src="{{tool.image}}" 
                         ng-mouseover="highlightSelector(tool.modes)"
                         ng-mouseleave="resetSelector()"
+                        ng-click="gotoAnchor(tool.title)"
                         uib-popover={{tool.title}} popover-trigger="mouseenter" 
                         />
                 </div>
@@ -47,9 +47,10 @@
 
         <!-- All tools -->
         <div class="row">
-            <div class="col-sm-4" ng-repeat="tool_data in filterTools(tools, mode)">
-            <!-- <div class="col-sm-4" ng-repeat="tool_data in tools"> -->
-                <tool tool-data="tool_data"></tool>
+            <div class="col-sm-4 anchor" ng-repeat="tool_data in filterTools(tools, mode)">
+                <div id="{{tool_data.title}}" class="anchor" >
+                    <tool tool-data="tool_data"></tool>
+                </div>
             </div>
         </div>
 
