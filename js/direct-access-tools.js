@@ -534,7 +534,6 @@ mod.controller('directAccessToolsCtrl',
     $scope.resetSelector = function() {
         $("#tool-categories button").removeClass("selected");
     };
-
 }]);
 
 // Tooltip texts for toolDirective buttons

@@ -22,7 +22,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div   >
                 </div>
 
             </div>
@@ -31,7 +31,8 @@
                 <h3>Tool icons</h3>
                 <!-- All tool icons -->
                 <div class="tools-summary">
-                    <img class="img-selector" ng-repeat="tool in tools" ng-src="{{tool.image}}" 
+                    <img class="img-selector" ng-repeat="tool in filterTools(tools, mode)"
+                        ng-src="{{tool.image}}"
                         ng-mouseover="highlightSelector(tool.modes)"
                         ng-mouseleave="resetSelector()"
                         ng-click="gotoAnchor(tool.title)"
@@ -41,7 +42,6 @@
             </div>
 
         </div>
-
 
         <hr>
 
