@@ -22,7 +22,7 @@
                             </div>
 
                         </div>
-                    </div   >
+                    </div>
                 </div>
 
             </div>
@@ -36,10 +36,11 @@
                         ng-repeat="tool in filterTools(mode)"
                         target-id="{{tool.title}}"
                         modes="tool.modes"
-                    >
-                            <img class="img-selector"
-                                ng-src="{{tool.image}}"
-                            />
+                        >
+                        <img class="img-selector"
+                            ng-src="{{tool.image}}"
+                            uib-popover={{tool.title}} popover-trigger="mouseenter" 
+                        />
                     </span>
 
                     <!--
@@ -63,7 +64,7 @@
         <!-- All tools -->
         <div class="row">
             <div class="col-sm-4" ng-repeat="tool_data in filterTools(mode)">
-                <div id="{{tool_data.title}}" class="anchor">
+                <div id="{{tool_data.title}}">
                     <tool tool-data="tool_data"></tool>
                 </div>
             </div>

@@ -525,6 +525,12 @@ mod.controller('directAccessToolsCtrl',
         genes = $.makeArray(arguments)
         $scope.$broadcast("down-genes", genes.join("\n"));
     };
+
+    $scope.removeHash = function() {
+        console.log("restting hash");
+        // reseting the hash
+        $location.hash("");
+    };
 }]);
 
 // Tooltip texts for toolDirective buttons
@@ -545,6 +551,7 @@ mod.factory("tooltips", function() {
     };
 });
 
+// Tool icon buttons with goto functionality
 mod.directive("scrollButton", function() {
     return{
         restrict: "A",
@@ -561,12 +568,12 @@ mod.directive("scrollButton", function() {
             });
             elem.bind("mouseleave", function() {
                 scope.resetSelector();
-            })
+            });
         },
         controller: ["$scope", "$element", "$location", "$anchorScroll", function($scope, $elem, $location, $anchorScroll) {
 
             $scope.gotoAnchor = function() {
-                // console.log("gotoanchor: ", $scope.targetId);
+                console.log("gotoanchor: ", $scope.targetId);
                 // Prevent reload issues
                 // event.preventDefault();
                 // event.stopPropagation();
@@ -574,7 +581,10 @@ mod.directive("scrollButton", function() {
                     $location.hash($scope.targetId);
                 // } else {
                     $anchorScroll();
+                    // $location.hash("cat");
                 // }
+
+                    $location.hash("");  // don't show #anchor in url, which breaks selection functionality
 
             };
 
@@ -597,10 +607,12 @@ mod.directive("scrollButton", function() {
                     // Highlight tool selector buttons
                     $("#tool-categories button." + all_modes[i]).addClass("selected");
                 }
+                // $scope.$apply();
             };
 
             $scope.resetSelector = function() {
                 $("#tool-categories button").removeClass("selected");
+                // $scope.$apply();
             };
         }]
     }
@@ -662,6 +674,7 @@ mod.directive("tool", function($compile, $timeout) {
 
             // Change viewiew mode. To be overwritten by child directives.
             $scope.mode = function(mode_id) {
+                // console.log("mode called()");
                 $scope.$broadcast("mode", mode_id);
 
                 // console.log("base mode called: ", mode_id);
