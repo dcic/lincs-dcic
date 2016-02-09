@@ -3,6 +3,28 @@ var mod = angular.module('directAccessToolsMod',
     'ui.bootstrap.tooltip']  // for tooltips
 );
 
+mod.directive('scrollOnClick', function() {
+    return {
+        restrict: 'A',
+        link: function(scope, $elem, attrs) {
+            var id = attrs.href;
+
+            $elem.on('click', function() {
+                console.log("click set");
+                var $target;
+                if (id) {
+                    $target = $(id);
+                } else {
+                    $target = $elem;
+                }
+                $("body").animate(
+                    {scrollTop: $target.offset().top},
+                    300);
+            });
+        }
+    }
+});
+
 mod.controller('directAccessToolsCtrl',
     ['$scope', "$element", '$sce', '$compile', '$anchorScroll', '$location',
     function($scope, $element, $sce, $compile, $anchorScroll, $location) {
@@ -416,7 +438,7 @@ mod.controller('directAccessToolsCtrl',
             description: {
                 main: "The portal enables user contributions to an assortment of scientific challenges termed microtasks and megatasks.",
                 collaboration: "By organizing scientific challenges and allowing users, both within the LINCS consortium and students, to submit and share solutions, the Crowsourcing Portal faciliates collaboration.",
-                education: "The Crowdsourcing Portal is associated with the <a href='https://www.coursera.org/course/bd2klincs'>BD2K-LINCS data science course</a>, enabling students to contribute to the process of scientific discovery."
+                education: "The Crowdsourcing Portal is associated with the <a target='_blank' href='https://www.coursera.org/course/bd2klincs'>BD2K-LINCS data science course</a>, enabling students to contribute to the process of scientific discovery."
             },
             modes: {
                 functionality: ["collaboration", "education"],
@@ -445,14 +467,6 @@ mod.controller('directAccessToolsCtrl',
         },
     ];
 
-    // Go to class 'anchor' element on page with the provided id.
-    $scope.gotoAnchor = function(id) {
-        if ($location.hash() !== id) {
-            $location.hash(id);
-        } else {
-            $anchorScroll();
-        }
-    };
 
     $scope.findTool = function(title) {
         // Find tool index from tool array
@@ -470,8 +484,10 @@ mod.controller('directAccessToolsCtrl',
 
     // Filter tools based on modes (buttons) in the tool data.
     // Returns a list of filtered tool data.
-    $scope.filterTools = function(tool_data, query_mode) {
+    $scope.filterTools = function(query_mode) {
         var out_tools = [];  // filtered tools
+
+        tool_data = $scope.tools;
 
         for (var i in tool_data) {
             try {
@@ -509,31 +525,6 @@ mod.controller('directAccessToolsCtrl',
         genes = $.makeArray(arguments)
         $scope.$broadcast("down-genes", genes.join("\n"));
     };
-
-    $scope.highlightSelector = function(modes) {
-        var all_modes = [];
-        if ("content" in modes && "functionality" in modes) {
-            // Both  functionality and content modes
-            all_modes = modes.functionality.concat(modes.content);
-        } else if ("content" in modes) {
-            // only content modes
-            all_modes = modes.content;
-        } else if ("functionality") {
-            // only functionality modes
-            all_modes = modes.functionality;
-        }
-
-        $("#tool-categories button").removeClass("selected");  // remove precious selection
-
-        for (var i in all_modes) {
-            // Highlight tool selector buttons
-            $("#tool-categories button." + all_modes[i]).addClass("selected");
-        }
-    };
-
-    $scope.resetSelector = function() {
-        $("#tool-categories button").removeClass("selected");
-    };
 }]);
 
 // Tooltip texts for toolDirective buttons
@@ -552,6 +543,67 @@ mod.factory("tooltips", function() {
         education: "Educational resource",
         collaboration: "Tool that faciliate scientific collaboration"
     };
+});
+
+mod.directive("scrollButton", function() {
+    return{
+        restrict: "A",
+        scope: {
+            targetId: "@",
+            modes: "="
+        },
+        link: function(scope, elem, attrs) {
+            elem.bind("click", function() {
+                scope.gotoAnchor();
+            });
+            elem.bind("mouseover", function() {
+                scope.highlightSelector();
+            });
+            elem.bind("mouseleave", function() {
+                scope.resetSelector();
+            })
+        },
+        controller: ["$scope", "$element", "$location", "$anchorScroll", function($scope, $elem, $location, $anchorScroll) {
+
+            $scope.gotoAnchor = function() {
+                // console.log("gotoanchor: ", $scope.targetId);
+                // Prevent reload issues
+                // event.preventDefault();
+                // event.stopPropagation();
+                // if ($location.hash() !== $scope.targetId) {
+                    $location.hash($scope.targetId);
+                // } else {
+                    $anchorScroll();
+                // }
+
+            };
+
+            $scope.highlightSelector = function() {
+                var all_modes = [];
+                if ("content" in $scope.modes && "functionality" in $scope.modes) {
+                    // Both  functionality and content modes
+                    all_modes = $scope.modes.functionality.concat($scope.modes.content);
+                } else if ("content" in $scope.modes) {
+                    // only content modes
+                    all_modes = $scope.modes.content;
+                } else if ("functionality") {
+                    // only functionality modes
+                    all_modes = $scope.modes.functionality;
+                }
+
+                $("#tool-categories button").removeClass("selected");  // remove precious selection
+
+                for (var i in all_modes) {
+                    // Highlight tool selector buttons
+                    $("#tool-categories button." + all_modes[i]).addClass("selected");
+                }
+            };
+
+            $scope.resetSelector = function() {
+                $("#tool-categories button").removeClass("selected");
+            };
+        }]
+    }
 });
 
 // Wrapper for tools. Sets up the frame with icon, 
