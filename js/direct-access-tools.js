@@ -233,6 +233,23 @@ mod.controller('directAccessToolsCtrl',
             cssClass: "geneva"
         },
         {
+            title: "CREEDS",
+            url: "http://amp.pharm.mssm.edu/CREEDS",
+            image: DIR + "CREEDS.png",
+            description: {
+                main: "Crowd extracted expression of differential signatures.",
+                navigation: "Global visualization of all signatures in a bubble chart or heatmap.",
+                collaboration: "Users can contribute signatures through GEO2Enrichr and the Crowdsourcing Portal.",
+                search: "Signatures can be searched using up/down gene lists or by search term.",
+                download: "Data can be downloaded in gmt or json format.",
+                external: "Crowd extracted signatures from GEO that are categorized by diasese vs normal, single gene perturbations, or single chemcial perturbation."
+            },
+            modes: {
+                functionality: ["navigation", "collaboration", "search", "download"],
+                content: ["external"]
+            }
+        },
+        {
             title: 'Harmonizome',
             url: 'http://amp.pharm.mssm.edu/Harmonizome/',
             image: DIR + 'harmonizome.png',
