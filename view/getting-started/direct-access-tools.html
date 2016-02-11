@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="style/getting-started.css">
+
+<div class="container" onload="init()">
+    <div class="category-page direct-access-tools-page" ng-controller="directAccessToolsCtrl">
+        <h3>Tool icons</h3>
+
+        <!-- All tool icons -->
+        <div class="tools-summary">
+            <img ng-repeat="t in tools" ng-src="{{t.image}}"/>
+        </div>
+
+        <hr>
+
+        <!-- Category selection and -->
+        <div class="tool">
+            <div class="action">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Tool categories</h3>
+                    </div>
+
+                    <div class="category-selector col-xs-4 col-sm-3 col-md-2 text-center">
+                        <button ng-click="setMode('')">all</button>
+                        <!-- <br> -->
+                        <!-- Select all quick start tools -->
+                        <!-- <br> -->
+                    </div>
+
+                    <div class="category-selector col-xs-4 col-sm-3 col-md-2 text-center" ng-repeat="button in buttons">
+                        <button ng-class="button.name" ng-click="setMode(button.name)"></button>
+                        <br>
+                        {{ button.description }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- All tools -->
+        <div class="row">
+            <div class="col-sm-4" ng-repeat="tool_data in filterTools(tools, mode)">
+            <!-- <div class="col-sm-4" ng-repeat="tool_data in tools"> -->
+                <tool tool-data="tool_data"></tool>
+            </div>
+        </div>
+
+    </div>
+</div>
+

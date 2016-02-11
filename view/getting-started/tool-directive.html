@@ -1,0 +1,61 @@
+<!-- tool Directive wrapper -->
+<div class="tool panel" ng-class="toolData.cssClass">
+	<div class="row tool-header">
+
+	<!-- Switch on tool-buttons -->
+		<div ng-switch on="toolButtons">
+			<!-- No tools buttons -->
+			<div ng-switch-when="none">
+				<!-- Only title in header -->
+				<div class="col-xs-12">
+					<span class="tool-title">
+					    <img ng-src="{{toolData.image}}"/>
+					    <a ng-href="{{toolData.url}}" target="_blank">{{toolData.title}}</a>
+					</span>
+				</div>
+			</div>
+
+			<!-- Default button behaviour -->
+			<div ng-switch-default>
+				<div class="col-xs-8 col-sm-9">
+					<span class="tool-title">
+					    <img ng-src="{{toolData.image}}"/>
+					    <a ng-href="{{toolData.url}}" target="_blank">{{toolData.title}}</a>
+					</span>
+				</div>
+				<!-- Buttons -->
+				<div class="col-xs-4 col-sm-3 action">
+					<!-- div wrapper for tooltip-specific style different from button element -->
+					<button ng-repeat="button_name in toolData.modes.functionality"
+						title="{{::buttonTooltip(button_name)}}"
+						ng-click="mode(button_name)"
+						class="{{button_name}} mode-button functionality-button pull-right">
+					</button>
+					<br>
+					<button ng-repeat="button_name in toolData.modes.content"
+						title="{{::buttonTooltip(button_name)}}"
+						ng-click="mode(button_name)"
+						class="{{button_name}} mode-button content-button pull-right">
+					</button>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<!-- Main description -->
+	<p id="main">{{toolData.description["main"]}}</p>
+
+	<div>
+		<p class="functionality-description" ng-bind-html="functional_description"></p>
+	</div>
+	<div>
+		<p class="data-content-description" ng-bind-html="data_content_description"></p>
+	</div>
+	<!-- <hr> -->
+	<!-- <h4>Direct access</h4> -->
+	<!-- Placeholder for nested directives which are compiled in place. -->
+	<placeholder style="display	: none"></placeholder>
+</div>
