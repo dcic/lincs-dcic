@@ -6,8 +6,16 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             title: "Fetal liver hematopoietic stem cell niches associate with portal vessels",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26634440",
             authors: "Khan JA, Mendelson A, Kunisaki Y, Birbrair A, Kou Y, Arnal-Estape A, Pinho S, Ciero P, Nakahara F, Ma'ayan A, Bergman A, Merad M, Frenette PS.",
-            citation: "Science 2015 Dec 3;pii: aad0084.",
-            ids: "PMID: 26634440",
+            citation: "Science 2016 Jan 8;351(6269):176-80.",
+            ids: "PMID: 26634440 | PMCID: PMC4706788",
+            year: 2016
+        },
+        {
+            title: "Principal Angle Enrichment Analysis (PAEA): Dimensionally reduced multivariate gene set enrichment analysis tool",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26848405",
+            authors: "Clark NR, Szymkiewicz M, Wang Z, Monteiro CD, Jones MR, Ma'ayan A.",
+            citation: "Proceedings (IEEE Int Conf Bioinformatics Biomed). 2015 Nov;2015:256-262.",
+            ids: "PMID: 26848405 | PMCID: PMC4737646",
             year: 2015
         },
         {
