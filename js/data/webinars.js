@@ -4,7 +4,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	    {
             date: '1 March 2016 | 3:00 PM ET',
-            topic: 'TBA',
+            topic: 'Mutations and Drugs Portal (MDP): A Database Linking Drug Response Data and Genomic Information',
             presenters: 'Silvio Bicciato PhD, University of Modena and Reggio Emilia'
             }
 
