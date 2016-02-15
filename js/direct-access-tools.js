@@ -168,12 +168,13 @@ mod.controller('directAccessToolsCtrl',
                 // main: "Access to LINCS proteomics datasets with platforms P100 and GCP.",
                 main: "A user interface with API for visualizing and accessing LINCS proteomics datasets (P100 and GCP) on Panorama.",
                 navigation: "Each signature protein phosphosite signature can be browsed as a histogram.",
-                search: "Experimental conditions can be searched by cell lines and small molecules."
+                search: "Experimental conditions can be searched by cell lines and small molecules.",
+                api: "<a target='_blank' href='http://eh3.uc.edu/pilincs/#/api'>API documentation</a>."
                 // drugs: "The small molecules investigated in the experiment are thought to be kinase inhibitors, epigenetically active drugs, or neuroactive drugs. For more information about the experimental setup consult the <a target='_blank' href='https://panoramaweb.org/labkey/project/LINCS/begin.view'>Panorama repository</a>.",
                 // cells: "A targeted set of cell lines are available at this stage."
             },
             modes: {
-                functionality: ["navigation", "search"],
+                functionality: ["navigation", "search", "api"],
                 content: []
             },
             directive: 'pi-lincs-bar',
