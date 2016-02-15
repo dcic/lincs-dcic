@@ -563,13 +563,14 @@ mod.factory("tooltips", function() {
         search: "Search data collection",
         analysis: "Analyze data",
         api: "Programatic access through API",
-        navigation: "Visual elements that help navigate data",
+        navigation: "Visualization that help explore data",
         download: "Download",
         cells: "LINCS cell lines",
         drugs: "LINCS small-molecule compounds",
         genetics: "LINCS genetic experiments",
         assays: "LINCS assay types",
         external: "Data from external sources",
+        publication: "Academic publications",
         education: "Educational resource",
         collaboration: "Tool that faciliate scientific collaboration"
     };
