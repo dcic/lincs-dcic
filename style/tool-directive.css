@@ -237,6 +237,9 @@ div.tool div.action button.integration {
   background-image: url(/images/concierge-icons/integration.svg);
 }
 
+div.tool div.action button.publication {
+  background-image: url(/images/concierge-icons/text70.svg);
+}
 
 div.category-selector {
   padding-bottom: 10px;
