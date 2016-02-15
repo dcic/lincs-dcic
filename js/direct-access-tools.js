@@ -97,21 +97,19 @@ mod.controller('directAccessToolsCtrl',
             image: DIR + 'l1000cds2.png',
             description: {
                 // main description always shown.
-                // main: "Analyze gene expression profiles using a signature search engine for the LINCS L1000 data set.",
-                main: "L1000CDS<sup>2</sup> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
+                main: "A search engine for gene expression signatures. Submit your own gene expression signature and get a ranked lists of signatures from the LINCS L1000 dataset that are predicted to reverse or mimic the input signature.",
                 // mode-specific descriptions shown when mode buttons are clicked
-                analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyze such gene lists in the context of the L1000 gene expression data set. Alternatively, numerical vectors can also be analyzed.",
-                search: "Data-oriented search allows finding relevant signatures where the query is based on data rather than names.",
-                cells: "The L1000 data set contains numerous human cell lines including several tissue and disease models.",
-                drugs: "All small-molecule perturbations from the L1000 data set are used as a reference and search target.",
-                genetics: "Gene expression after RNAi interference are searched for a systematic set of knock-down genes."
+                analysis: "Submitting up- and down-regulated lists of genes allows the identification of similar or opposite perturbations. Alternatively, gene expression vectors can be analyzed by L1000CDS<sup>2</sup>.",
+                search: "The data-oriented search allows finding relevant signatures where the query is based on gene lists.",
+                cells: "The queried L1000 datasets include data on 62 unique cell lines.",
+                drugs: "3,924 small-molecule perturbations from the L1000 dataset are included in the search."
             },
             // alternative modes which can be selected by clicking the mode buttons
             modes: {
                 // functionality
                 functionality: ["analysis", "search"],
                 // content
-                content: ["cells", "drugs", "genetics"]
+                content: ["cells", "drugs"]
             },
             directive: 'l1000cds2-textarea',
             cssClass: 'l1000cds2',
@@ -121,11 +119,11 @@ mod.controller('directAccessToolsCtrl',
             url: 'http://lincsportal.ccs.miami.edu/dcic-portal/',
             image: DIR + "portal.png",
             description: {
-                // main: "Search and download LINCS data sets and entities.",
+                // main: "Search and download LINCS datasets and entities.",
                 main: "Features for searching and exploring LINCS dataset packages and reagents.",
-                search: "Search for LINCS data sets in a data base containing controlled entities of the LINCS experiments.",
+                search: "Search for LINCS datasets in a data base containing controlled entities of the LINCS experiments.",
                 api: "The data can also be accessed programmatically increasing the utility of the data base. For programmatic access, refer to the <a target='_blank' href='http://lincsportal.ccs.miami.edu/apis/'>API documentation</a>.",
-                download: "Data packages for each data set can be downloaded after login.",
+                download: "Data packages for each dataset can be downloaded after login.",
                 cells: "All cell lines across LINCS data.",
                 drugs: "All small-molecule compounds across LINCS data.",
                 genetics: "All knockout, overexpression, and other genetic alterations across LINCS data.",
@@ -143,10 +141,10 @@ mod.controller('directAccessToolsCtrl',
             url: 'http://eh3.uc.edu/GenomicsPortals/Lincs.jsp',
             image: DIR + 'i-lincs.png',
             description: {
-                // main: 'Use iLINCS to analyze differential gene expression in a data set identified via LINCS Data Portal.',
+                // main: 'Use iLINCS to analyze differential gene expression in a dataset identified via LINCS Data Portal.',
                 main: "A computational biology project aimed at developing statistical methods and computational tools for integrative analysis of the data produced by the LINCS program.",
-                analysis: "Data sets on the portal can be analyzed using a collection of standard statistical methods including correlations, heatmaps, and principal component analysis (PCA).",
-                search: "Data sets can be searched for experimental conditions such as small-molecule perturbations and cell lines.",
+                analysis: "datasets on the portal can be analyzed using a collection of standard statistical methods including correlations, heatmaps, and principal component analysis (PCA).",
+                search: "datasets can be searched for experimental conditions such as small-molecule perturbations and cell lines.",
                 cells: "Data on a subset of LINCS cell lines are available.",
                 drugs: "Data on a subset of LINCS small molecules are available.",
                 assays: "Experimental platforms include RNA-seq, phosphosite mass spectrometry."
@@ -163,7 +161,7 @@ mod.controller('directAccessToolsCtrl',
             url: 'http://eh3.uc.edu/pilincs/',
             image: DIR + 'pilincs.png',
             description: {
-                // main: "Access to LINCS proteomics data sets with platforms P100 and GCP.",
+                // main: "Access to LINCS proteomics datasets with platforms P100 and GCP.",
                 main: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
                 navigation: "Each protein phosphosite signature can be browsed as a histogram.",
                 search: "Experimental conditions can be searched including cell lines and small molecules.",
@@ -184,7 +182,7 @@ mod.controller('directAccessToolsCtrl',
             description: {
                 // main: "Search LINCS L1000 gene expression profiles.",
                 main: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
-                search: "The experimental conditions of the L1000 data set can be searched.",
+                search: "The experimental conditions of the L1000 dataset can be searched.",
                 download: "Each individual signature can be selected and downloaded.",
                 drugs: "All L1000 small molecules.",
                 genetics: "All L1000 genetic experiments.",
@@ -260,7 +258,7 @@ mod.controller('directAccessToolsCtrl',
                 api: "Data can be accessed programmatically through GET requests. Consult <a target='_blank' href='http://amp.pharm.mssm.edu/Harmonizome/documentation'>API documentation</a> for more information.",
                 download: "Data can be downloaded in a standardized format.",
                 external: "External data are collected from many different large-scale data projects.",
-                analysis: "Data sets can be analyzed for gene co-expression using measures of similarity."
+                analysis: "datasets can be analyzed for gene co-expression using measures of similarity."
             },
             modes: {
                 functionality: ["search", "api", "download", "analysis"],
@@ -325,9 +323,9 @@ mod.controller('directAccessToolsCtrl',
             url: "http://www.maayanlab.net/LINCS/DCB/",
             image: DIR + "drug-cell-line-browser.png",
             description: {
-                main: "An interactive HTML5 data visualization for interacting with data sets of cancer cell lines/drug-viability studies.",
+                main: "An interactive HTML5 data visualization for interacting with datasets of cancer cell lines/drug-viability studies.",
                 navigation: "2D canvases show clustering of cell lines and small-molecule drugs across cancer tissue types.",
-                drugs: "A selection of anticancer small-molecule compounds from LINCS phase I: the MGH/Sanger and Heiser data sets.",
+                drugs: "A selection of anticancer small-molecule compounds from LINCS phase I: the MGH/Sanger and Heiser datasets.",
                 cells: "Human cancer cell lines deriving from numerous tissue types.",
                 external: "CCLE data."
             },
@@ -381,7 +379,7 @@ mod.controller('directAccessToolsCtrl',
             url: "http://amp.pharm.mssm.edu/milestones/grid.html",
             image: DIR + "docent-grid.png",
             description: {
-                main: "Global visual representation of available LINCS Phase II data sets.",
+                main: "Global visual representation of available LINCS Phase II datasets.",
                 navigation: "Available data on specific cell line and assay combinations can be navigated and compared via a matrix representation.",
                 assays: "The assays include RNA-seq, RPPA, ATAC-seq, cell viability assays, and many others.",
                 cells: "A core set of cell lines highlighting common experiments for characterizing these cell lines."
@@ -399,7 +397,7 @@ mod.controller('directAccessToolsCtrl',
             image: DIR + "LDR.png",
             description: {
                 main: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers.",
-                search: "Search registered data sets based on submitting institute or experimental condition.",
+                search: "Search registered datasets based on submitting institute or experimental condition.",
                 assays: "The available assays are from LINCS phase II."
             },
             modes: {
@@ -416,9 +414,9 @@ mod.controller('directAccessToolsCtrl',
             description: {
                 main: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience.",
                 api: "For programmatic access refer to the <a target='_blank' href='http://api.lincscloud.org/'>API documentation</a>.",
-                analysis: "Web-based analysis of the L1000 data set in the CLUE unified research environment. In development.",
-                search: "The API can be used for searching the L1000 data set. Note that the direct access search only provides a small fraction of the functionality available through the API.",
-                download: "The entire L1000 data set can be <a target='_blank' href='http://download.lincscloud.org/'>downloaded from Amazon S3</a>.",
+                analysis: "Web-based analysis of the L1000 dataset in the CLUE unified research environment. In development.",
+                search: "The API can be used for searching the L1000 dataset. Note that the direct access search only provides a small fraction of the functionality available through the API.",
+                download: "The entire L1000 dataset can be <a target='_blank' href='http://download.lincscloud.org/'>downloaded from Amazon S3</a>.",
                 drugs: "A collection of ~18000 small-molecule compounds.",
                 genetics: "Systematic RNAi/shRNA screens and cDNA overexpression screens.",
                 cells: "A wide range of cell lines.",
@@ -468,7 +466,7 @@ mod.controller('directAccessToolsCtrl',
             image: DIR + "hms_lincs.png",
             description: {
                 main: "Harvard Medical School's LINCS database.",
-                search: "General text-based search. Find data sets and information about experimental reagents. Small-molecule compounds can be queried based on SMILES.",
+                search: "General text-based search. Find datasets and information about experimental reagents. Small-molecule compounds can be queried based on SMILES.",
                 download: "Data is hosted on the web-site and can be downloaded.",
                 api: "Programmatic access is detailed in the <a target='_blank' href='https://docs.google.com/document/d/1R_d_1UWO0C9y1TceXpKIUkhjk08DfvP1D19txi4Tbas/edit'>URL Scheme and Access Guide</a>.",
                 assays: "The available data are focused on dose-dependence and dynamics of responses to small-molecule perturbations. It primarily has data on biochemical binding assays and microscopy imaging measuring cell viability.",
@@ -677,8 +675,8 @@ mod.directive("tool", function($compile, $timeout) {
             $scope.data_content_description = "";
 
             // Assume HTML content, other description texts are handled by the mode() callback function.
-            $scope.toolData.title = $sce.trustAsHtml($scope.toolData.title);
-            $scope.toolData.description.main = $sce.trustAsHtml($scope.toolData.description.main);
+            $scope.title = $sce.trustAsHtml($scope.toolData.title);
+            $scope.main_description = $sce.trustAsHtml($scope.toolData.description.main);
 
             // For inherited "Dot" syntax in child controllers.
             // Query template.
@@ -764,7 +762,7 @@ mod.directive('lincsDataPortalBar', function($compile) {
             $scope.query = $scope.$parent.query;  // query binding from parent
 
             $scope.searchTypeOptions = [
-                {name: 'Data sets', value: 'datasets'},
+                {name: 'datasets', value: 'datasets'},
                 {name: 'Entities', value: 'entities'}
             ];
 
