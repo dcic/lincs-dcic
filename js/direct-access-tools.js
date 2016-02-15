@@ -92,13 +92,13 @@ mod.controller('directAccessToolsCtrl',
 
     $scope.tools = [
         {
-            title: 'L1000CDS2',
+            title: 'L1000CDS<sup>2</sup>',
             url: 'http://amp.pharm.mssm.edu/L1000CDS2',
             image: DIR + 'l1000cds2.png',
             description: {
                 // main description always shown.
                 // main: "Analyze gene expression profiles using a signature search engine for the LINCS L1000 data set.",
-                main: "L1000CDS2 queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
+                main: "L1000CDS<sup>2</sup> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
                 // mode-specific descriptions shown when mode buttons are clicked
                 analysis: "Providing up- and down-regulated lists of genes allows the identification of similar or reciprocal perturbations, which can be used to analyze such gene lists in the context of the L1000 gene expression data set. Alternatively, numerical vectors can also be analyzed.",
                 search: "Data-oriented search allows finding relevant signatures where the query is based on data rather than names.",
@@ -675,6 +675,10 @@ mod.directive("tool", function($compile, $timeout) {
             // Selected descriptions
             $scope.functional_description = "";
             $scope.data_content_description = "";
+
+            // Assume HTML content, other description texts are handled by the mode() callback function.
+            $scope.toolData.title = $sce.trustAsHtml($scope.toolData.title);
+            $scope.toolData.description.main = $sce.trustAsHtml($scope.toolData.description.main);
 
             // For inherited "Dot" syntax in child controllers.
             // Query template.

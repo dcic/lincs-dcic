@@ -10,8 +10,8 @@
 				<div class="col-xs-12">
 					<span class="tool-title">
 					    <a ng-href="{{toolData.url}}" target="_blank">
-					    	<img ng-src="{{toolData.image}}"/>
-					    	{{toolData.title}}
+					    	<img ng-src="{{toolData.image}}" ng-bind-html="toolData.title_"/>
+					    	<!-- {{toolData.title}} -->
 					    </a>
 					</span>
 				</div>
@@ -22,8 +22,8 @@
 				<div class="col-xs-8 col-sm-9">
 					<span class="tool-title">
 					    <a ng-href="{{toolData.url}}" target="_blank">
-					    	<img ng-src="{{toolData.image}}"/>
-					    	{{toolData.title}}
+					    	<img ng-src="{{toolData.image}}" />
+					    	<span ng-bind-html="toolData.title"></span>
 					    </a>
 					</span>
 				</div>
@@ -50,7 +50,7 @@
 	</div>
 
 	<!-- Main description -->
-	<p id="main" class="muted2">{{toolData.description["main"]}}</p>
+	<p id="main" class="muted2" ng-bind-html="toolData.description.main"></p>
 
 	<div>
 		<p class="functionality-description" ng-bind-html="functional_description"></p>
