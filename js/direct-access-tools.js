@@ -3,6 +3,13 @@ var mod = angular.module('directAccessToolsMod',
     'ui.bootstrap.tooltip']  // for tooltips
 );
 
+// Filter which removes all html tags from string and returns the plain text.
+mod.filter("html2text", function() {
+    return function(text) {
+        return text ? String(text).replace(/<[^>]+>/gm, "") : "";
+    };
+});
+
 mod.directive('scrollOnClick', function() {
     return {
         restrict: 'A',
@@ -689,6 +696,14 @@ mod.directive("tool", function($compile, $timeout) {
 
             // Assume HTML content, other description texts are handled by the mode() callback function.
             $scope.title = $sce.trustAsHtml($scope.toolData.title);
+            // $scope.title = $sce.trustAsHtml($scope.toolData.title.replace(/<(?:.|\n)*?>/gm, ''));
+
+            // console.log($scope.toolData.title);
+            var title = $scope.toolData.title
+            // console.log(title);
+            $scope.text_title = $("<html>" + $scope.toolData.title + "</html>").text();
+            console.log($scope.text_title);
+
             $scope.main_description = $sce.trustAsHtml($scope.toolData.description.main);
 
             // For inherited "Dot" syntax in child controllers.
