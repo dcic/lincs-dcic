@@ -15,6 +15,11 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
                     url: '#/getting-started/concierge'
                 },
                 {
+                    title: 'Tools',
+                    url: '#/getting-started/direct-access-tools'
+                    // target: '_self'
+                },
+                {
                     title: 'Internal Projects',
                     url: '#/internal-dsrp#nav'
                 },
@@ -75,11 +80,11 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
     ];
 
     $scope.categoriesRight = [
-        {
-            title: 'QUICK START',
-            url: '#/getting-started/direct-access-tools',
-            target: '_self'
-        },
+        // {
+        //     title: 'QUICK START',
+        //     url: '#/getting-started/direct-access-tools',
+        //     target: '_self'
+        // },
         {
             title: 'LINCSPROJECT',
             url: 'http://www.lincsproject.org/',
