@@ -3,53 +3,56 @@ var mod = angular.module("gettingStartedMod", ["lincsCentersMod"]);
 
 // Concierge menu selection
 mod.controller("gettingStartedCtrl", ["$scope", function($scope) {
+    var fade_time = 300;  // animation speed in ms
     var started = false,
         selected = [],
         $p = $('.middle p');
 
+    // Concierge button, first selector
     $('.start p').click(function() {
         if (started) {
+            // Concierge is already called, close and restart state.
             started = false;
             selected[0] = undefined;
-            $('.end .row').fadeOut();
+            $('.end .row').fadeOut(fade_time);
             $('.middle').fadeOut(function() {
-                $p.css({
-                    opacity: 1,
-                    'box-shadow': '0 2px 5px 0 rgba(0, 0, 0, 0.26)'
-                });
+                $('.middle p').removeClass("subtle");
             });
-            $('.content > .row').hide();
+            $('.content > .row').hide(fade_time);
         } else {
             started = true;
-            $('.middle').fadeIn();
+            $('.middle').fadeIn(fade_time);
         }
     });
 
+    // Middle selectors
     $('.middle .section').click(function() {
+        // get id
         var class_ = '.' + $(this).parent().attr('data-selector');
-        $p.css({
-            opacity: 1,
-            'box-shadow': '0 2px 5px 0 rgba(0, 0, 0, 0.26)'
-        }).not(this)
-            .css({
-                opacity: .3,
-                'box-shadow': 'none'
-            });
+        // Grey out other selectors
+        $('.middle p').removeClass("subtle")
+            .not(this).addClass("subtle");
 
-        if (selected[0] !== class_) {
-            $('.end .row').hide();
-            selected[0] = class_;
-            $('.end').find(class_).fadeIn()
-            $('.content > .row').hide();
-        }
+        // Hide previous buttons
+        $('.end .row').hide();
+        selected[0] = class_;
+        // Fade in submenu, if any
+        $('.end').find(class_).fadeIn(fade_time)
+        $('.content > .row').hide();
+
+        $('.end p').removeClass("subtle");
     });
 
     $('.end p').click(function() {
+        // hide main content from previous selection
         $('.content > .row').hide();
+        // Find name of selected content
         var class_ = '.' + $(this).parent().attr('data-selector');
-        // console.log(class_);
-        // console.log($('.content').find(class_));
-        $('.content').find(class_).fadeIn();
+        // Show selected content
+        $('.content').find(class_).fadeIn(fade_time);
+
+        $('.end p').removeClass("subtle")
+            .not(this).addClass("subtle");
     });
 }]);
 

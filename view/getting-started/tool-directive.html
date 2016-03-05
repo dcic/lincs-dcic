@@ -9,8 +9,12 @@
 				<!-- Only title in header -->
 				<div class="col-xs-12">
 					<span class="tool-title">
-					    <img ng-src="{{toolData.image}}"/>
-					    <a ng-href="{{toolData.url}}" target="_blank">{{toolData.title}}</a>
+					    <a ng-href="{{toolData.url}}" target="_blank">
+					    	<img ng-src="{{toolData.image}}"/>
+					    	<span ng-bind-html="title"></span>
+					    	<!-- {{toolData.title}} -->
+					    	<!-- hat -->
+					    </a>
 					</span>
 				</div>
 			</div>
@@ -19,20 +23,22 @@
 			<div ng-switch-default>
 				<div class="col-xs-8 col-sm-9">
 					<span class="tool-title">
-					    <img ng-src="{{toolData.image}}"/>
-					    <a ng-href="{{toolData.url}}" target="_blank">{{toolData.title}}</a>
+					    <a ng-href="{{toolData.url}}" target="_blank">
+					    	<img ng-src="{{toolData.image}}" />
+					    	<span ng-bind-html="title"></span>
+					    </a>
 					</span>
 				</div>
 				<!-- Buttons -->
 				<div class="col-xs-4 col-sm-3 action">
-					<!-- div wrapper for tooltip-specific style different from button element -->
-					<button ng-repeat="button_name in toolData.modes.functionality"
+					<!-- div wrapper for tooltip-specific style different from button element. Reverse order; left to right importance. -->
+					<button ng-repeat="button_name in toolData.modes.functionality.slice().reverse()"
 						title="{{::buttonTooltip(button_name)}}"
 						ng-click="mode(button_name)"
 						class="{{button_name}} mode-button functionality-button pull-right">
 					</button>
 					<br>
-					<button ng-repeat="button_name in toolData.modes.content"
+					<button ng-repeat="button_name in toolData.modes.content.slice().reverse()"
 						title="{{::buttonTooltip(button_name)}}"
 						ng-click="mode(button_name)"
 						class="{{button_name}} mode-button content-button pull-right">
@@ -42,11 +48,10 @@
 
 		</div>
 
-
 	</div>
 
 	<!-- Main description -->
-	<p id="main">{{toolData.description["main"]}}</p>
+	<p id="main" class="muted2" ng-bind-html="main_description"></p>
 
 	<div>
 		<p class="functionality-description" ng-bind-html="functional_description"></p>

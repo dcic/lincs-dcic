@@ -1,8 +1,3 @@
-<link rel="stylesheet" href="style/getting-started.css">
-
-<!-- Handwritten font -->
-<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-
 <div class="container">
     <div class="category-page getting-started-page" ng-controller="gettingStartedCtrl">
         <!-- Concierge greeting -->
@@ -13,7 +8,6 @@
                 <p class="hand-written">Please consult the Concierge if you need assistance.</p>
             </div>
         </div>
-
         <!-- FAQ selector and main div containing content -->
         <div class="faq">
             <div class="start row">
@@ -30,14 +24,10 @@
                         <img class="vertical" src="images/concierge-icons/circle_information.svg">
                         <br>
                         General information
-                        <!-- <br> -->
-                        <!-- <img class="vertical" src="/images/concierge-icons/info_orange.svg"> -->
                     </p>
                 </div>
                 <div class="col-sm-3 col-xs-6" data-selector="lincs-data">
                     <p class="section">
-                        <!-- <img class="vertical" src="/images/concierge-icons/search.svg"> -->
-                        <!-- http://www.iconsolid.com/ -->
                         <img class="vertical" src="images/concierge-icons/find_solid.svg">
                         <br>
                         Searching data
@@ -69,9 +59,6 @@
                     </div>
                     <div class="col-sm-3 col-xs-6" data-selector="lincs-centers">
                         <p class="section">
-                            <!-- http://ymbproperties.com/ -->
-                            <!-- <img class="vertical" src="images/concierge-icons/handdrawn_microscope.svg"> -->
-                            <!-- <img class="vertical" src="images/concierge-icons/microscope.svg"> -->
                             <img class="vertical" src="images/concierge-icons/microscope4.svg">
                             <br>
                             Data generation centers
@@ -104,7 +91,7 @@
                         <p class="section">
                             <img class="vertical" src="images/concierge-icons/dna17.svg">
                             <br>
-                            Genetic alterations
+                            Gene-related experiments
                         </p>
                     </div>
                     <div class="col-sm-3 col-xs-6" data-selector="cell-search">
@@ -185,9 +172,9 @@
                 <div class="row lincs-program">
                     <div class="col-sm-6">
                         <h2>The LINCS program </h2>
-                        <p>LINCS aims to create a network-based understanding of biology by cataloging changes in gene expression and other cellular processes after chemical and genetic perturbations.</p>
-                        <p>Computational methods which integrate diverse data into a comprehensive view of normal and disease states can be applied for the development of new biomarkers and therapeutics.</p>
-                        <p>By generating and making public data on how cells respond to genetic and environmental stressors, the LINCS project will help us gain a more detailed understanding of cellular pathways and aid the development of new therapies that target diseased cell states.</p>
+                        <p>LINCS aims to create a network-based understanding of biology by cataloging changes in gene expression and other cellular processes after chemical perturbations. By systematically collecting and analyzing such data, LINCS will provide the biological research community with a reference dataset that is only achievable through large-scale efforts.</p>
+                        <p>The LINCS data resource will be broadly applicable to both basic and translational research. For example, computational methods which integrate diverse data into a comprehensive view of normal and disease states can be applied for the development of new biomarkers and therapeutics.</p>
+                        <p>By generating data on how cells respond to chemical perturbations and making it publicly available, the LINCS project will help us gain a more detailed understanding of cellular pathways and aid the development of new therapies that target diseased cell states.</p>
                     </div>
                     <div class="col-sm-6">
                         <h3 class="muted">
@@ -314,24 +301,9 @@
                         <div class="col-sm-6">
                             <tool tool-data="findTool('Slicr')" tool-mode="search drugs"></tool>
                         </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('HMS LINCS Database')" tool-mode="search drugs"></tool>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <hr>
-                            <h2>External data</h2>
-                            <p>For analyzing drug perturbations data it could be relevant to compare with data generated by other large-scale pojects.</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('Harmonizome')" tool-mode="search external"></tool>
-                        </div>
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('HMS LINCS Database')" tool-mode="search drugs"></tool> -->
+                        <!-- </div> -->
                     </div>
 
                     <div class="row">
@@ -344,20 +316,35 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <tool tool-data="findTool('L1000CDS2')" tool-mode="search drugs"></tool>
+                            <tool tool-data="findTool('L1000CDS<sup>2</sup>')" tool-mode="search drugs"></tool>
                         </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('Lincscloud')" tool-mode="search drugs"></tool>
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('Lincscloud')" tool-mode="search drugs"></tool> -->
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr>
+                            <h2>External data</h2>
+                            <p>For analyzing drug perturbations data it could be relevant to compare with data generated by other large-scale projects.</p>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <tool tool-data="findTool('Harmonizome')" tool-mode="search external"></tool>
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- Genetics search, RNAi screens etc -->
                 <div class="row genetic-search" ng-controller="directAccessToolsCtrl">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2>How to find data on experiments where the genetics of biological models have been altered?</h2>
-                            <p>Gene knockout through RNAi screens, overexpression through cDNA screens, or alterations through CRISPR are important methods for investigating cellular function. Many such genetic alterations are employed in the LINCS project but they are less numerous than small-molecule perturbations and for this reason harder to find.</p>
+                            <h2>How to find data on experiments where the gene expression of biological models have been altered?</h2>
+                            <p>Gene knockout through RNAi screens, overexpression through cDNA screens, or alterations through CRISPR are important methods for investigating cellular function. Many such genetic alterations are employed in the LINCS project but they are less numerous than small-molecule perturbations.</p>
                             <hr>
                             <h3>Searches based on high-throughput screening platform</h3>
                             <p>Currently, the best way to search the data is to use platform identifiers such as <a href="" ng-click="typeSearch('shRNA')">shRNA</a> and <a href="" ng-click="typeSearch('cDNA')">cDNA</a>.</p>
@@ -377,20 +364,20 @@
                         <div class="col-xs-12">
                             <hr>
                             <h3>Direct access from tools developed by the data generation centers</h3>
-                            <p>The data generation centers using genetic alterations makes such data available through their websites.</p>
+                            <p>The data generation centers using gene-specific experiments makes such data available through their websites.</p>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-6">
-                            <tool  tool-data="findTool('Lincscloud')" tool-mode="search genetics"></tool>
-                        </div>
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool  tool-data="findTool('Lincscloud')" tool-mode="search genetics"></tool> -->
+                        <!-- </div> -->
                     </div>
 
                     <div class="row">
                         <div class="col-xs-12">
                             <hr>
-                            <h3>External experiments on genetic alterations that could be of interest</h3>
+                            <h3>External experiments on gene-specific experiments that could be of interest</h3>
                         </div>
                     </div>
 
@@ -440,24 +427,24 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <tool tool-data="findTool('HMS LINCS Database')" tool-mode="search cells"></tool>
-                        </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('Lincscloud')" tool-mode="search cells"></tool>
+                            <tool tool-data="findTool('Slicr')" tool-mode="search cells"></tool>
                         </div>
                         <div class="col-sm-6">
                             <tool tool-data="findTool('piLINCS')" tool-mode="search cells"></tool>
                         </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('Slicr')" tool-mode="search cells"></tool>
-                        </div>
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('HMS LINCS Database')" tool-mode="search cells"></tool> -->
+                        <!-- </div> -->
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('Lincscloud')" tool-mode="search cells"></tool> -->
+                        <!-- </div> -->
                     </div>
 
                     <div class="row">
                         <div class="col-xs-12">
                             <hr>
                             <h2>Global overview visualizations</h2>
-                            <p></p>
+                            <p>Visualization tools allow for quick overviews of the available cell lines.</p>
                         </div>
                     </div>
 
@@ -471,7 +458,7 @@
                         <div class="col-xs-12">
                             <hr>
                             <h2>External data</h2>
-                            <p>For analyzing drug perturbations data it could be relevant to compare with data generated by other large-scale pojects.</p>
+                            <p>For analyzing drug perturbations data it could be relevant to compare with data generated by other large-scale projects.</p>
                         </div>
 
                     </div>
@@ -482,6 +469,7 @@
                         </div>
                     </div>
 
+                    <!--
                     <div class="row">
                         <div class="col-xs-12">
                             <hr>
@@ -492,9 +480,10 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <tool tool-data="findTool('L1000CDS2')" tool-mode="search cells"></tool>
+                            <tool tool-data="findTool('L1000CDS<sup>2</sup>')" tool-mode="search cells"></tool>
                         </div>
                     </div>
+                    -->
 
                 </div>
 
@@ -523,9 +512,9 @@
                         <div class="col-sm-6">
                             <tool tool-data="findTool('LIFE')" tool-mode="search assays"></tool>
                         </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('HMS LINCS Database')" tool-mode="search assays"></tool>
-                        </div>
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('HMS LINCS Database')" tool-mode="search assays"></tool> -->
+                        <!-- </div> -->
                         <div class="col-sm-6">
                             <tool tool-data="findTool('LDR')" tool-mode="search assays"></tool>
                         </div>
@@ -555,7 +544,15 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2>How to visually navigate and interpret LINCS data?</h2>
-                            <p>Data exploration is typically the first step for making sense of data. By providing the community with a range of visualization tools applied to the LINCS data the project aims to facilitate effective exploration of the data generated.</p>
+                            <p>Data exploration is important for interpreting data where hypotheses are not yet established. By providing the community with a range of visualization tools applied to the LINCS data the project aims to facilitate effective exploration of the data generated.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr>
+                            <h3>Specialized visualizations for investigating particular aspects of LINCS data</h3>
+                            <p>No single visualization is likely to be informative for all LINCS data. Rather, different types of visualizations are useful for different data types and for different analysis contexts.</p>
                         </div>
                     </div>
 
@@ -565,12 +562,6 @@
                         </div>
                         <div class="col-sm-6">
                             <tool tool-data="findTool('P100/GCP Mosaic')" tool-mode="navigation"></tool>
-                        </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('LIFE')" tool-mode="navigation"></tool>
-                        </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('Docent')" tool-mode="navigation"></tool>
                         </div>
                         <div class="col-sm-6">
                             <tool tool-data="findTool('LINCS Canvas Browser')" tool-mode="navigation"></tool>
@@ -583,14 +574,31 @@
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr>
+                            <h3>Data overview visualizations</h3>
+                            <p>Each of the developed visualization tools have a distinct scope. At the broadest scale are visualizations which depict all or a substantial amount of LINCS data. These visualizations can be used to gain a visual overview of the data available.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <tool tool-data="findTool('LIFE')" tool-mode="navigation"></tool>
+                        </div>
+                        <div class="col-sm-6">
+                            <tool tool-data="findTool('Docent')" tool-mode="navigation"></tool>
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- APIs -->
                 <div class="row data-apis" ng-controller="directAccessToolsCtrl">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2>How to access data programmatically?</h2>
-                            <p>Setting up interfaces for computational biologists and computer scientists is a primary goal of the LINCS project.</p>
+                            <h2>How to access LINCS data programmatically?</h2>
+                            <p>Establishing useful interfaces for computational biologists and computer scientists is a primary goal of the LINCS project.</p>
                         </div>
                     </div>
 
@@ -599,11 +607,14 @@
                             <tool tool-data="findTool('LINCS Data Portal')" tool-mode="api"></tool>
                         </div>
                         <div class="col-sm-6">
-                            <tool tool-data="findTool('HMS LINCS Database')" tool-mode="api"></tool>
+                            <tool tool-data="findTool('piLINCS')" tool-mode="api"></tool>
                         </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('Lincscloud')" tool-mode="api"></tool>
-                        </div>
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('HMS LINCS Database')" tool-mode="api"></tool> -->
+                        <!-- </div> -->
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('Lincscloud')" tool-mode="api"></tool> -->
+                        <!-- </div> -->
                     </div>
                 </div>
 
@@ -611,8 +622,16 @@
                 <div class="row data-download" ng-controller="directAccessToolsCtrl">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2>How best to download LINCS data?</h2>
-                            <p></p>
+                            <h2>How to download LINCS data?</h2>
+                            <p>As LINCS data is generated, the LINCS Data Portal curates, standardizes, and makes the data available for download. However, it is an open research question to what extent the diverse data can be meaningfully aggregated in this manner. For this reason, dedicated download tools could be more appropriate.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr>
+                            <h3>Download services with different scope</h3>
+                            <p>In order of decreasing data scope and relevance to LINCS.</p>
                         </div>
                     </div>
 
@@ -621,25 +640,16 @@
                             <tool tool-data="findTool('LINCS Data Portal')" tool-mode="download"></tool>
                         </div>
                         <div class="col-sm-6">
-                            <tool tool-data="findTool('HMS LINCS Database')" tool-mode="download"></tool>
-                        </div>
-                        <div class="col-sm-6">
                             <tool tool-data="findTool('Slicr')" tool-mode="download"></tool>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2>Downloading external data</h2>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('Harmonizome')" tool-mode="download"></tool>
                         </div>
                         <div class="col-sm-6">
                             <tool tool-data="findTool('Gen3va')" tool-mode="download"></tool>
+                        </div>
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('HMS LINCS Database')" tool-mode="download"></tool> -->
+                        <!-- </div> -->
+                        <div class="col-sm-6">
+                            <tool tool-data="findTool('Harmonizome')" tool-mode="download"></tool>
                         </div>
                     </div>
 
@@ -650,7 +660,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2>How to analyze LINCS data in a web-based environment?</h2>
-                            <p>Note that analyses of LINCS data whose outcome is primarily visual is categorised as exploratory/navigational.</p>
+                            <p>Standard analyses can be applied to LINCS data directly from a web browser. Note that analyses of LINCS data whose outcome is primarily visual can be found under 'Exploring data'.</p>
                         </div>
                     </div>
 
@@ -662,24 +672,27 @@
 
                     <div class="row">
                         <div class="col-xs-12">
+                            <hr>
                             <h2>How to analyze my data in the context of LINCS data?</h2>
+                            <p>By providing gene lists derived from your data, various tools allows these data to be analyzed in the context of and compared to LINCS data.</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <tool tool-data="findTool('L1000CDS2')" tool-mode="analysis"></tool>
+                            <tool tool-data="findTool('L1000CDS<sup>2</sup>')" tool-mode="analysis"></tool>
                         </div>
                         <div class="col-sm-6">
                             <tool tool-data="findTool('Enrichr')" tool-mode="analysis"></tool>
                         </div>
-                        <div class="col-sm-6">
-                            <tool tool-data="findTool('Lincscloud')" tool-mode="analysis"></tool>
-                        </div>
+                        <!-- <div class="col-sm-6"> -->
+                            <!-- <tool tool-data="findTool('Lincscloud')" tool-mode="analysis"></tool> -->
+                        <!-- </div> -->
                     </div>
 
                     <div class="row">
                         <div class="col-xs-12">
+                            <hr>
                             <h2>What are some unique statistical approaches of the LINCS project?</h2>
                         </div>
                     </div>
@@ -695,6 +708,7 @@
 
                     <div class="row">
                         <div class="col-xs-12">
+                            <hr>
                             <h2>How can I analyze other publicly available data which could be relevant to LINCS?</h2>
                         </div>
                     </div>
@@ -725,7 +739,7 @@
 
                 <div class="row funding">
                     <div class="col-xs-12">
-                        <h2>Funding for external projects to increase the research scope</h2>
+                        <h2>Funding for external projects to widen the research scope</h2>
                         <p>If you have a great research idea which could benefit the LINCS project, there are regularly funding opportunities for such external projects.</p>
                         <ul>
                             <li><a target="_blank" href="http://lincs-dcic.org/#/funding">DCIC funding information</a></li>
@@ -739,11 +753,12 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2>Consortium collaboration</h2>
-                            <p>With researchers spanning numerous locations within the US and across time, efficiently allowing collaboration is no trivial task. Meetings and webinars greatly facilitate collaboration within the Consortium.</p>
+                            <p>With researchers spanning numerous locations within the United States and across time, efficiently allowing collaboration is no trivial task. Meetings and webinars greatly facilitate collaboration within the Consortium.</p>
                             <ul>
                                 <li><a target="_blank" href="http://www.lincsproject.org/community/lincs-consortium-meetings/">Consortium meetings</a></li>
                                 <li><a target="_blank" href="http://www.lincsproject.org/community/webinars/">Webinars</a></li>
                             </ul>
+                            <p>In addition, tools aimed at facilitating collaboration is currently under development.</p>
                         </div>
                     </div>
 
