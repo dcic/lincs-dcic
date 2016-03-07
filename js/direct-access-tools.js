@@ -698,11 +698,8 @@ mod.directive("tool", function($compile, $timeout) {
             $scope.title = $sce.trustAsHtml($scope.toolData.title);
             // $scope.title = $sce.trustAsHtml($scope.toolData.title.replace(/<(?:.|\n)*?>/gm, ''));
 
-            // console.log($scope.toolData.title);
             var title = $scope.toolData.title
-            // console.log(title);
             $scope.text_title = $("<html>" + $scope.toolData.title + "</html>").text();
-            console.log($scope.text_title);
 
             $scope.main_description = $sce.trustAsHtml($scope.toolData.description.main);
 
