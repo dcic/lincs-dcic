@@ -3,11 +3,43 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
         {
+            title: "In utero exposure of rats to high-fat diets perturbs gene expression profiles and cancer susceptibility of prepubertal mammary glands",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26895667",
+            authors: "Govindarajah V, Leung YK, Ying J, Gear R, Bornschein RL, Medvedovic M, Ho SM.",
+            citation: "Journal of Nutritional Biochemistry 2016 Mar;29:73-82.",
+            ids: "PMID: 26895667",
+            year: 2016
+        },
+        {
+            title: "Integrative radiogenomic analysis for multicentric radiophenotype in glioblastoma",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26863628",
+            authors: "Kong DS, Kim J, Lee IH, Kim ST, Seol HJ, Lee JI, Park WY, Ryu G, Wang Z, Ma'ayan A, Nam DH.",
+            citation: "Oncotarget 2016 Feb 1.",
+            ids: "PMID: 26863628",
+            year: 2016
+        },
+        {
+            title: "Model reduction and parameter estimation of non-linear dynamical biochemical reaction networks",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26816394",
+            authors: "Sun X, Medvedovic M.",
+            citation: "IET Systems Biology 2016 Feb;10(1):10-6.",
+            ids: "PMID: 26816394",
+            year: 2016
+        },
+        {
             title: "Fetal liver hematopoietic stem cell niches associate with portal vessels",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26634440",
             authors: "Khan JA, Mendelson A, Kunisaki Y, Birbrair A, Kou Y, Arnal-Estape A, Pinho S, Ciero P, Nakahara F, Ma'ayan A, Bergman A, Merad M, Frenette PS.",
             citation: "Science 2016 Jan 8;351(6269):176-80.",
             ids: "PMID: 26634440 | PMCID: PMC4706788",
+            year: 2016
+        },
+        {
+            title: "Dynamic model averaging in large model spaces using dynamic Occam's window",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26917859",
+            authors: "Onorante L, Raftery AE.",
+            citation: "European Economic Review 2016 Jan 1;81:2-14.",
+            ids: "PMID: 26917859",
             year: 2016
         },
         {
@@ -32,6 +64,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             authors: "Fronczuk M, Raftery AE, Yeung KY.",
             citation: "Source Code for Biology and Medicine 2015 Nov 11;10:11.",
             ids: "PMID: 26566394 | PMCID: PMC4642660",
+            year: 2015
+        },
+        {
+            title: "A systems approach identifies essential FOXO3 functions at key steps of terminal erythropoiesis",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26452208",
+            authors: "Liang R, Camprecios G, Kou Y, McGrath K, Nowak R, Catherman S, Bigarella CL, Rimmele P, Zhang X, Gnanapragasam MN, Bieker JJ, Papatsenko D, Ma'ayan A, Bresnick E, Fowler V, Palis J, Ghaffari S.",
+            citation: "PLoS Genetics 2015 Oct 9;11(10):e1005526.",
+            ids: "PMID: 26452208 | PMCID: PMC4599908",
             year: 2015
         },
         {
