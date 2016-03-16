@@ -3,14 +3,22 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	    {
-            date: '1 March 2016 | 3:00 PM ET',
-            topic: 'Mutations and Drugs Portal (MDP): A Database Linking Drug Response Data and Genomic Information',
-            presenters: 'Silvio Bicciato PhD, University of Modena and Reggio Emilia'
+            date: 'Coming soon',
+            topic: '',
+            presenters: ''
             }
 
     ];
     $scope.pastWebinars = [   
-	 {
+	{
+            date: '1 March 2016',
+            topic: 'Mutations and Drugs Portal (MDP): A Database Linking Drug Response Data and Genomic Information',
+            presenters: 'Silvio Bicciato PhD, University of Modena and Reggio Emilia',
+	    synopsis:'Genetic alterations arising in cancer cells often generate cancer-specific dependencies that can be exploited as targets of targeted therapies. Indeed, several evidences demonstrate that the integration of large-scale genomic and pharmacological data from cancer cell lines is a successful approach to discover genetic markers of drug sensitivity and to re-purpose known drugs and compounds to new indications in oncology. However, the lack of direct connections between genomic and pharmacological information still makes inherently difficult to query pharmacogenomics databases and extract novel connections. In an attempt to overcome this limit, we designed Mutations and Drug Portal (MDP), a web accessible database that combines the cell-based NCI60 pharmacological screening with genomic data extracted from the Cancer Cell Line Encyclopedia (CCLE). MDP currently contains drug sensitivity data for more than 50,800 compounds, describing response to drugs across 115 cancer cell lines. To identify genomic features associated to drug response, drug sensitivity data are integrated with information on somatic mutations and transcriptional data of cancer cell lines. MDP can be queried for drugs active in cancer cell lines carrying mutations or transcriptional alterations in specific cancer genes and signaling pathways or for genetic and transcriptional profiles associated to sensitivity or resistance to a given compound. Results are returned using graphical and interactive representations. As proof of performance, MDP identified both known and novel pharmacogenomics associations and unveiled an unpredicted combination of two FDA-approved compounds, namely statins and Dasatinib, as an effective strategy to potently inhibit YAP/TAZ in cancer cells. In this web-seminar, I will illustrate MDP architecture and content and its web interface. I will also provide a demonstration on how MDP can be queried for drugs active in cancer cell lines carrying mutations in specific cancer genes or for genetic markers associated to sensitivity or resistance to a given compound. Finally, I will discuss possible connections between MDP and the data and tools of the L1000 LINCS project.',
+	    link:'https://www.youtube.com/watch?v=MwrN3hbTnVc'        
+},
+
+	{
             date: '10 November 2015',
             topic: 'Combining Phenotypic and Biochemical Screening to Identify Drug Targets',
             presenters: 'Hassan Al-Ali PhD, University of Miami Miller School of Medicine',

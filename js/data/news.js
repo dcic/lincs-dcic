@@ -12,6 +12,15 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
 	$scope.stories = formatStories([
         {
+            title: "BD2K-LINCS DCIC's First Annual Systems Biology Data Science Symposium",
+            source: "University of Miami News",
+            url: "http://med.miami.edu/news/sylvester-director-delivers-keynote-address-at-first-annual-systems-biology",
+            target: "_blank",
+            date: "2/23/2016",
+            mainText: "",
+            image: DIR + "dcic_symposium_group.png"
+        },
+	 {
             title: "Genetics: Big Hopes for Big Data",
             source: "Nature | Outlook",
             url: "http://www.nature.com/nature/journal/v527/n7578_supp/full/527S108a.html",
