@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	{
+            title: "A posterior probability approach for gene regulatory network inference in genetic perturbation data",
+            url: "http://arxiv.org/abs/1603.04835",
+            authors: "Young WC, Yeung KY, Raftery AE.",
+            citation: "arXiv 2016 Mar;1603.04835.",
+            ids: "",
+            year: 2016
+        },
+	{
             title: "In utero exposure of rats to high-fat diets perturbs gene expression profiles and cancer susceptibility of prepubertal mammary glands",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26895667",
             authors: "Govindarajah V, Leung YK, Ying J, Gear R, Bornschein RL, Medvedovic M, Ho SM.",
