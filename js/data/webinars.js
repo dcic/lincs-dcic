@@ -2,10 +2,15 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
-	    {
-            date: 'Coming soon',
-            topic: '',
-            presenters: ''
+        {
+            date: '24 May 2016 | 3:00 PM ET',
+            topic: 'Detection and Removal of Spatial Bias in Multi-well Assays',
+            presenters: 'Alexander Lachmann, Columbia University'
+        },
+        {
+            date: '28 June 2016 | 3:00 PM ET',
+            topic: 'Construction, Characterization and Validation of Multiscale Gene Networks in Cancer',
+            presenters: 'Bin Zhang PhD, Icahn School of Medicine at Mount Sinai'
         }
     ];
     $scope.pastWebinars = [   
