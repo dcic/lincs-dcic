@@ -303,10 +303,10 @@ mod.controller('directAccessToolsCtrl',
             url: "http://amp.pharm.mssm.edu/PAEA/",
             image: DIR + "paea.png",
             description: {
-                main: "Principle Angle Enrichment Analysis (PAEA) is a gene set enrichment analysis web application implemented in R/Shiny.",
+                main: "Principal Angle Enrichment Analysis (PAEA) is a gene set enrichment analysis web application implemented in R/Shiny.",
                 analysis: "PAEA implements a multivariate approach to perform gene-set enrichment analysis. This approach is an extension of the Charactaristic Direction method and it outperforms standard methods such as GSEA and the Fisher test.",
                 external: "70 gene set libraries available for enrichment analysis.",
-                publication: "<a target='_blank' href='http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7359689'>Principle Angle Enrichment Analysis (PAEA): Dimensionally reduced multivariate gene set enrichment analysis tool</a>."
+                publication: "<a target='_blank' href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4737646/'>Principal Angle Enrichment Analysis (PAEA): Dimensionally reduced multivariate gene set enrichment analysis tool</a>."
             },
             modes: {
                 functionality: ["analysis"],
