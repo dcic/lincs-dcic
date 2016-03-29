@@ -2,7 +2,13 @@
 <div id="quick-start">
     <div class="row">
         <div class="col-md-12">
-            <h1>Quick Start with LINCS</h1>
+            <h1>
+                Quick Start with LINCS <span style="font-size: 18px;" class="glyphicon glyphicon-question-sign"
+                    uib-popover-template="'view/partial/quick-start-description.html'"
+                    popover-trigger="mouseenter"
+                    popover-placement="bottom"></span>
+            </h1>
+
         </div>
     </div>
     <div class="row" ng-controller="directAccessToolsCtrl">
@@ -24,6 +30,7 @@
                 Imatinib</a>,
             <a href="" ng-click="typeSearch('Ruxolitinib')">Ruxolitinib</a>,
             <a href="" ng-click="typeSearch('MCF7')">MCF7</a>,
+            <a href="" ng-click="typeSearch('RNA-seq')">RNA-seq</a>,
             <a href="" ng-click="typeSearch('shRNA')">shRNA</a>,
             <a href="" ng-click="typeSearch('Phosphorylation')">Phosphorylation</a>
 
