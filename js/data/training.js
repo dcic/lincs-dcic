@@ -18,7 +18,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.sections = [
 		{
             title: "Summer Research Training Program",
-            text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students. <strong>We are currently accepting applications for the summer 2016 session!</strong>" +
+            text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students." +
                 "<ul>" +
 		     "<li>" +
                         "<a href='" + FLYER_LINK + "'>2016 Program Flyer</a>" +
