@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	{
+            title: "Signaling networks among stem cell precursors, transit-amplifying progenitors, and their niche in developing hair follicles",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/27009580",
+            authors: "Rezza A, Wang Z, Sennett R, Qiao W, Wang D, Heitman N, Mok KW, Clavel C, Yi R, Zandstra P, Ma'ayan A, Rendl M.",
+            citation: "Cell Reports 2016 Mar 18;5 pii: S2211-1247(16)30213-3.",
+            ids: "PMID: 27009580",
+            year: 2016
+        },
+	{
             title: "A posterior probability approach for gene regulatory network inference in genetic perturbation data",
             url: "http://arxiv.org/abs/1603.04835",
             authors: "Young WC, Yeung KY, Raftery AE.",
@@ -16,6 +24,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             authors: "Govindarajah V, Leung YK, Ying J, Gear R, Bornschein RL, Medvedovic M, Ho SM.",
             citation: "Journal of Nutritional Biochemistry 2016 Mar;29:73-82.",
             ids: "PMID: 26895667",
+            year: 2016
+        },
+	{
+            title: "Regulatory consequences of neuronal ELAV-like protein binding to coding and non-coding RNAs in human brain",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26894958",
+            authors: "Scheckel C, Drapeau E, Frias MA, Park CY, Fak J, Zucker-Scharff I, Kou Y, Haroutunian V, Ma'ayan A, Buxbaum JD, Darnell RB.",
+            citation: "eLife 2016 Feb 19;5 pii: e10421.",
+            ids: "PMID: 26894958",
             year: 2016
         },
 	{

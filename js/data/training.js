@@ -4,15 +4,13 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     var LINCS_MOOC_LINK = "https://www.coursera.org/course/bd2klincs",
         SYSBIO_MOOC_LINK = "https://www.coursera.org/course/netsysbio",
-        SUMMER_RESEARCH_LINK = "#/summer-research-app#nav",
         SUMMER_FELLOWS_LINK = "#/summer-fellows-2015#nav",
         SUMMER_PROGRAM_DESC = "#/summer-research-app#nav",
         GEO2Enrichr_LINK = "http://amp.pharm.mssm.edu/g2e/",
-	DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
-	Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
-	Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
-	FLYER_LINK = "static/dcic_summer_program.pdf",
-    
+        DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
+        Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
+        Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
+        FLYER_LINK = "static/dcic_summer_program.pdf",
         DIR = "/images/general/";
 
     $scope.introText = $sce.trustAsHtml("The BD2K-LINCS DCIC engages the research community by delivering high quality educational materials through the web as well as through mentoring, seminars and symposia. Also, Center investigators actively engage in the education of a new generation of Big Data Scientists by developing a graduate-level Big Data Science MOOC that will be delivered to graduate students in Big Data Biostatistics and other Biomedical Informatics graduate programs.");
@@ -20,7 +18,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.sections = [
 		{
             title: "Summer Research Training Program",
-            text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students. <strong>We are currently accepting applications for the summer 2016 session!</strong>" +
+            text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students." +
                 "<ul>" +
 		     "<li>" +
                         "<a href='" + FLYER_LINK + "'>2016 Program Flyer</a>" +
