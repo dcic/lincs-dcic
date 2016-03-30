@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-12">
             <h1>
-                Quick Start with LINCS <span style="font-size: 18px;" class="glyphicon glyphicon-question-sign"
+                Quick Start with LINCS Tools and Apps <span style="font-size: 18px;" class="glyphicon glyphicon-question-sign"
                     uib-popover-template="'view/partial/quick-start-description.html'"
                     popover-trigger="mouseenter"
                     popover-placement="bottom"></span>
@@ -14,7 +14,7 @@
     <div ng-controller="directAccessToolsCtrl">
         <div class="row">
             <div class="col-sm-4">
-                <h4>Search Signatures</h4>
+                <h4>Search L1000 Signatures</h4>
                 <tool tool-data="findTool('L1000CDS<sup>2</sup>')" tool-mode="" tool-buttons="none"></tool>
                 <h4>Cross-tool Examples</h4>
                 <!-- the up/down signature was taked from http://amp.pharm.mssm.edu/CREEDS/#downloads, first 20 -->
@@ -39,26 +39,26 @@
             <div class="col-sm-8">
                 <div class="row row-eq-height">
                     <div class="col-sm-6">
-                        <h4>Access Data</h4>
+                        <h4>Access All Data</h4>
                         <!-- <label> -->
                             <!-- Access Data -->
                         <tool tool-data="findTool('LINCS Data Portal')" tool-mode="" tool-buttons="none"></tool>
                         <!-- </label> -->
                     </div>
                     <div class="col-sm-6">
-                        <h4>Search Transcriptomics</h4>
+                        <h4>Search L1000 Metadata</h4>
                         <tool tool-data="findTool('Slicr')" tool-mode="" tool-buttons="none"></tool>
                     </div>
                 </div>
 
                 <div class="row row-eq-height">
                     <div class="col-sm-6">
-                        <h4>Analyze Data</h4>
+                        <h4>Analyze LINCS Data</h4>
                         <tool tool-data="findTool('iLINCS')" tool-mode="" tool-buttons="none"></tool>
                     </div>
 
                     <div class="col-sm-6">
-                        <h4>Visualize Proteomics</h4>
+                        <h4>Visualize and Access LINCS Proteomics Data</h4>
                         <tool tool-data="findTool('piLINCS')" tool-mode="" tool-buttons="none"></tool>
                     </div>
 
@@ -69,18 +69,18 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <h4>Access L1000</h4>
+                <h4>API Access to L1000 Data</h4>
                 <tool tool-data="findTool('Lincscloud')" tool-buttons="none"></tool>
             </div>
 
 
             <div class="col-sm-4">
-                <h4>Explore Center-specific Data</h4>
+                <h4>Explore HMS Center-Specific Data</h4>
                 <tool tool-data="findTool('HMS LINCS Database')" tool-buttons="none"></tool>
             </div>
 
             <div class="col-sm-4">
-                <h4>Find External Data</h4>
+                <h4>Find Knowledge About Genes and Proteins</h4>
                 <tool tool-data="findTool('Harmonizome')" tool-buttons="none"></tool>
             </div>
 
