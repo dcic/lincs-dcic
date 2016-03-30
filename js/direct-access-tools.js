@@ -271,7 +271,7 @@ mod.controller('directAccessToolsCtrl',
                 analysis: "Gene set enrichment analysis is performed using three alternative methods.",
                 search: "Gene symbols can be searched retrieving information about a single gene.",
                 api: "Analyses can be performed and results downloaded using the <a target='_blank' href='http://amp.pharm.mssm.edu/Enrichr/#help'>API</a>.",
-                publication: "<a target='_blank' href='http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-128'>Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool</a>."
+                publication: "<a target='_blank' href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3637064/'>Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool</a>."
                 // external: "Choose between a wide selection of external gene libraries such as Gene Ontologies for functional analysis."
             },
             modes: {
@@ -342,11 +342,12 @@ mod.controller('directAccessToolsCtrl',
                 search: "Search for L1000 experiments based on small-molecule compounds, time points, or cell lines.",
                 drugs: "A subset of L1000 small-molecule compounds.",
                 cells: "A subset of cell lines: MCF7, MCF10A, BT20, HS578T, MDAMB2, and SKBR3.",
-                external: "Gene set libraries such as Gene Ontology is analyzed for functional analysis of the L1000."
+                external: "Gene set libraries such as Gene Ontology is analyzed for functional analysis of the L1000.",
+                publication: "<a target='_blank' href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4086130/'>LINCS Canvas Browser: interactive web app to query, browse and interrogate LINCS L1000 gene expression signatures</a>"
             },
             modes: {
                 functionality: ["navigation", "search"],
-                content: ["drugs", "cells", "external"]
+                content: ["drugs", "cells", "external", "publication"]
             },
             directive: "Canvas-Browser-bar",
             cssClass: "lcb"
@@ -360,11 +361,12 @@ mod.controller('directAccessToolsCtrl',
                 navigation: "2D canvases show clustering of cell lines and small-molecule drugs across cancer tissue types.",
                 drugs: "A selection of anticancer small-molecule compounds from LINCS phase I: the MGH/Sanger and Heiser datasets.",
                 cells: "Human cancer cell lines deriving from numerous tissue types.",
-                external: "CCLE data."
+                external: "CCLE data.",
+                publication: "<a target='_blank' href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4221125/'>Drug/Cell-line Browser: interactive canvas visualization of cancer drug/cell-line viability assay datasets</a>"
             },
             modes: {
                 functionality: ["navigation"],
-                content: ["drugs", "cells"]
+                content: ["drugs", "cells", "publication"]
             },
             // directive: "DCB-bar",
             cssClass: "dcb"
@@ -453,11 +455,12 @@ mod.controller('directAccessToolsCtrl',
                 main: "A web application that provides an alternative way to view networks and visualizes them by placing nodes on a square toroidal canvas.",
                 analysis: "Simulated annealing of adjacency matrix onto toroidal sphere grid. The resulting 2D 'canvas' show similar network nodes next to each other. Analogous to self-organizing maps. Users can analyze their gene lists.",
                 navigation: "The resulting canvas is interactively visualized.",
-                external: "Canvases of gene set libraries are precomputed."
+                external: "Canvases of gene set libraries are precomputed.",
+                publication: "<a target='_blank' href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3712222/'>Network2Canvas: network visualization on a canvas with enrichment analysis</a>"
             },
             modes: {
                 functionality: ["analysis", "navigation"],
-                content: ["external"]
+                content: ["external", "publication"]
             },
             directive: "Network2Canvas-bar",
             cssClass: "network2canvas"
