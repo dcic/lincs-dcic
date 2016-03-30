@@ -423,28 +423,28 @@ mod.controller('directAccessToolsCtrl',
             // directive: "LDR-bar",
             cssClass: "ldr"
         },
-        // {
-        //     title: "Lincscloud",
-        //     url: "http://www.lincscloud.org/",
-        //     image: DIR + "cmap2.jpg",
-        //     description: {
-        //         main: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience.",
-        //         api: "For programmatic access refer to the <a target='_blank' href='http://api.lincscloud.org/'>API documentation</a>.",
-        //         analysis: "Web-based analysis of the L1000 dataset in the CLUE unified research environment. In development.",
-        //         search: "The API can be used for searching the L1000 dataset. Note that the direct access search only provides a small fraction of the functionality available through the API.",
-        //         download: "The entire L1000 dataset can be <a target='_blank' href='http://download.lincscloud.org/'>downloaded from Amazon S3</a>.",
-        //         drugs: "A collection of ~18000 small-molecule compounds.",
-        //         genetics: "Systematic RNAi/shRNA screens and cDNA overexpression screens.",
-        //         cells: "A wide range of cell lines.",
-        //         assay: "L1000 gene expression of ~1000 landmark genes and image-based morphology profiles."
-        //     },
-        //     modes: {
-        //         functionality: ["api", "analysis", "search", "download"],
-        //         content: ["drugs", "genetics", "cells"]
-        //     },
-        //     directive: "Lincscloud-bar",
-        //     cssClass: "lincscloud"
-        // },
+        {
+            title: "Lincscloud",
+            url: "http://www.lincscloud.org/",
+            image: DIR + "cmap2.jpg",
+            description: {
+                main: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience.",
+                api: "For programmatic access refer to the <a target='_blank' href='http://api.lincscloud.org/'>API documentation</a>.",
+                analysis: "Web-based analysis of the L1000 dataset in the CLUE unified research environment. In development.",
+                search: "The API can be used for searching the L1000 dataset. Note that the direct access search only provides a small fraction of the functionality available through the API.",
+                download: "The entire L1000 dataset can be <a target='_blank' href='http://download.lincscloud.org/'>downloaded from Amazon S3</a>.",
+                drugs: "A collection of ~18000 small-molecule compounds.",
+                genetics: "Systematic RNAi/shRNA screens and cDNA overexpression screens.",
+                cells: "A wide range of cell lines.",
+                assay: "L1000 gene expression of ~1000 landmark genes and image-based morphology profiles."
+            },
+            modes: {
+                functionality: ["api", "analysis", "search", "download"],
+                content: ["drugs", "genetics", "cells"]
+            },
+            directive: "Lincscloud-bar",
+            cssClass: "lincscloud"
+        },
         {
             title: "Network2Canvas",
             url: "http://www.maayanlab.net/N2C/",
@@ -475,27 +475,27 @@ mod.controller('directAccessToolsCtrl',
                 functionality: ["collaboration", "education"],
                 // content: [""]
             }
+        },
+        {
+            title: "HMS LINCS Database",
+            url: "http://lincs.hms.harvard.edu/db/",
+            image: DIR + "hms_lincs.png",
+            description: {
+                main: "Harvard Medical School's LINCS database.",
+                search: "General text-based search. Find datasets and information about experimental reagents. Small-molecule compounds can be queried based on SMILES.",
+                download: "Data is hosted on the web-site and can be downloaded.",
+                api: "Programmatic access is detailed in the <a target='_blank' href='https://docs.google.com/document/d/1R_d_1UWO0C9y1TceXpKIUkhjk08DfvP1D19txi4Tbas/edit'>URL Scheme and Access Guide</a>.",
+                assays: "The available data are focused on dose-dependence and dynamics of responses to small-molecule perturbations. It primarily has data on biochemical binding assays and microscopy imaging measuring cell viability.",
+                drugs: "A wide range of small-molecule compounds.",
+                cells: "A wide range of cell lines."
+            },
+            modes: {
+                functionality: ["search", "download", "api"],
+                content: ["assays", "drugs", "cells"]
+            },
+            directive: "HMS-DB-bar",
+            cssClass: "hms-db"
         }
-        // {
-        //     title: "HMS LINCS Database",
-        //     url: "http://lincs.hms.harvard.edu/db/",
-        //     image: DIR + "hms_lincs.png",
-        //     description: {
-        //         main: "Harvard Medical School's LINCS database.",
-        //         search: "General text-based search. Find datasets and information about experimental reagents. Small-molecule compounds can be queried based on SMILES.",
-        //         download: "Data is hosted on the web-site and can be downloaded.",
-        //         api: "Programmatic access is detailed in the <a target='_blank' href='https://docs.google.com/document/d/1R_d_1UWO0C9y1TceXpKIUkhjk08DfvP1D19txi4Tbas/edit'>URL Scheme and Access Guide</a>.",
-        //         assays: "The available data are focused on dose-dependence and dynamics of responses to small-molecule perturbations. It primarily has data on biochemical binding assays and microscopy imaging measuring cell viability.",
-        //         drugs: "A wide range of small-molecule compounds.",
-        //         cells: "A wide range of cell lines."
-        //     },
-        //     modes: {
-        //         functionality: ["search", "download", "api"],
-        //         content: ["assays", "drugs", "cells"]
-        //     },
-        //     directive: "HMS-DB-bar",
-        //     cssClass: "hms-db"
-        // },
     ];
 
 
