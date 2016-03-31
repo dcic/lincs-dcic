@@ -426,11 +426,11 @@ mod.controller('directAccessToolsCtrl',
             cssClass: "ldr"
         },
         {
-            title: "Lincscloud",
+            title: "lincscloud",
             url: "http://www.lincscloud.org/",
             image: DIR + "cmap2.jpg",
             description: {
-                main: "Lincs cloud is designed to make LINCS L1000 data accessible to a wide audience.",
+                main: "lincscloud is designed to make LINCS L1000 data accessible to a wide audience.",
                 api: "For programmatic access refer to the <a target='_blank' href='http://api.lincscloud.org/'>API documentation</a>.",
                 analysis: "Web-based analysis of the L1000 dataset in the CLUE unified research environment. In development.",
                 search: "The API can be used for searching the L1000 dataset. Note that the direct access search only provides a small fraction of the functionality available through the API.",
