@@ -38,7 +38,8 @@
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="style/side.css">
 	<link rel="stylesheet" href="style/getting-started.css">
-	<link rel="stylesheet" href="style/tool-directive.css">
+	<!-- <link rel="stylesheet" href="style/tool-directive.css"> -->
+	<link rel="stylesheet" href="libs/lincs-direct-access-tools/direct-access-tools.css">
 
     <!-- Google Analytics -->
 	<script>
@@ -87,6 +88,14 @@
 	<script src="/lib/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
 	<script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script>
 
+	<!-- Angular-strap by module, to avoid namespace clashed with ui-bootstrap -->
+	<script src="/lib/bower_components/angular-strap/dist/modules/compiler.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/dimensions.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/tooltip.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/tooltip.tpl.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/popover.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/popover.tpl.min.js"></script>
+
 		
 	<!-- ************************ Application ************************ -->
 	<!-- Data -->
@@ -119,7 +128,8 @@
 	<script type="text/javascript" src="js/edsrapp.js"></script>
 	<script type="text/javascript" src="js/filters.js"></script>
     <script type="text/javascript" src="js/getting-started.js"></script>
-	<script type="text/javascript" src="js/direct-access-tools.js"></script>
+	<script type="text/javascript" src="libs/lincs-direct-access-tools/direct-access-tools.js"></script>
+	<script type="text/javascript" src="libs/lincs-direct-access-tools/concierge.js"></script>
 
 	<!-- Routes -->
 	<script type="text/javascript" src="js/app.js"></script>
