@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="/lib/bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/lib/bower_components/bootstrap-social/bootstrap-social.css">
 	<link rel="stylesheet" href="/lib/bower_components/fullcalendar/dist/fullcalendar.min.css">
-	<link rel="stylesheet" href="/lib/ngTagsInput/ng-tags-input.min.css"/>
+	<link rel="stylesheet" href="/lib/bower_components/ng-tags-input/ng-tags-input.min.css"/>
     <link rel="stylesheet" href="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css">
     <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <!-- Handwritten font -->
@@ -81,7 +81,7 @@
 	<script src="/lib/bower_components/bootstrap/js/carousel.js"></script>
 	<script src="/lib/bower_components/bootstrap/js/transition.js"></script>
 	<script src="/lib/bower_components/underscore/underscore-min.js"></script>
-	<script src="/lib/ngTagsInput/ng-tags-input.min.js"></script>
+	<script src="/lib/bower_components/ng-tags-input/ng-tags-input.min.js"></script>
 	<!-- <script src="/lib/twitter-fetcher.min.js"></script> -->
 	<script src="/lib/bower_components/twitter-fetcher/js/twitterFetcher_min.js"></script>
 	<script src="/lib/bower_components/d3/d3.min.js"></script>
