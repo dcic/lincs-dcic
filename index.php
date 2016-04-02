@@ -67,9 +67,20 @@
     <div ng-include="'view/partial/footer.html'"></div>
     
 	<!-- Libraries -->
+
+
 	<script src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 	<script src="/lib/bower_components/angular/angular.js"></script>
+
+	<!-- Angular-strap by module, to avoid namespace clashed with ui-bootstrap -->
+	<script src="/lib/bower_components/angular-strap/dist/modules/compiler.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/dimensions.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/tooltip.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/tooltip.tpl.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/popover.min.js"></script>
+	<script src="/lib/bower_components/angular-strap/dist/modules/popover.tpl.min.js"></script>
+
 	<script src="/lib/bower_components/angular-route/angular-route.js"></script>
 	<link href="/lib/bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet"/>
 	<script src="/lib/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
@@ -86,15 +97,8 @@
 	<script src="/lib/bower_components/twitter-fetcher/js/twitterFetcher_min.js"></script>
 	<script src="/lib/bower_components/d3/d3.min.js"></script>
 	<script src="/lib/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
-	<script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script>
+	<!-- <script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script> -->
 
-	<!-- Angular-strap by module, to avoid namespace clashed with ui-bootstrap -->
-	<script src="/lib/bower_components/angular-strap/dist/modules/compiler.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/dimensions.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/tooltip.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/tooltip.tpl.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/popover.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/popover.tpl.min.js"></script>
 
 		
 	<!-- ************************ Application ************************ -->
