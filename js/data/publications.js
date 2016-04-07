@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
         {
+            title: "GUIdock: Using Docker containers with a common graphics user interface to address the reproducibility of research",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/27045593",
+            authors: "Hung LH, Kristiyanto D, Lee SB, Yeung KY.",
+            citation: "PLoS One 2016 Apr 5;11(4):e0152686.",
+            ids: "PMID: 27045593",
+            year: 2016
+        },
+        {
             title: "Signaling networks among stem cell precursors, transit-amplifying progenitors, and their niche in developing hair follicles",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27009580",
             authors: "Rezza A, Wang Z, Sennett R, Qiao W, Wang D, Heitman N, Mok KW, Clavel C, Yi R, Zandstra P, Ma'ayan A, Rendl M.",
