@@ -3,7 +3,17 @@ var mod = angular.module("workshopsEtcMod", []);
 mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.workshops = [
-        {
+	{
+            title: 'Clustergrammer: A Web-Based Visualization Tool for Making and Sharing Interactive Clustered Heatmaps',
+            description: $sce.trustAsHtml('Nicolas Fernandez PhD, a postdoc in the Ma\'ayan Laboratory held this workshop at the <a href="http://www.meetup.com/NYC-D3-JS/events/228735523/" target="_blank">NYC D3.js Meetup</a>.'),
+            details: 'February 22, 2016, New York, NY'
+        },
+	{
+            title: 'UHack',
+            description: $sce.trustAsHtml('Members of the BD2K-LINCS DCIC at the Unversity of Miami sponsored and participated in the 24 hour <a href="http://coe.miami.edu/uhack2016/" target="_blank">hackathon</a> at the University of Miami.'),
+            details: 'February 20-21, 2016, Miami, FL'
+        },
+	{
             title: 'SAMSI Innovation Workshop: Interdisciplinary Approaches to Biomedical Data Science Challenges',
             description: $sce.trustAsHtml('Stephan Schurer PhD, served as a mentor in this <a href="http://www.samsi.info/workshop/interdisciplinary-approaches-biomedical-data-science-challenges-samsi-innovations-lab-july-" target="_blank">workshop</a> to guide scientists in the formation of interdisciplinary projects aimed at developing models, methods, and approaches to overcome biomedical data science challenges. During the course of the workshop, participants were exposed to LINCS resources.'),
             details: 'July 20-24, 2015, Research Triangle Park, NC'
@@ -16,10 +26,20 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.symposia = [
-         {
+        {
+            title: 'LINCS Outreach Meeting',
+            description: $sce.trustAsHtml('Members of the BD2K-LINCS DCIC delivered <a href="https://www.youtube.com/watch?v=U28Poi-oerI&list=PLQw7KTnzkpXdpO1WMpW8fJeriqZEuFR1i&index=5" target="_blank">talks</a> and held a breakout session on data analysis, visualization and integration and presented posters at the LINCS Outreach Meeting at the University of California, Irvine.'),
+            details: 'March 10-11, 2016, Irvine, CA'
+        },
+	{
             title: 'Systems Biology Data Science Symposium',
-            description: $sce.trustAsHtml('This first <a href="#/2016-data-science-symposium" target="_blank">Systems Biology Data Science Symposium</a> at the University of Miami will bring together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
+            description: $sce.trustAsHtml('This first <a href="#/2016-data-science-symposium" target="_blank">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
             details: 'January 19-20, 2016, Coral Gables, FL'
+        },
+	{
+            title: 'BD2K All Hands Grantee Meeting',
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="http://www.scgcorp.com/BD2K2015/" target="_blank">BD2K 2015 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
+            details: 'November 12-13, 2015, Bethesda, MD'
         },
 	{
             title: 'Big Data Symposium: Convergence of Science, Technology and Data Sciences – Impact on Pharma',
@@ -40,14 +60,29 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.conferences = [
         {
+            title: 'Molecular Medicine Tri-Conference',
+            description: $sce.trustAsHtml('Avi Ma\'ayan PhD presented "L1000CDS2: LINCS L1000 Characteristic Direction Signature Search Engine Predicts Kenpaullone as a Potential Therapeutic for Ebola" as part of the <a href="http://www.triconference.com/Bioinformatics-Big-Data/#Day2" target="_blank">Bioinformatics for Big Data</a> session in the Informatics channel.'),
+            details: 'March 8, 2016, San Francisco, CA'
+        },
+	{
+            title: 'Molecular Medicine Tri-Conference',
+            description: $sce.trustAsHtml('Stephan Schurer PhD presented "Rational Data-Driven Development of Novel Poly-Pharmacology Small Molecules" as part of the <a href="http://www.triconference.com/Integrated-Pharma-Informatics/" target="_blank">Integrated Informatics Driving Translational Research and Precision Medicine</a> session in the Informatics channel.'),
+            details: 'March 8, 2016, San Francisco, CA'
+        },
+	{
             title: 'AACR Special Conference on Computational and Systems Biology of Cancer',
             description: $sce.trustAsHtml('Avi Ma\'ayan PhD presented "Lean Data Integration Strategy in Cancer Systems Biology and Systems Pharmacology" as part of the <a href="http://www.aacr.org/Meetings/Pages/Program-Detail.aspx?EventItemID=29&DetailItemID=180&Day=02102015#.VcpaLXFVhBc" target="_blank">Modeling and Interrogating Cancer Regulatory Network</a> session.'),
             details: 'February 10, 2015, San Francisco, CA'
         }
     ];
 
-    $scope.seminars = [
-        {
+    $scope.seminars = [	
+	{
+            title: 'Data Integration for Systems Pharmacology',
+            description: $sce.trustAsHtml('Avi Ma\'ayan PhD was an invited speaker for the Department of Medicine\'s Research Seminar Series at Stony Brook School of Medicine.'),
+            details: 'January 12, 2016, Stony Brook, NY'
+        },
+	{
             title: 'Community Science Project to Link Drugs, Targets and Diseases from Expression Signatures',
             description: $sce.trustAsHtml('Avi Ma’ayan PhD was an invited speaker for the Computational Biology Seminar Series at IBM T.J. Watson Research Center.'),
             details: 'March 4, 2015, Yorktown Heights, NY'
