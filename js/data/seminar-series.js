@@ -4,6 +4,14 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.seminars = [
         {
+            date: 'May 18, 2016',
+            time: '4:00 p.m.',
+            location: 'Icahn School of Medicine at Mount Sinai',
+            speakerName: 'St Patrick Reid, PhD',
+            speakerTitle: 'Research Scientist, Department of of Molecular and Translational Sciences Division, U.S. Army Medical Research Institute of Infectious Diseases (USAAMRIID)',
+            title: 'Elucidating Pathogen-Host Interactions in Emerging Highly Pathogenic Viruses'
+        },
+        {
             date: 'July 9, 2015',
             time: '3:00 p.m.',
             location: 'Icahn School of Medicine at Mount Sinai',
