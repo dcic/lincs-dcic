@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	{
+            title: "Drug induced adverse events prediction with the LINCS L1000 data",
+            url: "http://bioinformatics.oxfordjournals.org/content/early/2016/04/01/bioinformatics.btw168.abstract",
+            authors: "Wang Z, Clark NR, Ma'ayan A.",
+            citation: "Bioinformatics 2016 Apr doi:10.1093/bioinformatics/btw168",
+            ids: "",
+            year: 2016
+        },
+	{
             title: "GUIdock: Using Docker containers with a common graphics user interface to address the reproducibility of research",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27045593",
             authors: "Hung LH, Kristiyanto D, Lee SB, Yeung KY.",
