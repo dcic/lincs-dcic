@@ -54,7 +54,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/Slicr",
             target: "_blank",
             image: DIR + "slicr2.png",
-            shortDesc: "LINCS L1000 Slicer [GSE70138 data only]"
+            shortDesc: "LINCS L1000 Slicr [GSE70138 data only]"
         },
         {
             title: "L1000CDS2",
@@ -64,6 +64,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "l1000cds2.png",
             shortDesc: "L1000 Characteristic Direction Signature Search Engine",
             isHtml: true
+        },
+	 {
+            title: "SEP L1000",
+            description: "SEP L1000 is a web portal to share predicted ADRs.",
+            url: "http://maayanlab.net/SEP-L1000/",
+            target: "_blank",
+            image: DIR + "sep.png",
+            shortDesc: "Side Effect Prediction Based on L1000 Data"
         },
         {
             title: "PAEA",
