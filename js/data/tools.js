@@ -48,7 +48,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "pilincs.png",
             shortDesc: "Interface to panoramaweb.org"
         },
-	{
+        {
             title: "Slicr",
             description: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
             url: "http://amp.pharm.mssm.edu/Slicr",
@@ -64,6 +64,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "l1000cds2.png",
             shortDesc: "L1000 Characteristic Direction Signature Search Engine",
             isHtml: true
+        },
+        {
+            title: "SEP L1000",
+            description: "SEP L1000 is a web portal to share predicted ADRs.",
+            url: "http://maayanlab.net/SEP-L1000/",
+            target: "_blank",
+            image: DIR + "sep.png",
+            shortDesc: "Side Effect Prediction Based on L1000 Data"
         },
         {
             title: "PAEA",
