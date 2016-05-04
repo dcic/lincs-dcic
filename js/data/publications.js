@@ -3,7 +3,7 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	{
-            title: "Enrichr: a comprehensive gene set enrichment analyis web server 2016 update",
+            title: "Enrichr: a comprehensive gene set enrichment analysis web server 2016 update",
             url: "http://nar.oxfordjournals.org/content/early/2016/05/03/nar.gkw377.abstract",
             authors: "Kuleshov MV, Jones MR, Rouillard AD, Fernandez NF, Duan Q, Wang Z, Koplev S, Jenkins SL, Jagodnik KM, Lachmann A, McDermott M, Monteiro CD, Gundersen GW, Ma'ayan A.",
             citation: "Nucleic Acids Research 2016 May doi: 10.1093/nar/gkw377",
