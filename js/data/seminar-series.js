@@ -8,8 +8,16 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
             time: '4:00 p.m.',
             location: 'Icahn School of Medicine at Mount Sinai',
             speakerName: 'St Patrick Reid, PhD',
-            speakerTitle: 'Research Scientist, Department of of Molecular and Translational Sciences Division, U.S. Army Medical Research Institute of Infectious Diseases (USAAMRIID)',
+            speakerTitle: 'Research Scientist, Department of Molecular and Translational Sciences Division, U.S. Army Medical Research Institute of Infectious Diseases (USAAMRIID)',
             title: 'Elucidating Pathogen-Host Interactions in Emerging Highly Pathogenic Viruses'
+        },
+        {
+            date: 'May 17, 2016',
+            time: '4:00 p.m.',
+            location: 'Icahn School of Medicine at Mount Sinai',
+            speakerName: 'Reka Albert, PhD',
+            speakerTitle: 'Distinguished Professor, Departments of Physics and Biology, Pennsylvania State University',
+            title: 'Model-Based Control of Disease-Related Signal Transduction Networks'
         },
         {
             date: 'July 9, 2015',
