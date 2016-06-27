@@ -113,6 +113,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "drug-cell-line-browser.png",
             shortDesc: "Data Visualization Tool"
         },
+	{
+            title: "GUIdock",
+            description: "A method for deploying containers with a graphical user interface.",
+            url: "https://github.com/WebDataScience/GUIdock",
+            target: "_blank",
+            image: DIR + "gui_dock.fw.png",
+            shortDesc: "Using Docker Containers with a Common Graphics User Interface to Address the Reproducibility of Research"    
+        },
         {
             title: "Network2Canvas",
             description: "A web application that provides an alternative way to view networks and visualizes them by placing nodes on a square toroidal canvas.",
