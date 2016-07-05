@@ -4,18 +4,18 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
         {
             title: "Enrichr: a comprehensive gene set enrichment analysis web server 2016 update",
-            url: "http://nar.oxfordjournals.org/content/early/2016/05/03/nar.gkw377.abstract",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/27141961",
             authors: "Kuleshov MV, Jones MR, Rouillard AD, Fernandez NF, Duan Q, Wang Z, Koplev S, Jenkins SL, Jagodnik KM, Lachmann A, McDermott M, Monteiro CD, Gundersen GW, Ma'ayan A.",
             citation: "Nucleic Acids Research 2016 May doi: 10.1093/nar/gkw377",
-            ids: "",
+            ids: "PMID: 27141961",
             year: 2016
         },
         {
             title: "Drug induced adverse events prediction with the LINCS L1000 data",
-            url: "http://bioinformatics.oxfordjournals.org/content/early/2016/04/01/bioinformatics.btw168.abstract",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/27153606",
             authors: "Wang Z, Clark NR, Ma'ayan A.",
             citation: "Bioinformatics 2016 Apr doi: 10.1093/bioinformatics/btw168",
-            ids: "",
+            ids: "PMID: 27153606",
             year: 2016
         },
         {
