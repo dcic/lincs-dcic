@@ -6,12 +6,20 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
     var DIR = '/images/carousel/';
 
     $scope.slides = [
+        // {
+        //     index: 0,
+        //     image: DIR + 'bubble-graph.png',
+        //     title: 'Big Data Science Course',
+        //     caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
+        //     link: 'https://www.coursera.org/course/bd2klincs',
+        //     target: '_blank'
+        // },
         {
             index: 0,
             image: DIR + 'bubble-graph.png',
-            title: 'Big Data Science Course',
-            caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
-            link: 'https://www.coursera.org/course/bd2klincs',
+            title: 'PhD Program in Big Data at UC',
+            caption: 'The Big Data Biostatistics program aims to train the next generation of biomedical data scientists.',
+            link: 'https://med.uc.edu/eh/divisions/bio/programs/phd-biostatistics-big-data-track',
             target: '_blank'
         },
         {
