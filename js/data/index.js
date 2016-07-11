@@ -118,9 +118,14 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + 'summer.png',
             description: 'Our Center actively engages the research community by delivering data science courses as well as through mentoring trainees.',
             links: [
+                // {
+                //     title: 'Data Science Course on Coursera',
+                //     url: 'https://www.coursera.org/course/bd2klincs',
+                //     target: '_blank'
+                // },
                 {
-                    title: 'Data Science Course on Coursera',
-                    url: 'https://www.coursera.org/course/bd2klincs',
+                    title: 'PhD Program in Big Data at UC',
+                    url: 'https://med.uc.edu/eh/divisions/bio/programs/phd-biostatistics-big-data-track',
                     target: '_blank'
                 },
                 {
