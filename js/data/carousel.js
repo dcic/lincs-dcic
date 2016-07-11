@@ -6,14 +6,6 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
     var DIR = '/images/carousel/';
 
     $scope.slides = [
-        // {
-        //     index: 0,
-        //     image: DIR + 'bubble-graph.png',
-        //     title: 'Big Data Science Course',
-        //     caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
-        //     link: 'https://www.coursera.org/course/bd2klincs',
-        //     target: '_blank'
-        // },
         {
             index: 0,
             image: DIR + 'bubble-graph.png',
