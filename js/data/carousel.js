@@ -1,16 +1,25 @@
-var mod = angular.module("carouselMod", []);
+
+var mod = angular.module("carouselMod", ["ui.bootstrap"]);
 
 mod.controller("carouselCtrl", ["$scope", function($scope) {
 
     var DIR = '/images/carousel/';
 
     $scope.slides = [
+        // {
+        //     index: 0,
+        //     image: DIR + 'bubble-graph.png',
+        //     title: 'Big Data Science Course',
+        //     caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
+        //     link: 'https://www.coursera.org/course/bd2klincs',
+        //     target: '_blank'
+        // },
         {
             index: 0,
             image: DIR + 'bubble-graph.png',
-            title: 'Big Data Science Course',
-            caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
-            link: 'https://www.coursera.org/course/bd2klincs',
+            title: 'PhD Program in Big Data at UC',
+            caption: 'The Big Data Biostatistics program aims to train the next generation of biomedical data scientists.',
+            link: 'https://med.uc.edu/eh/divisions/bio/programs/phd-biostatistics-big-data-track',
             target: '_blank'
         },
         {
@@ -32,14 +41,14 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 3,
             image: DIR + 'summer-fellows-2015.png',
             title: 'Summer Research Program',
-            caption: 'The 2016 BD2K-LINCS DCIC Summer Research Training Program begins June 6.',
+            caption: 'The 2016 BD2K-LINCS DCIC Summer Research Training Program runs June 6 - August 12.',
             link: '#/summer-research-app#nav'
         }
     ];
 
     $(function() {
-       $('#carousel').carousel({
-           interval: 5000
+       $('#carousel').carousel( {
+           interval: 10000
        });
     });
 }]);

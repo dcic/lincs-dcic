@@ -3,10 +3,18 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	{
+            title: "The harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/27374120",
+            authors: "Rouillard AD, Gundersen GW, Fernandez NF, Wang Z, Monteiro CD, McDermott MG, Ma'ayan A.",
+            citation: "Database (Oxford) 2016 Jul 3 pii: baw100",
+            ids: "PMID: 27374120 | PMC4930834",
+            year: 2016
+        },
+	{
             title: "Enrichr: a comprehensive gene set enrichment analysis web server 2016 update",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27141961",
             authors: "Kuleshov MV, Jones MR, Rouillard AD, Fernandez NF, Duan Q, Wang Z, Koplev S, Jenkins SL, Jagodnik KM, Lachmann A, McDermott M, Monteiro CD, Gundersen GW, Ma'ayan A.",
-            citation: "Nucleic Acids Research 2016 May doi: 10.1093/nar/gkw377",
+            citation: "Nucleic Acids Research 2016 Jul 8;44(W1):W90-7",
             ids: "PMID: 27141961",
             year: 2016
         },

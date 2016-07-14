@@ -11,7 +11,16 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
     };
 
 	$scope.stories = formatStories([
-        {
+         {
+            title: "Back on the Road with Coursera",
+            source: "ASBMB Today",
+            url: "http://www.asbmb.org/asbmbtoday/201606/Coordinates/",
+            target: "_blank",
+            date: "6/29/2016",
+            mainText: "",
+            image: DIR + "carol_m_img.fw.png"
+        },
+	{
             title: "BD2K-LINCS DCIC's First Annual Systems Biology Data Science Symposium",
             source: "University of Miami News",
             url: "http://med.miami.edu/news/sylvester-director-delivers-keynote-address-at-first-annual-systems-biology",

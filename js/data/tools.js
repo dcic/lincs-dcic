@@ -65,13 +65,21 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "L1000 Characteristic Direction Signature Search Engine",
             isHtml: true
         },
-	 {
+	{
             title: "SEP L1000",
             description: "SEP L1000 is a web portal to share predicted ADRs.",
             url: "http://maayanlab.net/SEP-L1000/",
             target: "_blank",
             image: DIR + "sep.png",
             shortDesc: "Side Effect Prediction Based on L1000 Data"
+        },
+	{
+            title: "CREEDS",
+            description: "Collections of processed gene, drug and disease signatures from GEO.",
+            url: "http://amp.pharm.mssm.edu/CREEDS/",
+            target: "_blank",
+            image: DIR + "creeds_logo.fw.png",
+            shortDesc: "Crowd Extracted Expression of Differential Signatures"
         },
         {
             title: "PAEA",
