@@ -46,7 +46,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://lincs-dcic.org/#/getting-started/concierge",
             target: "_blank",
             image: DIR + "concierge_bell.svg",
-            shortDesc: "Interactive introduction to LINCS tools and resources"    
+            shortDesc: "Interactive Introduction to LINCS Tools and Resources"    
         },
         {
             title: "piLINCS",
