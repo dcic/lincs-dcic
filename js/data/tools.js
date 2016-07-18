@@ -41,6 +41,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Access to LINCS Data and Signatures"
         },
         {
+            title: "Concierge",
+            description: "Provides multiple points of entry to the LINCS tools and databases.",
+            url: "http://lincs-dcic.org/#/getting-started/concierge",
+            target: "_blank",
+            image: DIR + "concierge_bell.svg",
+            shortDesc: "Interactive introduction to LINCS tools and resources"    
+        },
+        {
             title: "piLINCS",
             description: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
             url: "http://eh3.uc.edu/pilincs",
@@ -113,7 +121,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "drug-cell-line-browser.png",
             shortDesc: "Data Visualization Tool"
         },
-	{
+        {
             title: "GUIdock",
             description: "A method for deploying containers with a graphical user interface.",
             url: "https://github.com/WebDataScience/GUIdock",
