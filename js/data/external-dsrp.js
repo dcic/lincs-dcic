@@ -30,8 +30,8 @@ mod.controller("externalDsrpCtrl", ["$scope", function($scope) {
                     text: 'Collect and process the data related to LINCS cell lines. Such information would include tissue and organism origins, cell membrane protein markers, gene mutations, up- or down-regulated genes, cell culturing conditions. The information may be extracted from LINCS websites and other resources such as the ATCC and biomedical literature. Ontologically represent the collected LINCS-related cell line information in CLO. Provide SPARQL query demonstrations on how the LINCS-related cell line information can be easily queried and analyzed.'
                 },
                 {
-                    title: 'Expand CLO to cover LINCS-related cell line information',
-                    text: 'Collect and ontologically represent and analyze cell responses induced by drug perturbations, exampled by the treatment of neuropathy-inducing chemical drugs. Generate top level ontology models and metadata standards to represent cell line responses induced by chemical drugs. Case study will focus on neuropathy-inducing chemical drugs, which have been collected and represented in the Ontology of Drug Neuropathy Adverse Events (ODNAE). Collect drug/cell-related data (e.g., cellular targets of drugs, drug-gene-cell-phenotype links) from LINCS and other resources and ontologically represent the data based on established ontology models.'
+                    title: 'Collect and ontologically represent and analyze cell responses induced by drug perturbations, exampled by the treatment of neuropathy-inducing chemical drugs',
+                    text: 'Generate top level ontology models and metadata standards to represent cell line responses induced by chemical drugs. Case study will focus on neuropathy-inducing chemical drugs, which have been collected and represented in the Ontology of Drug Neuropathy Adverse Events (ODNAE). Collect drug/cell-related data (e.g., cellular targets of drugs, drug-gene-cell-phenotype links) from LINCS and other resources and ontologically represent the data based on established ontology models.'
                 }
             ]
         },
