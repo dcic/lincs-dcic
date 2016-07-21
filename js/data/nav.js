@@ -20,6 +20,10 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
                     // target: '_self'
                 },
                 {
+                    title: 'Team',
+                    url: '#/about#team'
+                },
+                {
                     title: 'Internal Projects',
                     url: '#/internal-dsrp#nav'
                 },
