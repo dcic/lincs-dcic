@@ -1,9 +1,9 @@
-var mod = angular.module("summerFellowsMod", []);
+var mod = angular.module("summerFellows2015Mod", []);
 
-mod.controller("summerFellowsCtrl", ["$scope", "$sce", function($scope, $sce) {
+mod.controller("summerFellows2015Ctrl", ["$scope", "$sce", function($scope, $sce) {
 
     var SUMMER_RESEARCH_LINK = "#/summer-research-app",
-        DIR = "/images/summer-fellows/",
+        DIR = "/images/summer-fellows/2015/",
         MAAYAN_LAB = "Avi Ma'ayan PhD, Icahn School of Medicine at Mount Sinai",
         MAAYAN_LAB_LINK = "http://icahn.mssm.edu/research/labs/maayan-laboratory",
         CMU = "Carnegie Mellon University",
