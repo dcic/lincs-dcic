@@ -4,6 +4,11 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.workshops = [
 	{
+            title: 'Clustergrammer: Interactive Heatmap Visualizations Built using D3.js',
+            description: $sce.trustAsHtml('Nicolas Fernandez PhD, a postdoc in the Ma\'ayan Laboratory held this workshop session at the <a href="http://dataviz.camp/" target="_blank">Data Visualization Camp</a>.'),
+            details: 'July 9, 2016, New York, NY'
+        },
+	{
             title: 'Clustergrammer: A Web-Based Visualization Tool for Making and Sharing Interactive Clustered Heatmaps',
             description: $sce.trustAsHtml('Nicolas Fernandez PhD, a postdoc in the Ma\'ayan Laboratory held this workshop at the <a href="http://www.meetup.com/NYC-D3-JS/events/228735523/" target="_blank">NYC D3.js Meetup</a>.'),
             details: 'February 22, 2016, New York, NY'
