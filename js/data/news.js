@@ -12,35 +12,44 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
 	$scope.stories = formatStories([
 		{
-			title: "BD2K-LINCS DCIC's First Annual Systems Biology Data Science Symposium",
-			source: "University of Miami News",
-			url: "http://med.miami.edu/news/sylvester-director-delivers-keynote-address-at-first-annual-systems-biology",
-			target: "_blank",
-			date: "2/23/2016",
-			mainText: "",
-			image: DIR + "dcic_symposium_group.png"
-		},
+            title: "Back on the Road with Coursera",
+            source: "ASBMB Today",
+            url: "http://www.asbmb.org/asbmbtoday/201606/Coordinates/",
+            target: "_blank",
+            date: "6/29/2016",
+            mainText: "",
+            image: DIR + "carol_m_img.fw.png"
+        },
 		{
-			title: "Genetics: Big Hopes for Big Data",
-			source: "Nature | Outlook",
-			url: "http://www.nature.com/nature/journal/v527/n7578_supp/full/527S108a.html",
-			target: "_blank",
-			date: "11/19/2015",
-			mainText: "",
-			image: DIR + "nature_outlook_cover.png"
-		},
-		{
-			title: "\"The characteristic direction: a geometrical approach to identify differentially expressed genes\" has been recommended in F1000Prime as being of special significance in its field by F1000 Faculty Member Charles Auffray",
-			source: "F1000 Prime",
-			url: "http://f1000.com/prime/718324928?subscriptioncode=73f1be84-cf1b-47e0-87d4-8ce34f95c9fc",
-			target: "_blank",
-			date: "3/10/2015",
-			mainText: "",
-			image: DIR + "chdir.png"
-		},
-		{
-			title: "NIH Launches a United Ecosystem for Big Data",
-			source: "Biomedical Computation Review",
+            title: "BD2K-LINCS DCIC's First Annual Systems Biology Data Science Symposium",
+            source: "University of Miami News",
+            url: "http://med.miami.edu/news/sylvester-director-delivers-keynote-address-at-first-annual-systems-biology",
+            target: "_blank",
+            date: "2/23/2016",
+            mainText: "",
+            image: DIR + "dcic_symposium_group.png"
+        },
+	 	{
+            title: "Genetics: Big Hopes for Big Data",
+            source: "Nature | Outlook",
+            url: "http://www.nature.com/nature/journal/v527/n7578_supp/full/527S108a.html",
+            target: "_blank",
+            date: "11/19/2015",
+            mainText: "",
+            image: DIR + "nature_outlook_cover.png"
+        },
+	 	{
+            title: "\"The characteristic direction: a geometrical approach to identify differentially expressed genes\" has been recommended in F1000Prime as being of special significance in its field by F1000 Faculty Member Charles Auffray",
+            source: "F1000 Prime",
+            url: "http://f1000.com/prime/718324928?subscriptioncode=73f1be84-cf1b-47e0-87d4-8ce34f95c9fc",
+            target: "_blank",
+            date: "3/10/2015",
+            mainText: "",
+            image: DIR + "chdir.png"
+        },
+        {
+            title: "NIH Launches a United Ecosystem for Big Data",
+		    source: "Biomedical Computation Review",
 			url: "http://biomedicalcomputationreview.org/content/nih-launches-united-ecosystem-big-data",
 			target: "_blank",
 			date: "1/8/2015",

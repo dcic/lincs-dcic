@@ -3,13 +3,20 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
         {
-            date: '28 June 2016 | 3:00 PM ET',
-            topic: 'Systematic Validation of Multiscale Gene Networks using the LINCS Gene Perturbation Data',
-            presenters: 'Bin Zhang PhD, Icahn School of Medicine at Mount Sinai'
+            date: '29 November 2016 | 3:00 PM ET',
+            topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
+            presenters: 'Jeff Saucerman PhD, University of Virginia (DCIC External Data Science Research Project)'
         }
     ];
 
     $scope.pastWebinars = [   
+        {
+            date: '28 June 2016',
+            topic: 'Systematic Validation of Multiscale Gene Networks using the LINCS Gene Perturbation Data',
+            presenters: 'Bin Zhang PhD, Icahn School of Medicine at Mount Sinai',
+            synopsis: 'Increasingly available large-scale Omics data has made it possible to construct predictive molecular networks for systematically uncovering novel pathways and targets in biological systems and complex human diseases. However, systematic validation of the predicted network structures and their functions remains a major bottleneck in network biology. In this talk, I will first introduce multiscale network modeling approaches to analyze large Omics data and then highlight how to systematically validate cancer gene networks using the gene perturbation data in LINCS.',
+            link:'https://www.youtube.com/watch?v=TnZ8V0rHsTQ'
+        }, 
         {
             date: '24 May 2016',
             topic: 'Detection and Removal of Spatial Bias in Multi-well Assays',

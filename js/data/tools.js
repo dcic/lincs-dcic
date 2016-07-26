@@ -82,6 +82,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Side Effect Prediction Based on L1000 Data"
         },
         {
+            title: "CREEDS",
+            description: "Collections of processed gene, drug and disease signatures from GEO.",
+            url: "http://amp.pharm.mssm.edu/CREEDS/",
+            target: "_blank",
+            image: DIR + "creeds_logo.fw.png",
+            shortDesc: "Crowd Extracted Expression of Differential Signatures"
+        },
+        {
             title: "PAEA",
             description: "PAEA is a new R/Shiny gene set enrichment web application with over 70 gene set libraries available for enrichment analysis.",
             url: "http://amp.pharm.mssm.edu/PAEA/",
