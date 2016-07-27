@@ -27,7 +27,8 @@ var mod = angular.module("lincsDcic", [
  	"trainingMod",
  	"navMod",
 	"seminarSeriesMod",
- 	"summerFellowsMod",
+	"summerFellows2015Mod",
+	"summerFellows2016Mod",
  	"webinarsMod",
  	"workshopsEtcMod",
 	"ui.bootstrap"
@@ -38,7 +39,7 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/", {
 			templateUrl: "view/container.html"
 		}).
-		
+
 		/* Main categorie pages */
 		when("/about", {
 			templateUrl: "view/page/about.html"
@@ -103,6 +104,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		when("/summer-fellows-2015", {
             templateUrl: "view/page/summer-fellows-2015.html"
+		}).
+		when("/summer-fellows-2016", {
+            templateUrl: "view/page/summer-fellows-2016.html"
 		}).
 		when("/internal-dsrp", {
 			templateUrl: "view/page/internal-dsrp.html"

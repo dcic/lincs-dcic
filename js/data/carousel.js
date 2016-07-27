@@ -39,7 +39,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         },
         {
             index: 3,
-            image: DIR + 'summer-fellows-2015.png',
+            image: DIR + 'summer-fellows-2016.png',
             title: 'Summer Research Program',
             caption: 'The 2016 BD2K-LINCS DCIC Summer Research Training Program runs June 6 - August 12.',
             link: '#/summer-research-app#nav'

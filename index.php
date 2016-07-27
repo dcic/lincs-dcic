@@ -65,7 +65,7 @@
     </div>
 
     <div ng-include="'view/partial/footer.html'"></div>
-    
+
 	<!-- Libraries -->
 
 
@@ -100,7 +100,7 @@
 	<!-- <script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script> -->
 
 
-		
+
 	<!-- ************************ Application ************************ -->
 	<!-- Data -->
     <script type="text/javascript" src="js/data/apis.js"></script>
@@ -118,6 +118,7 @@
 	<script type="text/javascript" src="js/data/nav.js"></script>
 	<script type="text/javascript" src="js/data/seminar-series.js"></script>
 	<script type="text/javascript" src="js/data/summer-fellows-2015.js"></script>
+	<script type="text/javascript" src="js/data/summer-fellows-2016.js"></script>
 	<script type="text/javascript" src="js/data/training.js"></script>
 	<script type="text/javascript" src="js/data/team.js"></script>
 	<script type="text/javascript" src="js/data/tools.js"></script>
