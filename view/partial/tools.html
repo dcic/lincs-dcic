@@ -2,8 +2,43 @@
     <div class="col-md-8">
         <h3>Tools and Apps</h3>
         <p ng-bind-html="introText"></p>
-        <div id="sections">
+        <div class="sections">
             <div ng-repeat="section in tools" class="section">
+                <img ng-src="{{section.image}}" class="img-responsive">
+                <div class="text">
+                    <h3 ng-if="!section.isHtml">{{section.title}}</h3>
+                    <h3 ng-if="section.isHtml" ng-bind-html="section.title | sceTrustHtml"></h3>
+                    <p>
+                        <a href="{{section.url}}" target="{{section.target}}">{{section.shortDesc}}</a>
+                    </p>
+                    <p ng-if="!section.isHtml">{{section.description}}</p>
+                    <p ng-if="section.isHtml" ng-bind-html="section.description | sceTrustHtml"></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <h3 id="global-visualization-of-lincs-data">Global visualization of LINCS data</h3>
+        <div class="sections">
+            <div ng-repeat="section in lincsVizTools" class="section">
+                <img ng-src="{{section.image}}" class="img-responsive">
+                <div class="text">
+                    <h3 ng-if="!section.isHtml">{{section.title}}</h3>
+                    <h3 ng-if="section.isHtml" ng-bind-html="section.title | sceTrustHtml"></h3>
+                    <p>
+                        <a href="{{section.url}}" target="{{section.target}}">{{section.shortDesc}}</a>
+                    </p>
+                    <p ng-if="!section.isHtml">{{section.description}}</p>
+                    <p ng-if="section.isHtml" ng-bind-html="section.description | sceTrustHtml"></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <h3 id="global-visualization-of-lincs-data-archive">Archived Docent versions*</h3>
+        <p class="instruction">{{docentWarning}}</p>
+        <div class="sections">
+            <div ng-repeat="section in lincsVizToolsArchived" class="section">
                 <img ng-src="{{section.image}}" class="img-responsive">
                 <div class="text">
                     <h3 ng-if="!section.isHtml">{{section.title}}</h3>

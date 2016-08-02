@@ -1,0 +1,169 @@
+/* LESS variables
+ * ------------------------------------------------------------------------- */
+/* colors */
+/* Logo and accent colors */
+/* fonts */
+/* Specific variables. */
+#nav {
+  background: #3593b1;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 2px 2px rgba(0, 0, 0, 0.098), 0px 0px 5px 1px rgba(0, 0, 0, 0.084);
+  border-top: 0;
+  padding: 0;
+  min-height: 0;
+  border-bottom: 3px solid #3593b1;
+}
+#nav:hover {
+  border-bottom: 3px solid #09505b;
+}
+#nav a {
+  color: white;
+  display: inline-block;
+  font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+#nav ul {
+  margin-bottom: 0;
+  line-height: 1em;
+}
+#nav li {
+  /* This is to ensure the nav doesn't bump down on hover. */
+  padding: 8px;
+}
+#nav li a {
+  font-size: 18px;
+  padding: 0;
+}
+#nav li:hover {
+  background-color: #09505b;
+}
+#nav li .subnav {
+  background-color: #09505b;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#nav li .subnav li {
+  border-bottom: none;
+  padding: 5px 10px;
+}
+#nav li .subnav li a {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+#nav li .subnav li a:hover {
+  background-color: #09505b;
+  color: #c7e8f2;
+}
+#nav li .subnav li a:focus {
+  background-color: #09505b;
+}
+#nav .navbar-right a {
+  /* This is scaled to fit with links on the left side.
+             * Don't change this height without confirming that the bottom
+             * border is still flush.
+             */
+  font-size: 16px;
+}
+#nav .dropdown.open {
+  background-color: #09505b;
+}
+#brand {
+  padding-top: 15px;
+}
+#brand #logo {
+  font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+#brand #logo #dcic-title {
+  float: left;
+  padding: 0 0 0 15px;
+}
+#brand #logo img {
+  float: left;
+  /*display: block;
+            margin: 0 auto;*/
+  max-width: 160px;
+  padding-bottom: 10px;
+}
+#brand #logo a {
+  text-decoration: none;
+}
+#brand #logo a:hover,
+#brand #logo a:visited {
+  text-decoration: none;
+}
+#brand #logo span#lincs-title-top {
+  color: #808080;
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+}
+#brand #logo span#lincs-title-bottom {
+  color: #000000;
+  font-size: 24px;
+}
+/* Override Bootstrap default */
+.navbar {
+  margin-bottom: 5px;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-right {
+  margin-right: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active {
+  background: #09505b;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #09505b;
+}
+@media (min-width: 767px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  #nav li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  #nav li a {
+    font-size: 16px;
+  }
+  #nav li a:hover,
+  #nav li a:focus {
+    background-color: #3593b1;
+  }
+  #nav li:hover {
+    background-color: #3593b1;
+  }
+  #nav li .subnav {
+    padding-bottom: 10px;
+  }
+  #nav li .subnav li {
+    padding: 0 10px;
+  }
+  #nav li .subnav li a:hover {
+    background-color: #3593b1;
+  }
+  .dropdown-menu {
+    display: block;
+    position: relative;
+    clear: both;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #3593b1 !important;
+  }
+}

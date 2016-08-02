@@ -11,6 +11,19 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             url: '#/about#nav',
             subnav: [
                 {
+                    title: 'Concierge',
+                    url: '#/getting-started/concierge'
+                },
+                {
+                    title: 'Tools',
+                    url: '#/getting-started/direct-access-tools'
+                    // target: '_self'
+                },
+                {
+                    title: 'Team',
+                    url: '#/about#team'
+                },
+                {
                     title: 'Internal Projects',
                     url: '#/internal-dsrp#nav'
                 },
@@ -50,15 +63,15 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
             title: 'News and Events',
             url: '#/news',
             subnav: [  
-		{
+		        {
                     title: '2016 Data Science Symposium',
                     url: '#/2016-data-science-symposium'
                 },
-		{
+		        {
                     title: '2014 Big Data Symposium',
                     url: '#/2014-big-data-symposium#nav'
                 },
-		{
+		        {
                     title: 'Invited Seminar Series',
                     url: '#/seminar-series#nav'
                 },
@@ -67,10 +80,15 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
         {
             title: 'Funding Opportunities',
             url: '#/funding'
-        }
+        },
     ];
 
     $scope.categoriesRight = [
+        // {
+        //     title: 'QUICK START',
+        //     url: '#/getting-started/direct-access-tools',
+        //     target: '_self'
+        // },
         {
             title: 'LINCSPROJECT',
             url: 'http://www.lincsproject.org/',

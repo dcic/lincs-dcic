@@ -1,0 +1,185 @@
+/* LESS variables
+ * ------------------------------------------------------------------------- */
+/* colors */
+/* Logo and accent colors */
+/* fonts */
+/* Specific variables. */
+#index-page li:before {
+  margin-left: -1.2em;
+}
+/* Carousel or rotator. Most of the element names are defined by Bootstrap
+ * and should not be renamed.
+ * ------------------------------------------------------------------------- */
+#carousel {
+  padding: 0 0 40px 0;
+  /* Images should be cut exactly. */
+  width: 100%;
+}
+#carousel #carousel-img-link,
+#carousel img {
+  display: block;
+  width: 100%;
+}
+#carousel button {
+  background: transparent;
+  border: none;
+}
+#carousel .item {
+  width: 100%;
+}
+#carousel .carousel-btn {
+  background: #fff;
+  border: none;
+  bottom: 10px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+#carousel .carousel-highlight {
+  background: #3593b1;
+}
+#carousel .carousel-indicators {
+  bottom: 0;
+}
+#carousel .carousel-indicators li {
+  border: 1px solid #888888;
+}
+#carousel .carousel-caption-custom {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #dddddd;
+  color: #000000;
+  padding: 15px;
+  position: absolute;
+  text-align: left;
+  text-shadow: none;
+  top: 30px;
+  max-width: 40%;
+  /* Some images look better with a light caption box. Override the dark default. */
+}
+#carousel .carousel-caption-custom .caption-title-block {
+  padding-right: 10px;
+}
+#carousel .carousel-caption-custom .caption-title-block a {
+  font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 30px;
+}
+#carousel .carousel-caption-custom .caption-title-block a:hover {
+  color: #599fb7;
+}
+#carousel .carousel-caption-custom .caption-text {
+  font-size: 16px;
+}
+#carousel .carousel-caption-custom.light {
+  background: #3593b1;
+  color: #ffffff;
+}
+#carousel .carousel-caption-custom.light a {
+  color: #ffffff;
+}
+#carousel .carousel-caption-custom.light a:hover {
+  color: #09505b;
+}
+#carousel .carousel-control {
+  background-image: none;
+  margin-top: 15%;
+  height: 40%;
+}
+@media (max-width: 768px) {
+  #carousel .carousel-caption-custom {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #carousel .caption-text {
+    display: none;
+  }
+}
+#index-page #overview li a {
+  font-size: 20px;
+}
+#index-page #overview li a:hover {
+  text-decoration: underline;
+}
+#index-page .featured-stories {
+  margin-top: 20px;
+}
+#index-page .featured-stories .story {
+  margin-bottom: 10px;
+}
+#index-page .featured-stories .story h2 {
+  border-bottom: 1px solid #dddddd;
+}
+#index-page .featured-stories .story span {
+  font-weight: bold;
+}
+#index-page .featured-stories .story a.link-without-list {
+  font-weight: bold;
+}
+#index-page .featured-stories .story a.link-without-list:before {
+  /* FontAwesome char code inside the '' */
+  content: '\F105';
+  color: #222222;
+  font-family: 'FontAwesome';
+  display: inline-block;
+  width: 1.1em;
+}
+#index-page .featured-stories .story a.link-without-list:hover {
+  text-decoration: underline;
+}
+#index-page .featured-stories .story ul a {
+  font-weight: bold;
+}
+#index-page .featured-stories .story ul a:hover {
+  text-decoration: underline;
+}
+#index-page .featured-stories .story .image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 175px;
+}
+#index-page .featured-stories .story .caption {
+  padding: 20px 0 0 0;
+}
+#index-page #center-content #quote {
+  padding: 30px;
+}
+#index-page #center-content #quote p {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-style: italic;
+}
+#index-page #center-content #twitter {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+#index-page #center-content #twitter > p {
+  text-align: center;
+}
+#index-page #center-content #twitter #twitter-fetcher li:before {
+  display: none;
+}
+#index-page #center-content #twitter #twitter-fetcher li {
+  list-style-type: none;
+}
+#index-page #center-content #twitter #twitter-fetcher .tweet a {
+  word-wrap: break-word;
+  font-size: 14px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+}
+#index-page #center-content #twitter #twitter-fetcher .tweet a:hover {
+  text-decoration: underline;
+}
+#index-page #center-content #twitter #twitter-fetcher ul {
+  padding: 0;
+}
+#index-page #center-content #twitter .fa {
+  font-size: 40px;
+  color: #55acee;
+  position: relative;
+  top: 30%;
+}
+#index-page #center-content #twitter .fa:hover {
+  color: #3f8bc4;
+}

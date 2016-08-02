@@ -1,0 +1,21 @@
+<div class="text-right">
+    <button ng-click="example()" class="btn btn-default btn-sm">Example</button>
+</div>
+<div class="text-center">
+    <div class="textarea-wrapper">
+        <label>
+            <strong>Up</strong>
+            <textarea ng-model="list_query.up" placeholder="Up genes"></textarea>
+        </label>
+    </div>
+    <div class="textarea-wrapper">
+        <label>
+            <strong>Down</strong>
+            <textarea ng-model="list_query.down" placeholder="Down genes"></textarea>
+        </label>
+    </div>
+</div>
+<div class="results text-center">
+    <button ng-click="search()" class="btn btn-default">Search</button>
+    <a href="" target="_blank" class="btn btn-default hidden result">Results</a>
+</div>

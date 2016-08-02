@@ -1,0 +1,179 @@
+@import "variable.less";
+
+#nav {
+    background: @color-nav;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 2px 2px rgba(0, 0, 0, 0.098), 0px 0px 5px 1px rgba(0, 0, 0, 0.084);
+    border-top: 0;
+    padding: 0;
+    min-height: 0;
+    border-bottom: 3px solid @color-nav;
+    &:hover {
+        border-bottom: 3px solid @color-nav-hover;
+    }
+    a {
+        color: white;
+        display: inline-block;
+        font-family: @font-family-accent;
+        font-size: 20px;
+        width: 100%;
+    }
+    ul {
+        margin-bottom: 0;
+        line-height: 1em;
+    }
+    li {
+        /* This is to ensure the nav doesn't bump down on hover. */
+        padding: 8px;
+        a {
+            font-size: 18px;
+            padding: 0;
+        }
+        &:hover {
+            background-color: @color-nav-hover;
+        }
+        .subnav {
+            background-color: @color-nav-hover;
+            border: none;
+            margin: 0;
+            padding: 0;
+            li {
+                border-bottom: none;
+                padding: 5px 10px;
+                a {
+                    font-family: @font-family-base;
+                    font-size: 14px;
+                    &:hover {
+                        background-color: @color-nav-hover;
+                        color: @color-primary-dusky-light;
+                    }
+                    &:focus {
+                        background-color: @color-nav-hover;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-right {
+        a {
+            /* This is scaled to fit with links on the left side.
+             * Don't change this height without confirming that the bottom
+             * border is still flush.
+             */
+            font-size: 16px;
+        }
+    }
+    .dropdown.open {
+        background-color: @color-nav-hover;
+    }
+}
+#brand {
+    padding-top: 15px;
+    #logo {
+        font-family: @font-family-accent;
+        text-transform: uppercase;
+        line-height: 2em;
+        #dcic-title {
+            float: left;
+            padding: 0 0 0 15px;
+        }
+        img {
+            float: left;
+            /*display: block;
+            margin: 0 auto;*/
+            max-width: 160px;
+            padding-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            &:hover,
+            &:visited {
+                text-decoration: none;
+            }
+        }
+        span#lincs-title-top {
+            color: @color-lightcharcoal;
+            display: block;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        span#lincs-title-bottom {
+            color: @color-black;
+            font-size: 24px;
+        }
+    }
+}
+/* Override Bootstrap default */
+.navbar {
+    margin-bottom: 5px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-right {
+    margin-right: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: @color-white;
+}
+.navbar-default .navbar-toggle {
+    &:hover,
+    &:active {
+        background: @color-primary-dark;
+    }
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: @color-nav-hover;
+}
+@media (min-width: 767px) {
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+    }
+}
+@media (max-width: 1000px) {
+    #nav {
+        li {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    #nav {
+        li {
+            a {
+                font-size: 16px;
+                &:hover,
+                &:focus {
+                    background-color: @color-nav;
+                }
+            }
+            &:hover {
+                background-color: @color-nav;
+            }
+            .subnav {
+                padding-bottom: 10px;
+                li {
+                    padding: 0 10px;
+                    a {
+                        &:hover {
+                            background-color: @color-nav;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-menu {
+        display: block;
+        position: relative;
+        clear: both;
+        width: 100%;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color: @color-nav !important;
+    }
+}

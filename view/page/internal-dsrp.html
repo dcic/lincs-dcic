@@ -1,0 +1,18 @@
+<div ng-controller="internalDsrpCtrl" class="container">
+    <div id="internal-dsrp" class="row category-page">
+        <div class="col-md-12">
+            <h2>Internal DSR Ongoing Projects (not all are listed)</h2>
+            <a href="#external-dsrp#nav">External Data Science Research Projects</a>
+        </div>
+        <section ng-repeat="project in projects">
+            <h3 class="col-md-8">{{project.title}}</h3>
+            <p class="col-md-8" ng-bind-html="project.text"></p>
+            <div class="col-md-4">
+                <div ng-if="project.image">
+                    <img ng-src="{{project.image}}"/>
+                    <p class="caption">{{project.caption}}</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

@@ -86,10 +86,15 @@ mod.controller('edsrappCtrl', ['$scope', '$http', function($scope, $http) {
 
     $scope.submit = function() {
         if (isValidInput()) {
-            var formData = new FormData($form[0]);
+            var formData = new FormData($form[0]),
+                $loader;
+
             _.each($scope.formData, function(val, key) {
                 formData.append(key, val);
             });
+
+            $loader = $('<div class="loader">Please wait.</div>');
+            $('body').append($loader);
 
             $.ajax({
                 url: '/api/',
@@ -105,6 +110,9 @@ mod.controller('edsrappCtrl', ['$scope', '$http', function($scope, $http) {
                 },
                 error: function(data) {
                     getAlert('Error', 'Unknown error. Please contact Sherry Jenkins at sherry.jenkins@mssm.edu');
+                },
+                complete: function() {
+                    $loader.remove();
                 }
             });
         }

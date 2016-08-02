@@ -1,0 +1,333 @@
+<style type="text/css">
+div.popover {
+    outline: none;
+    width: 250px;
+}
+
+span.glyphicon.minor {
+    font-size: 14px;
+}
+
+span.glyphicon.dcic {
+    color: rgb(53, 147, 177);
+}
+
+span.glyphicon.transcriptomics {
+    color: rgb(0, 167, 122);
+}
+
+span.glyphicon.hms-center {
+    color: rgb(236, 0, 140);
+}
+
+</style>
+
+<!-- Quick start -->
+<div id="quick-start">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="pull-right"><br><a class="ng-binding" href="#/getting-started/direct-access-tools">More tools...</a></h4>
+
+            <h1>
+                Quick Start with LINCS Tools and Apps 
+                <span style="font-size: 18px;" class="glyphicon glyphicon-question-sign"
+                    data-content-template="view/partial/quick-start-description.html"
+                    data-trigger="hover"
+                    data-placement="bottom"
+                    bs-popover>
+                </span>
+
+
+            </h1>
+        </div>
+    </div>
+    <div ng-controller="DirectAccessToolsCtrl">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>Search L1000 Signatures</h4>
+
+                <span class="glyphicon glyphicon-question-sign minor pull-right"
+                    data-content-template="view/partial/quick-start-signatures-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+                <span class="glyphicon glyphicon-plus-sign minor pull-right"
+                    style="color: rgb(53, 147, 177);"
+                    data-content-template="view/partial/quick-start-developed-DCIC-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+                <tool tool-data="findTool('L1000CDS<sup>2</sup>')" tool-mode="" tool-buttons="none"></tool>
+
+                <span class="glyphicon glyphicon-question-sign minor pull-right"
+                    data-content-template="view/partial/quick-start-cross-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+                <h4>Cross-Tool Examples</h4>
+
+                <!-- the up/down signature was taked from http://amp.pharm.mssm.edu/CREEDS/#downloads, first 20 -->
+                <a href="" ng-click="
+                    typeSearch('Imatinib', 'drug');
+                    typeUpGenes(
+                        'ALAS2','HBZ','LBH','COL18A1','GYPB','PPOX','SLC4A1','AQP1','RELN','GYPA','TSC22D1','SLC25A37','KEL','OAT','SLC22A4','HMBS','AHSP','SLC30A10','FECH','XK'
+                    );
+                    typeDownGenes(
+                        'TMEM158','SLC2A3','HHEX','SAMSN1','IGFBP4','ID1','FCGR2A','MLLT11','FAM216A','PKM','CD69','SLC2A14','NQO2','EGR1','SLC39A14','GABRE','SOCS2','CMTM6','PRKCB','WARS','SLC25A32'    
+                    );
+                    "
+                    bs-tooltip data-title="A small molecule perturbagen" data-trigger="hover"
+                    >
+                    Imatinib</a>,
+                <a href="" ng-click="
+                    typeSearch('Ruxolitinib', 'drug');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A small molecule perturbagen" data-trigger="hover">
+                    Ruxolitinib</a>,
+                <a href="" ng-click="
+                    typeSearch('MCF7', 'cell');
+                    typeUpGenes();
+                    typeDownGenes();
+                    " 
+                    bs-tooltip data-title="A cell line" data-trigger="hover">
+                    MCF7</a>,
+                <a href="" ng-click="
+                    typeSearch('HL-60', 'cell');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A cell line" data-trigger="hover"
+                    >HL-60</a>,
+                <a href="" ng-click="
+                    typeSearch('TP53', 'gene');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A gene" data-trigger="hover">
+                    TP53</a>,
+                <a href="" ng-click="
+                    typeSearch('CDK8', 'gene');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A gene" data-trigger="hover">
+                    CDK8</a>,
+                <a href="" ng-click="
+                    typeSearch('RNA-seq', 'assay');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="An experimental assay" data-trigger="hover">
+                    RNA-seq</a>,
+                <!-- <a href="" ng-click="typeSearch('shRNA')">shRNA</a>, -->
+
+                <a href="" ng-click="
+                    typeSearch('Phosphorylation', 'assay');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A class of experiments" data-trigger="hover">Phosphorylation</a>
+
+                <form ng-submit="typeSearch(query)">
+                    <div class="input-group">
+                        <input class="form-control" type="text" ng-model="query" placeholder="Query multiple tools"></input>
+                        <span class="input-group-btn">
+                            <!-- <button class="btn btn-default" type="button">Go!</button> -->
+
+                            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-pencil"></span></button>
+                        </span>
+
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-sm-8">
+                <div class="row row-eq-height">
+                    <div class="col-sm-6">
+
+                        <h4>Access All Data</h4>
+
+                        <span class="glyphicon glyphicon-question-sign minor pull-right"
+                            data-content-template="view/partial/quick-start-all-data-description.html"
+                            data-trigger="hover"
+                            data-placement="auto"
+                            bs-popover>
+                        </span>
+
+                        <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
+                            data-content-template="view/partial/quick-start-developed-DCIC-description.html"
+                            data-trigger="hover"
+                            data-placement="auto"
+                            bs-popover>
+                        </span>
+
+                        <tool tool-data="findTool('LINCS Data Portal')" tool-mode="" tool-buttons="none"></tool>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4>Search L1000 Metadata</h4>
+
+                        <span class="glyphicon glyphicon-question-sign minor pull-right"
+                            data-content-template="view/partial/quick-start-L1000-metadata-description.html"
+                            data-trigger="hover"
+                            data-placement="auto"
+                            bs-popover>
+                        </span>
+
+                        <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
+                            data-content-template="view/partial/quick-start-developed-DCIC-description.html"
+                            data-trigger="hover"
+                            data-placement="auto"
+                            bs-popover>
+                        </span>
+
+                        <tool tool-data="findTool('Slicr')" tool-mode="" tool-buttons="none"></tool>
+                    </div>
+                </div>
+
+                <div class="row row-eq-height">
+                    <div class="col-sm-6">
+                        <h4>Analyze LINCS Data</h4>
+
+                        <span class="glyphicon glyphicon-question-sign minor pull-right"
+                            data-content-template="view/partial/quick-start-analyze-description.html"
+                            data-trigger="hover"
+                            data-placement="auto"
+                            bs-popover>
+                        </span>
+
+                        <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
+                            data-content-template="view/partial/quick-start-developed-DCIC-description.html"
+                            data-trigger="hover"
+                            data-placement="auto"
+                            bs-popover>
+                        </span>
+
+                        <tool tool-data="findTool('iLINCS')" tool-mode="" tool-buttons="none"></tool>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h4>Visualize and Access LINCS Proteomics Data</h4>
+
+                        <span class="glyphicon glyphicon-question-sign minor pull-right"
+                            data-content-template="view/partial/quick-start-proteomics-description.html"
+                            data-trigger="hover"
+                            data-placement="auto"
+                            bs-popover>
+                        </span>
+
+                        <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
+                            data-content-template="view/partial/quick-start-developed-DCIC-description.html"
+                            data-trigger="hover"
+                            data-placement="auto"
+                            bs-popover>
+                        </span>
+
+                        <tool tool-data="findTool('piLINCS')" tool-mode="" tool-buttons="none"></tool>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="text-right muted small">
+                <!-- <span class="glyphicon glyphicon-triangle-top"></span> -->
+            </div>
+            <hr>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+
+                <h4>API Access to L1000 Data</h4>
+
+                <span class="glyphicon glyphicon-question-sign minor pull-right"
+                    data-content-template="view/partial/quick-start-L1000-api-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+                <span class="glyphicon glyphicon-plus-sign minor transcriptomics pull-right"
+                    data-content-template="view/partial/quick-start-developed-lincscloud-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+
+                <tool tool-data="findTool('lincscloud')" tool-buttons="none"></tool>
+            </div>
+
+            <div class="col-sm-4">
+                <h4>Explore HMS Center-Specific Data</h4>
+
+                <span class="glyphicon glyphicon-question-sign minor pull-right"
+                    data-content-template="view/partial/quick-start-hms-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+                <span class="glyphicon glyphicon-plus-sign minor hms-center pull-right"
+                    data-content-template="view/partial/quick-start-developed-hms-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+                <tool tool-data="findTool('HMS LINCS Database')" tool-buttons="none"></tool>
+            </div>
+
+            <div class="col-sm-4">
+                <h4>Find Knowledge About Genes and Proteins</h4>
+
+                <span class="glyphicon glyphicon-question-sign minor pull-right"
+                    data-content-template="view/partial/quick-start-harmonizome-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+                <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
+                    style="color: rgb(53, 147, 177);"
+                    data-content-template="view/partial/quick-start-developed-DCIC-description.html"
+                    data-trigger="hover"
+                    data-placement="auto"
+                    bs-popover>
+                </span>
+
+                <tool tool-data="findTool('Harmonizome')" tool-buttons="none"></tool>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="text-right muted small" style="margin: 0;">
+                Developed by:
+                <span class="glyphicon glyphicon-plus-sign minor dcic"></span>
+                the BD2K-LINCS Data Coordination and Integration Center,
+                <span class="glyphicon glyphicon-plus-sign minor transcriptomics"></span>
+                the LINCS Transcriptomics Center,
+                <span class="glyphicon glyphicon-plus-sign minor hms-center"></span>
+                the Harvard Medical School LINCS Center.
+
+                <!-- <span class="glyphicon glyphicon-triangle-top"></span> -->
+            </div>
+            <hr style="margin-top: 0px; margin-bottom: 0px;">
+        </div>
+
+    </div>
+
+</div>

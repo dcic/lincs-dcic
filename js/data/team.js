@@ -268,23 +268,53 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
             name: "Investigators of External Data Science Research Projects",
             members: [
                 {
+                    firstName: "Cathy",
+                    lastName: "Wu",
+                    affiliation: "University of Delaware",
+                    email: "wuc {at} udel.edu"
+                },
+                {
+                    firstName: "Mark",
+                    lastName: "Grimes",
+                    affiliation: "University of Montana",
+                    email: "Mark.Grimes {at} mso.umt.edu"
+                },
+                {
+                    firstName: "Oliver",
+                    lastName: "He",
+                    affiliation: "University of Michigan",
+                    email: "yongqunh {at} med.umich.edu"
+                },
+                {
+                    firstName: "Jeffrey",
+                    lastName: "Saucerman",
+                    affiliation: "University of Virginia",
+                    email: "jjs3g {at} virginia.edu"
+                },
+                {
                     firstName: "Kayee",
-                    lastName: "Yeung",
+                    lastName: "Yeung-Rhee",
                     affiliation: "University of Washington",
-                    email: "kayee {at} u.washington.edu"
+                    email: "kayee {at} uw.edu"
                 },
-                {
-                    firstName: "Ziv",
-                    lastName: "Bar-Joseph",
-                    affiliation: "Carnegie-Mellon University",
-                    email: "zivbj {at} cs.cmu.edu"
-                },
-                {
-                    firstName: "Peter",
-                    lastName: "Hornbeck",
-                    affiliation: "Cell Signaling Inc.",
-                    email: "phornbeck {at} cellsignal.com"
-                }
+                // {
+                //     firstName: "Kayee",
+                //     lastName: "Yeung",
+                //     affiliation: "University of Washington",
+                //     email: "kayee {at} u.washington.edu"
+                // },
+                // {
+                //     firstName: "Ziv",
+                //     lastName: "Bar-Joseph",
+                //     affiliation: "Carnegie-Mellon University",
+                //     email: "zivbj {at} cs.cmu.edu"
+                // },
+                // {
+                //     firstName: "Peter",
+                //     lastName: "Hornbeck",
+                //     affiliation: "Cell Signaling Inc.",
+                //     email: "phornbeck {at} cellsignal.com"
+                // }
             ]
         }
     ];

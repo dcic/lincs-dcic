@@ -1,12 +1,78 @@
 <div ng-include="'view/partial/carousel.html'"></div>
+<div ng-include="'view/partial/quick-start-landing.html'"></div>
+
 <div ng-controller="indexCtrl" id="index">
-    <div class="title row">
-        <h1 class="text-center">BD2K-LINCS Data Coordination and Integration Center</h1>
-        <h3 class="text-center col-md-8 col-md-offset-2">The BD2K-LINCS DCIC is part of the Big Data to Knowledge (BD2K) NIH initiative, and it is the data coordination center for the NIH Common Fund's Library of Integrated Network-based Cellular Signatures (LINCS) program.</h3>
-    </div>
-    <div ng-repeat="section in sections" class="row section">
-        <img ng-src="{{section.image}}" class="icon img-responsive center-block"/>
-        <h2 class="text-center">{{section.title}}</h2>
-        <p class="col-md-8 col-md-offset-2">{{section.text}}</p>
+    <div id="index-page">
+        <div class="container">
+
+
+            <div id="overview">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="">Center Overview</h1>
+                    </div>
+                    <p class="col-md-8" ng-bind-html="overviewText"></p>
+                    <div class="col-md-4">
+                        <ul>
+                            <li ng-repeat="item in overviewList">
+                                <a href="{{item.url}}">{{item.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured-stories">
+                <div ng-repeat="story in stories">
+                    <div ng-if="story.location == 'top'" class="story">
+                        <div class="col-md-4 story {{story.domClass}}">
+                            <div class="image" style="background-image: url({{story.image}});"></div>
+                            <div class="caption">
+                                <h2>{{story.title}}</h2>
+                                <p>{{story.description}}</p>
+                                <ul>
+                                    <li ng-repeat="link in story.links">
+                                        <span ng-if="link.url != ''"><a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a></span>
+                                        <span ng-if="link.url == ''">{{link.title}}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="center-content" class="row">
+                <div class="col-md-8">
+                    <div id="quote">
+                        <p>The BD2K-LINCS DCIC is part of the Big Data to Knowledge (BD2K) NIH initiative, and it is the data coordination center for the NIH Common Fund's Library of Integrated Network-based Cellular Signatures (LINCS) program.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="twitter">
+                        <p>
+                            <a href="https://twitter.com/bd2klincsdcic" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </p>
+                        <div id="twitter-fetcher"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured-stories">
+                <div class="col-md-4" ng-repeat="story in stories">
+                    <div ng-if="story.location == 'bottom'" class="story {{story.domClass}}">
+                        <div class="image" style="background-image: url({{story.image}});"></div>
+                        <div class="caption">
+                            <h2>{{story.title}}</h2>
+                            <p>{{story.description}}</p>
+                            <ul>
+                                <li ng-repeat="link in story.links">
+                                    <a href="{{link.url}}" target="{{link.target}}">{{link.title}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

@@ -47,40 +47,54 @@ mod.controller("calendarCtrl", ["$scope", function($scope) {
     };
 
     var cleanFeed = function(feed) {
-        var results = [];
+        var upcoming = [],
+            past = [];
         $.each(feed, function(i, evt) {
             var title = evt.summary;
 
             var startObj = getStartTime(evt.start);
 
-            if (!startObj)
+            if (!startObj) {
                 return;
-            if (new Date().getTime() > startObj.getTime())
-                return;
+            }
 
-            results.push({
+            var event = {
                 title: evt.summary,
                 link: evt.htmlLink,
                 startTime: getStartTimeString(startObj, allDay(evt.start)),
                 day: startObj.getDate(),
                 month: monthNames[startObj.getMonth()],
                 year: startObj.getYear()
-            });
+            }
+            if (new Date().getTime() > startObj.getTime()) {
+                past.push(event)
+            } else {
+                upcoming.push(event);
+            }
         });
-        return results;
+        return {
+            upcoming: upcoming,
+            past: past.reverse()
+        };
     };
 
     var API_KEY = "AIzaSyBoFmRASxqk6MuOZTxDYF5eWA5Q8hmyflo",
         CALENDAR_ID = "dl9fj86o2ohe7o823s7jar920s%40group.calendar.google.com",
         OPTIONS = "&orderBy=startTime&singleEvents=true";
 
-    $.ajax({
-        type: "GET",
-        url: "https://www.googleapis.com/calendar/v3/calendars/" + CALENDAR_ID + "/events?key=" + API_KEY + OPTIONS,
-        success: function(data) {
-            $scope.$apply(function() {
-                $scope.events = cleanFeed(data.items);
-            });
-        }
+    $scope.getEvents = function(cb) {
+        $.ajax({
+            type: "GET",
+            url: "https://www.googleapis.com/calendar/v3/calendars/" + CALENDAR_ID + "/events?key=" + API_KEY + OPTIONS,
+            success: function(data) {
+                $scope.$apply(function() {
+                    cb(cleanFeed(data.items));
+                });
+            }
+        });
+    };
+
+    $scope.getEvents(function(data) {
+        $scope.events = data;
     });
 }]);

@@ -1,4 +1,4 @@
-﻿var mod = angular.module("datacentersMod", []);
+var mod = angular.module("datacentersMod", []);
 
 mod.controller("datacentersCtrl", ["$scope", function($scope) {
 	$scope.entries = [

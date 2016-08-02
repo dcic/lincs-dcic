@@ -1,17 +1,19 @@
-<div id="resources" class="row category-page">
-    <h2 class="col-md-12">Funding Opportunities</h2>
-    <div class="col-md-8" ng-controller="fundingCtrl">
-        <p ng-bind-html="introText"></p>
-        <div id="sections">
-            <div ng-repeat="section in opportunities" class="section">
-                <img ng-src="{{section.image}}" class="img-responsive">
-                <div class="text">
-                    <h3>{{section.title}}</h3>
-                    <p ng-bind-html="section.text"></p>
+<div class="container">
+    <div id="resources" class="row category-page">
+        <h2 class="col-md-12">Funding Opportunities</h2>
+        <div class="col-md-8" ng-controller="fundingCtrl">
+            <p ng-bind-html="introText"></p>
+            <div class="sections">
+                <div ng-repeat="section in opportunities" class="section">
+                    <img ng-src="{{section.image}}" class="img-responsive">
+                    <div class="text">
+                        <h3>{{section.title}}</h3>
+                        <p ng-bind-html="section.text"></p>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
             </div>
         </div>
+        <div ng-include="'view/partial/tools-nav.html'"></div>
     </div>
-    <div ng-include="'view/partial/tools-nav.html'"></div>
 </div>

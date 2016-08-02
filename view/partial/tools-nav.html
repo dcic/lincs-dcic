@@ -1,16 +1,16 @@
 <div class="col-md-4 right-nav">
-    <img ng-src="/images/general/results.png" class="img-responsive"/>
+    <img ng-src="images/general/results.png" class="img-responsive"/>
     <br>
     <div>
         <h4>Gene Signature Analysis</h4>
         <ul>
             <li>
-                <a href="#/analyze">Submit your gene signatures for analysis</a>
+                <a href="#/analyze#nav">Submit your gene signatures for analysis</a>
             </li>
         </ul>
     </div>
     <div ng-controller="toolsCtrl">
-        <h4>Tools & Apps</h4>
+        <h4>Tools and Apps</h4>
         <ul>
             <li ng-repeat="tool in tools">
                 <a href="{{tool.url}}" target="{{tool.target}}">{{tool.title}}</a>

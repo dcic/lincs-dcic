@@ -2,7 +2,7 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
-	{
+        {
             title: "The harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27374120",
             authors: "Rouillard AD, Gundersen GW, Fernandez NF, Wang Z, Monteiro CD, McDermott MG, Ma'ayan A.",
@@ -10,7 +10,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 27374120 | PMC4930834",
             year: 2016
         },
-	{
+        {
             title: "Enrichr: a comprehensive gene set enrichment analysis web server 2016 update",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27141961",
             authors: "Kuleshov MV, Jones MR, Rouillard AD, Fernandez NF, Duan Q, Wang Z, Koplev S, Jenkins SL, Jagodnik KM, Lachmann A, McDermott M, Monteiro CD, Gundersen GW, Ma'ayan A.",
@@ -18,7 +18,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 27141961",
             year: 2016
         },
-	{
+        {
             title: "Drug induced adverse events prediction with the LINCS L1000 data",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27153606",
             authors: "Wang Z, Clark NR, Ma'ayan A.",
@@ -26,7 +26,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 27153606",
             year: 2016
         },
-	{
+        {
             title: "GUIdock: Using Docker containers with a common graphics user interface to address the reproducibility of research",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27045593",
             authors: "Hung LH, Kristiyanto D, Lee SB, Yeung KY.",
@@ -34,7 +34,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 27045593",
             year: 2016
         },
-	{
+        {
             title: "Signaling networks among stem cell precursors, transit-amplifying progenitors, and their niche in developing hair follicles",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27009580",
             authors: "Rezza A, Wang Z, Sennett R, Qiao W, Wang D, Heitman N, Mok KW, Clavel C, Yi R, Zandstra P, Ma'ayan A, Rendl M.",
@@ -42,7 +42,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 27009580",
             year: 2016
         },
-	{
+        {
             title: "A posterior probability approach for gene regulatory network inference in genetic perturbation data",
             url: "http://arxiv.org/abs/1603.04835",
             authors: "Young WC, Yeung KY, Raftery AE.",
@@ -50,7 +50,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "",
             year: 2016
         },
-	{
+        {
             title: "In utero exposure of rats to high-fat diets perturbs gene expression profiles and cancer susceptibility of prepubertal mammary glands",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26895667",
             authors: "Govindarajah V, Leung YK, Ying J, Gear R, Bornschein RL, Medvedovic M, Ho SM.",
@@ -58,7 +58,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 26895667",
             year: 2016
         },
-	{
+        {
             title: "Regulatory consequences of neuronal ELAV-like protein binding to coding and non-coding RNAs in human brain",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26894958",
             authors: "Scheckel C, Drapeau E, Frias MA, Park CY, Fak J, Zucker-Scharff I, Kou Y, Haroutunian V, Ma'ayan A, Buxbaum JD, Darnell RB.",
@@ -66,7 +66,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 26894958",
             year: 2016
         },
-	{
+        {
             title: "Integrative radiogenomic analysis for multicentric radiophenotype in glioblastoma",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26863628",
             authors: "Kong DS, Kim J, Lee IH, Kim ST, Seol HJ, Lee JI, Park WY, Ryu G, Wang Z, Ma'ayan A, Nam DH.",
@@ -74,7 +74,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 26863628",
             year: 2016
         },
-	{
+        {
             title: "Model reduction and parameter estimation of non-linear dynamical biochemical reaction networks",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26816394",
             authors: "Sun X, Medvedovic M.",
@@ -82,7 +82,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 26816394",
             year: 2016
         },
-	{
+        {
             title: "Fetal liver hematopoietic stem cell niches associate with portal vessels",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26634440",
             authors: "Khan JA, Mendelson A, Kunisaki Y, Birbrair A, Kou Y, Arnal-Estape A, Pinho S, Ciero P, Nakahara F, Ma'ayan A, Bergman A, Merad M, Frenette PS.",
@@ -90,7 +90,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 26634440 | PMCID: PMC4706788",
             year: 2016
         },
-	{
+        {
             title: "Dynamic model averaging in large model spaces using dynamic Occam's window",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26917859",
             authors: "Onorante L, Raftery AE.",
@@ -98,7 +98,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 26917859",
             year: 2016
         },
-	{
+        {
             title: "Principal Angle Enrichment Analysis (PAEA): Dimensionally reduced multivariate gene set enrichment analysis tool",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26848405",
             authors: "Clark NR, Szymkiewicz M, Wang Z, Monteiro CD, Jones MR, Ma'ayan A.",
@@ -122,7 +122,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "PMID: 26566394 | PMCID: PMC4642660",
             year: 2015
         },
-	 {
+        {
             title: "A systems approach identifies essential FOXO3 functions at key steps of terminal erythropoiesis",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26452208",
             authors: "Liang R, Camprecios G, Kou Y, McGrath K, Nowak R, Catherman S, Bigarella CL, Rimmele P, Zhang X, Gnanapragasam MN, Bieker JJ, Papatsenko D, Ma'ayan A, Bresnick E, Fowler V, Palis J, Ghaffari S.",

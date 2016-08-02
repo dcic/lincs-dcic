@@ -2,74 +2,71 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
-	   
-	  {
+        {
             date: '29 November 2016 | 3:00 PM ET',
             topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
             presenters: 'Jeff Saucerman PhD, University of Virginia (DCIC External Data Science Research Project)'
-           }
-
+        }
     ];
+
     $scope.pastWebinars = [   
-	{
+        {
             date: '28 June 2016',
             topic: 'Systematic Validation of Multiscale Gene Networks using the LINCS Gene Perturbation Data',
             presenters: 'Bin Zhang PhD, Icahn School of Medicine at Mount Sinai',
             synopsis: 'Increasingly available large-scale Omics data has made it possible to construct predictive molecular networks for systematically uncovering novel pathways and targets in biological systems and complex human diseases. However, systematic validation of the predicted network structures and their functions remains a major bottleneck in network biology. In this talk, I will first introduce multiscale network modeling approaches to analyze large Omics data and then highlight how to systematically validate cancer gene networks using the gene perturbation data in LINCS.',
             link:'https://www.youtube.com/watch?v=TnZ8V0rHsTQ'
         }, 
-	{
+        {
             date: '24 May 2016',
             topic: 'Detection and Removal of Spatial Bias in Multi-well Assays',
             presenters: 'Alexander Lachmann PhD, Icahn School of Medicine at Mount Sinai',
-	    synopsis: 'Multiplex readout assays are now increasingly being performed using microfluidic automation in multiwell format. For instance, the Library of Integrated Network-based Cellular Signatures (LINCS) has produced gene expression measurements for tens of thousands of distinct cell perturbations using a 384-well plate format. This dataset is by far the largest 384-well gene expression measurement assay ever performed. We investigated the gene expression profiles of a million samples from the LINCS dataset and found that the vast majority (96%) of the tested plates were affected by a significant 2D spatial bias.',
+            synopsis: 'Multiplex readout assays are now increasingly being performed using microfluidic automation in multiwell format. For instance, the Library of Integrated Network-based Cellular Signatures (LINCS) has produced gene expression measurements for tens of thousands of distinct cell perturbations using a 384-well plate format. This dataset is by far the largest 384-well gene expression measurement assay ever performed. We investigated the gene expression profiles of a million samples from the LINCS dataset and found that the vast majority (96%) of the tested plates were affected by a significant 2D spatial bias.',
             link:'https://www.youtube.com/watch?v=kUkS9mQYU5M'    
-	},
-	{
+        },
+        {
             date: '1 March 2016',
             topic: 'Mutations and Drugs Portal (MDP): A Database Linking Drug Response Data and Genomic Information',
             presenters: 'Silvio Bicciato PhD, University of Modena and Reggio Emilia',
-	    synopsis:'Genetic alterations arising in cancer cells often generate cancer-specific dependencies that can be exploited as targets of targeted therapies. Indeed, several evidences demonstrate that the integration of large-scale genomic and pharmacological data from cancer cell lines is a successful approach to discover genetic markers of drug sensitivity and to re-purpose known drugs and compounds to new indications in oncology. However, the lack of direct connections between genomic and pharmacological information still makes inherently difficult to query pharmacogenomics databases and extract novel connections. In an attempt to overcome this limit, we designed Mutations and Drug Portal (MDP), a web accessible database that combines the cell-based NCI60 pharmacological screening with genomic data extracted from the Cancer Cell Line Encyclopedia (CCLE). MDP currently contains drug sensitivity data for more than 50,800 compounds, describing response to drugs across 115 cancer cell lines. To identify genomic features associated to drug response, drug sensitivity data are integrated with information on somatic mutations and transcriptional data of cancer cell lines. MDP can be queried for drugs active in cancer cell lines carrying mutations or transcriptional alterations in specific cancer genes and signaling pathways or for genetic and transcriptional profiles associated to sensitivity or resistance to a given compound. Results are returned using graphical and interactive representations. As proof of performance, MDP identified both known and novel pharmacogenomics associations and unveiled an unpredicted combination of two FDA-approved compounds, namely statins and Dasatinib, as an effective strategy to potently inhibit YAP/TAZ in cancer cells. In this web-seminar, I will illustrate MDP architecture and content and its web interface. I will also provide a demonstration on how MDP can be queried for drugs active in cancer cell lines carrying mutations in specific cancer genes or for genetic markers. associated to sensitivity or resistance to a given compound. Finally, I will discuss possible connections between MDP and the data and tools of the L1000 LINCS project.',
-	    link:'https://www.youtube.com/watch?v=MwrN3hbTnVc'        
-},
-
-	{
+            synopsis:'Genetic alterations arising in cancer cells often generate cancer-specific dependencies that can be exploited as targets of targeted therapies. Indeed, several evidences demonstrate that the integration of large-scale genomic and pharmacological data from cancer cell lines is a successful approach to discover genetic markers of drug sensitivity and to re-purpose known drugs and compounds to new indications in oncology. However, the lack of direct connections between genomic and pharmacological information still makes inherently difficult to query pharmacogenomics databases and extract novel connections. In an attempt to overcome this limit, we designed Mutations and Drug Portal (MDP), a web accessible database that combines the cell-based NCI60 pharmacological screening with genomic data extracted from the Cancer Cell Line Encyclopedia (CCLE). MDP currently contains drug sensitivity data for more than 50,800 compounds, describing response to drugs across 115 cancer cell lines. To identify genomic features associated to drug response, drug sensitivity data are integrated with information on somatic mutations and transcriptional data of cancer cell lines. MDP can be queried for drugs active in cancer cell lines carrying mutations or transcriptional alterations in specific cancer genes and signaling pathways or for genetic and transcriptional profiles associated to sensitivity or resistance to a given compound. Results are returned using graphical and interactive representations. As proof of performance, MDP identified both known and novel pharmacogenomics associations and unveiled an unpredicted combination of two FDA-approved compounds, namely statins and Dasatinib, as an effective strategy to potently inhibit YAP/TAZ in cancer cells. In this web-seminar, I will illustrate MDP architecture and content and its web interface. I will also provide a demonstration on how MDP can be queried for drugs active in cancer cell lines carrying mutations in specific cancer genes or for genetic markers. associated to sensitivity or resistance to a given compound. Finally, I will discuss possible connections between MDP and the data and tools of the L1000 LINCS project.',
+            link:'https://www.youtube.com/watch?v=MwrN3hbTnVc'        
+        },
+        {
             date: '10 November 2015',
             topic: 'Combining Phenotypic and Biochemical Screening to Identify Drug Targets',
             presenters: 'Hassan Al-Ali PhD, University of Miami Miller School of Medicine',
-	    synopsis:'Despite explosive growth in biological data, drug discovery success rates have not increased, and may be decreasing. Comprehensive systems biology models should ultimately enable exact predictions of drug targets, or combinations of targets, that need to be engaged in order to effectively induce therapeutic responses. Given the robustness of biological networks, engaging multiple targets may be a critical requirement for successful therapies. Indeed, approved drugs are constantly being revealed to exert their effects through targets in addition to those previously recognized. While systems biology approaches are improving steadily, their ability to accurately predict effective targets remains a work in progress. To bypass the need for complete network understanding, we used information theory and machine learning to parse and relate data from cellular and biochemical assays. This enabled us to quickly identify drug targets (proteins that should be engaged to produce therapeutic effect) as well as anti-targets (proteins that must not be engaged to avoid counteracting therapeutic effects). Consequently, we were able to identify compounds with beneficial poly-pharmacology; i.e., compounds that engage several targets and do not engage anti-targets. This poly-pharmacology correlated with high efficacy in cell-based models and also in vivo. Thus the approach can help bridge the gap between classical drug discovery and systems biology, accelerate the discovery of new and effective drugs, and assist in the re-positioning of pre-approved drugs.',
-	    link:'https://www.youtube.com/watch?v=Yg3g895lSBM'
+            synopsis:'Despite explosive growth in biological data, drug discovery success rates have not increased, and may be decreasing. Comprehensive systems biology models should ultimately enable exact predictions of drug targets, or combinations of targets, that need to be engaged in order to effectively induce therapeutic responses. Given the robustness of biological networks, engaging multiple targets may be a critical requirement for successful therapies. Indeed, approved drugs are constantly being revealed to exert their effects through targets in addition to those previously recognized. While systems biology approaches are improving steadily, their ability to accurately predict effective targets remains a work in progress. To bypass the need for complete network understanding, we used information theory and machine learning to parse and relate data from cellular and biochemical assays. This enabled us to quickly identify drug targets (proteins that should be engaged to produce therapeutic effect) as well as anti-targets (proteins that must not be engaged to avoid counteracting therapeutic effects). Consequently, we were able to identify compounds with beneficial poly-pharmacology; i.e., compounds that engage several targets and do not engage anti-targets. This poly-pharmacology correlated with high efficacy in cell-based models and also in vivo. Thus the approach can help bridge the gap between classical drug discovery and systems biology, accelerate the discovery of new and effective drugs, and assist in the re-positioning of pre-approved drugs.',
+            link:'https://www.youtube.com/watch?v=Yg3g895lSBM'
         },
-	{
+        {
             date: '3 November 2015',
             topic: 'Imputing New LINCS L1000 Drug Signatures',
             presenters: 'Rachel Hodos, Icahn School of Medicine at Mount Sinai',
-	    synopsis:'',
-	    link:'https://www.youtube.com/watch?v=jS-6fSYErKA'
-         },
-	{
+            synopsis:'',
+            link:'https://www.youtube.com/watch?v=jS-6fSYErKA'
+        },
+        {
             date: '8 September 2015',
             topic: 'Using Machine Learning to Identify Aberrant Pathway Activity',
             presenters: 'Stephen Piccolo PhD, Brigham Young University',
-	    synopsis:'Although in some cases individual genes or proteins may operate in isolation to influence a biological phenomenon, genes and proteins typically operate in the context of biological pathways. Researchers have access to curated pathway databases, which help to characterize which genes and proteins play a role in a given pathway. Molecular-level data can be mapped to these curated databases to gain a better understanding of the role that the pathways play in a given phenomenon of interest. However, most such methods can only be applied to a single type of molecular data (typically, gene-expression profiles), and few methods explicitly account for interdependencies among variables. We developed a method, Gene Set Omic Analysis, which uses machine-learning algorithms to identify patterns that differ between two sets of biological samples and ranks pathways accordingly to the robustness of these patterns. This method can be applied to any type of omic data that can be mapped to curated pathway databases. This includes gene-expression data, copy-number variations, DNA variants, DNA methylation profiles, etc. It can also be applied to multiple types of omic data simultaneously. In the second part of my talk, I will explain an alternative approach, which uses machine learning to identify patterns in perturbational data and derives predictions of pathway activity for individual samples.',
-	    link:'https://www.youtube.com/watch?v=baJOSU6Yino'
-         },
-
-	{
+            synopsis:'Although in some cases individual genes or proteins may operate in isolation to influence a biological phenomenon, genes and proteins typically operate in the context of biological pathways. Researchers have access to curated pathway databases, which help to characterize which genes and proteins play a role in a given pathway. Molecular-level data can be mapped to these curated databases to gain a better understanding of the role that the pathways play in a given phenomenon of interest. However, most such methods can only be applied to a single type of molecular data (typically, gene-expression profiles), and few methods explicitly account for interdependencies among variables. We developed a method, Gene Set Omic Analysis, which uses machine-learning algorithms to identify patterns that differ between two sets of biological samples and ranks pathways accordingly to the robustness of these patterns. This method can be applied to any type of omic data that can be mapped to curated pathway databases. This includes gene-expression data, copy-number variations, DNA variants, DNA methylation profiles, etc. It can also be applied to multiple types of omic data simultaneously. In the second part of my talk, I will explain an alternative approach, which uses machine learning to identify patterns in perturbational data and derives predictions of pathway activity for individual samples.',
+            link:'https://www.youtube.com/watch?v=baJOSU6Yino'
+        },
+        {
             date: '25 August 2015',
             topic: 'Drug Repositioning by Integrating Target Information Through a Heterogeneous Network Model',
             presenters: 'Jing Li PhD, Case Western Reserve University',
             synopsis:'The emergence of network medicine not only offers more opportunities for better and more complete understanding of the molecular complexities of diseases, but also serves as a promising tool for identifying new drug targets and establishing new relationships among diseases that enable drug repositioning. Computational approaches for drug repositioning by integrating information from multiple sources and multiple levels have the potential to provide great insights to the complex relationships among drugs, targets, disease genes and diseases at a system level. In this talk, I will present a computational framework based on a heterogeneous network model for drug repositioning by using existing omics data about diseases, drugs and drug targets. The novelty of the framework lies in the fact that the strength between a disease-drug pair is calculated through an iterative algorithm on the heterogeneous graph that also incorporates drug-target information. Comprehensive experimental results show that the approach significantly outperforms several recent approaches. Case studies further illustrate its practical usefulness.',
             link: 'https://www.youtube.com/watch?v=4fL8c9EtNsE'
-            },
-	{
+        },
+        {
             date: '11 August 2015',
             topic: 'Biomedical Data Integration Toward Quality Healthcare Delivery',
             presenters: 'Qian Zhu PhD, University of Maryland Baltimore County',
-	    synopsis:'Traditionally, scientists spend a great deal of time on sifting through large amounts of raw data to find useful information for their research. With the recent advance in computational technologies, computational approaches are being increasingly applied in biomedical, even clinical domain to support biomedical related research and clinical decision making, further improve the quality and efficacy of healthcare. In my talk, I will present the effort made by my group on developing computational medical and clinical applications based on integrative biomedical and clinical data. Specifically, I will primarily describe our effort made on 1) drug discovery and 2) precision medicine.',
-	    link: 'https://www.youtube.com/watch?v=U81g3BQhAe0'
+	       synopsis:'Traditionally, scientists spend a great deal of time on sifting through large amounts of raw data to find useful information for their research. With the recent advance in computational technologies, computational approaches are being increasingly applied in biomedical, even clinical domain to support biomedical related research and clinical decision making, further improve the quality and efficacy of healthcare. In my talk, I will present the effort made by my group on developing computational medical and clinical applications based on integrative biomedical and clinical data. Specifically, I will primarily describe our effort made on 1) drug discovery and 2) precision medicine.',
+	       link: 'https://www.youtube.com/watch?v=U81g3BQhAe0'
         },
-	{
+        {
             date: '23 June 2015',
             topic: 'The Construction of a Cluster Stack Based on Open Source Technologies',
             presenters: 'Matthew Jones, Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC',
@@ -88,14 +85,14 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             topic: 'Drug Toxicity Signature Generation Center',
             presenters: 'Eric Sobie PhD, Icahn School of Medicine at Mount Sinai, DToxS',
             synopsis: '',
-	    link: 'https://www.youtube.com/watch?v=85xfd9YS3vQ'
+            link: 'https://www.youtube.com/watch?v=85xfd9YS3vQ'
         },
 	    {
             date: '26 May 2015',
             topic: 'Integrative Analysis of Proteomics Data of Multi-Layered Post Translational Modifications Collected from Human Lung Cancer Cell Lines',
             presenters: 'Peter Hornbeck PhD, Klarisa Rikova, Mark Grimes PhD (Cell Signaling Technology Inc.) and Neil Clark PhD, Nicolas Fernandez PhD (Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC)',
             synopsis: '',
-	    link: 'https://www.youtube.com/watch?v=HQxincOIqNM'
+            link: 'https://www.youtube.com/watch?v=HQxincOIqNM'
         },
 	    {
             date: '5 May 2015',

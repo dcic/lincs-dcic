@@ -2,16 +2,16 @@ var mod = angular.module("newsMod", []);
 
 mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
-    var DIR = '/images/news/';
+	var DIR = '/images/news/';
 
 	var formatStories = function(stories) {
-        return _.sortBy(stories, function(story) {
-            return -Date.parse(story.date);
-        });
-    };
+		return _.sortBy(stories, function(story) {
+			return -Date.parse(story.date);
+		});
+	};
 
 	$scope.stories = formatStories([
-         {
+		{
             title: "Back on the Road with Coursera",
             source: "ASBMB Today",
             url: "http://www.asbmb.org/asbmbtoday/201606/Coordinates/",
@@ -20,7 +20,7 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
             mainText: "",
             image: DIR + "carol_m_img.fw.png"
         },
-	{
+		{
             title: "BD2K-LINCS DCIC's First Annual Systems Biology Data Science Symposium",
             source: "University of Miami News",
             url: "http://med.miami.edu/news/sylvester-director-delivers-keynote-address-at-first-annual-systems-biology",
@@ -29,7 +29,7 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
             mainText: "",
             image: DIR + "dcic_symposium_group.png"
         },
-	 {
+	 	{
             title: "Genetics: Big Hopes for Big Data",
             source: "Nature | Outlook",
             url: "http://www.nature.com/nature/journal/v527/n7578_supp/full/527S108a.html",
@@ -38,7 +38,7 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
             mainText: "",
             image: DIR + "nature_outlook_cover.png"
         },
-	 {
+	 	{
             title: "\"The characteristic direction: a geometrical approach to identify differentially expressed genes\" has been recommended in F1000Prime as being of special significance in its field by F1000 Faculty Member Charles Auffray",
             source: "F1000 Prime",
             url: "http://f1000.com/prime/718324928?subscriptioncode=73f1be84-cf1b-47e0-87d4-8ce34f95c9fc",
@@ -53,19 +53,19 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 			url: "http://biomedicalcomputationreview.org/content/nih-launches-united-ecosystem-big-data",
 			target: "_blank",
 			date: "1/8/2015",
-		    mainText: "Francis Collins, MD, PhD, Director of the National Institutes of Health (NIH), says he used to feel \"data envy\" toward the field of physics. In those days, \"no one would have predicted that biology would emerge as the biggest challenge in terms of data. But that is now the case.\"",
-		    image: DIR + "biomedical-computation-review.png"
-        },
+			mainText: "Francis Collins, MD, PhD, Director of the National Institutes of Health (NIH), says he used to feel \"data envy\" toward the field of physics. In those days, \"no one would have predicted that biology would emerge as the biggest challenge in terms of data. But that is now the case.\"",
+			image: DIR + "biomedical-computation-review.png"
+		},
 		{
 			title: "UC Part of Team Selected for NIH's Multimillion-Dollar 'Big Data' Push",
-		    source: "University of Cincinnati Health News",
+			source: "University of Cincinnati Health News",
 			url: "http://healthnews.uc.edu/news/?/25274/",
 			target: "_blank",
 			date: "10/9/2014"
 		},
 		{
 			title: "Mount Sinai researchers awarded one of the Big Data to Knowledge (BD2K) Centers of Excellence grants",
-		    source: "Icahn School of Medicine at Mount Sinai",
+			source: "Icahn School of Medicine at Mount Sinai",
 			url: "http:/icahn.mssm.edu/research/labs/maayan-laboratory/about-us/news/center-to-seek-new-therapeutics-by-integrating-gene-protein-databases-",
 			target: "_blank",
 			date: "10/9/2014"

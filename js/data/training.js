@@ -34,11 +34,11 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: "MOOCs on Coursera",
-            text: $sce.trustAsHtml("The DCIC investigators and research staff are currently offering two graduate-level courses on Coursera:" +
+            text: $sce.trustAsHtml("The DCIC investigators and research staff are currently offering a graduate-level course on Coursera:" +
                 "<ul>" +
-                    "<li>" +
-                        "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC</a>" +
-                    "</li>" +
+                    // "<li>" +
+                    //     "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC</a>" +
+                    // "</li>" +
                     "<li>" +
                         "<a href='" + SYSBIO_MOOC_LINK + "' target='blank'>Network Analysis in Systems Biology</a>" +
                     "</li>" +

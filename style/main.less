@@ -1,0 +1,421 @@
+/*
+ * Style for the LINCS-DCIC website.
+ */
+
+@import "variable.less";
+
+
+/* Sticky Footer. Do not change.
+ * ----------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: @dim-footer-height; /* bottom = footer height */
+}
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: @dim-footer-height;
+    width: 100%;
+}
+
+/* Tag selectors, i.e. global settings.
+ * ------------------------------------------------------------------------- */
+html,
+body {
+    font-family: @font-family-base;
+}
+a {
+    /* Set default to override Bootstrap's default. */
+    color: @color-primary;
+	&:hover,
+	&:active,
+	&:link,
+	&:visited {
+        // color: @color-black;
+		// cursor: pointer;
+		// text-decoration: none;
+	}
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: @font-family-accent;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.btn {
+    border: 1px solid @color-gray-light;
+    border-radius: 0;
+}
+.underline {
+    text-decoration: underline;
+}
+.instruction {
+    font-style: italic;
+}
+.loader {
+    background: rgba(255, 255, 255, .8);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 25%;
+    font-size: 30px;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+/* Bootstrap overrides
+ * ------------------------------------------------------------------------- */
+.navbar {
+    border-radius: 0;
+}
+.navbar-nav > li > .dropdown-menu {
+    border-radius: 0;
+}
+
+/* Structal elements: wrapper, header, footer, and related content.
+ * ------------------------------------------------------------------------- */
+#header {
+    border-bottom: 1px solid @color-gray-light;
+}
+#wrapper {
+    padding-bottom: 50px;
+}
+#content-wrapper {
+    #index {
+        img.icon {
+            padding: 10px;
+            width: 100px;
+        }
+        h2 {
+          margin-top: 0;
+        }
+        .section {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+    }
+}
+#footer {
+    background: #444;
+    height: @dim-footer-height;
+    padding: 30px 0;
+	a,
+	p {
+		color: @color-white;
+		font-size: 13px;
+	}
+	a {
+		&:hover {
+			color: @color-primary-light;
+		}
+	}
+	h4 {
+        color: @color-white;
+        border-bottom: 1px solid #666;
+        padding-bottom: 5px;
+	}
+	ul {
+        list-style-type: none;
+        padding: 0;
+	}
+    #social {
+        a {
+            border: none;
+            border-radius: 0;
+        }
+        img {
+            width: 30px;
+        }
+        li {
+            padding-right: 0;
+            padding-left: 3px;
+        }
+        .research-gate {
+            padding: 0;
+        }
+    }
+}
+
+/* Category content is related but varies in style. "index-page" refers
+ * to content on the main page. "catgory-page" refers to content on
+ * individual pages.
+ * ------------------------------------------------------------------------- */
+#index-page,
+.category-page {
+    ol,
+    ul {
+		padding: 0 0 0 15px;
+	}
+	li {
+        list-style-type: none;
+        a {
+            /* Color on the main page is black; on individual pages it is accent. */
+            &:hover {
+                cursor: pointer;
+            }
+        }
+	}
+	li:before {
+        /* FontAwesome char code inside the '' */
+        content: '\F105';
+        color: @color-charcoal;
+        font-family: 'FontAwesome';
+        display: inline-block;
+        width: 1.2em;
+        margin-left: -1.5em;
+        padding-left: 6px;
+    }
+}
+.category-page {
+    a {
+        color: @color-primary;
+        &:hover {
+            color: @color-primary-dark;
+            text-decoration: underline;
+        }
+    }
+    &#analysis {
+        margin-top: 20px;
+        .col-md-4 {
+            textarea {
+                height: 200px;
+                width: 100%;
+            }
+        }
+        .col-md-8 {
+            input,
+            textarea {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+        .submitted {
+            position: absolute;
+            padding: 1.6em;
+            background-color: rgba(255, 255, 255, 0.9);
+            left: 3em;
+        }
+        #example {
+            color: @color-lightcharcoal;
+            font-size: 13px;
+        }
+    }
+    #news {
+        .first {
+            img {
+                float: left;
+                padding-right: 10px;
+                width: 30%;
+            }
+            a {
+                font-family: @font-family-accent;
+                font-size: 20px;
+            }
+            .details {
+                float: right;
+                width: 70%;
+            }
+        }
+    }
+    &#edsrapp {
+        table {
+            border-bottom: 1px solid @color-gray;
+        }
+        tr {
+            height: 30px;
+            td:first-child {
+                font-weight: bold;
+                width: 30%;
+            }
+            td:last-child {
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+        #datepicker-wrapper {
+            span {
+                font-weight: bold;
+                /*width: 50%;*/
+            }
+            td {
+                width: auto;
+                input {
+                    width: auto;
+                }
+            }
+        }
+        #submit {
+            background: @color-primary;
+            border: none;
+            color: @color-white;
+            font-weight: bold;
+            margin-top: 20px;
+            &:hover {
+                background: @color-primary-dark;
+            }
+        }
+    }
+    .sections {
+        padding-top: 20px;
+        .section {
+            h3 {
+                margin-top: 0;
+            }
+            padding-bottom: 20px;
+            img,
+            .text {
+                float: left;
+            }
+            img {
+                width: 20%;
+            }
+            .text {
+                padding-left: 20px;
+                width: 80%;
+            }
+        }
+    }
+    .publication,
+    .newsStory,
+    .event {
+        padding-bottom: 20px;
+        p {
+            margin: 0;
+        }
+        .title {
+            font-size: 16px;
+        }
+    }
+    #calendar {
+        section:first-of-type {
+            border-bottom: 1px solid @color-gray;
+        }
+    }
+    #team {
+        .pi {
+            /* This is for when the page is collapsed. */
+            padding-top: 10px;
+        }
+        .contact-institution-logo-row {
+            margin-bottom: 10px;
+        }
+        .contact-institution-logo {
+            height: 80px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .contact-pi-logo {
+            height: 80px;
+        }
+        .contact-pi-desc {
+            margin-left: 10px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .contact-header {
+            border-bottom: 1px solid @color-gray-dark;
+            /*text-transform: uppercase;*/
+            margin-top: 15px;
+        }
+        .contact-researchers{
+            margin-bottom: 10px;
+        }
+        .person {
+            float: left;
+            padding-top: 10px;
+        }
+        h4 {
+            font-weight: bold;
+        }
+    }
+    &#summer-fellows-2015 {
+        h3 {
+            margin-top: 0;
+        }
+        h4 {
+            margin-bottom: 0;
+        }
+        .project {
+            margin-bottom: 0;
+        }
+    }
+    &#internal-dsrp {
+        img {
+            width: 100%;
+        }
+        .caption {
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 15px;
+        }
+        section {
+            margin-top: 10px;
+        }
+    }
+    &#workshops-etc {
+        section {
+            margin-bottom: 20px;
+        }
+    }
+    &#seminar-series {
+        table {
+            p {
+                margin: 0;
+            }
+        }
+    }
+    &#mini-symposium {
+        section {
+            border-top: 1px solid @color-gray;
+            padding: 10px 0;
+            h4,
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+.right-nav {
+    img {
+        width: 100%;
+    }
+}
+.highlight {
+    color: @color-red;
+}
+
+/* Miscellaneous global selectors.
+ * ------------------------------------------------------------------------- */
+.super {
+    font-size: .75em;
+    vertical-align: super;
+}
+a.important,
+.important {
+    font-style: normal;
+    font-weight: bold;
+	color: @color-accent !important;
+	a {
+		color: @color-accent !important;
+		&:hover {
+			color: @color-primary-light !important;
+		}
+	}
+}
+.clear {
+    clear: both;
+}

@@ -1,0 +1,201 @@
+@import "variable.less";
+
+#index-page {
+    li:before {
+        margin-left: -1.2em;
+    }
+}
+
+/* Carousel or rotator. Most of the element names are defined by Bootstrap
+ * and should not be renamed.
+ * ------------------------------------------------------------------------- */
+#carousel {
+    padding: 0 0 40px 0;
+    /* Images should be cut exactly. */
+    width: 100%;
+    #carousel-img-link,
+    img {
+        display: block;
+        //opacity: .5;
+        width: 100%;
+    }
+    button {
+        background: transparent;
+        border: none;
+    }
+    .item {
+        width: 100%;
+    }
+    .carousel-btn {
+        background: #fff;
+        border: none;
+        bottom: 10px;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+    }
+    .carousel-highlight {
+        background: @color-primary;
+    }
+    .carousel-indicators {
+        bottom: 0;
+    }
+    .carousel-indicators li {
+        border: 1px solid @color-gray-dark;
+    }
+    .carousel-caption-custom {
+        background-color: rgba(255, 255, 255, .85);
+        border-bottom: @fancy-border;
+        color: @color-black;
+        padding: 15px;
+        position: absolute;
+        text-align: left;
+        text-shadow: none;
+        top: 30px;
+        max-width: 40%;
+        .caption-title-block {
+            padding-right: 10px;
+            a {
+                font-family: @font-family-accent;
+                font-size: 30px;
+                &:hover {
+                    color: @color-primary-light;
+                }
+            }
+        }
+        .caption-text {
+            font-size: 16px;
+        }
+        /* Some images look better with a light caption box. Override the dark default. */
+        &.light {
+            background: @color-primary;
+            color: @color-white;
+            a {
+                color: @color-white;
+                &:hover {
+                    color: @color-primary-dark;
+                }
+            }
+        }
+    }
+    .carousel-control {
+        background-image: none;
+        margin-top: 15%;
+        height: 40%
+    }
+    @media (max-width: 768px) {
+        .carousel-caption-custom {
+            display: none;
+        }
+    }
+    @media (max-width:  1024px) {
+        .caption-text {
+            display: none;
+        }
+    }
+}
+
+#index-page {
+    #overview {
+        li {
+            a {
+                font-size: 20px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .featured-stories  {
+        margin-top: @dim-gutter;
+        .story {
+            margin-bottom: 10px;
+            h2 {
+                border-bottom: @fancy-border;
+            }
+            span {
+                font-weight: bold;
+            }
+            a.link-without-list {
+                font-weight: bold;
+                &:before {
+                    /* FontAwesome char code inside the '' */
+                    content: '\F105';
+                    color: @color-charcoal;
+                    font-family: 'FontAwesome';
+                    display: inline-block;
+                    width: 1.1em;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            ul {
+                a {
+                    font-weight: bold;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .image {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: @dim-box-height;
+            }
+            .caption {
+                //height: 175px;
+                padding: @dim-box-padding 0 0 0;
+            }
+        }
+    }
+    #center-content {
+        #quote {
+            padding: 30px;
+            p {
+                font-family: @font-family-serif;
+                font-size: 20px;
+                font-style: italic;
+            }
+        }
+        #twitter {
+            background-color: @color-gray-very-light;
+            padding: 20px;
+            & > p {
+                text-align: center;
+            }
+            #twitter-fetcher {
+                li:before {
+                    display: none;
+                }
+                li {
+                    list-style-type: none;
+                }
+                .tweet {
+                    a {
+                        word-wrap: break-word;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-overflow: ellipsis;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                ul {
+                    padding: 0;
+                }
+            }
+            .fa {
+                font-size: 40px;
+                color: @color-twitter;
+                position: relative;
+                top: 30%;
+                &:hover {
+                    color: @color-twitter-dark;
+                }
+            }
+        }
+    }
+}

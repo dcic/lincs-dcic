@@ -1,0 +1,6 @@
+<form>
+	<tags-input placeholder="Search Slicr" ng-model="tags" min-length="2" class="search-box">
+	    <auto-complete min-length="2" source="loadTags($query)"></auto-complete>
+	</tags-input>
+	<button class="btn btn-default" ng-click="search()">Search</button>
+</form>

@@ -41,6 +41,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Access to LINCS Data and Signatures"
         },
         {
+            title: "Concierge",
+            description: "Provides multiple points of entry to the LINCS tools and databases.",
+            url: "http://lincs-dcic.org/#/getting-started/concierge",
+            target: "_blank",
+            image: DIR + "concierge_bell.svg",
+            shortDesc: "Interactive Introduction to LINCS Tools and Resources"    
+        },
+        {
             title: "piLINCS",
             description: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
             url: "http://eh3.uc.edu/pilincs",
@@ -48,7 +56,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "pilincs.png",
             shortDesc: "Interface to panoramaweb.org"
         },
-	{
+        {
             title: "Slicr",
             description: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
             url: "http://amp.pharm.mssm.edu/Slicr",
@@ -65,7 +73,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "L1000 Characteristic Direction Signature Search Engine",
             isHtml: true
         },
-	{
+        {
             title: "SEP L1000",
             description: "SEP L1000 is a web portal to share predicted ADRs.",
             url: "http://maayanlab.net/SEP-L1000/",
@@ -73,7 +81,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "sep.png",
             shortDesc: "Side Effect Prediction Based on L1000 Data"
         },
-	{
+        {
             title: "CREEDS",
             description: "Collections of processed gene, drug and disease signatures from GEO.",
             url: "http://amp.pharm.mssm.edu/CREEDS/",
@@ -121,7 +129,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "drug-cell-line-browser.png",
             shortDesc: "Data Visualization Tool"
         },
-	{
+        {
             title: "GUIdock",
             description: "A method for deploying containers with a graphical user interface.",
             url: "https://github.com/WebDataScience/GUIdock",
