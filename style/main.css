@@ -329,6 +329,15 @@ h6 {
 .category-page#summer-fellows-2015 .project {
   margin-bottom: 0;
 }
+.category-page#summer-fellows-2016 h3 {
+  margin-top: 0;
+}
+.category-page#summer-fellows-2016 h4 {
+  margin-bottom: 0;
+}
+.category-page#summer-fellows-2016 .project {
+  margin-bottom: 0;
+}
 .category-page#internal-dsrp img {
   width: 100%;
 }

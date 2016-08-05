@@ -4,7 +4,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     var LINCS_MOOC_LINK = "https://www.coursera.org/course/bd2klincs",
         SYSBIO_MOOC_LINK = "https://www.coursera.org/course/netsysbio",
-        SUMMER_FELLOWS_LINK = "#/summer-fellows-2015#nav",
+        SUMMER_FELLOWS_LINK = "#/summer-fellows-2016#nav",
         SUMMER_PROGRAM_DESC = "#/summer-research-app#nav",
         GEO2Enrichr_LINK = "http://amp.pharm.mssm.edu/g2e/",
         DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
@@ -14,7 +14,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         DIR = "/images/general/";
 
     $scope.introText = $sce.trustAsHtml("The BD2K-LINCS DCIC engages the research community by delivering high quality educational materials through the web as well as through mentoring, seminars and symposia. Also, Center investigators actively engage in the education of a new generation of Big Data Scientists by developing a graduate-level Big Data Science MOOC that will be delivered to graduate students in Big Data Biostatistics and other Biomedical Informatics graduate programs.");
- 
+
     $scope.sections = [
 		{
             title: "Summer Research Training Program",
