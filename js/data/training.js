@@ -3,14 +3,16 @@ var mod = angular.module("trainingMod", []);
 mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     var LINCS_MOOC_LINK = "https://www.coursera.org/course/bd2klincs",
-        SYSBIO_MOOC_LINK = "https://www.coursera.org/course/netsysbio",
-        SUMMER_FELLOWS_LINK = "#/summer-fellows-2016#nav",
+        SYSBIO_MOOC_LINK = "https://www.coursera.org/learn/network-biology",
+        SUMMER_FELLOWS_LINK_2015 = "#/summer-fellows-2015#nav",
+        SUMMER_FELLOWS_LINK_2016 = "#/summer-fellows-2016#nav",
         SUMMER_PROGRAM_DESC = "#/summer-research-app#nav",
         GEO2Enrichr_LINK = "http://amp.pharm.mssm.edu/g2e/",
         DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
         Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
         Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
         FLYER_LINK = "static/dcic_summer_program.pdf",
+        ARTICLE_LINK = "http://www.asbmb.org/asbmbtoday/201606/Coordinates/"
         DIR = "/images/general/";
 
     $scope.introText = $sce.trustAsHtml("The BD2K-LINCS DCIC engages the research community by delivering high quality educational materials through the web as well as through mentoring, seminars and symposia. Also, Center investigators actively engage in the education of a new generation of Big Data Scientists by developing a graduate-level Big Data Science MOOC that will be delivered to graduate students in Big Data Biostatistics and other Biomedical Informatics graduate programs.");
@@ -20,28 +22,35 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             title: "Summer Research Training Program",
             text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students." +
                 "<ul>" +
+                      "<li>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK_2016 + "'>2016 Summer Fellows and Research Projects</a>" +
+                    "</li>" +
+                     "<li>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK_2015 + "'>2015 Summer Fellows and Research Projects</a>" +
+                    "</li>" +
 		     "<li>" +
                         "<a href='" + FLYER_LINK + "'>2016 Program Flyer</a>" +
                     "</li>" +
-		     "<li>" +
+                     "<li>" +
                         "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
                     "</li>" +
-                    "<li>" +
-                        "<a href='" + SUMMER_FELLOWS_LINK + "'>2015 Summer Fellows and Research Projects</a>" +
-                    "</li>" +
-                "</ul>"),
-            image: DIR + "mounica.png"
+                                   "</ul>"),
+            image: DIR + "esther.png"
         },
         {
             title: "MOOCs on Coursera",
-            text: $sce.trustAsHtml("The DCIC investigators and research staff are currently offering a graduate-level course on Coursera:" +
+            text: $sce.trustAsHtml("The DCIC investigators and research staff are currently offering two graduate-level courses on Coursera:" +
                 "<ul>" +
-                    // "<li>" +
-                    //     "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC</a>" +
-                    // "</li>" +
+                    "<li>" +
+                    "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC</a>" +
+                    "</li>" +
                     "<li>" +
                         "<a href='" + SYSBIO_MOOC_LINK + "' target='blank'>Network Analysis in Systems Biology</a>" +
                     "</li>" +
+                    "<li>" +
+                        "<a href='" + ARTICLE_LINK + "' target='blank'>Feature Article in ASBMB Today: Back on the Road with Coursera</a>" +
+                    "</li>" +
+
                 "</ul>"),
             image: DIR + "mooc.png"
         },

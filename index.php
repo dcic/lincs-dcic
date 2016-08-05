@@ -65,7 +65,7 @@
     </div>
 
     <div ng-include="'view/partial/footer.html'"></div>
-
+    
 	<!-- Libraries -->
 
 
@@ -100,7 +100,7 @@
 	<!-- <script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script> -->
 
 
-
+		
 	<!-- ************************ Application ************************ -->
 	<!-- Data -->
     <script type="text/javascript" src="js/data/apis.js"></script>

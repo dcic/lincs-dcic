@@ -27,7 +27,7 @@ var mod = angular.module("lincsDcic", [
  	"trainingMod",
  	"navMod",
 	"seminarSeriesMod",
-	"summerFellows2015Mod",
+ 	"summerFellows2015Mod",
 	"summerFellows2016Mod",
  	"webinarsMod",
  	"workshopsEtcMod",
@@ -106,7 +106,7 @@ mod.config(["$routeProvider", function($routeProvider) {
             templateUrl: "view/page/summer-fellows-2015.html"
 		}).
 		when("/summer-fellows-2016", {
-            templateUrl: "view/page/summer-fellows-2016.html"
+			templateUrl: "view/page/summer-fellows-2016.html"
 		}).
 		when("/internal-dsrp", {
 			templateUrl: "view/page/internal-dsrp.html"
