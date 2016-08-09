@@ -38,7 +38,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
 	{
             title: 'Systems Biology Data Science Symposium',
-            description: $sce.trustAsHtml('This first <a href="#/2016-data-science-symposium" target="_blank">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
+            description: $sce.trustAsHtml('This first <a href="#/2016-data-science-symposium">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
             details: 'January 19-20, 2016, Coral Gables, FL'
         },
 	{
@@ -82,6 +82,11 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.seminars = [	
+	{
+            title: 'Webinar and Poster Session for the BD2K-LINCS DCIC Summer Research Training Program',
+            description: $sce.trustAsHtml('The <a href="#/summer-fellows-2016">2016 BD2K-LINCS DCIC Summer Fellows</a> presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.'),
+            details: 'August 12, 2016, Icahn School of Medicine at Mount Sinai, NY'
+        },
 	{
             title: 'Data Integration for Systems Pharmacology',
             description: $sce.trustAsHtml('Avi Ma\'ayan PhD was an invited speaker for the Department of Medicine\'s Research Seminar Series at Stony Brook School of Medicine.'),
