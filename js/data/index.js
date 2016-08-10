@@ -124,12 +124,13 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                     target: '_blank'
                 },
                 {
-                    title: 'Summer Research',
+                    title: 'Summer Research Training Program',
                     url: '#/summer-research-app#nav'
                 },
                 {
-                    title: 'Postdoctoral Positions',
-                    url: '#/jobs#postdoctoral-positions'
+                    title: 'Big Data Science Course',
+                    url: 'https://www.coursera.org/learn/bd2k-lincs',
+                    target: '_blank'
                 }
             ]
         },
