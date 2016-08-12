@@ -7,7 +7,6 @@ mod.controller("summerFellows2016Ctrl", ["$scope", "$sce", function($scope, $sce
         MAAYAN_LAB = "Avi Ma'ayan PhD, Icahn School of Medicine at Mount Sinai",
         MAAYAN_LAB_LINK = "http://icahn.mssm.edu/research/labs/maayan-laboratory",
         FDU = "Fairleigh Dickinson University";
-        
 
     $scope.fellows = [
         {
@@ -67,6 +66,5 @@ mod.controller("summerFellows2016Ctrl", ["$scope", "$sce", function($scope, $sce
             labName: MAAYAN_LAB,
             labLink: MAAYAN_LAB_LINK
         }
-       
     ];
 }]);
