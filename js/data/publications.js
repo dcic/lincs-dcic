@@ -6,15 +6,31 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             title: "L1000CDS2: LINCS L1000 characteristic direction signatures search engine",
             url: "http://www.nature.com/articles/npjsba201615",
             authors: "Duan Q, Reid SP, Clark NR, Wang Z, Fernandez NF, Rouillard AD, Readhead B, Tritsch SR, Hodos R, Hafner M, Niepel M, Sorger PK, Dudley JT, Bavari S, Panchal RG, Ma'ayan A.",
-            citation: "npj Systems Biology and Applications 2, 16015 (2016)",
+            citation: "npj Systems Biology and Applications 2, 16015.",
             ids: "",
+            year: 2016
+        },
+        {
+            title: "An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study",
+            url: "http://f1000research.com/articles/5-1574/v1",
+            authors: "Wang Z, Ma'ayan A.",
+            citation: "F1000Research 5:1574.",
+            ids: "",
+            year: 2016
+        },
+        {
+            title: "Drug induced adverse events prediction with the LINCS L1000 data",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/27153606",
+            authors: "Wang Z, Clark NR, Ma'ayan A.",
+            citation: "Bioinformatics 2016 Aug 1;32(15):2338-45.",
+            ids: "PMID: 27153606",
             year: 2016
         },
 	{
             title: "The harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27374120",
             authors: "Rouillard AD, Gundersen GW, Fernandez NF, Wang Z, Monteiro CD, McDermott MG, Ma'ayan A.",
-            citation: "Database (Oxford) 2016 Jul 3 pii: baw100",
+            citation: "Database (Oxford) 2016 Jul 3 pii: baw100.",
             ids: "PMID: 27374120 | PMC4930834",
             year: 2016
         },
@@ -22,16 +38,8 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             title: "Enrichr: a comprehensive gene set enrichment analysis web server 2016 update",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27141961",
             authors: "Kuleshov MV, Jones MR, Rouillard AD, Fernandez NF, Duan Q, Wang Z, Koplev S, Jenkins SL, Jagodnik KM, Lachmann A, McDermott M, Monteiro CD, Gundersen GW, Ma'ayan A.",
-            citation: "Nucleic Acids Research 2016 Jul 8;44(W1):W90-7",
+            citation: "Nucleic Acids Research 2016 Jul 8;44(W1):W90-7.",
             ids: "PMID: 27141961",
-            year: 2016
-        },
-	{
-            title: "Drug induced adverse events prediction with the LINCS L1000 data",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/27153606",
-            authors: "Wang Z, Clark NR, Ma'ayan A.",
-            citation: "Bioinformatics 2016 Apr doi: 10.1093/bioinformatics/btw168",
-            ids: "PMID: 27153606",
             year: 2016
         },
 	{
