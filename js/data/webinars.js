@@ -2,11 +2,7 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
-	  {
-            date: '12 August 2016 | 1:00 PM ET',
-            topic: 'BD2K-LINCS DCIC Summer Research Projects',
-            presenters: 'Esther Chen, Daniel Clarke, Axel Feldmann, Jennifer Lin, Katie Lin, Colette Malyack, Kevin Sani'
-           },  
+	   
 	  {
             date: '29 November 2016 | 3:00 PM ET',
             topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
@@ -15,6 +11,12 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     ];
     $scope.pastWebinars = [   
+	{
+            date: '12 August 2016',
+            topic: 'BD2K-LINCS DCIC Summer Research Projects',
+            presenters: 'BD2K-LINCS DCIC Summer Fellows',
+            synopsis: 'On the final day of the ten-week research training program, the 2016 BD2K-LINCS DCIC Summer Fellows presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.',
+        },  
 	{
             date: '28 June 2016',
             topic: 'Systematic Validation of Multiscale Gene Networks using the LINCS Gene Perturbation Data',

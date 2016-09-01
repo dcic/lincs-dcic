@@ -47,10 +47,10 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "gregory.gundersen {at} mssm.edu"
                 },
                 {
-                    firstName: "Qiaonan",
-                    lastName: "Duan",
+                    firstName: "Edward",
+                    lastName: "He",
                     affiliation: ISMMS,
-                    email: "qiaonan.duan {at} mssm.edu"
+                    email: "edward.he {at} mssm.edu"
                 },
                 {
                     firstName: "Nicolas",
@@ -105,6 +105,12 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     lastName: "Monteiro",
                     affiliation: ISMMS,
                     email: "caroline.monteiro {at} mssm.edu"
+                },
+                {
+                    firstName: "Katie",
+                    lastName: "Lin",
+                    affiliation: ISMMS,
+                    email: "katie.lin {at} mssm.edu"
                 }
 
             ]
