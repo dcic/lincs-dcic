@@ -9,6 +9,47 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.tools = [
         {
+            title: "Concierge",
+            description: "Provides multiple points of entry to the LINCS tools and databases.",
+            url: "http://lincs-dcic.org/#/getting-started/concierge",
+            target: "_blank",
+            image: DIR + "concierge_bell.svg",
+            shortDesc: "Interactive Introduction to LINCS Tools and Resources"    
+        },
+        {
+            title: "LINCS Data Portal",
+            description: "Features for searching and exploring LINCS dataset packages and reagents.",
+            url: "http://lincsportal.ccs.miami.edu/dcic-portal/",
+            target: "_blank",
+            image: DIR + "portal.png",
+            shortDesc: "Access to LINCS Data and Signatures"
+        },
+        {
+            title: "L1000CDS2",
+            description: "L1000CDS<span class='super'>2</span> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
+            url: "http://amp.pharm.mssm.edu/L1000CDS2/",
+            target: "_blank",
+            image: DIR + "l1000cds2.png",
+            shortDesc: "L1000 Characteristic Direction Signature Search Engine",
+            isHtml: true
+        },  
+        {
+            title: "iLINCS",
+            description: "An integrative web platform for analysis of LINCS data and signatures.",
+            url: "http://eh3.uc.edu/GenomicsPortals/viewiLincs.jsp",
+            target: "_blank",
+            image: DIR + "ilincs.png",
+            shortDesc: "LINCS Web Portal"
+        },
+        {
+            title: "piLINCS",
+            description: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
+            url: "http://eh3.uc.edu/pilincs",
+            target: "_blank",
+            image: DIR + "pilincs.png",
+            shortDesc: "Interface to panoramaweb.org"
+        },
+	{
             title: "Harmonizome",
             description: "Built on top of information about genes and proteins from 114 datasets, the Harmonizome is a knowledge engine for a diverse set of integrated resources.",
             url: "http://amp.pharm.mssm.edu/Harmonizome",
@@ -25,53 +66,20 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Search Engine for Gene Lists and Signatures"
         },
         {
-            title: "GEO2Enrichr",
-            description: "A browser extension and web application to extract gene sets from GEO and analyze these lists for common biological functions.",
-            url: "http://amp.pharm.mssm.edu/g2e/",
+            title: "Gen3va",
+            description: "Aggregates and analyzes gene expression signatures extracted from GEO by the crowd using GEO2Enrichr.",
+            url: "http://amp.pharm.mssm.edu/gen3va",
             target: "_blank",
-            image: DIR + "g2e.png",
-            shortDesc: "Differential Expression Analysis Tool"
+            image: DIR + "gen3va_logo.png",
+            shortDesc: "Gene Expression and Enrichment Vector Analyzer"
         },
-	    {
-            title: "LINCS Data Portal (alpha version)",
-            description: "Features for searching and exploring LINCS dataset packages and reagents.",
-            url: "http://lincsportal.ccs.miami.edu/dcic-portal/",
+	{
+            title: "CREEDS",
+            description: "Collections of processed gene, drug and disease signatures from GEO.",
+            url: "http://amp.pharm.mssm.edu/CREEDS/",
             target: "_blank",
-            image: DIR + "portal.png",
-            shortDesc: "Access to LINCS Data and Signatures"
-        },
-        {
-            title: "Concierge",
-            description: "Provides multiple points of entry to the LINCS tools and databases.",
-            url: "http://lincs-dcic.org/#/getting-started/concierge",
-            target: "_blank",
-            image: DIR + "concierge_bell.svg",
-            shortDesc: "Interactive Introduction to LINCS Tools and Resources"    
-        },
-        {
-            title: "piLINCS",
-            description: "A seamless user interface and intermediate API for accessing LINCS proteomics datasets (P100, GCP, etc.) on Panorama.",
-            url: "http://eh3.uc.edu/pilincs",
-            target: "_blank",
-            image: DIR + "pilincs.png",
-            shortDesc: "Interface to panoramaweb.org"
-        },
-        {
-            title: "Slicr",
-            description: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
-            url: "http://amp.pharm.mssm.edu/Slicr",
-            target: "_blank",
-            image: DIR + "slicr2.png",
-            shortDesc: "LINCS L1000 Slicr [GSE70138 data only]"
-        },
-        {
-            title: "L1000CDS2",
-            description: "L1000CDS<span class='super'>2</span> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
-            url: "http://amp.pharm.mssm.edu/L1000CDS2/",
-            target: "_blank",
-            image: DIR + "l1000cds2.png",
-            shortDesc: "L1000 Characteristic Direction Signature Search Engine",
-            isHtml: true
+            image: DIR + "creeds_logo.fw.png",
+            shortDesc: "Crowd Extracted Expression of Differential Signatures"
         },
         {
             title: "SEP L1000",
@@ -82,12 +90,20 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Side Effect Prediction Based on L1000 Data"
         },
         {
-            title: "CREEDS",
-            description: "Collections of processed gene, drug and disease signatures from GEO.",
-            url: "http://amp.pharm.mssm.edu/CREEDS/",
+            title: "Slicr",
+            description: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
+            url: "http://amp.pharm.mssm.edu/Slicr",
             target: "_blank",
-            image: DIR + "creeds_logo.fw.png",
-            shortDesc: "Crowd Extracted Expression of Differential Signatures"
+            image: DIR + "slicr2.png",
+            shortDesc: "LINCS L1000 Slicr [GSE70138 data only]"
+        },
+        {
+            title: "GEO2Enrichr",
+            description: "A browser extension and web application to extract gene sets from GEO and analyze these lists for common biological functions.",
+            url: "http://amp.pharm.mssm.edu/g2e/",
+            target: "_blank",
+            image: DIR + "g2e.png",
+            shortDesc: "Differential Expression Analysis Tool"
         },
         {
             title: "PAEA",
@@ -97,22 +113,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "paea.png",
             shortDesc: "Principal Angle Enrichment Analysis"
         },
-        {
-            title: "LINCS Information Framework (LIFE)",
-            description: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
-            url: "http://life.ccs.miami.edu/life/",
-            target: "_blank",
-            image: DIR + "life.png",
-            shortDesc: "LINCS Information System"
-        },
-        {
-            title: "iLINCS",
-            description: "A computational biology project aimed at developing statistical methods and computational tools for integrative analysis of the data produced by the Library of Integrated Network-based Cellular Signatures (LINCS) program.",
-            url: "http://eh3.uc.edu/GenomicsPortals/viewiLincs.jsp",
-            target: "_blank",
-            image: DIR + "ilincs.png",
-            shortDesc: "LINCS Web Portal"
-        },
+        //{
+        //    title: "LINCS Information Framework (LIFE)",
+        //    description: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
+        //    url: "http://life.ccs.miami.edu/life/",
+        //    target: "_blank",
+        //    image: DIR + "life.png",
+        //    shortDesc: "LINCS Information System"
+        //},
         {
             title: "LINCS Canvas Browser",
             description: "The LINCS Canvas Browser is an interactive web app to query, browse and interrogate LINCS L1000 gene expression signatures.",
@@ -147,51 +155,51 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
         }
     ];
 
-    $scope.docentWarning = "*Experiments with content that may not be up to date.";
+    //$scope.docentWarning = "*Experiments with content that may not be up to date.";
 
-    $scope.lincsVizTools = [
-        {
-            title: "Docent - Grid view",
-            description: "Docent's grid view provides two interfaces for searching LINCS data by assay, perturbagen, cell, and readout.",
-            url: "http://amp.pharm.mssm.edu/milestones/grid.html",
-            target: "_blank",
-            image: DIR + "docent-grid.png",
-            shortDesc: "Searchable overview of the LINCS Consortium's datasets."
-        },
-        {
-            title: "Docent - List view",
-            description: "Docent's list view provides an interactive matrix of the most studied cell lines by assay.",
-            url: "http://amp.pharm.mssm.edu/milestones/product.html",
-            target: "_blank",
-            image: DIR + "docent-list.png",
-            shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
-        },
-        {
-            title: "Docent - Card view",
-            description: "Docent's card view provides an interactive matrix of the most studied cell lines by assay.",
-            url: "http://amp.pharm.mssm.edu/milestones/cards.html",
-            target: "_blank",
-            image: DIR + "docent-card.png",
-            shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
-        }
-    ];
+    //$scope.lincsVizTools = [
+        //{
+        //    title: "Docent - Grid view",
+        //    description: "Docent's grid view provides two interfaces for searching LINCS data by assay, perturbagen, cell, and readout.",
+        //    url: "http://amp.pharm.mssm.edu/milestones/grid.html",
+        //    target: "_blank",
+        //    image: DIR + "docent-grid.png",
+        //    shortDesc: "Searchable overview of the LINCS Consortium's datasets."
+       // },
+      //  {
+      //      title: "Docent - List view",
+      //      description: "Docent's list view provides an interactive matrix of the most studied cell lines by assay.",
+      //      url: "http://amp.pharm.mssm.edu/milestones/product.html",
+      //      target: "_blank",
+      //      image: DIR + "docent-list.png",
+      //      shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
+      //  },
+      //  {
+      //      title: "Docent - Card view",
+      //      description: "Docent's card view provides an interactive matrix of the most studied cell lines by assay.",
+      //      url: "http://amp.pharm.mssm.edu/milestones/cards.html",
+      //      target: "_blank",
+      //      image: DIR + "docent-card.png",
+      //      shortDesc: "Overview of the LINCS Consortium's datasets by assay and cell type."
+      //  }
+   // ];
 
-    $scope.lincsVizToolsArchived = [
-        {
-            title: "Docent I",
-            description: "Docent provides a quantified, interactive view of the biological entities such as cell lines, small molecules, and assays within LINCS data.",
-            url: "http://amp.pharm.mssm.edu/public/docent/",
-            target: "_blank",
-            image: DIR + "docent-i.png",
-            shortDesc: "Overview guide into LINCS data"
-        },
-        {
-            title: "Docent II",
-            description: "Docent II provides an interactive plot of available and upcoming data from the LINCS DSGCs.",
-            url: "http://amp.pharm.mssm.edu/milestonesViz/",
-            target: "_blank",
-            image: DIR + "docent-ii.png",
-            shortDesc: "Overview of the LINCS Data and Signature Generation Centers (DSGCs) Data Release Milestones"
-        }
-    ];
+   // $scope.lincsVizToolsArchived = [
+       // {
+       //     title: "Docent I",
+       //     description: "Docent provides a quantified, interactive view of the biological entities such as cell lines, small molecules, and assays within LINCS data.",
+       //     url: "http://amp.pharm.mssm.edu/public/docent/",
+       //     target: "_blank",
+       //     image: DIR + "docent-i.png",
+       //     shortDesc: "Overview guide into LINCS data"
+       // },
+       // {
+       //     title: "Docent II",
+       //     description: "Docent II provides an interactive plot of available and upcoming data from the LINCS DSGCs.",
+       //     url: "http://amp.pharm.mssm.edu/milestonesViz/",
+       //     target: "_blank",
+       //     image: DIR + "docent-ii.png",
+       //    shortDesc: "Overview of the LINCS Data and Signature Generation Centers (DSGCs) Data Release Milestones"
+       // }
+   // ];
 }]);

@@ -13,10 +13,11 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
         FLYER_LINK = "static/dcic_summer_program.pdf",
         ARTICLE_LINK = "http://www.asbmb.org/asbmbtoday/201606/Coordinates/"
+        DATAMINING_LINK = "http://events.mountsinaihealth.org/event/bd2k-lincs_data_mining_and_network_analysis_course"
         DIR = "/images/general/";
 
     $scope.introText = $sce.trustAsHtml("The BD2K-LINCS DCIC engages the research community by delivering high quality educational materials through the web as well as through mentoring, seminars and symposia. Also, Center investigators actively engage in the education of a new generation of Big Data Scientists by developing a graduate-level Big Data Science MOOC that will be delivered to graduate students in Big Data Biostatistics and other Biomedical Informatics graduate programs.");
-
+ 
     $scope.sections = [
 		{
             title: "Summer Research Training Program",
@@ -38,15 +39,20 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "esther.png"
         },
         {
-            title: "MOOCs on Coursera",
-            text: $sce.trustAsHtml("The DCIC investigators and research staff are currently offering two graduate-level courses on Coursera:" +
+            title: "Big Data Courses",
+            text: $sce.trustAsHtml("The DCIC investigators are currently offering two MOOCs on Coursera and a graduate-level big data course at the Icahn School of Medicine at Mount Sinai:" +
                 "<ul>" +
                     "<li>" +
-                    "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC</a>" +
+                    "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC MOOC on Coursera</a>" +
                     "</li>" +
                     "<li>" +
-                        "<a href='" + SYSBIO_MOOC_LINK + "' target='blank'>Network Analysis in Systems Biology</a>" +
+                        "<a href='" + SYSBIO_MOOC_LINK + "' target='blank'>Network Analysis in Systems Biology MOOC on Coursera</a>" +
                     "</li>" +
+                     "</li>" +
+                    "<li>" +
+                        "<a href='" + DATAMINING_LINK + "' target='blank'>BD2K-LINCS: Data Mining and Network Analysis Course (ISMMS Course)</a>" +
+                    "</li>" +
+
                     "<li>" +
                         "<a href='" + ARTICLE_LINK + "' target='blank'>Feature Article in ASBMB Today: Back on the Road with Coursera</a>" +
                     "</li>" +
@@ -69,7 +75,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: "Big Data Biostatistics PhD Program",
-            text: $sce.trustAsHtml("The <a href='http://eh.uc.edu/' target='_blank'>Big Data Biostatistics PhD Program at the University of Cincinnati College of Medicine</a> provides rigorous foundations in probability theory, statistics and computational sciences, combined with a broad knowledge of applications to biomedical research."),
+            text: $sce.trustAsHtml("The <a href='http://med.uc.edu/eh/divisions/bio/programs/phd-biostatistics-big-data-track' target='_blank'>Big Data Biostatistics PhD Program at the University of Cincinnati College of Medicine</a> provides rigorous foundations in probability theory, statistics and computational sciences, combined with a broad knowledge of applications to biomedical research."),
             image: DIR + "cincinnati.png"
         },
         {
