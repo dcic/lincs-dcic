@@ -6,22 +6,22 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
     var DIR = '/images/carousel/';
 
     $scope.slides = [
-        // {
-        //     index: 0,
-        //     image: DIR + 'bubble-graph.png',
-        //     title: 'Big Data Science Course',
-        //     caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
-        //     link: 'https://www.coursera.org/course/bd2klincs',
-        //     target: '_blank'
-        // },
-        {
-            index: 0,
-            image: DIR + 'bubble-graph.png',
-            title: 'PhD Program in Big Data at UC',
-            caption: 'The Big Data Biostatistics program aims to train the next generation of biomedical data scientists.',
-            link: 'https://med.uc.edu/eh/divisions/bio/programs/phd-biostatistics-big-data-track',
-            target: '_blank'
-        },
+         {
+             index: 0,
+             image: DIR + 'bubble-graph.png',
+             title: 'Big Data Science Course',
+             caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
+             link: 'https://www.coursera.org/learn/bd2k-lincs',
+             target: '_blank'
+         },
+        //{
+          //  index: 1,
+          //  image: DIR + 'bubble-graph.png',
+          //  title: 'PhD Program in Big Data at UC',
+          //  caption: 'The Big Data Biostatistics program aims to train the next generation of biomedical data scientists.',
+          //  link: 'https://med.uc.edu/eh/divisions/bio/programs/phd-biostatistics-big-data-track',
+          //  target: '_blank'
+       // },
         {
             index: 1,
             image: DIR + 'harmonizome.png',
@@ -41,8 +41,8 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 3,
             image: DIR + 'summer-fellows-2016.png',
             title: 'Summer Research Program',
-            caption: 'The 2016 BD2K-LINCS DCIC Summer Research Training Program runs June 6 - August 12.',
-            link: '#/summer-research-app#nav'
+            caption: 'Check out the research projects of our 2016 BD2K-LINCS DCIC Summer Research Fellows!',
+            link: '#/summer-fellows-2016#nav'
         }
     ];
 

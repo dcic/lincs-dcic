@@ -54,11 +54,11 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                 {
                     title: 'External Projects',
                     url: '#/external-dsrp#nav'
-                },
-                {
-                    title: 'Collaborate with Us',
-                    url: '#/edsr#nav'
                 }
+                //{
+                //    title: 'Collaborate with Us',
+                 //   url: '#/edsr#nav'
+               // }
             ]
         },
         {
@@ -72,10 +72,10 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                     url: 'http://www.lincsproject.org/data/data-standards/',
                     target: '_blank'
                 },
-                {
-                    title: 'LINCS Data Registry',
-                    url: 'http://amp.pharm.mssm.edu/LDR'
-                },
+                //{
+                 //   title: 'LINCS Data Registry',
+                 //   url: 'http://amp.pharm.mssm.edu/LDR'
+              //  },
                 {
                     title: 'Harmonizome',
                     url: 'http://amp.pharm.mssm.edu/Harmonizome',
@@ -98,10 +98,10 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                     title: 'Tools and Apps',
                     url: '#/resources#nav'
                 },
-                {
-                    title: 'Global View of LINCS Datasets',
-                    url: '#/resources#global-visualization-of-lincs-data'
-                },
+                //{
+                 //   title: 'Access LINCS Datasets',
+                   // url: 'http://dev3.ccs.miami.edu:8080/datasets-beta/'
+               // },
                 {
                     title: 'Analyze Your Gene Signatures',
                     url: '#/analyze#nav'
