@@ -3,6 +3,21 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	   
+	   {
+            date: '8 November 2016 | 3:00 PM ET',
+            topic: 'Integration of Phosphorylation Knowledge Networks with LINCS Omics Data for Cancer Drug Analysis',
+            presenters: 'Karen Ross PhD and Cathy Wu PhD, University of Delaware (DCIC External Data Science Research Project)'
+           },
+          {
+            date: '15 November 2016 | 3:00 PM ET',
+            topic: 'Cell Line Ontology-based Standardization, Integration and Analysis of LINCS Cell Lines',
+            presenters: 'Yongqun "Oliver" He DVM, PhD, University of Michigan Medical School (DCIC External Data Science Research Project)'
+           },
+           {
+            date: '22 November 2016 | 3:00 PM ET',
+            topic: 'Docker Pipelines for RNASeq Alignment and Analyses',
+            presenters: 'Ling-Hong Hung PhD, University of Washington (DCIC External Data Science Research Project)'
+           },
 	  {
             date: '29 November 2016 | 3:00 PM ET',
             topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
@@ -11,6 +26,20 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     ];
     $scope.pastWebinars = [   
+	 {
+            date: '4 October 2016',
+            topic: 'Unravelling Hairballs: Biological Pathways from Protein Modification Cluster Networks',
+            presenters: 'Mark Grimes PhD, University of Montana (DCIC External Data Science Research Project)',
+            synopsis: 'We developed a cluster-filtered edges approach to elucidate pathways based on post-translational modification data derived from mass spectrometry in lung cancer cell lines. We hypothesize that clustering of protein modifications under different conditions reveals patterns specific to the system, and that clusters identified by statistical relationships that contain proteins known to interact with one another are likely to represent functional signaling pathways. Mass spectrometry data, being full of holes (missing values), requires special considerations for embedding statistical relationships into reduced-dimension data structures for clustering. We surmounted the hole-y data problem by calculating statistical relationships using pairwise-complete observations, penalizing incomplete observations in dissimilarity representations, and embedding these relationships using t-distributed stochastic neighbor embedding combined with penalized matrix decomposition. We then filtered protein-protein interaction (PPI) networks by excluding all edges save those between proteins whose modifications co-clustered, and used shortest paths in cluster filtered networks to examine specific pathways. We focused on those affected by kinase inhibitors and geldanamycin, whose mechanism of action is not well understood. Receptor tyrosine kinase signaling pathways in lung cancer cell lines are receptor specific and implicate distinct responses. Signaling pathways converged on network hubs that are hypothesized to be signal- integrating proteins. Different post-translational modifications, especially phosphorylation and acetylation, appear to play dueling or antagonistic roles for signal transduction proteins. Geldanamycin affects acetyltransferases, which disrupts regulation of the cytoskeleton and endocytosis to affect specific pathways.',
+            link: 'https://www.youtube.com/watch?v=rZF9ejdRiNU'
+         },
+          {
+            date: '21 September 2016',
+            topic: 'Updates on Bioassay Ontology, Drug Target Ontology and LINCS',
+            presenters: 'Stephan Schurer PhD, University of Miami, BD2K-LINCS DCIC',
+            synopsis: 'In the "Human vs Machine-Enanced Scientific Discovery" Town Hall Webinar, Stephan Schurer presented updates on Bioassay Ontology (BAO), Drug Target Ontology (DTO), and LINCS that allow data in the biomedical drug discovery space to be meaningfully organized.',
+            link: 'https://www.collaborativedrug.com/buzz/2016/09/27/human-vs-machine-enhanced-scientific-discovery-cdd-webinar-video/'
+         },
 	{
             date: '12 August 2016',
             topic: 'BD2K-LINCS DCIC Summer Research Projects',

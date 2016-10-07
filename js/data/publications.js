@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	{
+            title: "Extraction and analysis of signatures from the Gene Expression Omnibus by the crowd",
+            url: "https://www.ncbi.nlm.nih.gov/pubmed/27667448",
+            authors: "Wang Z, Monteiro CD, Jagodnik KM, Fernandez NF, Gundersen GW, Rouillard AD, Jenkins SL, Feldmann AS, Hu KS, McDermott MG, Duan Q, Clark NR, Jones MR, Kou Y, Goff T, Woodland H, Amaral FM, Szeto GL, Fuchs O, Schussler-Fiorenza Rose SM, Sharma S, Schwartz U, Bausela XB, Szymkiewicz M, Maroulis V, Salykin A, Barra CM, Kruth CD, Bongio NJ, Mathur V, Todoric RD, Rubin UE, Malatras A, Fulp CT, Galindo JA, Motiejunaite R, Juschke C, Dishuck PC, Lahl K, Jafari M, Aibar S, Zaravinos A, Steenhuizen LH, Allison LR, Gamallo P, de Andres Segura F, Dae Devlin T, Perez-Garcia V, Ma'ayan A.",
+            citation: "Nature Communications 2016 Sep 26;7:12846.",
+            ids: "PMID: 27667448",
+            year: 2016
+        },
+	{
             title: "L1000CDS2: LINCS L1000 characteristic direction signatures search engine",
             url: "http://www.nature.com/articles/npjsba201615",
             authors: "Duan Q, Reid SP, Clark NR, Wang Z, Fernandez NF, Rouillard AD, Readhead B, Tritsch SR, Hodos R, Hafner M, Niepel M, Sorger PK, Dudley JT, Bavari S, Panchal RG, Ma'ayan A.",
@@ -10,28 +18,12 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             ids: "",
             year: 2016
         },
-        {
-            title: "An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study",
-            url: "http://f1000research.com/articles/5-1574/v1",
-            authors: "Wang Z, Ma'ayan A.",
-            citation: "F1000Research 5:1574.",
-            ids: "",
-            year: 2016
-        },
-        {
+	 {
             title: "Drug induced adverse events prediction with the LINCS L1000 data",
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27153606",
             authors: "Wang Z, Clark NR, Ma'ayan A.",
             citation: "Bioinformatics 2016 Aug 1;32(15):2338-45.",
-            ids: "PMID: 27153606",
-            year: 2016
-        },
-	{
-            title: "The harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/27374120",
-            authors: "Rouillard AD, Gundersen GW, Fernandez NF, Wang Z, Monteiro CD, McDermott MG, Ma'ayan A.",
-            citation: "Database (Oxford) 2016 Jul 3 pii: baw100.",
-            ids: "PMID: 27374120 | PMC4930834",
+            ids: "PMID: 27153606 | PMCID: PMC4965635",
             year: 2016
         },
 	{
@@ -39,7 +31,23 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27141961",
             authors: "Kuleshov MV, Jones MR, Rouillard AD, Fernandez NF, Duan Q, Wang Z, Koplev S, Jenkins SL, Jagodnik KM, Lachmann A, McDermott M, Monteiro CD, Gundersen GW, Ma'ayan A.",
             citation: "Nucleic Acids Research 2016 Jul 8;44(W1):W90-7.",
-            ids: "PMID: 27141961",
+            ids: "PMID: 27141961 | PMCID: PMC4987924",
+            year: 2016
+        },
+        {
+            title: "An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study",
+            url: "https://www.ncbi.nlm.nih.gov/pubmed/27583132",
+            authors: "Wang Z, Ma'ayan A.",
+            citation: "F1000Research 2016 Jul 5;5:1574.",
+            ids: "PMID: 27583132 | PMCID: PMC4972086",
+            year: 2016
+        },
+	{
+            title: "The harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/27374120",
+            authors: "Rouillard AD, Gundersen GW, Fernandez NF, Wang Z, Monteiro CD, McDermott MG, Ma'ayan A.",
+            citation: "Database (Oxford) 2016 Jul 3 pii: baw100.",
+            ids: "PMID: 27374120 | PMCID: PMC4930834",
             year: 2016
         },
 	{
@@ -47,7 +55,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27045593",
             authors: "Hung LH, Kristiyanto D, Lee SB, Yeung KY.",
             citation: "PLoS One 2016 Apr 5;11(4):e0152686.",
-            ids: "PMID: 27045593",
+            ids: "PMID: 27045593 | PMCID: PMC4821530",
             year: 2016
         },
 	{
@@ -55,7 +63,15 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "http://www.ncbi.nlm.nih.gov/pubmed/27009580",
             authors: "Rezza A, Wang Z, Sennett R, Qiao W, Wang D, Heitman N, Mok KW, Clavel C, Yi R, Zandstra P, Ma'ayan A, Rendl M.",
             citation: "Cell Reports 2016 Mar 18;5 pii: S2211-1247(16)30213-3.",
-            ids: "PMID: 27009580",
+            ids: "PMID: 27009580 | PMCID: PMC4826467",
+            year: 2016
+        },
+        {
+            title: "Integrative radiogenomic analysis for multicentric radiophenotype in glioblastoma",
+            url: "http://www.ncbi.nlm.nih.gov/pubmed/26863628",
+            authors: "Kong DS, Kim J, Lee IH, Kim ST, Seol HJ, Lee JI, Park WY, Ryu G, Wang Z, Ma'ayan A, Nam DH.",
+            citation: "Oncotarget 2016 Mar 8;7(10):11526-38.",
+            ids: "PMID: 26863628 | PMCID: PMC4905491",
             year: 2016
         },
 	{
@@ -71,7 +87,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26895667",
             authors: "Govindarajah V, Leung YK, Ying J, Gear R, Bornschein RL, Medvedovic M, Ho SM.",
             citation: "Journal of Nutritional Biochemistry 2016 Mar;29:73-82.",
-            ids: "PMID: 26895667",
+            ids: "PMID: 26895667 | PMCID: PMC4761409",
             year: 2016
         },
 	{
@@ -79,15 +95,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26894958",
             authors: "Scheckel C, Drapeau E, Frias MA, Park CY, Fak J, Zucker-Scharff I, Kou Y, Haroutunian V, Ma'ayan A, Buxbaum JD, Darnell RB.",
             citation: "eLife 2016 Feb 19;5 pii: e10421.",
-            ids: "PMID: 26894958",
-            year: 2016
-        },
-	{
-            title: "Integrative radiogenomic analysis for multicentric radiophenotype in glioblastoma",
-            url: "http://www.ncbi.nlm.nih.gov/pubmed/26863628",
-            authors: "Kong DS, Kim J, Lee IH, Kim ST, Seol HJ, Lee JI, Park WY, Ryu G, Wang Z, Ma'ayan A, Nam DH.",
-            citation: "Oncotarget 2016 Feb 1.",
-            ids: "PMID: 26863628",
+            ids: "PMID: 26894958 | PMCID: PMC4798961",
             year: 2016
         },
 	{
@@ -95,7 +103,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26816394",
             authors: "Sun X, Medvedovic M.",
             citation: "IET Systems Biology 2016 Feb;10(1):10-6.",
-            ids: "PMID: 26816394",
+            ids: "PMID: 26816394 | PMCID: PMC4786080",
             year: 2016
         },
 	{
@@ -111,7 +119,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "http://www.ncbi.nlm.nih.gov/pubmed/26917859",
             authors: "Onorante L, Raftery AE.",
             citation: "European Economic Review 2016 Jan 1;81:2-14.",
-            ids: "PMID: 26917859",
+            ids: "PMID: 26917859 | PMCID: PMC4762062",
             year: 2016
         },
 	{
