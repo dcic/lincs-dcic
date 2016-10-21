@@ -105,7 +105,14 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     lastName: "Lin",
                     affiliation: ISMMS,
                     email: "katie.lin {at} mssm.edu"
+                },
+		{
+                    firstName: "Denis",
+                    lastName: "Torre",
+                    affiliation: ISMMS,
+                    email: "denis.torre {at} mssm.edu"
                 }
+
 
             ]
         },
