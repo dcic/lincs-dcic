@@ -11,7 +11,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
         Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
         Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
-        FLYER_LINK = "static/dcic_summer17_oct14v.pdf",
+        FLYER_LINK = "static/dcic_summer17_oct25v.pdf",
         ARTICLE_LINK = "http://www.asbmb.org/asbmbtoday/201606/Coordinates/"
         DATAMINING_LINK = "http://events.mountsinaihealth.org/event/bd2k-lincs_data_mining_and_network_analysis_course"
         DIR = "/images/general/";
