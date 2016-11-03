@@ -8,10 +8,6 @@ span.glyphicon.minor {
     font-size: 14px;
 }
 
-span.glyphicon.dcic {
-    color: rgb(53, 147, 177);
-}
-
 span.glyphicon.transcriptomics {
     color: rgb(0, 167, 122);
 }
@@ -48,14 +44,6 @@ span.glyphicon.hms-center {
 
                 <span class="glyphicon glyphicon-question-sign minor pull-right"
                     data-content-template="view/partial/quick-start-signatures-description.html"
-                    data-trigger="hover"
-                    data-placement="auto"
-                    bs-popover>
-                </span>
-
-                <span class="glyphicon glyphicon-plus-sign minor pull-right"
-                    style="color: rgb(53, 147, 177);"
-                    data-content-template="view/partial/quick-start-developed-DCIC-description.html"
                     data-trigger="hover"
                     data-placement="auto"
                     bs-popover>
@@ -163,13 +151,6 @@ span.glyphicon.hms-center {
                             bs-popover>
                         </span>
 
-                        <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
-                            data-content-template="view/partial/quick-start-developed-DCIC-description.html"
-                            data-trigger="hover"
-                            data-placement="auto"
-                            bs-popover>
-                        </span>
-
                         <tool tool-data="findTool('LINCS Data Portal')" tool-mode="" tool-buttons="none"></tool>
                     </div>
                     <div class="col-sm-6">
@@ -177,13 +158,6 @@ span.glyphicon.hms-center {
 
                         <span class="glyphicon glyphicon-question-sign minor pull-right"
                             data-content-template="view/partial/quick-start-L1000-metadata-description.html"
-                            data-trigger="hover"
-                            data-placement="auto"
-                            bs-popover>
-                        </span>
-
-                        <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
-                            data-content-template="view/partial/quick-start-developed-DCIC-description.html"
                             data-trigger="hover"
                             data-placement="auto"
                             bs-popover>
@@ -204,13 +178,6 @@ span.glyphicon.hms-center {
                             bs-popover>
                         </span>
 
-                        <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
-                            data-content-template="view/partial/quick-start-developed-DCIC-description.html"
-                            data-trigger="hover"
-                            data-placement="auto"
-                            bs-popover>
-                        </span>
-
                         <tool tool-data="findTool('iLINCS')" tool-mode="" tool-buttons="none"></tool>
                     </div>
 
@@ -219,13 +186,6 @@ span.glyphicon.hms-center {
 
                         <span class="glyphicon glyphicon-question-sign minor pull-right"
                             data-content-template="view/partial/quick-start-proteomics-description.html"
-                            data-trigger="hover"
-                            data-placement="auto"
-                            bs-popover>
-                        </span>
-
-                        <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
-                            data-content-template="view/partial/quick-start-developed-DCIC-description.html"
                             data-trigger="hover"
                             data-placement="auto"
                             bs-popover>
@@ -257,27 +217,16 @@ span.glyphicon.hms-center {
                     bs-popover>
                 </span>
 
-                <span class="glyphicon glyphicon-plus-sign minor dcic pull-right"
-                    style="color: rgb(53, 147, 177);"
-                    data-content-template="view/partial/quick-start-developed-DCIC-description.html"
-                    data-trigger="hover"
-                    data-placement="auto"
-                    bs-popover>
-                </span>
-
                 <tool tool-data="findTool('Harmonizome')" tool-buttons="none"></tool>
             </div>
 
         </div>
-
         <div class="row">
-            <div class="text-right muted small" style="margin: 0;">
-                Developed by:
-                <span class="glyphicon glyphicon-plus-sign minor dcic"></span>
-                the BD2K-LINCS Data Coordination and Integration Center
+            <div class="text-right muted small">
+                <!-- <span class="glyphicon glyphicon-triangle-top"></span> -->
             </div>
+            <hr>
         </div>
-
     </div>
 
 </div>
