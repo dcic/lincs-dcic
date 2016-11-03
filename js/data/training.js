@@ -11,7 +11,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
         Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
         Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
-        FLYER_LINK = "static/dcic_summer_program.pdf",
+        FLYER_LINK = "static/dcic_summer17_oct25v.pdf",
         ARTICLE_LINK = "http://www.asbmb.org/asbmbtoday/201606/Coordinates/"
         DATAMINING_LINK = "http://events.mountsinaihealth.org/event/bd2k-lincs_data_mining_and_network_analysis_course"
         DIR = "/images/general/";
@@ -23,18 +23,19 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             title: "Summer Research Training Program",
             text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students." +
                 "<ul>" +
+                    "<li>" +
+                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
+                    "</li>" +
+                     "<li>" +
+                        "<a href='" + FLYER_LINK + "'>2017 Program Flyer</a>" +
+                    "</li>" +
                       "<li>" +
                         "<a href='" + SUMMER_FELLOWS_LINK_2016 + "'>2016 Summer Fellows and Research Projects</a>" +
                     "</li>" +
                      "<li>" +
                         "<a href='" + SUMMER_FELLOWS_LINK_2015 + "'>2015 Summer Fellows and Research Projects</a>" +
                     "</li>" +
-		     "<li>" +
-                        "<a href='" + FLYER_LINK + "'>2016 Program Flyer</a>" +
-                    "</li>" +
-                     "<li>" +
-                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
-                    "</li>" +
+                    
                                    "</ul>"),
             image: DIR + "esther.png"
         },

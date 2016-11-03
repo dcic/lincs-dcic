@@ -151,7 +151,7 @@ mod.controller("summerFellows2016Ctrl", ["$scope", "$sce", function($scope, $sce
 
         {
 
-            name: "Katie Lin",
+            name: "Katie Lin, BS",
 
             image: DIR + "k_lin.png",
 

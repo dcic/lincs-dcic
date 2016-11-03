@@ -18,11 +18,6 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
             target: "_blank"
         },
         {
-            title: "L1000 and P100 data on lincscloud.org",
-            url: "http://download.lincscloud.org/",
-            target: "_blank"
-        },
-        {
             title: "P100 data on Panorama",
             url: "https://panoramaweb.org/labkey/project/LINCS/P100/begin.view",
             target: "_blank"

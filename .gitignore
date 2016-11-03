@@ -6,6 +6,8 @@ lib/node_modules/
 lib/bower_components/
 lib/jquery-ui-1.11.4.custom/
 lib/
+libs/
+metadata-orig/
 
 images/source/photographs/
 images/source/intro diagram/

@@ -69,7 +69,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             links: [
                 {
                     title: 'Metadata Standards',
-                    url: 'http://www.lincsproject.org/data/data-standards/',
+                    url: 'http://www.lincsproject.org/LINCS/data/standards',
                     target: '_blank'
                 },
                 //{

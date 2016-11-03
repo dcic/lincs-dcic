@@ -1,4 +1,4 @@
-var mod = angular.module('directAccessToolsMod', 
+var mod = angular.module('directAccessToolsMod',
     ['ngTagsInput',
     'ui.bootstrap.tooltip']  // for tooltips
 );
@@ -426,28 +426,6 @@ mod.controller('directAccessToolsCtrl',
             cssClass: "ldr"
         },
         {
-            title: "lincscloud",
-            url: "http://www.lincscloud.org/",
-            image: DIR + "cmap2.jpg",
-            description: {
-                main: "lincscloud is designed to make LINCS L1000 data accessible to a wide audience.",
-                api: "For programmatic access refer to the <a target='_blank' href='http://api.lincscloud.org/'>API documentation</a>.",
-                analysis: "Web-based analysis of the L1000 dataset in the CLUE unified research environment. In development.",
-                search: "The API can be used for searching the L1000 dataset. Note that the direct access search only provides a small fraction of the functionality available through the API.",
-                download: "The entire L1000 dataset can be <a target='_blank' href='http://download.lincscloud.org/'>downloaded from Amazon S3</a>.",
-                drugs: "A collection of ~18000 small-molecule compounds.",
-                genetics: "Systematic RNAi/shRNA screens and cDNA overexpression screens.",
-                cells: "A wide range of cell lines.",
-                assay: "L1000 gene expression of ~1000 landmark genes and image-based morphology profiles."
-            },
-            modes: {
-                functionality: ["api", "analysis", "search", "download"],
-                content: ["drugs", "genetics", "cells"]
-            },
-            directive: "Lincscloud-bar",
-            cssClass: "lincscloud"
-        },
-        {
             title: "Network2Canvas",
             url: "http://www.maayanlab.net/N2C/",
             image: DIR + "network2canvas.png",
@@ -656,7 +634,7 @@ mod.directive("scrollButton", function() {
     }
 });
 
-// Wrapper for tools. Sets up the frame with icon, 
+// Wrapper for tools. Sets up the frame with icon,
 mod.directive("tool", function($compile, $timeout) {
     return {
         restrict: 'EA',
@@ -1129,7 +1107,7 @@ mod.directive("lifeBar", function() {
         },
         controller: ["$scope", "$http", function($scope, $http) {
             $scope.search = function() {
-                window.open($scope.toolData.url + "search?load=AssayTypeName&search=" + $scope.query.term + "&q=" + $scope.query.term + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#", 
+                window.open($scope.toolData.url + "search?load=AssayTypeName&search=" + $scope.query.term + "&q=" + $scope.query.term + "&wt=json&indent=true&group=false&facet=true&facet.field=ProteinId&facet.field=SmallMoleculeId&facet.field=GeneId&facet.field=CellLineId&facet.field=AssayTypeName&facet.field=PhosphoProteinId&facet.field=ShRnaID&facet.field=CdnaID&facet.field=AntibodyId&facet.field=NonKinaseProteinId&facet.field=LigandProteinId&group.field=ProteinId&facet.mincount=1&facet.limit=-1&rows=20&start=0&group.ngroups=true#",
                     "_blank");
             };
         }],

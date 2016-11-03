@@ -2,16 +2,25 @@ var mod = angular.module("newsMod", []);
 
 mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
-	var DIR = '/images/news/';
+    var DIR = '/images/news/';
 
 	var formatStories = function(stories) {
-		return _.sortBy(stories, function(story) {
-			return -Date.parse(story.date);
-		});
-	};
+        return _.sortBy(stories, function(story) {
+            return -Date.parse(story.date);
+        });
+    };
 
 	$scope.stories = formatStories([
-		{
+         {
+            title: "Crowdsourcing for Scientific Discovery: Mount Sinai Researchers Find Novel Ways to Analyze Data for Drug and Target Discovery",
+            source: "Newswise",
+            url: "http://www.newswise.com/articles/crowdsourcing-for-scientific-discovery-mount-sinai-researchers-find-novel-ways-to-analyze-data-for-drug-and-target-discovery",
+            target: "_blank",
+            date: "9/26/2016",
+            mainText: "",
+            image: DIR + "creeds.png"
+        },
+	{
             title: "Back on the Road with Coursera",
             source: "ASBMB Today",
             url: "http://www.asbmb.org/asbmbtoday/201606/Coordinates/",
@@ -20,7 +29,7 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
             mainText: "",
             image: DIR + "carol_m_img.fw.png"
         },
-		{
+	{
             title: "BD2K-LINCS DCIC's First Annual Systems Biology Data Science Symposium",
             source: "University of Miami News",
             url: "http://med.miami.edu/news/sylvester-director-delivers-keynote-address-at-first-annual-systems-biology",
@@ -29,7 +38,7 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
             mainText: "",
             image: DIR + "dcic_symposium_group.png"
         },
-	 	{
+	 {
             title: "Genetics: Big Hopes for Big Data",
             source: "Nature | Outlook",
             url: "http://www.nature.com/nature/journal/v527/n7578_supp/full/527S108a.html",
@@ -38,7 +47,7 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
             mainText: "",
             image: DIR + "nature_outlook_cover.png"
         },
-	 	{
+	 {
             title: "\"The characteristic direction: a geometrical approach to identify differentially expressed genes\" has been recommended in F1000Prime as being of special significance in its field by F1000 Faculty Member Charles Auffray",
             source: "F1000 Prime",
             url: "http://f1000.com/prime/718324928?subscriptioncode=73f1be84-cf1b-47e0-87d4-8ce34f95c9fc",
@@ -53,20 +62,20 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 			url: "http://biomedicalcomputationreview.org/content/nih-launches-united-ecosystem-big-data",
 			target: "_blank",
 			date: "1/8/2015",
-			mainText: "Francis Collins, MD, PhD, Director of the National Institutes of Health (NIH), says he used to feel \"data envy\" toward the field of physics. In those days, \"no one would have predicted that biology would emerge as the biggest challenge in terms of data. But that is now the case.\"",
-			image: DIR + "biomedical-computation-review.png"
-		},
+		    mainText: "Francis Collins, MD, PhD, Director of the National Institutes of Health (NIH), says he used to feel \"data envy\" toward the field of physics. In those days, \"no one would have predicted that biology would emerge as the biggest challenge in terms of data. But that is now the case.\"",
+		    image: DIR + "biomedical-computation-review.png"
+        },
 		{
 			title: "UC Part of Team Selected for NIH's Multimillion-Dollar 'Big Data' Push",
-			source: "University of Cincinnati Health News",
+		    source: "University of Cincinnati Health News",
 			url: "http://healthnews.uc.edu/news/?/25274/",
 			target: "_blank",
 			date: "10/9/2014"
 		},
 		{
-			title: "Mount Sinai researchers awarded one of the Big Data to Knowledge (BD2K) Centers of Excellence grants",
-			source: "Icahn School of Medicine at Mount Sinai",
-			url: "http:/icahn.mssm.edu/research/labs/maayan-laboratory/about-us/news/center-to-seek-new-therapeutics-by-integrating-gene-protein-databases-",
+			title: "Mount Sinai Researchers Awarded One of the Big Data to Knowledge (BD2K) Centers of Excellence Grants",
+		    source: "Icahn School of Medicine at Mount Sinai",
+			url: "http://www.mountsinai.org/about-us/newsroom/press-releases/center-to-seek-new-therapeutics-by-integrating-gene-protein-databases-",
 			target: "_blank",
 			date: "10/9/2014"
 		},
@@ -85,7 +94,7 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 			date: "10/21/2014"
 		},
 		{
-			title: "NIH award aims to improve understanding of cell pathways, development of new therapies",
+			title: "NIH Award Aims to Improve Understanding of Cell Pathways, Development of New Therapies",
 			source: "National Institutes of Health",
 			url: "http://www.nih.gov/news/health/sep2014/nhgri-11.htm",
 			target: "_blank",
@@ -106,14 +115,14 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 			date: "11/26/2014"
 		},
 		{
-			title: "4 pieces of NIH's big data puzzle",
+			title: "4 Pieces of NIH's Big Data Puzzle",
 			source: "Government Health IT",
 			url: "http://www.govhealthit.com/news/4-pieces-nihs-big-data-puzzle",
 			target: "_blank",
 			date: "10/20/2014"
 		},
 		{
-			title: "NIH invests $32 million to crack big data",
+			title: "NIH Invests $32 Million to Crack Big Data",
 			source: "Government Computer News",
 			url: "http://gcn.com/articles/2014/10/17/nih-big-data-bd2k.aspx",
 			target: "_blank",
