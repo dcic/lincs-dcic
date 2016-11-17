@@ -2,23 +2,22 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
-	   
-	   
-          {
-            date: '15 November 2016 | 3:00 PM ET',
-            topic: 'Cell Line Ontology-based Standardization, Integration and Analysis of LINCS Cell Lines',
-            presenters: 'Yongqun "Oliver" He DVM, PhD, University of Michigan Medical School (DCIC External Data Science Research Project)'
-           },
+	  	   
            {
             date: '22 November 2016 | 3:00 PM ET',
             topic: 'Docker Pipelines for RNASeq Alignment and Analyses',
             presenters: 'Ling-Hong Hung PhD, University of Washington (DCIC External Data Science Research Project)'
            },
 	  {
-            date: '29 November 2016 | 3:00 PM ET',
+            date: '6 December 2016 | 3:00 PM ET',
             topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
             presenters: 'Jeff Saucerman PhD, University of Virginia (DCIC External Data Science Research Project)'
-           }
+           },
+	   {
+            date: '20 December 2016 | 3:00 PM ET',
+            topic: 'Cell Line Ontology-based Standardization, Integration and Analysis of LINCS Cell Lines',
+            presenters: 'Yongqun "Oliver" He DVM, PhD, University of Michigan Medical School (DCIC External Data Science Research Project)'
+           },
 
     ];
     $scope.pastWebinars = [   
@@ -27,7 +26,8 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             topic: 'Integration of Phosphorylation Knowledge Networks with LINCS Omics Data for Cancer Drug Analysis',
             presenters: 'Karen Ross PhD and Cathy Wu PhD, University of Delaware (DCIC External Data Science Research Project)',
             synopsis: 'Perturbations in kinase activity are recognized as key drivers of disease and kinase inhibitors are being intensively investigated as therapeutic agents. Understanding how these drugs alter cellular phosphorylation dynamics is essential to their effective clinical use. In this study, we have integrated literature-based phosphorylation networks with phosphoproteomic signatures and drug-target data to interpret cellular responses to the cyclin-dependent kinase (CDK) inhibitor, dinaciclib. To study changes in phosphorylation induced by dinaciclib, we took advantage of data from the P100 project available through the LINCS web portal. In the P100 study, phosphorylation sites were divided into 55 clusters based on their coordinated behavior across a range of test conditions. One or two representative phosphosites for each cluster were then assayed in the presence of a variety of perturbagens. Using iPTMnet (http://proteininformationresource.org/iPTMnet), a resource that combines rich PTM information from text mining and high-quality curated databases and ontologies for PTM network analysis and disease discovery, we constructed a kinase-site knowledge network for the sites assigned to clusters in the P100 study. We then overlaid this network with P100 data from dinaciclib-treated cells. Finally, we integrated information on kinase inhibition by dinaciclib from KINOMEscan datasets available on the LINCS web portal. Networks were visualized using Cytoscape and Panoromics, a newly developed tool designed for visualizing changes in networks across multiple experimental conditions. This study demonstrated the value of integration of literature-based phosphorylation networks with LINCS omics data.  We found that the relationship between kinase inhibition in dinaciclib and substrate phosphorylation differed among kinases. Qualitatively, phosphorylation patterns were similar in MCF7 cells across time points and in MCF7 vs. NPC cells; however, we observed differences at the quantitative level. We plan to extend this approach to study other kinase inhibitors to increase our understanding of the cellular response to this important class of drugs.',
-           },
+            link: 'https://www.youtube.com/watch?v=mv-Z2ntBx_A'
+          },
 	{
             date: '4 October 2016',
             topic: 'Unravelling Hairballs: Biological Pathways from Protein Modification Cluster Networks',
