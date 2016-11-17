@@ -2,31 +2,32 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
-	   
-	   {
-            date: '8 November 2016 | 3:00 PM ET',
-            topic: 'Integration of Phosphorylation Knowledge Networks with LINCS Omics Data for Cancer Drug Analysis',
-            presenters: 'Karen Ross PhD and Cathy Wu PhD, University of Delaware (DCIC External Data Science Research Project)'
-           },
-          {
-            date: '15 November 2016 | 3:00 PM ET',
-            topic: 'Cell Line Ontology-based Standardization, Integration and Analysis of LINCS Cell Lines',
-            presenters: 'Yongqun "Oliver" He DVM, PhD, University of Michigan Medical School (DCIC External Data Science Research Project)'
-           },
-           {
+    {
             date: '22 November 2016 | 3:00 PM ET',
             topic: 'Docker Pipelines for RNASeq Alignment and Analyses',
             presenters: 'Ling-Hong Hung PhD, University of Washington (DCIC External Data Science Research Project)'
            },
 	  {
-            date: '29 November 2016 | 3:00 PM ET',
+            date: '6 December 2016 | 3:00 PM ET',
             topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
             presenters: 'Jeff Saucerman PhD, University of Virginia (DCIC External Data Science Research Project)'
-           }
+           },
+	   {
+            date: '20 December 2016 | 3:00 PM ET',
+            topic: 'Cell Line Ontology-based Standardization, Integration and Analysis of LINCS Cell Lines',
+            presenters: 'Yongqun "Oliver" He DVM, PhD, University of Michigan Medical School (DCIC External Data Science Research Project)'
+           },
 
     ];
-    $scope.pastWebinars = [   
-	 {
+    $scope.pastWebinars = [
+	  {
+            date: '8 November 2016',
+            topic: 'Integration of Phosphorylation Knowledge Networks with LINCS Omics Data for Cancer Drug Analysis',
+            presenters: 'Karen Ross PhD and Cathy Wu PhD, University of Delaware (DCIC External Data Science Research Project)',
+            synopsis: 'Perturbations in kinase activity are recognized as key drivers of disease and kinase inhibitors are being intensively investigated as therapeutic agents. Understanding how these drugs alter cellular phosphorylation dynamics is essential to their effective clinical use. In this study, we have integrated literature-based phosphorylation networks with phosphoproteomic signatures and drug-target data to interpret cellular responses to the cyclin-dependent kinase (CDK) inhibitor, dinaciclib. To study changes in phosphorylation induced by dinaciclib, we took advantage of data from the P100 project available through the LINCS web portal. In the P100 study, phosphorylation sites were divided into 55 clusters based on their coordinated behavior across a range of test conditions. One or two representative phosphosites for each cluster were then assayed in the presence of a variety of perturbagens. Using iPTMnet (http://proteininformationresource.org/iPTMnet), a resource that combines rich PTM information from text mining and high-quality curated databases and ontologies for PTM network analysis and disease discovery, we constructed a kinase-site knowledge network for the sites assigned to clusters in the P100 study. We then overlaid this network with P100 data from dinaciclib-treated cells. Finally, we integrated information on kinase inhibition by dinaciclib from KINOMEscan datasets available on the LINCS web portal. Networks were visualized using Cytoscape and Panoromics, a newly developed tool designed for visualizing changes in networks across multiple experimental conditions. This study demonstrated the value of integration of literature-based phosphorylation networks with LINCS omics data.  We found that the relationship between kinase inhibition in dinaciclib and substrate phosphorylation differed among kinases. Qualitatively, phosphorylation patterns were similar in MCF7 cells across time points and in MCF7 vs. NPC cells; however, we observed differences at the quantitative level. We plan to extend this approach to study other kinase inhibitors to increase our understanding of the cellular response to this important class of drugs.',
+            link: 'https://www.youtube.com/watch?v=mv-Z2ntBx_A'
+          },
+	{
             date: '4 October 2016',
             topic: 'Unravelling Hairballs: Biological Pathways from Protein Modification Cluster Networks',
             presenters: 'Mark Grimes PhD, University of Montana (DCIC External Data Science Research Project)',
@@ -45,27 +46,27 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             topic: 'BD2K-LINCS DCIC Summer Research Projects',
             presenters: 'BD2K-LINCS DCIC Summer Fellows',
             synopsis: 'On the final day of the ten-week research training program, the 2016 BD2K-LINCS DCIC Summer Fellows presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.',
-        },  
+        },
 	{
             date: '28 June 2016',
             topic: 'Systematic Validation of Multiscale Gene Networks using the LINCS Gene Perturbation Data',
             presenters: 'Bin Zhang PhD, Icahn School of Medicine at Mount Sinai',
             synopsis: 'Increasingly available large-scale Omics data has made it possible to construct predictive molecular networks for systematically uncovering novel pathways and targets in biological systems and complex human diseases. However, systematic validation of the predicted network structures and their functions remains a major bottleneck in network biology. In this talk, I will first introduce multiscale network modeling approaches to analyze large Omics data and then highlight how to systematically validate cancer gene networks using the gene perturbation data in LINCS.',
             link:'https://www.youtube.com/watch?v=TnZ8V0rHsTQ'
-        }, 
+        },
 	{
             date: '24 May 2016',
             topic: 'Detection and Removal of Spatial Bias in Multi-well Assays',
             presenters: 'Alexander Lachmann PhD, Icahn School of Medicine at Mount Sinai',
 	    synopsis: 'Multiplex readout assays are now increasingly being performed using microfluidic automation in multiwell format. For instance, the Library of Integrated Network-based Cellular Signatures (LINCS) has produced gene expression measurements for tens of thousands of distinct cell perturbations using a 384-well plate format. This dataset is by far the largest 384-well gene expression measurement assay ever performed. We investigated the gene expression profiles of a million samples from the LINCS dataset and found that the vast majority (96%) of the tested plates were affected by a significant 2D spatial bias.',
-            link:'https://www.youtube.com/watch?v=kUkS9mQYU5M'    
+            link:'https://www.youtube.com/watch?v=kUkS9mQYU5M'
 	},
 	{
             date: '1 March 2016',
             topic: 'Mutations and Drugs Portal (MDP): A Database Linking Drug Response Data and Genomic Information',
             presenters: 'Silvio Bicciato PhD, University of Modena and Reggio Emilia',
 	    synopsis:'Genetic alterations arising in cancer cells often generate cancer-specific dependencies that can be exploited as targets of targeted therapies. Indeed, several evidences demonstrate that the integration of large-scale genomic and pharmacological data from cancer cell lines is a successful approach to discover genetic markers of drug sensitivity and to re-purpose known drugs and compounds to new indications in oncology. However, the lack of direct connections between genomic and pharmacological information still makes inherently difficult to query pharmacogenomics databases and extract novel connections. In an attempt to overcome this limit, we designed Mutations and Drug Portal (MDP), a web accessible database that combines the cell-based NCI60 pharmacological screening with genomic data extracted from the Cancer Cell Line Encyclopedia (CCLE). MDP currently contains drug sensitivity data for more than 50,800 compounds, describing response to drugs across 115 cancer cell lines. To identify genomic features associated to drug response, drug sensitivity data are integrated with information on somatic mutations and transcriptional data of cancer cell lines. MDP can be queried for drugs active in cancer cell lines carrying mutations or transcriptional alterations in specific cancer genes and signaling pathways or for genetic and transcriptional profiles associated to sensitivity or resistance to a given compound. Results are returned using graphical and interactive representations. As proof of performance, MDP identified both known and novel pharmacogenomics associations and unveiled an unpredicted combination of two FDA-approved compounds, namely statins and Dasatinib, as an effective strategy to potently inhibit YAP/TAZ in cancer cells. In this web-seminar, I will illustrate MDP architecture and content and its web interface. I will also provide a demonstration on how MDP can be queried for drugs active in cancer cell lines carrying mutations in specific cancer genes or for genetic markers. associated to sensitivity or resistance to a given compound. Finally, I will discuss possible connections between MDP and the data and tools of the L1000 LINCS project.',
-	    link:'https://www.youtube.com/watch?v=MwrN3hbTnVc'        
+	    link:'https://www.youtube.com/watch?v=MwrN3hbTnVc'
 },
 
 	{
@@ -230,6 +231,6 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
             presenters: 'Mario Medvedovic PhD, University of Cincinnati, BD2K-LINCS DCIC',
             synopsis: '',
             link: 'https://www.youtube.com/watch?v=3ww9Bnhv1c4'
-        } 
+        }
     ];
 }]);
