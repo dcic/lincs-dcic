@@ -3,11 +3,6 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
 	  	   
-	  {
-            date: '6 December 2016 | 3:00 PM ET',
-            topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
-            presenters: 'Jeff Saucerman PhD, University of Virginia (DCIC External Data Science Research Project)'
-           },
 	   {
             date: '20 December 2016 | 3:00 PM ET',
             topic: 'Cell Line Ontology-based Standardization, Integration and Analysis of LINCS Cell Lines',
@@ -16,12 +11,20 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     ];
     $scope.pastWebinars = [   
+	  	   
 	  {
+            date: '6 December 2016',
+            topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
+            presenters: 'Jeff Saucerman PhD, University of Virginia (DCIC External Data Science Research Project)',
+            synopsis: 'The goal of LINCS is to acquire and analyze cell signatures to obtain a network-based understanding of how cells respond to perturbations. While it is necessary to first characterize correlative molecular/cellular signatures, the next phase of developing network-based understanding will require the development of causal computational models that mechanistically predict and explain these signatures. Here, I will introduce our approaches for developing dynamic logic-based network models. I will focus on network reconstructions of cardiac myocyte and fibroblast signaling networks, which provide new insights into how these networks respond to perturbations. These predictions have been extensively validated by both literature data and new experiments. Finally, I will introduce Netflux, our user-friendly software that enables rapid development of logic-based network models by biologists and students.',
+            link: ''
+	  },
+	 {
             date: '22 November 2016',
             topic: 'Docker Pipelines for RNASeq Alignment and Analyses',
             presenters: 'Ling-Hong Hung PhD, University of Washington (DCIC External Data Science Research Project)',
             synopsis: 'Background: Docker (https://www.docker.com) is an application that packages binary executables and scripts into modules (containers) with their software dependencies. Containers can be freely mixed and matched to form workflows that give identical results on any platform which supports Docker. The ease of deployment and the high degree of reproducibility of software containers make them ideal instruments for disseminating complex bioinformatics workflows especially on the cloud. Recently, the Haussler group at University of California at Santa Cruz has processed 20,000 RNA-seq datasets including almost all the datasets from TCGA and TARGET, in just 4 days at a cost of $1 per dataset. Results: We will present our work using Docker software containers for reproducibly deploying bioinformatics workflows.  Docker tool development and its application to RNA-Seq will be discussed. One of the limitations of container tools is that it is designed for computer professionals and not for the biomedical community.  In particular, Docker is a command line tool.  Our recent work, GUIdock-VNC, allows the deployment of Docker containers from a graphical desktop inside a browser.  In other words, a non-programmer can then construct, save, and execute Docker bioinformatics workflows using a browser to access the containerized application.  As a case study, we are collaborating with DToxS-LINCS at Mount Sinai to containerize their RNA-Seq analyses workflows.  We have created containers based on DToxS standard operating procedures to reproduce the results of their analyses.  We observed that software versioning and systems configurations have an impact on the analyses results, and that software containers can reliably reproduce analyses results.  In addition, with Docker, we can portably replace Python scripts in the original pipeline with different implementations.  The resulting workflow can easily be run on any platform and on a commercial or private cloud. Re-analyses of the data using the Dockerized workflows with different parameters give rise to very different differentially expressed gene lists. Due to the uniform environment provided by Docker we can be assured that these differences are actually due to the parameter changes.',
-            link: ''
+            link: 'https://www.youtube.com/watch?v=QBKCocvAba0&t=544s'
           },
           {
             date: '8 November 2016',
