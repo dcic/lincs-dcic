@@ -26,7 +26,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 1,
             image: DIR + 'harmonizome.png',
             title: 'The Harmonizome',
-            caption: 'The BD2K-LINCS DCIC is developing a biological knowledge engine built on top of information about genes and proteins from 114 datasets.',
+            caption: 'The BD2K-LINCS DCIC developed a biological knowledge engine built on top of information about genes and proteins from 114 datasets.',
             link: 'http://amp.pharm.mssm.edu/Harmonizome',
             target: '_blank'
         },

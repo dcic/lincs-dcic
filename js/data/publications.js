@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	{
+            title: "GEN3VA: aggregation and analysis of gene expression signatures from related studies",
+            url: "https://www.ncbi.nlm.nih.gov/pubmed/27846806",
+            authors: "Gundersen GW, Jagodnik KM, Woodland H, Fernandez NF, Sani K, Dohlman AB, Ung PM, Monteiro CD, Schlessinger A, Ma'ayan A.",
+            citation: "BMC Bioinformatics 2016 Nov 15;17(1):461.",
+            ids: "PMID: 27846806",
+            year: 2016
+        },
+        {
             title: "Extraction and analysis of signatures from the Gene Expression Omnibus by the crowd",
             url: "https://www.ncbi.nlm.nih.gov/pubmed/27667448",
             authors: "Wang Z, Monteiro CD, Jagodnik KM, Fernandez NF, Gundersen GW, Rouillard AD, Jenkins SL, Feldmann AS, Hu KS, McDermott MG, Duan Q, Clark NR, Jones MR, Kou Y, Goff T, Woodland H, Amaral FM, Szeto GL, Fuchs O, Schussler-Fiorenza Rose SM, Sharma S, Schwartz U, Bausela XB, Szymkiewicz M, Maroulis V, Salykin A, Barra CM, Kruth CD, Bongio NJ, Mathur V, Todoric RD, Rubin UE, Malatras A, Fulp CT, Galindo JA, Motiejunaite R, Juschke C, Dishuck PC, Lahl K, Jafari M, Aibar S, Zaravinos A, Steenhuizen LH, Allison LR, Gamallo P, de Andres Segura F, Dae Devlin T, Perez-Garcia V, Ma'ayan A.",
@@ -24,6 +32,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             authors: "Wang Z, Clark NR, Ma'ayan A.",
             citation: "Bioinformatics 2016 Aug 1;32(15):2338-45.",
             ids: "PMID: 27153606 | PMCID: PMC4965635",
+            year: 2016
+        },
+        {
+            title: "mclust 5: Clustering, classification and density estimation using Gaussian finite mixture models",
+            url: "https://www.ncbi.nlm.nih.gov/pubmed/27818791",
+            authors: "Scrucca L, Fop M, Murphy TB, Raftery AE.",
+            citation: "The R Journal 2016 Aug;8(1):289-317.",
+            ids: "PMID: 27818791 | PMCID: PMC5096736",
             year: 2016
         },
 	{

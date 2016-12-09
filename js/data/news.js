@@ -12,6 +12,24 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
 	$scope.stories = formatStories([
          {
+            title: "The Harmonizome",
+	    source: "Biomedical Computation Review",
+            url: "http://biomedicalcomputationreview.org/content/harmonizome",
+	    target: "_blank",
+	    date: "11/1/2016",
+            mainText: "By applying machine learning to data from diverse resources integrated to create the Harmonizome, the Ma'ayan Lab was able to predict likely knockout mouse phenotypes that have not yet been observed.",
+            image: DIR + "biomedical-computation-review.png"
+        },
+	{
+            title: "Big (Data) Changes",
+	    source: "Biomedical Computation Review",
+            url: "http://biomedicalcomputationreview.org/content/big-data-changes",
+	    target: "_blank",
+	    date: "11/1/2016",
+            mainText: "",
+            image: DIR + "biomedical-computation-review.png"
+        },
+	{
             title: "Crowdsourcing for Scientific Discovery: Mount Sinai Researchers Find Novel Ways to Analyze Data for Drug and Target Discovery",
             source: "Newswise",
             url: "http://www.newswise.com/articles/crowdsourcing-for-scientific-discovery-mount-sinai-researchers-find-novel-ways-to-analyze-data-for-drug-and-target-discovery",
