@@ -14,7 +14,7 @@ mod.controller("apisCtrl", ["$scope", function($scope) {
         },
         {
             title: "Enrichr API",
-            url: "http://amp.pharm.mssm.edu/Enrichr/#help",
+            url: "http://amp.pharm.mssm.edu/Enrichr/help#api",
             target: "_blank"
         }
     ];
