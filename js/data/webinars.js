@@ -15,7 +15,7 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
         topic: 'Dynamic Logic-Based Models Integrating Cardiac Signaling Networks and Cellular Phenotypes',
         presenters: 'Jeff Saucerman PhD, University of Virginia (DCIC External Data Science Research Project)',
         synopsis: 'The goal of LINCS is to acquire and analyze cell signatures to obtain a network-based understanding of how cells respond to perturbations. While it is necessary to first characterize correlative molecular/cellular signatures, the next phase of developing network-based understanding will require the development of causal computational models that mechanistically predict and explain these signatures. Here, I will introduce our approaches for developing dynamic logic-based network models. I will focus on network reconstructions of cardiac myocyte and fibroblast signaling networks, which provide new insights into how these networks respond to perturbations. These predictions have been extensively validated by both literature data and new experiments. Finally, I will introduce Netflux, our user-friendly software that enables rapid development of logic-based network models by biologists and students.',
-        link: ''
+        link: 'https://www.youtube.com/watch?v=IpIM8hqU_1M'
   	  },
   	 {
         date: '22 November 2016',
