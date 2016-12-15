@@ -1,0 +1,166 @@
+<div class="container">
+    <!-- <div class="category-page direct-access-tools-page" ng-controller="DirectAccessToolsCtrl"> -->
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Tools and databases</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- Category selection and -->
+                <div class="tool">
+                    <div class="action">
+                        <div id="tool-categories" class="row">
+                            <div class="col-xs-12">
+                                <h3>Categories</h3>
+                            </div>
+
+                            <div class="category-selector col-xs-4 col-sm-3 col-md-2 text-center">
+                                <button ng-click="setMode('')">all</button>
+                            </div>
+
+                            <div class="category-selector col-xs-4 col-sm-3 col-md-2 text-center" ng-repeat="button in buttons">
+                                <button ng-class="button.name" ng-click="setMode(button.name)"></button>
+                                <br>
+                                {{ button.description }}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6">
+                <h3>Icons</h3>
+                <!-- All tool icons -->
+                <div class="tools-summary">
+                    
+                    <span scroll-button 
+                        ng-repeat="tool in filterTools(mode)"
+                        target-id="{{tool.title}}"
+                        modes="tool.modes"
+                        >
+                        <img class="img-selector dashboard-icon"
+                            ng-src="{{tool.image}}"
+                            data-title="{{tool.title | html2text}}" bs-tooltip
+                        />
+                    </span>
+
+                    <!--
+                    <img class="img-selector" ng-repeat="tool in filterTools(mode)"
+                        scroll-button target-id="{{tool.title}}"
+                        ng-src="{{tool.image}}"
+                        ng-mouseover="highlightSelector(tool.modes)"
+                        ng-mouseleave="resetSelector()"
+                        ng-click="gotoAnchor(tool.title, $event)"
+                        uib-popover={{tool.title}} popover-trigger="mouseenter" 
+                    />
+                    -->
+
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <h3>Cross-Tool Examples</h3>
+
+                <!-- the up/down signature was taked from http://amp.pharm.mssm.edu/CREEDS/#downloads, first 20 -->
+                <a href="" ng-click="
+                    typeSearch('Imatinib', 'drug');
+                    typeUpGenes(
+                        'ALAS2','HBZ','LBH','COL18A1','GYPB','PPOX','SLC4A1','AQP1','RELN','GYPA','TSC22D1','SLC25A37','KEL','OAT','SLC22A4','HMBS','AHSP','SLC30A10','FECH','XK'
+                    );
+                    typeDownGenes(
+                        'TMEM158','SLC2A3','HHEX','SAMSN1','IGFBP4','ID1','FCGR2A','MLLT11','FAM216A','PKM','CD69','SLC2A14','NQO2','EGR1','SLC39A14','GABRE','SOCS2','CMTM6','PRKCB','WARS','SLC25A32'    
+                    );
+                    "
+                    bs-tooltip data-title="A small molecule perturbagen" data-trigger="hover"
+                    >
+                    Imatinib</a>,
+                <a href="" ng-click="
+                    typeSearch('Ruxolitinib', 'drug');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A small molecule perturbagen" data-trigger="hover">
+                    Ruxolitinib</a>,
+                <a href="" ng-click="
+                    typeSearch('MCF7', 'cell');
+                    typeUpGenes();
+                    typeDownGenes();
+                    " 
+                    bs-tooltip data-title="A cell line" data-trigger="hover">
+                    MCF7</a>,
+                <a href="" ng-click="
+                    typeSearch('HL-60', 'cell');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A cell line" data-trigger="hover"
+                    >HL-60</a>,
+                <a href="" ng-click="
+                    typeSearch('TP53', 'gene');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A gene" data-trigger="hover">
+                    TP53</a>,
+                <a href="" ng-click="
+                    typeSearch('CDK8', 'gene');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A gene" data-trigger="hover">
+                    CDK8</a>,
+                <a href="" ng-click="
+                    typeSearch('RNA-seq', 'assay');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="An experimental assay" data-trigger="hover">
+                    RNA-seq</a>,
+                <!-- <a href="" ng-click="typeSearch('shRNA')">shRNA</a>, -->
+
+                <a href="" ng-click="
+                    typeSearch('Phosphorylation', 'assay');
+                    typeUpGenes();
+                    typeDownGenes();
+                    "
+                    bs-tooltip data-title="A class of experiments" data-trigger="hover">Phosphorylation</a>
+
+                <form ng-submit="typeSearch(query)">
+                    <div class="input-group">
+                        <input class="form-control" type="text" ng-model="query" placeholder="Query multiple tools"></input>
+                        <span class="input-group-btn">
+                            <!-- <button class="btn btn-default" type="button">Go!</button> -->
+
+                            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-pencil"></span></button>
+                        </span>
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- All tools -->
+        <div id="tool-dir" class="row">
+            <div ng-repeat="tool_data in filterTools(mode)">
+                <!-- Bootstrap clearfixes (float: left) aligning grids -->
+                <div ng-if="$index % 4 == 0" class="clearfix visible-md visible-lg"></div>
+                <div ng-if="$index % 3 == 0" class="clearfix visible-sm"></div>
+                <div ng-if="$index % 2 == 0" class="clearfix visible-xs"></div>
+
+                <!-- Tool panel -->
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div id="{{tool_data.title}}">
+                            <tool tool-data="tool_data"></tool>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

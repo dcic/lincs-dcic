@@ -39,7 +39,7 @@
 	<link rel="stylesheet" href="style/side.css">
 	<link rel="stylesheet" href="style/getting-started.css">
 	<!-- <link rel="stylesheet" href="style/tool-directive.css"> -->
-	<link rel="stylesheet" href="libs/lincs-direct-access-tools/direct-access-tools.css">
+	<link rel="stylesheet" href="js/lincs-direct-access-tools/direct-access-tools.css">
 
     <!-- Google Analytics -->
 	<script>
@@ -127,8 +127,8 @@
 	<script type="text/javascript" src="js/edsrapp.js"></script>
 	<script type="text/javascript" src="js/filters.js"></script>
     <script type="text/javascript" src="js/getting-started.js"></script>
-	<script type="text/javascript" src="libs/lincs-direct-access-tools/direct-access-tools.js"></script>
-	<script type="text/javascript" src="libs/lincs-direct-access-tools/concierge.js"></script>
+	<script type="text/javascript" src="js/lincs-direct-access-tools/direct-access-tools.js"></script>
+	<script type="text/javascript" src="js/lincs-direct-access-tools/concierge.js"></script>
 
 	<!-- Routes -->
 	<script type="text/javascript" src="js/app.js"></script>

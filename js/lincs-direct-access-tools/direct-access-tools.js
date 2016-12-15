@@ -1,6 +1,6 @@
-var mod = angular.module('directAccessToolsMod',
-    ['ngTagsInput',
-    'ui.bootstrap.tooltip']  // for tooltips
+var mod = angular.module('LincsDirectAccessTools',
+    ["mgcrea.ngStrap.popover", "ngTagsInput"]
+    // ['ngTagsInput', 'ui.bootstrap.tooltip']  // for tooltips
 );
 
 // Filter which removes all html tags from string and returns the plain text.
@@ -32,13 +32,13 @@ mod.directive('scrollOnClick', function() {
     }
 });
 
-mod.controller('directAccessToolsCtrl',
-    ['$scope', "$element", '$sce', '$compile', '$anchorScroll', '$location',
-    function($scope, $element, $sce, $compile, $anchorScroll, $location) {
+mod.controller('DirectAccessToolsCtrl',
+    ['$scope', '$sce', '$compile', '$anchorScroll', '$location',
+    function($scope, $sce, $compile, $anchorScroll, $location) {
 
-    var DIR = 'images/apps/';
+    var DIR = 'js/lincs-direct-access-tools/tool-icons/';
 
-    $scope.introText = $sce.trustAsHtml('');
+    // $scope.introText = $sce.trustAsHtml('');
 
     $scope.mode = "";  // selected mode
 
@@ -226,6 +226,23 @@ mod.controller('directAccessToolsCtrl',
             cssClass: "p100mosaic"
         },
         {
+            title: "MEP Mosaic",
+            url: "http://amp.pharm.mssm.edu/MEPmosaic",
+            image: DIR + "cells_grid.svg",
+            description: {
+                main: "Mosaic visualization of high-content imaging assays of cancer cell lines following treatment with ligand-microenvironment pairs.",
+                navigation: "Clusters of correlated of ligand-microenvironment pairs can be investigated using 2D canvas visualizations.",
+                integration: "Imaging data are integrated across staining sets allowing for comparison across cellular features related to morphology, metabolism, cell cycle, nuclear state, and lineage status.",
+                cells: "Small set of cancer cell lines including MCF7, PC3, and YAPC."
+            },
+            modes: {
+                functionality: ["navigation", "integration"],
+                content: ["cells"]
+            },
+            // directive: "P100mosaic-bar",
+            cssClass: "p100mosaic"
+        },
+        {
             title: "Gen3va",
             url: "http://amp.pharm.mssm.edu/gen3va/",
             image: DIR + "gen3va_logo.png",
@@ -253,11 +270,12 @@ mod.controller('directAccessToolsCtrl',
                 api: "Data can be accessed programmatically through GET requests. Consult the <a target='_blank' href='http://amp.pharm.mssm.edu/Harmonizome/documentation'>API documentation</a> for more information.",
                 download: "Processed data can be downloaded in various formats including gene set libraries, attribute tables, and networks.",
                 external: "External data are collected from many different large-scale omics projects.",
-                analysis: "Datasets can be analyzed for correlations across resources using different measures of similarity."
+                analysis: "Datasets can be analyzed for correlations across resources using different measures of similarity.",
+                publication: "<a target='_blank' href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4930834/'>The harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins</a>."
             },
             modes: {
                 functionality: ["search", "api", "download", "analysis"],
-                content: ["external"]
+                content: ["external", "publication"]
             },
             directive: 'harmonizome-bar',
             cssClass: 'harmonizome'
@@ -318,7 +336,7 @@ mod.controller('directAccessToolsCtrl',
         {
             title: "CREEDS",
             url: "http://amp.pharm.mssm.edu/CREEDS",
-            image: DIR + "CREEDS.png",
+            image: DIR + "creeds.png",
             description: {
                 main: "Crowd extracted expression of differential signatures.",
                 navigation: "Global visualization of all signatures in a bubble chart or heatmap.",
@@ -330,7 +348,25 @@ mod.controller('directAccessToolsCtrl',
             modes: {
                 functionality: ["navigation", "collaboration", "search", "download"],
                 content: ["external"]
-            }
+            },
+            directive: "CREEDS-Bar"
+        },
+        {
+            title: "SEP-L1000",
+            url: "http://maayanlab.net/SEP-L1000",
+            image: DIR + "logo-sep.png",
+            description: {
+                main: "Predictive model of small-molecule side effects based on the L1000 data.",
+                integration: "The model integrates the L1000 data with side effect data from SIDER.",
+                drugs: "The predictions made from a LINCS collection of 20,000 small-molecule compounds.",
+                navigation: "The side effect predictions can be navigated on a 2 dimensional bubble chart representation.",
+                publication: "<a target='_blank' href='http://bioinformatics.oxfordjournals.org/content/early/2016/04/20/bioinformatics.btw168'>Drug-induced adverse events prediction with the LINCS L1000 data</a>."
+            },
+            modes: {
+                functionality: ["integration", "navigation"],
+                content: ["drugs", "publication"]
+            },
+            directive: "SEP-L1000-Bar"
         },
         {
             title: "LINCS Canvas Browser",
@@ -371,60 +407,60 @@ mod.controller('directAccessToolsCtrl',
             // directive: "DCB-bar",
             cssClass: "dcb"
         },
-        {
-            title: "LIFE",
-            url: "http://life.ccs.miami.edu/life/",
-            image: DIR + "life.png",
-            description: {
+        //{
+        //    title: "LIFE",
+        //    url: "http://life.ccs.miami.edu/life/",
+        //    image: DIR + "life.png",
+        //    description: {
                 // main: "LINCS information framework. Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
-                main: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
-                search: "Find data aggregated from HMS LINCS Database, the Broad institute, and other LINCS data generation centers.",
-                navigation: "The data categories can be navigated using layered pie charts.",
-                cells: "A wide range of human cell lines across different tissue types.",
-                drugs: "A wide range of small-molecule compounds which are annotated based on mechanism of action.",
-                genetics: "L1000 data based on shRNA and cDNA screens are available.",
-                assays: "All assays which are part of the LINCS project."
-            },
-            modes: {
-                functionality: ["search", "navigation"],
-                content: ["cells", "drugs", "genetics", "assays"]
-            },
-            directive: "LIFE-bar",
-            cssCLass: "life"
-        },
-        {
-            title: "Docent",
-            url: "http://amp.pharm.mssm.edu/milestones/grid.html",
-            image: DIR + "docent-grid.png",
-            description: {
-                main: "Global visual representation of available LINCS Phase II datasets.",
-                navigation: "Available data on specific cell line and assay combinations can be navigated and compared via a matrix representation.",
-                assays: "The assays include RNA-seq, RPPA, ATAC-seq, cell viability assays, and many others.",
-                cells: "A core set of cell lines highlighting common experiments for characterizing these cell lines."
-            },
-            modes: {
-                functionality: ["navigation"],
-                content: ["assays", "cells"]
-            },
+         //       main: "Integrates all LINCS content leveraging a semantic knowledge model and common LINCS metadata standards.",
+         //       search: "Find data aggregated from HMS LINCS Database, the Broad institute, and other LINCS data generation centers.",
+         //       navigation: "The data categories can be navigated using layered pie charts.",
+         //       cells: "A wide range of human cell lines across different tissue types.",
+         //       drugs: "A wide range of small-molecule compounds which are annotated based on mechanism of action.",
+         //       genetics: "L1000 data based on shRNA and cDNA screens are available.",
+         //       assays: "All assays which are part of the LINCS project."
+         //  },
+         //   modes: {
+         //       functionality: ["search", "navigation"],
+          //      content: ["cells", "drugs", "genetics", "assays"]
+           // },
+        //    directive: "LIFE-bar",
+         //   cssCLass: "life"
+       // },
+       // {
+            //title: "Docent",
+           // url: "http://amp.pharm.mssm.edu/milestones/grid.html",
+           // image: DIR + "docent-grid.png",
+           // description: {
+               // main: "Global visual representation of available LINCS Phase II datasets.",
+               // navigation: "Available data on specific cell line and assay combinations can be navigated and compared via a matrix representation.",
+               // assays: "The assays include RNA-seq, RPPA, ATAC-seq, cell viability assays, and many others.",
+               // cells: "A core set of cell lines highlighting common experiments for characterizing these cell lines."
+            //},
+            //modes: {
+                //functionality: ["navigation"],
+                //content: ["assays", "cells"]
+           // },
             // directive: "Docent-bar",
-            cssClass: "docent"
-        },
-        {
-            title: "LDR",
-            url: "http://amp.pharm.mssm.edu/ldr/",
-            image: DIR + "LDR.png",
-            description: {
-                main: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers.",
-                search: "Search registered datasets based on submitting institute or experimental condition.",
-                assays: "The available assays are from LINCS phase II."
-            },
-            modes: {
-                functionality: ["search"],
-                content: ["assays"]
-            },
+            //cssClass: "docent"
+        //},
+       // {
+        //    title: "LDR",
+          //  url: "http://amp.pharm.mssm.edu/ldr/",
+          //  image: DIR + "LDR.png",
+         //   description: {
+          //      main: "LINCS Dataset Registry (LDR) ensures data consistency and control among LINCS Data and Signature Generation Centers.",
+          //      search: "Search registered datasets based on submitting institute or experimental condition.",
+           //     assays: "The available assays are from LINCS phase II."
+           // },
+          //  modes: {
+               // functionality: ["search"],
+              //  content: ["assays"]
+           // },
             // directive: "LDR-bar",
-            cssClass: "ldr"
-        },
+          //  cssClass: "ldr"
+      //  },
         {
             title: "Network2Canvas",
             url: "http://www.maayanlab.net/N2C/",
@@ -458,24 +494,17 @@ mod.controller('directAccessToolsCtrl',
             }
         },
         {
-            title: "HMS LINCS Database",
-            url: "http://lincs.hms.harvard.edu/db/",
-            image: DIR + "hms_lincs.png",
+            title: "GUIdock",
+            url: "https://github.com/WebDataScience/GUIdock",
+            image: DIR + "gui_dock.fw.png",
             description: {
-                main: "Harvard Medical School's LINCS database.",
-                search: "General text-based search. Find datasets and information about experimental reagents. Small-molecule compounds can be queried based on SMILES.",
-                download: "Data is hosted on the web-site and can be downloaded.",
-                api: "Programmatic access is detailed in the <a target='_blank' href='https://docs.google.com/document/d/1R_d_1UWO0C9y1TceXpKIUkhjk08DfvP1D19txi4Tbas/edit'>URL Scheme and Access Guide</a>.",
-                assays: "The available data are focused on dose-dependence and dynamics of responses to small-molecule perturbations. It primarily has data on biochemical binding assays and microscopy imaging measuring cell viability.",
-                drugs: "A wide range of small-molecule compounds.",
-                cells: "A wide range of cell lines."
+                main: "A method for deploying containers with a graphical user interface.",
+                publication: "<a target='_blank' href='http://dx.doi.org/10.1371/journal.pone.0152686'>GUIdock: Using Docker Containers with a Common Graphics User Interface to Address the Reproducibility of Research</a>"
             },
             modes: {
-                functionality: ["search", "download", "api"],
-                content: ["assays", "drugs", "cells"]
-            },
-            directive: "HMS-DB-bar",
-            cssClass: "hms-db"
+                functionality: [""],
+                content: ["publication"]
+            }
         }
     ];
 
@@ -635,7 +664,7 @@ mod.directive("scrollButton", function() {
 });
 
 // Wrapper for tools. Sets up the frame with icon,
-mod.directive("tool", function($compile, $timeout) {
+mod.directive("tool", ["$compile", "$timeout", function($compile, $timeout) {
     return {
         restrict: 'EA',
         scope: {
@@ -649,9 +678,18 @@ mod.directive("tool", function($compile, $timeout) {
             // console.log("test");
             var tool_obj = scope.toolData;
             if (tool_obj && tool_obj.directive !== undefined) {
-                elem.find('placeholder').replaceWith(
-                    $compile("<hr>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>')(scope)
-                );
+                // elem
+                // console.log(tool_obj.directive);
+                var compiled = $compile("<hr>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>');
+                // console.log(compiled);
+
+                elem.find('placeholder').replaceWith(compiled(scope));
+
+                // elem.html("<hr>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>');
+                // $compile(elem.contents())(scope);
+
+                // elem.find("placeholder").html("<hr>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>');
+                // $compile(elem.find("placeholder").contents())(scope);
             };
 
             // Call change mode after directive has rendered. timeout makes it work -- even with 0ms. It's magic.
@@ -679,10 +717,18 @@ mod.directive("tool", function($compile, $timeout) {
             $scope.title = $sce.trustAsHtml($scope.toolData.title);
             // $scope.title = $sce.trustAsHtml($scope.toolData.title.replace(/<(?:.|\n)*?>/gm, ''));
 
+            // console.log($scope.toolData.title);
             var title = $scope.toolData.title
+            // console.log(title);
             $scope.text_title = $("<html>" + $scope.toolData.title + "</html>").text();
+            // console.log($scope.text_title);
 
-            $scope.main_description = $sce.trustAsHtml($scope.toolData.description.main);
+            try {
+                $scope.main_description = $sce.trustAsHtml($scope.toolData.description.main);
+            }
+            catch(err) {
+                $scope.main_description = $sce.trustAsHtml("None");
+            }
 
             // For inherited "Dot" syntax in child controllers.
             // Query template.
@@ -753,18 +799,20 @@ mod.directive("tool", function($compile, $timeout) {
                 $scope.list_query.down = genes;
             });
         }],
-        templateUrl: "view/getting-started/tool-directive.html"
+        // templateUrl: script_path + "/partials/tool-directive.html"
+        templateUrl: "js/lincs-direct-access-tools/partials/tool-directive.html"
+        // templateUrl: "./partials/tool-directive.html"
     }
-});
+}]);
 
-mod.directive('lincsDataPortalBar', function($compile) {
+mod.directive('lincsDataPortalBar', function() {
     return {
         restrict: 'E',
         scope: true,
         link: function(scope, element, attrs, ctrls) {
             // console.log("lincsDataPortalBar controller: ", ctrls);
         },
-        controller: ['$scope', '$http', function($scope, $http) {
+        controller: ['$scope', '$http', '$element', function($scope, $http, $element) {
             $scope.query = $scope.$parent.query;  // query binding from parent
 
             $scope.searchTypeOptions = [
@@ -787,12 +835,24 @@ mod.directive('lincsDataPortalBar', function($compile) {
                     return response.data.suggestTerms;
                 });
             };
+            $scope.loadTutorials = function() {
+                if ($scope.tutorials_shown) {
+                    // remove toggle
+                    $scope.tutorials_shown = false;
+                    $element.find("#tutorial1").empty();
+                } else {
+                    // load and show
+                    $scope.tutorials_shown = true;
+                    // $element.find("#tutorial1").html("<iframe src='https://www.youtube.com/embed/CU1qS_kAFVs' frameborder='0' allowfullscreen></iframe>");
+                    $element.find("#tutorial1").html("<iframe src='https://www.youtube.com/embed/dBgccwNRri4?list=PL0Bwuj8819U9YWHbAbfj_RG9Q3xIOq7wo' frameborder='0' allowfullscreen></iframe>");
+                }
+            };
         }],
-        templateUrl: 'view/getting-started/lincs-data-portal.html'
+        templateUrl: 'js/lincs-direct-access-tools/templates/lincs-data-portal.html'
     }
 });
 
-mod.directive('piLincsBar', function($compile) {
+mod.directive('piLincsBar', ["$compile", function($compile) {
     return {
         restrict: 'E',
         scope: true,
@@ -820,18 +880,18 @@ mod.directive('piLincsBar', function($compile) {
                 });
             };
         }],
-        templateUrl: 'view/getting-started/pi-lincs.html'
+        templateUrl: 'js/lincs-direct-access-tools/templates/pi-lincs.html'
     }
-});
+}]);
 
-mod.directive('iLincsBar', function($compile) {
+mod.directive('iLincsBar', ["$compile", function($compile) {
     return {
         restrict: 'E',
         scope: true,
         link: function(scope, element, attrs) {
             // scope.searchTerm = '';
         },
-        controller: ['$scope', '$http', function($scope, $http) {
+        controller: ['$scope', "$element", '$http', function($scope, $element, $http) {
 
             $scope.search_type_options = [
                 {name: 'LINCS', value: "Lincs.jsp?"},
@@ -853,10 +913,21 @@ mod.directive('iLincsBar', function($compile) {
                 var searchUrl = base_url + $scope.query.option + "keyword=" + $scope.query.term;
                 window.open(searchUrl, '_blank');
             };
+            $scope.loadTutorials = function() {
+                if ($scope.tutorials_shown) {
+                    // remove toggle
+                    $scope.tutorials_shown = false;
+                    $element.find("#tutorial1").empty();
+                } else {
+                    // load and show
+                    $scope.tutorials_shown = true;
+                    $element.find("#tutorial1").html("<iframe src='https://www.youtube.com/embed/qBRLabOFvjQ' frameborder='0' allowfullscreen></iframe>");
+                }
+            };
         }],
-        templateUrl: 'view/getting-started/i-lincs.html'
+        templateUrl: 'js/lincs-direct-access-tools/templates/i-lincs.html'
     }
-});
+}]);
 
 mod.directive('l1000cds2Textarea', function() {
     return {
@@ -924,9 +995,20 @@ mod.directive('l1000cds2Textarea', function() {
                         // a.text('L1000CDS2 results');
                     }
                 });
-            }
+            };
+            $scope.loadTutorials = function() {
+                if ($scope.tutorials_shown) {
+                    // remove toggle
+                    $scope.tutorials_shown = false;
+                    $element.find("#tutorial1").empty();
+                } else {
+                    // load and show
+                    $scope.tutorials_shown = true;
+                    $element.find("#tutorial1").html("<iframe src='https://www.youtube.com/embed/kiTAGlvoyWU' frameborder='0' allowfullscreen></iframe>");
+                }
+            };
         }],
-        templateUrl: 'view/getting-started/l1000cds2.html'
+        templateUrl: 'js/lincs-direct-access-tools/templates/l1000cds2.html'
     }
 });
 
@@ -1004,7 +1086,7 @@ mod.directive('enrichrTextarea', function() {
                 });
             }
         }],
-        templateUrl: 'view/getting-started/enrichr.html'
+        templateUrl: 'js/lincs-direct-access-tools/templates/enrichr.html'
     }
 });
 
@@ -1032,7 +1114,7 @@ mod.directive('slicrBar', function() {
                 $scope.tags = query.split(" ");
             });
         }],
-        templateUrl: 'view/getting-started/slicr.html'
+        templateUrl: 'js/lincs-direct-access-tools/templates/slicr.html'
     }
 });
 
@@ -1070,31 +1152,7 @@ mod.directive('harmonizomeBar', function() {
             };
 
         }],
-        templateUrl: 'view/getting-started/harmonizome.html'
-    }
-});
-
-mod.directive("hmsDbBar", function() {
-    return {
-        restrict: "E",
-        scope: true,
-        link: function(scope, element, attrs) {
-        },
-        controller: ["$scope", "$element", "$http", function($scope, $element, $http) {
-            var search_url = $scope.toolData.url + "?search="
-            $scope.search = function() {
-                window.open(search_url + $scope.query.term, "_blank");
-            }
-
-            // Extend mode() function from parent scope. Inherited mode() functionality from toolDirective.
-            // Copies base function, overwrites, and recalls.
-            // console.log($scope);
-
-            $scope.$on("mode", function(event, mode_id) {
-                // console.log("broadcast recieved: ", event, mode_id);
-            });
-        }],
-        templateUrl: "view/getting-started/hms-db.html"
+        templateUrl: 'js/lincs-direct-access-tools/templates/harmonizome.html'
     }
 });
 
@@ -1111,7 +1169,7 @@ mod.directive("lifeBar", function() {
                     "_blank");
             };
         }],
-        templateUrl: "view/getting-started/life.html"
+        templateUrl: "js/lincs-direct-access-tools/templates/life.html"
     }
 });
 
@@ -1136,7 +1194,7 @@ mod.directive("network2canvasBar", function() {
                 }
             };
         }],
-        templateUrl: "view/getting-started/network2canvas.html"
+        templateUrl: "js/lincs-direct-access-tools/templates/network2canvas.html"
     }
 });
 
@@ -1159,7 +1217,7 @@ mod.directive("canvasBrowserBar", function() {
                 }
             };
         }],
-        templateUrl: "view/getting-started/canvas-browser.html"
+        templateUrl: "js/lincs-direct-access-tools/templates/canvas-browser.html"
     }
 });
 
@@ -1182,7 +1240,7 @@ mod.directive("geo2enrichrBar", function() {
                 }
             };
         }],
-        templateUrl: "view/getting-started/geo2enrichr.html"
+        templateUrl: "js/lincs-direct-access-tools/templates/geo2enrichr.html"
     }
 });
 
@@ -1205,7 +1263,7 @@ mod.directive("paeaBar", function() {
                 }
             };
         }],
-        templateUrl: "view/getting-started/paea.html"
+        templateUrl: "js/lincs-direct-access-tools/templates/paea.html"
     }
 });
 
@@ -1265,9 +1323,43 @@ mod.directive("lincscloudBar", function() {
             });
 
         }],
-        templateUrl: "view/getting-started/lincscloud.html"
+        templateUrl: "js/lincs-direct-access-tools/templates/lincscloud.html"
     }
 });
+
+mod.directive("sepL1000Bar", function() {
+    return {
+        restrict: "E",
+        scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
+        controller: ["$scope", function($scope) {
+            var search_url = "http://maayanlab.net/SEP-L1000/#search/"
+
+            $scope.search = function() {
+                window.open(search_url + $scope.query.term, '_blank');
+            };
+
+        }],
+        templateUrl: "js/lincs-direct-access-tools/templates/SEP-L1000.html"
+    }
+});
+
+mod.directive("creedsBar", function() {
+    return {
+        restrict: "E",
+        scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
+        controller: ["$scope", function($scope) {
+            var search_url = "http://amp.pharm.mssm.edu/CREEDS/index.html#similarity/"
+
+            $scope.search = function() {
+                window.open(search_url + $scope.query.term, '_blank');
+            };
+
+        }],
+        templateUrl: "js/lincs-direct-access-tools/templates/CREEDS.html"
+    }
+});
+
+
 
 
 // Tool directive extension template

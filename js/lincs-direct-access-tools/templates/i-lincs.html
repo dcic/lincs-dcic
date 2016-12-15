@@ -1,0 +1,14 @@
+<button class="btn btn-default btn-sm" ng-click="loadTutorials()">Tutorials</button>
+<div class="tutorials">
+	<div id="tutorial1"></div>
+</div>
+
+<select ng-model="query.option"
+        ng-options="option.value as option.name for option in search_type_options">
+</select>
+<form>
+	<input type="text"
+	       ng-model="query.term"
+	       placeholder="Search iLincs">
+	<button class="btn btn-default" ng-click="search()">Search</button>
+</form>
