@@ -116,9 +116,7 @@ mod.controller('DirectAccessToolsCtrl',
             },
             // alternative modes which can be selected by clicking the mode buttons
             modes: {
-                // functionality
                 functionality: ["analysis", "search"],
-                // content
                 content: ["cells", "drugs"]
             },
             directive: 'l1000cds2-textarea',
@@ -130,7 +128,7 @@ mod.controller('DirectAccessToolsCtrl',
             image: DIR + "portal.png",
             description: {
                 // main: "Search and download LINCS datasets and entities.",
-                main: "A unified resource for accessing LINCS datasets and metadata.",
+                main: "A unified resource for accessing all LINCS dataset packages and entities.",
                 search: "Search LINCS metadata by entering names of small molecules, assays, genes, or cell types.",
                 api: "The available data can be accessed programmatically through an <a target='_blank' href='http://lincsportal.ccs.miami.edu/apis/'>API</a>.",
                 download: "Data packages are available for download.",
@@ -172,7 +170,7 @@ mod.controller('DirectAccessToolsCtrl',
             image: DIR + 'pilincs.png',
             description: {
                 // main: "Access to LINCS proteomics datasets with platforms P100 and GCP.",
-                main: "A user interface with API for visualizing and accessing LINCS proteomics datasets (P100 and GCP) on Panorama.",
+                main: "An interface for visualizing and accessing LINCS proteomics datasets (P100 and GCP) on Panorama.",
                 navigation: "Each signature protein phosphosite signature can be browsed as a histogram.",
                 search: "Experimental conditions can be searched by cell lines and small molecules.",
                 api: "<a target='_blank' href='http://eh3.uc.edu/pilincs/#/api'>API documentation</a>."
@@ -337,7 +335,7 @@ mod.controller('DirectAccessToolsCtrl',
             url: "http://amp.pharm.mssm.edu/CREEDS",
             image: DIR + "creeds.png",
             description: {
-                main: "Crowd extracted expression of differential signatures.",
+                main: "Collections of processed gene, drug, and disease signatures from GEO.",
                 navigation: "Global visualization of all signatures in a bubble chart or heatmap.",
                 collaboration: "Users can contribute signatures through GEO2Enrichr and the Crowdsourcing Portal.",
                 search: "Signatures can be searched using up/down gene lists or by search term.",
@@ -355,7 +353,7 @@ mod.controller('DirectAccessToolsCtrl',
             url: "http://maayanlab.net/SEP-L1000",
             image: DIR + "logo-sep.png",
             description: {
-                main: "Predictive model of small-molecule side effects based on the L1000 data.",
+                main: "A web portal for searching and browsing predictive small-molecule/ADR connections.",
                 integration: "The model integrates the L1000 data with side effect data from SIDER.",
                 drugs: "The predictions made from a LINCS collection of 20,000 small-molecule compounds.",
                 navigation: "The side effect predictions can be navigated on a 2 dimensional bubble chart representation.",
