@@ -17,7 +17,6 @@ mod.directive('scrollOnClick', function() {
             var id = attrs.href;
 
             $elem.on('click', function() {
-                console.log("click set");
                 var $target;
                 if (id) {
                     $target = $(id);
@@ -568,7 +567,6 @@ mod.controller('DirectAccessToolsCtrl',
     };
 
     $scope.removeHash = function() {
-        console.log("restting hash");
         // reseting the hash
         $location.hash("");
     };
@@ -614,11 +612,9 @@ mod.directive("scrollButton", function() {
         },
         controller: ["$scope", "$element", "$location", "$anchorScroll", "$sce", function($scope, $elem, $location, $anchorScroll, $sce) {
             // $scope.title_ = $sce.trustAsHtml($scope.targetId);
-            // console.log($scope.title_);
             // $scope.title_ = $sce.trustAsHtml("<h1>test</h1>");
 
             $scope.gotoAnchor = function() {
-                // console.log("gotoanchor: ", $scope.targetId);
                 // Prevent reload issues
                 // event.preventDefault();
                 // event.stopPropagation();
@@ -675,13 +671,10 @@ mod.directive("tool", ["$compile", "$timeout", function($compile, $timeout) {
             toolButtons: '@'
         },
         link: function(scope, elem, attrs) {
-            // console.log("test");
             var tool_obj = scope.toolData;
             if (tool_obj && tool_obj.directive !== undefined) {
                 // elem
-                // console.log(tool_obj.directive);
                 var compiled = $compile("<hr>" + '<' + tool_obj.directive + '></' + tool_obj.directive + '>');
-                // console.log(compiled);
 
                 elem.find('placeholder').replaceWith(compiled(scope));
 
@@ -717,11 +710,8 @@ mod.directive("tool", ["$compile", "$timeout", function($compile, $timeout) {
             $scope.title = $sce.trustAsHtml($scope.toolData.title);
             // $scope.title = $sce.trustAsHtml($scope.toolData.title.replace(/<(?:.|\n)*?>/gm, ''));
 
-            // console.log($scope.toolData.title);
             var title = $scope.toolData.title
-            // console.log(title);
             $scope.text_title = $("<html>" + $scope.toolData.title + "</html>").text();
-            // console.log($scope.text_title);
 
             try {
                 $scope.main_description = $sce.trustAsHtml($scope.toolData.description.main);
@@ -745,10 +735,8 @@ mod.directive("tool", ["$compile", "$timeout", function($compile, $timeout) {
 
             // Change viewiew mode. To be overwritten by child directives.
             $scope.mode = function(mode_id) {
-                // console.log("mode called()");
                 $scope.$broadcast("mode", mode_id);
 
-                // console.log("base mode called: ", mode_id);
                 var button = $element.find("." + mode_id);  // the button associated with the mode
                 var was_selected = button.hasClass("selected");  // already selected?
 
@@ -789,8 +777,6 @@ mod.directive("tool", ["$compile", "$timeout", function($compile, $timeout) {
             });
 
             $scope.$on("up-genes", function(event, genes) {
-                // console.log(genes);
-                // console.log(typeof genes);
                 // $scope.list_query.up = genes.join("\n");
                 $scope.list_query.up = genes;
             });
@@ -810,7 +796,6 @@ mod.directive('lincsDataPortalBar', function() {
         restrict: 'E',
         scope: true,
         link: function(scope, element, attrs, ctrls) {
-            // console.log("lincsDataPortalBar controller: ", ctrls);
         },
         controller: ['$scope', '$http', '$element', function($scope, $http, $element) {
             $scope.query = $scope.$parent.query;  // query binding from parent
@@ -1301,15 +1286,12 @@ mod.directive("lincscloudBar", function() {
 
             $scope.search = function() {
                 $scope.query.field = $scope.engine_example_fields[$scope.query.engine];  // find example field for engine
-                // console.log($scope.query.field);
                 var http_request = base_url + $scope.query.engine + "?q={\"" + $scope.query.field + "\":\"" + $scope.query.term + "\"}&user_key=" + user_key;
                 window.open(http_request, "_blank");
             };
 
             // Extend mode switch function
             $scope.$on("mode", function(event, mode_id) {
-
-                // console.log(mode_id);
 
                 switch (mode_id) {
                     case "cells":
@@ -1319,7 +1301,6 @@ mod.directive("lincscloudBar", function() {
                         $scope.query.engine = "pertinfo";
                         break;
                 }
-                // console.log("HMS overwritten mode called with: ", name);
             });
 
         }],
@@ -1371,7 +1352,6 @@ mod.directive("myDirective", function() {
         controller: ["$scope", function($scope) {
             // Listener to click events from parent <tool>
             $scope.$on("mode", function(event, mode_id) {
-                console.log("new mode: ", mode_id);
             })
         }],
         // templateUrl: "view/getting-started/myDirective.html"

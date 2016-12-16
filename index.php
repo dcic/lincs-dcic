@@ -38,7 +38,7 @@
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="style/side.css">
 	<link rel="stylesheet" href="style/getting-started.css">
-	<!-- <link rel="stylesheet" href="style/tool-directive.css"> -->
+  <link rel="stylesheet" href="style/tools.css">
 	<link rel="stylesheet" href="js/lincs-direct-access-tools/direct-access-tools.css">
 
     <!-- Google Analytics -->
