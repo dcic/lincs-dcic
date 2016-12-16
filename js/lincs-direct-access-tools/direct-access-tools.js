@@ -801,7 +801,7 @@ mod.directive('lincsDataPortalBar', function() {
             $scope.query = $scope.$parent.query;  // query binding from parent
 
             $scope.searchTypeOptions = [
-                {name: 'datasets', value: 'datasets'},
+                {name: 'Datasets', value: 'datasets'},
                 {name: 'Entities', value: 'entities'}
             ];
 
