@@ -33,7 +33,6 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "l1000cds2.png",
             docsUrl: "http://amp.pharm.mssm.edu/L1000CDS2/help/#api",
             shortDesc: "L1000 Characteristic Direction Signature Search Engine",
-            isHtml: true
         },
         {
             title: "iLINCS",
