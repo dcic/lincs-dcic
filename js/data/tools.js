@@ -26,13 +26,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Access to LINCS Data and Signatures"
         },
         {
-            title: "L1000CDS2",
-            description: "L1000CDS2 queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
+            title: "L1000CDS<sup>2</sup>",
+            description: "L1000CDS<sup>2</sup> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
             url: "http://amp.pharm.mssm.edu/L1000CDS2/",
             target: "_blank",
             image: DIR + "l1000cds2.png",
             docsUrl: "http://amp.pharm.mssm.edu/L1000CDS2/help/#api",
             shortDesc: "L1000 Characteristic Direction Signature Search Engine",
+            isHtml: true
         },
         {
             title: "iLINCS",
