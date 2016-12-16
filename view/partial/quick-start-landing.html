@@ -1,21 +1,20 @@
 <style type="text/css">
-div.popover {
+  div.popover {
     outline: none;
     width: 250px;
-}
+  }
 
-span.glyphicon.minor {
+  span.glyphicon.minor {
     font-size: 14px;
-}
+  }
 
-span.glyphicon.transcriptomics {
+  span.glyphicon.transcriptomics {
     color: rgb(0, 167, 122);
-}
+  }
 
-span.glyphicon.hms-center {
+  span.glyphicon.hms-center {
     color: rgb(236, 0, 140);
-}
-
+  }
 </style>
 
 <!-- Quick start -->
@@ -110,38 +109,35 @@ span.glyphicon.hms-center {
             bs-tooltip data-title="A class of experiments" data-trigger="hover">Phosphorylation</a>
 
         <form ng-submit="typeSearch(query)">
-            <div class="input-group">
-                <input class="form-control" type="text" ng-model="query" placeholder="Query multiple tools"></input>
-                <span class="input-group-btn">
-                    <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-pencil"></span></button>
-                </span>
-
-            </div>
+          <div class="input-group">
+            <input class="form-control" type="text" ng-model="query" placeholder="Query multiple tools"></input>
+            <span class="input-group-btn">
+                <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-pencil"></span></button>
+            </span>
+          </div>
         </form>
-        <hr>
       </div>
     </div>
-
+    <br>
     <div class="row">
       <div class="col-sm-4">
-          <h4>Search L1000 Signatures</h4>
-          <span class="glyphicon glyphicon-question-sign minor pull-right"
-              data-content-template="view/partial/quick-start-signatures-description.html"
-              data-trigger="hover"
-              data-placement="auto"
-              bs-popover>
-          </span>
-          <tool tool-data="findTool('L1000CDS<sup>2</sup>')" tool-mode="" tool-buttons="none"></tool>
+        <h4>Search L1000 Signatures</h4>
+        <span class="glyphicon glyphicon-question-sign minor pull-right"
+            data-content-template="view/partial/quick-start-signatures-description.html"
+            data-trigger="hover"
+            data-placement="auto"
+            bs-popover>
+        </span>
+        <tool tool-data="findTool('L1000CDS<sup>2</sup>')" tool-mode="" tool-buttons="none"></tool>
 
-
-          <h4>Visualize and Access LINCS Proteomics Data</h4>
-          <span class="glyphicon glyphicon-question-sign minor pull-right"
-              data-content-template="view/partial/quick-start-proteomics-description.html"
-              data-trigger="hover"
-              data-placement="auto"
-              bs-popover>
-          </span>
-          <tool tool-data="findTool('piLINCS')" tool-mode="" tool-buttons="none"></tool>
+        <h4>Analyze LINCS Data</h4>
+        <span class="glyphicon glyphicon-question-sign minor pull-right"
+            data-content-template="view/partial/quick-start-analyze-description.html"
+            data-trigger="hover"
+            data-placement="auto"
+            bs-popover>
+        </span>
+        <tool tool-data="findTool('iLINCS')" tool-mode="" tool-buttons="none"></tool>
       </div>
 
       <div class="col-sm-4">
@@ -154,14 +150,14 @@ span.glyphicon.hms-center {
         </span>
         <tool tool-data="findTool('LINCS Data Portal')" tool-mode="" tool-buttons="none"></tool>
 
-        <h4>Analyze LINCS Data</h4>
+        <h4>Visualize and Access LINCS Proteomics Data</h4>
         <span class="glyphicon glyphicon-question-sign minor pull-right"
-            data-content-template="view/partial/quick-start-analyze-description.html"
+            data-content-template="view/partial/quick-start-proteomics-description.html"
             data-trigger="hover"
             data-placement="auto"
             bs-popover>
         </span>
-        <tool tool-data="findTool('iLINCS')" tool-mode="" tool-buttons="none"></tool>
+        <tool tool-data="findTool('piLINCS')" tool-mode="" tool-buttons="none"></tool>
 
         <h4>Search Crowdsourced Gene Expression Signatures</h4>
         <tool tool-data="findTool('CREEDS')" tool-mode="" tool-buttons="none"></tool>
@@ -192,4 +188,5 @@ span.glyphicon.hms-center {
       </div>
     </div>
   </div>
+  <hr>
 </div>
