@@ -82,38 +82,42 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     affiliation: ISMMS,
                     email: "anders.dohlman {at} mssm.edu"
                 },
-		{
+		            {
                     firstName: "Alex",
                     lastName: "Lachmann",
                     affiliation: ISMMS,
                     email: "alexander.lachmann {at} mssm.edu"
                 },
-		{
+		            {
                     firstName: "Troy",
                     lastName: "Goff",
                     affiliation: ISMMS,
                     email: "troy.goff {at} mssm.edu"
                 },
-		{
+		            {
                     firstName: "Caroline",
                     lastName: "Monteiro",
                     affiliation: ISMMS,
                     email: "caroline.monteiro {at} mssm.edu"
                 },
-                {
-                    firstName: "Katie",
-                    lastName: "Lin",
-                    affiliation: ISMMS,
-                    email: "katie.lin {at} mssm.edu"
-                },
-		{
+		            {
                     firstName: "Denis",
                     lastName: "Torre",
                     affiliation: ISMMS,
                     email: "denis.torre {at} mssm.edu"
-                }
-
-
+                },
+                {
+                    firstName: "Shai",
+                    lastName: "Magidi",
+                    affiliation: ISMMS,
+                    email: "shai.magidi {at} mssm.edu"
+                },
+                {
+                    firstName: "Moshe",
+                    lastName: "Silverstein",
+                    affiliation: ISMMS,
+                    email: "moshe.silverstein {at} mssm.edu"
+                },
             ]
         },
         {
@@ -156,10 +160,10 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "pilarcmn {at} ucmail.uc.edu"
                 },
 		{
-                    firstName: "Szymon",
-                    lastName: "Chojnacki",
+                    firstName: "Behrouz",
+                    lastName: "Shamsaei",
                     affiliation: "University of Cincinnati",
-                    email: "chojnasm {at} ucmail.uc.edu"
+                    email: "shamsabz {at} ucmail.uc.edu"
                 },
 		{
                     firstName: "Mehdi",
