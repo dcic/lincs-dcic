@@ -124,6 +124,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/2016-data-science-symposium", {
 			templateUrl: "view/page/2016-data-science-symposium.html"
 		}).
+    when("/2016-bd2k-meeting", {
+			templateUrl: "view/page/2016-bd2k-meeting.html"
+		}).
 		/* Default */
 		otherwise({
 			redirectTo: "/"
