@@ -1,8 +1,15 @@
 var mod = angular.module("seminarSeriesMod", []);
 
 mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
-
     $scope.seminars = [
+        {
+            date: 'December 21, 2016',
+            time: '11:00 a.m.',
+            location: 'Icahn School of Medicine at Mount Sinai',
+            speakerName: 'Ariel Israel, MD',
+            speakerTitle: 'Visiting Scholar, Clalit Health Services, Department of Family Medicine, Jerusalem, Israel Sheba Medical Center, Heart Institute, Tel Hashomer, Israel',
+            title: 'Mining Electronic Medical Records for New Medical Insights'
+        },
         {
             date: 'May 18, 2016',
             time: '4:00 p.m.',
@@ -53,16 +60,3 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
         }
     ];
 }]);
-
-
-
-
-
-
-
-
-
-
-
-
-
