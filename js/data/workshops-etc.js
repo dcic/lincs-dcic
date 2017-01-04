@@ -81,18 +81,38 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         }
     ];
 
-    $scope.seminars = [	
-	{
+    $scope.seminars = [
+      {
+          title: 'Scalable Reanalysis of RNA-seq Data Using Cloud Computing',
+          description: $sce.trustAsHtml('Alex Lachmann PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series'),
+          details: 'November 10, 2016, Icahn School of Medicine at Mount Sinai, NY'
+      },
+      {
+          title: 'Predicting Adverse Cardiovascular Events of Tyrosine Kinase Inhibitors from Molecular Features',
+          description: $sce.trustAsHtml('Anders Dohlman presented in the Department of Pharmacological Science’s Works in Progress Seminar Series'),
+          details: 'October 27, 2016, Icahn School of Medicine at Mount Sinai, NY'
+      },
+	     {
             title: 'Webinar and Poster Session for the BD2K-LINCS DCIC Summer Research Training Program',
             description: $sce.trustAsHtml('The <a href="#/summer-fellows-2016">2016 BD2K-LINCS DCIC Summer Fellows</a> presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.'),
             details: 'August 12, 2016, Icahn School of Medicine at Mount Sinai, NY'
         },
-	{
+        {
+            title: 'Side Effect Prediction using L1000 Data and Other Drug Attributes',
+            description: $sce.trustAsHtml('Zichen Wang presented in the Icahn Institute for Genomics and Multiscale Biology’s Works in Progress Seminar Series'),
+            details: 'February 25, 2016, Icahn School of Medicine at Mount Sinai, NY'
+        },
+        {
+            title: 'Extraction and Analysis of Mammalian Gene Expression Signatures from Geo by the Crowd',
+            description: $sce.trustAsHtml('Zichen Wang presented in the Icahn Institute for Genomics and Multiscale Biology’s Works in Progress Seminar Series'),
+            details: 'January 27, 2016, Icahn School of Medicine at Mount Sinai, NY'
+        },
+	       {
             title: 'Data Integration for Systems Pharmacology',
             description: $sce.trustAsHtml('Avi Ma\'ayan PhD was an invited speaker for the Department of Medicine\'s Research Seminar Series at Stony Brook School of Medicine.'),
             details: 'January 12, 2016, Stony Brook, NY'
         },
-	{
+	      {
             title: 'Community Science Project to Link Drugs, Targets and Diseases from Expression Signatures',
             description: $sce.trustAsHtml('Avi Ma’ayan PhD was an invited speaker for the Computational Biology Seminar Series at IBM T.J. Watson Research Center.'),
             details: 'March 4, 2015, Yorktown Heights, NY'
@@ -109,16 +129,3 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         }
     ];
 }]);
-
-
-
-
-
-
-
-
-
-
-
-
-
