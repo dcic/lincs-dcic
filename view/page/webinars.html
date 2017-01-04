@@ -7,6 +7,12 @@
                 <h4>{{webinar.topic}}</h4>
                 <p><strong>Date & Time:</strong> {{webinar.date}}</p>
                 <p><strong>Presenter(s):</strong> {{webinar.presenters}}</p>
+                <p ng-if="webinar.synopsis">
+                    <p ng-if="webinar.isHtml" ng-bind-html="webinar.synopsis"></p>
+                    <p ng-if="!webinar.isHtml">
+                        <strong>Synopsis:</strong> {{webinar.synopsis}}
+                    </p>
+                </p>
             </div>
             <h3>Past</h3>
             <div ng-repeat="webinar in pastWebinars" class="webinar">
