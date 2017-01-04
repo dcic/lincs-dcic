@@ -32,21 +32,26 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.symposia = [
         {
+            title: '2016 BD2K All Hands Grantee Meeting and Open Data Science Symposium',
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="http://lincs-dcic.org/#/2016-bd2k-meeting" target="_blank">BD2K 2016 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
+            details: 'November 29 – December 1, 2016, Rockville, MD'
+        },
+        {
             title: 'LINCS Outreach Meeting',
             description: $sce.trustAsHtml('Members of the BD2K-LINCS DCIC delivered <a href="https://www.youtube.com/watch?v=U28Poi-oerI&list=PLQw7KTnzkpXdpO1WMpW8fJeriqZEuFR1i&index=5" target="_blank">talks</a> and held a breakout session on data analysis, visualization and integration and presented posters at the LINCS Outreach Meeting at the University of California, Irvine.'),
             details: 'March 10-11, 2016, Irvine, CA'
         },
-	{
+	      {
             title: 'Systems Biology Data Science Symposium',
             description: $sce.trustAsHtml('This first <a href="#/2016-data-science-symposium">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
             details: 'January 19-20, 2016, Coral Gables, FL'
         },
-	{
+        {
             title: 'BD2K All Hands Grantee Meeting',
             description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="http://www.scgcorp.com/BD2K2015/" target="_blank">BD2K 2015 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
             details: 'November 12-13, 2015, Bethesda, MD'
         },
-	{
+        {
             title: 'Big Data Symposium: Convergence of Science, Technology and Data Sciences – Impact on Pharma',
             description: $sce.trustAsHtml('In the Impact on Big Data on Drug Discovery session, Avi Ma’ayan PhD presented, "GEO2Enrichr, Enrichr and L1000CDS2: BD2K-LINCS DCIC Software Tools for Drug Discovery and Repurposing".'),
             details: 'June 29-30, 2015, Cambridge, MA'
