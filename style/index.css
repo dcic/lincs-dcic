@@ -54,6 +54,7 @@
   position: absolute;
   text-align: left;
   text-shadow: none;
+  right: 30px;
   bottom: 30px;
   max-width: 40%;
   /* Some images look better with a light caption box. Override the dark default. */
