@@ -40,7 +40,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             location: 'top',
             title: 'Data Science',
-            image: DIR + 'research.png',
+            image: DIR + 'dag-res.png',
             description: 'The BD2K-LINCS DCIC focuses on construction of high fidelity networks from LINCS data combined with other resources.',
             links: [
                 {
@@ -91,7 +91,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             location: 'top',
             title: 'Software',
-            image: DIR + 'software.jpg',
+            image: DIR + 'software-group.png',
             description: 'We are developing tools for integrative data access and visualization across LINCS, BD2K and other relevant data sources.',
             links: [
                 {
@@ -161,7 +161,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             location: 'bottom',
             title: 'Events',
             domClass: 'events',
-            image: DIR + 'events.jpg',
+            image: DIR + 'lincs-all-hands-meeting-2016.png',
             description: 'The BD2K-LINCS DCIC uses webinars, training seminars, challenges, workshops and symposia to create an active LINCS community.',
             links: [
                 {
