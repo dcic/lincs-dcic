@@ -64,7 +64,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             location: 'top',
             title: 'Data Integration',
-            image: DIR + 'data.png',
+            image: DIR + 'software-group.png',
             description: 'Aims of the BD2K-LINCS DCIC include standardizing metadata, integrating datasets, and federating access to LINCS data.',
             links: [
                 {
@@ -91,7 +91,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             location: 'top',
             title: 'Software',
-            image: DIR + 'software-group.png',
+            image: DIR + 'data.png',
             description: 'We are developing tools for integrative data access and visualization across LINCS, BD2K and other relevant data sources.',
             links: [
                 {
