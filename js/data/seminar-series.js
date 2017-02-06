@@ -22,7 +22,7 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
             date: 'May 18, 2016',
             time: '4:00 p.m.',
             location: 'Icahn School of Medicine at Mount Sinai',
-            speakerName: $sce.trustAsHtml('St Patrick Reid, PhD'),
+            speakerName: $sce.trustAsHtml('<a href="http://www.unmc.edu/pathology/faculty/bios/reid.html" target="_blank">St Patrick Reid, PhD</a>'),
             speakerTitle: 'Research Scientist, Department of Molecular and Translational Sciences Division, U.S. Army Medical Research Institute of Infectious Diseases (USAAMRIID)',
             title: $sce.trustAsHtml('Elucidating Pathogen-Host Interactions in Emerging Highly Pathogenic Viruses')
         },
@@ -38,7 +38,7 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
             date: 'July 9, 2015',
             time: '3:00 p.m.',
             location: 'Icahn School of Medicine at Mount Sinai',
-            speakerName: $sce.trustAsHtml('Sima Lev, PhD'),
+            speakerName: $sce.trustAsHtml('<a href="http://www.weizmann.ac.il/mcb/Lev/" target="_blank">Sima Lev, PhD</a>'),
             speakerTitle: 'Associate Professor, Department of Molecular Cell Biology, Weizmann Institute of Science',
             title: $sce.trustAsHtml('Epithelial-mesenchymal Transition (EMT) in Breast Cancer Metastasis')
         },
