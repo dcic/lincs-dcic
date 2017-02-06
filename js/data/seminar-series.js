@@ -30,7 +30,7 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
             date: 'May 17, 2016',
             time: '4:00 p.m.',
             location: 'Icahn School of Medicine at Mount Sinai',
-            speakerName: $sce.trustAsHtml('Reka Albert, PhD'),
+            speakerName: $sce.trustAsHtml('<a href="http://www.phys.psu.edu/people/rza1" target="_blank">Reka Albert, PhD</a>'),
             speakerTitle: 'Distinguished Professor, Departments of Physics and Biology, Pennsylvania State University',
             title: $sce.trustAsHtml('Model-Based Control of Disease-Related Signal Transduction Networks')
         },
@@ -46,7 +46,7 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
             date: 'February 27, 2015',
             time: '11:00 a.m.',
             location: 'Icahn School of Medicine at Mount Sinai',
-            speakerName: $sce.trustAsHtml('Larry Sklar, PhD'),
+            speakerName: $sce.trustAsHtml('<a href="http://pathology.unm.edu/faculty/faculty/lsklar.html" target="_blank">Larry Sklar, PhD</a>'),
             speakerTitle: 'Professor, Department of Pathology, University of New Mexico School of Medicine',
             title: $sce.trustAsHtml('From High Throughput Flow Cytometry to Small Molecule Discovery and Translational Medicine')
         },
@@ -54,7 +54,7 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
             date: 'January 14, 2015',
             time: '4:00 p.m.',
             location: 'Icahn School of Medicine at Mount Sinai',
-            speakerName: $sce.trustAsHtml('Tara C. Matise, PhD'),
+            speakerName: $sce.trustAsHtml('<a href="https://genetics.rutgers.edu/faculty/faculty-list/userprofile/matise" target="_blank">Tara C. Matise, PhD</a>'),
             speakerTitle: 'Associate Professor, Department of Genetics, Rutgers University',
             title: $sce.trustAsHtml('The PAGE Study and Coordinating Center (Population Architecture using Genomics and Epidemiology)')
         },
@@ -62,7 +62,7 @@ mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
             date: 'December 5, 2014',
             time: '12:30 p.m.',
             location: 'Icahn School of Medicine at Mount Sinai',
-            speakerName: $sce.trustAsHtml('Steven Finkbeiner, MD, PhD'),
+            speakerName: $sce.trustAsHtml('<a href="http://bms.ucsf.edu/directory/faculty/steve-finkbeiner-md-phd" target="_blank">Steven Finkbeiner, MD, PhD</a>'),
             speakerTitle: 'Professor, Departments of Neurology and Physiology, University of California, San Francisco',
             title: $sce.trustAsHtml('Reverse Engineering a more Reliable Translational Pipeline with Patient-Derived iPSC Models of Neurodegenerative Disease, Robotic Longitudinal Single Cell Analysis and Deep Learning')
         }
