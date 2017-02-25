@@ -38,6 +38,14 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         // }
         {
             index: 0,
+            image: DIR + 'dcic_group_2.png',
+            title: 'BD2K-LINCS Data Science Symposium',
+            caption: 'Second annual BD2K-LINCS Data Science Symposium (DSS 2017) will be held on May 16-18, 2017',
+            link: 'https://sites.google.com/view/sbdss2017/home',
+            target: '_blank'
+        },
+        {
+            index: 1,
             image: DIR + 'bubble-graph.png',
             title: 'Crowdsourcing for Scientific Discovery',
             caption: 'BD2K-LINCS DCIC researchers find novel ways to analyze data for drug and target discovery',
@@ -45,7 +53,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         },
         {
-            index: 1,
+            index: 2,
             image: DIR + 'zichen_poster.png',
             title: 'BD2K All Hands Meeting and Open Data Science Symposium',
             caption: 'Summary of BD2K-LINCS DCIC activities at this annual BD2K grantee meeting.',
@@ -53,14 +61,14 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         },
         {
-            index: 2,
+            index: 3,
             image: DIR + 'summer_banner_2016.png',
             title: 'Summer Research Program',
             caption: 'We are currently accepting applications for our 2017 Summer Research Training Program in Biomedical Big Data Science!',
             link: '#/summer-research-app#nav'
         },
         {
-            index: 3,
+            index: 4,
             image: DIR + 'course_banner.png',
             title: 'Big Data Science Course',
             caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
@@ -68,7 +76,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         },
         {
-            index: 4,
+            index: 5,
             image: DIR + 'clustergrammer_skin_cancer.png',
             title: 'LINCS Tools for Integrative Data Access and Visualization',
             caption: 'BD2K-LINCS DCIC develops web-based tools to enable researchers to be more productive with LINCS data.',
@@ -76,8 +84,8 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         },
         {
-            index: 5,
-            image: DIR + 'dcic_group_2.png',
+            index: 6,
+            image: DIR + 'outreach.png',
             title: 'Community Training and Outreach',
             caption: 'BD2K-LINCS DCIC engages, informs and educates key biomedical research communities about LINCS resources.',
             link: 'http://lincs-dcic.org/#/training',
