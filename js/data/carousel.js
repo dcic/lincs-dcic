@@ -39,8 +39,8 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         {
             index: 0,
             image: DIR + 'dcic_group_2.png',
-            title: 'BD2K-LINCS Data Science Symposium',
-            caption: 'Second annual BD2K-LINCS Data Science Symposium (DSS 2017) will be held on May 16-18, 2017',
+            title: 'BD2K-LINCS Data Science Symposium 2017',
+            caption: 'Register now for the upcoming BD2K-LINCS Data Science Symposium (DSS 2017) to be held on May 16-18!',
             link: 'https://sites.google.com/view/sbdss2017/home',
             target: '_blank'
         },
