@@ -15,6 +15,12 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
        synopsis: "We discuss the human proteome in light of the therapeutic Target Development Levels (TDLs). Four TDLs are defined: Tclin – “clinical”, efficacy targets for known drugs (3% of the proteome); Tchem – “chemical”, proteins for which interactions with small molecules above class-specific cut-offs are known; Tbio – “biological”, proteins for which functional or disease aspects are knonw; Tdark – “ignorome”, proteins that are poorly described based on fractional publication counts (from JensenLab.org), NCBI GeneRIFs and commercially available antibodies (from antibodypedia.com). More about Tclin, Tdark etc. in this Nature Reviews Drug Discovery poster: http://www.nature.com/nrd/posters/druggablegenome/index.html. The second part of my presentation will put the IDG aspects in the light of potential partnership with the pharmaceutical industry, starting from the following: 1) Diseases are concepts, they do not exist outside patients. 2) Successful launch implies good choice of chemical and target. Targets are the weak link. 3) it is time for pharma to declare the Target Selection process as Precompetitive Knowledge. 4) It's neither Affinity, nor Binding mode. It's what happens in patients 5) Pharma and academia should work jointly to select the optimal Disease-Target-Drug tuple.",
       },
       {
+       date: '18 April 2017 | 3:00 PM ET',
+       topic: 'TBA',
+       presenters: 'Rajarshi Guha PhD, NIH National Center for Advancing Translational Sciences',
+       synopsis: 'TBA',
+      },
+      {
        date: '25 April 2017 | 3:00 PM ET',
        topic: 'Combining Forward and Reverse Engineering to Understand Complex Fractional Killing',
        presenters: 'Tongli Zhang PhD, University of Cincinnati',
