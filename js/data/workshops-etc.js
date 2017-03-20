@@ -48,7 +48,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: 'BD2K All Hands Grantee Meeting',
-            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="http://www.scgcorp.com/BD2K2015/" target="_blank">BD2K 2015 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the BD2K 2015 All Hands Meeting which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
             details: 'November 12-13, 2015, Bethesda, MD'
         },
         {
