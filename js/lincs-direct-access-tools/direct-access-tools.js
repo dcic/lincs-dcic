@@ -502,6 +502,26 @@ mod.controller('DirectAccessToolsCtrl',
                 functionality: [""],
                 content: ["publication"]
             }
+        },
+        {
+            title: "HMS LINCS Database",
+            url: "http://lincs.hms.harvard.edu/db/",
+            image: DIR + "hms_lincs.png",
+            description: {
+                main: "Harvard Medical School's LINCS database.",
+                search: "General text-based search. Find datasets and information about experimental reagents. Small-molecule compounds can be queried based on SMILES.",
+                download: "Data is hosted on the web-site and can be downloaded.",
+                api: "Programmatic access is detailed in the <a target='_blank' href='https://docs.google.com/document/d/1R_d_1UWO0C9y1TceXpKIUkhjk08DfvP1D19txi4Tbas/edit'>URL Scheme and Access Guide</a>.",
+                assays: "The available data are focused on dose-dependence and dynamics of responses to small-molecule perturbations. It primarily has data on biochemical binding assays and microscopy imaging measuring cell viability.",
+                drugs: "A wide range of small-molecule compounds.",
+                cells: "A wide range of cell lines."
+            },
+            modes: {
+                functionality: ["search", "download", "api"],
+                content: ["assays", "drugs", "cells"]
+            },
+            directive: "HMS-DB-bar",
+            cssClass: "hms-db"
         }
     ];
 
@@ -805,7 +825,7 @@ mod.directive('lincsDataPortalBar', function() {
 
             $scope.query.option = $scope.searchTypeOptions[0].value;  // default search type
 
-            var base_url = 'http://dev3.ccs.miami.edu:8080/';
+            var base_url = 'http://lincsportal.ccs.miami.edu/';
             var suggest_url = base_url + 'dcic/api/autosuggest?searchTerm=';
 
             $scope.search = function() {

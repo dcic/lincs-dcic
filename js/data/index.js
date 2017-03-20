@@ -98,10 +98,6 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                     title: 'Tools and Apps',
                     url: '#/resources#nav'
                 },
-                //{
-                 //   title: 'Access LINCS Datasets',
-                   // url: 'http://dev3.ccs.miami.edu:8080/datasets-beta/'
-               // },
                 {
                     title: 'Analyze Your Gene Signatures',
                     url: '#/analyze#nav'

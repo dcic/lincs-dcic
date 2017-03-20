@@ -192,7 +192,7 @@ modLincsCenters.controller("lincsCentersCtrl", ["$scope", function($scope) {
             logoUrl: "js/lincs-direct-access-tools/img/lincs-centers/cmap2.jpg",
             tags: ["transcriptomics", "cellular states", "protein function", "CRISPR knock-out", "shRNA knock-down", "ORF overexpression", "small-molecules", "user interfaces"],
             links: {
-                website: "http://www.lincscloud.org/",
+                website: "https://clue.io/",
                 description: "http://www.lincsproject.org/centers/data-and-signature-generating-centers/lincs-transcriptomics/"
                 // docs: "docs/LINCS-Transcriptomics"
             },
@@ -218,7 +218,7 @@ modLincsCenters.controller("lincsCentersCtrl", ["$scope", function($scope) {
         {
             title: "Microenvironment Perturbagen (MEP) LINCS Center",
             affiliation: "Oregon Health and Science University",
-            logoUrl: "js/lincs-direct-access-tools/img/lincs-centers/ohsu.jpg",
+            logoUrl: "js/lincs-direct-access-tools/img/lincs-centers/mep-lincs-logo.png",
             tags: ["microenvironment", "RNA expression", "protein expression", "cellular imaging", "molecular networks"],
             links: {
                 resource: "https://www.synapse.org/#!Synapse:syn2862345/wiki/72486",
