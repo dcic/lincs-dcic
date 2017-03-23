@@ -22,7 +22,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
            title: "Systematic analyses of drugs and disease indications in RepurposeDB reveal pharmacological, biological and epidemiological factors influencing drug repositioning.",
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28200013",
            authors: "Shameer K, Glicksberg BS, Hodos R, Johnson KW, Badgeley MA, Readhead B, Tomlinson MS, O'Connor T, Miotto R, Kidd BA, Chen R, Ma'ayan A, Dudley JT",
-           citation: "Briefings in Bioinformatics. 2017 Feb 15. doi: 10.1093/bib/bbw136.",
+           citation: "Briefings in Bioinformatics. 2017 Feb 15.",
            ids: "PMID: 28200013",
            year: 2017
        },

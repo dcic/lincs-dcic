@@ -33,7 +33,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.symposia = [
         {
             title: 'BD2K-LINCS Data Science Symposium 2017 - Systems Biology of Cellular Perturbations',
-            description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) and the University of Cincinnati Medical Center will host the second annual <a href="http://lincs-dcic.org/#/2017-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2017)</a>'),
+            description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) and the University of Cincinnati Medical Center will host the second annual <a href="http://lincs-dcic.org/#/2017-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2017)</a>.'),
             details: 'May 16-18, 2017, Cincinnati, OH'
         },
         {
