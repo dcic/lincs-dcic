@@ -94,17 +94,17 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.seminars = [
       {
           title: 'Web-based Heatmap Visualization and Analysis Tool for High-Dimensional Biological Data',
-          description: $sce.trustAsHtml('Nicolas Fernandez PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series'),
+          description: $sce.trustAsHtml('Nicolas Fernandez PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
           details: 'March 2, 2017, Icahn School of Medicine at Mount Sinai, NY'
       },
       {
           title: 'Scalable Reanalysis of RNA-seq Data Using Cloud Computing',
-          description: $sce.trustAsHtml('Alex Lachmann PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series'),
+          description: $sce.trustAsHtml('Alex Lachmann PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
           details: 'November 10, 2016, Icahn School of Medicine at Mount Sinai, NY'
       },
       {
           title: 'Predicting Adverse Cardiovascular Events of Tyrosine Kinase Inhibitors from Molecular Features',
-          description: $sce.trustAsHtml('Anders Dohlman presented in the Department of Pharmacological Science’s Works in Progress Seminar Series'),
+          description: $sce.trustAsHtml('Anders Dohlman presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
           details: 'October 27, 2016, Icahn School of Medicine at Mount Sinai, NY'
       },
 	     {
@@ -114,12 +114,12 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: 'Side Effect Prediction using L1000 Data and Other Drug Attributes',
-            description: $sce.trustAsHtml('Zichen Wang presented in the Icahn Institute for Genomics and Multiscale Biology’s Works in Progress Seminar Series'),
+            description: $sce.trustAsHtml('Zichen Wang presented in the Icahn Institute for Genomics and Multiscale Biology’s Works in Progress Seminar Series.'),
             details: 'February 25, 2016, Icahn School of Medicine at Mount Sinai, NY'
         },
         {
             title: 'Extraction and Analysis of Mammalian Gene Expression Signatures from Geo by the Crowd',
-            description: $sce.trustAsHtml('Zichen Wang presented in the Icahn Institute for Genomics and Multiscale Biology’s Works in Progress Seminar Series'),
+            description: $sce.trustAsHtml('Zichen Wang presented in the Icahn Institute for Genomics and Multiscale Biology’s Works in Progress Seminar Series.'),
             details: 'January 27, 2016, Icahn School of Medicine at Mount Sinai, NY'
         },
 	       {

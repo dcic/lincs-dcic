@@ -5,7 +5,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
       {
            title: "Systemic QSAR and phenotypic virtual screening: chasing butterflies in drug discovery",
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28274840",
-           authors: "Cruz-Monteagudo M, Schürer S, Tejera E, Pérez-Castillo Y, Medina-Franco JL, Sánchez-Rodríguez A, Borges F",
+           authors: "Cruz-Monteagudo M, Schürer S, Tejera E, Pérez-Castillo Y, Medina-Franco JL, Sánchez-Rodríguez A, Borges F.",
            citation: "Drug Discovery Today. 2017 Mar 6. pii: S1359-6446(17)30107-1.",
            ids: "PMID: 28274840",
            year: 2017
@@ -13,15 +13,15 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
       {
            title: "Differential cytokine contributions of perivascular haematopoietic stem cell niches",
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28218906",
-           authors: "Asada N, Kunisaki Y, Pierce H, Wang Z, Fernandez NF, Birbrair A, Ma'ayan A, Frenette PS",
+           authors: "Asada N, Kunisaki Y, Pierce H, Wang Z, Fernandez NF, Birbrair A, Ma'ayan A, Frenette PS.",
            citation: "Nature Cell Biology. 2017 Mar;19(3):214-223.",
            ids: "PMID: 28218906",
            year: 2017
        },
       {
-           title: "Systematic analyses of drugs and disease indications in RepurposeDB reveal pharmacological, biological and epidemiological factors influencing drug repositioning.",
+           title: "Systematic analyses of drugs and disease indications in RepurposeDB reveal pharmacological, biological and epidemiological factors influencing drug repositioning",
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28200013",
-           authors: "Shameer K, Glicksberg BS, Hodos R, Johnson KW, Badgeley MA, Readhead B, Tomlinson MS, O'Connor T, Miotto R, Kidd BA, Chen R, Ma'ayan A, Dudley JT",
+           authors: "Shameer K, Glicksberg BS, Hodos R, Johnson KW, Badgeley MA, Readhead B, Tomlinson MS, O'Connor T, Miotto R, Kidd BA, Chen R, Ma'ayan A, Dudley JT.",
            citation: "Briefings in Bioinformatics. 2017 Feb 15.",
            ids: "PMID: 28200013",
            year: 2017
