@@ -2,7 +2,31 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
-	{
+      {
+           title: "Systemic QSAR and phenotypic virtual screening: chasing butterflies in drug discovery",
+           url: "https://www.ncbi.nlm.nih.gov/pubmed/28274840",
+           authors: "Cruz-Monteagudo M, Schürer S, Tejera E, Pérez-Castillo Y, Medina-Franco JL, Sánchez-Rodríguez A, Borges F",
+           citation: "Drug Discovery Today. 2017 Mar 6. pii: S1359-6446(17)30107-1.",
+           ids: "PMID: 28274840",
+           year: 2017
+       },
+      {
+           title: "Differential cytokine contributions of perivascular haematopoietic stem cell niches",
+           url: "https://www.ncbi.nlm.nih.gov/pubmed/28218906",
+           authors: "Asada N, Kunisaki Y, Pierce H, Wang Z, Fernandez NF, Birbrair A, Ma'ayan A, Frenette PS",
+           citation: "Nature Cell Biology. 2017 Mar;19(3):214-223.",
+           ids: "PMID: 28218906",
+           year: 2017
+       },
+      {
+           title: "Systematic analyses of drugs and disease indications in RepurposeDB reveal pharmacological, biological and epidemiological factors influencing drug repositioning.",
+           url: "https://www.ncbi.nlm.nih.gov/pubmed/28200013",
+           authors: "Shameer K, Glicksberg BS, Hodos R, Johnson KW, Badgeley MA, Readhead B, Tomlinson MS, O'Connor T, Miotto R, Kidd BA, Chen R, Ma'ayan A, Dudley JT",
+           citation: "Briefings in Bioinformatics. 2017 Feb 15. doi: 10.1093/bib/bbw136.",
+           ids: "PMID: 28200013",
+           year: 2017
+       },
+	     {
             title: "GEN3VA: aggregation and analysis of gene expression signatures from related studies",
             url: "https://www.ncbi.nlm.nih.gov/pubmed/27846806",
             authors: "Gundersen GW, Jagodnik KM, Woodland H, Fernandez NF, Sani K, Dohlman AB, Ung PM, Monteiro CD, Schlessinger A, Ma'ayan A.",
