@@ -177,7 +177,7 @@ modLincsCenters.controller("lincsCentersCtrl", ["$scope", function($scope) {
                 description: "http://www.lincsproject.org/centers/data-and-signature-generating-centers/hms-lincs/"
                 // docs: "docs/HMS-LINCS"
             },
-            description: "The HMS LINCS Center develops new measurement methods and computer algorithms to detect and analyze perturbations induced by therapeutic drugs in healthy and diseased human cells.",
+            description: "The HMS LINCS Center studies how normal and diseased human cells respond at the molecular level to perturbation by drugs, mutations, and the local environment as a means to develop improved predictive models of drug toxicity and response.",
             text: "The Harvard Medical School (HMS) LINCS Center is funded by NIH grant U54 HL127365 and is part of the NIH Library of Integrated Network-based Cellular Signatures Program (LINCS). The overall goals of this program are to collect and disseminate data and analytical tools needed to understand how human cells respond to perturbation by drugs, the environment, and mutation. Further information about LINCS and other participating Centers is available at the program website. \
                 The HMS LINCS Center aims to discover fundamental principals of cellular response to perturbation including the relationship between dose and response, the origin and significance of cell-to-cell variation, and the molecular basis of drug sensitivity and resistance. Data generated at HMS include multiplex biochemical, proteomic, and imaging assays for which dissemination standards are poorly developed; improving these and liberating all data, algorithms, and conclusions from our notebooks and papers is a key goal of the Center. The Center also develops new algorithms for large-scale analysis of complex perturbagen-response datasets, which are available through customized project summary pages. We typically publish at least one biological analysis of each dataset, but these papers describe only one of many uses for the data. We encourage users to explore the primary data based on their own ideas and algorithms. \
                 Assays We focus on biochemical and cell-based assays on (i) small molecule kinase inhibitors, a leading class of therapeutic agents for the treatment of cancer, autoimmune diseases, and other diseases; (ii) epigenome modifiers such as bromodomain and HDAC inhibitors; and (iii) naturally occurring ligands such as growth factors and inflammatory cytokines. Overall we are profiling the responses of ~100 cell lines and primary cell types to ~400 perturbagens across dose and time. \
@@ -189,7 +189,7 @@ modLincsCenters.controller("lincsCentersCtrl", ["$scope", function($scope) {
         {
             title: "LINCS Center for Transcriptomics",
             affiliation: "Broad Institute",
-            logoUrl: "js/lincs-direct-access-tools/img/lincs-centers/cmap2.jpg",
+            logoUrl: "js/lincs-direct-access-tools/img/lincs-centers/clue-logo.png",
             tags: ["transcriptomics", "cellular states", "protein function", "CRISPR knock-out", "shRNA knock-down", "ORF overexpression", "small-molecules", "user interfaces"],
             links: {
                 website: "https://clue.io/",
