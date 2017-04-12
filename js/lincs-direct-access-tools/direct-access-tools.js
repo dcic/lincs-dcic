@@ -112,12 +112,13 @@ mod.controller('DirectAccessToolsCtrl',
                 analysis: "Submitting up- and down-regulated lists of genes allows the identification of similar or opposite perturbations. Alternatively, gene expression vectors can be analyzed by L1000CDS<sup>2</sup>.",
                 search: "The data-oriented search allows finding relevant signatures where the query is based on gene lists.",
                 cells: "The queried L1000 datasets include data on 62 unique cell lines.",
-                drugs: "3,924 small-molecule perturbations from the L1000 dataset are included in the search."
+                drugs: "3,924 small-molecule perturbations from the L1000 dataset are included in the search.",
+                publication: "<a target='_blank' href='http://www.nature.com/articles/npjsba201615'>L1000CDS2: LINCS L1000 characteristic direction signatures search engine</a>."
             },
             // alternative modes which can be selected by clicking the mode buttons
             modes: {
                 functionality: ["analysis", "search"],
-                content: ["cells", "drugs"]
+                content: ["cells", "drugs", "publication"]
             },
             directive: 'l1000cds2-textarea',
             cssClass: 'l1000cds2',
@@ -246,12 +247,13 @@ mod.controller('DirectAccessToolsCtrl',
             description: {
                 main: "Analyzes aggregated gene expression signatures from LINCS, TCGA, BioGPS, and signatures extracted from GEO by the crowd using GEO2Enrichr.",
                 analysis: "Principal component analysis (PCA), hierarchical clustering heatmaps, enrichment analysis, and LINCS drugs that can either reverse or mimic expression across signatures.",
-                download: "Collections of signatures can be downloaded as TSV files."
+                download: "Collections of signatures can be downloaded as TSV files.",
+                publication: "<a target='_blank' href='https://www.ncbi.nlm.nih.gov/pubmed/27846806'>GEN3VA: aggregation and analysis of gene expression signatures from related studies.</a>"
                 // external: "The data is aggregated from GEO by crowd-sourcing through GEO2Enrichr browser extension."
             },
             modes: {
                 functionality: ["analysis", "download"],
-                content: []
+                content: ["publication"]
             },
             // directive: "Geneva-bar",
             cssClass: "geneva"
@@ -340,11 +342,12 @@ mod.controller('DirectAccessToolsCtrl',
                 collaboration: "Users can contribute signatures through GEO2Enrichr and the Crowdsourcing Portal.",
                 search: "Signatures can be searched using up/down gene lists or by search term.",
                 download: "Data can be downloaded in gmt or json format.",
-                external: "Crowd extracted signatures from GEO that are categorized by diasese vs normal, single gene perturbations, or single chemcial perturbation."
+                external: "Crowd extracted signatures from GEO that are categorized by diasese vs normal, single gene perturbations, or single chemcial perturbation.",
+                publication: "<a target='_blank' href='https://www.ncbi.nlm.nih.gov/pubmed/27667448'>Extraction and analysis of signatures from the Gene Expression Omnibus by the crowd.</a>"
             },
             modes: {
                 functionality: ["navigation", "collaboration", "search", "download"],
-                content: ["external"]
+                content: ["external", "publication"]
             },
             directive: "CREEDS-Bar"
         },
@@ -467,7 +470,7 @@ mod.controller('DirectAccessToolsCtrl',
                 analysis: "Simulated annealing of adjacency matrix onto toroidal sphere grid. The resulting 2D 'canvas' show similar network nodes next to each other. Analogous to self-organizing maps. Users can analyze their gene lists.",
                 navigation: "The resulting canvas is interactively visualized.",
                 external: "Canvases of gene set libraries are precomputed.",
-                publication: "<a target='_blank' href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3712222/'>Network2Canvas: network visualization on a canvas with enrichment analysis</a>"
+                publication: "<a target='_blank' href='https://www.ncbi.nlm.nih.gov/pubmed/23749960'>Network2Canvas: network visualization on a canvas with enrichment analysis</a>"
             },
             modes: {
                 functionality: ["analysis", "navigation"],
@@ -508,34 +511,40 @@ mod.controller('DirectAccessToolsCtrl',
             url: "https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea",
             image: DIR + "archs4_icon_720.png",
             description: {
-                main: "All RNA-seq and CHIP-Seq Signature Search Space ",
-                analysis: "A browser extension that adds content to the landing pages of RNA-seq datasets available on the Gene Expression Omnibus (GEO).",
-                navigation: "",
-                external: "",
+                main: "A browser extension that adds content to the landing pages of RNA-seq datasets available on the Gene Expression Omnibus (GEO).",
+                search: "Allows searching of samples based on metadata, signature similarity, and gene set enrichment.",
+                download: "Allows download of all processed RNA-seq samples for both mouse and human.",
+                navigation: "Visualizes samples and genes in an interactive 3-D subspace projection.",
+                integration: "Integrates RNA-seq datasets available from human and mouse experiments in the SRA database.",
+                external: "Database of processed RNA-seq samples from the SRA.",
+                cells: "Contains data from cell line RNA-seq experiements from SRA.",
+                drugs: "Contains data from small molecules RNA-seq experiements from SRA.",
+                genetics: "Contains data from gene perturbation RNA-seq experiements from SRA.",
             },
             modes: {
-                functionality: [],
-                content: []
+                functionality: ["search", "download", "navigation", "integration"],
+                content: ["external", "cells", "drugs", "genetics"]
             },
-            directive: "",
-            cssClass: ""
+            // directive: "",
+            cssClass: "archs4"
         },
         {
             title: "Datasets2Tools",
             url: "https://github.com/denis-torre/project-datasets2tools-chrome-extension",
             image: DIR + "d2t_icon_720.png",
             description: {
-                main: "Enriching DataMed with Canned Analyses",
-                analysis: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
-                navigation: "",
-                external: "",
+                main: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
+                external: "Aggregates analyses performed on datasets from various external respositories.",
+                search: "Allows users to find analyses by performing searches on associated metadata terms.",
+                // api: "The available data can be accessed programmatically through an <a>API</a>.",
+                // education: "",
+                collaboration: "Users can contribute to the database by uploading their own analyses and tools.",
             },
             modes: {
-                functionality: [],
-                content: []
+                functionality: ["search", "external", /*, "api", "education",*/ "collaboration"],
             },
-            directive: "",
-            cssClass: ""
+            // directive: "",
+            cssClass: "datasets2tools"
         },
         {
             title: "Cite-D-Lite",
@@ -543,15 +552,14 @@ mod.controller('DirectAccessToolsCtrl',
             image: DIR + "cdl_icon_720.png",
             description: {
                 main: "Chrome Extension for Data and Paper Citations with Text Importance Highlighting",
-                education: "Functions on specific pages of GEO, PubMed, and DataMed. It has two functions: (1) to create downloadable citations for GEO data and PubMed articles and (2) to highlight the most important sentences in PubMed abstracts in a graded manner (based on TextRank algorithm).",
+                education: "Allows creation of downloadable citations for GEO data and PubMed articles and highlighting of the most important sentences in PubMed abstracts in a graded manner (based on TextRank algorithm).",
                 external: "https://www.youtube.com/watch?v=zONC9KZholA",
             },
             modes: {
                 functionality: ["education"],
-                content: []
             },
             directive: "cite-d-lite-bar",
-            cssClass: ""
+            cssClass: "cite-d-lite"
         },
     ];
 
