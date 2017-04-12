@@ -169,7 +169,31 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "network2canvas.png",
             docsUrl: "http://www.maayanlab.net/N2C/help.html",
             shortDesc: "Network Visualization on a Canvas with Enrichment Analysis"
-        }
+        },
+        {
+            title: "ARCHS4",
+            description: "A browser extension that adds content to the landing pages of RNA-seq datasets available on the Gene Expression Omnibus (GEO).",
+            url: "https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea",
+            target: "_blank",
+            image: DIR + "archs4_icon_720.png",
+            shortDesc: "All RNA-seq and CHIP-Seq Signature Search Space"
+        },
+        {
+            title: "Datasets2Tools Enriching DataMed with Canned Analyses",
+            description: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
+            url: "https://github.com/denis-torre/project-datasets2tools-chrome-extension",
+            target: "_blank",
+            image: DIR + "d2t_icon_720.png",
+            shortDesc: "Enriching DataMed with Canned Analyses"
+        },
+        {
+            title: "Cite-D-Lite",
+            description: "Functions on specific pages of GEO, PubMed, and DataMed. It has two functions: (1) to create downloadable citations for GEO data and PubMed articles and (2) to highlight the most important sentences in PubMed abstracts in a graded manner (based on TextRank algorithm).",
+            url: "https://chrome.google.com/webstore/detail/cite-d-lite/ipiffhgeigmiffclkpkgdaklbdgdegkk",
+            target: "_blank",
+            image: DIR + "cdl_icon_720.png",
+            shortDesc: "Chrome Extension for Data and Paper Citations with Text Importance Highlighting"
+        },
     ];
 
     //$scope.docentWarning = "*Experiments with content that may not be up to date.";

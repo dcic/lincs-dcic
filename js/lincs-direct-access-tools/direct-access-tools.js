@@ -503,6 +503,56 @@ mod.controller('DirectAccessToolsCtrl',
                 content: ["publication"]
             }
         },
+        {
+            title: "ARCHS4",
+            url: "https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea",
+            image: DIR + "archs4_icon_720.png",
+            description: {
+                main: "All RNA-seq and CHIP-Seq Signature Search Space ",
+                analysis: "A browser extension that adds content to the landing pages of RNA-seq datasets available on the Gene Expression Omnibus (GEO).",
+                navigation: "",
+                external: "",
+            },
+            modes: {
+                functionality: [],
+                content: []
+            },
+            directive: "",
+            cssClass: ""
+        },
+        {
+            title: "Datasets2Tools",
+            url: "https://github.com/denis-torre/project-datasets2tools-chrome-extension",
+            image: DIR + "d2t_icon_720.png",
+            description: {
+                main: "Enriching DataMed with Canned Analyses",
+                analysis: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
+                navigation: "",
+                external: "",
+            },
+            modes: {
+                functionality: [],
+                content: []
+            },
+            directive: "",
+            cssClass: ""
+        },
+        {
+            title: "Cite-D-Lite",
+            url: "https://chrome.google.com/webstore/detail/cite-d-lite/ipiffhgeigmiffclkpkgdaklbdgdegkk",
+            image: DIR + "cdl_icon_720.png",
+            description: {
+                main: "Chrome Extension for Data and Paper Citations with Text Importance Highlighting",
+                education: "Functions on specific pages of GEO, PubMed, and DataMed. It has two functions: (1) to create downloadable citations for GEO data and PubMed articles and (2) to highlight the most important sentences in PubMed abstracts in a graded manner (based on TextRank algorithm).",
+                external: "https://www.youtube.com/watch?v=zONC9KZholA",
+            },
+            modes: {
+                functionality: ["education"],
+                content: []
+            },
+            directive: "cite-d-lite-bar",
+            cssClass: ""
+        },
     ];
 
 
@@ -1153,6 +1203,29 @@ mod.directive("lifeBar", function() {
             };
         }],
         templateUrl: "js/lincs-direct-access-tools/templates/life.html"
+    }
+});
+
+mod.directive("citeDLiteBar", function() {
+    return {
+        restrict: "E",
+        scope: true,  // important for inheriting the functions and data structures of the <tool> parent scope
+        controller: ["$scope", "$element", function($scope, $element) {
+            $scope.tutorials_shown = false;
+            // Load tutorial video when tutorial button is pressed. For performance reasons; avoids delay on page load.
+            $scope.loadTutorials = function() {
+                if ($scope.tutorials_shown) {
+                    // remove toggle
+                    $scope.tutorials_shown = false;
+                    $element.find("#tutorial1").empty();
+                } else {
+                    // load and show
+                    $scope.tutorials_shown = true;
+                    $element.find("#tutorial1").html("<iframe src='https://www.youtube.com/embed/zONC9KZholA' frameborder='0' allowfullscreen></iframe>");
+                }
+            };
+        }],
+        templateUrl: "js/lincs-direct-access-tools/templates/cite-d-lite.html"
     }
 });
 
