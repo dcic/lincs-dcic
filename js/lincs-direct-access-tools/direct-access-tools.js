@@ -551,7 +551,7 @@ mod.controller('DirectAccessToolsCtrl',
             url: "https://chrome.google.com/webstore/detail/cite-d-lite/ipiffhgeigmiffclkpkgdaklbdgdegkk",
             image: DIR + "cdl_icon_720.png",
             description: {
-                main: "Chrome Extension for Data and Paper Citations with Text Importance Highlighting",
+                main: "Chrome Extension for Data and Paper Citations with Text Importance Highlighting.",
                 education: "Allows creation of downloadable citations for GEO data and PubMed articles and highlighting of the most important sentences in PubMed abstracts in a graded manner (based on TextRank algorithm).",
                 external: "https://www.youtube.com/watch?v=zONC9KZholA",
             },
