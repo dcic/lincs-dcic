@@ -3,13 +3,6 @@ var mod = angular.module("webinarsMod", []);
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
       {
-       date: '13 April 2017 | 1:00 PM ET',
-       topic: 'Enhancing and Mining the Gene Expression Omnibus and DataMed with Chrome Extensions',
-       presenters: 'Avi Ma’ayan PhD, Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC',
-       synopsis: $sce.trustAsHtml('In the past two years we have developed four Chrome extensions that enhance the functionality of the Gene Expression Omnibus (GEO) and DataMed. The Chrome extensions are named: <a href="http://amp.pharm.mssm.edu/g2e/" target="_blank">GEO2Enrichr</a>, <a href="https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea" target="_blank">ARCHS4</a>, <a href="https://chrome.google.com/webstore/detail/cite-d-lite/ipiffhgeigmiffclkpkgdaklbdgdegkk?hl=en" target="_blank">Cite-D-Lite</a>, and Datasets2Tools. GEO2Enrichr enables users to select control and perturbation samples from GEO dataset landing pages, and then to compute differential expression between the samples. The resultant signatures are visualized with interactive PCA and heatmaps, and piped to downstream analysis tools such as <a href="http://amp.pharm.mssm.edu/Enrichr/" target="_blank">Enrichr</a> and <a href="http://amp.pharm.mssm.edu/L1000CDS2/#/index" target="_blank">L1000CDS2</a>. ARCHS4 provides access to processed RNA-seq data from all mice and human studies directly from GEO landing pages. The Cite-D-Lite extension adds buttons to export data citations to popular reference management software; whereas Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset. In my presentation, I will demo these extensions and discuss how together these tools can enable the discovery of new knowledge. <a href="https://biocaddie.org/events/webinars" target="_blank">How To Connect</a>'),
-       isHtml: true,
-      },
-      {
        date: '18 April 2017 | 3:00 PM ET',
        topic: 'Pharos – A Torch to Use in Your Journey In the Dark Genome',
        presenters: 'Rajarshi Guha PhD, NIH National Center for Advancing Translational Sciences',
@@ -25,6 +18,14 @@ mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.pastWebinars = [
+      {
+       date: '13 April 2017 | 1:00 PM ET',
+       topic: 'Enhancing and Mining the Gene Expression Omnibus and DataMed with Chrome Extensions',
+       presenters: 'Avi Ma’ayan PhD, Icahn School of Medicine at Mount Sinai, BD2K-LINCS DCIC',
+       synopsis: $sce.trustAsHtml('In the past two years we have developed four Chrome extensions that enhance the functionality of the Gene Expression Omnibus (GEO) and DataMed. The Chrome extensions are named: <a href="http://amp.pharm.mssm.edu/g2e/" target="_blank">GEO2Enrichr</a>, <a href="https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea" target="_blank">ARCHS4</a>, <a href="https://chrome.google.com/webstore/detail/cite-d-lite/ipiffhgeigmiffclkpkgdaklbdgdegkk?hl=en" target="_blank">Cite-D-Lite</a>, and Datasets2Tools. GEO2Enrichr enables users to select control and perturbation samples from GEO dataset landing pages, and then to compute differential expression between the samples. The resultant signatures are visualized with interactive PCA and heatmaps, and piped to downstream analysis tools such as <a href="http://amp.pharm.mssm.edu/Enrichr/" target="_blank">Enrichr</a> and <a href="http://amp.pharm.mssm.edu/L1000CDS2/#/index" target="_blank">L1000CDS2</a>. ARCHS4 provides access to processed RNA-seq data from all mice and human studies directly from GEO landing pages. The Cite-D-Lite extension adds buttons to export data citations to popular reference management software; whereas Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset. In my presentation, I will demo these extensions and discuss how together these tools can enable the discovery of new knowledge. <a href="https://biocaddie.org/events/webinars" target="_blank">How To Connect</a>'),
+       isHtml: true,
+       link: 'https://www.youtube.com/watch?v=R1CN3ULeeco&t=876s'
+      },
       {
        date: '04 April 2017 | 3:00 PM ET',
        topic: 'Illuminating the Druggable Genome: Cure or no Cure?',
