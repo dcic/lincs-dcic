@@ -2,8 +2,8 @@
 *.DS_Store
 
 # Dependencies
-lib/node_modules/
-lib/bower_components/
+node_modules/
+bower_components/
 metadata-orig/
 
 images/source/photographs/
