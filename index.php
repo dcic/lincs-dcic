@@ -64,7 +64,7 @@
   <div ng-include="'view/partial/footer.html'"></div>
 
 	<!-- Libraries -->
-	<script src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/lib/bower_components/jquery/jquery.min.js"></script>
 	<script src="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 	<script src="/lib/bower_components/angular/angular.js"></script>
 
@@ -88,11 +88,9 @@
 	<script src="/lib/bower_components/bootstrap/js/transition.js"></script>
 	<script src="/lib/bower_components/underscore/underscore-min.js"></script>
 	<script src="/lib/bower_components/ng-tags-input/ng-tags-input.min.js"></script>
-	<!-- <script src="/lib/twitter-fetcher.min.js"></script> -->
 	<script src="/lib/bower_components/twitter-fetcher/js/twitterFetcher_min.js"></script>
 	<script src="/lib/bower_components/d3/d3.min.js"></script>
 	<script src="/lib/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
-	<!-- <script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script> -->
 
 
 
