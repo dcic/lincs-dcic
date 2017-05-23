@@ -17,10 +17,8 @@ var mod = angular.module("lincsDcic", [
 	"internalDsrpMod",
  	"introMod",
  	"newsMod",
-    // "directAccessToolsMod",
-    "LincsDirectAccessTools",
-    // "lincsCentersMod",
-    "Concierge",
+  "LincsDirectAccessTools",
+  "Concierge",
  	"publicationsMod",
  	"teamMod",
  	"toolsMod",
@@ -28,7 +26,7 @@ var mod = angular.module("lincsDcic", [
  	"navMod",
 	"seminarSeriesMod",
  	"summerFellows2015Mod",
-	"summerFellows2016Mod",
+  "summerFellows2016Mod",
  	"webinarsMod",
  	"workshopsEtcMod",
 	"ui.bootstrap"
@@ -105,9 +103,9 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/summer-fellows-2015", {
             templateUrl: "view/page/summer-fellows-2015.html"
 		}).
-		when("/summer-fellows-2016", {
-			templateUrl: "view/page/summer-fellows-2016.html"
-		}).
+                when("/summer-fellows-2016", {
+            templateUrl: "view/page/summer-fellows-2016.html"
+                }).
 		when("/internal-dsrp", {
 			templateUrl: "view/page/internal-dsrp.html"
 		}).
@@ -125,6 +123,12 @@ mod.config(["$routeProvider", function($routeProvider) {
 		}).
 		when("/2016-data-science-symposium", {
 			templateUrl: "view/page/2016-data-science-symposium.html"
+		}).
+    when("/2017-data-science-symposium", {
+			templateUrl: "view/page/2017-data-science-symposium.html"
+		}).
+    when("/2016-bd2k-meeting", {
+			templateUrl: "view/page/2016-bd2k-meeting.html"
 		}).
 		/* Default */
 		otherwise({

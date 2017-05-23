@@ -56,7 +56,7 @@ mod.controller("gettingStartedCtrl", ["$scope", function($scope) {
     });
 }]);
 
-// Word count service. Uses Porter-Stemming 
+// Word count service. Uses Porter-Stemming
 mod.factory("countWords", function() {
     return function(str, stop_words) {
         var word_hash = {};
@@ -91,7 +91,7 @@ modLincsCenters.controller("lincsCentersCtrl", ["$scope", "countWords", function
             logoUrl: "images/lincs-centers/dtox_logo2.png",
             tags: ["drug side effects", "cardiomyocytes", "hepatocytes", "neurons"],
             links: {
-                website: "http://dtoxs.org/", 
+                website: "http://dtoxs.org/",
                 description: "http://www.lincsproject.org/centers/data-and-signature-generating-centers/dtoxs/"
             },
             description: "The Drug Toxicity Signature Generation Center aims to develop cell signatures that will predict adverse events that might be caused by drugs and will identify other drugs that might lessen these side effects. The center will leverage the U.S. Food and Drug Administration’s (FDA) Adverse Event Reporting System database to identify drugs that produce adverse events in heart, liver and neuronal function, and to search for drugs that may mitigate these events.",
@@ -114,14 +114,14 @@ modLincsCenters.controller("lincsCentersCtrl", ["$scope", "countWords", function
                 website: "http://lincs.hms.harvard.edu/",
                 description: "http://www.lincsproject.org/centers/data-and-signature-generating-centers/hms-lincs-u54/"
             },
-            description: "The HMS LINCS Center develops new measurement methods and computer algorithms to detect and analyze perturbations induced by therapeutic drugs in healthy and diseased human cells.",
+            description: "The HMS LINCS Center studies how normal and diseased human cells respond at the molecular level to perturbation by drugs, mutations, and the local environment as a means to develop improved predictive models of drug toxicity and response.",
             text: "The Harvard Medical School (HMS) LINCS Center is funded by NIH grant U54 HL127365 and is part of the NIH Library of Integrated Network-based Cellular Signatures Program (LINCS). The overall goals of this program are to collect and disseminate data and analytical tools needed to understand how human cells respond to perturbation by drugs, the environment, and mutation. Further information about LINCS and other participating Centers is available at the program website. \
                 The HMS LINCS Center aims to discover fundamental principals of cellular response to perturbation including the relationship between dose and response, the origin and significance of cell-to-cell variation, and the molecular basis of drug sensitivity and resistance. Data generated at HMS include multiplex biochemical, proteomic, and imaging assays for which dissemination standards are poorly developed; improving these and liberating all data, algorithms, and conclusions from our notebooks and papers is a key goal of the Center. The Center also develops new algorithms for large-scale analysis of complex perturbagen-response datasets, which are available through customized project summary pages. We typically publish at least one biological analysis of each dataset, but these papers describe only one of many uses for the data. We encourage users to explore the primary data based on their own ideas and algorithms. \
                 Assays We focus on biochemical and cell-based assays on (i) small molecule kinase inhibitors, a leading class of therapeutic agents for the treatment of cancer, autoimmune diseases, and other diseases; (ii) epigenome modifiers such as bromodomain and HDAC inhibitors; and (iii) naturally occurring ligands such as growth factors and inflammatory cytokines. Overall we are profiling the responses of ~100 cell lines and primary cell types to ~400 perturbagens across dose and time. \
                 Goals: The overall goal of the HMS LINCS Center is to delineate the fundamental principles of cellular response to perturbagens – clinical grade kinase inhibitors and components of the cellular microenvironment in particular – at the level of single-cells and cell populations and to make response data routinely available along with web-based browse, query and programmatic tools. The Center develops, tests and applies diverse measurement and computational methods and uses these to create response signatures for normal and diseased human cells exposed to perturbations individually and in combination. We emphasize systematic collection of data not currently available in public databases including live and fixed-cell imaging, biochemical data on signaling proteins and multi-factorial drug-response phenotypes. In pursuit of this goal, we also help to develop metadata standards and informatics systems for these types of data. \
                 Approaches: The collection of multiplex perturbagen-response data at HMS involves the use of complementary assays including imaging, flow cytometry, sandwich immunoassays, protein mass spectrometry and mRNA profiling as a means to measure the levels, localization and states of modification of proteins targeted by perturbagens and the networks in which these proteins are embedded. Systematic analysis of this data yields the most fundamental measure of cellular response to perturbation: the dose-response relationship. Construction of perturbagen-response signatures using statistical modeling, network inference and machine learning creates models predictive of responses by genetically diverse cells to specific perturbations. Customized query, browse and explore functions developed in collaboration with the BD2K-LINCS Data Coordination and Integration Center, and grounded in established ontologies and standards, will make it possible to access HMS LINCS data and manipulate it programmatically. \
                 Outcomes: The Center’s research will provide a comprehensive picture of the responses of cells and tissues to some of the most important classes of therapeutic molecules (kinase inhibitors and chromatin targeting drugs) and the extent to which these responses vary with changes in the solid-phase and soluble components of the microenvironment. We aim to characterize variation in the biochemistry of cell signaling pathways under basal and perturbed conditions and then explain the origins of this variation in precise molecular terms. By comparing perturbagen-response across tissue types and disease we will not only uncover fundamental properties of cell signaling networks, we will identify opportunities for drug repurposing. We expect repurposing of cancer drugs for cardiovascular and inflammatory diseases to represent a particularly significant opportunity. By directly comparing perturbagen-responses in diseased and normal cells, including cardiomyocytes, hepatocytes, kidney epithelia, neurons, and immune cells we will increase our understanding of toxic responses and develop means for efficiently scoring the potential therapeutic index of new drugs. Finally, by creating predictive models of drug response for different tissue niches we hope to improve our ability to personalize therapies to the needs of individual patients and to increase the durability of existing treatments. \
-                " 
+                "
         },
         {
             name: "LINCS Center for Transcriptomics",
@@ -129,7 +129,7 @@ modLincsCenters.controller("lincsCentersCtrl", ["$scope", "countWords", function
             logoUrl: "images/lincs-centers/cmap2.jpg",
             tags: ["transcriptomics", "cellular states", "protein function", "CRISPR knock-out", "shRNA knock-down", "ORF overexpression", "small-molecules", "user interfaces"],
             links: {
-                website: "http://www.lincscloud.org/",
+                website: "https://clue.io/",
                 description: "http://www.lincsproject.org/centers/data-and-signature-generating-centers/broad-trx/"
             },
             description: "The LINCS Center for Transcriptomics is studying up to 50 cell types perturbed by a large number of chemical compounds and genetic reagents that activate or deactivate genes. Each perturbation will produce about 1,000 gene-expression readouts. By the project’s end, the center expects to have generated more than 1 million profiles of how genes are expressed in different cells.",
@@ -188,7 +188,7 @@ modLincsCenters.controller("lincsCentersCtrl", ["$scope", "countWords", function
     ];
 }]);
 
-// the '.' delimiter translates to HTML 
+// the '.' delimiter translates to HTML
 modLincsCenters.directive("center", function() {
     return {
         restrict: "AE",

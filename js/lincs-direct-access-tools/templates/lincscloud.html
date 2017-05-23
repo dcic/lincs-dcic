@@ -1,0 +1,14 @@
+<select
+	ng-model="query.engine"
+	ng-options="option.value as option.name for option in engine_options"
+	>
+</select>
+
+<form>
+
+	<input type="text"
+		ng-model="query.term"
+		placeholder="Run API query"
+		>
+	<button class="btn btn-default" ng-click="search()">Run</button>
+</form>

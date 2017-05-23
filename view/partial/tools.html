@@ -1,13 +1,16 @@
 <div ng-controller="toolsCtrl" id="tools">
     <div class="col-md-8">
-        <h3>Tools and Apps</h3>
+        <h2>Tools and Apps</h2>
         <p ng-bind-html="introText"></p>
         <div class="sections">
             <div ng-repeat="section in tools" class="section">
                 <img ng-src="{{section.image}}" class="img-responsive">
                 <div class="text">
-                    <h3 ng-if="!section.isHtml">{{section.title}}</h3>
-                    <h3 ng-if="section.isHtml" ng-bind-html="section.title | sceTrustHtml"></h3>
+                    <h3 ng-if="!section.isHtml" class="tool-title">{{section.title}}</h3>
+                    <h3 ng-if="section.isHtml" ng-bind-html="section.title | sceTrustHtml" class="tool-title"></h3>
+                    <span ng-if="section.docsUrl" class="api-tag">
+                      [<a href="{{section.docsUrl}}" target="{{section.target}}">API</a>]
+                    </span>
                     <p>
                         <a href="{{section.url}}" target="{{section.target}}">{{section.shortDesc}}</a>
                     </p>

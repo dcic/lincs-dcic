@@ -19,11 +19,13 @@
                             <p>{{seminar.location}}</p>
                         </td>
                         <td>
-                            <p><strong>{{seminar.speakerName}}</strong></p>
+                            <p>
+                              <strong ng-bind-html="seminar.speakerName"></strong>
+                            </p>
                             <p>{{seminar.speakerTitle}}</p>
                         </td>
                         <td>
-                            <p>{{seminar.title}}</p>
+                            <p ng-bind-html="seminar.title"></p>
                         </td>
                     </tr>
                 </tbody>

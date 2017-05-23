@@ -7,6 +7,12 @@
                 <h4>{{webinar.topic}}</h4>
                 <p><strong>Date & Time:</strong> {{webinar.date}}</p>
                 <p><strong>Presenter(s):</strong> {{webinar.presenters}}</p>
+                <p ng-if="webinar.synopsis">
+                    <p ng-if="webinar.isHtml" ng-bind-html="webinar.synopsis"></p>
+                    <p ng-if="!webinar.isHtml">
+                        <strong>Synopsis:</strong> {{webinar.synopsis}}
+                    </p>
+                </p>
             </div>
             <h3>Past</h3>
             <div ng-repeat="webinar in pastWebinars" class="webinar">
@@ -36,6 +42,13 @@
                     <em>United States (Long distance):</em> +1 (312) 757-3121
                     <br><br>
                     <em>Audio PIN:</em> Shown after joining the session
+                    <br><br>
+                </li>
+                <li>
+                  When prompted, enter access code 168-894-253
+                </li>
+                <li>
+                  You may need an audio PIN. If so, this will be shown after joining the session
                 </li>
             </ol>
             <h3>For more information</h3>

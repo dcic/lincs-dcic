@@ -14,7 +14,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://lincs-dcic.org/#/getting-started/concierge",
             target: "_blank",
             image: DIR + "concierge_bell.svg",
-            shortDesc: "Interactive Introduction to LINCS Tools and Resources"    
+            shortDesc: "Interactive Introduction to LINCS Tools and Resources"
         },
         {
             title: "LINCS Data Portal",
@@ -22,23 +22,26 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://lincsportal.ccs.miami.edu/dcic-portal/",
             target: "_blank",
             image: DIR + "portal.png",
+            docsUrl: "",
             shortDesc: "Access to LINCS Data and Signatures"
         },
         {
             title: "L1000CDS2",
-            description: "L1000CDS<span class='super'>2</span> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
+            description: "L1000CDS<sup>2</sup> queries gene expression signatures against the LINCS L1000 to identify and prioritize small molecules that can reverse or mimic the observed input expression pattern.",
             url: "http://amp.pharm.mssm.edu/L1000CDS2/",
             target: "_blank",
             image: DIR + "l1000cds2.png",
+            docsUrl: "http://amp.pharm.mssm.edu/L1000CDS2/help/#api",
             shortDesc: "L1000 Characteristic Direction Signature Search Engine",
             isHtml: true
-        },  
+        },
         {
             title: "iLINCS",
             description: "An integrative web platform for analysis of LINCS data and signatures.",
-            url: "http://eh3.uc.edu/GenomicsPortals/viewiLincs.jsp",
+            url: "http://eh3.uc.edu/GenomicsPortals/Lincs.jsp",
             target: "_blank",
             image: DIR + "ilincs.png",
+            docsUrl: "",
             shortDesc: "LINCS Web Portal"
         },
         {
@@ -47,6 +50,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://eh3.uc.edu/pilincs",
             target: "_blank",
             image: DIR + "pilincs.png",
+            docsUrl: "http://eh3.uc.edu/pilincs/#/api",
             shortDesc: "Interface to panoramaweb.org"
         },
 	{
@@ -55,6 +59,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/Harmonizome",
             target: "_blank",
             image: DIR + "harmonizome.png",
+            docsUrl: "http://amp.pharm.mssm.edu/Harmonizome/documentation",
             shortDesc: "Biological Knowledge Engine"
         },
         {
@@ -63,6 +68,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/Enrichr/",
             target: "_blank",
             image: DIR + "enrichr.png",
+            docsUrl: "http://amp.pharm.mssm.edu/Enrichr/help#api",
             shortDesc: "Search Engine for Gene Lists and Signatures"
         },
         {
@@ -71,6 +77,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/gen3va",
             target: "_blank",
             image: DIR + "gen3va_logo.png",
+            docsUrl: "http://amp.pharm.mssm.edu/gen3va/documentation#api",
             shortDesc: "Gene Expression and Enrichment Vector Analyzer"
         },
 	{
@@ -79,6 +86,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/CREEDS/",
             target: "_blank",
             image: DIR + "creeds_logo.fw.png",
+            docsUrl: "http://amp.pharm.mssm.edu/CREEDS/#help",
             shortDesc: "Crowd Extracted Expression of Differential Signatures"
         },
         {
@@ -87,6 +95,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://maayanlab.net/SEP-L1000/",
             target: "_blank",
             image: DIR + "sep.png",
+            docsUrl: "",
             shortDesc: "Side Effect Prediction Based on L1000 Data"
         },
         {
@@ -95,6 +104,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/Slicr",
             target: "_blank",
             image: DIR + "slicr2.png",
+            docsUrl: "",
             shortDesc: "LINCS L1000 Slicr [GSE70138 data only]"
         },
         {
@@ -103,6 +113,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/g2e/",
             target: "_blank",
             image: DIR + "g2e.png",
+            docsUrl: "http://amp.pharm.mssm.edu/g2e/documentation",
             shortDesc: "Differential Expression Analysis Tool"
         },
         {
@@ -111,6 +122,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/PAEA/",
             target: "_blank",
             image: DIR + "paea.png",
+            docsUrl: "http://amp.pharm.mssm.edu/PAEA/#api",
             shortDesc: "Principal Angle Enrichment Analysis"
         },
         //{
@@ -119,6 +131,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
         //    url: "http://life.ccs.miami.edu/life/",
         //    target: "_blank",
         //    image: DIR + "life.png",
+        //    docsUrl: "",
         //    shortDesc: "LINCS Information System"
         //},
         {
@@ -127,6 +140,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://www.maayanlab.net/LINCS/LCB",
             target: "_blank",
             image: DIR + "lincs-canvas-browser.png",
+            docsUrl: "http://www.maayanlab.net/LINCS/LCB/LCB-Tutorial-042314.pdf",
             shortDesc: "LINCS L1000 Clustering, Visualization and Enrichment Analysis Tool"
         },
         {
@@ -135,6 +149,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://www.maayanlab.net/LINCS/DCB/",
             target: "_blank",
             image: DIR + "drug-cell-line-browser.png",
+            docsUrl: "http://www.maayanlab.net/LINCS/DCB/DCB%20Manual.pdf",
             shortDesc: "Data Visualization Tool"
         },
         {
@@ -143,7 +158,8 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "https://github.com/WebDataScience/GUIdock",
             target: "_blank",
             image: DIR + "gui_dock.fw.png",
-            shortDesc: "Using Docker Containers with a Common Graphics User Interface to Address the Reproducibility of Research"    
+            docsUrl: "https://github.com/WebDataScience/GUIdock",
+            shortDesc: "Using Docker Containers with a Common Graphics User Interface to Address the Reproducibility of Research"
         },
         {
             title: "Network2Canvas",
@@ -151,8 +167,33 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://www.maayanlab.net/N2C/",
             target: "_blank",
             image: DIR + "network2canvas.png",
-            shortDesc: "Network Visualization on a Canvas with Enrichment Analysis"    
-        }
+            docsUrl: "http://www.maayanlab.net/N2C/help.html",
+            shortDesc: "Network Visualization on a Canvas with Enrichment Analysis"
+        },
+        {
+            title: "ARCHS4",
+            description: "A browser extension that adds content to the landing pages of RNA-seq datasets available on the Gene Expression Omnibus (GEO).",
+            url: "https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea",
+            target: "_blank",
+            image: DIR + "archs4_icon_720.png",
+            shortDesc: "All RNA-seq and CHIP-Seq Signature Search Space"
+        },
+        {
+            title: "Datasets2Tools Enriching DataMed with Canned Analyses",
+            description: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
+            url: "https://github.com/denis-torre/project-datasets2tools-chrome-extension",
+            target: "_blank",
+            image: DIR + "d2t_icon_720.png",
+            shortDesc: "Enriching DataMed with Canned Analyses"
+        },
+        {
+            title: "Cite-D-Lite",
+            description: "Functions on specific pages of GEO, PubMed, and DataMed. It has two functions: (1) to create downloadable citations for GEO data and PubMed articles and (2) to highlight the most important sentences in PubMed abstracts in a graded manner (based on TextRank algorithm).",
+            url: "https://chrome.google.com/webstore/detail/cite-d-lite/ipiffhgeigmiffclkpkgdaklbdgdegkk",
+            target: "_blank",
+            image: DIR + "cdl_icon_720.png",
+            shortDesc: "Chrome Extension for Data and Paper Citations with Text Importance Highlighting"
+        },
     ];
 
     //$scope.docentWarning = "*Experiments with content that may not be up to date.";

@@ -40,7 +40,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             location: 'top',
             title: 'Data Science',
-            image: DIR + 'research.png',
+            image: DIR + 'dag-res.png',
             description: 'The BD2K-LINCS DCIC focuses on construction of high fidelity networks from LINCS data combined with other resources.',
             links: [
                 {
@@ -64,12 +64,12 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             location: 'top',
             title: 'Data Integration',
-            image: DIR + 'data.png',
+            image: DIR + 'software-group.png',
             description: 'Aims of the BD2K-LINCS DCIC include standardizing metadata, integrating datasets, and federating access to LINCS data.',
             links: [
                 {
                     title: 'Metadata Standards',
-                    url: 'http://www.lincsproject.org/data/data-standards/',
+                    url: 'http://www.lincsproject.org/LINCS/data/standards',
                     target: '_blank'
                 },
                 //{
@@ -91,17 +91,13 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             location: 'top',
             title: 'Software',
-            image: DIR + 'software.jpg',
+            image: DIR + 'data.png',
             description: 'We are developing tools for integrative data access and visualization across LINCS, BD2K and other relevant data sources.',
             links: [
                 {
                     title: 'Tools and Apps',
                     url: '#/resources#nav'
                 },
-                //{
-                 //   title: 'Access LINCS Datasets',
-                   // url: 'http://dev3.ccs.miami.edu:8080/datasets-beta/'
-               // },
                 {
                     title: 'Analyze Your Gene Signatures',
                     url: '#/analyze#nav'
@@ -161,7 +157,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             location: 'bottom',
             title: 'Events',
             domClass: 'events',
-            image: DIR + 'events.jpg',
+            image: DIR + 'lincs-all-hands-meeting-2016.png',
             description: 'The BD2K-LINCS DCIC uses webinars, training seminars, challenges, workshops and symposia to create an active LINCS community.',
             links: [
                 {

@@ -32,21 +32,31 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.symposia = [
         {
+            title: 'BD2K-LINCS Data Science Symposium 2017 - Systems Biology of Cellular Perturbations',
+            description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) and the University of Cincinnati Medical Center will host the second annual <a href="http://lincs-dcic.org/#/2017-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2017)</a>.'),
+            details: 'May 16-18, 2017, Cincinnati, OH'
+        },
+        {
+            title: '2016 BD2K All Hands Grantee Meeting and Open Data Science Symposium',
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="http://lincs-dcic.org/#/2016-bd2k-meeting" target="_blank">BD2K 2016 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
+            details: 'November 29 – December 1, 2016, Rockville, MD'
+        },
+        {
             title: 'LINCS Outreach Meeting',
             description: $sce.trustAsHtml('Members of the BD2K-LINCS DCIC delivered <a href="https://www.youtube.com/watch?v=U28Poi-oerI&list=PLQw7KTnzkpXdpO1WMpW8fJeriqZEuFR1i&index=5" target="_blank">talks</a> and held a breakout session on data analysis, visualization and integration and presented posters at the LINCS Outreach Meeting at the University of California, Irvine.'),
             details: 'March 10-11, 2016, Irvine, CA'
         },
-	{
+	      {
             title: 'Systems Biology Data Science Symposium',
             description: $sce.trustAsHtml('This first <a href="#/2016-data-science-symposium">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
             details: 'January 19-20, 2016, Coral Gables, FL'
         },
-	{
+        {
             title: 'BD2K All Hands Grantee Meeting',
-            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="http://www.scgcorp.com/BD2K2015/" target="_blank">BD2K 2015 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the BD2K 2015 All Hands Meeting which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
             details: 'November 12-13, 2015, Bethesda, MD'
         },
-	{
+        {
             title: 'Big Data Symposium: Convergence of Science, Technology and Data Sciences – Impact on Pharma',
             description: $sce.trustAsHtml('In the Impact on Big Data on Drug Discovery session, Avi Ma’ayan PhD presented, "GEO2Enrichr, Enrichr and L1000CDS2: BD2K-LINCS DCIC Software Tools for Drug Discovery and Repurposing".'),
             details: 'June 29-30, 2015, Cambridge, MA'
@@ -81,18 +91,43 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         }
     ];
 
-    $scope.seminars = [	
-	{
+    $scope.seminars = [
+      {
+          title: 'Web-based Heatmap Visualization and Analysis Tool for High-Dimensional Biological Data',
+          description: $sce.trustAsHtml('Nicolas Fernandez PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
+          details: 'March 2, 2017, Icahn School of Medicine at Mount Sinai, NY'
+      },
+      {
+          title: 'Scalable Reanalysis of RNA-seq Data Using Cloud Computing',
+          description: $sce.trustAsHtml('Alex Lachmann PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
+          details: 'November 10, 2016, Icahn School of Medicine at Mount Sinai, NY'
+      },
+      {
+          title: 'Predicting Adverse Cardiovascular Events of Tyrosine Kinase Inhibitors from Molecular Features',
+          description: $sce.trustAsHtml('Anders Dohlman presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
+          details: 'October 27, 2016, Icahn School of Medicine at Mount Sinai, NY'
+      },
+	     {
             title: 'Webinar and Poster Session for the BD2K-LINCS DCIC Summer Research Training Program',
             description: $sce.trustAsHtml('The <a href="#/summer-fellows-2016">2016 BD2K-LINCS DCIC Summer Fellows</a> presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.'),
             details: 'August 12, 2016, Icahn School of Medicine at Mount Sinai, NY'
         },
-	{
+        {
+            title: 'Side Effect Prediction using L1000 Data and Other Drug Attributes',
+            description: $sce.trustAsHtml('Zichen Wang presented in the Icahn Institute for Genomics and Multiscale Biology’s Works in Progress Seminar Series.'),
+            details: 'February 25, 2016, Icahn School of Medicine at Mount Sinai, NY'
+        },
+        {
+            title: 'Extraction and Analysis of Mammalian Gene Expression Signatures from Geo by the Crowd',
+            description: $sce.trustAsHtml('Zichen Wang presented in the Icahn Institute for Genomics and Multiscale Biology’s Works in Progress Seminar Series.'),
+            details: 'January 27, 2016, Icahn School of Medicine at Mount Sinai, NY'
+        },
+	       {
             title: 'Data Integration for Systems Pharmacology',
             description: $sce.trustAsHtml('Avi Ma\'ayan PhD was an invited speaker for the Department of Medicine\'s Research Seminar Series at Stony Brook School of Medicine.'),
             details: 'January 12, 2016, Stony Brook, NY'
         },
-	{
+	      {
             title: 'Community Science Project to Link Drugs, Targets and Diseases from Expression Signatures',
             description: $sce.trustAsHtml('Avi Ma’ayan PhD was an invited speaker for the Computational Biology Seminar Series at IBM T.J. Watson Research Center.'),
             details: 'March 4, 2015, Yorktown Heights, NY'
@@ -109,16 +144,3 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         }
     ];
 }]);
-
-
-
-
-
-
-
-
-
-
-
-
-
