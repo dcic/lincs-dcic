@@ -17,3 +17,5 @@ images/source/intro diagram/
 
 # EDSR applications
 static/edsr/
+
+npm-debug.log

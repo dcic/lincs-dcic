@@ -12,7 +12,7 @@
     "docker-pull-latest": "docker pull maayanlab/lincs-dcic:latest",
     "docker-kr": "docker kill lincs-dcic && docker rm lincs-dcic",
     "docker-run": "docker run -d --name='lincs-dcic' -p 80:8000 maayanlab/lincs-dcic:latest",
-    "aws-ssh": "ssh -i ~/.ssh/lincsdcic-key.pem ec2-user@lincsdcic",
+    "aws-ssh": "ssh -i ~/.ssh/lincsdcic_key.pem ec2-user@lincsdcic",
     "push": "npm run docker-bp && npm run aws-ssh && npm run docker-pull-latest && npm run docker-kr && npm run docker-run"
   },
   "repository": {
