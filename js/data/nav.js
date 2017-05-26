@@ -8,93 +8,93 @@ mod.controller('navCtrl', ['$scope', '$element', function($scope, $element) {
     $scope.categories = [
         {
             title: 'About',
-            url: '#/about#nav',
+            url: '/about#nav',
             subnav: [
                 {
                     title: 'Concierge',
-                    url: '#/getting-started/concierge'
+                    url: '/getting-started/concierge'
                 },
                 {
                     title: 'Tools',
-                    url: '#/getting-started/direct-access-tools'
+                    url: '/getting-started/direct-access-tools'
                     // target: '_self'
                 },
                 {
                     title: 'Team',
-                    url: '#/about#team'
+                    url: '/about#team'
                 },
                 {
                     title: 'Internal Projects',
-                    url: '#/internal-dsrp#nav'
+                    url: '/internal-dsrp#nav'
                 },
                 {
                     title: 'External Projects',
-                    url: '#/external-dsrp#nav'
+                    url: '/external-dsrp#nav'
                 }
             ]
         },
         {
             title: 'Training and Outreach',
-            url: '#/training',
+            url: '/training',
             subnav: [
                 {
                     title: 'Summer Research',
-                    url: '#/summer-research-app#nav'
+                    url: '/summer-research-app#nav'
                 },
                 {
                     title: 'Webinars',
-                    url: '#/webinars#nav'
+                    url: '/webinars#nav'
                 },
                 {
                     title: 'Community Outreach',
-                    url: '#/workshops-seminars-symposia#nav'
+                    url: '/workshops-seminars-symposia#nav'
                 }
             ]
         },
         {
             title: 'Resources',
-            url: '#/resources'
+            url: '/resources'
         },
         {
             title: 'Publications',
-            url: '#/publications'
+            url: '/publications'
         },
         {
             title: 'News and Events',
-            url: '#/news',
+            url: '/news',
             subnav: [
             {
               title: '2017 Data Science Symposium',
-              url: '#/2017-data-science-symposium'
+              url: '/2017-data-science-symposium'
             },
             {
               title: '2016 BD2K Meeting',
-              url: '#/2016-bd2k-meeting'
+              url: '/2016-bd2k-meeting'
             },
 		        {
               title: '2016 Data Science Symposium',
-              url: '#/2016-data-science-symposium'
+              url: '/2016-data-science-symposium'
             },
 		        {
               title: '2014 Big Data Symposium',
-              url: '#/2014-big-data-symposium#nav'
+              url: '/2014-big-data-symposium#nav'
             },
 		        {
               title: 'Invited Seminar Series',
-              url: '#/seminar-series#nav'
+              url: '/seminar-series#nav'
             },
             ]
         },
         {
             title: 'Funding Opportunities',
-            url: '#/funding'
+            url: '/funding'
         },
     ];
 
     $scope.categoriesRight = [
         // {
         //     title: 'QUICK START',
-        //     url: '#/getting-started/direct-access-tools',
+        //     url: '/getting-started/direct-access-tools',
         //     target: '_self'
         // },
         {

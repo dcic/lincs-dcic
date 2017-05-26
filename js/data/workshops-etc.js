@@ -33,12 +33,12 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.symposia = [
         {
             title: 'BD2K-LINCS Data Science Symposium 2017 - Systems Biology of Cellular Perturbations',
-            description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) and the University of Cincinnati Medical Center will host the second annual <a href="http://lincs-dcic.org/#/2017-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2017)</a>.'),
+            description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) and the University of Cincinnati Medical Center will host the second annual <a href="http://lincs-dcic.org/2017-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2017)</a>.'),
             details: 'May 16-18, 2017, Cincinnati, OH'
         },
         {
             title: '2016 BD2K All Hands Grantee Meeting and Open Data Science Symposium',
-            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="http://lincs-dcic.org/#/2016-bd2k-meeting" target="_blank">BD2K 2016 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="http://lincs-dcic.org/2016-bd2k-meeting" target="_blank">BD2K 2016 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
             details: 'November 29 – December 1, 2016, Rockville, MD'
         },
         {
@@ -48,7 +48,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
 	      {
             title: 'Systems Biology Data Science Symposium',
-            description: $sce.trustAsHtml('This first <a href="#/2016-data-science-symposium">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
+            description: $sce.trustAsHtml('This first <a href="/2016-data-science-symposium">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
             details: 'January 19-20, 2016, Coral Gables, FL'
         },
         {
@@ -109,7 +109,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
       },
 	     {
             title: 'Webinar and Poster Session for the BD2K-LINCS DCIC Summer Research Training Program',
-            description: $sce.trustAsHtml('The <a href="#/summer-fellows-2016">2016 BD2K-LINCS DCIC Summer Fellows</a> presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.'),
+            description: $sce.trustAsHtml('The <a href="/summer-fellows-2016">2016 BD2K-LINCS DCIC Summer Fellows</a> presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.'),
             details: 'August 12, 2016, Icahn School of Medicine at Mount Sinai, NY'
         },
         {

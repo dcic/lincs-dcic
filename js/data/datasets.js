@@ -4,12 +4,12 @@ mod.controller("datasetsCtrl", ["$scope", function($scope) {
     $scope.datasets = [
         {
             title: "Submit your gene signatures for analysis",
-            url: "#/analyze#nav",
+            url: "/analyze#nav",
             target: "_self"
         },
         {
             title: "Data and Signature Generation Centers",
-            url: "#/datacenters#nav",
+            url: "/datacenters#nav",
             target: "_self"
         },
         {

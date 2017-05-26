@@ -45,19 +45,19 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             links: [
                 {
                     title: 'Publications',
-                    url: '#/publications#nav'
+                    url: '/publications#nav'
                 },
                 {
                     title: 'Internal Projects',
-                    url: '#/internal-dsrp#nav'
+                    url: '/internal-dsrp#nav'
                 },
                 {
                     title: 'External Projects',
-                    url: '#/external-dsrp#nav'
+                    url: '/external-dsrp#nav'
                 }
                 //{
                 //    title: 'Collaborate with Us',
-                 //   url: '#/edsr#nav'
+                 //   url: '/edsr#nav'
                // }
             ]
         },
@@ -96,15 +96,15 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             links: [
                 {
                     title: 'Tools and Apps',
-                    url: '#/resources#nav'
+                    url: '/resources#nav'
                 },
                 {
                     title: 'Analyze Your Gene Signatures',
-                    url: '#/analyze#nav'
+                    url: '/analyze#nav'
                 },
                 {
                     title: 'APIs',
-                    url: '#/resources#nav'
+                    url: '/resources#nav'
                 }
             ]
         },
@@ -121,7 +121,7 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
                 },
                 {
                     title: 'Summer Research Training Program',
-                    url: '#/summer-research-app#nav'
+                    url: '/summer-research-app#nav'
                 },
                 {
                     title: 'Big Data Science Course',
@@ -162,15 +162,15 @@ mod.controller("indexCtrl", ["$scope", "$sce", function($scope, $sce) {
             links: [
                 {
                     title: 'Webinars',
-                    url: '#/webinars#nav'
+                    url: '/webinars#nav'
                 },
                 {
                     title: 'Community Outreach',
-                    url: '#/workshops-seminars-symposia#nav'
+                    url: '/workshops-seminars-symposia#nav'
                 },
                 {
                     title: 'Invited Seminar Series',
-                    url: '#/seminar-series#nav'
+                    url: '/seminar-series#nav'
                 }
             ]
         }

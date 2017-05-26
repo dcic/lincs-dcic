@@ -2,7 +2,7 @@ var mod = angular.module("summerFellowsMod", []);
 
 mod.controller("summerFellowsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
-    var SUMMER_RESEARCH_LINK = "#/srp", 
+    var SUMMER_RESEARCH_LINK = "/srp", 
         DIR = "/images/summer-fellows/",
         MAAYAN_LAB = "Avi Ma'ayan PhD, Icahn School of Medicine at Mount Sinai",
         MAAYAN_LAB_LINK = "http://icahn.mssm.edu/research/labs/maayan-laboratory",

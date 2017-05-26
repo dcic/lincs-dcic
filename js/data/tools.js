@@ -11,7 +11,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             title: "Concierge",
             description: "Provides multiple points of entry to the LINCS tools and databases.",
-            url: "http://lincs-dcic.org/#/getting-started/concierge",
+            url: "http://lincs-dcic.org/getting-started/concierge",
             target: "_blank",
             image: DIR + "concierge_bell.svg",
             shortDesc: "Interactive Introduction to LINCS Tools and Resources"

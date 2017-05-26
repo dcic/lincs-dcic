@@ -6,7 +6,7 @@ mod.controller("summerFellows2016Ctrl", ["$scope", "$sce", function($scope, $sce
 
 
 
-    var SUMMER_RESEARCH_LINK = "#/summer-research-app",
+    var SUMMER_RESEARCH_LINK = "/summer-research-app",
 
         DIR = "/images/summer-fellows/2016/",
 
@@ -21,7 +21,7 @@ mod.controller("summerFellows2016Ctrl", ["$scope", "$sce", function($scope, $sce
         SCHURER_LAB_LINK = "http://ccs.miami.edu/focus-area/drug-discovery/";
 
 
-        
+
 
 
 
@@ -271,4 +271,3 @@ mod.controller("summerFellows2016Ctrl", ["$scope", "$sce", function($scope, $sce
     ];
 
 }]);
-
