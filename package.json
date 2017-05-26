@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "bower install",
     "docker-build": "docker build -t maayanlab/lincs-dcic .",
-    "docker-push": "docker push maayanlab/lincs-dcic"
+    "docker-push": "docker push maayanlab/lincs-dcic",
+    "docker-bp": "npm run docker-build && npm run docker-push"
   },
   "repository": {
     "type": "git",
