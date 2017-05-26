@@ -32,7 +32,7 @@ var mod = angular.module("lincsDcic", [
 	"ui.bootstrap"
 ]);
 
-mod.config(["$routeProvider", function($routeProvider) {
+mod.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
 	$routeProvider.
 		when("/", {
 			templateUrl: "view/container.html"
@@ -134,6 +134,11 @@ mod.config(["$routeProvider", function($routeProvider) {
 		otherwise({
 			redirectTo: "/"
 		});
+
+    $locationProvider.html5Mode({
+       enabled: true,
+       requireBase: false
+    });
 	}
 ]);
 

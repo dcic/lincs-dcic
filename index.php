@@ -17,6 +17,7 @@
   <!-- These tags specify how content is displayed on a Twitter feed -->
   <meta name="twitter:card" content="The BD2K-LINCS Data Coordination and Integration Center">
   <meta name="twitter:image" content="http://lincs-dcic.org/images/dcic-logo/DCIC_500x375_cropped.png">
+  <base href="/">
 
   <title>BD2K-LINCS DCIC</title>
 
