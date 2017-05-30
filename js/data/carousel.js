@@ -38,9 +38,9 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         // }
         {
             index: 0,
-            image: DIR + 'dcic_group_2.png',
+            image: DIR + 'dcic_dss_2017.png',
             title: 'BD2K-LINCS Data Science Symposium 2017',
-            caption: 'Register now for the upcoming BD2K-LINCS Data Science Symposium (DSS 2017) to be held on May 16-18!',
+            caption: 'DSS 2017 focused on the systems biology of cellular perturbations and applications in drug development, translational biomedicine and environmental health.',
             link: 'https://sites.google.com/view/sbdss2017/home',
             target: '_blank'
         },
@@ -64,7 +64,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 3,
             image: DIR + 'summer_banner_2016.png',
             title: 'Summer Research Program',
-            caption: 'We are currently accepting applications for our 2017 Summer Research Training Program in Biomedical Big Data Science!',
+            caption: 'Research-intensive 10 week training program for undergraduate and graduate students starting June 5th.',
             link: '/summer-research-app#nav'
         },
         {
