@@ -57,7 +57,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             image: DIR + 'zichen_poster.png',
             title: 'BD2K All Hands Meeting and Open Data Science Symposium',
             caption: 'Summary of BD2K-LINCS DCIC activities at this annual BD2K grantee meeting.',
-            link: 'http://lincs-dcic.org/2016-bd2k-meeting',
+            link: '/2016-bd2k-meeting',
             target: '_blank'
         },
         {
@@ -81,7 +81,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             image: DIR + 'clustergrammer_skin_cancer.png',
             title: 'LINCS Tools for Integrative Data Access and Visualization',
             caption: 'BD2K-LINCS DCIC develops web-based tools to enable researchers to be more productive with LINCS data.',
-            link: 'http://lincs-dcic.org/getting-started/direct-access-tools',
+            link: '/getting-started/direct-access-tools',
             target: '_blank'
         },
         {
@@ -89,7 +89,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             image: DIR + 'outreach.png',
             title: 'Community Training and Outreach',
             caption: 'BD2K-LINCS DCIC engages, informs and educates key biomedical research communities about LINCS resources.',
-            link: 'http://lincs-dcic.org/training',
+            link: '/training',
             target: '_blank'
         },
     ];
