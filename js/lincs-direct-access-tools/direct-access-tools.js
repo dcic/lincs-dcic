@@ -147,7 +147,7 @@ mod.controller('DirectAccessToolsCtrl',
         },
         {
             title: 'iLINCS',
-            url: 'http://eh3.uc.edu/GenomicsPortals/Lincs.jsp',
+            url: 'http://www.ilincs.org',
             image: DIR + 'i-lincs.png',
             description: {
                 // main: 'Use iLINCS to analyze differential gene expression in a dataset identified via LINCS Data Portal.',
@@ -933,25 +933,10 @@ mod.directive('iLincsBar', ["$compile", function($compile) {
             // scope.searchTerm = '';
         },
         controller: ['$scope', "$element", '$http', function($scope, $element, $http) {
-
-            $scope.search_type_options = [
-                {name: 'LINCS', value: "Lincs.jsp?"},
-                {name: 'External', value: "bs_keywordSearch.do?organism=%&sample_type=%&data_type=%&portal_name=ALL&gene_list_selected=false&"}
-            ];
-
-            $scope.query.option = $scope.search_type_options[0].value;
             $scope.search = function() {
-                // LINCS genomics portal
-                var base_url = "http://www.eh3.uc.edu/GenomicsPortals/"
+                var base_url = "http://www.ilincs.org/ilincs/searchFor/"
 
-                // path = $scope.searchType,
-                // map_ = {
-                //     genesearch: 'genelist',
-                //     datasetsearch: 'keyword',
-                //     signaturesearch: 'search_term'
-                // },
-                // key = map_[path];
-                var searchUrl = base_url + $scope.query.option + "keyword=" + $scope.query.term;
+                var searchUrl = base_url + $scope.query.term;
                 window.open(searchUrl, '_blank');
             };
             $scope.loadTutorials = function() {
@@ -969,6 +954,44 @@ mod.directive('iLincsBar', ["$compile", function($compile) {
         templateUrl: 'js/lincs-direct-access-tools/templates/i-lincs.html'
     }
 }]);
+//
+// mod.directive('harmonizomeBar', function() {
+//     return {
+//         restrict: 'E',
+//         scope: true,
+//         link: function(scope, element, attrs) {
+//         },
+//         controller: ["$scope", "$element", "$http", function($scope, $element, $http) {
+//             var base_url = 'http://amp.pharm.mssm.edu/Harmonizome/';
+//             var search_url = base_url + 'search?q=';
+//             var suggest_url = base_url + 'api/1.0/suggest?q='
+//
+//             $scope.search = function() {
+//                 window.open(search_url + $scope.query.term, '_blank');
+//             };
+//             $scope.entities = function(searchTerm) {
+//                 return $http.get(suggest_url + searchTerm).then(function(response) {
+//                     return response.data;
+//                 })  ;
+//             };
+//             $scope.loadTutorials = function() {
+//                 if ($scope.tutorials_shown) {
+//                     // remove toggle
+//                     $scope.tutorials_shown = false;
+//                     $element.find("#tutorial1").empty();
+//                     $element.find("#tutorial2").empty();
+//                 } else {
+//                     // load and show
+//                     $scope.tutorials_shown = true;
+//                     $element.find("#tutorial1").html("<iframe src='https://www.youtube.com/embed/yGkIQjeWh9U' frameborder='0' allowfullscreen></iframe>");
+//                     $element.find("#tutorial2").html("<iframe src='https://www.youtube.com/embed/ZyOIQwEh_58' frameborder='0' allowfullscreen></iframe>");
+//                 }
+//             };
+//
+//         }],
+//         templateUrl: 'js/lincs-direct-access-tools/templates/harmonizome.html'
+//     }
+// });
 
 mod.directive('l1000cds2Textarea', function() {
     return {

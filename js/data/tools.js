@@ -38,7 +38,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             title: "iLINCS",
             description: "An integrative web platform for analysis of LINCS data and signatures.",
-            url: "http://eh3.uc.edu/GenomicsPortals/Lincs.jsp",
+            url: "http://www.ilincs.org",
             target: "_blank",
             image: DIR + "ilincs.png",
             docsUrl: "",
