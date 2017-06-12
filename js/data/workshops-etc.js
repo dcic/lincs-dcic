@@ -33,7 +33,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.symposia = [
         {
             title: 'BD2K-LINCS Data Science Symposium 2017 - Systems Biology of Cellular Perturbations',
-            description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) and the University of Cincinnati Medical Center will host the second annual <a href="http://lincs-dcic.org/2017-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2017)</a>.'),
+            description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) hosted the second annual <a href="http://lincs-dcic.org/2017-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2017)</a>. The general theme of the symposium was the systems biology of perturbation signatures and applications in drug development, translational biomedicine and environmental health.'),
             details: 'May 16-18, 2017, Cincinnati, OH'
         },
         {
@@ -92,6 +92,21 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.seminars = [
+      {
+          title: 'Mapping the Transcriptome to the Phenome',
+          description: $sce.trustAsHtml('Avi Ma\’ayan PhD presented in the 16th Annual Symposium of NYU Biology\'s Center for Genomics & Systems Biology.'),
+          details: 'June 2, 2017, New York University, NY'
+      },
+      {
+          title: 'Global Analysis and Visualization of Thousands of Expression Signatures for Drug and Target Discovery',
+          description: $sce.trustAsHtml('Avi Ma\’ayan PhD presented in <a href="http://www.hansmann-lab.com/cbsb17/index.shtml" target="_blank">Computational Biophysics to Systems Biology (CBSB2017)</a>.'),
+          details: 'May 18, 2017, University of Cincinnati, OH'
+      },
+      {
+          title: 'Novel Therapeutic Combinations and Targeted Poly-pharmacology in Glioblastoma',
+          description: $sce.trustAsHtml('Stephan Schurer PhD presented in <a href="http://www.hansmann-lab.com/cbsb17/index.shtml" target="_blank">Computational Biophysics to Systems Biology (CBSB2017)</a>.'),
+          details: 'May 18, 2017, University of Cincinnati, OH'
+      },
       {
           title: 'Web-based Heatmap Visualization and Analysis Tool for High-Dimensional Biological Data',
           description: $sce.trustAsHtml('Nicolas Fernandez PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),

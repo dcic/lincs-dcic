@@ -53,7 +53,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             docsUrl: "http://eh3.uc.edu/pilincs/#/api",
             shortDesc: "Interface to panoramaweb.org"
         },
-	{
+	      {
             title: "Harmonizome",
             description: "Built on top of information about genes and proteins from 114 datasets, the Harmonizome is a knowledge engine for a diverse set of integrated resources.",
             url: "http://amp.pharm.mssm.edu/Harmonizome",
@@ -80,7 +80,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             docsUrl: "http://amp.pharm.mssm.edu/gen3va/documentation#api",
             shortDesc: "Gene Expression and Enrichment Vector Analyzer"
         },
-	{
+	      {
             title: "CREEDS",
             description: "Collections of processed gene, drug and disease signatures from GEO.",
             url: "http://amp.pharm.mssm.edu/CREEDS/",
@@ -88,6 +88,22 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "creeds_logo.fw.png",
             docsUrl: "http://amp.pharm.mssm.edu/CREEDS/#help",
             shortDesc: "Crowd Extracted Expression of Differential Signatures"
+        },
+        {
+            title: "ARCHS4",
+            description: "A browser extension that adds content to the landing pages of RNA-seq datasets available on the Gene Expression Omnibus (GEO).",
+            url: "https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea",
+            target: "_blank",
+            image: DIR + "archs4_icon_720.png",
+            shortDesc: "All RNA-seq and CHIP-Seq Signature Search Space"
+        },
+        {
+            title: "Datasets2Tools",
+            description: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
+            url: "https://chrome.google.com/webstore/search/datasets2tools",
+            target: "_blank",
+            image: DIR + "d2t_icon_720.png",
+            shortDesc: "Enriching DataMed with Canned Analyses"
         },
         {
             title: "SEP L1000",
@@ -153,13 +169,12 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Data Visualization Tool"
         },
         {
-            title: "GUIdock",
-            description: "A method for deploying containers with a graphical user interface.",
-            url: "https://github.com/WebDataScience/GUIdock",
+            title: "Cite-D-Lite",
+            description: "Functions on specific pages of GEO, PubMed, and DataMed. It has two functions: (1) to create downloadable citations for GEO data and PubMed articles and (2) to highlight the most important sentences in PubMed abstracts in a graded manner (based on TextRank algorithm).",
+            url: "https://chrome.google.com/webstore/detail/cite-d-lite/ipiffhgeigmiffclkpkgdaklbdgdegkk",
             target: "_blank",
-            image: DIR + "gui_dock.fw.png",
-            docsUrl: "https://github.com/WebDataScience/GUIdock",
-            shortDesc: "Using Docker Containers with a Common Graphics User Interface to Address the Reproducibility of Research"
+            image: DIR + "cdl_icon_720.png",
+            shortDesc: "Chrome Extension for Data and Paper Citations with Text Importance Highlighting"
         },
         {
             title: "Network2Canvas",
@@ -171,28 +186,13 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Network Visualization on a Canvas with Enrichment Analysis"
         },
         {
-            title: "ARCHS4",
-            description: "A browser extension that adds content to the landing pages of RNA-seq datasets available on the Gene Expression Omnibus (GEO).",
-            url: "https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea",
+            title: "GUIdock",
+            description: "A method for deploying containers with a graphical user interface.",
+            url: "https://github.com/WebDataScience/GUIdock",
             target: "_blank",
-            image: DIR + "archs4_icon_720.png",
-            shortDesc: "All RNA-seq and CHIP-Seq Signature Search Space"
-        },
-        {
-            title: "Datasets2Tools Enriching DataMed with Canned Analyses",
-            description: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
-            url: "https://github.com/denis-torre/project-datasets2tools-chrome-extension",
-            target: "_blank",
-            image: DIR + "d2t_icon_720.png",
-            shortDesc: "Enriching DataMed with Canned Analyses"
-        },
-        {
-            title: "Cite-D-Lite",
-            description: "Functions on specific pages of GEO, PubMed, and DataMed. It has two functions: (1) to create downloadable citations for GEO data and PubMed articles and (2) to highlight the most important sentences in PubMed abstracts in a graded manner (based on TextRank algorithm).",
-            url: "https://chrome.google.com/webstore/detail/cite-d-lite/ipiffhgeigmiffclkpkgdaklbdgdegkk",
-            target: "_blank",
-            image: DIR + "cdl_icon_720.png",
-            shortDesc: "Chrome Extension for Data and Paper Citations with Text Importance Highlighting"
+            image: DIR + "gui_dock.fw.png",
+            docsUrl: "https://github.com/WebDataScience/GUIdock",
+            shortDesc: "Using Docker Containers with a Common Graphics User Interface to Address the Reproducibility of Research"
         },
     ];
 

@@ -3,6 +3,22 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
       {
+          title: "Developing a framework for digital objects in the Big Data to Knowledge (BD2K) Commons: Report from the Commons Framework Pilots Workshop",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/28501646",
+          authors: "Jagodnik KM, Koplev S, Jenkins S, Ohno-Machado L, Paten B, Schurer SC, Dumontier M, Verborgh R, Bui A, Ping P, McKenna NJ, Madduri R, Pillai A, Ma'ayan A.",
+          citation: "Journal of Biomedical Informatics. 2017 May 10. pii: S1532-0464(17)30101-6.",
+          ids: "PMID: 28501646",
+          year: 2017
+      },
+      {
+          title: "The SRL peptide of rhesus rotavirus VP4 protein governs cholangiocyte infection and the murine model of biliary atresia",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/27859498",
+          authors: "Mohanty SK, Donnelly B, Lobeck I, Walther A, Dupree P, Coots A, Meller J, McNeal M, Sestak K, Tiao G.",
+          citation: "Hepatology. 2017 Apr;65(4):1278-1292.",
+          ids: "PMID: 27859498 | PMCID: PMC5360466 ",
+          year: 2017
+      },
+      {
            title: "Systemic QSAR and phenotypic virtual screening: chasing butterflies in drug discovery",
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28274840",
            authors: "Cruz-Monteagudo M, Schürer S, Tejera E, Pérez-Castillo Y, Medina-Franco JL, Sánchez-Rodríguez A, Borges F.",

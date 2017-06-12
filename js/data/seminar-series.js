@@ -3,8 +3,16 @@ var mod = angular.module("seminarSeriesMod", []);
 mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.seminars = [
         {
+            date: 'May 4, 2017',
+            time: '11:00 a.m.',
+            location: 'Hess Center for Science and Medicine Building, 2nd Floor, Seminar Room B, Icahn School of Medicine at Mount Sinai',
+            speakerName: $sce.trustAsHtml('Irene Morganstern, PhD'),
+            speakerTitle: 'Principal Scientist, Department of Behavioral Pharmacology, PsychoGenics, Inc',
+            title: $sce.trustAsHtml('Novel Approaches to Drug Discovery for Central Nervous System Disorders')
+        },
+        {
             date: 'February 23, 2017',
-            time: '11:00 am',
+            time: '11:00 a.m.',
             location: 'Hess Center for Science and Medicine Building, 2nd Floor Seminar Room B, Icahn School of Medicine at Mount Sinai',
             speakerName: $sce.trustAsHtml('<a href="https://www.dbmi.columbia.edu/people/adler-perotte/" target="_blank">Adler Perotte, MD</a>'),
             speakerTitle: 'Assistant Professor, Department of Biomedical Informatics, Columbia University',

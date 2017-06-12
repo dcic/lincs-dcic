@@ -530,7 +530,7 @@ mod.controller('DirectAccessToolsCtrl',
         },
         {
             title: "Datasets2Tools",
-            url: "https://github.com/denis-torre/project-datasets2tools-chrome-extension",
+            url: "https://chrome.google.com/webstore/search/datasets2tools",
             image: DIR + "d2t_icon_720.png",
             description: {
                 main: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
