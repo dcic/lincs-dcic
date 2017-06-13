@@ -74,7 +74,7 @@ mod.controller("summerFellows2017Ctrl", ["$scope", "$sce", function($scope, $sce
       },
       {
         name: "Charlotte Zuber",
-        image: DIR + "Unk.png",
+        image: DIR + "CZuber.png",
         school: "Rutgers University",
         project: "Visualization of the Space of 200,000 Annotated Gene Sets",
         labName: MAAYAN_LAB,
