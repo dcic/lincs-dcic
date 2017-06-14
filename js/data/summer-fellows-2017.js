@@ -17,7 +17,7 @@ mod.controller("summerFellows2017Ctrl", ["$scope", "$sce", function($scope, $sce
 
     $scope.fellows = [
       {
-        name: "Patrycja Krawzcuk",
+        name: "Patrycja Krawczuk",
         image: DIR + "PKrawzcuk.png",
         school: "Hunter College",
         project: "Automated Indexing of Bioinformatics Tools",
