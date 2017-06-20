@@ -1,6 +1,4 @@
 <?php
-header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
-
 function writeToIndividualTSV($userDirectory, $appData) {
     $filename = $userDirectory . "/" . $appData["lastName"] . "_" . $appData["firstName"] . ".tsv";
     $f = fopen($filename, "a+");
