@@ -44,13 +44,13 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     firstName: "Alexandra",
                     lastName: "Keenan",
                     affiliation: ISMMS,
-                    email: ""
+                    email: "alexandra.keenan {at} icahn.mssm.edu"
                 },
                 {
                     firstName: "Kathleen",
                     lastName: "Jagodnik",
                     affiliation: ISMMS,
-                    email: ""
+                    email: "kathleen.jagodnik {at} mssm.edu"
                 },
                 {
                     firstName: "Edward",
