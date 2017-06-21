@@ -4,6 +4,11 @@ The BD2K-LINCS Data Coordination and Integration Center is part of the Big Data 
 
 Visit [lincs-dcic.org](http://lincs-dcic.org/#/) for more information.
 
+To run locally:
+
+1) Ensure all dependencies are installed (npm install)
+2) php -S localhost:8000 router.php
+
 For deployment:
 
 1) Commit all changes
