@@ -63,7 +63,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             image: DIR + 'summer_banner_2016.png',
             title: 'Summer Research Program',
             caption: 'Research-intensive 10 week training program for undergraduate and graduate students starting June 5th.',
-            link: '/summer-research-app#nav'
+            link: '/summer-fellows-2017#nav'
         },
         {
             index: 4,
