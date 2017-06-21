@@ -42,7 +42,7 @@ mod.controller("summerFellows2017Ctrl", ["$scope", "$sce", function($scope, $sce
       },
       {
         name: "Ariel Leong",
-        image: DIR + "Unk.png",
+        image: DIR + "ALeong.png",
         school: "Stanford University",
         project: "Construction, Analysis and Visualization of the Human Gene Regulatory Network",
         labName: MAAYAN_LAB,

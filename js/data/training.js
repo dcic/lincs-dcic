@@ -27,7 +27,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                         "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
                     "</li>" +
                      "<li>" +
-                        "<a href='" + FLYER_LINK + "'>2017 Program Flyer</a>" +
+                        "<a href='" + FLYER_LINK + "' target='_blank'>2017 Program Flyer</a>" +
                     "</li>" +
                       "<li>" +
                         "<a href='" + SUMMER_FELLOWS_LINK_2016 + "'>2016 Summer Fellows and Research Projects</a>" +
