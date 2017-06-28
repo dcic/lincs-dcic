@@ -2,10 +2,8 @@
 *.DS_Store
 
 # Dependencies
-lib/node_modules/
-lib/bower_components/
-lib/jquery-ui-1.11.4.custom/
-lib/
+node_modules/
+bower_components/
 metadata-orig/
 
 images/source/photographs/
@@ -19,3 +17,5 @@ images/source/intro diagram/
 
 # EDSR applications
 static/edsr/
+
+npm-debug.log

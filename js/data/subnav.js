@@ -8,27 +8,27 @@ mod.controller('subnavCtrl', ['$scope', '$element', function($scope, $element) {
     $scope.categories = [
         {
             title: 'About DCIC',
-            url: '#/about'
+            url: '/about'
         },
         {
             title: 'Training and Outreach',
-            url: '#/training'
+            url: '/training'
         },
         {
             title: 'Resources',
-            url: '#/resources'
+            url: '/resources'
         },
         {
             title: 'Publications',
-            url: '#/publications'
+            url: '/publications'
         },
         {
             title: 'News and Events',
-            url: '#/news'
+            url: '/news'
         },
         {
             title: 'Funding Opportunities',
-            url: '#/funding'
+            url: '/funding'
         }
     ];
 

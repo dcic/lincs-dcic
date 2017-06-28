@@ -1,5 +1,4 @@
 <?php
-
 function writeToIndividualTSV($userDirectory, $appData) {
     $filename = $userDirectory . "/" . $appData["lastName"] . "_" . $appData["firstName"] . ".tsv";
     $f = fopen($filename, "a+");

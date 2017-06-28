@@ -27,22 +27,21 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         //     image: DIR + 'dag.png',
         //     title: 'Research Projects',
         //     caption: 'The BD2K-LINCS DCIC is conducting research by integrating and analyzing various big data resources.',
-        //     link: '#/internal-dsrp#nav'
+        //     link: /internal-dsrp#nav'
         // },
         // {
         //     index: 3,
         //     image: DIR + 'summer-fellows-2016.png',
         //     title: 'Summer Research Program',
         //     caption: 'We are currently accepting applications for our 2017 Summer Research Training Program in Biomedical Big Data Science!',
-        //     link: '#/summer-research-app#nav'
+        //     link: /summer-research-app#nav'
         // }
         {
             index: 0,
-            image: DIR + 'dcic_group_2.png',
+            image: DIR + 'dcic_dss_2017.png',
             title: 'BD2K-LINCS Data Science Symposium 2017',
-            caption: 'Register now for the upcoming BD2K-LINCS Data Science Symposium (DSS 2017) to be held on May 16-18!',
-            link: 'https://sites.google.com/view/sbdss2017/home',
-            target: '_blank'
+            caption: 'DSS 2017 focused on the systems biology of cellular perturbations and applications in drug development, translational biomedicine and environmental health.',
+            link: '/2017-data-science-symposium'
         },
         {
             index: 1,
@@ -57,39 +56,35 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             image: DIR + 'zichen_poster.png',
             title: 'BD2K All Hands Meeting and Open Data Science Symposium',
             caption: 'Summary of BD2K-LINCS DCIC activities at this annual BD2K grantee meeting.',
-            link: 'http://lincs-dcic.org/#/2016-bd2k-meeting',
-            target: '_blank'
+            link: '/2016-bd2k-meeting'
         },
         {
             index: 3,
             image: DIR + 'summer_banner_2016.png',
             title: 'Summer Research Program',
-            caption: 'We are currently accepting applications for our 2017 Summer Research Training Program in Biomedical Big Data Science!',
-            link: '#/summer-research-app#nav'
+            caption: 'Research-intensive 10 week training program for undergraduate and graduate students starting June 5th.',
+            link: '/summer-fellows-2017#nav'
         },
         {
             index: 4,
             image: DIR + 'course_banner.png',
             title: 'Big Data Science Course',
             caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
-            link: 'https://www.coursera.org/learn/bd2k-lincs',
-            target: '_blank'
+            link: 'https://www.coursera.org/learn/bd2k-lincs'
         },
         {
             index: 5,
             image: DIR + 'clustergrammer_skin_cancer.png',
             title: 'LINCS Tools for Integrative Data Access and Visualization',
             caption: 'BD2K-LINCS DCIC develops web-based tools to enable researchers to be more productive with LINCS data.',
-            link: 'http://lincs-dcic.org/#/getting-started/direct-access-tools',
-            target: '_blank'
+            link: '/getting-started/direct-access-tools'
         },
         {
             index: 6,
             image: DIR + 'outreach.png',
             title: 'Community Training and Outreach',
             caption: 'BD2K-LINCS DCIC engages, informs and educates key biomedical research communities about LINCS resources.',
-            link: 'http://lincs-dcic.org/#/training',
-            target: '_blank'
+            link: '/training'
         },
     ];
 

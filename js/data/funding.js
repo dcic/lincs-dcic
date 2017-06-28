@@ -13,7 +13,7 @@ mod.controller('fundingCtrl', ['$scope', '$sce', function($scope, $sce) {
             text: $sce.trustAsHtml('' +
                 '<ul>' +
                     '<li>' +
-                        '<a href="#/edsr#nav">BD2K-LINCS DCIC External Data Science Research Projects</a>' +
+                        '<a href="/edsr#nav">BD2K-LINCS DCIC External Data Science Research Projects</a>' +
                     '</li>' +
                     '<li>' +
                         '<a href="http://grants.nih.gov/grants/guide/notice-files/NOT-RM-15-012.html#sthash.Vnh5tJtE.dpuf" target="_blank">Administrative Supplements for LINCS Projects</a>' +
@@ -25,4 +25,4 @@ mod.controller('fundingCtrl', ['$scope', '$sce', function($scope, $sce) {
             image: DIR + 'growing.png'
         }
     ];
-}]); 
+}]);

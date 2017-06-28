@@ -1,0 +1,12 @@
+LINCS Field Name,Description
+SM_LINCS_ID,The global LINCS ID (parent) compound (in standardized representation)
+SM_Center_Canonical_ID,Center-specific compound ID; Typically based on parent structure after compound standardization
+SM_Center_Batch_ID,Center-specific ID of the tested sample
+SM_SMILES_Parent,Canonical isomeric SMILES representation of parent (standardized) chemical structure
+SM_SMILES_Batch,"SMILES representation only as provided from the vendor; Full structure with all information, i.e. isomeric SMILES"
+SM_PubChem_CID,CID that corresponds to the standardized parent compound in NCBIs PubChem databas
+SM_InChI_Parent,InChi representation of parent (standardized) chemical structure
+SM_InChI_Key_Parent,InChi key of parent (standardized) chemical structure
+SM_Molecular_Mass,Molecular mass of one molecule of the compound in Daltons (unified atomic mass units)
+SM_LINCS_ID_Previous,SM_LINCS_ID that was previously associated with a sample
+Expunged,SM_LINCS_ID that has status 'expunged' since it is not associated with any sample

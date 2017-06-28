@@ -2,15 +2,15 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
+    ];
+
+    $scope.pastWebinars = [
       {
        date: '25 April 2017 | 3:00 PM ET',
        topic: 'Combining Forward and Reverse Engineering to Understand Complex Fractional Killing',
        presenters: 'Tongli Zhang PhD, University of Cincinnati',
        synopsis: 'Chemotherapy drugs applied to tumor cells with the same or similar genotypes kill only a percentage of the treated cells. Such fractional killing contributes to drug resistance of cancer. Recent observations indicate that timing of p53 activation decides cellular fate, the cells who activated p53 early undergo apoptosis the cells who activate p53 late survive. The determining role of p53 activation dynamics makes fractional killing a complex dynamical challenge. In order to grasp the essential dynamics of this process, we have constructed a representative model by integrating the control of apoptosis with the relevant signaling pathways. The model successfully recaptured many observed properties of fractional killing, furthermore, analysis of the model suggested that the cell fate is a function of the bifurcation geometry and the cellular trajectories. Hence, the cell fate can be altered in three possible ways: alteration of bifurcation geometry, alteration of cell trajectories or alteration of both. These predicted categories can explain the existing strategies known to combat fractional killing and allow us to design novel strategies. Meanwhile, we also describe our current effort in further extending this model for designing possible strategies that combat fractional killing.',
       },
-    ];
-
-    $scope.pastWebinars = [
       {
        date: '18 April 2017 | 3:00 PM ET',
        topic: 'Pharos – A Torch to Use in Your Journey In the Dark Genome',

@@ -27,12 +27,13 @@ var mod = angular.module("lincsDcic", [
 	"seminarSeriesMod",
  	"summerFellows2015Mod",
   "summerFellows2016Mod",
+  "summerFellows2017Mod",
  	"webinarsMod",
  	"workshopsEtcMod",
 	"ui.bootstrap"
 ]);
 
-mod.config(["$routeProvider", function($routeProvider) {
+mod.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
 	$routeProvider.
 		when("/", {
 			templateUrl: "view/container.html"
@@ -103,9 +104,12 @@ mod.config(["$routeProvider", function($routeProvider) {
 		when("/summer-fellows-2015", {
             templateUrl: "view/page/summer-fellows-2015.html"
 		}).
-                when("/summer-fellows-2016", {
-            templateUrl: "view/page/summer-fellows-2016.html"
-                }).
+    when("/summer-fellows-2016", {
+      templateUrl: "view/page/summer-fellows-2016.html"
+    }).
+    when("/summer-fellows-2017", {
+      templateUrl: "view/page/summer-fellows-2017.html"
+    }).
 		when("/internal-dsrp", {
 			templateUrl: "view/page/internal-dsrp.html"
 		}).
@@ -134,6 +138,11 @@ mod.config(["$routeProvider", function($routeProvider) {
 		otherwise({
 			redirectTo: "/"
 		});
+
+    $locationProvider.html5Mode({
+       enabled: true,
+       requireBase: false
+    });
 	}
 ]);
 

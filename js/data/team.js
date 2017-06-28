@@ -41,10 +41,16 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
 	        name: "Icahn School of Medicine at Mount Sinai",
 	        members: [
                 {
+                    firstName: "Alexandra",
+                    lastName: "Keenan",
+                    affiliation: ISMMS,
+                    email: "alexandra.keenan {at} icahn.mssm.edu"
+                },
+                {
                     firstName: "Kathleen",
                     lastName: "Jagodnik",
                     affiliation: ISMMS,
-                    email: ""
+                    email: "kathleen.jagodnik {at} mssm.edu"
                 },
                 {
                     firstName: "Edward",
@@ -230,12 +236,6 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     lastName: "Stathias",
                     affiliation: UM,
                     email: "v.stathias {at} med.miami.edu"
-                },
-                {
-                    firstName: "Bryce",
-                    lastName: "Allen",
-                    affiliation: UM,
-                    email: "b.allen10 {at} med.miami.edu"
                 },
                 {
                     firstName: "Hande",

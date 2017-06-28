@@ -17,22 +17,23 @@
   <!-- These tags specify how content is displayed on a Twitter feed -->
   <meta name="twitter:card" content="The BD2K-LINCS Data Coordination and Integration Center">
   <meta name="twitter:image" content="http://lincs-dcic.org/images/dcic-logo/DCIC_500x375_cropped.png">
+  <base href="/">
 
   <title>BD2K-LINCS DCIC</title>
 
   <link rel="shortcut icon" href="images/dcic-logo/favicon.png?v=2">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/lib/bower_components/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="/lib/bower_components/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/lib/bower_components/bootstrap-social/bootstrap-social.css">
-	<link rel="stylesheet" href="/lib/bower_components/fullcalendar/dist/fullcalendar.min.css">
-	<link rel="stylesheet" href="/lib/bower_components/ng-tags-input/ng-tags-input.min.css"/>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/bower_components/bootstrap-social/bootstrap-social.css">
+	<link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.min.css">
+	<link rel="stylesheet" href="/bower_components/ng-tags-input/ng-tags-input.min.css"/>
   <link rel="stylesheet" href="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css">
   <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <!-- Handwritten font -->
   <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" href="/lib/bower_components/hint.css/hint.min.css"> -->
+  <!-- <link rel="stylesheet" href="/bower_components/hint.css/hint.min.css"> -->
 	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="style/nav.css">
 	<link rel="stylesheet" href="style/index.css">
@@ -64,35 +65,33 @@
   <div ng-include="'view/partial/footer.html'"></div>
 
 	<!-- Libraries -->
-	<script src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/bower_components/jquery/jquery.min.js"></script>
 	<script src="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-	<script src="/lib/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
 
 	<!-- Angular-strap by module, to avoid namespace clashed with ui-bootstrap -->
-	<script src="/lib/bower_components/angular-strap/dist/modules/compiler.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/dimensions.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/tooltip.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/tooltip.tpl.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/popover.min.js"></script>
-	<script src="/lib/bower_components/angular-strap/dist/modules/popover.tpl.min.js"></script>
+	<script src="/bower_components/angular-strap/dist/modules/compiler.min.js"></script>
+	<script src="/bower_components/angular-strap/dist/modules/dimensions.min.js"></script>
+	<script src="/bower_components/angular-strap/dist/modules/tooltip.min.js"></script>
+	<script src="/bower_components/angular-strap/dist/modules/tooltip.tpl.min.js"></script>
+	<script src="/bower_components/angular-strap/dist/modules/popover.min.js"></script>
+	<script src="/bower_components/angular-strap/dist/modules/popover.tpl.min.js"></script>
 
-	<script src="/lib/bower_components/angular-route/angular-route.js"></script>
-	<link href="/lib/bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet"/>
-	<script src="/lib/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-	<script src="/lib/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-	<script src='/lib/bower_components/moment/min/moment.min.js'></script>
-	<script src='/lib/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
-	<script src='/lib/bower_components/fullcalendar/dist/gcal.js'></script>
-	<script src="/lib/bower_components/bootstrap/js/collapse.js"></script>
-	<script src="/lib/bower_components/bootstrap/js/carousel.js"></script>
-	<script src="/lib/bower_components/bootstrap/js/transition.js"></script>
-	<script src="/lib/bower_components/underscore/underscore-min.js"></script>
-	<script src="/lib/bower_components/ng-tags-input/ng-tags-input.min.js"></script>
-	<!-- <script src="/lib/twitter-fetcher.min.js"></script> -->
-	<script src="/lib/bower_components/twitter-fetcher/js/twitterFetcher_min.js"></script>
-	<script src="/lib/bower_components/d3/d3.min.js"></script>
-	<script src="/lib/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
-	<!-- <script src="/lib/Porter-Stemmer/PorterStemmer1980.min.js"></script> -->
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<link href="/bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet"/>
+	<script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src='/bower_components/moment/min/moment.min.js'></script>
+	<script src='/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+	<script src='/bower_components/fullcalendar/dist/gcal.js'></script>
+	<script src="/bower_components/bootstrap/js/collapse.js"></script>
+	<script src="/bower_components/bootstrap/js/carousel.js"></script>
+	<script src="/bower_components/bootstrap/js/transition.js"></script>
+	<script src="/bower_components/underscore/underscore-min.js"></script>
+	<script src="/bower_components/ng-tags-input/ng-tags-input.min.js"></script>
+	<script src="/bower_components/twitter-fetcher/js/twitterFetcher_min.js"></script>
+	<script src="/bower_components/d3/d3.min.js"></script>
+	<script src="/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
 
 
 
@@ -114,6 +113,7 @@
 	<script type="text/javascript" src="js/data/seminar-series.js"></script>
 	<script type="text/javascript" src="js/data/summer-fellows-2015.js"></script>
 	<script type="text/javascript" src="js/data/summer-fellows-2016.js"></script>
+  <script type="text/javascript" src="js/data/summer-fellows-2017.js"></script>
 	<script type="text/javascript" src="js/data/training.js"></script>
 	<script type="text/javascript" src="js/data/team.js"></script>
 	<script type="text/javascript" src="js/data/tools.js"></script>

@@ -50,13 +50,13 @@
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #dddddd;
   color: #000000;
-  padding: 15px;
-  position: absolute;
+  padding: 12px 15px;
+  /*position: absolute;*/
   text-align: left;
   text-shadow: none;
-  right: 30px;
-  bottom: 30px;
-  max-width: 40%;
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*max-width: 40%;*/
   /* Some images look better with a light caption box. Override the dark default. */
 }
 #carousel .carousel-caption-custom .caption-title-block {
@@ -64,13 +64,14 @@
 }
 #carousel .carousel-caption-custom .caption-title-block a {
   font-family: 'Archivo Narrow', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 #carousel .carousel-caption-custom .caption-title-block a:hover {
   color: #599fb7;
 }
 #carousel .carousel-caption-custom .caption-text {
-  font-size: 16px;
+  color: #599fb7;
+  font-size: 15px;
 }
 #carousel .carousel-caption-custom.light {
   background: #3593b1;
@@ -85,17 +86,17 @@
 #carousel .carousel-control {
   background-image: none;
   margin-bottom: 15%;
-  height: 40%;
+  /*height: 40%;*/
 }
 @media (max-width: 768px) {
-  #carousel .carousel-caption-custom {
+  /*#carousel .carousel-caption-custom {
     display: none;
-  }
+  }*/
 }
 @media (max-width: 1024px) {
-  #carousel .caption-text {
+  /*#carousel .caption-text {
     display: none;
-  }
+  }*/
 }
 #index-page #overview li a {
   font-size: 20px;

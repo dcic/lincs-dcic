@@ -4,9 +4,9 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     var LINCS_MOOC_LINK = "https://www.coursera.org/course/bd2klincs",
         SYSBIO_MOOC_LINK = "https://www.coursera.org/learn/network-biology",
-        SUMMER_FELLOWS_LINK_2015 = "#/summer-fellows-2015#nav",
-        SUMMER_FELLOWS_LINK_2016 = "#/summer-fellows-2016#nav",
-        SUMMER_PROGRAM_DESC = "#/summer-research-app#nav",
+        SUMMER_FELLOWS_LINK_2015 = "/summer-fellows-2015#nav",
+        SUMMER_FELLOWS_LINK_2016 = "/summer-fellows-2016#nav",
+        SUMMER_PROGRAM_DESC = "/summer-research-app#nav",
         GEO2Enrichr_LINK = "http://amp.pharm.mssm.edu/g2e/",
         DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
         Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
@@ -17,7 +17,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         DIR = "/images/general/";
 
     $scope.introText = $sce.trustAsHtml("The BD2K-LINCS DCIC engages the research community by delivering high quality educational materials through the web as well as through mentoring, seminars and symposia. Also, Center investigators actively engage in the education of a new generation of Big Data Scientists by developing a graduate-level Big Data Science MOOC that will be delivered to graduate students in Big Data Biostatistics and other Biomedical Informatics graduate programs.");
- 
+
     $scope.sections = [
 		{
             title: "Summer Research Training Program",
@@ -27,7 +27,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                         "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
                     "</li>" +
                      "<li>" +
-                        "<a href='" + FLYER_LINK + "'>2017 Program Flyer</a>" +
+                        "<a href='" + FLYER_LINK + "' target='_blank'>2017 Program Flyer</a>" +
                     "</li>" +
                       "<li>" +
                         "<a href='" + SUMMER_FELLOWS_LINK_2016 + "'>2016 Summer Fellows and Research Projects</a>" +
@@ -35,7 +35,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                      "<li>" +
                         "<a href='" + SUMMER_FELLOWS_LINK_2015 + "'>2015 Summer Fellows and Research Projects</a>" +
                     "</li>" +
-                    
+
                                    "</ul>"),
             image: DIR + "esther.png"
         },
@@ -66,7 +66,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             text: $sce.trustAsHtml("These webinars provide a forum for data scientists within and outside of the LINCS project to present their work on problems related to LINCS data analysis and integration:" +
                 "<ul>" +
                     "<li>" +
-                        "<a href='#/webinars'>LINCS Data Science Research Webinars</a>" +
+                        "<a href='/webinars'>LINCS Data Science Research Webinars</a>" +
                     "</li>" +
 		    "<li>" +
 			"<a href='" + DCIC_Youtube_LINK + "' target='blank'>BD2K-LINCS DCIC YouTube Channel</a>" +
@@ -97,7 +97,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             text: $sce.trustAsHtml("Center investigators engage the research community through workshops, seminars and symposia to expose them to LINCS data and resources." +
                 "<ul>" +
                     "<li>" +
-                        "<a href='#/workshops-seminars-symposia#nav'>Workshops, Seminars and Symposia</a>" +
+                        "<a href='/workshops-seminars-symposia#nav'>Workshops, Seminars and Symposia</a>" +
                     "</li>" +
 		    "<li>" +
 			"<a href='" + Google_LINK + "' target='blank'>google.com/+BD2KLINCSDCIC</a>" +

@@ -1,0 +1,27 @@
+{
+  "name": "lincs-dcic",
+  "version": "1.0.0",
+  "description": "BD2K-LINCS DCIC = The BD2K-LINCS Data Coordination and Integration Center is part of the Big Data to Knowledge (BD2K) NIH initiative, and it is the data coordination center for the NIH Common Fund's Library of Integrated Network-based Cellular Signatures (LINCS) program, which aims to characterize how a variety of human cells, tissues and the entire organism respond to perturbations by drugs and other molecular factors. See figure demonstrating the overall data flow of the LINCS project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install",
+    "docker-build": "docker build -t maayanlab/lincs-dcic .",
+    "docker-push": "docker push maayanlab/lincs-dcic",
+    "docker-bp": "npm run docker-build && npm run docker-push",
+    "docker-pull-latest": "docker pull maayanlab/lincs-dcic:latest",
+    "docker-kr": "docker kill lincs-dcic && docker rm lincs-dcic",
+    "docker-run": "docker run -d --name='lincs-dcic' -p 80:8000 maayanlab/lincs-dcic:latest",
+    "aws-ssh": "ssh -i ~/.ssh/lincsdcic_key.pem ec2-user@lincsdcic",
+    "push": "npm run docker-bp && npm run aws-ssh && docker pull maayanlab/lincs-dcic:latest && docker kill lincs-dcic && docker rm lincs-dcic && docker run -d --name='lincs-dcic' -p 80:8000 maayanlab/lincs-dcic:latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcic/lincs-dcic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.3.1"
+  }
+}
