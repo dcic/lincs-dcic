@@ -6,7 +6,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           title: "Building containerized workflows for RNA-seq data using the BioDepot-workflow-Builder (BwB)",
           url: "http://biorxiv.org/content/early/2017/01/06/099010",
           authors: "Hung LH, Meiss T, Keswani J, Xiong Y, Sobie E, Yeung KY",
-          citation: "bioRxiv. 2017 Jan",
+          citation: "bioRxiv (2017): 099010",
           ids: "biorxiv: 099010",
           year: 2017
       },
@@ -14,7 +14,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           title: "Software solutions for reproducible RNA-seq workflows",
           url: "http://biorxiv.org/content/early/2017/01/06/099028",
           authors: "Meiss T, Hung LH, Xiong Y, Sobie E, Yeung KY.",
-          citation: "bioRxiv. 2017 Jan",
+          citation: "bioRxiv (2017): 099028",
           ids: "biorxiv: 099028",
           year: 2017
       },
