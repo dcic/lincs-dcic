@@ -3,22 +3,6 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
       {
-          title: "Building containerized workflows for RNA-seq data using the BioDepot-workflow-Builder (BwB)",
-          url: "http://biorxiv.org/content/early/2017/01/06/099010",
-          authors: "Hung LH, Meiss T, Keswani J, Xiong Y, Sobie E, Yeung KY",
-          citation: "bioRxiv. 2017 Jan",
-          ids: "biorxiv: 099010",
-          year: 2017
-      },
-      {
-          title: "Software solutions for reproducible RNA-seq workflows",
-          url: "http://biorxiv.org/content/early/2017/01/06/099028",
-          authors: "Meiss T, Hung LH, Xiong Y, Sobie E, Yeung KY.",
-          citation: "bioRxiv. 2017 Jan",
-          ids: "biorxiv: 099028",
-          year: 2017
-      },
-      {
           title: "Developing a framework for digital objects in the Big Data to Knowledge (BD2K) Commons: Report from the Commons Framework Pilots Workshop",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/28501646",
           authors: "Jagodnik KM, Koplev S, Jenkins S, Ohno-Machado L, Paten B, Schurer SC, Dumontier M, Verborgh R, Bui A, Ping P, McKenna NJ, Madduri R, Pillai A, Ma'ayan A.",
@@ -56,6 +40,22 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
            authors: "Shameer K, Glicksberg BS, Hodos R, Johnson KW, Badgeley MA, Readhead B, Tomlinson MS, O'Connor T, Miotto R, Kidd BA, Chen R, Ma'ayan A, Dudley JT.",
            citation: "Briefings in Bioinformatics. 2017 Feb 15.",
            ids: "PMID: 28200013",
+           year: 2017
+       },
+       {
+           title: "Building containerized workflows for RNA-seq data using the BioDepot-workflow-Builder (BwB)",
+           url: "http://biorxiv.org/content/early/2017/01/06/099010",
+           authors: "Hung LH, Meiss T, Keswani J, Xiong Y, Sobie E, Yeung KY",
+           citation: "bioRxiv (2017): 099010",
+           ids: "biorxiv: 099010",
+           year: 2017
+       },
+       {
+           title: "Software solutions for reproducible RNA-seq workflows",
+           url: "http://biorxiv.org/content/early/2017/01/06/099028",
+           authors: "Meiss T, Hung LH, Xiong Y, Sobie E, Yeung KY.",
+           citation: "bioRxiv (2017): 099028",
+           ids: "biorxiv: 099028",
            year: 2017
        },
 	     {
