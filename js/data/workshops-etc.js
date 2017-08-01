@@ -92,7 +92,14 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.seminars = [
-      {
+       {
+            title: 'BD2K-LINCS DCIC Summer Fellow Presentation Session',
+            description: $sce.trustAsHtml('Session for the <a href="/summer-fellows-2017">2017 BD2K-LINCS DCIC Summer Fellows</a> to present their projects.'),
+            details: 'August 10, 2017, Icahn School of Medicine at Mount Sinai, NY'
+       },
+
+
+     {
           title: 'Mapping the Transcriptome to the Phenome',
           description: $sce.trustAsHtml('Avi Ma\’ayan PhD presented in the 16th Annual Symposium of NYU Biology\'s Center for Genomics & Systems Biology.'),
           details: 'June 2, 2017, New York University, NY'

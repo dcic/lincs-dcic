@@ -12,6 +12,15 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
 	$scope.stories = formatStories([
           {
+            title: "The FAIR Data-Sharing Movement: BD2K Centers Make Headway",
+            source: "Biomedical Computation Review",
+            url: "http://biomedicalcomputationreview.org/content/fair-data-sharing-movement-bd2k-centers-make-headway",
+            target: "_blank",
+            date: "6/21/2017",
+            mainText: "The BD2K Centers are propelling the data sharing revolution forward at every level of research",
+            image: DIR + "harmonizome.png"
+          },
+	  {
             title: "Gene Expression's Big Rethink",
             source: "GEN",
             url: "http://www.genengnews.com/gen-articles/gene-expressions-big-rethink/5987?page=2",

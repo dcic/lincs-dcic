@@ -43,8 +43,15 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             caption: 'DSS 2017 focused on the systems biology of cellular perturbations and applications in drug development, translational biomedicine and environmental health.',
             link: '/2017-data-science-symposium'
         },
-        {
+	{
             index: 1,
+            image: DIR + 'dcic_summer_cp2017.jpg',
+            title: 'BD2K-LINCS Summer Research Training Program',
+            caption: 'Join us for the BD2K-LINCS DCIC Summer Fellow presentation session on August 10th!',
+            link: '/summer-fellows-2017#nav'
+        },
+        {
+            index: 2,
             image: DIR + 'bubble-graph.png',
             title: 'Crowdsourcing for Scientific Discovery',
             caption: 'BD2K-LINCS DCIC researchers find novel ways to analyze data for drug and target discovery',
@@ -52,18 +59,11 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         },
         {
-            index: 2,
+            index: 3,
             image: DIR + 'zichen_poster.png',
             title: 'BD2K All Hands Meeting and Open Data Science Symposium',
             caption: 'Summary of BD2K-LINCS DCIC activities at this annual BD2K grantee meeting.',
             link: '/2016-bd2k-meeting'
-        },
-        {
-            index: 3,
-            image: DIR + 'summer_banner_2016.png',
-            title: 'Summer Research Program',
-            caption: 'Research-intensive 10 week training program for undergraduate and graduate students starting June 5th.',
-            link: '/summer-fellows-2017#nav'
         },
         {
             index: 4,
