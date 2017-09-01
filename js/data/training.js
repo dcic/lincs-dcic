@@ -6,6 +6,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         SYSBIO_MOOC_LINK = "https://www.coursera.org/learn/network-biology",
         SUMMER_FELLOWS_LINK_2015 = "/summer-fellows-2015#nav",
         SUMMER_FELLOWS_LINK_2016 = "/summer-fellows-2016#nav",
+	SUMMER_FELLOWS_LINK_2017 = "/summer-fellows-2017#nav",
         SUMMER_PROGRAM_DESC = "/summer-research-app#nav",
         GEO2Enrichr_LINK = "http://amp.pharm.mssm.edu/g2e/",
         DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
@@ -27,7 +28,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                         "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
                     "</li>" +
                      "<li>" +
-                        "<a href='" + FLYER_LINK + "' target='_blank'>2017 Program Flyer</a>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK_2017 + "'>2017 Summer Fellosw and Research Projects</a>" +
                     "</li>" +
                       "<li>" +
                         "<a href='" + SUMMER_FELLOWS_LINK_2016 + "'>2016 Summer Fellows and Research Projects</a>" +
@@ -52,10 +53,6 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                      "</li>" +
                     "<li>" +
                         "<a href='" + DATAMINING_LINK + "' target='blank'>BD2K-LINCS: Data Mining and Network Analysis Course (ISMMS Course)</a>" +
-                    "</li>" +
-
-                    "<li>" +
-                        "<a href='" + ARTICLE_LINK + "' target='blank'>Feature Article in ASBMB Today: Back on the Road with Coursera</a>" +
                     "</li>" +
 
                 "</ul>"),

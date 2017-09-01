@@ -53,16 +53,16 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "kathleen.jagodnik {at} mssm.edu"
                 },
                 {
-                    firstName: "Edward",
-                    lastName: "He",
+                    firstName: "Damon",
+                    lastName: "Pham",
                     affiliation: ISMMS,
-                    email: "edward.he {at} mssm.edu"
+                    email: "damon.pham {at} mssm.edu"
                 },
                 {
-                    firstName: "Nicolas",
-                    lastName: "Fernandez",
+                    firstName: "Lily",
+                    lastName: "Wang",
                     affiliation: ISMMS,
-                    email: "nicolas.fernandez {at} mssm.edu"
+                    email: "lily.wang {at} mssm.edu"
                 },
                 {
                     firstName: "Zichen",
@@ -83,10 +83,10 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "maxim.kuleshov {at} mssm.edu"
                 },
                 {
-                    firstName: "Anders",
-                    lastName: "Dohlman",
+                    firstName: "Patrycja",
+                    lastName: "Krawczuk",
                     affiliation: ISMMS,
-                    email: "anders.dohlman {at} mssm.edu"
+                    email: "patrycja.krawczuk {at} mssm.edu"
                 },
 		            {
                     firstName: "Alex",
@@ -95,22 +95,16 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "alexander.lachmann {at} mssm.edu"
                 },
 		            {
-                    firstName: "Troy",
-                    lastName: "Goff",
+                    firstName: "Ariel",
+                    lastName: "Leong",
                     affiliation: ISMMS,
-                    email: "troy.goff {at} mssm.edu"
+                    email: "ariel.leong {at} mssm.edu"
                 },
 		            {
                     firstName: "Denis",
                     lastName: "Torre",
                     affiliation: ISMMS,
                     email: "denis.torre {at} mssm.edu"
-                },
-                {
-                    firstName: "Shai",
-                    lastName: "Magidi",
-                    affiliation: ISMMS,
-                    email: "shai.magidi {at} mssm.edu"
                 },
                 {
                     firstName: "Moshe",

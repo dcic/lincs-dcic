@@ -2,43 +2,59 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
-      {
+        {
           title: "Developing a framework for digital objects in the Big Data to Knowledge (BD2K) Commons: Report from the Commons Framework Pilots Workshop",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/28501646",
-          authors: "Jagodnik KM, Koplev S, Jenkins S, Ohno-Machado L, Paten B, Schurer SC, Dumontier M, Verborgh R, Bui A, Ping P, McKenna NJ, Madduri R, Pillai A, Ma'ayan A.",
-          citation: "Journal of Biomedical Informatics. 2017 May 10. pii: S1532-0464(17)30101-6.",
+          authors: "Jagodnik KM, Koplev S, Jenkins SL, Ohno-Machado L, Paten B, Schurer SC, Dumontier M, Verborgh R, Bui A, Ping P, McKenna NJ, Madduri R, Pillai A, Ma'ayan A.",
+          citation: "Journal of Biomedical Informatics 2017 Jul;71:49-57.",
           ids: "PMID: 28501646",
+          year: 2017
+      },
+      {
+           title: "Systemic QSAR and phenotypic virtual screening: chasing butterflies in drug discovery",
+           url: "https://www.ncbi.nlm.nih.gov/pubmed/28274840",
+           authors: "Cruz-Monteagudo M, Schurer S, Tejera E, Perez-Castillo Y, Medina-Franco JL, Sanchez-Rodriguez A, Borges F.",
+           citation: "Drug Discovery Today 2017 Jul;22(7):994-1007.",
+           ids: "PMID: 28274840",
+           year: 2017
+      },	    
+      {
+          title: "From flamingo dance to (desirable) drug discovery: a nature-inspired approach",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/28624633",
+          authors: "Sanchez-Rodriguez A, Perez-Castillo Y, Schurer SC, Nicolotti O, Mangiatordi GF, Borges F, Cordeiro MNDS, Tejera E, Medina-Franco JL, Cruz-Monteagudo M.",
+          citation: "Drug Discovery Today 2017 June 15. pii: S1359-6446(17)30290-8.",
+          ids: "PMID: 28624633",
           year: 2017
       },
       {
           title: "The SRL peptide of rhesus rotavirus VP4 protein governs cholangiocyte infection and the murine model of biliary atresia",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/27859498",
           authors: "Mohanty SK, Donnelly B, Lobeck I, Walther A, Dupree P, Coots A, Meller J, McNeal M, Sestak K, Tiao G.",
-          citation: "Hepatology. 2017 Apr;65(4):1278-1292.",
+          citation: "Hepatology 2017 Apr;65(4):1278-1292.",
           ids: "PMID: 27859498 | PMCID: PMC5360466 ",
           year: 2017
       },
       {
-           title: "Systemic QSAR and phenotypic virtual screening: chasing butterflies in drug discovery",
-           url: "https://www.ncbi.nlm.nih.gov/pubmed/28274840",
-           authors: "Cruz-Monteagudo M, Schürer S, Tejera E, Pérez-Castillo Y, Medina-Franco JL, Sánchez-Rodríguez A, Borges F.",
-           citation: "Drug Discovery Today. 2017 Mar 6. pii: S1359-6446(17)30107-1.",
-           ids: "PMID: 28274840",
-           year: 2017
-       },
-      {
            title: "Differential cytokine contributions of perivascular haematopoietic stem cell niches",
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28218906",
            authors: "Asada N, Kunisaki Y, Pierce H, Wang Z, Fernandez NF, Birbrair A, Ma'ayan A, Frenette PS.",
-           citation: "Nature Cell Biology. 2017 Mar;19(3):214-223.",
-           ids: "PMID: 28218906",
+           citation: "Nature Cell Biology 2017 Mar;19(3):214-223.",
+           ids: "PMID: 28218906 | PMCID: PMC5467892",
+           year: 2017
+       },
+       {
+           title: "GUIdock-VNC: Using a graphical desktop sharing system to provide a browser-based interface for containerized software",
+           url: "https://www.ncbi.nlm.nih.gov/pubmed/28327936",
+           authors: "Mittal V, Hung LH, Keswani J, Kristiyanto D, Lee SB, Yeung KY.",
+           citation: "Giagascience 2017 Feb.",
+           ids: "PMID: 28327936 | PMCID: PMC5530313",
            year: 2017
        },
       {
            title: "Systematic analyses of drugs and disease indications in RepurposeDB reveal pharmacological, biological and epidemiological factors influencing drug repositioning",
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28200013",
            authors: "Shameer K, Glicksberg BS, Hodos R, Johnson KW, Badgeley MA, Readhead B, Tomlinson MS, O'Connor T, Miotto R, Kidd BA, Chen R, Ma'ayan A, Dudley JT.",
-           citation: "Briefings in Bioinformatics. 2017 Feb 15.",
+           citation: "Briefings in Bioinformatics 2017 Feb 15.",
            ids: "PMID: 28200013",
            year: 2017
        },
@@ -63,7 +79,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "https://www.ncbi.nlm.nih.gov/pubmed/27846806",
             authors: "Gundersen GW, Jagodnik KM, Woodland H, Fernandez NF, Sani K, Dohlman AB, Ung PM, Monteiro CD, Schlessinger A, Ma'ayan A.",
             citation: "BMC Bioinformatics 2016 Nov 15;17(1):461.",
-            ids: "PMID: 27846806",
+            ids: "PMID: 27846806 | PMCID: PMC5111283",
             year: 2016
         },
         {
@@ -71,15 +87,15 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
             url: "https://www.ncbi.nlm.nih.gov/pubmed/27667448",
             authors: "Wang Z, Monteiro CD, Jagodnik KM, Fernandez NF, Gundersen GW, Rouillard AD, Jenkins SL, Feldmann AS, Hu KS, McDermott MG, Duan Q, Clark NR, Jones MR, Kou Y, Goff T, Woodland H, Amaral FM, Szeto GL, Fuchs O, Schussler-Fiorenza Rose SM, Sharma S, Schwartz U, Bausela XB, Szymkiewicz M, Maroulis V, Salykin A, Barra CM, Kruth CD, Bongio NJ, Mathur V, Todoric RD, Rubin UE, Malatras A, Fulp CT, Galindo JA, Motiejunaite R, Juschke C, Dishuck PC, Lahl K, Jafari M, Aibar S, Zaravinos A, Steenhuizen LH, Allison LR, Gamallo P, de Andres Segura F, Dae Devlin T, Perez-Garcia V, Ma'ayan A.",
             citation: "Nature Communications 2016 Sep 26;7:12846.",
-            ids: "PMID: 27667448",
+            ids: "PMID: 27667448 | PMCID: PMC5052684",
             year: 2016
         },
 	{
             title: "L1000CDS2: LINCS L1000 characteristic direction signatures search engine",
             url: "http://www.nature.com/articles/npjsba201615",
             authors: "Duan Q, Reid SP, Clark NR, Wang Z, Fernandez NF, Rouillard AD, Readhead B, Tritsch SR, Hodos R, Hafner M, Niepel M, Sorger PK, Dudley JT, Bavari S, Panchal RG, Ma'ayan A.",
-            citation: "npj Systems Biology and Applications 2, 16015.",
-            ids: "",
+            citation: "NPJ Systems Biology and Applications 2, 16015.",
+            ids: "PMID: 28413689 | PMCID: PMC5389891",
             year: 2016
         },
 	 {
