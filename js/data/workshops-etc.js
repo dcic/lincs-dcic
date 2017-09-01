@@ -92,13 +92,36 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.seminars = [
-       {
+     {
             title: 'BD2K-LINCS DCIC Summer Fellow Presentation Session',
             description: $sce.trustAsHtml('Session for the <a href="/summer-fellows-2017">2017 BD2K-LINCS DCIC Summer Fellows</a> to present their projects.'),
             details: 'August 10, 2017, Icahn School of Medicine at Mount Sinai, NY'
-       },
-
-
+     },
+     {
+            title: 'BD2K-LINCS DCIC Summer Seminar Series',
+            description: $sce.trustAsHtml('Alexandra Keenan MS (MD PhD candidate, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_overview_of_the_lincs_program">"An Overview of the LINCS Program"</a>.'),
+            details: 'August 2, 2017, Icahn School of Medicine at Mount Sinai, NY'
+     },
+     {
+            title: 'BD2K-LINCS DCIC Summer Seminar Series',
+            description: $sce.trustAsHtml('Denis Torre (Bioinformatician, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_introduction_to_experimental_and_computational_methods_for_rna-sequencing_part_ii">"Building RNA-seq Analysis Pipelines with Jupyter"</a>.'),
+            details: 'July 18, 2017, Icahn School of Medicine at Mount Sinai, NY'
+     },
+     {
+            title: 'BD2K-LINCS DCIC Summer Seminar Series',
+            description: $sce.trustAsHtml('Denis Torre (Bioinformatician, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_introduction_to_experimental_and_computational_methods_for_rna-sequencing">"An Introduction to Experimental and Computational Methods for RNA-Sequencing"</a>.'),
+            details: 'July 11, 2017, Icahn School of Medicine at Mount Sinai, NY'
+     },
+     {
+            title: 'BD2K-LINCS DCIC Summer Seminar Series',
+            description: $sce.trustAsHtml('Kathleen Jagodnik PhD (Postdoctoral Fellow, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_complexity_in_theory_and_practice_in_data_mining_and_network_analysis">"Complexity in Theory and Practice in Data Mining and Network Analysis"</a>.'),
+            details: 'June 27, 2017, Icahn School of Medicine at Mount Sinai, NY'
+     },
+     {
+            title: 'BD2K-LINCS DCIC Summer Seminar Series',
+            description: $sce.trustAsHtml('Avi Ma\'ayan PhD presented "Collecting and Exploring Gene Signatures".'),
+            details: 'June 6, 2017, Icahn School of Medicine at Mount Sinai, NY'
+     },
      {
           title: 'Mapping the Transcriptome to the Phenome',
           description: $sce.trustAsHtml('Avi Ma\’ayan PhD presented in the 16th Annual Symposium of NYU Biology\'s Center for Genomics & Systems Biology.'),
