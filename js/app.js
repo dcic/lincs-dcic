@@ -102,14 +102,14 @@ mod.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
 			templateUrl: "view/page/events.html"
 		}).
 		when("/summer-fellows-2015", {
-            templateUrl: "view/page/summer-fellows-2015.html"
+            		templateUrl: "view/page/summer-fellows-2015.html"
 		}).
-    when("/summer-fellows-2016", {
-      templateUrl: "view/page/summer-fellows-2016.html"
-    }).
-    when("/summer-fellows-2017", {
-      templateUrl: "view/page/summer-fellows-2017.html"
-    }).
+    		when("/summer-fellows-2016", {
+      			templateUrl: "view/page/summer-fellows-2016.html"
+    		}).
+    		when("/summer-fellows-2017", {
+      			templateUrl: "view/page/summer-fellows-2017.html"
+    		}).
 		when("/internal-dsrp", {
 			templateUrl: "view/page/internal-dsrp.html"
 		}).
@@ -128,11 +128,14 @@ mod.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
 		when("/2016-data-science-symposium", {
 			templateUrl: "view/page/2016-data-science-symposium.html"
 		}).
-    when("/2017-data-science-symposium", {
+    		when("/2017-data-science-symposium", {
 			templateUrl: "view/page/2017-data-science-symposium.html"
 		}).
-    when("/2016-bd2k-meeting", {
+    		when("/2016-bd2k-meeting", {
 			templateUrl: "view/page/2016-bd2k-meeting.html"
+		}).
+		when("/2018-data-science-symposium", {
+			templateUrl: "view/page/2018-data-science-symposium.html"
 		}).
 		/* Default */
 		otherwise({
