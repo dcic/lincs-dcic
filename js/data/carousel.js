@@ -39,9 +39,9 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         {
             index: 0,
             image: DIR + 'dcic_dss_2017.png',
-            title: 'BD2K-LINCS Data Science Symposium 2017',
-            caption: 'DSS 2017 focused on the systems biology of cellular perturbations and applications in drug development, translational biomedicine and environmental health.',
-            link: '/2017-data-science-symposium'
+            title: 'BD2K-LINCS Data Science Symposium (DSS 2018) | Jan 31 - Feb 2, 2018',
+            caption: 'Register now for DSS 2018 hosted by the BD2K-LINCS DCIC and the University of Miami!',
+            link: '/2018-data-science-symposium'
         },
 	{
             index: 1,
