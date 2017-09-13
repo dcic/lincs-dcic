@@ -48,7 +48,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             image: DIR + 'dcic_summer_cp2017.jpg',
             title: 'BD2K-LINCS Summer Research Training Program',
             caption: 'Check out video summaries of the BD2K-LINCS DCIC 2017 Summer Research Projects!',
-            link: 'https://www.youtube.com/playlist?list=PLfq4yYrYksViQ4DuwuNeI4dmlVTnIzyDy'
+            link: 'summer-fellows-2017#nav'
         },
         {
             index: 2,

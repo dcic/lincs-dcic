@@ -20,7 +20,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
 	{
             title: 'SAMSI Innovation Workshop: Interdisciplinary Approaches to Biomedical Data Science Challenges',
-            description: $sce.trustAsHtml('Stephan Schurer PhD, served as a mentor in this <a href="http://www.samsi.info/workshop/interdisciplinary-approaches-biomedical-data-science-challenges-samsi-innovations-lab-july-" target="_blank">workshop</a> to guide scientists in the formation of interdisciplinary projects aimed at developing models, methods, and approaches to overcome biomedical data science challenges. During the course of the workshop, participants were exposed to LINCS resources.'),
+            description: $sce.trustAsHtml('Stephan Schurer PhD, served as a mentor in this workshop to guide scientists in the formation of interdisciplinary projects aimed at developing models, methods, and approaches to overcome biomedical data science challenges. During the course of the workshop, participants were exposed to LINCS resources.'),
             details: 'July 20-24, 2015, Research Triangle Park, NC'
         },
         {
@@ -48,7 +48,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
 	      {
             title: 'Systems Biology Data Science Symposium',
-            description: $sce.trustAsHtml('This first <a href="/2016-data-science-symposium">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
+            description: $sce.trustAsHtml('This first <a href="/2016-data-science-symposium" target="_blank">Systems Biology Data Science Symposium</a> at the University of Miami brought together the BD2K-LINCS DCIC, local researchers, and outside experts who apply or develop computational systems biology resources.'),
             details: 'January 19-20, 2016, Coral Gables, FL'
         },
         {
@@ -63,7 +63,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: 'Society of Toxicology’s Annual Meeting',
-            description: $sce.trustAsHtml('The BD2K-LINCS DCIC held an outreach session, "Turning Big Data to Knowledge - An Introduction to the BD2K and LINCS Projects" at the <a href="http://www.toxicology.org/pubs/docs/Prog/2015Program.pdf" target="_blank">SOT Annual Meeting</a>. Poster session: Big Data to Knowledge (BD2K) - A Graphical Approach for Data Coordination and Integration presented by John Reichard PhD, Mario Medvedovic PhD, Siva Sivaganesan PhD.'),
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC held an outreach session, "Turning Big Data to Knowledge - An Introduction to the BD2K and LINCS Projects" at the <a href="http://www.toxicology.org/pubs/docs/Prog/2015Program.pdf" target="_blank" target="_blank">SOT Annual Meeting</a>. Poster session: Big Data to Knowledge (BD2K) - A Graphical Approach for Data Coordination and Integration presented by John Reichard PhD, Mario Medvedovic PhD, Siva Sivaganesan PhD.'),
             details: 'March 23, 2015, San Diego, CA'
         },
         {
@@ -94,27 +94,27 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.seminars = [
      {
             title: 'BD2K-LINCS DCIC Summer Fellow Presentation Session',
-            description: $sce.trustAsHtml('Session for the <a href="/summer-fellows-2017">2017 BD2K-LINCS DCIC Summer Fellows</a> to present their projects.'),
+            description: $sce.trustAsHtml('Session for the <a href="/summer-fellows-2017" target="_blank">2017 BD2K-LINCS DCIC Summer Fellows</a> to present their projects.'),
             details: 'August 10, 2017, Icahn School of Medicine at Mount Sinai, NY'
      },
      {
             title: 'BD2K-LINCS DCIC Summer Seminar Series',
-            description: $sce.trustAsHtml('Alexandra Keenan MS (MD PhD candidate, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_overview_of_the_lincs_program">"An Overview of the LINCS Program"</a>.'),
+            description: $sce.trustAsHtml('Alexandra Keenan MS (MD PhD candidate, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_overview_of_the_lincs_program" target="_blank">"An Overview of the LINCS Program"</a>.'),
             details: 'August 2, 2017, Icahn School of Medicine at Mount Sinai, NY'
      },
      {
             title: 'BD2K-LINCS DCIC Summer Seminar Series',
-            description: $sce.trustAsHtml('Denis Torre (Bioinformatician, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_introduction_to_experimental_and_computational_methods_for_rna-sequencing_part_ii">"Building RNA-seq Analysis Pipelines with Jupyter"</a>.'),
+            description: $sce.trustAsHtml('Denis Torre (Bioinformatician, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_introduction_to_experimental_and_computational_methods_for_rna-sequencing_part_ii" target="_blank">"Building RNA-seq Analysis Pipelines with Jupyter"</a>.'),
             details: 'July 18, 2017, Icahn School of Medicine at Mount Sinai, NY'
      },
      {
             title: 'BD2K-LINCS DCIC Summer Seminar Series',
-            description: $sce.trustAsHtml('Denis Torre (Bioinformatician, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_introduction_to_experimental_and_computational_methods_for_rna-sequencing">"An Introduction to Experimental and Computational Methods for RNA-Sequencing"</a>.'),
+            description: $sce.trustAsHtml('Denis Torre (Bioinformatician, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_an_introduction_to_experimental_and_computational_methods_for_rna-sequencing" target="_blank">"An Introduction to Experimental and Computational Methods for RNA-Sequencing"</a>.'),
             details: 'July 11, 2017, Icahn School of Medicine at Mount Sinai, NY'
      },
      {
             title: 'BD2K-LINCS DCIC Summer Seminar Series',
-            description: $sce.trustAsHtml('Kathleen Jagodnik PhD (Postdoctoral Fellow, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_complexity_in_theory_and_practice_in_data_mining_and_network_analysis">"Complexity in Theory and Practice in Data Mining and Network Analysis"</a>.'),
+            description: $sce.trustAsHtml('Kathleen Jagodnik PhD (Postdoctoral Fellow, Ma\'ayan Lab) presented <a href="https://events.mountsinaihealth.org/event/bd2k-lincs_dcic_summer_seminar_series_complexity_in_theory_and_practice_in_data_mining_and_network_analysis" target="_blank">"Complexity in Theory and Practice in Data Mining and Network Analysis"</a>.'),
             details: 'June 27, 2017, Icahn School of Medicine at Mount Sinai, NY'
      },
      {
@@ -154,7 +154,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
       },
 	     {
             title: 'Webinar and Poster Session for the BD2K-LINCS DCIC Summer Research Training Program',
-            description: $sce.trustAsHtml('The <a href="/summer-fellows-2016">2016 BD2K-LINCS DCIC Summer Fellows</a> presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.'),
+            description: $sce.trustAsHtml('The <a href="/summer-fellows-2016" target="_blank">2016 BD2K-LINCS DCIC Summer Fellows</a> presented their projects at the ISMMS SURP poster session as well as during a LINCS webinar.'),
             details: 'August 12, 2016, Icahn School of Medicine at Mount Sinai, NY'
         },
         {
