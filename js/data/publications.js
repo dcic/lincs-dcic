@@ -2,7 +2,23 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
-        {
+       {
+          title: "Massive mining of publicly available RNA-seq data from human and mouse",
+          url: "http://www.biorxiv.org/content/early/2017/09/14/189092",
+          authors: "Lachmann A, Torre D, Keenan AB, Jagodnik KM, Lee HJ, Silverstein MC, Wang L, Ma'ayan A.",
+          citation: "bioRxiv (2017): 189092.",
+          ids: "biorxiv: 189092",
+          year: 2017
+      }, 	    
+      {
+          title: "Mechanistic systems modeling to improve understanding and prediction of cardiotoxicity caused by targeted cancer therapeutics",
+          url: "http://dx.doi.org/10.3389/fphys.2017.00651",
+          authors: "Shim JV, Chun B, van Hasselt JGC, Birtwistle MR, Saucerman JJ, Sobie EA.",
+          citation: "Frontiers in Physiology 2017 Sep;8:651.",
+          ids: "doi: 10.3389/fphys.2017.00651",
+          year: 2017
+      }, 
+      {
           title: "Developing a framework for digital objects in the Big Data to Knowledge (BD2K) Commons: Report from the Commons Framework Pilots Workshop",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/28501646",
           authors: "Jagodnik KM, Koplev S, Jenkins SL, Ohno-Machado L, Paten B, Schurer SC, Dumontier M, Verborgh R, Bui A, Ping P, McKenna NJ, Madduri R, Pillai A, Ma'ayan A.",
