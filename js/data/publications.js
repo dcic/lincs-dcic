@@ -9,7 +9,23 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           citation: "bioRxiv (2017): 189092.",
           ids: "biorxiv: 189092",
           year: 2017
-      }, 	    
+      }, 
+      {
+          title: "Abnormalities of signal transduction networks in chronic schizophrenia",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/28900113",
+          authors: "McGuire JL, Depasquale EA, Funk AJ, O'Donnovan SM, Hasselfeld K, Marwaha S, Hammond JH, Hartounian V, Meador-Woodruff JH, Meller J, McCullumsmith RE.",
+          citation: "NPJ Schizophrenia 2017 Sep 12;3(1):30.",
+          ids: "PMID: 28900113 | PMID: PMC5595970",
+          year: 2017
+      }, 
+      {
+          title: "Complex systems biology",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/28931638",
+          authors: "Ma'ayan A.",
+          citation: "Journal of the Royal Society, Interface 2017 Sep;14(134) pii: 20170391.",
+          ids: "PMID: 28931638",
+          year: 2017
+      }, 
       {
           title: "Mechanistic systems modeling to improve understanding and prediction of cardiotoxicity caused by targeted cancer therapeutics",
           url: "http://dx.doi.org/10.3389/fphys.2017.00651",

@@ -47,8 +47,8 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 1,
             image: DIR + 'dcic_summer_cp2017.jpg',
             title: 'BD2K-LINCS Summer Research Training Program',
-            caption: 'Check out video summaries of the BD2K-LINCS DCIC 2017 Summer Research Projects!',
-            link: 'summer-fellows-2017#nav'
+            caption: 'We are currently accepting applications for our 2018 Summer Research Training Program in Biomedical Big Data Science!',
+            link: '/summer-research-app#nav'
         },
         {
             index: 2,
