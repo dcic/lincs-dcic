@@ -2,6 +2,12 @@ var mod = angular.module("webinarsMod", []);
 
 mod.controller("webinarsCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.upcomingWebinars = [
+       {
+       date: '14 November 2017 | 3:00 PM ET',
+       topic: 'Integrative Gene Network Analysis Identifies Key Signatures, Intrinsic Networks and Host Factors for Influenza Virus A Infections',
+       presenters: 'Christian Forst PhD, Icahn School of Medicine at Mount Sinai',
+       synopsis: 'Influenza A virus, with the limited coding capacity of 10 to 14 proteins, requires the host cellular machinery for many aspects of its life cycle. Knowledge of these host cell requirements not only reveals molecular pathways exploited by the virus or triggered by the immune system, but also provides further targets for antiviral drug development. To uncover novel pathways and key targets of influenza infection, we assembled a large amount of data from 12 cell-based gene-expression studies of influenza infection for an integrative network analysis. We systematically identified differentially expressed genes and gene co-expression networks induced by influenza infection. We revealed the dedicator of cytokinesis 5 (DOCK5) played potentially an important role for influenza virus replication. CRISPR/Cas9 knockout of DOCK5 reduced influenza virus replication, indicating that DOCK5 is a key regulator for the viral life cycle. DOCK5’s targets determined by the DOCK5 knockout experiments strongly validated the predicted gene signatures and networks. This study systematically uncovered and validated fundamental patterns of molecular responses, intrinsic structures of gene co-regulation, and novel key targets in influenza virus infection.',
+      },	    
     ];
 
     $scope.pastWebinars = [
