@@ -2,7 +2,15 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
-       {
+      {
+          title: "Clustergrammer, a web-based heatmap visualization and analysis tool for high-dimensional biological data",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/28994825",
+          authors: "Fernandez NF, Gundersen GW, Rahman A, Grimes ML, Rikova K, Hornbeck P, Ma'ayan A.",
+          citation: "Scientific Data 2017 Oct 10;4:170151",
+          ids: "PMID: 28994825 | PMCID: PMC5634325",
+          year: 2017
+      }, 	    
+      {
           title: "Massive mining of publicly available RNA-seq data from human and mouse",
           url: "http://www.biorxiv.org/content/early/2017/09/14/189092",
           authors: "Lachmann A, Torre D, Keenan AB, Jagodnik KM, Lee HJ, Silverstein MC, Wang L, Ma'ayan A.",
@@ -23,7 +31,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/28931638",
           authors: "Ma'ayan A.",
           citation: "Journal of the Royal Society, Interface 2017 Sep;14(134) pii: 20170391.",
-          ids: "PMID: 28931638",
+          ids: "PMID: 28931638 | PMCID: PMC5636275",
           year: 2017
       }, 
       {
@@ -31,7 +39,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "http://dx.doi.org/10.3389/fphys.2017.00651",
           authors: "Shim JV, Chun B, van Hasselt JGC, Birtwistle MR, Saucerman JJ, Sobie EA.",
           citation: "Frontiers in Physiology 2017 Sep;8:651.",
-          ids: "doi: 10.3389/fphys.2017.00651",
+          ids: "PMID: 28951721 | PMCID: PMC5599787",
           year: 2017
       }, 
       {
