@@ -3,6 +3,30 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
       {
+          title: "Transcriptomic analysis uncovers novel synergistic mechanisms in combination therapy for lupus nephritis",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29102373",
+          authors: "Fu J, Wang Z, Lee K, Wei C, Liu Z, Zhang M, Zhou M, Cai M, Zhang W, Chuang PY, Ma'ayan A, He JC, Liu Z.",
+          citation: "Kidney International 2017 Nov 1 pii: S0085-2538(17)30671-3.",
+          ids: "PMID: 29102373",
+          year: 2017
+      },
+      {
+          title: "Common and cell-type specific responses to anti-cancer drugs revealed by high throughput transcript profiling",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29084964",
+          authors: "Niepel M, Hafner M, Duan Q, Wang Z, Paull EO, Chung M, Lu X, Stuart JM, Golub TR, Subramanian A, Ma'ayan A, Sorger PK.",
+          citation: "Nature Communications 2017 Oct 30;8(1):1186.",
+          ids: "PMID: 29084964 | PMCID: PMC5662764",
+          year: 2017
+      }, 
+       {
+          title: "GRcalculator: an online tool for calculating and mining dose-response data",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29065900",
+          authors: "Clark NA, Hafner M, Kouril M, Williams EH, Muhlich JL, Pilarczyk M, Niepel M, Sorger PK, Medvedovic M.",
+          citation: "BMC Cancer 2017 Oct 24;17(1):698.",
+          ids: "PMID: 29065900 | PMCID: PMC5655815",
+          year: 2017
+      }, 
+      {
           title: "Clustergrammer, a web-based heatmap visualization and analysis tool for high-dimensional biological data",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/28994825",
           authors: "Fernandez NF, Gundersen GW, Rahman A, Grimes ML, Rikova K, Hornbeck P, Ma'ayan A.",

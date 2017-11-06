@@ -11,6 +11,15 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
     };
 
 	$scope.stories = formatStories([
+	  {
+            title: "Students Harness Big Data to Help Solve Medical Challenges",
+            source: "ISMMS Fall 2017 Dean's Report",
+            url: "http://labs.icahn.mssm.edu/maayanlab/wp-content/uploads/sites/75/2014/10/Mt-Sinai_112831_Chair-Report.pdf",
+            target: "_blank",
+            date: "10/31/2017",
+            mainText: "BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science",
+            image: DIR + "summer_17_nyc.jpg"
+          },
           {
             title: "The FAIR Data-Sharing Movement: BD2K Centers Make Headway",
             source: "Biomedical Computation Review",
