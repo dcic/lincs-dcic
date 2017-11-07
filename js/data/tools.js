@@ -53,7 +53,43 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             docsUrl: "http://eh3.uc.edu/pilincs/#/api",
             shortDesc: "Interface to panoramaweb.org"
         },
-	      {
+	{
+            title: "LINCS Joint Project-Breast Cancer Network Browser (LJP-BCNB)",
+            description: "LJP-BCNB visualizes thousands of signatures from six breast cancer cell lines treated with ~100 single molecule perturbations, mostly kinase inhibitors.",
+            url: "http://amp.pharm.mssm.edu/LJP/",
+            target: "_blank",
+            image: DIR + "ljp.png",
+            docsUrl: "",
+            shortDesc: "LINCS Joint Project Network Enrichment Tool"
+        },
+	{
+            title: "GRcalculator",
+            description: "Interactive website for calculation, analysis, and visualization of dose-response data using the GR approach.",
+            url: "http://www.grcalculator.org/grtutorial/Home.html",
+            target: "_blank",
+            image: DIR + "GR.png",
+            docsUrl: "",
+            shortDesc: "Tool for Calculating and Mining Dose-Response Data"
+        },
+	{
+            title: "SEP L1000",
+            description: "SEP L1000 is a web portal to share predicted ADRs.",
+            url: "http://maayanlab.net/SEP-L1000/",
+            target: "_blank",
+            image: DIR + "sep.png",
+            docsUrl: "",
+            shortDesc: "Side Effect Prediction Based on L1000 Data"
+        },
+	{
+            title: "Slicr",
+            description: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
+            url: "http://amp.pharm.mssm.edu/Slicr",
+            target: "_blank",
+            image: DIR + "slicr2.png",
+            docsUrl: "",
+            shortDesc: "LINCS L1000 Slicr [GSE70138 data only]"
+        },
+	{
             title: "Harmonizome",
             description: "Built on top of information about genes and proteins from 114 datasets, the Harmonizome is a knowledge engine for a diverse set of integrated resources.",
             url: "http://amp.pharm.mssm.edu/Harmonizome",
@@ -71,6 +107,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             docsUrl: "http://amp.pharm.mssm.edu/Enrichr/help#api",
             shortDesc: "Search Engine for Gene Lists and Signatures"
         },
+	{
+            title: "ARCHS4",
+            description: "A web resource that makes the majority of previously published RNA-seq data from human and mouse freely available at the gene count level.",
+            url: "http://amp.pharm.mssm.edu/archs4",
+            target: "_blank",
+            image: DIR + "archs4_icon_720.png",
+            shortDesc: "All RNA-seq and CHIP-seq Signature Search Space"
+        },
         {
             title: "Gen3va",
             description: "Aggregates and analyzes gene expression signatures extracted from GEO by the crowd using GEO2Enrichr.",
@@ -80,7 +124,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             docsUrl: "http://amp.pharm.mssm.edu/gen3va/documentation#api",
             shortDesc: "Gene Expression and Enrichment Vector Analyzer"
         },
-	      {
+	{
             title: "CREEDS",
             description: "Collections of processed gene, drug and disease signatures from GEO.",
             url: "http://amp.pharm.mssm.edu/CREEDS/",
@@ -90,38 +134,12 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Crowd Extracted Expression of Differential Signatures"
         },
         {
-            title: "ARCHS4",
-            description: "A browser extension that adds content to the landing pages of RNA-seq datasets available on the Gene Expression Omnibus (GEO).",
-            url: "https://chrome.google.com/webstore/detail/archs4/ognafeffndmmiliegaamoockceneedea",
-            target: "_blank",
-            image: DIR + "archs4_icon_720.png",
-            shortDesc: "All RNA-seq and CHIP-Seq Signature Search Space"
-        },
-        {
             title: "Datasets2Tools",
             description: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
             url: "https://chrome.google.com/webstore/search/datasets2tools",
             target: "_blank",
             image: DIR + "d2t_icon_720.png",
             shortDesc: "Enriching DataMed with Canned Analyses"
-        },
-        {
-            title: "SEP L1000",
-            description: "SEP L1000 is a web portal to share predicted ADRs.",
-            url: "http://maayanlab.net/SEP-L1000/",
-            target: "_blank",
-            image: DIR + "sep.png",
-            docsUrl: "",
-            shortDesc: "Side Effect Prediction Based on L1000 Data"
-        },
-        {
-            title: "Slicr",
-            description: "Slicr is a metadata search engine that searches for LINCS L1000 gene expression profiles and signatures matching user's input parameters.",
-            url: "http://amp.pharm.mssm.edu/Slicr",
-            target: "_blank",
-            image: DIR + "slicr2.png",
-            docsUrl: "",
-            shortDesc: "LINCS L1000 Slicr [GSE70138 data only]"
         },
         {
             title: "GEO2Enrichr",
