@@ -54,7 +54,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Interface to panoramaweb.org"
         },
 	{
-            title: "LINCS Joint Project-Breast Cancer Network Browser (LJP-BCNB)",
+            title: "LINCS Joint Project - Breast Cancer Network Browser",
             description: "LJP-BCNB visualizes thousands of signatures from six breast cancer cell lines treated with ~100 single molecule perturbations, mostly kinase inhibitors.",
             url: "http://amp.pharm.mssm.edu/LJP/",
             target: "_blank",

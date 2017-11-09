@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
       {
+          title: "Predicting age by mining electronic medical records with deep learning characterizes differences between chronological and physiological age.",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29113935",
+          authors: "Wang Z, Li L, Glicksberg BS, Israel A, Dudley JT, Ma'ayan A.",
+          citation: "Journal of Biomedical Informatics 2017 Nov 4. pii: S1532-0464(17)30240-X.",
+          ids: "PMID: 29113935",
+          year: 2017
+      },
+      {
           title: "Transcriptomic analysis uncovers novel synergistic mechanisms in combination therapy for lupus nephritis",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29102373",
           authors: "Fu J, Wang Z, Lee K, Wei C, Liu Z, Zhang M, Zhou M, Cai M, Zhang W, Chuang PY, Ma'ayan A, He JC, Liu Z.",
