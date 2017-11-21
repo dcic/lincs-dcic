@@ -2,8 +2,16 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
+       {
+          title: "Data Portal for the Library of Integrated Network-based Cellular Signatures (LINCS) program: integrated access to diverse large-scale cellular perturbation response data",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29140462",
+          authors: "Koleti A, Terryn R, Stathias V, Chung C, Cooper DJ, Turner JP, Vidovic D, Forlin M, Kelley TT, D'Urso A, Allen BK, Torre D, Jagodnik KM, Wang L, Jenkins SL, Mader C, Niu W, Fazel M, Mahi N, Pilarczyk M, Clark N, Shamsaei B, Meller J, Vasiliauskas J, Reichard J, Medvedovic M, Ma'ayan A, Pillai A, Schurer SC.",
+          citation: "Nucleic Acids Research 2017 Nov 13.",
+          ids: "PMID: 29140462",
+          year: 2017
+      },
       {
-          title: "Predicting age by mining electronic medical records with deep learning characterizes differences between chronological and physiological age.",
+          title: "Predicting age by mining electronic medical records with deep learning characterizes differences between chronological and physiological age",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29113935",
           authors: "Wang Z, Li L, Glicksberg BS, Israel A, Dudley JT, Ma'ayan A.",
           citation: "Journal of Biomedical Informatics 2017 Nov 4. pii: S1532-0464(17)30240-X.",
