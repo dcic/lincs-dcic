@@ -2,6 +2,22 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
+	 {
+          title: "Cell-specific prediction and application of drug-induced gene expression profiles",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29218867",
+          authors: "Hodos R, Zhang P, Lee HC, Duan Q, Wang Z, Clark NR, Ma'ayan A, Wang F, Kidd B, Hu J, Sontag D, Dudley J.",
+          citation: "Pacific Symposium on  Biocomputing 2018;23:32-43.",
+          ids: "PMID: 29218867",
+          year: 2018
+      },
+        {
+          title: "The Library of Integrated Network-Based Cellular Signatures NIH program: System-level cataloging of human cells response to perturbations",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29199020",
+          authors: "Keenan AB, Jenkins SL, Jagodnik KM, Koplev S, He E, Torre D, Wang Z, Dohlman AB, Silverstein MC, Lachmann A, Kuleshov MV, Ma'ayan A, Stathias V, Terryn R, Cooper D, Forlin M, Koleti A, Vidovic D, Chung C, Schurer SC, Vasiliauskas J, Pilarczyk M, Shamsaei B, Fazel M, Ren Y, Niu W, Clark NA, White S, Mahi N, Zhang L, Kouril M, Reichard JF, Sivaganesan S, Medvedovic M, Meller J, et al.",
+          citation: "Cell Systems 2017 Nov 24. pii: S2405-4712(17)30490-8.",
+          ids: "PMID: 29199020",
+          year: 2017
+      },
        {
           title: "Data Portal for the Library of Integrated Network-based Cellular Signatures (LINCS) program: integrated access to diverse large-scale cellular perturbation response data",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29140462",
