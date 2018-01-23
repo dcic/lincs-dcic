@@ -83,10 +83,10 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "maxim.kuleshov {at} mssm.edu"
                 },
                 {
-                    firstName: "Patrycja",
-                    lastName: "Krawczuk",
+                    firstName: "Megan",
+                    lastName: "Wojciechowicz",
                     affiliation: ISMMS,
-                    email: "patrycja.krawczuk {at} mssm.edu"
+                    email: "megan.wojciechowicz {at} mssm.edu"
                 },
 		            {
                     firstName: "Alex",

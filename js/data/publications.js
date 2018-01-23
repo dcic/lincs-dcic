@@ -2,11 +2,27 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
+	  {
+          title: "Integration of pan-cancer transcriptomics with RPPA proteomics reveals mechanisms of epithelial-mesenchymal transition",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29293502",
+          authors: "Koplev S, Lin K, Dohlman AB, Ma'ayan A.",
+          citation: "PLoS Computational Biology 2018 Jan 2;14(1):e1005911.",
+          ids: "PMID: 29293502",
+          year: 2018
+      }, 
+	  {
+          title: "Reproducible Bioconductor workflows using browser-based interactive notebooks and containers",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29092073",
+          authors: "Almugbel R, Hung LH, Hu J, Almutairy A, Ortogero N, Tamta Y, Yeung KY.",
+          citation: "Journal of the American Medical Informatics Assocation 2018 Jan 1;25(1):4-12.",
+          ids: "PMID: 29092073",
+          year: 2018
+      },      
 	 {
           title: "Cell-specific prediction and application of drug-induced gene expression profiles",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29218867",
           authors: "Hodos R, Zhang P, Lee HC, Duan Q, Wang Z, Clark NR, Ma'ayan A, Wang F, Kidd B, Hu J, Sontag D, Dudley J.",
-          citation: "Pacific Symposium on  Biocomputing 2018;23:32-43.",
+          citation: "Pacific Symposium on Biocomputing 2018;23:32-43.",
           ids: "PMID: 29218867",
           year: 2018
       },
