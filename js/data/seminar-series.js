@@ -3,6 +3,14 @@ var mod = angular.module("seminarSeriesMod", []);
 mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.seminars = [
 	 {
+            date: 'December 14, 2017',
+            time: '11:00 a.m.',
+            location: 'Hess Center for Science and Medicine Building, 2nd Floor, Seminar Room B, Icahn School of Medicine at Mount Sinai',
+            speakerName: $sce.trustAsHtml('<a href="https://medicine.osu.edu/bmi/people/lang_li/Pages/index.aspx" target="_blank">Lang Li, PhD</a>'),
+            speakerTitle: 'Professor and Chair, Department of Biomedical Informatics, The Ohio State University, College of Medicine',
+            title: $sce.trustAsHtml('Translational Drug Interaction Research')
+        },   
+	 {
             date: 'November 16, 2017',
             time: '11:00 a.m.',
             location: 'Hess Center for Science and Medicine Building, 2nd Floor, Seminar Room B, Icahn School of Medicine at Mount Sinai',
