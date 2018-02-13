@@ -63,6 +63,16 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "LINCS Joint Project Network Enrichment Tool"
         },
 	{
+            title: "L1000FWD",
+            description: "L1000FWD provides interactive visualization of over 16,000 drug and small-molecule induced gene expression signatures.",
+            url: "http://amp.pharm.mssm.edu/L1000FWD/",
+            target: "_blank",
+            image: DIR + "L1000FWD_logo.png",
+            docsUrl: "",
+            shortDesc: "L1000 Fireworks Display"
+        },
+
+	{
             title: "GRcalculator",
             description: "Interactive website for calculation, analysis, and visualization of dose-response data using the GR approach.",
             url: "http://www.grcalculator.org/grtutorial/Home.html",

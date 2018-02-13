@@ -2,6 +2,14 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
+	 {
+          title: "L1000FWD: Fireworks visualization of drug-induced transcriptomic signatures",
+          url: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty060/4840732",
+          authors: "Wang Z, Lachmann A, Keenan AB, Ma'ayan A.",
+          citation: "Bioinformatics 2018 bty060.",
+          ids: "PMID: 29420694",
+          year: 2018
+         }, 
 	  {
           title: "Integration of pan-cancer transcriptomics with RPPA proteomics reveals mechanisms of epithelial-mesenchymal transition",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29293502",
@@ -9,7 +17,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           citation: "PLoS Computational Biology 2018 Jan 2;14(1):e1005911.",
           ids: "PMID: 29293502",
           year: 2018
-      }, 
+          }, 
 	  {
           title: "Reproducible Bioconductor workflows using browser-based interactive notebooks and containers",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29092073",
@@ -30,9 +38,9 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           title: "The Library of Integrated Network-Based Cellular Signatures NIH program: System-level cataloging of human cells response to perturbations",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29199020",
           authors: "Keenan AB, Jenkins SL, Jagodnik KM, Koplev S, He E, Torre D, Wang Z, Dohlman AB, Silverstein MC, Lachmann A, Kuleshov MV, Ma'ayan A, Stathias V, Terryn R, Cooper D, Forlin M, Koleti A, Vidovic D, Chung C, Schurer SC, Vasiliauskas J, Pilarczyk M, Shamsaei B, Fazel M, Ren Y, Niu W, Clark NA, White S, Mahi N, Zhang L, Kouril M, Reichard JF, Sivaganesan S, Medvedovic M, Meller J, et al.",
-          citation: "Cell Systems 2017 Nov 24. pii: S2405-4712(17)30490-8.",
-          ids: "PMID: 29199020",
-          year: 2017
+          citation: "Cell Systems Jan 24;6(1):13-24.",
+          ids: "PMID: 29199020 | PMCID: PMC5799026",
+          year: 2018
       },
        {
           title: "Data Portal for the Library of Integrated Network-based Cellular Signatures (LINCS) program: integrated access to diverse large-scale cellular perturbation response data",
