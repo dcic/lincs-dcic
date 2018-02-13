@@ -35,35 +35,43 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         //     title: 'Summer Research Program',
         //     caption: 'We are currently accepting applications for our 2017 Summer Research Training Program in Biomedical Big Data Science!',
         //     link: /summer-research-app#nav'
-        // }
+        // },
+	// {
+        //    index: 5,
+        //    image: DIR + 'dcic_dss_2017.png',
+        //    title: 'BD2K-LINCS Data Science Symposium (DSS 2018)',
+        //    caption: 'The BD2K-LINCS DCIC hosted the third annual BD2K-LINCS Data Science Symposium on Jan 31 - Feb 2, 2018.',
+        //    link: '/2018-data-science-symposium'
+        //  }
+
         {
             index: 0,
-            image: DIR + 'dcic_dss_2017.png',
-            title: 'BD2K-LINCS Data Science Symposium (DSS 2018) | Jan 31 - Feb 2, 2018',
-            caption: 'Register now for DSS 2018 hosted by the BD2K-LINCS DCIC and the University of Miami!',
-            link: '/2018-data-science-symposium'
+            image: DIR + 'L1000_fireworks.jpg',
+            title: 'L1000 Fireworks Display (L1000FWD)',
+            caption: 'Large-scale Visualization of Drug-induced Transcriptomic Signatures',
+            link: 'http://amp.pharm.mssm.edu/L1000FWD/',
+            target: '_blank'
         },
 	{
             index: 1,
+            image: DIR + 'ldp.jpg',
+            title: 'LINCS Data Portal',
+            caption: 'Integrated Access to Diverse Large-scale Cellular Perturbation Response Data',
+            link: 'http://lincsportal.ccs.miami.edu/'
+        },
+	 {
+            index: 2,
+            image: DIR + 'ljp_network.jpg',
+            title: 'LINCS Joint Project - Breast Cancer Network Browser ',
+            caption: 'LINCS Joint Project Network Enrichment Tool',
+            link: 'http://amp.pharm.mssm.edu/LJP/'
+        },
+	{
+            index: 3,
             image: DIR + 'dcic_summer_cp2017.jpg',
             title: 'BD2K-LINCS Summer Research Training Program',
-            caption: 'We are currently accepting applications for our 2018 Summer Research Training Program in Biomedical Big Data Science!',
+            caption: 'The BD2K-LINCS 2018 Summer Research Training Program in Biomedical Big Data Science begins June 4!',
             link: '/summer-research-app#nav'
-        },
-        {
-            index: 2,
-            image: DIR + 'bubble-graph.png',
-            title: 'Crowdsourcing for Scientific Discovery',
-            caption: 'BD2K-LINCS DCIC researchers find novel ways to analyze data for drug and target discovery',
-            link: 'https://www.ncbi.nlm.nih.gov/pubmed/27667448',
-            target: '_blank'
-        },
-        {
-            index: 3,
-            image: DIR + 'zichen_poster.png',
-            title: 'BD2K All Hands Meeting and Open Data Science Symposium',
-            caption: 'Summary of BD2K-LINCS DCIC activities at this annual BD2K grantee meeting.',
-            link: '/2016-bd2k-meeting'
         },
         {
             index: 4,
@@ -74,13 +82,6 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         },
         {
             index: 5,
-            image: DIR + 'clustergrammer_skin_cancer.png',
-            title: 'LINCS Tools for Integrative Data Access and Visualization',
-            caption: 'BD2K-LINCS DCIC develops web-based tools to enable researchers to be more productive with LINCS data.',
-            link: '/getting-started/direct-access-tools'
-        },
-        {
-            index: 6,
             image: DIR + 'outreach.png',
             title: 'Community Training and Outreach',
             caption: 'BD2K-LINCS DCIC engages, informs and educates key biomedical research communities about LINCS resources.',
