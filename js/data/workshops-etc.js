@@ -31,6 +31,11 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.symposia = [
+	 {
+            title: 'BD2K-LINCS Data Science Symposium 2018 - Studying Systems Biology by Cellular Perturbations',
+            description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) hosted the third annual <a href="/2018-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2018)</a>. The general theme of the symposium was was the study of complex biological systems using large-scale cellular perturbation profiling and applications in drug development, translational biomedicine and environmental health.'),
+            details: 'January 31 - February 2, 2018, Miami, FL'
+        },
         {
             title: 'BD2K-LINCS Data Science Symposium 2017 - Systems Biology of Cellular Perturbations',
             description: $sce.trustAsHtml('The BD2K-LINCS Data Coordination and Integration Center (DCIC) hosted the second annual <a href="/2017-data-science-symposium" target="_blank">BD2K-LINCS Data Science Symposium (DSS 2017)</a>. The general theme of the symposium was the systems biology of perturbation signatures and applications in drug development, translational biomedicine and environmental health.'),

@@ -13,8 +13,9 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         Google_LINK = "https://www.google.com/+BD2KLINCSDCIC",
         Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
         FLYER_LINK = "static/dcic_summer17_oct25v.pdf",
-        ARTICLE_LINK = "http://www.asbmb.org/asbmbtoday/201606/Coordinates/"
-        DATAMINING_LINK = "http://events.mountsinaihealth.org/event/bd2k-lincs_data_mining_and_network_analysis_course"
+        ARTICLE_LINK = "http://www.asbmb.org/asbmbtoday/201606/Coordinates/",
+        PROGRAMMING_LINK = "https://events.mountsinaihealth.org/event/programming_for_big_data_biomedicine_course",
+	DSS_LINK = "/2018-data-science-symposium",
         DIR = "/images/general/";
 
     $scope.introText = $sce.trustAsHtml("The BD2K-LINCS DCIC engages the research community by delivering high quality educational materials through the web as well as through mentoring, seminars and symposia. Also, Center investigators actively engage in the education of a new generation of Big Data Scientists by developing a graduate-level Big Data Science MOOC that is delivered to graduate students in Big Data Biostatistics and other Biomedical Informatics graduate programs.");
@@ -25,34 +26,27 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students." +
                 "<ul>" +
                     "<li>" +
-                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
+                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description</a>" +
                     "</li>" +
                      "<li>" +
-                        "<a href='" + SUMMER_FELLOWS_LINK_2017 + "'>2017 Summer Fellows and Research Projects</a>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK_2017 + "'>Past Summer Fellows and Research Projects</a>" +
                     "</li>" +
-                      "<li>" +
-                        "<a href='" + SUMMER_FELLOWS_LINK_2016 + "'>2016 Summer Fellows and Research Projects</a>" +
-                    "</li>" +
-                     "<li>" +
-                        "<a href='" + SUMMER_FELLOWS_LINK_2015 + "'>2015 Summer Fellows and Research Projects</a>" +
-                    "</li>" +
-
-                                   "</ul>"),
+                   "</ul>"),
             image: DIR + "esther.png"
         },
         {
             title: "Big Data Courses",
-            text: $sce.trustAsHtml("The DCIC investigators are currently offering two MOOCs on Coursera and a graduate-level big data course at the Icahn School of Medicine at Mount Sinai:" +
+            text: $sce.trustAsHtml("The DCIC investigators are currently offering two MOOCs on Coursera and a graduate-level programming course at the Icahn School of Medicine at Mount Sinai." +
                 "<ul>" +
                     "<li>" +
-                    "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC MOOC on Coursera</a>" +
+                    "<a href='" + LINCS_MOOC_LINK + "' target='blank'>Big Data Science with the BD2K-LINCS DCIC MOOC</a>" +
                     "</li>" +
                     "<li>" +
-                        "<a href='" + SYSBIO_MOOC_LINK + "' target='blank'>Network Analysis in Systems Biology MOOC on Coursera</a>" +
+                        "<a href='" + SYSBIO_MOOC_LINK + "' target='blank'>Network Analysis in Systems Biology MOOC</a>" +
                     "</li>" +
                      "</li>" +
                     "<li>" +
-                        "<a href='" + DATAMINING_LINK + "' target='blank'>BD2K-LINCS: Data Mining and Network Analysis Course (ISMMS Course)</a>" +
+                        "<a href='" + PROGRAMMING_LINK + "' target='blank'>Programming for Big Data Biomedicine Course</a>" +
                     "</li>" +
 
                 "</ul>"),
@@ -60,15 +54,12 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: "Webinars",
-            text: $sce.trustAsHtml("These webinars provide a forum for data scientists within and outside of the LINCS project to present their work on problems related to LINCS data analysis and integration:" +
+            text: $sce.trustAsHtml("These webinars provide a forum for data scientists within and outside of the LINCS project to present their work on problems related to LINCS data analysis and integration." +
                 "<ul>" +
                     "<li>" +
                         "<a href='/webinars'>LINCS Data Science Research Webinars</a>" +
                     "</li>" +
-		    "<li>" +
-			"<a href='" + DCIC_Youtube_LINK + "' target='blank'>BD2K-LINCS DCIC YouTube Channel</a>" +
-		    "</li>" +
-                "</ul>"),
+		 "</ul>"),
             image: DIR + "webinars.png"
         },
         {
@@ -90,21 +81,15 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "crowd.png"
         },
         {
-            title: "Community Outreach | Social Media",
+            title: "Community Outreach",
             text: $sce.trustAsHtml("Center investigators engage the research community through workshops, seminars and symposia to expose them to LINCS data and resources." +
                 "<ul>" +
                     "<li>" +
-                        "<a href='/workshops-seminars-symposia#nav'>Workshops, Seminars and Symposia</a>" +
+                        "<a href='news'>Upcoming Events</a>" +
                     "</li>" +
 		    "<li>" +
-			"<a href='" + Google_LINK + "' target='blank'>google.com/+BD2KLINCSDCIC</a>" +
-		    "</li>" +
-		    "<li>" +
-			"<a href='" + DCIC_Youtube_LINK + "' target='blank'>BD2K-LINCS DCIC YouTube Channel</a>" +
-		    "</li>" +
-		     "<li>" +
-			"<a href='" + Twitter_LINK + "' target='blank'>@BD2KLINCSDCIC on Twitter</a>" +
-		    "</li>" +
+                         "<a href='" + DCIC_Youtube_LINK + "' target='blank'>BD2K-LINCS DCIC YouTube Channel</a>" +
+                    "</li>" +
 
                 "</ul>"),
             image: DIR + "mjones.png"

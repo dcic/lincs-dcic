@@ -52,42 +52,42 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             link: 'http://amp.pharm.mssm.edu/L1000FWD/',
             target: '_blank'
         },
-	{
+	 {
             index: 1,
+            image: DIR + 'outreach.jpg',
+            title: 'BD2K-LINCS Data Science Symposium',
+            caption: 'BD2K-LINCS DCIC engages, informs and educates key biomedical research communities about LINCS resources.',
+            link: '/2018-data-science-symposium'
+        },    
+	{
+            index: 2,
             image: DIR + 'ldp.jpg',
             title: 'LINCS Data Portal',
             caption: 'Integrated Access to Diverse Large-scale Cellular Perturbation Response Data',
             link: 'http://lincsportal.ccs.miami.edu/'
         },
 	 {
-            index: 2,
+            index: 3,
             image: DIR + 'ljp_network.jpg',
             title: 'LINCS Joint Project - Breast Cancer Network Browser ',
             caption: 'LINCS Joint Project Network Enrichment Tool',
             link: 'http://amp.pharm.mssm.edu/LJP/'
         },
 	{
-            index: 3,
+            index: 4,
             image: DIR + 'dcic_summer_cp2017.jpg',
             title: 'BD2K-LINCS Summer Research Training Program',
             caption: 'The BD2K-LINCS 2018 Summer Research Training Program in Biomedical Big Data Science begins June 4!',
             link: '/summer-research-app#nav'
         },
         {
-            index: 4,
-            image: DIR + 'course_banner.png',
+            index: 5,
+            image: DIR + 'course_banner.jpg',
             title: 'Big Data Science Course',
             caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
             link: 'https://www.coursera.org/learn/bd2k-lincs'
         },
-        {
-            index: 5,
-            image: DIR + 'outreach.png',
-            title: 'Community Training and Outreach',
-            caption: 'BD2K-LINCS DCIC engages, informs and educates key biomedical research communities about LINCS resources.',
-            link: '/training'
-        },
-    ];
+      ];
 
     $(function() {
        $('#carousel').carousel( {

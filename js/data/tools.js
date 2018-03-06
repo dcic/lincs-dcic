@@ -68,10 +68,9 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://amp.pharm.mssm.edu/L1000FWD/",
             target: "_blank",
             image: DIR + "L1000FWD_logo.png",
-            docsUrl: "",
+            docsUrl: "http://amp.pharm.mssm.edu/l1000fwd/api_page",
             shortDesc: "L1000 Fireworks Display"
         },
-
 	{
             title: "GRcalculator",
             description: "Interactive website for calculation, analysis, and visualization of dose-response data using the GR approach.",
@@ -145,11 +144,12 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: "Datasets2Tools",
-            description: "Datasets2Tools provides links from dataset landing pages to other pages that provide web-based interactive analysis of each dataset.",
-            url: "https://chrome.google.com/webstore/search/datasets2tools",
+            description: "A repository indexing 31,473 canned bioinformatics analyses applied to 6,431 datasets.",
+            url: "http://amp.pharm.mssm.edu/datasets2tools",
             target: "_blank",
             image: DIR + "d2t_icon_720.png",
-            shortDesc: "Enriching DataMed with Canned Analyses"
+	    docsUrl: "http://amp.pharm.mssm.edu/datasets2tools/api",
+            shortDesc: "Repository and Search Engine for Bioinformatics Datasets, Tools and Canned Analyses"
         },
         {
             title: "GEO2Enrichr",
