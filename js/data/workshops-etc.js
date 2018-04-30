@@ -4,6 +4,11 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.workshops = [
 	{
+            title: 'Visualizing High-Dimensional Biological Data with Clustergrammer-Widget in Jupyter Notebooks',
+            description: $sce.trustAsHtml('Session at <a href="https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/detail/68058 target="_blank">jupytercon</a> on  how <a href="https://www.ncbi.nlm.nih.gov/pubmed/28994825 target="_blank">Clustergrammer</a>-Widget enables users to easily visualize high-dimensional data (e.g. a Pandas DataFrame) within a Jupyter notebook as an interactive hierarchically clustered heatmap.'),
+            details: 'August 23, 2018, New York, NY'
+        },
+	{
             title: 'Clustergrammer: Interactive Heatmap Visualizations Built using D3.js',
             description: $sce.trustAsHtml('Nicolas Fernandez PhD, a postdoc in the Ma\'ayan Laboratory held this workshop session at the <a href="http://dataviz.camp/" target="_blank">Data Visualization Camp</a>.'),
             details: 'July 9, 2016, New York, NY'
