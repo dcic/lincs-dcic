@@ -3,16 +3,24 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	 {
+          title: "Massive mining of publicly available RNA-seq data from human and mouse",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29636450",
+          authors: "Lachmann A, Torre D, Keenan AB, Jagodnik KM, Lee HJ, Wang L, Silverstein MC, Ma'ayan A.",
+          citation: "Nature Communications 2018 Apr 10;9(1):1366.",
+          ids: "PMID: 29636450 | PMCID: PMC5893633",
+          year: 2018
+         }, 
+	 {
           title: "Datasets2Tools, repository and search engine for bioinformatics datasets, tools and canned analyses",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29485625",
           authors: "Torre D, Krawczuk P, Jagodnik KM, Lachmann A, Wang Z, Wang L, Kuleshov MV, Ma'ayan A.",
           citation: "Scientific Data 2018 Feb 27;5:180023.",
-          ids: "PMID: 29485625",
+          ids: "PMID: 29485625 | PMCID: PMC5827688",
           year: 2018
          }, 
 	 {
           title: "L1000FWD: Fireworks visualization of drug-induced transcriptomic signatures",
-          url: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty060/4840732",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29420694",
           authors: "Wang Z, Lachmann A, Keenan AB, Ma'ayan A.",
           citation: "Bioinformatics 2018 Feb 6 bty060.",
           ids: "PMID: 29420694",
@@ -50,7 +58,31 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           ids: "PMID: 29199020 | PMCID: PMC5799026",
           year: 2018
       },
-       {
+      {
+          title: "Ontological representation, integration, and analysis of LINCS cell line cells and their cellular responses",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29322930",
+          authors: "Ong E, Xie J, Ni Z, Liu Q, Sarntivijai S, Lin Y, Cooper D, Terryn R, Stathias V, Chung C, Schürer S, He Y.",
+          citation: "BMC Bioinformatics 2017 Dec 21;18(Suppl 17):556.",
+          ids: "PMID: 29322930 | PMC5763302",
+          year: 2017
+      },
+      {
+          title: "Cells in experimental life sciences - challenges and solution to the rapid evolution of knowledge",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29322916",
+          authors: "Sarntivijai S, Diehl AD, He Y.",
+          citation: "BMC Bioinformatics 2017 Dec 21;18(Suppl 17):560.",
+          ids: "PMID: 29322916 | PMCID: PMC5763506",
+          year: 2017
+      },
+      {
+          title: "Comparison, alignment, and synchronization of cell line information between CLO and EFO",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29322915",
+          authors: "Ong E, Sarntivijai S, Jupp S, Parkinson H, He Y.",
+          citation: "BMC Bioinformatics 2017 Dec 21;18(Suppl 17):557.",
+          ids: "PMID: 29322915 | PMCID: PMC5763470",
+          year: 2017
+      },
+      {
           title: "Data Portal for the Library of Integrated Network-based Cellular Signatures (LINCS) program: integrated access to diverse large-scale cellular perturbation response data",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29140462",
           authors: "Koleti A, Terryn R, Stathias V, Chung C, Cooper DJ, Turner JP, Vidovic D, Forlin M, Kelley TT, D'Urso A, Allen BK, Torre D, Jagodnik KM, Wang L, Jenkins SL, Mader C, Niu W, Fazel M, Mahi N, Pilarczyk M, Clark N, Shamsaei B, Meller J, Vasiliauskas J, Reichard J, Medvedovic M, Ma'ayan A, Pillai A, Schurer SC.",
