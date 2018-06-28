@@ -2,6 +2,30 @@ var mod = angular.module("publicationsMod", []);
 
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
+	  {
+          title: "Sustainable data and metadata management at the BD2K-LINCS Data Coordination and Integration Center",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29917015",
+          authors: "Stathias V, Koleti A, Vidovic D, Cooper DJ, Jagodnik KM, Terryn R, Forlin M, Chung C, Torre D, Ayad N, Medvedovic M, Ma'ayan A, Pillai A, Schurer SC.",
+          citation: "Scientific Data 2018 Jun 19;5:180117.",
+          ids: "PMID: 29917015",
+          year: 2018
+         }, 
+	 {
+          title: "eXpression2Kinases (X2K) Web: linking expression signatures to upstream cell signaling networks",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29800326",
+          authors: "Clarke DJB, Kuleshov MV, Schilder BM, Torre D, Duffy ME, Keenan AB, Lachmann A, Feldmann AS, Gundersen GW, Silverstein MC, Wang Z, Ma'ayan A.",
+          citation: "Nucleic Acids Research 2018 10.1093/nar/gky458.",
+          ids: "PMID: 29800326",
+          year: 2018
+         },
+	 {
+          title: "Integration of protein phosphorylation, acetylation, and methylation data sets to outline lung cancer signaling networks",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29789295",
+          authors: "Grimes M, Hall B, Foltz L, Levy T, Rikova K, Gaiser J, Cook W, Smirnova E, Wheeler T, Clark NR, Lachmann A, Zhang B, Hornbeck P, Ma'ayan A, Comb M.",
+          citation: "Science Signaling 2018 May 22;11(531) pii: eaaq1087.",
+          ids: "PMID: 29800326",
+          year: 2018
+         }, 
 	 {
           title: "Massive mining of publicly available RNA-seq data from human and mouse",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29636450",
