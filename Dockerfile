@@ -2,10 +2,12 @@ FROM php:7.0-cli
 
 RUN apt-get update && \
     apt-get install -y git && \
-    apt-get install -y nodejs && \
-    apt-get install -y npm
+    apt-get install -my wget gnupg && \
+    apt-get install curl && \
+    curl -sL https://deb.nodesource.com/setup_10.x | bash && \
+    apt-get install -y nodejs
 
-RUN ln -s /usr/bin/nodejs /usr/bin/node
+
 
 COPY . /usr/src/
 WORKDIR /usr/src/
