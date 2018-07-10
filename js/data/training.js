@@ -7,6 +7,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         SUMMER_FELLOWS_LINK_2015 = "/summer-fellows-2015#nav",
         SUMMER_FELLOWS_LINK_2016 = "/summer-fellows-2016#nav",
 	SUMMER_FELLOWS_LINK_2017 = "/summer-fellows-2017#nav",
+        SUMMER_FELLOWS_LINK_2018 = "/summer-fellows-2018#nav",		
         SUMMER_PROGRAM_DESC = "/summer-research-app#nav",
         GEO2Enrichr_LINK = "http://amp.pharm.mssm.edu/g2e/",
         DCIC_Youtube_LINK = "https://www.youtube.com/channel/UC88h_MIO1LP7Jv52VQ4qKkg",
@@ -29,7 +30,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
                         "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description</a>" +
                     "</li>" +
                      "<li>" +
-                        "<a href='" + SUMMER_FELLOWS_LINK_2017 + "'>Past Summer Fellows and Research Projects</a>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK_2018 + "'>Current Summer Fellows and Research Projects</a>" +
                     "</li>" +
                    "</ul>"),
             image: DIR + "esther.png"

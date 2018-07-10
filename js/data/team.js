@@ -68,7 +68,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     firstName: "Zichen",
                     lastName: "Wang",
                     affiliation: ISMMS,
-                    email: "zichen.wang {at} mssm.edu"
+                    email: "zichen.wang {at} icahn.mssm.edu"
                 },
                 {
                     firstName: "Sherry",
@@ -89,7 +89,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "megan.wojciechowicz {at} mssm.edu"
                 },
 		{
-                    firstName: "Alex",
+                    firstName: "Alexander",
                     lastName: "Lachmann",
                     affiliation: ISMMS,
                     email: "alexander.lachmann {at} mssm.edu"
@@ -111,6 +111,12 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     lastName: "Clarke",
                     affiliation: ISMMS,
                     email: "daniel.clarke {at} mssm.edu"
+                },
+		{
+                    firstName: "Julia",
+                    lastName: "Zhao",
+                    affiliation: ISMMS,
+                    email: "julia.zhao {at} icahn.mssm.edu"
                 },
                 {
                     firstName: "Moshe",
@@ -269,39 +275,39 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                 }
             ]
         },
-        {
-            name: "Investigators of External Data Science Research Projects",
-            members: [
-                {
-                    firstName: "Cathy",
-                    lastName: "Wu",
-                    affiliation: "University of Delaware",
-                    email: "wuc {at} udel.edu"
-                },
-                {
-                    firstName: "Mark",
-                    lastName: "Grimes",
-                    affiliation: "University of Montana",
-                    email: "Mark.Grimes {at} mso.umt.edu"
-                },
-                {
-                    firstName: "Oliver",
-                    lastName: "He",
-                    affiliation: "University of Michigan",
-                    email: "yongqunh {at} med.umich.edu"
-                },
-                {
-                    firstName: "Jeffrey",
-                    lastName: "Saucerman",
-                    affiliation: "University of Virginia",
-                    email: "jjs3g {at} virginia.edu"
-                },
-                {
-                    firstName: "Kayee",
-                    lastName: "Yeung-Rhee",
-                    affiliation: "University of Washington",
-                    email: "kayee {at} uw.edu"
-                },
+        //{
+            //name: "Investigators of External Data Science Research Projects",
+           // members: [
+               // {
+                   // firstName: "Cathy",
+                   // lastName: "Wu",
+                   // affiliation: "University of Delaware",
+                   // email: "wuc {at} udel.edu"
+               // },
+                //{
+                    //firstName: "Mark",
+                   // lastName: "Grimes",
+                    //affiliation: "University of Montana",
+                    //email: "Mark.Grimes {at} mso.umt.edu"
+                //},
+               // {
+                    //firstName: "Oliver",
+                   // lastName: "He",
+                    //affiliation: "University of Michigan",
+                   // email: "yongqunh {at} med.umich.edu"
+               // },
+               // {
+                   // firstName: "Jeffrey",
+                   // lastName: "Saucerman",
+                   // affiliation: "University of Virginia",
+                    //email: "jjs3g {at} virginia.edu"
+                //},
+                //{
+                   // firstName: "Kayee",
+                   // lastName: "Yeung-Rhee",
+                    //affiliation: "University of Washington",
+                   // email: "kayee {at} uw.edu"
+               // },
                 // {
                 //     firstName: "Kayee",
                 //     lastName: "Yeung",
@@ -320,7 +326,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                 //     affiliation: "Cell Signaling Inc.",
                 //     email: "phornbeck {at} cellsignal.com"
                 // }
-            ]
-        }
+           // ]
+       // }
     ];
 }]);
