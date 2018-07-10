@@ -46,6 +46,13 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
 
         {
             index: 0,
+            image: DIR + 'maayan_summer18.jpg',
+            title: 'BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science',
+            caption: 'Meet the 2018 BD2K-LINCS Summer Research Training Program Fellows!',
+            link: '/summer-fellows-2018#nav'
+        },
+	{
+            index: 1,
             image: DIR + 'L1000_fireworks.jpg',
             title: 'L1000 Fireworks Display (L1000FWD)',
             caption: 'Large-scale Visualization of Drug-induced Transcriptomic Signatures',
@@ -53,34 +60,27 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         },
 	 {
-            index: 1,
+            index: 2,
             image: DIR + 'outreach.jpg',
             title: 'BD2K-LINCS Data Science Symposium',
             caption: 'BD2K-LINCS DCIC engages, informs and educates key biomedical research communities about LINCS resources.',
             link: '/2018-data-science-symposium'
         },    
 	{
-            index: 2,
+            index: 3,
             image: DIR + 'ldp.jpg',
             title: 'LINCS Data Portal',
             caption: 'Integrated Access to Diverse Large-scale Cellular Perturbation Response Data',
             link: 'http://lincsportal.ccs.miami.edu/'
         },
 	 {
-            index: 3,
+            index: 4,
             image: DIR + 'ljp_network.jpg',
             title: 'LINCS Joint Project - Breast Cancer Network Browser ',
             caption: 'LINCS Joint Project Network Enrichment Tool',
             link: 'http://amp.pharm.mssm.edu/LJP/'
         },
 	{
-            index: 4,
-            image: DIR + 'dcic_summer_cp2017.jpg',
-            title: 'BD2K-LINCS Summer Research Training Program',
-            caption: 'The BD2K-LINCS 2018 Summer Research Training Program in Biomedical Big Data Science begins June 4!',
-            link: '/summer-research-app#nav'
-        },
-        {
             index: 5,
             image: DIR + 'course_banner.jpg',
             title: 'Big Data Science Course',

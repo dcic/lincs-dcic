@@ -113,7 +113,8 @@
 	<script type="text/javascript" src="js/data/seminar-series.js"></script>
 	<script type="text/javascript" src="js/data/summer-fellows-2015.js"></script>
 	<script type="text/javascript" src="js/data/summer-fellows-2016.js"></script>
-  <script type="text/javascript" src="js/data/summer-fellows-2017.js"></script>
+        <script type="text/javascript" src="js/data/summer-fellows-2017.js"></script>
+        <script type="text/javascript" src="js/data/summer-fellows-2018.js"></script>
 	<script type="text/javascript" src="js/data/training.js"></script>
 	<script type="text/javascript" src="js/data/team.js"></script>
 	<script type="text/javascript" src="js/data/tools.js"></script>
