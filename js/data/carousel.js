@@ -48,7 +48,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 0,
             image: DIR + 'maayan_summer18.jpg',
             title: 'BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science',
-            caption: 'Meet the 2018 BD2K-LINCS Summer Research Training Program Fellows!',
+            caption: 'Join us on August 9th for presentations from the 2018 BD2K-LINCS Summer Research Fellows!',
             link: '/summer-fellows-2018#nav'
         },
 	{
