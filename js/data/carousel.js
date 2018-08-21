@@ -48,8 +48,9 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 0,
             image: DIR + 'maayan_summer18.jpg',
             title: 'BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science',
-            caption: 'Join us on August 9th for presentations from the 2018 BD2K-LINCS Summer Research Fellows!',
-            link: '/summer-fellows-2018#nav'
+            caption: 'Check out this YouTube playlist featuring the project presentations of the 2018 BD2K-LINCS Summer Research Fellows!',
+            link: 'https://www.youtube.com/playlist?list=PLfq4yYrYksVjh6LcMl5MQ7x8slKWeqJvi',
+	    target: '_blank'	
         },
 	{
             index: 1,
@@ -71,7 +72,8 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             image: DIR + 'ldp.jpg',
             title: 'LINCS Data Portal',
             caption: 'Integrated Access to Diverse Large-scale Cellular Perturbation Response Data',
-            link: 'http://lincsportal.ccs.miami.edu/'
+            link: 'http://lincsportal.ccs.miami.edu/',
+	    target: '_blank'
         },
 	 {
             index: 4,
