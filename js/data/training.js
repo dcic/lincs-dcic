@@ -27,10 +27,10 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
             text: $sce.trustAsHtml("The BD2K-LINCS DCIC Summer Research Training Program in Biomedical Big Data Science is a research intensive ten-week training program for undergraduate and graduate students." +
                 "<ul>" +
                     "<li>" +
-                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description</a>" +
+                        "<a href='" + SUMMER_PROGRAM_DESC + "'>Program Description and How to Apply</a>" +
                     "</li>" +
                      "<li>" +
-                        "<a href='" + SUMMER_FELLOWS_LINK_2018 + "'>Current Summer Fellows and Research Projects</a>" +
+                        "<a href='" + SUMMER_FELLOWS_LINK_2018 + "'>2018 Summer Fellows and Research Projects</a>" +
                     "</li>" +
                    "</ul>"),
             image: DIR + "esther.png"

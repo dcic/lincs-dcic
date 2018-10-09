@@ -5,7 +5,7 @@ mod.controller("summerFellows2015Ctrl", ["$scope", "$sce", function($scope, $sce
     var SUMMER_RESEARCH_LINK = "/summer-research-app",
         DIR = "/images/summer-fellows/2015/",
         MAAYAN_LAB = "Avi Ma'ayan PhD, Icahn School of Medicine at Mount Sinai",
-        MAAYAN_LAB_LINK = "http://icahn.mssm.edu/research/labs/maayan-laboratory",
+        MAAYAN_LAB_LINK = "http://labs.icahn.mssm.edu/maayanlab/",
         CMU = "Carnegie Mellon University",
         WASHINGTON = "University of Washington",
         MIAMI = "University of Miami",

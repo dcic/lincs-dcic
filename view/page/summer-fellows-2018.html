@@ -1,12 +1,10 @@
 <div class="container">
     <div id="summer-fellows-2018" class="row category-page" ng-controller="summerFellows2018Ctrl">
-        <h2 class="col-md-12">BD2K-LINCS 2018 Summer Research Training Program</h2>
+        <h2 class="col-md-12">2018 Summer Fellows</h2>
         <div class="col-md-8">
-            <p>All of the 2018 BD2K-LINCS DCIC Summer Fellows are conducting a faculty-mentored independent research project within a research laboratory affiliated with the BD2K-LINCS Data Coordination and Integration Center. Appointments were awarded on a competitive basis.</p>
-	    <h3>Presentation Session</h3>
-	    <p>This presentation session, hosted by the <a href="http://labs.icahn.mssm.edu/maayanlab/" target="_blank">Ma'ayan Lab</a> and the <a href="https://icahn.mssm.edu/research/bioinformatics" target="_blank">Mount Sinai Center for Bioinformatics</a>, was held <strong>Thursday, August 9, 2018 at 10:00 AM Eastern Time</strong> at the Icahn School of Medicine at Mount Sinai in New York. Click <a href="static/maayanlab_session18.pdf" class="text-center" target="_blank">here</a> for the detailed agenda. This session featured presentations from the BD2K-LINCS 2018 Summer Research Fellows training in the Ma'ayan Lab.</p>
-	    <p><strong><a href="https://www.youtube.com/playlist?list=PLfq4yYrYksVjh6LcMl5MQ7x8slKWeqJvi" target="_blank">Video summaries of the BD2K-LINCS DCIC 2018 Summer Research Projects</a></strong>
-	    <div class="sections">
+            <p>All of the 2018 BD2K-LINCS DCIC Summer Fellows conducted a faculty-mentored independent research project within the Ma'ayan Laboratory at the Icahn School of Medicine at Mount Sinai. Appointments were awarded on a competitive basis.</p>
+	    <p><a href="https://www.youtube.com/playlist?list=PLfq4yYrYksVjh6LcMl5MQ7x8slKWeqJvi" target="_blank">Video summaries of the BD2K-LINCS DCIC 2018 Summer Research Projects</a></p>
+	     <div class="sections">
                 <h3>Undergraduate Fellows</h3>
                 <div ng-repeat="fellow in fellows" ng-if="!fellow.highSchooler" class="section">
                     <img ng-src="{{fellow.image}}" class="img-responsive">
@@ -17,35 +15,39 @@
                         <p>Lab: <a href="{{fellow.labLink}}" target="_blank">{{fellow.labName}}</a></p>
                     </div>
                    <div class="clear"></div>
+              </div>
+	       <h3>High School Fellow</h3>
+                <div ng-repeat="fellow in fellows" ng-if="fellow.highSchooler" class="section">
+                    <img ng-src="{{fellow.image}}" class="img-responsive">
+                    <div class="text">
+                        <h4>{{fellow.name}}</h4>
+                        <p>{{fellow.school}}</p>
+                        <p class="project"><strong>{{fellow.project}}</strong></p>
+                        <p>Lab: <a href="{{fellow.labLink}}" target="_blank">{{fellow.labName}}</a></p>
+                    </div>
+                    <div class="clear"></div>
                 </div>
             </div>
           </div>
         <div class="col-md-4">
-            <img class="img-responsive" ng-src="/images/general/team.png"/>
+            <img class="img-responsive" ng-src="/images/general/team18.png"/>
             <br>
             <ul>
 		 <li>
-                    <a href="static/maayanlab_session18.pdf" class="text-center" target="_blank">2018 Presentation Session</a>
-                </li>   
+                    <a href="static/maayan_summer19_oct4v.pdf" class="text-center" target="_blank">2019 Program Flyer</a>
+                </li>
                 <li>
                     <a href="/#/summer-research-app#nav">Program Description and How to Apply</a>
+                </li> 
+                 <li>
+                    <a href="/#/summer-fellows-2017#nav">2017 Summer Fellows</a>
                 </li>
                 <li>
-                    <a href="static/dcic_summer18_oct4v.pdf" class="text-center" target="_blank">2018 Program Flyer</a>
-                </li>
-		 <li>
-                    <a href="/#/summer-fellows-2018#nav">2018 Summer Fellows and Research Projects</a>
+                    <a href="/#/summer-fellows-2016#nav">2016 Summer Fellows</a>
                 </li>
                 <li>
-                    <a href="/#/summer-fellows-2017#nav">2017 Summer Fellows and Research Projects</a>
+                    <a href="/#/summer-fellows-2015#nav">2015 Summer Fellows</a>
                 </li>
-                <li>
-                    <a href="/#/summer-fellows-2016#nav">2016 Summer Fellows and Research Projects</a>
-                </li>
-                <li>
-                    <a href="/#/summer-fellows-2015#nav">2015 Summer Fellows and Research Projects</a>
-                </li>
-
             </ul>
         </div>
     </div>
