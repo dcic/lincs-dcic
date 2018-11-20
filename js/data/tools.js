@@ -72,6 +72,14 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "L1000 Fireworks Display"
         },
 	{
+            title: "DGB",
+            description: "An application for ranking drugs to modulate a specific gene based on transcriptomic signatures.",
+            url: "http://DGB.cloud",
+            target: "_blank",
+            image: DIR + "dgb.jpg",
+            shortDesc: "Drug Gene Budger"
+        },
+	{
             title: "GRcalculator",
             description: "Interactive website for calculation, analysis, and visualization of dose-response data using the GR approach.",
             url: "http://www.grcalculator.org/grtutorial/Home.html",
@@ -117,12 +125,28 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "Search Engine for Gene Lists and Signatures"
         },
 	{
+            title: "BioJupies",
+            description: "A web application that enables the automated creation, storage, and deployment of Jupyter Notebooks containing RNA-seq data analyses.",
+            url: "http://biojupies.cloud",
+            target: "_blank",
+            image: DIR + "biojupies_logo.jpg",
+            shortDesc: "Automated Generation of Interactive Notebooks for RNA-Seq Data Analysis in the Cloud"
+        },
+	{
             title: "ARCHS4",
             description: "A web resource that makes the majority of previously published RNA-seq data from human and mouse freely available at the gene count level.",
             url: "http://amp.pharm.mssm.edu/archs4",
             target: "_blank",
             image: DIR + "archs4_icon_720.png",
             shortDesc: "All RNA-seq and CHIP-seq Signature Search Space"
+        },
+	{
+            title: "X2K Web",
+            description: "Computationally predicts involvement of upstream cell signaling pathways, given a signature of differentially expressed genes.",
+            url: "http://X2K.cloud",
+            target: "_blank",
+            image: DIR + "expression2kinases.jpg",
+            shortDesc: "eXpression2Kinases Web"
         },
         {
             title: "Gen3va",

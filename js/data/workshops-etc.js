@@ -102,6 +102,11 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.seminars = [
+      {
+            title: 'BD2K-LINCS DCIC Summer Fellow Presentation Session',
+            description: $sce.trustAsHtml('Session for the <a href="/summer-fellows-2018" target="_blank">2018 BD2K-LINCS DCIC Summer Fellows</a> to present their projects.'),
+            details: 'August 9, 2018, Icahn School of Medicine at Mount Sinai, NY'
+     },
      {
             title: 'BD2K-LINCS DCIC Summer Fellow Presentation Session',
             description: $sce.trustAsHtml('Session for the <a href="/summer-fellows-2017" target="_blank">2017 BD2K-LINCS DCIC Summer Fellows</a> to present their projects.'),

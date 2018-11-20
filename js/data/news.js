@@ -11,6 +11,15 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
     };
 
 	$scope.stories = formatStories([
+	   {
+            title: "Mount Sinai Researchers Develop Tool that Analyzes Biomedical Data within Minutes",
+            source: "Mount Sinai Press Release",
+            url: "https://www.mountsinai.org/about/newsroom/2018/mount-sinai-researchers-develop-tool-that-analyzes-biomedical-data-within-minutes",
+            target: "_blank",
+            date: "11/14/2018",
+            mainText: "",
+            image: DIR + "maayanlab_2018.jpg"
+          },
 	  {
             title: "Students Harness Big Data to Help Solve Medical Challenges",
             source: "ISMMS Fall 2017 Dean's Report",
