@@ -3,6 +3,22 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+          title: "BioJupies: Automated generation of interactive notebooks for RNA-seq data analysis in the cloud",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30447998",
+          authors: "Torre D, Lachmann A, Ma'ayan A.",
+          citation: "Cell Systems 2018 Nov 8 pii: S2405-4712(18)30432-0.",
+          ids: "PMID: 30447998",
+          year: 2018
+          }, 
+	  {
+          title: "Drug Gene Budger (DGB): An application for ranking drugs to modulate a specific gene based on transcriptomic signatures",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30169739",
+          authors: "Wang Z, He E, Sani K, Jagodnik KM, Silverstein M, Ma'ayan A.",
+          citation: "Bioinformatics 2018 Aug 31.",
+          ids: "PMID: 30169739",
+          year: 2018
+          }, 
+	  {
           title: "Sustainable data and metadata management at the BD2K-LINCS Data Coordination and Integration Center",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29917015",
           authors: "Stathias V, Koleti A, Vidovic D, Cooper DJ, Jagodnik KM, Terryn R, Forlin M, Chung C, Torre D, Ayad N, Medvedovic M, Ma'ayan A, Pillai A, Schurer SC.",
