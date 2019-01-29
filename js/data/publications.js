@@ -3,11 +3,51 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+          title: "Dermal condensate niche fate specification occurs prior to formation and is placode progenitor dependent",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30595537",
+          authors: "Mok KW, Saxena N, Heitman N, Grisanti L, Srivastava D, Muraro MJ, Jacob T, Sennett R, Wang Z, Su Y, Yang LM, Ma'ayan A, Ornitz DM, Kasper M, Rendl M.",
+          citation: "Development Cell 2019 Jan 7;48(1):32-48.e5.",
+          ids: "PMID: 30595537",
+          year: 2019
+          }, 
+	  {
+          title: "Mining data and metadata from the gene expression omnibus",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30594974",
+          authors: "Wang Z, Lachmann A, Ma'ayan A.",
+          citation: "Biophysical Reviews 2018 Dec 29.",
+          ids: "PMID: 30594974",
+          year: 2018
+          }, 
+	  {
+          title: "Drug and disease signature integration identifies synergistic combinations in glioblastoma",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30552330",
+          authors: "Stathias V, Jermakowicz AM, Maloof ME, Forlin M, Walters W, Suter RK, Durante MA, Williams SL, Harbour JW, Volmar CH, Lyons NJ, Wahlestedt C, Graham RM, Ivan ME, Komotar RJ, Sarkaria JN, Subramanian A, Golub TR, Schurer SC, Ayad NG.",
+          citation: "Nature Communications 2018 Dec 14;9(1):5315.",
+          ids: "PMID: 30552330 | PMCID: PMC6294341",
+          year: 2018
+          },
+	   {
+          title: "Temporal proteomic profiling of postnatal human cortical development",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30518843",
+          authors: "Breen MS, Ozcan S, Ramsey JM, Wang Z, Ma'ayan A, Rustogi N, Gottschalk MG, Webster MJ, Weickert CS, Buxbaum JD, Bahn S.",
+          citation: "Translational Psychiatry 2018 Dec 5;8(1):267.",
+          ids: "PMID: 30518843 | PMCID: PMC6281671",
+          year: 2018
+          }, 
+	 {
           title: "BioJupies: Automated generation of interactive notebooks for RNA-seq data analysis in the cloud",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30447998",
           authors: "Torre D, Lachmann A, Ma'ayan A.",
-          citation: "Cell Systems 2018 Nov 8 pii: S2405-4712(18)30432-0.",
-          ids: "PMID: 30447998",
+          citation: "Cell Systems 2018 Nov 28;7(5):556-561.e3.",
+          ids: "PMID: 30447998 | PMCID: PMC6265050",
+          year: 2018
+          }, 
+	  {
+          title: "SIRT6 haploinsufficiency induces BRAFV600E melanoma cell resistance to MAPK inhibitors via IGF signalling",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30143629",
+          authors: "Strub T, Ghiraldini FG, Carcamo S, Li M, Wroblewska A, Singh R, Goldberg MS, Hasson D, Wang Z, Gallagher SJ, Hersey P, Ma'ayan A, Long GV, Scolyer RA, Brown B, Zheng B, Bernstein E.",
+          citation: "Nature Communications 2018 Aug 24;9(1):3440.",
+          ids: "PMID: 30143629 | PMCID: PMC6109055",
           year: 2018
           }, 
 	  {
@@ -25,7 +65,15 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           citation: "Scientific Data 2018 Jun 19;5:180117.",
           ids: "PMID: 29917015",
           year: 2018
-         }, 
+         },
+	  {
+          title: "CARM1 is essential for myeloid leukemogenesis but dispensable for normal hematopoiesis",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29894694",
+          authors: "Greenblatt SM, Man N, Hamard PJ, Asai T, Karl D, Martinez C, Bilbao D, Stathias V, Jermakowicz AM, Duffort S, Tadi M, Blumenthal E, Newman S, Vu L, Xu Y, Liu F, Schurer SC, McCabe MT, Kruger RG, Xu M, Yang FC, Tenen DG, Watts J, Vega F, Nimer SD.",
+          citation: "Cancer Cell 2018 Jun 8 11;33(6):1111-1127.e5.",
+          ids: "PMID: 29894694",
+          year: 2018
+          }, 
 	 {
           title: "eXpression2Kinases (X2K) Web: linking expression signatures to upstream cell signaling networks",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29800326",
