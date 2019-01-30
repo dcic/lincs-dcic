@@ -6,7 +6,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           title: "Dermal condensate niche fate specification occurs prior to formation and is placode progenitor dependent",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30595537",
           authors: "Mok KW, Saxena N, Heitman N, Grisanti L, Srivastava D, Muraro MJ, Jacob T, Sennett R, Wang Z, Su Y, Yang LM, Ma'ayan A, Ornitz DM, Kasper M, Rendl M.",
-          citation: "Development Cell 2019 Jan 7;48(1):32-48.e5.",
+          citation: "Developmental Cell 2019 Jan 7;48(1):32-48.e5.",
           ids: "PMID: 30595537",
           year: 2019
           }, 
@@ -34,6 +34,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           ids: "PMID: 30518843 | PMCID: PMC6281671",
           year: 2018
           }, 
+	  {
+          title: "Cooperative transcription factor induction mediates hemogenic reprogramming",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30517869",
+          authors: "Gomes AM, Kurochkin I, Chang B, Daniel M, Law K, Satija N, Lachmann A, Wang Z, Ferreira L, Ma'ayan A, Chen BK, Papatsenko D, Lemischka IR, Moore KA, Pereira CF.",
+          citation: "Cell Reports 2018 Dec 4;25(10):2821-2835.e7.",
+          ids: "PMID: 30517869",
+          year: 2018
+          }, 
 	 {
           title: "BioJupies: Automated generation of interactive notebooks for RNA-seq data analysis in the cloud",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30447998",
@@ -42,6 +50,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           ids: "PMID: 30447998 | PMCID: PMC6265050",
           year: 2018
           }, 
+	  {
+          title: "Podocyte-specific induction of Krüppel-like factor 15 restores differentiation markers and attenuates kidney injury in proteinuric kidney disease",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30143559",
+          authors: "Guo Y, Pace J, Li Z, Ma'ayan A, Wang Z, Revelo MP, Chen E, Gu X, Attalah A, Yang Y, Estrada C, Yang VW, He JC, Mallipattu SK.",
+          citation: "Journal of the American Society of Nephrology 2018 Oct;29(10):2529-2545.",
+          ids: "PMID: 30143559",
+          year: 2018
+          },   
 	  {
           title: "SIRT6 haploinsufficiency induces BRAFV600E melanoma cell resistance to MAPK inhibitors via IGF signalling",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30143629",
@@ -56,6 +72,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           authors: "Wang Z, He E, Sani K, Jagodnik KM, Silverstein M, Ma'ayan A.",
           citation: "Bioinformatics 2018 Aug 31.",
           ids: "PMID: 30169739",
+          year: 2018
+          }, 
+	  {
+          title: "Endothelial cells instruct liver specification of embryonic stem cell-derived endoderm through endothelial VEGFR2 signaling and endoderm epigenetic modifications.",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29936335",
+          authors: "Han S, Tan C, Ding J, Wang J, Ma'ayan A, Gouon-Evans V.",
+          citation: "Stem Cell Research 2018 Jul;30:163-170",
+          ids: "PMID: 29936335",
           year: 2018
           }, 
 	  {
