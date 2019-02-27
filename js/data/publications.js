@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+          title: "Predicting opioid dependence from electronic health records with machine learning",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30728857",
+          authors: "Ellis RJ, Wang Z, Genes N, Ma'ayan A.",
+          citation: "BioData Mining 2019 Jan 29;12:3.",
+          ids: "PMID: 30728857 | PMCID: PMC6352440",
+          year: 2019
+          }, 
+	  {
           title: "Dermal condensate niche fate specification occurs prior to formation and is placode progenitor dependent",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30595537",
           authors: "Mok KW, Saxena N, Heitman N, Grisanti L, Srivastava D, Muraro MJ, Jacob T, Sennett R, Wang Z, Su Y, Yang LM, Ma'ayan A, Ornitz DM, Kasper M, Rendl M.",
