@@ -80,7 +80,7 @@ mod.controller("calendarCtrl", ["$scope", function($scope) {
 
     var API_KEY = "AIzaSyBoFmRASxqk6MuOZTxDYF5eWA5Q8hmyflo",
         CALENDAR_ID = "dl9fj86o2ohe7o823s7jar920s%40group.calendar.google.com",
-        OPTIONS = "&orderBy=startTime&singleEvents=true";
+        OPTIONS = "&orderBy=startTime&singleEvents=true&maxResults=1000";
 
     $scope.getEvents = function(cb) {
         $.ajax({

@@ -160,22 +160,22 @@
 #index-page #center-content #twitter > p {
   text-align: center;
 }
-#index-page #center-content #twitter #twitter-fetcher li:before {
+#index-page #center-content #twitter li:before {
   display: none;
 }
-#index-page #center-content #twitter #twitter-fetcher li {
+#index-page #center-content #twitter li {
   list-style-type: none;
 }
-#index-page #center-content #twitter #twitter-fetcher .tweet a {
+#index-page #center-content #twitter .tweet a {
   word-wrap: break-word;
   font-size: 14px;
   font-weight: bold;
   text-overflow: ellipsis;
 }
-#index-page #center-content #twitter #twitter-fetcher .tweet a:hover {
+#index-page #center-content #twitter .tweet a:hover {
   text-decoration: underline;
 }
-#index-page #center-content #twitter #twitter-fetcher ul {
+#index-page #center-content #twitter ul {
   padding: 0;
 }
 #index-page #center-content #twitter .fa {

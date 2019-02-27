@@ -89,7 +89,6 @@
 	<script src="/bower_components/bootstrap/js/transition.js"></script>
 	<script src="/bower_components/underscore/underscore-min.js"></script>
 	<script src="/bower_components/ng-tags-input/ng-tags-input.min.js"></script>
-	<script src="/bower_components/twitter-fetcher/js/twitterFetcher_min.js"></script>
 	<script src="/bower_components/d3/d3.min.js"></script>
 	<script src="/bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
 
