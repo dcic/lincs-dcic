@@ -48,7 +48,7 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             index: 0,
             image: DIR + 'maayanlab_summer18.jpg',
             title: '2019 BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science',
-            caption: 'We are currently accepting applications for our 2019 summer session hosted by the Ma\'ayan Lab at ISMMS in New York City!',
+            caption: 'Our 2019 summer session hosted by the Ma\'ayan Lab at ISMMS in NYC runs June 3rd to August 9th.',
             link: '/summer-research-app#nav'	
         },
 	{
