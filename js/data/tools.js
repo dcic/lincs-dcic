@@ -74,7 +74,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 	{
             title: "DGB",
             description: "An application for ranking drugs to modulate a specific gene based on transcriptomic signatures.",
-            url: "http://DGB.cloud",
+            url: "http://amp.pharm.mssm.edu/DGB/",
             target: "_blank",
             image: DIR + "dgb.jpg",
             shortDesc: "Drug Gene Budger"
@@ -107,6 +107,15 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "LINCS L1000 Slicr [GSE70138 data only]"
         },
 	{
+            title: "SynergySeq",
+            description: "Ranking of the LINCS L1000 compounds based on their transcriptional similarity to a reference compound and their reversal of a disease signature.",
+            url: "https://schurerlab.shinyapps.io/synergyseq/",
+            target: "_blank",
+            image: DIR + "synergyseq.jpg",
+            docsUrl: "",
+            shortDesc: "Identify Synergistic Drug Combinations"
+        },
+	{
             title: "Harmonizome",
             description: "Built on top of information about genes and proteins from 114 datasets, the Harmonizome is a knowledge engine for a diverse set of integrated resources.",
             url: "http://amp.pharm.mssm.edu/Harmonizome",
@@ -127,7 +136,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
 	{
             title: "BioJupies",
             description: "A web application that enables the automated creation, storage, and deployment of Jupyter Notebooks containing RNA-seq data analyses.",
-            url: "http://biojupies.cloud",
+            url: "https://amp.pharm.mssm.edu/biojupies/",
             target: "_blank",
             image: DIR + "biojupies_logo.jpg",
             shortDesc: "Automated Generation of Interactive Notebooks for RNA-Seq Data Analysis in the Cloud"

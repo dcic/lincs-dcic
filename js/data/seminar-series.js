@@ -3,6 +3,22 @@ var mod = angular.module("seminarSeriesMod", []);
 mod.controller("seminarSeriesCtrl", ["$scope", "$sce", function($scope, $sce) {
     $scope.seminars = [
 	 {
+            date: 'March 19, 2019',
+            time: '2:00 p.m.',
+            location: 'Annenberg Building, 19th Floor, Conference Room 19-79, Icahn School of Medicine at Mount Sinai',
+            speakerName: $sce.trustAsHtml('<a href="https://jensenlab.org/people/larsjuhljensen/" target="_blank">Lars Juhl Jensen, PhD</a>'),
+            speakerTitle: 'Professor, Novo Nordisk Foundation Center for Protein Research, University of Copenhagen',
+            title: $sce.trustAsHtml('Network Analysis and Visualization with STRING and Cytoscape')
+        },
+	{
+            date: 'September 20, 2018',
+            time: '11:00 a.m.',
+            location: 'Hess Center for Science and Medicine Building, 2nd Floor, Seminar Room B, Icahn School of Medicine at Mount Sinai',
+            speakerName: $sce.trustAsHtml('<a href="https://jensenlab.org/people/larsjuhljensen/" target="_blank">Aravind Subramanian, PhD</a>'),
+            speakerTitle: 'Director, Connectivity Map Team',
+            title: $sce.trustAsHtml('Integrated Connectivity Map')
+        },   
+	 {
             date: 'December 14, 2017',
             time: '11:00 a.m.',
             location: 'Hess Center for Science and Medicine Building, 2nd Floor, Seminar Room B, Icahn School of Medicine at Mount Sinai',
