@@ -43,16 +43,23 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         //    caption: 'The BD2K-LINCS DCIC hosted the third annual BD2K-LINCS Data Science Symposium on Jan 31 - Feb 2, 2018.',
         //    link: '/2018-data-science-symposium'
         //  }
-
         {
             index: 0,
-            image: DIR + 'maayanlab_summer18.jpg',
-            title: '2019 BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science',
-            caption: 'Our 2019 summer session hosted by the Ma\'ayan Lab at ISMMS in NYC runs June 3rd to August 9th.',
-            link: '/summer-research-app#nav'	
+            image: DIR + 'maayan_bd2k_summer.jpg',
+            title: 'BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science',
+            caption: 'Our 2019 session hosted by the Ma\'ayan Laboratory at the Icahn School of Medicine at Mount Sinai in NYC runs June 3 - August 9.',
+            link: '/summer-research-app#nav'
         },
 	{
             index: 1,
+            image: DIR + 'maayanlab_summer18.jpg',
+            title: 'Big Data Science MOOC on Coursera',
+            caption: 'Enroll now to learn various methods of analysis of LINCS data and other relevant Big Data!',
+            link: 'https://www.coursera.org/learn/bd2k-lincs',
+	    target: '_blank'
+        },
+       	{
+            index: 2,
             image: DIR + 'L1000_fireworks.jpg',
             title: 'L1000 Fireworks Display (L1000FWD)',
             caption: 'Large-scale Visualization of Drug-induced Transcriptomic Signatures',
@@ -60,14 +67,14 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
             target: '_blank'
         },
 	 {
-            index: 2,
+            index: 3,
             image: DIR + 'outreach.jpg',
             title: 'BD2K-LINCS Data Science Symposium',
             caption: 'BD2K-LINCS DCIC engages, informs and educates key biomedical research communities about LINCS resources.',
             link: '/2018-data-science-symposium'
         },    
 	{
-            index: 3,
+            index: 4,
             image: DIR + 'ldp.jpg',
             title: 'LINCS Data Portal',
             caption: 'Integrated Access to Diverse Large-scale Cellular Perturbation Response Data',
@@ -75,18 +82,12 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
 	    target: '_blank'
         },
 	 {
-            index: 4,
+            index: 5,
             image: DIR + 'ljp_network.jpg',
             title: 'LINCS Joint Project - Breast Cancer Network Browser ',
             caption: 'LINCS Joint Project Network Enrichment Tool',
-            link: 'http://amp.pharm.mssm.edu/LJP/'
-        },
-	{
-            index: 5,
-            image: DIR + 'course_banner.jpg',
-            title: 'Big Data Science Course',
-            caption: 'Learn various methods of analysis of LINCS data and other relevant Big Data with the DCIC\'s MOOC on Coursera.',
-            link: 'https://www.coursera.org/learn/bd2k-lincs'
+            link: 'http://amp.pharm.mssm.edu/LJP/',
+	    target: '_blank'
         },
       ];
 

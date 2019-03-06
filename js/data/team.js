@@ -100,13 +100,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     affiliation: ISMMS,
                     email: "daniel.clarke {at} mssm.edu"
                 },
-		{
-                    firstName: "Julia",
-                    lastName: "Zhao",
-                    affiliation: ISMMS,
-                    email: "julia.zhao {at} icahn.mssm.edu"
-                },
-                {
+	        {
                     firstName: "John Erol",
                     lastName: "Evangelista",
                     affiliation: ISMMS,
