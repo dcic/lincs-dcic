@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+          title: "How to develop a drug target ontology: KNowledge Acquisition and Representation Methodology (KNARM)",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30848456",
+          authors: "Kuçuk McGinty H, Visser U, Schurer S.",
+          citation: "Methods in Molecular Biology 2019 1939:49-69.",
+          ids: "PMID: 30848456",
+          year: 2019
+          }, 
+	  {
           title: "Predicting opioid dependence from electronic health records with machine learning",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30728857",
           authors: "Ellis RJ, Wang Z, Genes N, Ma'ayan A.",

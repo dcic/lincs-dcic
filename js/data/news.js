@@ -12,6 +12,15 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
 	$scope.stories = formatStories([
 	   {
+            title: "Finding Needles in the Haystack",
+            source: "Communique Blog",
+            url: "https://toxchange.toxicology.org/p/bl/et/blogid=9&blogaid=2995",
+            target: "_blank",
+            date: "3/14/2019",
+            mainText: "Integrating ‘Omics Data to Predict Toxicity",
+            image: DIR + "sot2019.jpg"
+           },
+	   {
             title: "Mount Sinai Researchers Develop Tool that Analyzes Biomedical Data within Minutes",
             source: "Mount Sinai Press Release",
             url: "https://www.mountsinai.org/about/newsroom/2018/mount-sinai-researchers-develop-tool-that-analyzes-biomedical-data-within-minutes",
