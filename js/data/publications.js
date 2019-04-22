@@ -3,13 +3,45 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+          title: "Engineering a haematopoietic stem cell niche by revitalizing mesenchymal stromal cells",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30988422",
+          authors: "Nakahara F, Borger DK, Wei Q, Pinho S, Maryanovich M, Zahalka AH, Suzuki M, Cruz CD, Wang Z, Xu C, Boulais PE, Ma'ayan A, Greally JM, Frenette PS.",
+          citation: "Nature Cell Biology 2019 Apr 15.",
+          ids: "PMID: 30988422",
+          year: 2019
+          }, 
+	  {
+          title: "Drug Gene Budger (DGB): An application for ranking drugs to modulate a specific gene based on transcriptomic signatures",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30169739",
+          authors: "Wang Z, He E, Sani K, Jagodnik KM, Silverstein M, Ma'ayan A.",
+          citation: "Bioinformatics 2019 Apr 1;35(7):1247-1248.",
+          ids: "PMID: 30169739 | PMCID: PMC6449747",
+          year: 2019
+          }, 
+	  {
+          title: "Cheminformatics tools for analyzing and designing optimized small-molecule collections and libraries",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30956147",
+          authors: "Moret N, Clark NA, Hafner M, Wang Y, Lounkine E, Medvedovic M, Wang J, Gray N, Jenkins J, Sorger PK.",
+          citation: "Cell Chemical Biology 2019 Mar 12.",
+          ids: "PMID: 30956147",
+          year: 2019
+          },
+	  {
           title: "How to develop a drug target ontology: KNowledge Acquisition and Representation Methodology (KNARM)",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30848456",
           authors: "Kuçuk McGinty H, Visser U, Schurer S.",
-          citation: "Methods in Molecular Biology 2019 1939:49-69.",
+          citation: "Methods in Molecular Biology 2019 Mar 9;1939:49-69.",
           ids: "PMID: 30848456",
           year: 2019
           }, 
+	  {
+          title: "Mining data and metadata from the gene expression omnibus",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30594974",
+          authors: "Wang Z, Lachmann A, Ma'ayan A.",
+          citation: "Biophysical Reviews 2019 Feb;11(1):103-110.",
+          ids: "PMID: 30594974 | PMCID: PMC6381352",
+          year: 2019
+          },   
 	  {
           title: "Predicting opioid dependence from electronic health records with machine learning",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30728857",
@@ -23,16 +55,8 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30595537",
           authors: "Mok KW, Saxena N, Heitman N, Grisanti L, Srivastava D, Muraro MJ, Jacob T, Sennett R, Wang Z, Su Y, Yang LM, Ma'ayan A, Ornitz DM, Kasper M, Rendl M.",
           citation: "Developmental Cell 2019 Jan 7;48(1):32-48.e5.",
-          ids: "PMID: 30595537",
+          ids: "PMID: 30595537 | PMCID: PMC6370312",
           year: 2019
-          }, 
-	  {
-          title: "Mining data and metadata from the gene expression omnibus",
-          url: "https://www.ncbi.nlm.nih.gov/pubmed/30594974",
-          authors: "Wang Z, Lachmann A, Ma'ayan A.",
-          citation: "Biophysical Reviews 2018 Dec 29.",
-          ids: "PMID: 30594974",
-          year: 2018
           }, 
 	  {
           title: "Drug and disease signature integration identifies synergistic combinations in glioblastoma",
@@ -71,7 +95,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30143559",
           authors: "Guo Y, Pace J, Li Z, Ma'ayan A, Wang Z, Revelo MP, Chen E, Gu X, Attalah A, Yang Y, Estrada C, Yang VW, He JC, Mallipattu SK.",
           citation: "Journal of the American Society of Nephrology 2018 Oct;29(10):2529-2545.",
-          ids: "PMID: 30143559",
+          ids: "PMID: 30143559 | PMCID: PMC6171275",
           year: 2018
           },   
 	  {
@@ -81,21 +105,29 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           citation: "Nature Communications 2018 Aug 24;9(1):3440.",
           ids: "PMID: 30143629 | PMCID: PMC6109055",
           year: 2018
-          }, 
+          },
 	  {
-          title: "Drug Gene Budger (DGB): An application for ranking drugs to modulate a specific gene based on transcriptomic signatures",
-          url: "https://www.ncbi.nlm.nih.gov/pubmed/30169739",
-          authors: "Wang Z, He E, Sani K, Jagodnik KM, Silverstein M, Ma'ayan A.",
-          citation: "Bioinformatics 2018 Aug 31.",
-          ids: "PMID: 30169739",
+          title: "eXpression2Kinases (X2K) Web: linking expression signatures to upstream cell signaling networks",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29800326",
+          authors: "Clarke DJB, Kuleshov MV, Schilder BM, Torre D, Duffy ME, Keenan AB, Lachmann A, Feldmann AS, Gundersen GW, Silverstein MC, Wang Z, Ma'ayan A.",
+          citation: "Nucleic Acids Research 2018 Jul 2;46(W1):W171-W179.",
+          ids: "PMID: 29800326 | PMCID: PMC6030863",
           year: 2018
-          }, 
+          },
 	  {
-          title: "Endothelial cells instruct liver specification of embryonic stem cell-derived endoderm through endothelial VEGFR2 signaling and endoderm epigenetic modifications.",
+          title: "Endothelial cells instruct liver specification of embryonic stem cell-derived endoderm through endothelial VEGFR2 signaling and endoderm epigenetic modifications",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29936335",
           authors: "Han S, Tan C, Ding J, Wang J, Ma'ayan A, Gouon-Evans V.",
-          citation: "Stem Cell Research 2018 Jul;30:163-170",
+          citation: "Stem Cell Research 2018 Jul;30:163-170.",
           ids: "PMID: 29936335",
+          year: 2018
+          },
+	  {
+	  title: "Bayesian Additive Regression Trees using Bayesian Model Averaging",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30449953",
+          authors: "Hernandez B, Raftery AE, Pennington SR, Parnell AC.",
+          citation: "Statistics and Computing 2018 Jul;28(4):869-890.",
+          ids: "PMID: 30449953 | PMCID: PMC6238959 ",
           year: 2018
           }, 
 	  {
@@ -103,26 +135,26 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29917015",
           authors: "Stathias V, Koleti A, Vidovic D, Cooper DJ, Jagodnik KM, Terryn R, Forlin M, Chung C, Torre D, Ayad N, Medvedovic M, Ma'ayan A, Pillai A, Schurer SC.",
           citation: "Scientific Data 2018 Jun 19;5:180117.",
-          ids: "PMID: 29917015",
+          ids: "PMID: 29917015 | PMCID: PMC6007090",
           year: 2018
          },
+	   {
+          title: "L1000FWD: Fireworks visualization of drug-induced transcriptomic signatures",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29420694",
+          authors: "Wang Z, Lachmann A, Keenan AB, Ma'ayan A.",
+          citation: "Bioinformatics 2018 Jun 15;34(12):2150-2152.",
+          ids: "PMID: 29420694 | PMCID: PMC6454499 ",
+          year: 2018
+         }, 
 	  {
           title: "CARM1 is essential for myeloid leukemogenesis but dispensable for normal hematopoiesis",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29894694",
           authors: "Greenblatt SM, Man N, Hamard PJ, Asai T, Karl D, Martinez C, Bilbao D, Stathias V, Jermakowicz AM, Duffort S, Tadi M, Blumenthal E, Newman S, Vu L, Xu Y, Liu F, Schurer SC, McCabe MT, Kruger RG, Xu M, Yang FC, Tenen DG, Watts J, Vega F, Nimer SD.",
           citation: "Cancer Cell 2018 Jun 8 11;33(6):1111-1127.e5.",
-          ids: "PMID: 29894694",
+          ids: "PMID: 29894694 | PMCID: PMC6191185",
           year: 2018
           }, 
-	 {
-          title: "eXpression2Kinases (X2K) Web: linking expression signatures to upstream cell signaling networks",
-          url: "https://www.ncbi.nlm.nih.gov/pubmed/29800326",
-          authors: "Clarke DJB, Kuleshov MV, Schilder BM, Torre D, Duffy ME, Keenan AB, Lachmann A, Feldmann AS, Gundersen GW, Silverstein MC, Wang Z, Ma'ayan A.",
-          citation: "Nucleic Acids Research 2018 10.1093/nar/gky458.",
-          ids: "PMID: 29800326",
-          year: 2018
-         },
-	 {
+	  {
           title: "Integration of protein phosphorylation, acetylation, and methylation data sets to outline lung cancer signaling networks",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29789295",
           authors: "Grimes M, Hall B, Foltz L, Levy T, Rikova K, Gaiser J, Cook W, Smirnova E, Wheeler T, Clark NR, Lachmann A, Zhang B, Hornbeck P, Ma'ayan A, Comb M.",
@@ -139,6 +171,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           year: 2018
          }, 
 	 {
+          title: "clustvarsel: A package implementing variable selection for Gaussian model-based clustering in R",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30450020",
+          authors: "Scrucca l, Raftery A.",
+          citation: "Journal of Statistical Sofwtare 2018 Apr.",
+          ids: "PMID: 30450020 | PMCID: PMC6238955",
+          year: 2018
+         }, 
+	 {
           title: "Datasets2Tools, repository and search engine for bioinformatics datasets, tools and canned analyses",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29485625",
           authors: "Torre D, Krawczuk P, Jagodnik KM, Lachmann A, Wang Z, Wang L, Kuleshov MV, Ma'ayan A.",
@@ -147,19 +187,27 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           year: 2018
          }, 
 	 {
-          title: "L1000FWD: Fireworks visualization of drug-induced transcriptomic signatures",
-          url: "https://www.ncbi.nlm.nih.gov/pubmed/29420694",
-          authors: "Wang Z, Lachmann A, Keenan AB, Ma'ayan A.",
-          citation: "Bioinformatics 2018 Feb 6 bty060.",
-          ids: "PMID: 29420694",
+          title: "The Library of Integrated Network-Based Cellular Signatures NIH program: System-level cataloging of human cells response to perturbations",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29199020",
+          authors: "Keenan AB, Jenkins SL, Jagodnik KM, Koplev S, He E, Torre D, Wang Z, Dohlman AB, Silverstein MC, Lachmann A, Kuleshov MV, Ma'ayan A, Stathias V, Terryn R, Cooper D, Forlin M, Koleti A, Vidovic D, Chung C, Schurer SC, Vasiliauskas J, Pilarczyk M, Shamsaei B, Fazel M, Ren Y, Niu W, Clark NA, White S, Mahi N, Zhang L, Kouril M, Reichard JF, Sivaganesan S, Medvedovic M, Meller J, et al.",
+          citation: "Cell Systems 2018 Jan 24;6(1):13-24.",
+          ids: "PMID: 29199020 | PMCID: PMC5799026",
           year: 2018
-         }, 
+         },
 	  {
+          title: "Data Portal for the Library of Integrated Network-based Cellular Signatures (LINCS) program: integrated access to diverse large-scale cellular perturbation response data",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/29140462",
+          authors: "Koleti A, Terryn R, Stathias V, Chung C, Cooper DJ, Turner JP, Vidovic D, Forlin M, Kelley TT, D'Urso A, Allen BK, Torre D, Jagodnik KM, Wang L, Jenkins SL, Mader C, Niu W, Fazel M, Mahi N, Pilarczyk M, Clark N, Shamsaei B, Meller J, Vasiliauskas J, Reichard J, Medvedovic M, Ma'ayan A, Pillai A, Schurer SC.",
+          citation: "Nucleic Acids Research 2018 Jan 4;46(D1):D558-D566.",
+          ids: "PMID: 29140462 | PMCID: PMC5753343",
+          year: 2018
+         },
+	 {
           title: "Integration of pan-cancer transcriptomics with RPPA proteomics reveals mechanisms of epithelial-mesenchymal transition",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29293502",
           authors: "Koplev S, Lin K, Dohlman AB, Ma'ayan A.",
           citation: "PLoS Computational Biology 2018 Jan 2;14(1):e1005911.",
-          ids: "PMID: 29293502",
+          ids: "PMID: 29293502 | PMCID: PMC5766255",
           year: 2018
           }, 
 	  {
@@ -167,7 +215,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29092073",
           authors: "Almugbel R, Hung LH, Hu J, Almutairy A, Ortogero N, Tamta Y, Yeung KY.",
           citation: "Journal of the American Medical Informatics Assocation 2018 Jan 1;25(1):4-12.",
-          ids: "PMID: 29092073",
+          ids: "PMID: 29092073 | PMCID: PMC6381817",
           year: 2018
       },      
 	 {
@@ -175,25 +223,17 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29218867",
           authors: "Hodos R, Zhang P, Lee HC, Duan Q, Wang Z, Clark NR, Ma'ayan A, Wang F, Kidd B, Hu J, Sontag D, Dudley J.",
           citation: "Pacific Symposium on Biocomputing 2018;23:32-43.",
-          ids: "PMID: 29218867",
+          ids: "PMID: 29218867 | PMCID: PMC5753597",
           year: 2018
       },
-        {
-          title: "The Library of Integrated Network-Based Cellular Signatures NIH program: System-level cataloging of human cells response to perturbations",
-          url: "https://www.ncbi.nlm.nih.gov/pubmed/29199020",
-          authors: "Keenan AB, Jenkins SL, Jagodnik KM, Koplev S, He E, Torre D, Wang Z, Dohlman AB, Silverstein MC, Lachmann A, Kuleshov MV, Ma'ayan A, Stathias V, Terryn R, Cooper D, Forlin M, Koleti A, Vidovic D, Chung C, Schurer SC, Vasiliauskas J, Pilarczyk M, Shamsaei B, Fazel M, Ren Y, Niu W, Clark NA, White S, Mahi N, Zhang L, Kouril M, Reichard JF, Sivaganesan S, Medvedovic M, Meller J, et al.",
-          citation: "Cell Systems 2018 Jan 24;6(1):13-24.",
-          ids: "PMID: 29199020 | PMCID: PMC5799026",
-          year: 2018
-      },
-      {
+          {
           title: "Ontological representation, integration, and analysis of LINCS cell line cells and their cellular responses",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29322930",
           authors: "Ong E, Xie J, Ni Z, Liu Q, Sarntivijai S, Lin Y, Cooper D, Terryn R, Stathias V, Chung C, Schürer S, He Y.",
           citation: "BMC Bioinformatics 2017 Dec 21;18(Suppl 17):556.",
-          ids: "PMID: 29322930 | PMC5763302",
+          ids: "PMID: 29322930 | PMCID: PMC5763302",
           year: 2017
-      },
+          },
       {
           title: "Cells in experimental life sciences - challenges and solution to the rapid evolution of knowledge",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29322916",
@@ -211,19 +251,11 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           year: 2017
       },
       {
-          title: "Data Portal for the Library of Integrated Network-based Cellular Signatures (LINCS) program: integrated access to diverse large-scale cellular perturbation response data",
-          url: "https://www.ncbi.nlm.nih.gov/pubmed/29140462",
-          authors: "Koleti A, Terryn R, Stathias V, Chung C, Cooper DJ, Turner JP, Vidovic D, Forlin M, Kelley TT, D'Urso A, Allen BK, Torre D, Jagodnik KM, Wang L, Jenkins SL, Mader C, Niu W, Fazel M, Mahi N, Pilarczyk M, Clark N, Shamsaei B, Meller J, Vasiliauskas J, Reichard J, Medvedovic M, Ma'ayan A, Pillai A, Schurer SC.",
-          citation: "Nucleic Acids Research 2017 Nov 13.",
-          ids: "PMID: 29140462",
-          year: 2017
-      },
-      {
           title: "Predicting age by mining electronic medical records with deep learning characterizes differences between chronological and physiological age",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29113935",
           authors: "Wang Z, Li L, Glicksberg BS, Israel A, Dudley JT, Ma'ayan A.",
           citation: "Journal of Biomedical Informatics 2017 Nov 4. pii: S1532-0464(17)30240-X.",
-          ids: "PMID: 29113935",
+          ids: "PMID: 29113935 | PMCID: PMC5716867",
           year: 2017
       },
       {
@@ -263,7 +295,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/29017547",
           authors: "Ruffalo M, Stojanov P, Pillutla VK, Varma R, Bar-Joseph Z.",
           citation: "BMC Systems Biology 2017 Oct 10;11(1):96.",
-          ids: "PMID: 29017547",
+          ids: "PMID: 29017547 | PMCID: PMC5635550",
           year: 2017
       },     
       {
@@ -327,7 +359,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/28501646",
           authors: "Jagodnik KM, Koplev S, Jenkins SL, Ohno-Machado L, Paten B, Schurer SC, Dumontier M, Verborgh R, Bui A, Ping P, McKenna NJ, Madduri R, Pillai A, Ma'ayan A.",
           citation: "Journal of Biomedical Informatics 2017 Jul;71:49-57.",
-          ids: "PMID: 28501646",
+          ids: "PMID: 28501646 | PMCID: PMC5545976",
           year: 2017
       },
       {
@@ -335,7 +367,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28274840",
            authors: "Cruz-Monteagudo M, Schurer S, Tejera E, Perez-Castillo Y, Medina-Franco JL, Sanchez-Rodriguez A, Borges F.",
            citation: "Drug Discovery Today 2017 Jul;22(7):994-1007.",
-           ids: "PMID: 28274840",
+           ids: "PMID: 28274840 | PMCID: PMC5487293",
            year: 2017
       },
       {
@@ -359,7 +391,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/28624633",
           authors: "Sanchez-Rodriguez A, Perez-Castillo Y, Schurer SC, Nicolotti O, Mangiatordi GF, Borges F, Cordeiro MNDS, Tejera E, Medina-Franco JL, Cruz-Monteagudo M.",
           citation: "Drug Discovery Today 2017 June 15. pii: S1359-6446(17)30290-8.",
-          ids: "PMID: 28624633",
+          ids: "PMID: 28624633 | PMCID: PMC5650527",
           year: 2017
       },
       {
@@ -399,14 +431,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
            url: "https://www.ncbi.nlm.nih.gov/pubmed/28200013",
            authors: "Shameer K, Glicksberg BS, Hodos R, Johnson KW, Badgeley MA, Readhead B, Tomlinson MS, O'Connor T, Miotto R, Kidd BA, Chen R, Ma'ayan A, Dudley JT.",
            citation: "Briefings in Bioinformatics 2017 Feb 15.",
-           ids: "PMID: 28200013",
+           ids: "PMID: 28200013 | PMCID: PMC6192146",
            year: 2017
        },
        {
            title: "Building containerized workflows for RNA-seq data using the BioDepot-workflow-Builder (BwB)",
            url: "http://biorxiv.org/content/early/2017/01/06/099010",
            authors: "Hung LH, Meiss T, Keswani J, Xiong Y, Sobie E, Yeung KY",
-           citation: "bioRxiv (2017): 099010",
+           citation: "bioRxiv (2017): 099010.",
            ids: "biorxiv: 099010",
            year: 2017
        },
@@ -414,7 +446,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
            title: "Software solutions for reproducible RNA-seq workflows",
            url: "http://biorxiv.org/content/early/2017/01/06/099028",
            authors: "Meiss T, Hung LH, Xiong Y, Sobie E, Yeung KY.",
-           citation: "bioRxiv (2017): 099028",
+           citation: "bioRxiv (2017): 099028.",
            ids: "biorxiv: 099028",
            year: 2017
        },
