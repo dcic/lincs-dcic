@@ -15,7 +15,7 @@ mod.controller("trainingCtrl", ["$scope", "$sce", function($scope, $sce) {
         Twitter_LINK = "https://twitter.com/BD2KLINCSDCIC",
         FLYER_LINK = "static/dcic_summer17_oct25v.pdf",
         ARTICLE_LINK = "http://www.asbmb.org/asbmbtoday/201606/Coordinates/",
-        PROGRAMMING_LINK = "https://events.mountsinaihealth.org/event/programming_for_big_data_biomedicine_course",
+        PROGRAMMING_LINK = "https://events.mountsinaihealth.org/event/programming_for_big_data_biomedicine_course_spring_2019",
 	DSS_LINK = "/2018-data-science-symposium",
         DIR = "/images/general/";
 

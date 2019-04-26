@@ -4,6 +4,31 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 
     $scope.workshops = [
 	{
+            title: 'MCF10A Common Project Workshop',
+            description: $sce.trustAsHtml('Members BD2K-LINCS DCIC from the ISMMS participated in this workshop hosted by the MEP LINCS Center. This workshop was organized into the following sessions: 1) MCF10A Deep Dive, 2) Integrative Analysis, 3) Data Management, and 4) Publication Strategy.'),
+            details: 'April 16, Portland, OR'
+        },
+	{
+            title: 'BioITWorld FAIR Data Hackathon 2019',
+            description: $sce.trustAsHtml('<p>Avi Ma\'ayan PhD and Daniel Clarke MS (Bioinformatician, Ma\'ayan Lab) presented <a href="https://fairshake.cloud/ target="_blank">FAIRshake</a>, a system to evaluate the FAIRness of digital objects.</p>'),
+            details: 'April 15-16, 2019, Boston, MA'
+        },
+	{
+            title: 'EMBL-EBI Industry Program Workshop: Connectivity Map and L1000 Data: Applications and New Developments',
+            description: $sce.trustAsHtml('<p>Avi Ma\'ayan PhD presented, "From Visualizations to Predictions with the L1000 Data".</p>'),
+            details: 'April 10-11, 2019, Hinxton, Cambridge, UK'
+        },
+	{
+            title: 'LINCS Connectivity Map Workshop Series 2018',
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC held a training workshop on the analysis of large-scale perturbational datasets for biological applications.'),
+            details: 'December 4-6, 2018, Cambridge, MA'
+        },
+	{
+            title: 'MCF10A Common Project Workshop',
+            description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in this workshop hosted by the MEP LINCS Center. This two-day workshop was organized into the following sessions: 1) Project Overview and Motivation, 2) Overview of Datasets, 3) Integrative Analysis and Modeling, and 4) Data Sharing.'),
+            details: 'September 12-13, 2018, Portland, OR'
+        },
+	{
             title: 'Visualizing High-Dimensional Biological Data with Clustergrammer-Widget in Jupyter Notebooks',
             description: $sce.trustAsHtml('Session at <a href="https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/detail/68058 target="_blank">jupytercon</a> on  how <a href="https://www.ncbi.nlm.nih.gov/pubmed/28994825 target="_blank">Clustergrammer</a>-Widget enables users to easily visualize high-dimensional data (e.g. a Pandas DataFrame) within a Jupyter notebook as an interactive hierarchically clustered heatmap.'),
             details: 'August 23, 2018, New York, NY'
@@ -49,7 +74,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         {
             title: '2016 BD2K All Hands Grantee Meeting and Open Data Science Symposium',
             description: $sce.trustAsHtml('The BD2K-LINCS DCIC participated in the <a href="/2016-bd2k-meeting" target="_blank">BD2K 2016 All Hands Meeting</a> which brought together researchers, educators, developers, and trainees from all of the BD2K initiative grants.'),
-            details: 'November 29 – December 1, 2016, Rockville, MD'
+            details: 'November 29 - December 1, 2016, Rockville, MD'
         },
         {
             title: 'LINCS Outreach Meeting',
@@ -84,6 +109,11 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.conferences = [
+	 {
+            title: 'Society of Toxicology\'s 58th Annual Meeting and ToxEpo',
+            description: $sce.trustAsHtml('Avi Ma\'ayan PhD presented "On-the-Fly Machine Learning to Predict Adverse Drug Reactions by \'Omics Integration of Drug Properties" as part of the "Integrated \'Omics Approaches to Toxicity Assessments" symposium. Our session was highlighted in the program recap posted <a href="https://toxchange.toxicology.org/p/bl/et/blogid=9&blogaid=2995" target="_blank">here</a>.'),
+            details: 'March 12, 2019, Baltimore, MD'
+        },
         {
             title: 'Molecular Medicine Tri-Conference',
             description: $sce.trustAsHtml('Avi Ma\'ayan PhD presented "L1000CDS2: LINCS L1000 Characteristic Direction Signature Search Engine Predicts Kenpaullone as a Potential Therapeutic for Ebola" as part of the <a href="http://www.triconference.com/Bioinformatics-Big-Data/#Day2" target="_blank">Bioinformatics for Big Data</a> session in the Informatics channel.'),
@@ -102,6 +132,16 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
     ];
 
     $scope.seminars = [
+       {
+            title: 'Global Analysis of Bioinformatics Tools',
+            description: $sce.trustAsHtml('Megan Wojciechowicz (Bioinformatician, Ma\'ayan Lab) will present in the Department of Pharmacological Sciences\' Works in Progress Seminar Series.'),
+            details: 'May 10, 2019, Icahn School of Medicine at Mount Sinai, NY'
+      },
+       {
+            title: 'ChEA3: Transcription Factor Enrichment Analysis by Orthogonal Omics Integration',
+            description: $sce.trustAsHtml('Alexandra Keenan (MD/PhD Student, Ma\'ayan Lab) presented in the Department of Pharmacological Sciences\' Works in Progress Seminar Series.'),
+            details: 'April 26, 2019, Icahn School of Medicine at Mount Sinai, NY'
+      },
       {
             title: 'BD2K-LINCS DCIC Summer Fellow Presentation Session',
             description: $sce.trustAsHtml('Session for the <a href="/summer-fellows-2018" target="_blank">2018 BD2K-LINCS DCIC Summer Fellows</a> to present their projects.'),
@@ -154,17 +194,17 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
       },
       {
           title: 'Web-based Heatmap Visualization and Analysis Tool for High-Dimensional Biological Data',
-          description: $sce.trustAsHtml('Nicolas Fernandez PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
+          description: $sce.trustAsHtml('Nicolas Fernandez PhD presented in the Department of Pharmacological Sciences\' Works in Progress Seminar Series.'),
           details: 'March 2, 2017, Icahn School of Medicine at Mount Sinai, NY'
       },
       {
           title: 'Scalable Reanalysis of RNA-seq Data Using Cloud Computing',
-          description: $sce.trustAsHtml('Alex Lachmann PhD presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
+          description: $sce.trustAsHtml('Alex Lachmann PhD presented in the Department of Pharmacological Sciences\' Works in Progress Seminar Series.'),
           details: 'November 10, 2016, Icahn School of Medicine at Mount Sinai, NY'
       },
       {
           title: 'Predicting Adverse Cardiovascular Events of Tyrosine Kinase Inhibitors from Molecular Features',
-          description: $sce.trustAsHtml('Anders Dohlman presented in the Department of Pharmacological Science’s Works in Progress Seminar Series.'),
+          description: $sce.trustAsHtml('Anders Dohlman presented in the Department of Pharmacological Sciences\' Works in Progress Seminar Series.'),
           details: 'October 27, 2016, Icahn School of Medicine at Mount Sinai, NY'
       },
 	     {
@@ -194,7 +234,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
         {
             title: 'Enrichr and GEO2Enrichr: Tools to Extract and Analyze Signatures',
-            description: $sce.trustAsHtml('Gregory Gundersen and Matthew Jones from the Ma’ayan Laboratory at Icahn School of Medicine at Mount Sinai, presented in the Department of Pharmacology’s seminar series.'),
+            description: $sce.trustAsHtml('Gregory Gundersen and Matthew Jones from the Ma’ayan Laboratory at Icahn School of Medicine at Mount Sinai, presented in the Department of Pharmacology’s Seminar Series.'),
             details: 'January 15, 2015, New York, NY'
         },
         {
