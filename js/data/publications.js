@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+          title: "modEnrichr: a suite of gene set enrichment analysis tools for model organisms",
+          url: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz347/5487261",
+          authors: "Kuleshov MV, Diaz JEL, Flamholz ZN, Keenan AB, Lachmann A, Wojciechowicz ML, Cagan RL, Ma'ayan A.",
+          citation: "Nucleic Acids Research 2019 pii: gkz347.",
+          ids: "PMID: 31069376",
+          year: 2019
+          },   
+	  {
           title: "Engineering a haematopoietic stem cell niche by revitalizing mesenchymal stromal cells",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30988422",
           authors: "Nakahara F, Borger DK, Wei Q, Pinho S, Maryanovich M, Zahalka AH, Suzuki M, Cruz CD, Wang Z, Xu C, Boulais PE, Ma'ayan A, Greally JM, Frenette PS.",
