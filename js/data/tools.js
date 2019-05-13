@@ -133,6 +133,15 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             docsUrl: "http://amp.pharm.mssm.edu/Enrichr/help#api",
             shortDesc: "Search Engine for Gene Lists and Signatures"
         },
+	 {
+            title: "modEnrichr",
+            description: "A suite of gene set enrichment analysis tools for model organisms.",
+            url: "https://amp.pharm.mssm.edu/modEnrichr/",
+            target: "_blank",
+            image: DIR + "modEnrichr.jpg",
+            docsUrl: "",
+            shortDesc: "Expansion of Enrichr for Four Model Organisms: Fish, Fly, Worm and Yeast"
+        },
 	{
             title: "BioJupies",
             description: "A web application that enables the automated creation, storage, and deployment of Jupyter Notebooks containing RNA-seq data analyses.",

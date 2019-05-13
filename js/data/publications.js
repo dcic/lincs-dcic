@@ -25,6 +25,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           citation: "Bioinformatics 2019 Apr 1;35(7):1247-1248.",
           ids: "PMID: 30169739 | PMCID: PMC6449747",
           year: 2019
+          },
+	  {
+          title: "Integration of multiple data sources for gene network inference using genetic perturbation data",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31009236",
+          authors: "Liang X, Young WC, Hung LH, Raftery AE, Yeung KY.",
+          citation: "Journal of Computational Biology 2019 Apr.",
+          ids: "PMID: 31009236",
+          year: 2019
           }, 
 	  {
           title: "Cheminformatics tools for analyzing and designing optimized small-molecule collections and libraries",
@@ -56,6 +64,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           authors: "Ellis RJ, Wang Z, Genes N, Ma'ayan A.",
           citation: "BioData Mining 2019 Jan 29;12:3.",
           ids: "PMID: 30728857 | PMCID: PMC6352440",
+          year: 2019
+          },
+	  {
+          title: "Mechanical regulation of gene expression in cardiac myocytes and fibroblasts",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30683889",
+          authors: "Saucerman JJ, Tan PM, Buchholz KS, McCulloch AD, Omens JH.",
+          citation: "Nature Reviews. Cardiology Jan 25.",
+          ids: "PMID: 30683889",
           year: 2019
           }, 
 	  {
