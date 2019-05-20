@@ -6,18 +6,50 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           title: "modEnrichr: a suite of gene set enrichment analysis tools for model organisms",
           url: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz347/5487261",
           authors: "Kuleshov MV, Diaz JEL, Flamholz ZN, Keenan AB, Lachmann A, Wojciechowicz ML, Cagan RL, Ma'ayan A.",
-          citation: "Nucleic Acids Research 2019 pii: gkz347.",
+          citation: "Nucleic Acids Research 2019 May 9;pii: gkz347.",
           ids: "PMID: 31069376",
           year: 2019
-          },   
+          }, 
 	  {
           title: "Engineering a haematopoietic stem cell niche by revitalizing mesenchymal stromal cells",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30988422",
           authors: "Nakahara F, Borger DK, Wei Q, Pinho S, Maryanovich M, Zahalka AH, Suzuki M, Cruz CD, Wang Z, Xu C, Boulais PE, Ma'ayan A, Greally JM, Frenette PS.",
-          citation: "Nature Cell Biology 2019 Apr 15.",
-          ids: "PMID: 30988422",
+          citation: "Nature Cell Biology 2019 May;21(5):560-567.",
+          ids: "PMID: 30988422 | PMCID: PMC6499646 ",
           year: 2019
-          }, 
+          },
+	  {
+          title: "Cheminformatics tools for analyzing and designing optimized small-molecule collections and libraries",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30956147",
+          authors: "Moret N, Clark NA, Hafner M, Wang Y, Lounkine E, Medvedovic M, Wang J, Gray N, Jenkins J, Sorger PK.",
+          citation: "Cell Chemical Biology 2019 May;26(5):765-777.",
+          ids: "PMID: 30956147",
+          year: 2019
+          },
+	  {
+          title: "OSCI: standardized stem cell ontology representation and use cases for stem cell investigation",
+          url: "http://dx.doi.org/10.1186/s12859-019-2723-7",
+          authors: "He Y, Duncan W, Cooper DJ, Hansen J, Iyengar R, Ong E, Walker K, Tini O, Smith S, Serra LM, Zheng J, Sarntivijai S, Schurer S, O'Shea KS, Diehl AD.",
+          citation: "BMC Bioinformatics 2019 April 25;20(5):2723.",
+          ids: "",
+          year: 2019
+          },
+	  {
+          title: "Improving the utility of the Tox21 dataset by deep metadata annotations and constructing reusable benchmarked chemical reference signatures",
+          url: "https://www.mdpi.com/1420-3049/24/8/1604",
+          authors: "Cooper DJ, Schurer S.",
+          citation: "Molecules 2019 April 23;24(8)1604.",
+          ids: "",
+          year: 2019
+          },
+	   {
+          title: "piNET: a versatile web platform for downstream analysis and visualization of proteomics data",
+          url: "http://dx.doi.org/10.1101/607432",
+          authors: "Shamsaei B, Chojnacki S, Pilarczyk M, Najafabadi M, Chen C, Ross K, Matlock A, Muhlich J, Chutipongtanate S, Vidovic D, Sharma V, Vasiliauskas J, Jaffe J, MacCoss M, Wu C, Pillai A, Ma'ayan A, Schurer S, Medvedovic M, Meller J.",
+          citation: "bioRxiv 2019 April12;607432.",
+          ids: "",
+          year: 2019
+          },   
 	  {
           title: "Drug Gene Budger (DGB): An application for ranking drugs to modulate a specific gene based on transcriptomic signatures",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30169739",
@@ -33,13 +65,13 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           citation: "Journal of Computational Biology 2019 Apr.",
           ids: "PMID: 31009236",
           year: 2019
-          }, 
+          },
 	  {
-          title: "Cheminformatics tools for analyzing and designing optimized small-molecule collections and libraries",
-          url: "https://www.ncbi.nlm.nih.gov/pubmed/30956147",
-          authors: "Moret N, Clark NA, Hafner M, Wang Y, Lounkine E, Medvedovic M, Wang J, Gray N, Jenkins J, Sorger PK.",
-          citation: "Cell Chemical Biology 2019 Mar 12.",
-          ids: "PMID: 30956147",
+          title: "Novel curcumin inspired bis-chalcone promotes endoplasmic reticulum stress and glioblastoma neurosphere cell death",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30871215",
+          authors: "Sansalone L, Veliz EA, Myrthil NG, Stathias V, Walters W, Torrens II, Schurer SC, Vanni S, Leblanc RM, Graham RM.",
+          citation: "Cancers 2019 Mar 13;11(3):pii: E357.",
+          ids: "PMID: 30871215 | PMCID: PMC6468769",
           year: 2019
           },
 	  {
@@ -121,7 +153,15 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           citation: "Journal of the American Society of Nephrology 2018 Oct;29(10):2529-2545.",
           ids: "PMID: 30143559 | PMCID: PMC6171275",
           year: 2018
-          },   
+          },
+	  {
+          title: "Polypharmacology or promiscuity? Structural interactions of resveratrol with its bandwagon of targets",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/30405416",
+          authors: "Saqib U, Kelley TT, Panguluri SK, Liu D, Savai R, Baig MS, Schurer SC.",
+          citation: "Frontiers in Pharmacology 2018 Oct;9:1201.",
+          ids: "PMID: 30405416 | PMCID: PMC6207623",
+          year: 2018
+          }, 
 	  {
           title: "SIRT6 haploinsufficiency induces BRAFV600E melanoma cell resistance to MAPK inhibitors via IGF signalling",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30143629",
