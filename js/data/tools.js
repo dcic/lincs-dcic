@@ -41,7 +41,7 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             url: "http://www.ilincs.org",
             target: "_blank",
             image: DIR + "ilincs.png",
-            docsUrl: "",
+            docsUrl: "http://www.ilincs.org/ilincs/APIinfo",
             shortDesc: "LINCS Web Portal"
         },
         {
@@ -159,11 +159,30 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             shortDesc: "All RNA-seq and CHIP-seq Signature Search Space"
         },
 	{
+            title: "Geneshot",
+            description: "Submit biomedical terms to receive ranked lists of relevant genes.",
+            url: "https://amp.pharm.mssm.edu/geneshot/",
+            target: "_blank",
+            image: DIR + "geneshot.jpg",
+	    docsUrl: "https://amp.pharm.mssm.edu/geneshot/api.html",
+            shortDesc: "Search Engine for Ranking Genes from Arbitrary Text Queries"
+        },
+        {
+            title: "ChEA3",
+            description: "Transcription factor enrichment analysis by orthogonal omics integration.",
+            url: "https://amp.pharm.mssm.edu/ChEA3",
+            target: "_blank",
+            image: DIR + "chea3logo.jpg",
+	    docsUrl: "https://amp.pharm.mssm.edu/chea3/index.html#content4-z",
+            shortDesc: "ChIP-X Enrichment Analysis 3"
+        },
+	{
             title: "X2K Web",
             description: "Computationally predicts involvement of upstream cell signaling pathways, given a signature of differentially expressed genes.",
             url: "http://X2K.cloud",
             target: "_blank",
             image: DIR + "expression2kinases.jpg",
+            docsUrl: "https://amp.pharm.mssm.edu/X2K/#api",
             shortDesc: "eXpression2Kinases Web"
         },
         {
@@ -201,6 +220,15 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
             image: DIR + "g2e.png",
             docsUrl: "http://amp.pharm.mssm.edu/g2e/documentation",
             shortDesc: "Differential Expression Analysis Tool"
+        },
+	{
+            title: "GREIN",
+            description: "Explore and analyze GEO RNA-seq data.",
+            url: "http://www.ilincs.org/apps/grein/?gse=",
+            target: "_blank",
+            image: DIR + "grein_logo.jpg",
+            docsUrl: "",
+            shortDesc: "GEO RNA-seq Experiments Interactive Navigator"
         },
         {
             title: "PAEA",
