@@ -3,6 +3,30 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+          title: "ChEA3: transcription factor enrichment analysis by orthogonal omics integration",
+          url: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz446/5494769",
+          authors: "Keenan AB, Torre D, Lachmann A, Leong AK, Wojciechowicz ML, Utti V, Jagodnik KM, Kropiwnicki E, Wang Z, Ma'ayan A.",
+          citation: "Nucleic Acids Research 2019 May 22;pii: gkz446.",
+          ids: "PMID: 31114921",
+          year: 2019
+          }, 
+	  {
+          title: "Geneshot: search engine for ranking genes from arbitrary text queries",
+          url: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz393/5494749",
+          authors: "Lachmann A, Schilder BM, Wojciechowicz ML, Torre D, Kuleshov MV, Keenan AB, Ma'ayan A.",
+          citation: "Nucleic Acids Research 2019 May 22;pii: gkz393.",
+          ids: "PMID: 31114921",
+          year: 2019
+          },
+	  {
+          title: "GREIN: An interactive web platform for re-analyzing GEO RNA-seq data",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31110304",
+          authors: "Mahi NA, Najafabadi MF, Pilarczyk M, Kouril M, Medvedovic M.",
+          citation: "Scientific Reports 2019 May 20;9(1):7580.",
+          ids: "PMID: 31110304 | PMCID: 31110304",
+          year: 2019
+          }, 
+	  {
           title: "modEnrichr: a suite of gene set enrichment analysis tools for model organisms",
           url: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz347/5487261",
           authors: "Kuleshov MV, Diaz JEL, Flamholz ZN, Keenan AB, Lachmann A, Wojciechowicz ML, Cagan RL, Ma'ayan A.",
@@ -23,7 +47,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.ncbi.nlm.nih.gov/pubmed/30956147",
           authors: "Moret N, Clark NA, Hafner M, Wang Y, Lounkine E, Medvedovic M, Wang J, Gray N, Jenkins J, Sorger PK.",
           citation: "Cell Chemical Biology 2019 May;26(5):765-777.",
-          ids: "PMID: 30956147",
+          ids: "PMID: 30956147 | PMCID: PMC6526536",
           year: 2019
           },
 	  {
@@ -39,10 +63,10 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           url: "https://www.mdpi.com/1420-3049/24/8/1604",
           authors: "Cooper DJ, Schurer S.",
           citation: "Molecules 2019 April 23;24(8)1604.",
-          ids: "",
+          ids: "PMID: 31018579 | PMCID: PMC6515292",
           year: 2019
           },
-	   {
+	  {
           title: "piNET: a versatile web platform for downstream analysis and visualization of proteomics data",
           url: "http://dx.doi.org/10.1101/607432",
           authors: "Shamsaei B, Chojnacki S, Pilarczyk M, Najafabadi M, Chen C, Ross K, Matlock A, Muhlich J, Chutipongtanate S, Vidovic D, Sharma V, Vasiliauskas J, Jaffe J, MacCoss M, Wu C, Pillai A, Ma'ayan A, Schurer S, Medvedovic M, Meller J.",
