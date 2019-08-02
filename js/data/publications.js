@@ -3,6 +3,22 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+	  title: "Connectivity mapping: methods and applications",
+          url: "https://www.annualreviews.org/doi/full/10.1146/annurev-biodatasci-072018-021211",
+          authors: "Keenan AB, Wojciechowicz ML, Wang Z, Jagodnik KM, Jenkins SL, Lachmann A, Ma'ayan A.",
+          citation: "Annual Review of Biomedical Data Science 2019 Jul 2:1, 69-92.",
+          ids: "10.1146/annurev-biodatasci-072018-021211",
+          year: 2019
+          }, 
+	  {
+	  title: "A multi-center study on the reproducibility of drug-response assays in mammalian cell lines",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31302153",
+          authors: "Niepel M, Hafner M, Mills CE, Subramanian K, Williams EH, Chung M, Gaudio B, Barrette AM, Stern AD, Hu B, Korkola JE; LINCS Consortium, Gray JW, Birtwistle MR, Heiser LM, Sorger PK.",
+          citation: "Cell Systems 2019 Jul 24;9(1):35-48.e5.",
+          ids: "PMID: 31302153",
+          year: 2019
+          }, 
+	  {
           title: "ChEA3: transcription factor enrichment analysis by orthogonal omics integration",
           url: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz446/5494769",
           authors: "Keenan AB, Torre D, Lachmann A, Leong AK, Wojciechowicz ML, Utti V, Jagodnik KM, Kropiwnicki E, Wang Z, Ma'ayan A.",
