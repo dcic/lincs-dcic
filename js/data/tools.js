@@ -223,8 +223,8 @@ mod.controller("toolsCtrl", ["$scope", "$sce", function($scope, $sce) {
         },
 	{
             title: "GREIN",
-            description: "Explore and analyze GEO RNA-seq data.",
-            url: "http://www.ilincs.org/apps/grein/?gse=",
+            description: "An interactive web platform for re-analyzing GEO RNA-seq data.",
+            url: "https://shiny.ilincs.org/grein",
             target: "_blank",
             image: DIR + "grein_logo.jpg",
             docsUrl: "",

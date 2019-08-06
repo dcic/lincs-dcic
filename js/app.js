@@ -29,6 +29,7 @@ var mod = angular.module("lincsDcic", [
         "summerFellows2016Mod",
         "summerFellows2017Mod",
 	"summerFellows2018Mod",
+	"summerFellows2019Mod",
  	"webinarsMod",
  	"workshopsEtcMod",
 	"ui.bootstrap"
@@ -114,6 +115,9 @@ mod.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
 		when("/summer-fellows-2018", {
       			templateUrl: "view/page/summer-fellows-2018.html"
     		}).
+		when("/summer-fellows-2019", {
+      			templateUrl: "view/page/summer-fellows-2019.html"
+		}).
 		when("/internal-dsrp", {
 			templateUrl: "view/page/internal-dsrp.html"
 		}).
