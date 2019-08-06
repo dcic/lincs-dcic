@@ -9,7 +9,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
     $scope.principalInvestigators = [
         {
             name: 'Avi Ma\'ayan PhD',
-            position: 'Professor',
+            position: 'Professor and Director',
             affiliation: ISMMS,
             email: 'avi.maayan {at} mssm.edu',
             portrait: 'avi.jpg',
@@ -27,7 +27,7 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
         },
         {
             name: 'Stephan Schurer PhD',
-            position: 'Associate Professor',
+            position: 'Professor',
             affiliation: UM,
             email: 'sschurer {at} med.miami.edu',
             portrait: 'stephan.jpg',
@@ -71,10 +71,10 @@ mod.controller("teamCtrl", ["$scope", function($scope) {
                     email: "maxim.kuleshov {at} mssm.edu"
                 },
                 {
-                    firstName: "Megan",
-                    lastName: "Wojciechowicz",
+                    firstName: "Alon",
+                    lastName: "Bartal",
                     affiliation: ISMMS,
-                    email: "megan.wojciechowicz {at} mssm.edu"
+                    email: "alon.bartal {at} mssm.edu"
                 },
 		{
                     firstName: "Alexander",

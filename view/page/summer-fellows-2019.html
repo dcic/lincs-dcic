@@ -1,11 +1,12 @@
 <div class="container">
-    <div id="summer-fellows-2015" class="row category-page" ng-controller="summerFellows2015Ctrl">
-        <h2 class="col-md-12">2015 Summer Fellows</h2>
+    <div id="summer-fellows-2019" class="row category-page" ng-controller="summerFellows2019Ctrl">
+        <h2 class="col-md-12">Summer Session 2019</h2>
         <div class="col-md-8">
-            <p>All of the 2015 BD2K-LINCS DCIC Summer Fellows conducted a faculty-mentored independent research project within a research laboratory affiliated with the BD2K-LINCS Data Coordination and Integration Center. Appointments were awarded on a competitive basis.</p>
-            <div class="sections">
-                <h3>Undergraduate and Graduate Fellows</h3>
-                <div ng-repeat="fellow in fellows" ng-if="!fellow.highSchooler" class="section">
+            <p>All of the BD2K-LINCS DCIC summer trainees conducted a faculty-mentored independent research project within the Ma'ayan Laboratory at the Icahn School of Medicine at Mount Sinai. Appointments were awarded on a competitive basis.</p>
+	    <p><a href="https://www.youtube.com/playlist?list=PLfq4yYrYksVjh6LcMl5MQ7x8slKWeqJvi" target="_blank">Video summaries of the BD2K-LINCS DCIC 2018 Summer Research Projects</a></p>
+	     <div class="sections">
+		<h3>Undergraduates and Graduate Assistants</h3>
+                  <div ng-repeat="fellow in fellows" ng-if="!fellow.highSchooler" class="section">
                     <img ng-src="{{fellow.image}}" class="img-responsive">
                     <div class="text">
                         <h4>{{fellow.name}}</h4>
@@ -13,9 +14,9 @@
                         <p class="project"><strong>{{fellow.project}}</strong></p>
                         <p>Lab: <a href="{{fellow.labLink}}" target="_blank">{{fellow.labName}}</a></p>
                     </div>
-                    <div class="clear"></div>
-                </div>
-                <h3>High School Fellow</h3>
+                   <div class="clear"></div>
+              </div>
+	       <h3>High School Fellows</h3>
                 <div ng-repeat="fellow in fellows" ng-if="fellow.highSchooler" class="section">
                     <img ng-src="{{fellow.image}}" class="img-responsive">
                     <div class="text">
@@ -24,28 +25,28 @@
                         <p class="project"><strong>{{fellow.project}}</strong></p>
                         <p>Lab: <a href="{{fellow.labLink}}" target="_blank">{{fellow.labName}}</a></p>
                     </div>
-                    <div class="clear"></div>
+
+	         <div class="clear"></div>
                 </div>
             </div>
-            <em>*graduate fellow</em>
-        </div>
+          </div>
         <div class="col-md-4">
-            <img class="img-responsive" ng-src="/images/general/team.png"/>
+            <img class="img-responsive" ng-src="/images/general/team18.png"/>
             <br>
             <ul>
-		<li>
-                    <a href="/#/summer-fellows-2019#nav">2019 Summer Fellows</a>
-                </li>
-                <li>
+		 <li>
                     <a href="/#/summer-fellows-2018#nav">2018 Summer Fellows</a>
                 </li>
-                <li>
+                 <li>
                     <a href="/#/summer-fellows-2017#nav">2017 Summer Fellows</a>
                 </li>
                 <li>
                     <a href="/#/summer-fellows-2016#nav">2016 Summer Fellows</a>
                 </li>
-             </ul>
+                <li>
+                    <a href="/#/summer-fellows-2015#nav">2015 Summer Fellows</a>
+		</li>
+            </ul>
         </div>
     </div>
 </div>
