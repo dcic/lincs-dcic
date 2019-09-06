@@ -45,9 +45,9 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         //  }
         {
             index: 0,
-            image: DIR + 'maayan_bd2k_summer.jpg',
+            image: DIR + 'maayan_summer19.jpg',
             title: 'BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science',
-            caption: 'Our 2019 session hosted by the Ma\'ayan Laboratory at the Icahn School of Medicine at Mount Sinai in NYC runs June 3 - August 9.',
+            caption: 'Video summaries of the BD2K-LINCS 2019 Summer Research Projects are posted to our YouTube channel!',
             link: 'summer-fellows-2019#nav'
         },
 	{
