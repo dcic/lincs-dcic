@@ -46,9 +46,9 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         {
             index: 0,
             image: DIR + 'maayan_summer19.jpg',
-            title: 'BD2K-LINCS Summer Research Training Program in Biomedical Big Data Science',
-            caption: 'Video summaries of the BD2K-LINCS 2019 Summer Research Projects are posted to our YouTube channel!',
-            link: 'summer-fellows-2019#nav'
+            title: 'Accepting applications for the 2020 Summer Research Training Program in Biomedical Big Data Science in NYC!',
+            caption: 'A research intensive 10-week training program in the Ma\'ayan Lab for undergraduate and graduate students.',
+            link: 'summer-research-app#nav'
         },
 	{
             index: 1,
