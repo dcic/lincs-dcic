@@ -3,10 +3,50 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+	  title: "LINCS Data Portal 2.0: next generation access point for perturbation-response signatures",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31701147",
+          authors: "Stathias V, Turner J, Koleti A, Vidovic D, Cooper D, Fazel-Najafabadi M, Pilarczyk M, Terryn R, Chung C, Umeano A, Clarke DJB, Lachmann A, Evangelista JE, Ma'ayan A, Medvedovic M, Schurer SC.",
+          citation: "Nucleic Acids Research 2019 Nov 8 pii: gkz1023.",
+          ids: "PMID: 31701147",
+          year: 2019
+          },
+	  {
+	  title: "Connecting omics signatures of diseases, drugs, and mechanisms of actions with iLINCS",
+          url: "https://www.biorxiv.org/content/10.1101/826271v1",
+          authors: "Pilarczyk M, Najafabadi MF, Kouril M, Vasiliauskas J, Niu W, Shamsaei B, Mahi N, Zhang L, Clark N, Ren Y, White S, Karim R, Xu H, Biesiada J, Bennet MF, Davidson S, Reichard JF, Stathias V, Koleti A, Vidovic D, Clark DJB, Schurer S, Ma’ayan A, Meller J, Medvedovic M.",
+          citation: "bioRxiv (2019): 826271.",
+          ids: "bioRxiv: 826271",
+          year: 2019
+	  },
+	  {
+	  title: "The Signaling Pathways Project, an integrated 'omics knowledgebase for mammalian cellular signaling pathways",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31672983",
+          authors: "Ochsner SA, Abraham D, Martin K, Ding W, McOwiti A, Kankanamge W, Wang Z, Andreano K, Hamilton RA, Chen Y, Hamilton A, Gantner ML, Dehart M, Qu S, Hilsenbeck SG, Becnel LB, Bridges D, Ma'ayan A, Huss JM, Stossi F, Foulds CE, Kralli A, McDonnell DP, McKenna NJ.",
+          citation: "Scientific Data 2019 Oct 31;6(1):252.",
+          ids: "PMID: 31672983",
+          year: 2019
+          },  
+	   {
+	  title: "FAIRshake: Toolkit to evaluate the FAIRness of research digital resources",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31677972",
+          authors: "Clarke DJB, Wang L, Jones A, Wojciechowicz ML, Torre D, Jagodnik KM, Jenkins SL, McQuilton P, Flamholz Z, Silverstein MC, Schilder BM, Robasky K, Castillo C, Idaszak R, Ahalt SC, Williams J, Schurer S, Cooper DJ, de Miranda Azevedo R, Klenk JA, Haendel MA, Nedzel J, Avillach P, Shimoyama ME, Harris RM, Gamble M, Poten R, Charbonneau AL, Larkin J, Brown CT, Bonazzi VR, Dumontier MJ, Sansone SA, Ma'ayan A.",
+          citation: "Cell Systems 2019 Oct 10. pii: S2405-4712(19)30345-X.",
+          ids: "PMID: 31677972",
+          year: 2019
+          }, 
+	  {
+	  title: "Habenular TCF7L2 links nicotine addiction to diabetes",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31619789",
+          authors: "Fernandez DM, Rahman AH, Fernandez NF, Chudnovskiy A, Amir ED, Amadori L, Khan NS, Wong CK, Shamailova R, Hill CA, Wang Z, Remark R, Li JR, Pina C, Faries C, Awad AJ, Moss N, Bjorkegren JLM, Kim-Schulze S, Gnjatic S, Ma'ayan A, Mocco J, Faries P, Merad M, Giannarelli C.",
+          citation: "Nature 2019 Oct;574(7778):372-377.",
+          ids: "PMID: 31619789",
+          year: 2019
+          }, 
+	  {
 	  title: "Single-cell immune landscape of human atherosclerotic plaques",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/31591603",
           authors: "Fernandez DM, Rahman AH, Fernandez NF, Chudnovskiy A, Amir ED, Amadori L, Khan NS, Wong CK, Shamailova R, Hill CA, Wang Z, Remark R, Li JR, Pina C, Faries C, Awad AJ, Moss N, Bjorkegren JLM, Kim-Schulze S, Gnjatic S, Ma'ayan A, Mocco J, Faries P, Merad M, Giannarelli C.",
-          citation: "Nature Medicine 2019 Oct.",
+          citation: "Nature Medicine 2019 Oct;25(10):1576-1588.",
           ids: "PMID: 31591603",
           year: 2019
           }, 
@@ -34,6 +74,14 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           ids: "PMID: 31302153 | PMCID: PMC6700527",
           year: 2019
           }, 
+	   {
+	  title: "PKMYT1 is a computationally predicted target for kidney cancer",
+          url: "https://www.biorxiv.org/content/10.1101/677245v1?versioned=true",
+          authors: "Torre D, Fernandez N, Ma'ayan A.",
+          citation: "bioRxiv (2019): 677245.",
+          ids: "bioRxiv: 677245",
+          year: 2019
+	  },  
 	  {
           title: "ChEA3: transcription factor enrichment analysis by orthogonal omics integration",
           url: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz446/5494769",
@@ -102,8 +150,8 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           title: "piNET: a versatile web platform for downstream analysis and visualization of proteomics data",
           url: "http://dx.doi.org/10.1101/607432",
           authors: "Shamsaei B, Chojnacki S, Pilarczyk M, Najafabadi M, Chen C, Ross K, Matlock A, Muhlich J, Chutipongtanate S, Vidovic D, Sharma V, Vasiliauskas J, Jaffe J, MacCoss M, Wu C, Pillai A, Ma'ayan A, Schurer S, Medvedovic M, Meller J.",
-          citation: "bioRxiv 2019 April12;607432.",
-          ids: "",
+          citation: "bioRxiv (2019): 607432.",
+          ids: "bioRxiv: 607432",
           year: 2019
           },   
 	  {
