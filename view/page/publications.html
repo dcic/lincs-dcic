@@ -2,6 +2,14 @@
     <div ng-controller="publicationsCtrl" id="publications" class="row category-page">
         <h2 class="col-md-12">Publications</h2>
         <div class="col-md-8">
+	      <h3>2020</h3>
+           <div ng-repeat="pub in publications" ng-if="pub.year == 2020" class="publication">
+               <a href="{{pub.url}}" target="_blank" class="title">{{pub.title}}</a>
+               <br>
+               <p>{{pub.authors}}</p>
+               <p>{{pub.citation}}</p>
+               <p>{{pub.ids}}</p>
+           </div>	
 	    <h3>2019</h3>
            <div ng-repeat="pub in publications" ng-if="pub.year == 2019" class="publication">
                <a href="{{pub.url}}" target="_blank" class="title">{{pub.title}}</a>

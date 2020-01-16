@@ -3,6 +3,22 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+	  title: "Dermal sheath contraction powers stem cell niche relocation during hair cycle regression",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31857493",
+          authors: "Heitman N, Sennett R, Mok KW, Saxena N, Srivastava D, Martino P, Grisanti L, Wang Z, Ma'ayan A, Rompolas P, Rendl M.",
+          citation: "Science 2020 Jan 10;367(6474):161-166.",
+          ids: "PMID: 31857493",
+          year: 2020
+          },
+	   {
+	  title: "FAIRshake: Toolkit to evaluate the FAIRness of research digital resources",
+          url: "https://www.ncbi.nlm.nih.gov/pubmed/31677972",
+          authors: "Clarke DJB, Wang L, Jones A, Wojciechowicz ML, Torre D, Jagodnik KM, Jenkins SL, McQuilton P, Flamholz Z, Silverstein MC, Schilder BM, Robasky K, Castillo C, Idaszak R, Ahalt SC, Williams J, Schurer S, Cooper DJ, de Miranda Azevedo R, Klenk JA, Haendel MA, Nedzel J, Avillach P, Shimoyama ME, Harris RM, Gamble M, Poten R, Charbonneau AL, Larkin J, Brown CT, Bonazzi VR, Dumontier MJ, Sansone SA, Ma'ayan A.",
+          citation: "Cell Systems 2019 Nov 27;9(5):417-421.",
+          ids: "PMID: 31677972",
+          year: 2019
+          }, 
+	  {
 	  title: "LINCS Data Portal 2.0: next generation access point for perturbation-response signatures",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/31701147",
           authors: "Stathias V, Turner J, Koleti A, Vidovic D, Cooper D, Fazel-Najafabadi M, Pilarczyk M, Terryn R, Chung C, Umeano A, Clarke DJB, Lachmann A, Evangelista JE, Ma'ayan A, Medvedovic M, Schurer SC.",
@@ -26,14 +42,6 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           ids: "PMID: 31672983",
           year: 2019
           },  
-	   {
-	  title: "FAIRshake: Toolkit to evaluate the FAIRness of research digital resources",
-          url: "https://www.ncbi.nlm.nih.gov/pubmed/31677972",
-          authors: "Clarke DJB, Wang L, Jones A, Wojciechowicz ML, Torre D, Jagodnik KM, Jenkins SL, McQuilton P, Flamholz Z, Silverstein MC, Schilder BM, Robasky K, Castillo C, Idaszak R, Ahalt SC, Williams J, Schurer S, Cooper DJ, de Miranda Azevedo R, Klenk JA, Haendel MA, Nedzel J, Avillach P, Shimoyama ME, Harris RM, Gamble M, Poten R, Charbonneau AL, Larkin J, Brown CT, Bonazzi VR, Dumontier MJ, Sansone SA, Ma'ayan A.",
-          citation: "Cell Systems 2019 Oct 10. pii: S2405-4712(19)30345-X.",
-          ids: "PMID: 31677972",
-          year: 2019
-          }, 
 	  {
 	  title: "Habenular TCF7L2 links nicotine addiction to diabetes",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/31619789",
