@@ -3,6 +3,14 @@ var mod = angular.module("publicationsMod", []);
 mod.controller("publicationsCtrl", ["$scope", function ($scope) {
     $scope.publications = [
 	  {
+	  title: "GPR84: an immune response dial?",
+          url: "https://www.nature.com/articles/d41573-020-00029-9",
+          authors: "Wojciechowicz ML, Ma'ayan A.",
+          citation: "Nature Reviews Drug Discovery 2020 Feb 20.",
+          ids: "doi: 10.1038/d41573-020-00029-9",
+          year: 2020
+          },
+	  {
 	  title: "Dermal sheath contraction powers stem cell niche relocation during hair cycle regression",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/31857493",
           authors: "Heitman N, Sennett R, Mok KW, Saxena N, Srivastava D, Martino P, Grisanti L, Wang Z, Ma'ayan A, Rompolas P, Rendl M.",
@@ -10,7 +18,7 @@ mod.controller("publicationsCtrl", ["$scope", function ($scope) {
           ids: "PMID: 31857493",
           year: 2020
           },
-	   {
+	  {
 	  title: "FAIRshake: Toolkit to evaluate the FAIRness of research digital resources",
           url: "https://www.ncbi.nlm.nih.gov/pubmed/31677972",
           authors: "Clarke DJB, Wang L, Jones A, Wojciechowicz ML, Torre D, Jagodnik KM, Jenkins SL, McQuilton P, Flamholz Z, Silverstein MC, Schilder BM, Robasky K, Castillo C, Idaszak R, Ahalt SC, Williams J, Schurer S, Cooper DJ, de Miranda Azevedo R, Klenk JA, Haendel MA, Nedzel J, Avillach P, Shimoyama ME, Harris RM, Gamble M, Poten R, Charbonneau AL, Larkin J, Brown CT, Bonazzi VR, Dumontier MJ, Sansone SA, Ma'ayan A.",

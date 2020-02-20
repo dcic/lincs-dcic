@@ -46,8 +46,8 @@ mod.controller("carouselCtrl", ["$scope", function($scope) {
         {
             index: 0,
             image: DIR + 'maayan_summer19.jpg',
-            title: 'Accepting applications for the 2020 Summer Research Training Program in Biomedical Big Data Science in NYC!',
-            caption: 'A research intensive 10-week training program in the Ma\'ayan Lab for undergraduate and graduate students.',
+            title: '2020 Summer Research Training Program in Biomedical Big Data Science in NYC!',
+            caption: 'A research intensive 10-week training program in the Ma\'ayan Lab at the Icahn School of Medicine at Mount Sinai.',
             link: 'summer-research-app#nav'
         },
 	{
