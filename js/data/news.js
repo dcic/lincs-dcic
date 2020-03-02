@@ -12,6 +12,15 @@ mod.controller("newsCtrl", ["$scope", "$sce", function($scope, $sce) {
 
 	$scope.stories = formatStories([
 	   {
+            title: "FAIR your Data",
+            source: "Nature Methods Research Highlight",
+            url: "https://www.nature.com/articles/s41592-020-0742-y",
+            target: "_blank",
+            date: "2/4/2020",
+            mainText: "A toolkit facilitating FAIRness assessment.",
+            image: DIR + "product-fairshake-diagram.jpg"
+           },	
+	   {
             title: "Finding Needles in the Haystack",
             source: "Communique Blog",
             url: "https://toxchange.toxicology.org/p/bl/et/blogid=9&blogaid=2995",

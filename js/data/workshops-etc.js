@@ -6,7 +6,7 @@ mod.controller("workshopsEtcCtrl", ["$scope", "$sce", function($scope, $sce) {
 	{
             title: 'MCF10A Common Project Workshop',
             description: $sce.trustAsHtml('Members BD2K-LINCS DCIC from the ISMMS participated in this workshop hosted by the MEP LINCS Center. This workshop was organized into the following sessions: 1) MCF10A Deep Dive, 2) Integrative Analysis, 3) Data Management, and 4) Publication Strategy.'),
-            details: 'April 16, Portland, OR'
+            details: 'April 16, 2019, Portland, OR'
         },
 	{
             title: 'BioITWorld FAIR Data Hackathon 2019',
